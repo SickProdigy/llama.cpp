@@ -1,0 +1,45 @@
+services:
+  llama-cpp:
+    image: ghcr.io/ggml-org/llama.cpp:server-cuda
+    container_name: llama-cpp
+    restart: unless-stopped
+    mem_limit: 25g
+    memswap_limit: 25g
+    tty: true
+    ports:
+      - "11430:11430"
+    volumes:
+      - ./models:/models
+      - ./templates:/templates:ro
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      - NVIDIA_DRIVER_CAPABILITIES=compute,utility
+    runtime: nvidia
+    command: >
+      -m /models/Qwen3.6-14B-A3B-VibeForged-v2-Q4_K_M.gguf
+      --alias qwen3.6-14b-a3b-vibeforged-v2-q4_k_m
+      --jinja
+      --host 0.0.0.0
+      --port 11430
+      --ctx-size 65536
+      --parallel 1
+      --cache-type-k q4_0
+      --cache-type-v q4_0
+      --n-predict 512
+      -ngl 999
+    healthcheck:
+      test: ["CMD-SHELL", "bash -ec 'exec 3<>/dev/tcp/127.0.0.1/11430; printf \"GET /v1/models HTTP/1.1\\r\\nHost: localhost\\r\\nConnection: close\\r\\n\\r\\n\" >&3; grep -q \"200 OK\" <&3'"]
+      interval: 30s
+      timeout: 10s
+      retries: 10
+      start_period: 5m
+
+    networks:
+      homelab:
+        aliases:
+          - llama
+          - llamacpp
+networks:
+  homelab:
+    name: homelab
+    external: true
