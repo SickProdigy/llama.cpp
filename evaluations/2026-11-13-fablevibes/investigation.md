@@ -120,3 +120,6 @@ properties, native gateway process presence, and authenticated Gitea reads as th
 expected `hermes-agent` service account. Final fixture refs are checked for drift.
 Temporary evaluation resources and private snapshots are removed after sanitized
 export verification. No change was made to hermes-codex.
+
+A [November 16 grading correction](grading-corrections.md) fixes one GameRoom
+capability statement in the manual notes; aggregate scores are unchanged.

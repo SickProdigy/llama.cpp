@@ -4,6 +4,22 @@ GGUF testing notes for Hermes Agent running through llama.cpp.
 
 This file tracks which local GGUF models can actually complete the Hermes Agent plus Gitea MCP workflow, not just whether they answer a prompt or make a promising first tool call. Use the matrix for quick comparison and the detailed sections below for why a model passed, failed, or landed in the middle.
 
+## November 16, 2026 repaired profile and Qwen9B Q5 comparison
+
+Both models were tested at 98,304 context on llama.cpp b12407 with the same
+repaired profile and full AIAgent Discord platform selection in disposable
+containers. No Discord messages or forge writes were sent. Each row has nine
+fresh runs; history sequences are separate. This is a new protocol, not pooled
+with the earlier CLI measurements.
+
+| Model / repaired Discord agent profile | Routing | Content | Both | GitHub attempted | Timeouts | Median turn |
+|---|---:|---:|---:|---:|---:|---:|
+| VibeForged v2 Q4_K_M | 6/9 | 3/9 | 3/9 | 3/9 | 0 | 63.2s |
+| Qwen3.5-9B Q5_K_M | 6/9 | 4/9 | 3/9 | 3/9 | 0 | 100.7s |
+
+See the [full repair/Q5 comparison](evaluations/2026-11-16-q5-repaired/investigation.md)
+and [per-run evidence](evaluations/2026-11-16-q5-repaired/runs.csv).
+
 ## November 13, 2026 FableVibes comparison
 
 Both Q4_K_M models were rerun on llama.cpp b12316-5d4c8eeb2 at 98,304 context,
@@ -131,32 +147,29 @@ gateway parity.
 
 ### Latest Ordinary Repository Results
 
-Each row below uses nine fresh full-agent CLI sessions (three repetitions of
-three fixed prompts). “Both” means routing and content passed in the same run.
-These are the latest baseline observations for each model/context, not a pooled
-ranking: the November 13 comparison used backend b12316, while November 12 used
-b12282. The dated sections above retain all configurations and earlier scores.
+Each row uses nine fresh full-agent sessions. November 16 uses the repaired
+Discord agent profile on b12407; older rows use CLI selection on b12316 (Nov 13)
+or b12282 (Nov 12). Compare the two November 16 rows as the matched pair; do not
+pool or rank across profiles. Both means routing and content passed in one turn.
+The dated sections retain all configurations and earlier scores.
 
 | Model / quant | Evaluated | Context | Routing | Content | Both | Sampled peak VRAM | Median first API call | Median turn | Issue writes |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---|
-| VibeForged v2 Q4_K_M | [Nov 13](evaluations/2026-11-13-fablevibes/investigation.md) | 98,304 | 2/9 | 1/9 | 1/9 | 9,084 MiB | 4.2s | 139.2s | Not retested |
+| VibeForged v2 Q4_K_M | [Nov 16 · Discord](evaluations/2026-11-16-q5-repaired/investigation.md) | 98,304 | 6/9 | 3/9 | 3/9 | 9,082 MiB | 3.3s | 63.2s | Not retested |
+| Qwen3.5-9B Q5_K_M | [Nov 16 · Discord](evaluations/2026-11-16-q5-repaired/investigation.md) | 98,304 | 6/9 | 4/9 | 3/9 | 7,472 MiB | 5.2s | 100.7s | Not tested |
 | FableVibes Q4_K_M | [Nov 13](evaluations/2026-11-13-fablevibes/investigation.md) | 98,304 | 1/9 | 0/9 | 0/9 | 9,084 MiB | 3.6s | 182.8s | Not tested |
 | VibeForged v2 Q6_K | [Nov 12](evaluations/2026-11-12/investigation.md) | 98,304 | 5/9 | 1/9 | 0/9 | 11,684 MiB | 5.5s | 326.6s | Not retested |
 | Qwen3.5-9B Q8_0 | [Nov 12](evaluations/2026-11-12/investigation.md) | 65,536 | 6/9 | 4/9 | 3/9 | 9,474 MiB | 3.3s | 91.5s | Not retested |
 | Qwen3.5-9B Q8_0 | [Nov 12](evaluations/2026-11-12/investigation.md) | 98,304 | 5/9 | 3/9 | 3/9 | 9,922 MiB | 3.7s | 127.9s | Not retested |
 
-No candidate established reliable ordinary repository work. Keep the deployed
-VibeForged Q4 configuration for now: FableVibes did not improve the matched
-comparison. Qwen 9B remains a candidate for further validation from the earlier
-sweep, rather than a proven replacement on the newer backend. First API-call
-times include generation and can use cached prompts; they are not time to first
-token. VRAM was sampled, so transient peaks may be higher.
-
-Both November 13 history sequences failed on the final five-idea turn after
-context growth and truncated auxiliary summaries. FableVibes also repeated
-existing functionality in the one-cog turn. The existing summary-budget defect
-remains unresolved; no runtime update or new model test accompanies this
-README reconciliation.
+No candidate established reliable ordinary repository reviews. Keep VibeForged Q4:
+Qwen Q5 uses less VRAM but ties its 3/9 combined score and has a slower median turn.
+Both finish the November 16 history sequence, with content defects remaining.
+The tested local summary budget/read-default/routing profile fixes are deployed;
+the existing model/credentials/endpoints remain. See the dated report and
+[plugin source/config notes](hermes-profile/README.md). These tests do not prove
+native Discord delivery, issue-write reliability or a million-token context.
+First API-call latency includes generation/cache; sampled VRAM may miss peaks.
 
 ### Historical Guided Workflow Results
 

@@ -1,0 +1,198 @@
+{
+  "restoration_before_intentional_repair": {
+    "utc": "2026-11-16T20:19:45.963801+00:00",
+    "containers": {
+      "hermes": {
+        "same_container": true,
+        "same_image": true,
+        "image_id": "sha256:ed43b1c44a722eff23041b7db2f3866ac80edc33650104a684837830d3798cd3",
+        "same_command": true,
+        "same_environment": true,
+        "same_mounts": true,
+        "same_port_bindings": true,
+        "same_network_mode": true,
+        "running": true,
+        "health": null
+      },
+      "llama-cpp": {
+        "same_container": true,
+        "same_image": true,
+        "image_id": "sha256:07cf28835043175f9b1004c81a2708402334150bd01c81102b17214122359a1b",
+        "same_command": true,
+        "same_environment": true,
+        "same_mounts": true,
+        "same_port_bindings": true,
+        "same_network_mode": true,
+        "running": true,
+        "health": "healthy"
+      }
+    },
+    "files": {
+      "/media/prodigy/Coding-Programming/docker-containers/hermes-agent/data/config.yaml": true,
+      "/media/prodigy/Coding-Programming/docker-containers/hermes-agent/data/.env": true,
+      "/media/prodigy/Coding-Programming/docker-containers/hermes-agent/docker-compose.yml": true,
+      "/media/prodigy/Coding-Programming/docker-containers2/llama.cpp/docker-compose.yml": true,
+      "/media/prodigy/Coding-Programming/docker-containers/hermes-agent/data/skills/gitea/DESCRIPTION.md": true,
+      "/media/prodigy/Coding-Programming/docker-containers/hermes-agent/data/skills/gitea/gitea-repo-management/SKILL.md": true,
+      "/media/prodigy/Coding-Programming/docker-containers/hermes-agent/data/skills/gitea/gitea-workflow/SKILL.md": true,
+      "/media/prodigy/Coding-Programming/docker-containers/hermes-agent/data/skills/gitea/gitea-auth/SKILL.md": true,
+      "/media/prodigy/Coding-Programming/docker-containers/hermes-agent/data/skills/gitea/gitea-issues/SKILL.md": true,
+      "/media/prodigy/Coding-Programming/docker-containers/hermes-agent/data/skills/gitea/gitea-pr-workflow/SKILL.md": true,
+      "/media/prodigy/Coding-Programming/docker-containers/hermes-agent/data/skills/gitea/gitea-repo-management/references/gitea-sptnr-dependencies.md": true,
+      "/media/prodigy/Coding-Programming/docker-containers/hermes-agent/data/skills/gitea/gitea-repo-management/references/gitea-push-failure-ssl-error.md": true,
+      "/media/prodigy/Coding-Programming/docker-containers/hermes-agent/data/skills/gitea/gitea-repo-management/references/gitea-base64-decoding.md": true,
+      "/media/prodigy/Coding-Programming/docker-containers/hermes-agent/data/skills/gitea/gitea-repo-management/references/gitea-mcp-tools.md": true,
+      "/media/prodigy/Coding-Programming/docker-containers/hermes-agent/data/skills/gitea/gitea-workflow/references/mcp-unreachability-handling.md": true,
+      "/media/prodigy/Coding-Programming/docker-containers/hermes-agent/data/skills/gitea/gitea-issues/references/concept-only-issue-template.md": true
+    },
+    "backend": {
+      "alias": "qwen3.6-14b-a3b-vibeforged-v2-q4_k_m",
+      "context": 98304,
+      "slots": 1,
+      "caps": {
+        "supports_object_arguments": true,
+        "supports_parallel_tool_calls": true,
+        "supports_preserve_reasoning": true,
+        "supports_reasoning_effort": false,
+        "supports_string_content": true,
+        "supports_system_role": true,
+        "supports_tool_calls": true,
+        "supports_tools": true,
+        "supports_typed_content": true,
+        "reasoning_effort_levels": []
+      },
+      "build": "b12407-e574a17b0"
+    },
+    "backend_health": {
+      "status": "ok"
+    },
+    "gateway_process_present": true,
+    "gpu": "name, memory.used [MiB], memory.total [MiB], utilization.gpu [%]\nTesla P100-PCIE-16GB, 9028 MiB, 16384 MiB, 0 %",
+    "mcp_image_unchanged": true,
+    "live_profile_hashes_unchanged": {
+      "config.yaml": true,
+      ".env": true,
+      "auth.json": true,
+      "SOUL.md": true
+    }
+  },
+  "intentional_deployment": {
+    "applied": true,
+    "preserved_other_configuration": true,
+    "preserved_model_configuration": true,
+    "preserved_credential_identity_files": [
+      ".env",
+      "auth.json",
+      "SOUL.md"
+    ],
+    "changed_configuration_paths": [
+      "auxiliary.compression.extra_body",
+      "tools.tool_search.enabled",
+      "plugins.enabled",
+      "agent.disabled_toolsets",
+      "platform_toolsets.cli",
+      "agent.environment_hint"
+    ],
+    "plugin": "gitea-readable-defaults 0.1.0",
+    "source": "tested frozen profile repair",
+    "model_alias": "qwen3.6-14b-a3b-vibeforged-v2-q4_k_m",
+    "context": 98304,
+    "main_output_cap": 4096
+  },
+  "post_deployment": {
+    "utc": "2026-11-16T20:23:02.724542+00:00",
+    "containers": {
+      "hermes": {
+        "same_container": true,
+        "same_image": true,
+        "same_environment": true,
+        "same_command": true,
+        "same_mounts": true,
+        "same_ports": true,
+        "running": true
+      },
+      "llama-cpp": {
+        "same_container": true,
+        "same_image": true,
+        "same_environment": true,
+        "same_command": true,
+        "same_mounts": true,
+        "same_ports": true,
+        "running": true
+      }
+    },
+    "changed_source_files": [
+      "/media/prodigy/Coding-Programming/docker-containers/hermes-agent/data/config.yaml",
+      "/media/prodigy/Coding-Programming/docker-containers/hermes-agent/data/skills/gitea/gitea-repo-management/SKILL.md",
+      "/media/prodigy/Coding-Programming/docker-containers/hermes-agent/data/skills/gitea/gitea-workflow/SKILL.md",
+      "/media/prodigy/Coding-Programming/docker-containers/hermes-agent/data/skills/gitea/gitea-auth/SKILL.md",
+      "/media/prodigy/Coding-Programming/docker-containers/hermes-agent/data/skills/gitea/gitea-issues/SKILL.md",
+      "/media/prodigy/Coding-Programming/docker-containers/hermes-agent/data/skills/gitea/gitea-pr-workflow/SKILL.md",
+      "/media/prodigy/Coding-Programming/docker-containers/hermes-agent/data/skills/gitea/gitea-repo-management/references/gitea-mcp-tools.md",
+      "/media/prodigy/Coding-Programming/docker-containers/hermes-agent/data/skills/gitea/gitea-workflow/references/mcp-unreachability-handling.md"
+    ],
+    "unchanged_identity_files": {
+      ".env": true,
+      "auth.json": true,
+      "SOUL.md": true,
+      "skills/sick-cogs-conventions/SKILL.md": true
+    },
+    "backend": {
+      "alias": "qwen3.6-14b-a3b-vibeforged-v2-q4_k_m",
+      "context": 98304,
+      "build": "b12407-e574a17b0"
+    },
+    "backend_health": {
+      "status": "ok"
+    },
+    "gateway_process_present": true,
+    "plugin_native_check": {
+      "live_plugin_loaded": true,
+      "defaults": {
+        "owner": "sickprodigy",
+        "repo": "SonicRatings",
+        "path": "README.md",
+        "with_lines": true,
+        "start_line": 1,
+        "end_line": 160
+      }
+    },
+    "authenticated_gitea_check": {
+      "utc": "2026-11-16T20:21:45.146441+00:00",
+      "authenticated_gitea_read": true,
+      "login": "hermes-agent",
+      "fixtures": {
+        "main": {
+          "sha": "762f67b86b137a77a1965bba6f3688665ed92537",
+          "unchanged": true,
+          "entries": 40
+        },
+        "develop": {
+          "sha": "4c63518a09f2610db201fcb8a16ed72a65d50c9d",
+          "unchanged": true,
+          "entries": 57
+        },
+        "SonicRatings README": {
+          "sha": "e25e51f9d2ac93ffe2638abbb23ba052bc0633c1",
+          "unchanged": true
+        }
+      }
+    }
+  },
+  "private_rollback_backup": {
+    "private_rollback_backup": "/opt/data/backups/2026-11-16-profile-repair",
+    "original_config_and_gitea_skills_saved": true,
+    "directory_mode": "0700",
+    "file_mode": "0600",
+    "owner_matches_existing_config": true
+  },
+  "temporary_cleanup": {
+    "task_containers_removed": true,
+    "task_evidence_volume_removed": true,
+    "original_services_running": true,
+    "original_model_and_context_verified": true,
+    "original_backend_healthy": true,
+    "private_host_snapshot_cleanup": "removed after verified sanitized archive",
+    "intentional_private_rollback_backup_retained": true
+  }
+}

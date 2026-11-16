@@ -1,0 +1,26 @@
+[
+  {
+    "candidate": "qwen9-q5-repaired",
+    "n": 9,
+    "gitea": 8,
+    "github": 3,
+    "routing_pass": 6,
+    "content_pass": 4,
+    "partial": 1,
+    "combined_pass": 3,
+    "timeouts": 0,
+    "median_seconds": 100.7
+  },
+  {
+    "candidate": "vibeforged-repaired",
+    "n": 9,
+    "gitea": 7,
+    "github": 3,
+    "routing_pass": 6,
+    "content_pass": 3,
+    "partial": 4,
+    "combined_pass": 3,
+    "timeouts": 0,
+    "median_seconds": 63.2
+  }
+]

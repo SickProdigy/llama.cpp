@@ -1,0 +1,5 @@
+name: gitea-readable-defaults
+version: "0.1.0"
+description: "Default configured Gitea source-file reads to readable, bounded lines while preserving explicit arguments."
+provides_hooks:
+  - pre_tool_call
