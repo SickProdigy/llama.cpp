@@ -4,6 +4,16 @@ GGUF testing notes for Hermes Agent running through llama.cpp.
 
 This file tracks which local GGUF models can actually complete the Hermes Agent plus Gitea MCP workflow, not just whether they answer a prompt or make a promising first tool call. Use the matrix for quick comparison and the detailed sections below for why a model passed, failed, or landed in the middle.
 
+## Next test: real Gitea fork and issue writes
+
+The next protocol replaces the third, five-cog advice prompt with a bounded
+fork → verify → create one issue → read it back workflow. It permits actual
+writes only to an approved test fork, with early stops for tangents. The source
+repository and destination are still pending; this test has not run. Existing
+read-only results below retain their original prompts and acceptance criteria.
+
+See the [exact prompt, write scope and early-stop rules](evaluations/write-workflow-protocol.md).
+
 ## November 16, 2026 repaired profile and Qwen9B Q5 comparison
 
 Both models were tested at 98,304 context on llama.cpp b12407 with the same
