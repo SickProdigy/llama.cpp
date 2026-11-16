@@ -1,0 +1,86 @@
+{
+  "develop_commit": "4c63518a09f2610db201fcb8a16ed72a65d50c9d",
+  "metadata_source": "fixture-cog-catalog.json",
+  "source_excerpts": [
+    {
+      "repo": "sickprodigy/Sick-Cogs",
+      "path": "cryptowallet/README.md",
+      "commit": "4c63518a09f2610db201fcb8a16ed72a65d50c9d",
+      "lines": [
+        {
+          "line": 57,
+          "text": "\u2192 Bot immediately displays the enabled testnet portfolio and public addresses"
+        },
+        {
+          "line": 332,
+          "text": "CryptoWallet currently provides Base Sepolia and supported testnet wallet provisioning, public portfolio and activity reads, protected sends, revocable delegated signing, persistent confirmation recovery, signed browser authorization, and the outbound one-time relay used by recovery and external-wallet workflows. It intentionally has no inbound web server, website pairing protocol, or Discord OAuth session layer."
+        }
+      ]
+    },
+    {
+      "repo": "sickprodigy/SonicRatings",
+      "path": "README.md",
+      "blob": "e25e51f9d2ac93ffe2638abbb23ba052bc0633c1",
+      "lines": [
+        {
+          "line": 187,
+          "text": "- `--provider spotify|lastfm|musicbrainz|tidal|discogs`: Choose the source used to derive the rating. Spotify is the default."
+        },
+        {
+          "line": 474,
+          "text": "For queued imports, providers can be tried in order. Only tracks left unrated by one provider are sent to the next:"
+        },
+        {
+          "line": 477,
+          "text": "sonicratings work --state-dir logs/import-queue --provider musicbrainz,lastfm"
+        },
+        {
+          "line": 480,
+          "text": "Configure `LIDARR_URL` and `LIDARR_API_KEY` for enqueue, plus `SUBSONIC_URL`, `SUBSONIC_USERNAME`, and `SUBSONIC_PASSWORD` (or the existing `NAV_BASE_URL`, `NAV_USER`, and `NAV_PASS`). Queue commands load `.env`; `--env-file PATH` selects another file. `work` and `library` preserve existing personal ratings. Queue state, logs, locks, and `generated-ratings.json` are scoped by server URL and username beneath `--state-dir`."
+        },
+        {
+          "line": 492,
+          "text": "Successful writes and pending write intents retain their source in `generated-ratings.json`. A caller can provide that file to a contribution tool without either package importing the other."
+        },
+        {
+          "line": 494,
+          "text": "SonicRatings writes ratings to Navidrome/Subsonic. musicbrainz-helper independently contributes ratings and genres to MusicBrainz. Neither tool imports or installs the other."
+        }
+      ]
+    }
+  ],
+  "external_checks": [
+    {
+      "claim": "OpenWeather current-weather HTTP API requires appid",
+      "source": "https://openweathermap.org/api/current"
+    },
+    {
+      "claim": "Red already ships an Audio cog with playback, queue, volume and autoplay; generic music proposals need distinct integration justification",
+      "source": "https://docs.discord.red/en/stable/cog_guides/audio.html"
+    },
+    {
+      "url": "https://docs.discord.red/en/stable/cog_guides/trivia.html",
+      "finding": "Red ships Trivia with custom question lists, categories, answer time limits, points and server/global leaderboards. Generic quiz/trivia without distinct added scope overlaps it."
+    },
+    {
+      "url": "https://dev.epicgames.com/documentation/fortnite/using-fortnite-data-api-in-fortnite?lang=en-US",
+      "finding": "Official public Data API provides aggregate island metrics and excludes personal player information. Does not validate the model claim that rich player stats are publicly available from Epic; a separate provider/access path must be verified."
+    },
+    {
+      "url": "https://docs.discord.red/en/latest/cog_guides/filter.html",
+      "finding": "Red ships configurable word/phrase filtering and automatic ban conditions. Generic word-list profanity filtering must distinguish new scope."
+    },
+    {
+      "url": "https://docs.discord.red/en/stable/cog_guides/core.html",
+      "finding": "Core documents modlog case controls and integration with Mod/Filter; generic modlog proposals require new scope."
+    }
+  ],
+  "sonicratings_source": {
+    "repo": "sickprodigy/SonicRatings",
+    "README_blob": "e25e51f9d2ac93ffe2638abbb23ba052bc0633c1",
+    "pyproject_blob": "5eaa2959b35530a16e4ff4a4033c39499adb2afc",
+    "verification": "Both blobs match captured Gitea MCP results and local HEAD objects.",
+    "README_intro": "# SonicRatings\n\nBring track popularity and community ratings into your Navidrome or Subsonic-compatible music library. SonicRatings supports Spotify, TIDAL, Last.fm, MusicBrainz, and Discogs as rating sources.\n\nSonicRatings works especially well alongside [navidrome-smart-playlists](https://github.com/SickProdigy/navidrome-smart-playlists). SonicRatings supplies the track ratings, while its Navidrome `.NSP` smart playlist definitions can use those ratings to build dynamic playlists of highly rated music by genre or decade. Run SonicRatings first, then refresh the playlists with a Navidrome library scan.\n\nOriginally called **SPTNR** (Spotify Popularity to Navidrome Ratings), this script was developed to repurpose the star ratings in Navidrome. As a Navidrome user who utilizes the 'favorite' feature instead of star ratings, I wanted to give new life and utility to the unused rating system. By mapping provider scores to library ratings, SonicRatings provides a quick way to identify popular tracks. This becomes particularly useful when frequently adding new albums and artists, especially those you're not familiar with.\n\nThe installed command and Python package are both `sonicratings`; the Compose service is also `sonicratings`. The Docker examples below build and use the local image `sonicratings:local`.\n\n![Screenshot of script and phone](https://i.imgur.com/7NhSQFM.png)\n\n",
+    "pyproject": "[build-system]\nrequires = [\"setuptools>=68\"]\nbuild-backend = \"setuptools.build_meta\"\n\n[project]\nname = \"sonicratings\"\nversion = \"1.5.0\"\ndescription = \"Sync provider ratings to Navidrome and Subsonic libraries\"\nrequires-python = \">=3.10\"\ndependencies = [\"requests>=2.31\", \"python-dotenv>=1.0\", \"colorama>=0.4.6\", \"tqdm>=4.66.1\", \"mutagen>=1.47\"]\nlicense = {file = \"LICENSE\"}\n\n[project.scripts]\nsonicratings = \"sonicratings.cli:main\"\nsonicratings-score = \"sonicratings.score:main\"\n\n[tool.setuptools.packages.find]\ninclude = [\"sonicratings*\"]\n"
+  }
+}

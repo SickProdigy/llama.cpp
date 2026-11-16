@@ -1,0 +1,1454 @@
+{
+  "source": "Gitea-verified develop commit, read from matching local Git objects",
+  "sha": "4c63518a09f2610db201fcb8a16ed72a65d50c9d",
+  "cogs": {
+    "accesscontrol": {
+      "author": [
+        "SickProdigy"
+      ],
+      "description": "Central guild allowlisting and role, user, VIP-sponsored, and expiring feature entitlements for Sick-Cogs.",
+      "disabled": false,
+      "end_user_data_statement": "This cog stores guild, role, and user IDs used for access grants and sponsorship, entitlement issue and expiry timestamps, and a bounded administrative audit history. It stores no payment details or credentials. User-data deletion removes direct grants and anonymizes sponsorship and audit references.",
+      "hidden": false,
+      "install_msg": "AccessControl installs with enforcement disabled. The bot owner should run [p]accesscontrol, configure mappings and grants, verify decisions with [p]accesscontrol check, and only then enable enforcement.",
+      "min_bot_version": "3.5.0",
+      "min_python_version": [
+        3,
+        8,
+        0
+      ],
+      "name": "AccessControl",
+      "permissions": [
+        "embed_links"
+      ],
+      "requirements": [],
+      "short": "Central bot and premium feature access policy.",
+      "tags": [
+        "access",
+        "permissions",
+        "roles",
+        "vip",
+        "entitlements"
+      ],
+      "type": "COG",
+      "version": "0.2.1"
+    },
+    "advancedhelp": {
+      "author": [
+        "SickProdigy"
+      ],
+      "description": "Audience-first interactive help that preserves Red command visibility and permission checks, with an owner-only sanitized command inventory export.",
+      "disabled": false,
+      "end_user_data_statement": "This cog stores server-level help presentation settings and Discord role IDs for optional presentation groups. It does not store member activity or message content.",
+      "hidden": false,
+      "install_msg": "AdvancedHelp is installed disabled and leaves Red's standard help active. A bot owner can opt into the interactive bare-help menu with [p]advancedhelpset enable, configure it with [p]advancedhelpset, and restore Red help with [p]advancedhelpset disable. Direct command and cog help continue through Red. Bot owners can export sanitized command metadata with [p]docsreport.",
+      "min_bot_version": "3.5.0",
+      "min_python_version": [
+        3,
+        8,
+        0
+      ],
+      "name": "AdvancedHelp",
+      "permissions": [
+        "embed_links"
+      ],
+      "requirements": [],
+      "short": "Permission-aware interactive help organized by audience.",
+      "tags": [
+        "help",
+        "permissions",
+        "navigation",
+        "utility"
+      ],
+      "type": "COG",
+      "version": "0.2.1"
+    },
+    "ark": {
+      "author": [
+        "SickProdigy"
+      ],
+      "description": "Publish official ARK: Survival Ascended Steam announcements as cards or article-style posts with configurable categories and role notifications.",
+      "disabled": false,
+      "end_user_data_statement": "This cog stores guild announcement settings and bounded Steam announcement IDs. It does not persistently store user data or metadata.",
+      "hidden": false,
+      "install_msg": "Set an announcement channel with `[p]arkset channel #channel`, choose `[p]arkset mode card` or `[p]arkset mode article`, optionally set a notification role, then start automatic posting with `[p]arkset autopost start`. Existing Steam posts are seeded during setup and will not flood the channel.",
+      "min_bot_version": "3.5.0",
+      "min_python_version": [
+        3,
+        11,
+        0
+      ],
+      "permissions": [
+        "embed_links",
+        "attach_files"
+      ],
+      "name": "Ark",
+      "requirements": [
+        "Pillow>=13.0.0,<14"
+      ],
+      "short": "Official ARK: Survival Ascended Steam announcements",
+      "tags": [
+        "ark",
+        "steam",
+        "updates",
+        "notifications",
+        "games"
+      ],
+      "type": "COG",
+      "version": "1.1.8"
+    },
+    "avatar": {
+      "author": [
+        "SickProdigy",
+        "skeith"
+      ],
+      "description": "Return a user's avatar URL.",
+      "disabled": false,
+      "end_user_data_statement": "This cog does not persistently store data or metadata about users.",
+      "hidden": false,
+      "install_msg": "Use `[p]avatar` to show your avatar URL, or `[p]avatar <user>` to show another user's avatar URL.",
+      "min_bot_version": "3.5.0",
+      "name": "Avatar",
+      "permissions": [],
+      "requirements": [],
+      "short": "Get a user's avatar URL",
+      "tags": [
+        "avatar",
+        "utility"
+      ],
+      "type": "COG",
+      "version": "1.0.1"
+    },
+    "azerothcore": {
+      "author": [
+        "SickProdigy"
+      ],
+      "description": "Connect Discord to an AzerothCore World of Warcraft (WoW) server with player information, account self-service, ac-api-v1, and optional SOAP tools.",
+      "disabled": false,
+      "end_user_data_statement": "This cog stores per-guild backend settings, Discord-to-AzerothCore account links, and password-reset timestamps. User deletion removes their links and reset metadata. Private API and SOAP credentials remain in guild-scoped Red shared API tokens and are never included in Discord output.",
+      "hidden": false,
+      "install_msg": "Run [p]wowset backend for guild-scoped setup. The Red bot owner configures SOAP and optional ac-api-v1 credentials, enables the guild profile, and separately trusts account management before use.",
+      "min_bot_version": "3.5.0",
+      "permissions": [
+        "embed_links"
+      ],
+      "name": "AzerothCore",
+      "requirements": [
+        "aiohttp"
+      ],
+      "short": "AzerothCore World of Warcraft (WoW) server tools",
+      "tags": [
+        "api",
+        "gaming",
+        "world-of-warcraft",
+        "wow",
+        "azerothcore"
+      ],
+      "type": "COG",
+      "version": "1.3.1"
+    },
+    "botupdates": {
+      "author": [
+        "SickProdigy"
+      ],
+      "description": "Collect Sick-Cogs and configured public GitHub upstream changes into scheduled review drafts, accept trusted human edits, require final approval, and publish to subscribed servers.",
+      "disabled": false,
+      "end_user_data_statement": "This cog stores configured editor and publisher user IDs, proposal author IDs and text, approval history, guild channel and optional role IDs, public commit cursors, source references, delivery history, and bounded AI request counters. Optional owner-enabled AI drafting sends current draft text and source labels/references to the provider configured in Assistant; no conversation history or attachments are included. User-data deletion removes configured access and anonymizes retained draft history; provider retention is governed separately by that provider.",
+      "hidden": false,
+      "install_msg": "BotUpdates never publishes automatically. Configure a private review channel, then optionally start twice-monthly Sick-Cogs collection with `[p]botupdatesowner collector start`.",
+      "min_bot_version": "3.5.0",
+      "min_python_version": [
+        3,
+        8,
+        0
+      ],
+      "name": "BotUpdates",
+      "permissions": [
+        "embed_links",
+        "send_messages"
+      ],
+      "requirements": [],
+      "short": "Human-reviewed bot update announcements.",
+      "tags": [
+        "updates",
+        "announcements",
+        "changelog",
+        "collaboration"
+      ],
+      "type": "COG",
+      "version": "0.2.2"
+    },
+    "calendarevents": {
+      "author": [
+        "SickProdigy"
+      ],
+      "description": "Manage native Discord scheduled events and reminders with optional per-server Google Calendar access.",
+      "disabled": false,
+      "end_user_data_statement": "Google stores calendar events. This cog stores per-server calendar settings and minimal Discord user IDs associated with events created through the bot.",
+      "hidden": false,
+      "install_msg": "Use `[p]calendar` for native Discord events and `[p]calendarset reminderchannel` for reminders. Google Calendar is optional; use `[p]calendarset serviceaccount` when linking it.",
+      "min_bot_version": "3.5.0",
+      "min_python_version": [
+        3,
+        9,
+        0
+      ],
+      "name": "CalendarEvents",
+      "permissions": [
+        "embed_links",
+        "attach_files",
+        "manage_events"
+      ],
+      "requirements": [
+        "cryptography>=41,<51"
+      ],
+      "short": "Native Discord events and reminders with optional Google Calendar access.",
+      "tags": [
+        "calendar",
+        "events",
+        "ics",
+        "google-calendar"
+      ],
+      "type": "COG",
+      "version": "0.3.2"
+    },
+    "clanker": {
+      "author": [
+        "SickProdigy"
+      ],
+      "description": "Prepare and orchestrate reviewed Base Clanker launches with interactive drafts, optional vaults and airdrops, and explicit wallet execution boundaries.",
+      "disabled": false,
+      "end_user_data_statement": "This cog stores guild launch configuration and bounded token launch audit records, including the requester identity until Red requests its deletion. Requester identity is then anonymized. It does not store private keys, seed phrases, API tokens, or wallet credentials.",
+      "hidden": false,
+      "install_msg": "Configure `[p]clankerset treasury`, `[p]clankerset enabled true`, and the desired launch controls. Base Sepolia is enabled; the Base mainnet release candidate remains default-off behind installation pause and code gates. Use `[p]clank <symbol> [token name]` to start a requester-bound draft and review its exact wallet execution card.",
+      "min_bot_version": "3.5.0",
+      "permissions": [
+        "embed_links",
+        "attach_files"
+      ],
+      "name": "Clanker",
+      "requirements": [],
+      "short": "Reviewed Base launches, token rundowns, rewards, and owner controls",
+      "tags": [
+        "clanker",
+        "base",
+        "tokens",
+        "crypto",
+        "memes"
+      ],
+      "type": "COG",
+      "version": "1.0.27"
+    },
+    "coc": {
+      "author": [
+        "SickProdigy"
+      ],
+      "description": "Show Clash of Clans clan, player, war, Clan War League, and Raid Weekend information and notifications.",
+      "name": "Coc",
+      "end_user_data_statement": "This cog does not persistently store data or metadata about users.",
+      "install_msg": "This cog contacts the Clash of Clans API and bundles banner images used in responses. Set the bot-wide API key with `[p]set api clashofclans api_key,YOUR_KEY`, then configure each server with `[p]cocset clan <clan_tag>`.",
+      "min_bot_version": "3.5.0",
+      "min_python_version": [
+        3,
+        10,
+        0
+      ],
+      "permissions": [
+        "attach_files",
+        "embed_links"
+      ],
+      "requirements": [],
+      "short": "Clash of clans",
+      "tags": [
+        "clash",
+        "coc",
+        "clashofclans"
+      ],
+      "type": "COG",
+      "version": "1.8.0"
+    },
+    "codex": {
+      "author": [
+        "SickProdigy"
+      ],
+      "description": "Private live Codex allowance status and low-usage notifications through per-user ChatGPT device-code connections.",
+      "disabled": false,
+      "end_user_data_statement": "This cog stores each participating Discord user's notification preferences, bounded allowance observations, last reported banked-reset count, deduplication keys, and a private Codex authentication home containing renewable ChatGPT authorization. Credentials are isolated per user and are never shown in Discord or stored in Red Config. Disconnect and Red user-data deletion remove the user's local credentials and configuration after attempting remote logout.",
+      "hidden": false,
+      "install_msg": "The cog automatically installs a shared Codex CLI on first load. The bot owner can run [p]codexset install to update or repair it. Members use [p]codex connect to privately link ChatGPT with an official device code and [p]codex to view live allowance.",
+      "min_bot_version": "3.5.0",
+      "min_python_version": [
+        3,
+        10,
+        0
+      ],
+      "name": "Codex",
+      "permissions": [],
+      "requirements": [],
+      "short": "Live Codex usage milestones and reset notifications.",
+      "tags": [
+        "codex",
+        "openai",
+        "reminders",
+        "usage",
+        "privacy"
+      ],
+      "type": "COG",
+      "version": "1.0.2"
+    },
+    "cryptowallet": {
+      "author": [
+        "SickProdigy"
+      ],
+      "description": "Provider-backed multichain wallet integration with reviewed testnet operation and a default-off Base mainnet release candidate.",
+      "disabled": false,
+      "end_user_data_statement": "This cog stores wallet profile identifiers, linked platform identifiers, public wallet addresses, public transaction metadata, purpose-bound integrated-product intent fingerprints, notification preferences, emergency-lock status, and optional encrypted authenticator enrollment state. It never stores private keys, recovery phrases, wallet passwords, or one-time authentication codes.",
+      "hidden": false,
+      "install_msg": "CryptoWallet enables reviewed testnet operation. Base mainnet remains default-off and emergency-paused while the release candidate is completed and tested. The companion site handles protected authorization, recovery, export, and account security; ordinary public-address provisioning remains bot-first.",
+      "min_bot_version": "3.5.0",
+      "permissions": [
+        "embed_links"
+      ],
+      "requirements": [
+        "cryptography>=42.0.0,<51.0.0",
+        "PyJWT>=2.10.1,<3.0.0"
+      ],
+      "short": "Protected multichain wallet integration",
+      "tags": [
+        "wallet",
+        "crypto",
+        "base",
+        "ethereum",
+        "solana",
+        "smart-wallet",
+        "testnet"
+      ],
+      "type": "COG",
+      "version": "1.2.60"
+    },
+    "dadjokes": {
+      "author": [
+        "SickProdigy",
+        "UltimatePancake"
+      ],
+      "description": "Post configurable random dad jokes from icanhazdadjoke.com to a Discord channel.",
+      "disabled": false,
+      "end_user_data_statement": "This cog stores guild-level dad joke scheduler settings such as channel ID, interval, enablement, and next run time. It does not persistently store user data or metadata.",
+      "hidden": false,
+      "install_msg": "This cog contacts icanhazdadjoke.com when retrieving jokes. Use `[p]dadjoke` or `[p]dadjokes` for one joke, or configure scheduled posts with `[p]dadjokeset`.",
+      "min_bot_version": "3.5.0",
+      "permissions": [
+        "embed_links"
+      ],
+      "name": "DadJokes",
+      "requirements": [],
+      "short": "Scheduled random dad jokes",
+      "tags": [
+        "jokes",
+        "dad",
+        "dadjokes",
+        "scheduler"
+      ],
+      "type": "COG",
+      "version": "1.1.1"
+    },
+    "dayz": {
+      "author": [
+        "SickProdigy"
+      ],
+      "description": "Publish official DayZ Steam announcements as cards or article-style posts with configurable categories and role notifications.",
+      "disabled": false,
+      "end_user_data_statement": "This cog stores guild announcement settings and bounded Steam announcement IDs. It does not persistently store user data or metadata.",
+      "hidden": false,
+      "install_msg": "Set an announcement channel with `[p]dayzset channel #channel`, choose `[p]dayzset mode card` or `[p]dayzset mode article`, optionally set a notification role, then start automatic posting with `[p]dayzset autopost start`. Existing Steam posts are seeded during setup and will not flood the channel.",
+      "min_bot_version": "3.5.0",
+      "min_python_version": [
+        3,
+        11,
+        0
+      ],
+      "permissions": [
+        "embed_links",
+        "attach_files"
+      ],
+      "name": "DayZ",
+      "requirements": [
+        "Pillow>=13.0.0,<14"
+      ],
+      "short": "Official DayZ Steam announcements",
+      "tags": [
+        "dayz",
+        "steam",
+        "updates",
+        "notifications",
+        "games"
+      ],
+      "type": "COG",
+      "version": "1.0.5"
+    },
+    "dictionary": {
+      "author": [
+        "SickProdigy"
+      ],
+      "description": "Look up English definitions, pronunciations, synonyms, and antonyms.",
+      "disabled": false,
+      "end_user_data_statement": "This cog does not persistently store data or metadata about users.",
+      "hidden": false,
+      "install_msg": "This cog sends lookup terms to public dictionary and language APIs. Use `[p]dictionary <word>` for an entry or `[p]help dictionary` for usage.",
+      "min_bot_version": "3.5.0",
+      "min_python_version": [
+        3,
+        9,
+        0
+      ],
+      "name": "Dictionary",
+      "permissions": [
+        "embed_links"
+      ],
+      "short": "Modern dictionary and thesaurus lookups",
+      "tags": [
+        "dictionary",
+        "definition",
+        "pronunciation",
+        "synonym",
+        "antonym"
+      ],
+      "requirements": [],
+      "type": "COG",
+      "version": "2.1.0"
+    },
+    "donate": {
+      "author": [
+        "SickProdigy"
+      ],
+      "description": "Configurable donation information command for Discord servers.",
+      "disabled": false,
+      "end_user_data_statement": "This cog stores guild donation display settings such as payment method labels, links, addresses, and public notes. It does not store donor records or payment history.",
+      "hidden": false,
+      "install_msg": "Use `[p]donate` to show the default SickGaming donation card, or `[p]donate set` to customize methods. This cog only displays donation information; verified donor roles or account upgrades should be handled by a separate integration.",
+      "min_bot_version": "3.5.0",
+      "permissions": [
+        "embed_links"
+      ],
+      "name": "Donate",
+      "requirements": [],
+      "short": "Show configured donation options",
+      "tags": [
+        "donate",
+        "donation",
+        "donations",
+        "support",
+        "paypal",
+        "cashapp",
+        "venmo",
+        "crypto"
+      ],
+      "type": "COG",
+      "version": "1.1.1"
+    },
+    "gameroles": {
+      "author": [
+        "SickProdigy"
+      ],
+      "description": "Delegate tightly scoped game and clan role management to trusted server roles.",
+      "disabled": false,
+      "end_user_data_statement": "This cog stores server role IDs used for game-role delegation. It does not store member data.",
+      "hidden": false,
+      "install_msg": "Use `[p]gameroleset` for interactive administrator setup and `[p]gameroles` to assign approved roles.",
+      "min_bot_version": "3.5.0",
+      "min_python_version": [
+        3,
+        8,
+        0
+      ],
+      "name": "GameRoles",
+      "permissions": [
+        "manage_roles",
+        "embed_links"
+      ],
+      "requirements": [],
+      "short": "Delegated game and clan role management.",
+      "tags": [
+        "roles",
+        "games",
+        "clans",
+        "rust",
+        "ark"
+      ],
+      "type": "COG",
+      "version": "1.0.1"
+    },
+    "gameroom": {
+      "author": [
+        "SickProdigy"
+      ],
+      "description": "A unified free-play game room with dice, coin flips, blackjack, higher-or-lower, high card, pass-line craps, optional Red bank wagers, and discovery of Red's native games.",
+      "disabled": false,
+      "end_user_data_statement": "This cog stores per-server wager settings, bounded virtual-currency transaction records, and per-member daily loss totals. Completed records are anonymized on user deletion; unresolved financial records are retained until reconciled.",
+      "hidden": false,
+      "install_msg": "Open the game room with `[p]games`. Try `[p]dice d20`, `[p]coinflip`, `[p]blackjack`, or `[p]higherlower`, or `[p]highcard`.",
+      "min_bot_version": "3.5.0",
+      "min_python_version": [
+        3,
+        8,
+        0
+      ],
+      "name": "GameRoom",
+      "permissions": [
+        "embed_links"
+      ],
+      "requirements": [],
+      "short": "Unified free-play dice and card games",
+      "tags": [
+        "games",
+        "dice",
+        "blackjack",
+        "cards",
+        "fun"
+      ],
+      "type": "COG",
+      "version": "0.2.0"
+    },
+    "gitforge": {
+      "author": [
+        "SickProdigy"
+      ],
+      "description": "Connect Discord servers to approved Gitea, GitHub, or GitLab repositories, create reviewed issues, and route repository notifications.",
+      "disabled": false,
+      "end_user_data_statement": "This cog stores guild forge connection metadata, repository aliases, notification channel IDs, permission policies, and bounded polling cursors. Forge access tokens are stored separately in Red shared API tokens. Issue drafts remain in memory only and expire with their Discord interaction.",
+      "hidden": false,
+      "install_msg": "The bot owner must approve self-hosted forge domains with [p]gitownerset allowhost. A server administrator can then run [p]gitset to connect a provider and register repositories.",
+      "min_bot_version": "3.5.0",
+      "permissions": [
+        "embed_links",
+        "read_message_history"
+      ],
+      "requirements": [],
+      "short": "Gitea, GitHub, and GitLab issues and repository notifications",
+      "tags": [
+        "git",
+        "gitea",
+        "github",
+        "gitlab",
+        "issues",
+        "ci",
+        "notifications"
+      ],
+      "type": "COG",
+      "version": "0.1.6"
+    },
+    "giveaways": {
+      "author": [
+        "SickProdigy",
+        "flaree"
+      ],
+      "description": "Run Discord giveaways with duration or end-time scheduling, multipliers, role access, and optional bank integration.",
+      "disabled": false,
+      "end_user_data_statement": "This cog stores giveaway configuration, message IDs, entrant user IDs, and winner records for active and completed giveaways.",
+      "hidden": false,
+      "install_msg": "Use `[p]giveaway` to manage giveaways and `[p]help Giveaways` to view available options.",
+      "min_bot_version": "3.5.0",
+      "name": "Giveaways",
+      "permissions": [
+        "embed_links",
+        "add_reactions"
+      ],
+      "requirements": [],
+      "short": "Run Discord giveaways",
+      "tags": [
+        "giveaway",
+        "giveaways",
+        "raffle"
+      ],
+      "type": "COG",
+      "version": "1.6.1"
+    },
+    "gmod": {
+      "author": [
+        "SickProdigy"
+      ],
+      "description": "Monitor Garry's Mod servers with safe A2S queries and publish official Steam announcements.",
+      "disabled": false,
+      "end_user_data_statement": "This cog stores per-server public GMod connection settings, bounded cached status data, announcement settings, and Steam announcement IDs. It does not store member data or RCON credentials.",
+      "hidden": false,
+      "install_msg": "Add a server with `[p]gmodset add <name> <host> [query-port]`. Configure optional status transitions with `[p]gmodset statuschannel`, and ARK-style official Steam posts with `[p]gmodset updateschannel` followed by `[p]gmodset updates start`. Private/LAN destinations require explicit bot-owner approval.",
+      "min_bot_version": "3.5.0",
+      "permissions": [
+        "embed_links"
+      ],
+      "requirements": [],
+      "short": "GMod server status and official update announcements",
+      "tags": [
+        "gmod",
+        "garrys-mod",
+        "source",
+        "steam",
+        "status",
+        "notifications"
+      ],
+      "type": "COG",
+      "version": "1.0.3"
+    },
+    "grayzonewarfare": {
+      "author": [
+        "SickProdigy"
+      ],
+      "description": "Find Gray Zone Warfare quests, actionable wiki walkthroughs, and source-linked guide images.",
+      "disabled": false,
+      "end_user_data_statement": "This cog does not persistently store user data or metadata. Quest search terms are matched locally against quest records fetched from the GZW Data API and cached in memory for up to 10 minutes.",
+      "hidden": false,
+      "install_msg": "No API key is required. Use `[p]gzw quest <quest name or keywords>` to search the Gray Zone Warfare wiki.",
+      "min_bot_version": "3.5.0",
+      "min_python_version": [
+        3,
+        9,
+        0
+      ],
+      "name": "GrayZoneWarfare",
+      "permissions": [
+        "embed_links"
+      ],
+      "requirements": [],
+      "short": "Gray Zone Warfare quest walkthrough assistant",
+      "tags": [
+        "gray-zone-warfare",
+        "gzw",
+        "quests",
+        "wiki",
+        "games"
+      ],
+      "type": "COG",
+      "version": "1.0.0"
+    },
+    "icarus": {
+      "author": [
+        "SickProdigy"
+      ],
+      "description": "Publish official Icarus Steam announcements as cards or article-style posts with configurable categories and role notifications.",
+      "disabled": false,
+      "end_user_data_statement": "This cog stores guild announcement settings and bounded Steam announcement IDs. It does not persistently store user data or metadata.",
+      "hidden": false,
+      "install_msg": "Set an announcement channel with `[p]icarusset channel #channel`, choose `[p]icarusset mode card` or `[p]icarusset mode article`, optionally set a notification role, then start automatic posting with `[p]icarusset autopost start`. Existing Steam posts are seeded during setup and will not flood the channel.",
+      "min_bot_version": "3.5.0",
+      "min_python_version": [
+        3,
+        11,
+        0
+      ],
+      "permissions": [
+        "embed_links",
+        "attach_files"
+      ],
+      "name": "Icarus",
+      "requirements": [
+        "Pillow>=13.0.0,<14"
+      ],
+      "short": "Official Icarus Steam announcements",
+      "tags": [
+        "icarus",
+        "steam",
+        "updates",
+        "notifications",
+        "games"
+      ],
+      "type": "COG",
+      "version": "1.0.5"
+    },
+    "imagine": {
+      "author": [
+        "SickProdigy"
+      ],
+      "description": "Access-controlled image generation through interchangeable OpenAI, Codex, and ComfyUI providers.",
+      "disabled": false,
+      "end_user_data_statement": "This cog stores server configuration, allowlisted role and user IDs, and bounded per-user usage timestamps for rate limiting. Prompts and generated images are sent to the configured provider but are not retained by the cog.",
+      "hidden": false,
+      "install_msg": "Imagine is disabled by default. The bot owner must allow the server with `[p]imagineset server allow`, then a server administrator can configure access. Store OpenAI credentials with `[p]set api openai api_key,<value>`.",
+      "min_bot_version": "3.5.0",
+      "min_python_version": [
+        3,
+        8,
+        0
+      ],
+      "name": "Imagine",
+      "permissions": [
+        "attach_files",
+        "embed_links"
+      ],
+      "requirements": [],
+      "short": "Private, provider-neutral AI image generation.",
+      "tags": [
+        "image",
+        "ai",
+        "openai",
+        "codex",
+        "comfyui"
+      ],
+      "type": "COG",
+      "version": "0.2.1"
+    },
+    "incidents": {
+      "author": [
+        "SickProdigy"
+      ],
+      "description": "Interactive staff browsing, search, filtering, and summaries over Red ModLog cases.",
+      "disabled": false,
+      "end_user_data_statement": "This cog stores server role IDs used for staff access. It does not copy or own moderation case data; case data is read from Red ModLog.",
+      "hidden": false,
+      "install_msg": "Load Red's ModLog, then use `[p]incidents` for the staff dashboard and `[p]incidentset` to grant additional staff roles access.",
+      "min_bot_version": "3.5.0",
+      "min_python_version": [
+        3,
+        8,
+        0
+      ],
+      "name": "Incidents",
+      "permissions": [
+        "embed_links"
+      ],
+      "requirements": [],
+      "short": "Interactive staff reporting over existing Red ModLog cases.",
+      "tags": [
+        "moderation",
+        "modlog",
+        "incidents",
+        "reports"
+      ],
+      "type": "COG",
+      "version": "0.2.0"
+    },
+    "meme": {
+      "author": [
+        "SickProdigy"
+      ],
+      "description": "Find online memes and GIFs, publish scheduled feeds, and caption local images.",
+      "disabled": false,
+      "end_user_data_statement": "This cog does not persistently store user data, submitted caption text, avatars, or generated images.",
+      "hidden": false,
+      "install_msg": "Use `[p]meme` for online memes, `[p]meme gif` for animated Imgur results, and `[p]memeify` (alias `[p]imgflip`) for local captioning. Online providers require optional Red shared API tokens; see the cog README.",
+      "min_bot_version": "3.5.0",
+      "min_python_version": [
+        3,
+        11,
+        0
+      ],
+      "name": "Meme",
+      "permissions": [
+        "attach_files",
+        "embed_links"
+      ],
+      "required_cogs": {},
+      "requirements": [
+        "Pillow>=13.0.0,<14"
+      ],
+      "short": "Find, publish, and create memes",
+      "tags": [
+        "meme",
+        "memes",
+        "fun",
+        "images",
+        "gif",
+        "reddit",
+        "imgur"
+      ],
+      "type": "COG",
+      "version": "1.0.5"
+    },
+    "minecraft": {
+      "author": [
+        "SickProdigy"
+      ],
+      "description": "Monitor Minecraft Java and Bedrock servers and publish official game updates.",
+      "disabled": false,
+      "end_user_data_statement": "This cog stores guild-owned public Minecraft connection settings, bounded cached status data, visibility settings, and announcement configuration. It does not store linked game identities or administrative credentials.",
+      "hidden": false,
+      "install_msg": "Add a server with `[p]minecraftset add <name> <java|bedrock> <host> [port]`, or configure official releases with `[p]minecraftset updates channel <channel>` and `[p]minecraftset updates start`.",
+      "min_bot_version": "3.5.0",
+      "permissions": [
+        "embed_links"
+      ],
+      "requirements": [
+        "dnspython>=2.6,<3"
+      ],
+      "short": "Minecraft server status and official updates",
+      "tags": [
+        "minecraft",
+        "java",
+        "bedrock",
+        "status",
+        "updates",
+        "notifications"
+      ],
+      "type": "COG",
+      "version": "0.1.3"
+    },
+    "movies": {
+      "author": [
+        "SickProdigy"
+      ],
+      "description": "Post configurable new movie release announcements from TMDb to a Discord channel.",
+      "disabled": false,
+      "end_user_data_statement": "This cog stores guild movie release announcement settings and posted movie IDs. It does not persistently store user data or metadata.",
+      "hidden": false,
+      "install_msg": "This cog contacts TMDb and stores guild announcement settings and posted movie IDs in Red Config. As the bot owner, set one shared TMDb API key with `[p]set api tmdb api_key,YOUR_KEY`. Users can then run `[p]movies <title>` or `[p]movie <title>`. To enable release announcements, choose a channel with `[p]movieset channel`, choose delivery with `[p]movieset notifications silent|normal`, optionally set a notification role with `[p]movieset role`, then use `[p]movieset enable`.",
+      "min_bot_version": "3.5.0",
+      "permissions": [
+        "embed_links"
+      ],
+      "name": "MovieReleases",
+      "requirements": [],
+      "short": "New movie release announcements",
+      "tags": [
+        "movies",
+        "tmdb",
+        "releases",
+        "notifications"
+      ],
+      "type": "COG",
+      "version": "1.2.5"
+    },
+    "mtg": {
+      "author": [
+        "SickProdigy"
+      ],
+      "description": "An experimental persistent solo and two-player Magic: The Gathering rules prototype with private hands, curated starter decks, and the complete Alpha catalog and progressive rules support.",
+      "disabled": false,
+      "end_user_data_statement": "This cog stores Discord user IDs, active match state, private hands, decks, public game actions, and channel/message identifiers until the match record is deleted. User deletion removes matches involving that user.",
+      "hidden": false,
+      "install_msg": "Start with `[p]mtg solo red easy` or `[p]mtg challenge @member`. Alpha cards are progressively promoted only after their rules pass engine tests; fixed starter decks remain unchanged.",
+      "min_bot_version": "3.5.0",
+      "min_python_version": [
+        3,
+        11,
+        0
+      ],
+      "name": "MTG",
+      "permissions": [
+        "embed_links",
+        "attach_files",
+        "add_reactions"
+      ],
+      "requirements": [
+        "Pillow>=13.0.0,<14"
+      ],
+      "short": "Persistent solo and two-player MTG prototype",
+      "tags": [
+        "games",
+        "cards",
+        "mtg",
+        "solo",
+        "multiplayer"
+      ],
+      "type": "COG",
+      "version": "0.125.1"
+    },
+    "mybb": {
+      "author": [
+        "SickProdigy"
+      ],
+      "description": "Link MyBB accounts and membership roles through External Sign-In, with optional owner-controlled API-v1 announcements and reviewed forum publishing.",
+      "disabled": false,
+      "end_user_data_statement": "This cog stores each guild's independent External Sign-In URL, membership mappings/synchronization state, optional API-v1 board settings, publisher-role and forum allowlists, and announcement routes/cursors. For linked members it stores verified issuer/subject/link metadata, status/timestamps/errors, and cog-owned role IDs. API tokens, External Sign-In client credentials, and member link credentials are stored separately in Red shared API tokens and removed through their corresponding deliberate disconnect or user-data deletion flow.",
+      "hidden": false,
+      "install_msg": "For membership roles, run `[p]mybbset membership setup` and configure External Sign-In. The Discord server owner may optionally run `[p]mybbset setup` for API-v1 announcements and reviewed forum publishing. See the README for the required private-plugin setup order.",
+      "min_bot_version": "3.5.0",
+      "permissions": [
+        "embed_links",
+        "read_message_history"
+      ],
+      "name": "MyBB",
+      "requirements": [],
+      "short": "MyBB account linking, membership roles, announcements, and reviewed publishing",
+      "tags": [
+        "mybb",
+        "forum",
+        "bridge",
+        "threads",
+        "community"
+      ],
+      "type": "COG",
+      "version": "0.3.5"
+    },
+    "navidrome": {
+      "author": [
+        "SickProdigy"
+      ],
+      "description": "Connect Navidrome, manage linked users and announcements, and optionally submit confirmed artist or album requests through Lidarr.",
+      "disabled": false,
+      "end_user_data_statement": "This cog stores guild connection selections, announcement settings, account mappings, Lidarr request policy, and a bounded request audit. Owner and guild Navidrome/Lidarr credentials are stored separately in isolated Red shared API token namespaces. User-data deletion removes account mappings and anonymizes matching audit attribution.",
+      "hidden": false,
+      "install_msg": "Run `[p]navidromeset setup` to select an owner-approved connection. Bot owners may enable isolated guild-managed public-HTTPS connections with `[p]navidromeowner guildconnections true`. Album notifications are optional.",
+      "min_bot_version": "3.5.0",
+      "permissions": [
+        "embed_links"
+      ],
+      "name": "Navidrome",
+      "requirements": [],
+      "short": "Per-server Navidrome management with optional Lidarr requests",
+      "tags": [
+        "albums",
+        "lidarr",
+        "music",
+        "navidrome",
+        "notifications",
+        "requests",
+        "subsonic"
+      ],
+      "type": "COG",
+      "version": "1.2.3"
+    },
+    "nsfw": {
+      "author": [
+        "SickProdigy",
+        "Pred\u00e4",
+        "aikaterna"
+      ],
+      "description": "Send random NSFW images from configured subreddits and Nekobot API in NSFW-only channels.",
+      "disabled": false,
+      "end_user_data_statement": "This cog stores per-server scheduled feed settings and recently posted media URLs for duplicate suppression. It does not persistently store user data. External media APIs may process request metadata and selected categories according to their own privacy policies.",
+      "hidden": false,
+      "install_msg": "This cog retrieves mature media from Martine, Reddit, and Nekobot. Media commands only work in Discord channels marked NSFW. Use `[p]help nsfw` to review commands before loading it.",
+      "min_bot_version": "3.5.0",
+      "name": "Nsfw",
+      "permissions": [
+        "embed_links"
+      ],
+      "requirements": [],
+      "short": "Send random NSFW images",
+      "tags": [
+        "nsfw",
+        "reddit",
+        "images"
+      ],
+      "type": "COG",
+      "version": "3.1.4"
+    },
+    "palworld": {
+      "author": [
+        "SickProdigy"
+      ],
+      "description": "Publish official Palworld Steam announcements as cards or article-style posts with configurable categories and role notifications.",
+      "disabled": false,
+      "end_user_data_statement": "This cog stores guild announcement settings and bounded Steam announcement IDs. It does not persistently store user data or metadata.",
+      "hidden": false,
+      "install_msg": "Set an announcement channel with `[p]palworldset channel #channel`, choose `[p]palworldset mode card` or `[p]palworldset mode article`, optionally set a notification role, then start automatic posting with `[p]palworldset autopost start`. Existing Steam posts are seeded during setup and will not flood the channel.",
+      "min_bot_version": "3.5.0",
+      "min_python_version": [
+        3,
+        11,
+        0
+      ],
+      "permissions": [
+        "embed_links",
+        "attach_files"
+      ],
+      "name": "Palworld",
+      "requirements": [
+        "Pillow>=13.0.0,<14"
+      ],
+      "short": "Official Palworld Steam announcements",
+      "tags": [
+        "palworld",
+        "steam",
+        "updates",
+        "notifications",
+        "games"
+      ],
+      "type": "COG",
+      "version": "0.1.1"
+    },
+    "pokemon": {
+      "author": [
+        "SickProdigy"
+      ],
+      "description": "A nostalgic catching RPG with activity encounters, battles, progression, retro scenes, a modular interactive Pokedex, Kanto Gyms, and persistent badges.",
+      "disabled": false,
+      "end_user_data_statement": "This cog stores Discord user IDs, globally owned Pokemon, party selections, inventory counts, persistent Pokemon health/status, badges, healing-item counts, catch provenance, Pokedex and trainer-card display preferences, active battles, restart-safe trade journals, and guild/channel spawn and Pokemon Center configuration. User deletion removes the requesting user\u2019s collection and active encounters, cancels pending trade offers, and preserves any already-completed transfer.",
+      "hidden": false,
+      "install_msg": "Configure an opt-in channel with `[p]pokemonset channel #channel`, then choose a starter with `[p]pokemon starter bulbasaur`. This is an unofficial noncommercial game.",
+      "min_bot_version": "3.5.0",
+      "min_python_version": [
+        3,
+        11,
+        0
+      ],
+      "name": "Pokemon",
+      "permissions": [
+        "embed_links",
+        "attach_files"
+      ],
+      "requirements": [
+        "Pillow>=13.0.0,<14"
+      ],
+      "short": "Global Pokemon catching and wild battles",
+      "tags": [
+        "pokemon",
+        "games",
+        "collecting",
+        "battles"
+      ],
+      "type": "COG",
+      "version": "1.4.32"
+    },
+    "polymarket": {
+      "author": [
+        "SickProdigy"
+      ],
+      "description": "Develop-only CryptoWallet connector with protected, default-off Polymarket trading workflows.",
+      "disabled": false,
+      "end_user_data_statement": "This cog stores per-user public Polymarket account and terms records, short-lived public challenges, optional encrypted session-key and CLOB-credential records with public provisioning, reconciliation, revocation, lifecycle, bounded retired-lifecycle history, and rotation state, Deposit Wallet deployment and Bridge funding records, immutable trade, cancellation, and withdrawal approvals, active order and digest-only withdrawal lifecycles, bounded order history, rolling spend reservations, confirmation preferences, and a bounded digest-only audit, plus installation-wide safety settings. It fetches identity-bound public portfolio data and authenticated balance and open-order data without persisting those responses. Session private keys are authenticated ciphertext bound to the user and wallet profile; production trading remains default-off.",
+      "hidden": false,
+      "install_msg": "Polymarket is a develop-only connector to CryptoWallet. The account, session, deposit, trading, claim, and withdrawal flows are implemented and tested with simulated provider responses, but every production capability remains default-off and emergency-paused.",
+      "min_bot_version": "3.5.0",
+      "permissions": [],
+      "name": "Polymarket",
+      "requirements": [
+        "cryptography>=42.0.0,<51.0.0",
+        "eth-hash[pycryptodome]==0.8.0"
+      ],
+      "short": "Protected CryptoWallet-to-Polymarket connector",
+      "tags": [
+        "prediction",
+        "markets",
+        "polymarket",
+        "information"
+      ],
+      "type": "COG",
+      "version": "0.2.50"
+    },
+    "predictions": {
+      "author": [
+        "SickProdigy"
+      ],
+      "description": "Server-local prediction games with optional fictional Red Bank stakes and pari-mutuel payouts.",
+      "disabled": false,
+      "end_user_data_statement": "This cog stores server prediction questions, outcomes, votes, creator IDs, server-local leaderboard scores, and\u2014when optional Red Bank entries are enabled\u2014member IDs, accepted entry amounts, settlement operations, and a bounded audit journal. It uses Red Bank to transfer fictional credits and does not store real-world payment or wallet data.",
+      "hidden": false,
+      "install_msg": "Use `[p]predict` for the interactive home and `[p]predict start` for creation; use `[p]predictset bank` to review the optional fictional Red Bank integration. Bank stakes are disabled by default and have no real-world value.",
+      "min_bot_version": "3.5.0",
+      "min_python_version": [
+        3,
+        8,
+        0
+      ],
+      "name": "Predictions",
+      "permissions": [
+        "embed_links"
+      ],
+      "requirements": [],
+      "short": "Prediction games with optional fictional Red Bank stakes.",
+      "tags": [
+        "predictions",
+        "polls",
+        "games",
+        "leaderboard",
+        "economy"
+      ],
+      "type": "COG",
+      "version": "0.2.1"
+    },
+    "reminder": {
+      "author": [
+        "SickProdigy"
+      ],
+      "description": "Lets users tell the bot to remind them about anything they want.",
+      "disabled": false,
+      "end_user_data_statement": "This cog stores user reminder text, scheduled times, timezone offsets, and malformed records quarantined during recovery.",
+      "hidden": false,
+      "install_msg": "Enjoy reminding yourself of whatever you wanna remind yourself of! Use `[p]help Reminder` to get started.",
+      "min_bot_version": "3.5.0",
+      "min_python_version": [
+        3,
+        8,
+        0
+      ],
+      "name": "Reminder",
+      "permissions": [
+        "embed_links",
+        "add_reactions"
+      ],
+      "requirements": [],
+      "short": "Allows users to remind themselves about anything they want.",
+      "tags": [
+        "remind",
+        "reminder",
+        "remindme"
+      ],
+      "type": "COG",
+      "version": "1.2.1"
+    },
+    "rocketleague": {
+      "author": [
+        "SickProdigy"
+      ],
+      "description": "Post cached Rocket League schedules, official game updates, configured tournaments, and random short clips from guild-selected sources.",
+      "disabled": false,
+      "end_user_data_statement": "This cog stores guild channels and settings, cached public tournament and clip metadata, configured public creator identifiers, and delivery history. It does not store member data.",
+      "hidden": false,
+      "install_msg": "Use `[p]rocketleague updates [position]` for a full recent-news card or `[p]rocketleague updates list` for a compact list. Use `[p]rlcsset channel #channel` for RLCS updates. Use `[p]rocketleagueset gameupdateschannel #channel` and `[p]rocketleagueset gameupdates start` for official game updates. Use `[p]rocketleagueset clips` for cached Medal, Twitch, and YouTube clip posting. Provider credentials are documented in the cog README.",
+      "min_bot_version": "3.5.0",
+      "permissions": [
+        "embed_links"
+      ],
+      "name": "RocketLeague",
+      "requirements": [],
+      "short": "Cached RLCS schedules, official game updates, tournaments, and clips",
+      "tags": [
+        "rocket league",
+        "rlcs",
+        "esports",
+        "blast",
+        "start.gg",
+        "challonge",
+        "medal",
+        "twitch",
+        "youtube",
+        "clips",
+        "news",
+        "updates"
+      ],
+      "type": "COG",
+      "version": "1.8.2"
+    },
+    "roletools": {
+      "author": [
+        "SickProdigy",
+        "TrustyJAID"
+      ],
+      "description": "Various role utility commands, including reaction roles, sticky roles, self roles, auto roles, buttons, selects, and temporary roles.",
+      "disabled": false,
+      "end_user_data_statement": "This cog stores user IDs for sticky-role restoration and restart-safe role-shop purchase counts and timestamps. User IDs may also appear in bot logs.",
+      "hidden": false,
+      "install_msg": "Use `[p]roletools` for the member guide and `[p]roletools setup` for role catalogs, menus, private access groups, and the Red Bank role shop.",
+      "min_bot_version": "3.5.0",
+      "min_python_version": [
+        3,
+        8,
+        1
+      ],
+      "name": "RoleTools",
+      "permissions": [
+        "manage_roles",
+        "embed_links",
+        "add_reactions",
+        "read_message_history"
+      ],
+      "required_cogs": {},
+      "requirements": [],
+      "short": "Various role-related tools",
+      "tags": [
+        "utility",
+        "mod",
+        "roles"
+      ],
+      "type": "COG",
+      "version": "1.15.2"
+    },
+    "rsspublisher": {
+      "author": [
+        "SickProdigy"
+      ],
+      "description": "Configure and automatically post RSS and Atom feeds to Discord channels.",
+      "disabled": false,
+      "end_user_data_statement": "This cog stores server RSS feed URLs, channel destinations, templates, and delivery settings. It does not persistently store user data or metadata.",
+      "hidden": false,
+      "install_msg": "This cog makes outbound requests to administrator-configured RSS or Atom feeds and stores feed URLs, destinations, templates, and delivery settings in Red Config. Use `[p]rsspublisher add <name> <channel> <url>` to add a feed.",
+      "min_bot_version": "3.5.0",
+      "min_python_version": [
+        3,
+        10,
+        0
+      ],
+      "permissions": [
+        "embed_links"
+      ],
+      "name": "RSSPublisher",
+      "requirements": [
+        "beautifulsoup4>=4.12,<5",
+        "feedparser>=6.0,<7",
+        "webcolors>=1.3,<26",
+        "filetype>=1.2,<2"
+      ],
+      "short": "Publish RSS and Atom feed updates",
+      "tags": [
+        "rss",
+        "atom",
+        "feeds",
+        "news",
+        "notifications"
+      ],
+      "type": "COG",
+      "version": "3.2.1"
+    },
+    "runescape": {
+      "author": [
+        "SickProdigy",
+        "TrustyJAID"
+      ],
+      "description": "Look up RuneScape and Old School RuneScape players, quests, items, and wiki articles.",
+      "disabled": false,
+      "end_user_data_statement": "This cog does not persistently store data or metadata about users.",
+      "hidden": false,
+      "install_msg": "This cog sends player names and search terms to Jagex hiscores and RuneScape wiki services. Use `[p]rs user <username>` for OSRS stats or `[p]rs wiki <query>` for wiki search.",
+      "min_bot_version": "3.5.0",
+      "name": "RuneScape",
+      "permissions": [
+        "embed_links"
+      ],
+      "requirements": [],
+      "short": "RuneScape player and wiki lookups",
+      "tags": [
+        "runescape",
+        "osrs",
+        "wiki",
+        "hiscores"
+      ],
+      "type": "COG",
+      "version": "1.0.1"
+    },
+    "rust": {
+      "author": [
+        "SickProdigy"
+      ],
+      "description": "Publish official Rust Steam announcements as cards or article-style posts with configurable categories and role notifications.",
+      "disabled": false,
+      "end_user_data_statement": "This cog stores guild announcement settings and bounded Steam announcement IDs. It does not persistently store user data or metadata.",
+      "hidden": false,
+      "install_msg": "Set an announcement channel with `[p]rustset channel #channel`, choose `[p]rustset mode card` or `[p]rustset mode article`, optionally set a notification role, then start automatic posting with `[p]rustset autopost start`. Existing Steam posts are seeded during setup and will not flood the channel.",
+      "min_bot_version": "3.5.0",
+      "min_python_version": [
+        3,
+        11,
+        0
+      ],
+      "permissions": [
+        "embed_links",
+        "attach_files"
+      ],
+      "name": "Rust",
+      "requirements": [
+        "Pillow>=13.0.0,<14"
+      ],
+      "short": "Official Rust Steam announcements",
+      "tags": [
+        "rust",
+        "steam",
+        "updates",
+        "notifications",
+        "games"
+      ],
+      "type": "COG",
+      "version": "0.1.1"
+    },
+    "tickets": {
+      "author": [
+        "SickProdigy"
+      ],
+      "description": "Private text, voice, or boosted-server thread tickets with persistent controls.",
+      "disabled": false,
+      "end_user_data_statement": "This cog stores ticket destination IDs, ticket numbers, requester and staff Discord IDs, tracked guest IDs, selected support topic, status timestamps, optional closure reason, launcher configuration, support-role IDs, and per-member creation cooldown timestamps. Ticket conversation content remains in Discord channels and is not copied into Red configuration. Closed-ticket metadata is bounded to 500 records per server. User-data deletion revokes managed guest access before removing guest IDs, anonymizes stored requester/staff IDs, and clears cooldown data; Discord permission failures require retry. It cannot remove Discord messages or administrator-retained logs.",
+      "hidden": false,
+      "install_msg": "Run [p]ticketsset with Manage Server to choose the launcher channel, private ticket category, and support roles, then publish the Open Ticket panel.",
+      "min_bot_version": "3.5.0",
+      "permissions": [
+        "manage_channels",
+        "view_channel",
+        "send_messages",
+        "read_message_history",
+        "embed_links",
+        "attach_files",
+        "connect",
+        "speak",
+        "manage_threads",
+        "create_private_threads",
+        "send_messages_in_threads"
+      ],
+      "requirements": [],
+      "short": "Private support tickets for members and server staff",
+      "tags": [
+        "tickets",
+        "support",
+        "helpdesk",
+        "moderation",
+        "private"
+      ],
+      "type": "COG",
+      "version": "0.5.1"
+    },
+    "tokenfactory": {
+      "author": [
+        "SickProdigy"
+      ],
+      "description": "Protected fixed-supply ERC-20 deployments on Base, with Sepolia enabled and a default-off mainnet release candidate.",
+      "disabled": false,
+      "end_user_data_statement": "This cog stores public token deployment drafts, public deployment records, and product-specific mainnet terms acceptance records linked to Discord user IDs and public wallet addresses. It never stores wallet keys, recovery material, or credentials.",
+      "hidden": false,
+      "install_msg": "TokenFactory enables reviewed Base Sepolia deployments. Its Base mainnet release candidate remains default-off until the pinned factory and ordinary-member path pass acceptance. Load CryptoWallet for the optional Discord Wallet route; external-wallet deployment remains product-specific.",
+      "min_bot_version": "3.5.0",
+      "permissions": [
+        "embed_links"
+      ],
+      "requirements": [],
+      "short": "Protected fixed-supply Base token deployments",
+      "tags": [
+        "tokens",
+        "erc20",
+        "base",
+        "testnet",
+        "wallet"
+      ],
+      "type": "COG",
+      "version": "1.1.28"
+    },
+    "twitter": {
+      "author": [
+        "SickProdigy"
+      ],
+      "description": "Publish new posts from configured X accounts into selected Discord channels using the native X API.",
+      "disabled": false,
+      "end_user_data_statement": "This cog stores per-server X account IDs, usernames, destination channel IDs, manager role IDs, polling settings, and last-seen post IDs. It does not store member data. The bot-owner X bearer token is stored separately in Red shared API tokens.",
+      "hidden": false,
+      "install_msg": "The bot owner must configure a native X API bearer token with `[p]set api twitter bearer_token,YOUR_TOKEN`. Server managers can then use `[p]twitterset add #channel username`, `[p]twitterset enabled true`, and `[p]twitterset status`. Native X API reads are billable; review current X pricing before enabling polling.",
+      "min_bot_version": "3.5.0",
+      "permissions": [
+        "embed_links"
+      ],
+      "name": "Twitter",
+      "requirements": [],
+      "short": "Native X post announcements",
+      "tags": [
+        "twitter",
+        "x",
+        "social",
+        "feeds",
+        "notifications"
+      ],
+      "type": "COG",
+      "version": "0.1.2"
+    },
+    "welcome": {
+      "author": [
+        "SickProdigy",
+        "TrustyJAID"
+      ],
+      "description": "Welcome new users to the server or say goodbye when they leave.",
+      "disabled": false,
+      "end_user_data_statement": "This cog does not persistently store data or metadata about users.",
+      "hidden": false,
+      "install_msg": "Use `[p]welcomeset` to see what options are available.",
+      "min_bot_version": "3.5.0",
+      "min_python_version": [
+        3,
+        7,
+        2
+      ],
+      "name": "Welcome",
+      "permissions": [
+        "embed_links"
+      ],
+      "required_cogs": {},
+      "requirements": [],
+      "short": "Welcome new users to the server",
+      "tags": [
+        "welcome",
+        "utility"
+      ],
+      "type": "COG",
+      "version": "2.6.1"
+    },
+    "windrose": {
+      "author": [
+        "SickProdigy"
+      ],
+      "description": "Publish official Windrose Steam announcements as cards or article-style posts with configurable categories and role notifications.",
+      "disabled": false,
+      "end_user_data_statement": "This cog stores guild announcement settings and bounded Steam announcement IDs. It does not persistently store user data or metadata.",
+      "hidden": false,
+      "install_msg": "Set an announcement channel with `[p]windroseset channel #channel`, choose `[p]windroseset mode card` or `[p]windroseset mode article`, optionally set a notification role, then start automatic posting with `[p]windroseset autopost start`. Existing Steam posts are seeded during setup and will not flood the channel.",
+      "min_bot_version": "3.5.0",
+      "min_python_version": [
+        3,
+        11,
+        0
+      ],
+      "permissions": [
+        "embed_links",
+        "attach_files"
+      ],
+      "name": "Windrose",
+      "requirements": [
+        "Pillow>=13.0.0,<14"
+      ],
+      "short": "Official Windrose Steam announcements",
+      "tags": [
+        "windrose",
+        "steam",
+        "updates",
+        "notifications",
+        "games"
+      ],
+      "type": "COG",
+      "version": "0.1.1"
+    },
+    "wolfram": {
+      "author": [
+        "SickProdigy",
+        "aikaterna"
+      ],
+      "description": "Query Wolfram|Alpha for answers. Requires a free API key.",
+      "disabled": false,
+      "end_user_data_statement": "This cog does not persistently store data or metadata about users.",
+      "hidden": false,
+      "install_msg": "Set your Wolfram|Alpha AppID with `[p]set api wolfram appid,APP_ID`, then use `[p]wolfram <question>` or `[p]help Wolfram` to view available commands.",
+      "min_bot_version": "3.5.0",
+      "name": "Wolfram",
+      "permissions": [
+        "attach_files"
+      ],
+      "requirements": [],
+      "short": "Query Wolfram|Alpha for answers",
+      "tags": [
+        "wolfram",
+        "wolframalpha",
+        "math",
+        "answers",
+        "examples"
+      ],
+      "type": "COG",
+      "version": "2.3.1"
+    },
+    "yugioh": {
+      "author": [
+        "SickProdigy"
+      ],
+      "description": "An experimental persistent two-player Yu-Gi-Oh duel prototype with private hands, fixed beginner decks, and a deliberately bounded legacy-style rules subset.",
+      "disabled": false,
+      "end_user_data_statement": "This cog stores Discord user IDs, active duel state, private hands and decks, public actions, and channel/message identifiers. User deletion removes duels involving that user.",
+      "hidden": false,
+      "install_msg": "Start with [p]yugioh challenge @member. This prototype supports only its documented fixed decks and explicit rules subset.",
+      "min_bot_version": "3.5.0",
+      "min_python_version": [
+        3,
+        11,
+        0
+      ],
+      "name": "YuGiOh",
+      "permissions": [
+        "embed_links",
+        "attach_files",
+        "add_reactions"
+      ],
+      "requirements": [
+        "Pillow>=13.0.0,<14"
+      ],
+      "short": "Persistent two-player Yu-Gi-Oh prototype",
+      "tags": [
+        "games",
+        "cards",
+        "yugioh",
+        "multiplayer"
+      ],
+      "type": "COG",
+      "version": "0.1.1"
+    }
+  }
+}

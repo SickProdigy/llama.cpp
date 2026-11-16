@@ -4,6 +4,76 @@ GGUF testing notes for Hermes Agent running through llama.cpp.
 
 This file tracks which local GGUF models can actually complete the Hermes Agent plus Gitea MCP workflow, not just whether they answer a prompt or make a promising first tool call. Use the matrix for quick comparison and the detailed sections below for why a model passed, failed, or landed in the middle.
 
+## November 13, 2026 FableVibes comparison
+
+Both Q4_K_M models were rerun on llama.cpp b12316-5d4c8eeb2 at 98,304 context,
+with matched sampling, q4 K/V, one slot, 4,096 main output and the current frozen
+Hermes profile. Each row uses nine fresh full-agent CLI runs; history sequences
+are separate. These are current control measurements, not pooled with November 12.
+No issue-write test was performed.
+
+| Model · 98,304 context | Gitea used | GitHub attempted | Routing pass | Content pass | Both | Timeout | Median turn |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| VibeForged v2 Q4_K_M control | 3/9 | 7/9 | 2/9 | 1/9 | 1/9 | 1 | 139.2s |
+| FableVibes Q4_K_M | 2/9 | 8/9 | 1/9 | 0/9 | 0/9 | 1 | 182.8s |
+
+See the [full FableVibes comparison](evaluations/2026-11-13-fablevibes/investigation.md)
+and [per-run grades/evidence](evaluations/2026-11-13-fablevibes/runs.csv).
+The original runtime/configuration was restored; credentials/endpoints were
+preserved. The evaluation performed no training or remote issue writes.
+
+## November 12, 2026 ordinary repository prompt evaluation
+
+These new measurements use the complete Hermes conversation loop, ordinary
+repository prompts, three fresh repetitions per prompt, and separate history
+sequences. They supersede any inference that the older guided issue-write
+passes prove reliable ordinary repository work. All runs are read-only against
+the forge; **no issue-write test was performed in this evaluation**.
+
+| Candidate | Gitea used | GitHub attempted | Routing pass | Content pass | Both pass | Median turn |
+|---|---:|---:|---:|---:|---:|---:|
+| VibeForged v2 Q4_K_M · 98,304 | 2/9 | 8/9 | 1/9 | 1/9 | 0/9 | 194.7s |
+| VibeForged v2 Q6_K · 98,304 | 6/9 | 4/9 | 5/9 | 1/9 | 0/9 | 326.6s |
+| Qwen3.5-9B Q8 · 65,536 | 7/9 | 3/9 | 6/9 | 4/9 | 3/9 | 91.5s |
+| Qwen3.5-9B Q8 · 98,304 | 5/9 | 4/9 | 5/9 | 3/9 | 3/9 | 127.9s |
+| Qwen 9B · 65,536 · connections removed | 5/9 | 4/9 | 5/9 | 1/9 | 0/9 | 116.3s |
+| Previous + direct tool schemas | 9/9 | 1/9 | 8/9 | 0/9 | 0/9 | 150.3s |
+| Previous + readable bounded file guidance | 9/9 | 0/9 | 9/9 | 1/9 | 1/9 | 75.8s |
+
+“Both pass” requires Gitea repository use, no GitHub attempt, and a grounded,
+complete answer with distinct ideas. Task completion alone is insufficient.
+Fixtures are public on Gitea (`private: false`), so this measures default-forge
+choice rather than private authorization. `sptnr` was verified as renamed to
+SonicRatings and the lookup prompt was fixed once before the scored matrix.
+
+Q4/Q6 used identical 98,304 context, q4 K/V, one slot, native sampler settings,
+4,096 output cap and tool configuration. Qwen used its native 0.8/top-k40
+sampler, versus VibeForged's 1.0/top-k20; it is a separate model/configuration
+comparison. The Q4/Q6 system prompt differs in its visible model-identity
+line; this is not blinded. All models fit the P100: sampled peaks were Q4 9,084 MiB, Q6 11,684 MiB,
+Qwen 65k 9,474 MiB and Qwen 98k 9,922 MiB. Median first API-call
+latencies were respectively 3.8s, 5.5s, 3.3s and 3.7s (warm-cache
+measurements, not first-token latency). Neither higher precision nor more context
+established reliable task quality.
+
+The investigation confirmed stale Gitea tool names, deferred Gitea discovery
+beside eager connection administration, and a separate compression defect:
+auxiliary requests omit an output cap and inherit server `--n-predict 512`.
+Historical OAuth-token removal does **not** establish broken authentication.
+
+No configuration tested here qualifies for reliable ordinary repository work.
+The original Q4 configuration was restored. Prefer Qwen 65k for further
+validation; direct schemas improve observed forge routing, while content and
+novelty failures remain. Compression-budget, namespace and method-surface
+repairs need separate validation before training. Credentials and endpoints
+were preserved; the evaluation made no new issue writes.
+
+See the [full investigation](evaluations/2026-11-12/investigation.md),
+[per-run metrics and grades](evaluations/2026-11-12/runs.csv), and
+[evidence layout](evaluations/2026-11-12/EVIDENCE.md) for configuration factors,
+history outcomes, limits and restoration verification. These are uniform core
+CLI evaluations; native Discord/API gateway parity is not claimed.
+
 ## Current Test Setup
 
 Hardware baseline for all results in this file: NVIDIA Tesla P100 with `16 GiB` VRAM. Unless a section explicitly says otherwise, every model result and VRAM observation below came from this card.
@@ -37,7 +107,16 @@ however, so 98k memory fit is confirmed while workflow quality remains mixed.
 
 `model.max_tokens` matters here: leaving it unset let Hermes request huge post-tool generations, and llama.cpp treated the per-request OpenAI body as the real limit instead of the compose-level `--n-predict 512`.
 
-## Success Criteria
+## Ordinary Repository Task Criteria
+
+The November evaluations require a successful configured Gitea repository read,
+no GitHub attempt, and a grounded answer that satisfies the requested count and
+novelty. Routing and content are scored independently; both must pass for a
+combined pass. Separate history sequences measure context carryover. These
+read-only tests do not establish issue-write reliability or native Discord/API
+gateway parity.
+
+### Historical Guided Workflow Criteria
 
 | Check | Required result |
 |---|---|
@@ -49,6 +128,41 @@ however, so 98k memory fit is confirmed while workflow quality remains mixed.
 | Output discipline | Avoids duplicate tool retries and runaway decode length |
 
 ## Test Matrix
+
+### Latest Ordinary Repository Results
+
+Each row below uses nine fresh full-agent CLI sessions (three repetitions of
+three fixed prompts). “Both” means routing and content passed in the same run.
+These are the latest baseline observations for each model/context, not a pooled
+ranking: the November 13 comparison used backend b12316, while November 12 used
+b12282. The dated sections above retain all configurations and earlier scores.
+
+| Model / quant | Evaluated | Context | Routing | Content | Both | Sampled peak VRAM | Median first API call | Median turn | Issue writes |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---|
+| VibeForged v2 Q4_K_M | [Nov 13](evaluations/2026-11-13-fablevibes/investigation.md) | 98,304 | 2/9 | 1/9 | 1/9 | 9,084 MiB | 4.2s | 139.2s | Not retested |
+| FableVibes Q4_K_M | [Nov 13](evaluations/2026-11-13-fablevibes/investigation.md) | 98,304 | 1/9 | 0/9 | 0/9 | 9,084 MiB | 3.6s | 182.8s | Not tested |
+| VibeForged v2 Q6_K | [Nov 12](evaluations/2026-11-12/investigation.md) | 98,304 | 5/9 | 1/9 | 0/9 | 11,684 MiB | 5.5s | 326.6s | Not retested |
+| Qwen3.5-9B Q8_0 | [Nov 12](evaluations/2026-11-12/investigation.md) | 65,536 | 6/9 | 4/9 | 3/9 | 9,474 MiB | 3.3s | 91.5s | Not retested |
+| Qwen3.5-9B Q8_0 | [Nov 12](evaluations/2026-11-12/investigation.md) | 98,304 | 5/9 | 3/9 | 3/9 | 9,922 MiB | 3.7s | 127.9s | Not retested |
+
+No candidate established reliable ordinary repository work. Keep the deployed
+VibeForged Q4 configuration for now: FableVibes did not improve the matched
+comparison. Qwen 9B remains a candidate for further validation from the earlier
+sweep, rather than a proven replacement on the newer backend. First API-call
+times include generation and can use cached prompts; they are not time to first
+token. VRAM was sampled, so transient peaks may be higher.
+
+Both November 13 history sequences failed on the final five-idea turn after
+context growth and truncated auxiliary summaries. FableVibes also repeated
+existing functionality in the one-cog turn. The existing summary-budget defect
+remains unresolved; no runtime update or new model test accompanies this
+README reconciliation.
+
+### Historical Guided Workflow Results
+
+The matrix below preserves historical guided workflow probes (primarily June/July
+2026, with later dated retests). Its “pass” labels apply only to those guided
+issue-creation probes, not the ordinary repository acceptance test above.
 
 Timings in the matrix are centered on the minimal issue-write workflow. Use `Minimal workflow total time` for the best apples-to-apples speed comparison; detailed call timing and retry behavior stay in the per-model write-ups.
 
@@ -74,11 +188,11 @@ Status rule: this matrix is about whether a model works for the real Gitea issue
 | `meta-llama-3.1-8b-instruct-q4_k_m.gguf` | 🔴 Fail | n/a | n/a | `65536` loaded | ~1.9k | Template exposed no tool support; did not call any tool | Failed | Failed | Failed: no tool-call path | n/a | Yes: retest current generic tool handling |
 | `Qwen3-14B-Q4_K_M.gguf` | 🔴 Fail | n/a | ~14.4 GiB | `40960` despite `--ctx-size 65536` | ~14.5k | Tool support exposed; called issue_write but malformed args | Failed: malformed args | Failed | n/a | n/a | No: 40.9k context and high VRAM remain blockers |
 | `Qwen3-14B.Q5_K_M.gguf` | 🔴 Fail | n/a | ~13.0 GiB | `40960`; `65536` requested triggers training-context overflow warning | ~14.5k minimal | Tool support exposed; minimal write looped on malformed issue-write args | Failed: body missing | Failed | n/a | n/a | No: 40.9k context ceiling remains |
-| `Qwen3.5-9B-Q8_0.gguf` | 🟢 Pass | n/a | ~9.5 GiB | `65536` requested; minimal and harder workflows completed cleanly | ~14.7k minimal; ~34.7k advanced | Tool support exposed; valid issue-write path on minimal and harder workflows | Passed: concept issue created cleanly | ~52.3s | Passed with caveat: recovered after one `get_dir_contents` error | ~110.5s | Baseline: highest-priority comparison retest |
-| `Qwen3.6-14B-A3B-VibeForged-v2-Q4_K_M.gguf` | 🟢 Pass | n/a | ~8.8 GiB | `65536` loaded | ~14.7k minimal; ~35.5k advanced | Tool support exposed; valid issue-write path on both minimal and harder repo-review turns | Passed: concept issue created cleanly | ~69.1s | Passed: 1 concept issue created after targeted repo review | ~160.1s | Retested at 98k; see the next row |
-| `Qwen3.6-14B-A3B-VibeForged-v2-Q4_K_M.gguf` (98k natural-prompt retest) | 🟡 Mixed | n/a | ~8.9 GiB (`9072MiB`) | `98304` loaded and confirmed | ~25.4k shown during failed turn | Context was not exhausted, but the model disobeyed the explicit `use Gitea MCP` route: directory-as-file errors triggered MCP cooldown, then it drifted into web, browser, `execute_code`, curl, and GitHub attempts | Not retested | n/a | Failed: 30 tool turns exhausted without returning the requested five ideas | ~3m shown before interruption | Yes: rerun after the prompt and skill cleanup |
+| `Qwen3.5-9B-Q8_0.gguf` | 🟢 Pass | n/a | ~9.5 GiB | `65536` requested; minimal and harder workflows completed cleanly | ~14.7k minimal; ~34.7k advanced | Tool support exposed; valid issue-write path on minimal and harder workflows | Passed: concept issue created cleanly | ~52.3s | Passed with caveat: recovered after one `get_dir_contents` error | ~110.5s | Retested Nov 12: 3/9 combined at both contexts; see latest matrix |
+| `Qwen3.6-14B-A3B-VibeForged-v2-Q4_K_M.gguf` | 🟢 Pass | n/a | ~8.8 GiB | `65536` loaded | ~14.7k minimal; ~35.5k advanced | Tool support exposed; valid issue-write path on both minimal and harder repo-review turns | Passed: concept issue created cleanly | ~69.1s | Passed: 1 concept issue created after targeted repo review | ~160.1s | Retested Nov 13 at 98k: 1/9 combined; see latest matrix |
+| `Qwen3.6-14B-A3B-VibeForged-v2-Q4_K_M.gguf` (98k natural-prompt retest) | 🟡 Mixed | n/a | ~8.9 GiB (`9072MiB`) | `98304` loaded and confirmed | ~25.4k shown during failed turn | Context was not exhausted, but the model disobeyed the explicit `use Gitea MCP` route: directory-as-file errors triggered MCP cooldown, then it drifted into web, browser, `execute_code`, curl, and GitHub attempts | Not retested | n/a | Failed: 30 tool turns exhausted without returning the requested five ideas | ~3m shown before interruption | Retested Nov 12/13: ordinary-task failures remain; see latest matrix |
 | `Qwen3.5-14B-A3B-Claude-Opus-Reasoning-Distilled-4.6-MXFP4_MOE.gguf` | 🟡 Mixed | n/a | ~8.9-9.2 GiB | `65536` loaded in current test; Hermes metadata guessed higher | ~14.6k minimal; ~20.3k sequential harder; ~98k older resumed path | Tool support exposed, but write reliability is weak and it drifts after repeated tool failures | Failed: repeated `body is required` on clean minimal test | Failed | Mixed: older harder path eventually passed, but same-session retest failed | ~1059.4s older pass; ~53.3s failed retest | Yes: current schemas and routing may change this result |
-| `Qwen3.6-14B-A3B-VibeForged-v2-Q6_K.gguf` | 🟢 Pass | n/a | ~11.6 GiB | `98304` loaded | ~14.7k minimal; ~48k advanced | Tool support exposed; valid `mcp_gitea_issue_write`; advanced flow still over-reads but now fits | Passed: issue #10 created | ~64.9s | Passed with caveats: 1 concept issue created after 18 API calls | ~346.8s | Baseline: useful 98k comparison, but tight with Ollama |
+| `Qwen3.6-14B-A3B-VibeForged-v2-Q6_K.gguf` | 🟢 Pass | n/a | ~11.6 GiB | `98304` loaded | ~14.7k minimal; ~48k advanced | Tool support exposed; valid `mcp_gitea_issue_write`; advanced flow still over-reads but now fits | Passed: issue #10 created | ~64.9s | Passed with caveats: 1 concept issue created after 18 API calls | ~346.8s | Retested Nov 12: 0/9 combined; see latest matrix |
 | `qwen2.5-coder-14b-instruct-q4_k_m.gguf` | 🔴 Fail | ~9.0 GB | n/a | `65536` loaded | ~14.5k | Did not call any tool for explicit issue-create prompt | Failed | Failed | Failed: no usable tool-call path | n/a | Yes: native/current tool handling deserves one retest |
 | `qwen2.5-coder-14b-instruct-q6_k.gguf` | 🔴 Fail | ~12.1 GB | ~15.2 GiB | `65536` requested; repeated loading instability | ~14.5k | No tool use; text-only reply after repeated 503 loading failures | Failed | Failed | Failed: no usable tool-call path | n/a | No: loading instability and VRAM leave no Ollama reserve |
 | `qwen2.5-coder-7b-instruct-q8_0.gguf` | 🔴 Fail | ~8.1 GB | ~8.8 GiB | `65536` requested | n/a | No confirmed MCP completion; three long model calls, then Hermes shut down | Failed | Failed | Failed: simple prompt never completed | n/a | Yes: cheap retest under the cleaned Hermes setup |

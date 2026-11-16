@@ -1,0 +1,86 @@
+[
+  {
+    "candidate": "q4-baseline",
+    "n": 9,
+    "gitea": 2,
+    "github": 8,
+    "routing_pass": 1,
+    "content_pass": 1,
+    "partial": 3,
+    "combined_pass": 0,
+    "timeouts": 0,
+    "median_seconds": 194.7
+  },
+  {
+    "candidate": "q6-baseline",
+    "n": 9,
+    "gitea": 6,
+    "github": 4,
+    "routing_pass": 5,
+    "content_pass": 1,
+    "partial": 3,
+    "combined_pass": 0,
+    "timeouts": 2,
+    "median_seconds": 326.6
+  },
+  {
+    "candidate": "qwen9-baseline",
+    "n": 9,
+    "gitea": 7,
+    "github": 3,
+    "routing_pass": 6,
+    "content_pass": 4,
+    "partial": 3,
+    "combined_pass": 3,
+    "timeouts": 0,
+    "median_seconds": 91.5
+  },
+  {
+    "candidate": "qwen9-common98",
+    "n": 9,
+    "gitea": 5,
+    "github": 4,
+    "routing_pass": 5,
+    "content_pass": 3,
+    "partial": 4,
+    "combined_pass": 3,
+    "timeouts": 0,
+    "median_seconds": 127.9
+  },
+  {
+    "candidate": "qwen9-no-connections",
+    "n": 9,
+    "gitea": 5,
+    "github": 4,
+    "routing_pass": 5,
+    "content_pass": 1,
+    "partial": 4,
+    "combined_pass": 0,
+    "timeouts": 0,
+    "median_seconds": 116.3
+  },
+  {
+    "candidate": "qwen9-no-connections-eager",
+    "n": 9,
+    "gitea": 9,
+    "github": 1,
+    "routing_pass": 8,
+    "content_pass": 0,
+    "partial": 7,
+    "combined_pass": 0,
+    "timeouts": 0,
+    "median_seconds": 150.3
+  },
+  {
+    "candidate": "qwen9-readable",
+    "n": 9,
+    "gitea": 9,
+    "github": 0,
+    "routing_pass": 9,
+    "content_pass": 1,
+    "partial": 4,
+    "combined_pass": 1,
+    "timeouts": 1,
+    "median_seconds": 75.8
+  }
+]

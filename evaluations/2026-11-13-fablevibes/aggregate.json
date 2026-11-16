@@ -1,0 +1,26 @@
+[
+  {
+    "candidate": "fablevibes",
+    "n": 9,
+    "gitea": 2,
+    "github": 8,
+    "routing_pass": 1,
+    "content_pass": 0,
+    "partial": 3,
+    "combined_pass": 0,
+    "timeouts": 1,
+    "median_seconds": 182.8
+  },
+  {
+    "candidate": "vibeforged-control",
+    "n": 9,
+    "gitea": 3,
+    "github": 7,
+    "routing_pass": 2,
+    "content_pass": 1,
+    "partial": 4,
+    "combined_pass": 1,
+    "timeouts": 1,
+    "median_seconds": 139.2
+  }
+]

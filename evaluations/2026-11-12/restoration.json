@@ -1,0 +1,63 @@
+{
+  "utc": "2026-11-13T01:48:42.733492+00:00",
+  "containers": {
+    "hermes": {
+      "same_container": true,
+      "same_image": true,
+      "image_id": "sha256:ed43b1c44a722eff23041b7db2f3866ac80edc33650104a684837830d3798cd3",
+      "same_command": true,
+      "same_environment": true,
+      "same_mounts": true,
+      "same_port_bindings": true,
+      "same_network_mode": true,
+      "running": true,
+      "health": null
+    },
+    "llama-cpp": {
+      "same_container": true,
+      "same_image": true,
+      "image_id": "sha256:d739b8232bd6b94add913c7e5b2271997d77b8db4cf4493a07e8b44d3820fcdb",
+      "same_command": true,
+      "same_environment": true,
+      "same_mounts": true,
+      "same_port_bindings": true,
+      "same_network_mode": true,
+      "running": true,
+      "health": "healthy"
+    }
+  },
+  "files": {
+    "/media/prodigy/Coding-Programming/docker-containers/hermes-agent/data/config.yaml": true,
+    "/media/prodigy/Coding-Programming/docker-containers/hermes-agent/data/.env": true,
+    "/media/prodigy/Coding-Programming/docker-containers/hermes-agent/docker-compose.yml": true,
+    "/media/prodigy/Coding-Programming/docker-containers2/llama.cpp/docker-compose.yml": true,
+    "/media/prodigy/Coding-Programming/docker-containers/hermes-agent/data/skills/gitea/gitea-repo-management/SKILL.md": true,
+    "/media/prodigy/Coding-Programming/docker-containers/hermes-agent/data/skills/gitea/gitea-workflow/SKILL.md": true,
+    "/media/prodigy/Coding-Programming/docker-containers/hermes-agent/data/skills/gitea/gitea-auth/SKILL.md": true,
+    "/media/prodigy/Coding-Programming/docker-containers/hermes-agent/data/skills/gitea/gitea-issues/SKILL.md": true,
+    "/media/prodigy/Coding-Programming/docker-containers/hermes-agent/data/skills/gitea/gitea-pr-workflow/SKILL.md": true
+  },
+  "backend": {
+    "alias": "qwen3.6-14b-a3b-vibeforged-v2-q4_k_m",
+    "context": 98304,
+    "slots": 1,
+    "caps": {
+      "supports_object_arguments": true,
+      "supports_parallel_tool_calls": true,
+      "supports_preserve_reasoning": true,
+      "supports_reasoning_effort": false,
+      "supports_string_content": true,
+      "supports_system_role": true,
+      "supports_tool_calls": true,
+      "supports_tools": true,
+      "supports_typed_content": true,
+      "reasoning_effort_levels": []
+    },
+    "build": "b12282-aa75ff323"
+  },
+  "backend_health": {
+    "status": "ok"
+  },
+  "gateway_process_present": true,
+  "gpu": "name, memory.used [MiB], memory.total [MiB], utilization.gpu [%]\nTesla P100-PCIE-16GB, 9028 MiB, 16384 MiB, 0 %"
+}
