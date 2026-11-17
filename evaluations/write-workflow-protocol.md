@@ -1,9 +1,12 @@
 # Next evaluation: bounded Gitea fork and issue workflow
 
-Status: specified, not run. The upstream repository and destination namespace
-must be chosen before execution. This replaces the five-new-cogs prompt in the
-next protocol; earlier read-only measurements retain their original prompts
-and scores. No new model result is claimed here.
+Status: exercised on November 17 against `sickprodigy/nicotineplus-plugins`,
+with destination `hermes-agent`. See the [first write-probe results](2026-11-17-fork-issue/investigation.md).
+Both model variants failed; a separate direct MCP control created the fork and
+received an issue-creation response, but issue read-back remains blocked with
+Issues disabled on the fork. These are separate from earlier read-only scores.
+The template below applies to future approved fixtures; do not repeat writes to
+the existing test objects.
 
 Keep the first two prompts:
 
@@ -80,3 +83,15 @@ write is not proof of a successful mutation.
 No cleanup write, resource deletion, coding work or live Discord message is
 part of this test. Record created resources for later owner-approved cleanup.
 Keep this protocol's results separate from historical read-only comparisons.
+
+
+## Fixture lesson from the first run
+
+A personal destination is not an organization: verify identity with `get_me`;
+omit `org` to use that authenticated personal account. A fresh fork can report
+`has_issues: false` even though an issue-creation API call is accepted. Confirm
+both feature availability and actual read-back; a returned issue number is not
+a full pass. Do not expand permissions or silently enable settings to make the
+model pass. If setup requires an operator action, record it separately. Prefer
+independent fork and issue probes when an issues-enabled fixture cannot be
+established for the combined workflow.

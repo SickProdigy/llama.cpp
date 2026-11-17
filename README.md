@@ -4,15 +4,21 @@ GGUF testing notes for Hermes Agent running through llama.cpp.
 
 This file tracks which local GGUF models can actually complete the Hermes Agent plus Gitea MCP workflow, not just whether they answer a prompt or make a promising first tool call. Use the matrix for quick comparison and the detailed sections below for why a model passed, failed, or landed in the middle.
 
-## Next test: real Gitea fork and issue writes
+## November 17, 2026 real Gitea fork/issue probe
 
-The next protocol replaces the third, five-cog advice prompt with a bounded
-fork → verify → create one issue → read it back workflow. It permits actual
-writes only to an approved test fork, with early stops for tangents. The source
-repository and destination are still pending; this test has not run. Existing
-read-only results below retain their original prompts and acceptance criteria.
+The third test now exercises actual writes against the approved small
+`nicotineplus-plugins` fixture. Both VibeForged model attempts failed: they
+supplied a personal account as an organization and were stopped before unrelated
+tool use. No model-created fork or issue resulted.
 
-See the [exact prompt, write scope and early-stop rules](evaluations/write-workflow-protocol.md).
+A separate direct control using the same Hermes MCP account created the test
+fork and obtained an accepted issue #1 response. Fork read-back passed; issue
+read-back returns 404 while the fork's Issues feature is disabled. Enabling it
+through the current MCP is blocked by the method allowlist. This control is
+**not an agent pass**. The live model/profile/credentials remain unchanged.
+
+See the [write probe and actual resource state](evaluations/2026-11-17-fork-issue/investigation.md)
+and [bounded write-test protocol](evaluations/write-workflow-protocol.md).
 
 ## November 16, 2026 repaired profile and Qwen9B Q5 comparison
 
