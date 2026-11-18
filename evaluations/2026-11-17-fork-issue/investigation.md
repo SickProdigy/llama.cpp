@@ -98,8 +98,9 @@ one issue-creation call and one issue-read call.
 An operator MCP attempt to enable only this fork's Issues setting was rejected:
 `method "update" is not enabled by the --tools allowlist`. No setting or MCP
 permission was changed. The disabled Issues feature is consistent with the
-read-back failure; a successful recheck after enabling it is still needed to
-confirm recovery. The create response alone is not a complete workflow pass.
+read-back failure; at that point a successful recheck after enabling it was
+still needed. That recheck is recorded below. The create response alone was
+not a complete workflow pass.
 
 ## November 18 follow-up: read-back resolved
 
@@ -140,7 +141,8 @@ redacted. These harness scripts require a fresh private profile and this
 workspace's Docker resources; they are an operational record, not a portable
 one-command benchmark.
 
-The source main tree and its three open issues remain unchanged; its fork count
+During the November 17 probe, the source main tree and its three open issues
+remained unchanged; its fork count
 increased by one as expected. No code, upstream issue, additional branch, PR or repository
 settings were changed. The original containers/images/model/configuration,
 credentials and endpoints were verified unchanged, and Hermes was restored after
