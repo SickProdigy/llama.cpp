@@ -1,0 +1,892 @@
+{
+  "checked_utc": "2026-11-18T21:33:08.223485+00:00",
+  "upstream_main": {
+    "name": "main",
+    "commit": {
+      "id": "84afaf401b29753b6810e4f92f253e0d28637dbf",
+      "message": "Handle terminal Nicotine transfer refusals\n",
+      "url": "https://gitea.rcs1.top/sickprodigy/nicotineplus-plugins/commit/84afaf401b29753b6810e4f92f253e0d28637dbf",
+      "author": {
+        "name": "sickprodigy",
+        "email": "[USER_EMAIL]",
+        "username": "sickprodigy"
+      },
+      "committer": {
+        "name": "sickprodigy",
+        "email": "[USER_EMAIL]",
+        "username": "sickprodigy"
+      },
+      "verification": {
+        "verified": false,
+        "reason": "gpg.error.not_signed_commit",
+        "signature": "",
+        "signer": null,
+        "payload": ""
+      },
+      "timestamp": "2026-11-01T12:05:55-05:00",
+      "added": null,
+      "removed": null,
+      "modified": null
+    },
+    "protected": false,
+    "required_approvals": 0,
+    "enable_status_check": false,
+    "status_check_contexts": [],
+    "user_can_push": false,
+    "user_can_merge": false,
+    "effective_branch_protection_name": ""
+  },
+  "fork_parent": "sickprodigy/nicotineplus-plugins",
+  "runs": [
+    {
+      "requested_issue_first": true,
+      "fork_parent": "sickprodigy/nicotineplus-plugins",
+      "run_id": "20261118-vibeforged-contribution",
+      "issue_matches": true,
+      "issue_created": true,
+      "issue_number": 4,
+      "issue_url": "https://gitea.rcs1.top/sickprodigy/nicotineplus-plugins/issues/4",
+      "branch_created": false,
+      "file_exact": false,
+      "pr_correct": false,
+      "pr_number": null,
+      "pr_url": null,
+      "only_requested_pr_file": false,
+      "readback": {
+        "issue": false,
+        "file": false,
+        "pr": false
+      },
+      "state": {
+        "early_stop": "unapproved mutation: repo_write",
+        "validation_rejections": 0,
+        "elapsed": 63.704,
+        "tool_calls": 3,
+        "issue_number": 4,
+        "branch_created": false,
+        "commit_created": false,
+        "pr_number": null,
+        "dispatched_stages": [
+          "issue"
+        ]
+      },
+      "branch": {
+        "error": 404
+      },
+      "file": {
+        "error": 404
+      },
+      "pr": {},
+      "pr_files": [],
+      "returned_resource_urls": {
+        "issue": false,
+        "pr": false,
+        "file_or_branch": false
+      },
+      "implementation_workflow_pass": false,
+      "whole_workflow_pass": false,
+      "issue_created_in_this_run": true,
+      "variant": "full Discord profile",
+      "harness_invalidated": true
+    },
+    {
+      "requested_issue_first": true,
+      "fork_parent": "sickprodigy/nicotineplus-plugins",
+      "run_id": "20261118-qwen9-q5-contribution",
+      "issue_matches": true,
+      "issue_created": true,
+      "issue_number": 5,
+      "issue_url": "https://gitea.rcs1.top/sickprodigy/nicotineplus-plugins/issues/5",
+      "branch_created": false,
+      "file_exact": false,
+      "pr_correct": false,
+      "pr_number": null,
+      "pr_url": null,
+      "only_requested_pr_file": false,
+      "readback": {
+        "issue": false,
+        "file": false,
+        "pr": false
+      },
+      "state": {
+        "early_stop": "wrong branch mutation/target",
+        "validation_rejections": 0,
+        "elapsed": 93.417,
+        "tool_calls": 3,
+        "issue_number": 5,
+        "branch_created": false,
+        "commit_created": false,
+        "pr_number": null,
+        "dispatched_stages": [
+          "issue"
+        ],
+        "effective_fork_name": "hermes-mcp-test-20261117-vf-144838"
+      },
+      "branch": {
+        "error": 404
+      },
+      "file": {
+        "error": 404
+      },
+      "pr": {},
+      "pr_files": [],
+      "returned_resource_urls": {
+        "issue": false,
+        "pr": false,
+        "file_or_branch": false
+      },
+      "implementation_workflow_pass": false,
+      "whole_workflow_pass": false,
+      "issue_created_in_this_run": true,
+      "variant": "full Discord profile",
+      "harness_invalidated": true
+    },
+    {
+      "requested_issue_first": false,
+      "fork_parent": "sickprodigy/nicotineplus-plugins",
+      "run_id": "20261118-fablevibes-contribution",
+      "issue_matches": false,
+      "issue_created": false,
+      "issue_number": null,
+      "issue_url": null,
+      "branch_created": false,
+      "file_exact": false,
+      "pr_correct": false,
+      "pr_number": null,
+      "pr_url": null,
+      "only_requested_pr_file": false,
+      "readback": {
+        "issue": false,
+        "file": false,
+        "pr": false
+      },
+      "state": {
+        "early_stop": "fork attempted before upstream issue",
+        "validation_rejections": 0,
+        "elapsed": 57.895,
+        "tool_calls": 3,
+        "issue_number": null,
+        "branch_created": false,
+        "commit_created": false,
+        "pr_number": null,
+        "dispatched_stages": [],
+        "effective_fork_name": "hermes-mcp-test-20261117-vf-144838"
+      },
+      "branch": {
+        "error": 404
+      },
+      "file": {
+        "error": 404
+      },
+      "pr": {},
+      "pr_files": [],
+      "returned_resource_urls": {
+        "issue": false,
+        "pr": false,
+        "file_or_branch": false
+      },
+      "implementation_workflow_pass": false,
+      "whole_workflow_pass": false,
+      "issue_created_in_this_run": false,
+      "variant": "full Discord profile",
+      "harness_invalidated": true
+    },
+    {
+      "requested_issue_first": false,
+      "fork_parent": "sickprodigy/nicotineplus-plugins",
+      "run_id": "20261118-vibeforged-retry-contribution",
+      "issue_matches": false,
+      "issue_created": false,
+      "issue_number": null,
+      "issue_url": null,
+      "branch_created": false,
+      "file_exact": false,
+      "pr_correct": false,
+      "pr_number": null,
+      "pr_url": null,
+      "only_requested_pr_file": false,
+      "readback": {
+        "issue": false,
+        "file": false,
+        "pr": false
+      },
+      "state": {
+        "early_stop": "repeated identical rejected call",
+        "validation_rejections": 1,
+        "elapsed": 65.102,
+        "tool_calls": 2,
+        "issue_number": null,
+        "branch_created": false,
+        "commit_created": false,
+        "pr_number": null,
+        "dispatched_stages": [],
+        "effective_fork_name": "hermes-mcp-test-20261117-vf-144838"
+      },
+      "branch": {
+        "error": 404
+      },
+      "file": {
+        "error": 404
+      },
+      "pr": {},
+      "pr_files": [],
+      "returned_resource_urls": {
+        "issue": false,
+        "pr": false,
+        "file_or_branch": false
+      },
+      "implementation_workflow_pass": false,
+      "whole_workflow_pass": false,
+      "issue_created_in_this_run": false,
+      "variant": "full Discord profile",
+      "harness_invalidated": true
+    },
+    {
+      "requested_issue_first": true,
+      "fork_parent": "sickprodigy/nicotineplus-plugins",
+      "run_id": "20261118-qwen9-q5-retry-contribution",
+      "issue_matches": true,
+      "issue_created": true,
+      "issue_number": 6,
+      "issue_url": "https://gitea.rcs1.top/sickprodigy/nicotineplus-plugins/issues/6",
+      "branch_created": true,
+      "file_exact": false,
+      "pr_correct": false,
+      "pr_number": null,
+      "pr_url": null,
+      "only_requested_pr_file": false,
+      "readback": {
+        "issue": false,
+        "file": false,
+        "pr": false
+      },
+      "state": {
+        "early_stop": "commit must target test branch",
+        "validation_rejections": 1,
+        "elapsed": 93.461,
+        "tool_calls": 6,
+        "issue_number": 6,
+        "branch_created": false,
+        "commit_created": false,
+        "pr_number": null,
+        "dispatched_stages": [
+          "branch",
+          "issue"
+        ],
+        "effective_fork_name": "hermes-mcp-test-20261117-vf-144838"
+      },
+      "branch": {
+        "name": "mcp-test-20261118-qwen9-q5-retry-contribution",
+        "commit": {
+          "id": "84afaf401b29753b6810e4f92f253e0d28637dbf",
+          "message": "Handle terminal Nicotine transfer refusals\n",
+          "url": "https://gitea.rcs1.top/hermes-agent/hermes-mcp-test-20261117-vf-144838/commit/84afaf401b29753b6810e4f92f253e0d28637dbf",
+          "author": {
+            "name": "sickprodigy",
+            "email": "[USER_EMAIL]",
+            "username": "sickprodigy"
+          },
+          "committer": {
+            "name": "sickprodigy",
+            "email": "[USER_EMAIL]",
+            "username": "sickprodigy"
+          },
+          "verification": {
+            "verified": false,
+            "reason": "gpg.error.not_signed_commit",
+            "signature": "",
+            "signer": null,
+            "payload": ""
+          },
+          "timestamp": "2026-11-01T12:05:55-05:00",
+          "added": null,
+          "removed": null,
+          "modified": null
+        },
+        "protected": false,
+        "required_approvals": 0,
+        "enable_status_check": false,
+        "status_check_contexts": [],
+        "user_can_push": false,
+        "user_can_merge": false,
+        "effective_branch_protection_name": ""
+      },
+      "file": {
+        "name": "README.md",
+        "path": "README.md",
+        "sha": "d76505d7be1b961353005157d9c4041f006a1a89",
+        "last_commit_sha": "480d33ffbbff06c41a3543ce1692342dec9d7eff",
+        "last_committer_date": "2026-10-14T21:37:56Z",
+        "last_author_date": "2026-10-14T21:37:56Z",
+        "type": "file",
+        "size": 4808,
+        "encoding": "base64",
+        "content": "IyDwn461IE5pY290aW5lUGx1cyBQbHVnaW5zCgpbIVtMaWNlbnNlXShodHRwczovL2ltZy5zaGllbGRzLmlvL2JhZGdlL0xpY2Vuc2UtTUlULWJsdWUuc3ZnKV0oTElDRU5TRSkKWyFbUHl0aG9uXShodHRwczovL2ltZy5zaGllbGRzLmlvL2JhZGdlL1B5dGhvbi0zLjYrLWdyZWVuLnN2ZyldKGh0dHBzOi8vd3d3LnB5dGhvbi5vcmcvKQpbIVtOaWNvdGluZStdKGh0dHBzOi8vaW1nLnNoaWVsZHMuaW8vYmFkZ2UvTmljb3RpbmUrLUNvbXBhdGlibGUtYnJpZ2h0Z3JlZW4uc3ZnKV0oaHR0cHM6Ly9uaWNvdGluZS1wbHVzLm9yZy8pCgo+IEVuaGFuY2UgeW91ciBOaWNvdGluZSsgZXhwZXJpZW5jZSB3aXRoIHBvd2VyZnVsLCBjb21tdW5pdHktZHJpdmVuIHBsdWdpbnMuCgojIyDwn5OLIFRhYmxlIG9mIENvbnRlbnRzCgotIFtBYm91dF0oI2Fib3V0KQotIFtBdmFpbGFibGUgUGx1Z2luc10oI2F2YWlsYWJsZS1wbHVnaW5zKQotIFtJbnN0YWxsYXRpb25dKCNpbnN0YWxsYXRpb24pCi0gW0NvbnRyaWJ1dGluZ10oI2NvbnRyaWJ1dGluZykKCiMjIEFib3V0CgpUaGlzIGRpcmVjdG9yeSBjb250YWlucyBwbHVnaW5zIGZvciAqKk5pY290aW5lKyoqLCBhIGdyYXBoaWNhbCBjbGllbnQgZm9yIHRoZSBTb3Vsc2VlayBmaWxlIHNoYXJpbmcgbmV0d29yay4gCgpBIHBsdWdpbiBpcyBhIFB5dGhvbiBtb2R1bGUgdGhhdCBleHRlbmRzIHRoZSBmdW5jdGlvbmFsaXR5IG9mIHRoZSBtYWluIGFwcGxpY2F0aW9uLiBQbHVnaW5zIGNhbjoKLSDinKggQWRkIG5ldyBmZWF0dXJlcwotIPCflKcgTW9kaWZ5IGV4aXN0aW5nIGZlYXR1cmVzCi0g8J+UlyBJbnRlZ3JhdGUgd2l0aCBvdGhlciBhcHBsaWNhdGlvbnMKLSDwn6SWIEF1dG9tYXRlIGNvbW1vbiB0YXNrcwoKIyMgQXZhaWxhYmxlIFBsdWdpbnMKCiMjIyBbQm9vayBTZWFyY2hdKGJvb2tzZWFyY2gpCgpTZWFyY2ggbGF3ZnVsIGVib29rIGFuZCBhdWRpb2Jvb2sgY2F0YWxvZ3MgZnJvbSByb29tIG9yIHByaXZhdGUgY2hhdCB3aXRob3V0CmJsb2NraW5nIE5pY290aW5lKydzIFVJLiBSZW1vdGUgYCFib29rYCByZXF1ZXN0cyBhcmUgb3B0LWluLCByb29tLWZpbHRlcmFibGUsCmFuZCByYXRlLWxpbWl0ZWQuIFRoZSBpbml0aWFsIHByb3ZpZGVyIGlzIE9wZW4gTGlicmFyeSwgd2l0aCBhIHByb3ZpZGVyCmludGVyZmFjZSBmb3IgYWRkaW5nIG90aGVyIGF1dGhvcml6ZWQgY2F0YWxvZ3MgbGF0ZXIuCgojIyMgW0xvY2FsIEFJIENoYXRdKGxvY2FsYWkpCgpDb25uZWN0IHJvb20gb3IgcHJpdmF0ZSBjaGF0IHRvIGEgbG9jYWwgT2xsYW1hIG9yIGxsYW1hLmNwcCBzZXJ2ZXIgd2l0aG91dApibG9ja2luZyBOaWNvdGluZSsncyBVSS4gT3duZXIgYC9haWAgcHJvbXB0cyB3b3JrIGltbWVkaWF0ZWx5IGFmdGVyIHNlcnZlcgpjb25maWd1cmF0aW9uOyByZW1vdGUgYCFhaWAgcHJvbXB0cyByZW1haW4gb3B0LWluLCByb29tLWZpbHRlcmFibGUsCnJhdGUtbGltaXRlZCwgY29uY3VycmVuY3ktbGltaXRlZCwgYW5kIGJvdW5kZWQgZm9yIGNoYXQtc2FmZSByZXBsaWVzLgoKIyMjIFtCZWV0cyBQb3N0LURvd25sb2FkXShiZWV0c2JyaWRnZSkKClF1ZXVlIGNvbXBsZXRlZCBtdXNpYyBmb2xkZXJzIGZvciBhIGNvbmZpZ3VyZWQsIG5vbi1pbnRlcmFjdGl2ZSBiZWV0cyBpbXBvcnQuCkF1dG9tYXRpYyBpbXBvcnRzIGFyZSBkaXNhYmxlZCBieSBkZWZhdWx0IGFuZCBndWFyZGVkIGJ5IGFuIGFsbG93ZWQgZG93bmxvYWQKcm9vdCwgZmlsZS10eXBlIGZpbHRlcmluZywgYSBzZXR0bGUgdGltZXIsIHNlcmlhbGl6ZWQgZXhlY3V0aW9uLCBleHBsaWNpdApjb3B5L21vdmUvaW4tcGxhY2UgbW9kZXMsIGFuZCBib3VuZGVkIHN1YnByb2Nlc3MgdGltZW91dHMuCgojIyMgW0F1dG8gU3BhbSBJZ25vcmVdKGF1dG9zcGFtaWdub3JlKQoKQXBwbHkgY29uZmlndXJhYmxlIHJvbGxpbmcgbWVzc2FnZS1yYXRlLCBwaHJhc2UsIGFuZCBvYnNlcnZlZC1jb3VudHJ5IHJ1bGVzIGluCmpvaW5lZCByb29tcywgd2l0aCBsb2NhbCByb29tIGFuZCBkZXNrdG9wIG5vdGlmaWNhdGlvbnMuIEVuZm9yY2VtZW50IGlzIGRpc2FibGVkCmJ5IGRlZmF1bHQ7IG1hdGNoaW5nIHVzZXJzIGNhbiBvcHRpb25hbGx5IGJlIGFkZGVkIHRvIE5pY290aW5lKydzIHBlcnNpc3RlbnQKaWdub3JlIGxpc3QuIFJvb20gc2NvcGVzLCB0cnVzdGVkLXVzZXIgZXhlbXB0aW9ucywgc3RhdHVzLCBhbmQgY291bnRlci1yZXNldApjb21tYW5kcyBhcmUgYnVpbHQgaW4uCgojIyMgW0FyciBSZXF1ZXN0c10oYXJycmVxdWVzdHMpCgpBcHByb3ZlZC11c2VyLCByZWFkLW9ubHkgbG9va3VwcyBmb3IgU29uYXJyLCBSYWRhcnIsIGFuZCBMaWRhcnIgZnJvbSByb29tIG9yCnByaXZhdGUgY2hhdC4gVGhlIHN0YWdlZCBmb3VuZGF0aW9uIHZlcmlmaWVzIGNvbm5lY3Rpb25zIGFuZCBzZWFyY2hlcyBjYXRhbG9ncywKYnV0IGNhbm5vdCBhZGQsIG1vbml0b3IsIHNlYXJjaCBmb3IgcmVsZWFzZXMsIG9yIGRvd25sb2FkIHRpdGxlcy4gUmVtb3RlIGFjY2VzcwppcyBkaXNhYmxlZCBieSBkZWZhdWx0OyBBUEkga2V5cyBzdGF5IGluIHBsdWdpbiBzZXR0aW5ncyBhbmQgcmVzdWx0cyByZXF1ZXN0ZWQKaW4gcm9vbXMgYXJlIHJldHVybmVkIHByaXZhdGVseS4KCiMjIyBbV29sZnJhbV0od29sZnJhbSkKClF1ZXJ5IFdvbGZyYW18QWxwaGEgZm9yIGNvbXBhY3QgcGxhaW50ZXh0IGFuc3dlcnMgYW5kIHN0ZXAtYnktc3RlcCByZXN1bHQgcG9kcwpmcm9tIE5pY290aW5lKyBjaGF0LiBSZW1vdGUgdXNlIGlzIGRpc2FibGVkIGJ5IGRlZmF1bHQgYW5kIHJlc3RyaWN0ZWQgdG8KYXBwcm92ZWQgdXNlcm5hbWVzLCBvcHRpb25hbCByb29tcywgY29vbGRvd25zLCBhbmQgY29uY3VycmVuY3kgbGltaXRzLiBBcHBJRHMKYXJlIGtlcHQgb3V0IG9mIGNoYXQsIHNvdXJjZSBsaW5rcywgYW5kIGxvZ3M7IGltYWdlIG1vZGUgaXMgaW50ZW50aW9uYWxseQpvbWl0dGVkIGJlY2F1c2UgU291bHNlZWsgY2hhdCBoYXMgbm8gc2FmZSBhdHRhY2htZW50IGVxdWl2YWxlbnQuCgojIyMgW1Jvb20gQW5ub3VuY2VyXShhbm5vdW5jZXIpCgpQcmV2aWV3IG9yIHNlbmQgYSBtZXNzYWdlIHRvIGV4cGxpY2l0bHkgY29uZmlndXJlZCwgY3VycmVudGx5IGpvaW5lZCByb29tcy4gTmFtZWQKcm9vbSBncm91cHMsIHN0YWdnZXJlZCBkZWxpdmVyeSwgZHVwbGljYXRlIGNvb2xkb3ducywgY2FuY2VsbGF0aW9uLCBhbmQgbG9jYWwtb25seQpzdGF0dXMgb3V0cHV0IGtlZXAgYW5ub3VuY2VtZW50cyBjb250cm9sbGVkLiBTZW5kaW5nIGlzIGRpc2FibGVkIGJ5IGRlZmF1bHQsIGFuZAp0aGUgcGx1Z2luIGhhcyBubyByZW1vdGUgdHJpZ2dlciwgYXV0by1qb2luIGJlaGF2aW9yLCBvciByZWN1cnJpbmcgc2NoZWR1bGUuCgojIyMgW1NvdWxzZWVrIEhUVFAgQVBJXShhcGkvUkVBRE1FLm1kKQoKQXV0aGVudGljYXRlZCBzZWFyY2hlcyBhbmQgZG93bmxvYWQgYmF0Y2hlcyB0aHJvdWdoIHlvdXIgZXhpc3RpbmcgTmljb3RpbmUrIHNlc3Npb24uCldvcmtzIHdpdGggU2lja1Byb2RpZ3kncyBbYXJyLXNjcmlwdHNdKGh0dHBzOi8vZ2l0aHViLmNvbS9TaWNrUHJvZGlneS9hcnItc2NyaXB0cykKZm9yIG9wdGlvbmFsIExpZGFyciwgU29uYXJyIGFuZCBSYWRhcnIgZG93bmxvYWRzLiBJbml0aWFsIHN1cHBvcnRlZCB0YXJnZXQ6Ck5pY290aW5lKyAzLjMuMTEgYW5kIFB5dGhvbiAzLjkrLiBTZWUgdGhlIHBsdWdpbiBkb2N1bWVudGF0aW9uIGZvciBBUEkgc2V0dGluZ3MKYW5kIGN1cnJlbnQgdmFsaWRhdGlvbiBsaW1pdHMuCgoKIyMjIPCfpJYgW0F1dG9idWRkeV0oYXV0b2J1ZGR5KQoKQXV0b21hdGljYWxseSBtYW5hZ2UgeW91ciBidWRkeSBsaXN0IGJhc2VkIG9uIGNoYW5uZWwgaW50ZXJhY3Rpb25zLgoKKipGZWF0dXJlczoqKgotIEF1dG8tYWRkIHVzZXJzIHdobyBqb2luIHNwZWNpZmljIGNoYW5uZWxzCi0gQ3VzdG9taXphYmxlIHRyaWdnZXIgcGhyYXNlcyAoZS5nLiwgImFkZCBtZSBwbHoiKQotIFBlcmZlY3QgZm9yIGNvbW11bml0aWVzIGxpa2UgKipTaWNrR2FtaW5nLm5ldCoqCgoqKkhvdyBpdCB3b3JrczoqKgpXaGVuIGEgdXNlciBqb2lucyBhIG1vbml0b3JlZCBjaGFubmVsIGFuZCBzYXlzIGEgdHJpZ2dlciBwaHJhc2UsIGFueW9uZSB3aXRoIHRoaXMgcGx1Z2luIGVuYWJsZWQgd2lsbCBhdXRvbWF0aWNhbGx5IGFkZCB0aGVtIHRvIHRoZWlyIGJ1ZGR5IGxpc3QuCgotLS0KCiMjIyDwn5OaIFtFeGFtcGxlUGx1Z2luXShleGFtcGxlcGx1Z2luKQoKQSByZWZlcmVuY2UgaW1wbGVtZW50YXRpb24gZGVtb25zdHJhdGluZyBiZXN0IHByYWN0aWNlcyBmb3IgTmljb3RpbmUrIHBsdWdpbiBkZXZlbG9wbWVudC4KCioqUGVyZmVjdCBmb3I6KioKLSBMZWFybmluZyBwbHVnaW4gYXJjaGl0ZWN0dXJlCi0gVW5kZXJzdGFuZGluZyBOaWNvdGluZSsgQVBJCi0gQ3JlYXRpbmcgY3VzdG9tIHBsdWdpbnMKCi0tLQoKIyMgSW5zdGFsbGF0aW9uCgoxLiBDbG9uZSBvciBkb3dubG9hZCB0aGUgcGx1Z2luIGZpbGVzCjIuIFBsYWNlIHRoZW0gaW4geW91ciBOaWNvdGluZSsgcGx1Z2lucyBkaXJlY3RvcnkKMy4gUmVzdGFydCBOaWNvdGluZSsgdG8gbG9hZCB0aGUgcGx1Z2lucwo0LiBFbmFibGUgcGx1Z2lucyBpbiBQcmVmZXJlbmNlcyDihpIgUGx1Z2lucwoKIyMgQ29udHJpYnV0aW5nCgpDb250cmlidXRpb25zIGFyZSB3ZWxjb21lISBGZWVsIGZyZWUgdG86Ci0gUmVwb3J0IGlzc3VlcwotIFN1Z2dlc3QgbmV3IGZlYXR1cmVzCi0gU3VibWl0IHB1bGwgcmVxdWVzdHMKCi0tLQoKKipNYWRlIHdpdGgg4p2k77iPIGZvciB0aGUgU291bHNlZWsgY29tbXVuaXR5Kio=",
+        "target": null,
+        "url": "https://gitea.rcs1.top/api/v1/repos/hermes-agent/hermes-mcp-test-20261117-vf-144838/contents/README.md?ref=mcp-test-20261118-qwen9-q5-retry-contribution",
+        "html_url": "https://gitea.rcs1.top/hermes-agent/hermes-mcp-test-20261117-vf-144838/src/branch/mcp-test-20261118-qwen9-q5-retry-contribution/README.md",
+        "git_url": "https://gitea.rcs1.top/api/v1/repos/hermes-agent/hermes-mcp-test-20261117-vf-144838/git/blobs/d76505d7be1b961353005157d9c4041f006a1a89",
+        "download_url": "https://gitea.rcs1.top/hermes-agent/hermes-mcp-test-20261117-vf-144838/raw/branch/mcp-test-20261118-qwen9-q5-retry-contribution/README.md",
+        "submodule_git_url": null,
+        "_links": {
+          "self": "https://gitea.rcs1.top/api/v1/repos/hermes-agent/hermes-mcp-test-20261117-vf-144838/contents/README.md?ref=mcp-test-20261118-qwen9-q5-retry-contribution",
+          "git": "https://gitea.rcs1.top/api/v1/repos/hermes-agent/hermes-mcp-test-20261117-vf-144838/git/blobs/d76505d7be1b961353005157d9c4041f006a1a89",
+          "html": "https://gitea.rcs1.top/hermes-agent/hermes-mcp-test-20261117-vf-144838/src/branch/mcp-test-20261118-qwen9-q5-retry-contribution/README.md"
+        }
+      },
+      "pr": {},
+      "pr_files": [],
+      "returned_resource_urls": {
+        "issue": false,
+        "pr": false,
+        "file_or_branch": false
+      },
+      "implementation_workflow_pass": false,
+      "whole_workflow_pass": false,
+      "issue_created_in_this_run": true,
+      "variant": "full Discord profile",
+      "harness_invalidated": true
+    },
+    {
+      "requested_issue_first": true,
+      "fork_parent": "sickprodigy/nicotineplus-plugins",
+      "run_id": "20261118-fablevibes-retry-contribution",
+      "issue_matches": true,
+      "issue_created": true,
+      "issue_number": 8,
+      "issue_url": "https://gitea.rcs1.top/sickprodigy/nicotineplus-plugins/issues/8",
+      "branch_created": true,
+      "file_exact": false,
+      "pr_correct": false,
+      "pr_number": null,
+      "pr_url": null,
+      "only_requested_pr_file": false,
+      "readback": {
+        "issue": false,
+        "file": false,
+        "pr": false
+      },
+      "state": {
+        "early_stop": "commit must target test branch",
+        "validation_rejections": 0,
+        "elapsed": 104.07,
+        "tool_calls": 7,
+        "issue_number": 8,
+        "branch_created": false,
+        "commit_created": false,
+        "pr_number": null,
+        "dispatched_stages": [
+          "branch",
+          "issue"
+        ],
+        "effective_fork_name": "hermes-mcp-test-20261117-vf-144838"
+      },
+      "branch": {
+        "name": "mcp-test-20261118-fablevibes-retry-contribution",
+        "commit": {
+          "id": "84afaf401b29753b6810e4f92f253e0d28637dbf",
+          "message": "Handle terminal Nicotine transfer refusals\n",
+          "url": "https://gitea.rcs1.top/hermes-agent/hermes-mcp-test-20261117-vf-144838/commit/84afaf401b29753b6810e4f92f253e0d28637dbf",
+          "author": {
+            "name": "sickprodigy",
+            "email": "[USER_EMAIL]",
+            "username": "sickprodigy"
+          },
+          "committer": {
+            "name": "sickprodigy",
+            "email": "[USER_EMAIL]",
+            "username": "sickprodigy"
+          },
+          "verification": {
+            "verified": false,
+            "reason": "gpg.error.not_signed_commit",
+            "signature": "",
+            "signer": null,
+            "payload": ""
+          },
+          "timestamp": "2026-11-01T12:05:55-05:00",
+          "added": null,
+          "removed": null,
+          "modified": null
+        },
+        "protected": false,
+        "required_approvals": 0,
+        "enable_status_check": false,
+        "status_check_contexts": [],
+        "user_can_push": false,
+        "user_can_merge": false,
+        "effective_branch_protection_name": ""
+      },
+      "file": {
+        "name": "README.md",
+        "path": "README.md",
+        "sha": "d76505d7be1b961353005157d9c4041f006a1a89",
+        "last_commit_sha": "480d33ffbbff06c41a3543ce1692342dec9d7eff",
+        "last_committer_date": "2026-10-14T21:37:56Z",
+        "last_author_date": "2026-10-14T21:37:56Z",
+        "type": "file",
+        "size": 4808,
+        "encoding": "base64",
+        "content": "IyDwn461IE5pY290aW5lUGx1cyBQbHVnaW5zCgpbIVtMaWNlbnNlXShodHRwczovL2ltZy5zaGllbGRzLmlvL2JhZGdlL0xpY2Vuc2UtTUlULWJsdWUuc3ZnKV0oTElDRU5TRSkKWyFbUHl0aG9uXShodHRwczovL2ltZy5zaGllbGRzLmlvL2JhZGdlL1B5dGhvbi0zLjYrLWdyZWVuLnN2ZyldKGh0dHBzOi8vd3d3LnB5dGhvbi5vcmcvKQpbIVtOaWNvdGluZStdKGh0dHBzOi8vaW1nLnNoaWVsZHMuaW8vYmFkZ2UvTmljb3RpbmUrLUNvbXBhdGlibGUtYnJpZ2h0Z3JlZW4uc3ZnKV0oaHR0cHM6Ly9uaWNvdGluZS1wbHVzLm9yZy8pCgo+IEVuaGFuY2UgeW91ciBOaWNvdGluZSsgZXhwZXJpZW5jZSB3aXRoIHBvd2VyZnVsLCBjb21tdW5pdHktZHJpdmVuIHBsdWdpbnMuCgojIyDwn5OLIFRhYmxlIG9mIENvbnRlbnRzCgotIFtBYm91dF0oI2Fib3V0KQotIFtBdmFpbGFibGUgUGx1Z2luc10oI2F2YWlsYWJsZS1wbHVnaW5zKQotIFtJbnN0YWxsYXRpb25dKCNpbnN0YWxsYXRpb24pCi0gW0NvbnRyaWJ1dGluZ10oI2NvbnRyaWJ1dGluZykKCiMjIEFib3V0CgpUaGlzIGRpcmVjdG9yeSBjb250YWlucyBwbHVnaW5zIGZvciAqKk5pY290aW5lKyoqLCBhIGdyYXBoaWNhbCBjbGllbnQgZm9yIHRoZSBTb3Vsc2VlayBmaWxlIHNoYXJpbmcgbmV0d29yay4gCgpBIHBsdWdpbiBpcyBhIFB5dGhvbiBtb2R1bGUgdGhhdCBleHRlbmRzIHRoZSBmdW5jdGlvbmFsaXR5IG9mIHRoZSBtYWluIGFwcGxpY2F0aW9uLiBQbHVnaW5zIGNhbjoKLSDinKggQWRkIG5ldyBmZWF0dXJlcwotIPCflKcgTW9kaWZ5IGV4aXN0aW5nIGZlYXR1cmVzCi0g8J+UlyBJbnRlZ3JhdGUgd2l0aCBvdGhlciBhcHBsaWNhdGlvbnMKLSDwn6SWIEF1dG9tYXRlIGNvbW1vbiB0YXNrcwoKIyMgQXZhaWxhYmxlIFBsdWdpbnMKCiMjIyBbQm9vayBTZWFyY2hdKGJvb2tzZWFyY2gpCgpTZWFyY2ggbGF3ZnVsIGVib29rIGFuZCBhdWRpb2Jvb2sgY2F0YWxvZ3MgZnJvbSByb29tIG9yIHByaXZhdGUgY2hhdCB3aXRob3V0CmJsb2NraW5nIE5pY290aW5lKydzIFVJLiBSZW1vdGUgYCFib29rYCByZXF1ZXN0cyBhcmUgb3B0LWluLCByb29tLWZpbHRlcmFibGUsCmFuZCByYXRlLWxpbWl0ZWQuIFRoZSBpbml0aWFsIHByb3ZpZGVyIGlzIE9wZW4gTGlicmFyeSwgd2l0aCBhIHByb3ZpZGVyCmludGVyZmFjZSBmb3IgYWRkaW5nIG90aGVyIGF1dGhvcml6ZWQgY2F0YWxvZ3MgbGF0ZXIuCgojIyMgW0xvY2FsIEFJIENoYXRdKGxvY2FsYWkpCgpDb25uZWN0IHJvb20gb3IgcHJpdmF0ZSBjaGF0IHRvIGEgbG9jYWwgT2xsYW1hIG9yIGxsYW1hLmNwcCBzZXJ2ZXIgd2l0aG91dApibG9ja2luZyBOaWNvdGluZSsncyBVSS4gT3duZXIgYC9haWAgcHJvbXB0cyB3b3JrIGltbWVkaWF0ZWx5IGFmdGVyIHNlcnZlcgpjb25maWd1cmF0aW9uOyByZW1vdGUgYCFhaWAgcHJvbXB0cyByZW1haW4gb3B0LWluLCByb29tLWZpbHRlcmFibGUsCnJhdGUtbGltaXRlZCwgY29uY3VycmVuY3ktbGltaXRlZCwgYW5kIGJvdW5kZWQgZm9yIGNoYXQtc2FmZSByZXBsaWVzLgoKIyMjIFtCZWV0cyBQb3N0LURvd25sb2FkXShiZWV0c2JyaWRnZSkKClF1ZXVlIGNvbXBsZXRlZCBtdXNpYyBmb2xkZXJzIGZvciBhIGNvbmZpZ3VyZWQsIG5vbi1pbnRlcmFjdGl2ZSBiZWV0cyBpbXBvcnQuCkF1dG9tYXRpYyBpbXBvcnRzIGFyZSBkaXNhYmxlZCBieSBkZWZhdWx0IGFuZCBndWFyZGVkIGJ5IGFuIGFsbG93ZWQgZG93bmxvYWQKcm9vdCwgZmlsZS10eXBlIGZpbHRlcmluZywgYSBzZXR0bGUgdGltZXIsIHNlcmlhbGl6ZWQgZXhlY3V0aW9uLCBleHBsaWNpdApjb3B5L21vdmUvaW4tcGxhY2UgbW9kZXMsIGFuZCBib3VuZGVkIHN1YnByb2Nlc3MgdGltZW91dHMuCgojIyMgW0F1dG8gU3BhbSBJZ25vcmVdKGF1dG9zcGFtaWdub3JlKQoKQXBwbHkgY29uZmlndXJhYmxlIHJvbGxpbmcgbWVzc2FnZS1yYXRlLCBwaHJhc2UsIGFuZCBvYnNlcnZlZC1jb3VudHJ5IHJ1bGVzIGluCmpvaW5lZCByb29tcywgd2l0aCBsb2NhbCByb29tIGFuZCBkZXNrdG9wIG5vdGlmaWNhdGlvbnMuIEVuZm9yY2VtZW50IGlzIGRpc2FibGVkCmJ5IGRlZmF1bHQ7IG1hdGNoaW5nIHVzZXJzIGNhbiBvcHRpb25hbGx5IGJlIGFkZGVkIHRvIE5pY290aW5lKydzIHBlcnNpc3RlbnQKaWdub3JlIGxpc3QuIFJvb20gc2NvcGVzLCB0cnVzdGVkLXVzZXIgZXhlbXB0aW9ucywgc3RhdHVzLCBhbmQgY291bnRlci1yZXNldApjb21tYW5kcyBhcmUgYnVpbHQgaW4uCgojIyMgW0FyciBSZXF1ZXN0c10oYXJycmVxdWVzdHMpCgpBcHByb3ZlZC11c2VyLCByZWFkLW9ubHkgbG9va3VwcyBmb3IgU29uYXJyLCBSYWRhcnIsIGFuZCBMaWRhcnIgZnJvbSByb29tIG9yCnByaXZhdGUgY2hhdC4gVGhlIHN0YWdlZCBmb3VuZGF0aW9uIHZlcmlmaWVzIGNvbm5lY3Rpb25zIGFuZCBzZWFyY2hlcyBjYXRhbG9ncywKYnV0IGNhbm5vdCBhZGQsIG1vbml0b3IsIHNlYXJjaCBmb3IgcmVsZWFzZXMsIG9yIGRvd25sb2FkIHRpdGxlcy4gUmVtb3RlIGFjY2VzcwppcyBkaXNhYmxlZCBieSBkZWZhdWx0OyBBUEkga2V5cyBzdGF5IGluIHBsdWdpbiBzZXR0aW5ncyBhbmQgcmVzdWx0cyByZXF1ZXN0ZWQKaW4gcm9vbXMgYXJlIHJldHVybmVkIHByaXZhdGVseS4KCiMjIyBbV29sZnJhbV0od29sZnJhbSkKClF1ZXJ5IFdvbGZyYW18QWxwaGEgZm9yIGNvbXBhY3QgcGxhaW50ZXh0IGFuc3dlcnMgYW5kIHN0ZXAtYnktc3RlcCByZXN1bHQgcG9kcwpmcm9tIE5pY290aW5lKyBjaGF0LiBSZW1vdGUgdXNlIGlzIGRpc2FibGVkIGJ5IGRlZmF1bHQgYW5kIHJlc3RyaWN0ZWQgdG8KYXBwcm92ZWQgdXNlcm5hbWVzLCBvcHRpb25hbCByb29tcywgY29vbGRvd25zLCBhbmQgY29uY3VycmVuY3kgbGltaXRzLiBBcHBJRHMKYXJlIGtlcHQgb3V0IG9mIGNoYXQsIHNvdXJjZSBsaW5rcywgYW5kIGxvZ3M7IGltYWdlIG1vZGUgaXMgaW50ZW50aW9uYWxseQpvbWl0dGVkIGJlY2F1c2UgU291bHNlZWsgY2hhdCBoYXMgbm8gc2FmZSBhdHRhY2htZW50IGVxdWl2YWxlbnQuCgojIyMgW1Jvb20gQW5ub3VuY2VyXShhbm5vdW5jZXIpCgpQcmV2aWV3IG9yIHNlbmQgYSBtZXNzYWdlIHRvIGV4cGxpY2l0bHkgY29uZmlndXJlZCwgY3VycmVudGx5IGpvaW5lZCByb29tcy4gTmFtZWQKcm9vbSBncm91cHMsIHN0YWdnZXJlZCBkZWxpdmVyeSwgZHVwbGljYXRlIGNvb2xkb3ducywgY2FuY2VsbGF0aW9uLCBhbmQgbG9jYWwtb25seQpzdGF0dXMgb3V0cHV0IGtlZXAgYW5ub3VuY2VtZW50cyBjb250cm9sbGVkLiBTZW5kaW5nIGlzIGRpc2FibGVkIGJ5IGRlZmF1bHQsIGFuZAp0aGUgcGx1Z2luIGhhcyBubyByZW1vdGUgdHJpZ2dlciwgYXV0by1qb2luIGJlaGF2aW9yLCBvciByZWN1cnJpbmcgc2NoZWR1bGUuCgojIyMgW1NvdWxzZWVrIEhUVFAgQVBJXShhcGkvUkVBRE1FLm1kKQoKQXV0aGVudGljYXRlZCBzZWFyY2hlcyBhbmQgZG93bmxvYWQgYmF0Y2hlcyB0aHJvdWdoIHlvdXIgZXhpc3RpbmcgTmljb3RpbmUrIHNlc3Npb24uCldvcmtzIHdpdGggU2lja1Byb2RpZ3kncyBbYXJyLXNjcmlwdHNdKGh0dHBzOi8vZ2l0aHViLmNvbS9TaWNrUHJvZGlneS9hcnItc2NyaXB0cykKZm9yIG9wdGlvbmFsIExpZGFyciwgU29uYXJyIGFuZCBSYWRhcnIgZG93bmxvYWRzLiBJbml0aWFsIHN1cHBvcnRlZCB0YXJnZXQ6Ck5pY290aW5lKyAzLjMuMTEgYW5kIFB5dGhvbiAzLjkrLiBTZWUgdGhlIHBsdWdpbiBkb2N1bWVudGF0aW9uIGZvciBBUEkgc2V0dGluZ3MKYW5kIGN1cnJlbnQgdmFsaWRhdGlvbiBsaW1pdHMuCgoKIyMjIPCfpJYgW0F1dG9idWRkeV0oYXV0b2J1ZGR5KQoKQXV0b21hdGljYWxseSBtYW5hZ2UgeW91ciBidWRkeSBsaXN0IGJhc2VkIG9uIGNoYW5uZWwgaW50ZXJhY3Rpb25zLgoKKipGZWF0dXJlczoqKgotIEF1dG8tYWRkIHVzZXJzIHdobyBqb2luIHNwZWNpZmljIGNoYW5uZWxzCi0gQ3VzdG9taXphYmxlIHRyaWdnZXIgcGhyYXNlcyAoZS5nLiwgImFkZCBtZSBwbHoiKQotIFBlcmZlY3QgZm9yIGNvbW11bml0aWVzIGxpa2UgKipTaWNrR2FtaW5nLm5ldCoqCgoqKkhvdyBpdCB3b3JrczoqKgpXaGVuIGEgdXNlciBqb2lucyBhIG1vbml0b3JlZCBjaGFubmVsIGFuZCBzYXlzIGEgdHJpZ2dlciBwaHJhc2UsIGFueW9uZSB3aXRoIHRoaXMgcGx1Z2luIGVuYWJsZWQgd2lsbCBhdXRvbWF0aWNhbGx5IGFkZCB0aGVtIHRvIHRoZWlyIGJ1ZGR5IGxpc3QuCgotLS0KCiMjIyDwn5OaIFtFeGFtcGxlUGx1Z2luXShleGFtcGxlcGx1Z2luKQoKQSByZWZlcmVuY2UgaW1wbGVtZW50YXRpb24gZGVtb25zdHJhdGluZyBiZXN0IHByYWN0aWNlcyBmb3IgTmljb3RpbmUrIHBsdWdpbiBkZXZlbG9wbWVudC4KCioqUGVyZmVjdCBmb3I6KioKLSBMZWFybmluZyBwbHVnaW4gYXJjaGl0ZWN0dXJlCi0gVW5kZXJzdGFuZGluZyBOaWNvdGluZSsgQVBJCi0gQ3JlYXRpbmcgY3VzdG9tIHBsdWdpbnMKCi0tLQoKIyMgSW5zdGFsbGF0aW9uCgoxLiBDbG9uZSBvciBkb3dubG9hZCB0aGUgcGx1Z2luIGZpbGVzCjIuIFBsYWNlIHRoZW0gaW4geW91ciBOaWNvdGluZSsgcGx1Z2lucyBkaXJlY3RvcnkKMy4gUmVzdGFydCBOaWNvdGluZSsgdG8gbG9hZCB0aGUgcGx1Z2lucwo0LiBFbmFibGUgcGx1Z2lucyBpbiBQcmVmZXJlbmNlcyDihpIgUGx1Z2lucwoKIyMgQ29udHJpYnV0aW5nCgpDb250cmlidXRpb25zIGFyZSB3ZWxjb21lISBGZWVsIGZyZWUgdG86Ci0gUmVwb3J0IGlzc3VlcwotIFN1Z2dlc3QgbmV3IGZlYXR1cmVzCi0gU3VibWl0IHB1bGwgcmVxdWVzdHMKCi0tLQoKKipNYWRlIHdpdGgg4p2k77iPIGZvciB0aGUgU291bHNlZWsgY29tbXVuaXR5Kio=",
+        "target": null,
+        "url": "https://gitea.rcs1.top/api/v1/repos/hermes-agent/hermes-mcp-test-20261117-vf-144838/contents/README.md?ref=mcp-test-20261118-fablevibes-retry-contribution",
+        "html_url": "https://gitea.rcs1.top/hermes-agent/hermes-mcp-test-20261117-vf-144838/src/branch/mcp-test-20261118-fablevibes-retry-contribution/README.md",
+        "git_url": "https://gitea.rcs1.top/api/v1/repos/hermes-agent/hermes-mcp-test-20261117-vf-144838/git/blobs/d76505d7be1b961353005157d9c4041f006a1a89",
+        "download_url": "https://gitea.rcs1.top/hermes-agent/hermes-mcp-test-20261117-vf-144838/raw/branch/mcp-test-20261118-fablevibes-retry-contribution/README.md",
+        "submodule_git_url": null,
+        "_links": {
+          "self": "https://gitea.rcs1.top/api/v1/repos/hermes-agent/hermes-mcp-test-20261117-vf-144838/contents/README.md?ref=mcp-test-20261118-fablevibes-retry-contribution",
+          "git": "https://gitea.rcs1.top/api/v1/repos/hermes-agent/hermes-mcp-test-20261117-vf-144838/git/blobs/d76505d7be1b961353005157d9c4041f006a1a89",
+          "html": "https://gitea.rcs1.top/hermes-agent/hermes-mcp-test-20261117-vf-144838/src/branch/mcp-test-20261118-fablevibes-retry-contribution/README.md"
+        }
+      },
+      "pr": {},
+      "pr_files": [],
+      "returned_resource_urls": {
+        "issue": false,
+        "pr": false,
+        "file_or_branch": false
+      },
+      "implementation_workflow_pass": false,
+      "whole_workflow_pass": false,
+      "issue_created_in_this_run": true,
+      "variant": "full Discord profile",
+      "harness_invalidated": true
+    },
+    {
+      "requested_issue_first": false,
+      "fork_parent": "sickprodigy/nicotineplus-plugins",
+      "run_id": "20261118-fablevibes-focused-contribution",
+      "issue_matches": true,
+      "issue_created": false,
+      "issue_number": 8,
+      "issue_url": "https://gitea.rcs1.top/sickprodigy/nicotineplus-plugins/issues/8",
+      "branch_created": false,
+      "file_exact": false,
+      "pr_correct": false,
+      "pr_number": null,
+      "pr_url": null,
+      "only_requested_pr_file": false,
+      "readback": {
+        "issue": true,
+        "file": false,
+        "pr": false
+      },
+      "state": {
+        "early_stop": null,
+        "validation_rejections": 0,
+        "elapsed": 75.661,
+        "tool_calls": 9,
+        "issue_number": 8,
+        "branch_created": false,
+        "commit_created": false,
+        "pr_number": null,
+        "dispatched_stages": [
+          "fork",
+          "issue"
+        ],
+        "effective_fork_name": "hermes-mcp-test-20261117-vf-144838"
+      },
+      "branch": {
+        "error": 404
+      },
+      "file": {
+        "error": 404
+      },
+      "pr": {},
+      "pr_files": [],
+      "returned_resource_urls": {
+        "issue": false,
+        "pr": false,
+        "file_or_branch": false
+      },
+      "implementation_workflow_pass": false,
+      "whole_workflow_pass": false,
+      "issue_created_in_this_run": false,
+      "variant": "MCP-only, temperature 0.2, existing issue",
+      "harness_invalidated": false
+    },
+    {
+      "requested_issue_first": true,
+      "fork_parent": "sickprodigy/nicotineplus-plugins",
+      "run_id": "20261118-vibeforged-matched-contribution",
+      "issue_matches": true,
+      "issue_created": true,
+      "issue_number": 9,
+      "issue_url": "https://gitea.rcs1.top/sickprodigy/nicotineplus-plugins/issues/9",
+      "branch_created": true,
+      "file_exact": false,
+      "pr_correct": false,
+      "pr_number": null,
+      "pr_url": null,
+      "only_requested_pr_file": false,
+      "readback": {
+        "issue": false,
+        "file": false,
+        "pr": false
+      },
+      "state": {
+        "early_stop": "invalid combined branch/commit",
+        "validation_rejections": 1,
+        "validation_rejections_by_tool": {
+          "mcp__mcp_gitea_hermes__create_or_update_file": 1
+        },
+        "elapsed": 142.561,
+        "tool_calls": 9,
+        "issue_number": 9,
+        "branch_created": true,
+        "commit_created": false,
+        "pr_number": null,
+        "dispatched_stages": [
+          "branch",
+          "issue"
+        ],
+        "effective_fork_name": "hermes-mcp-test-20261117-vf-144838"
+      },
+      "branch": {
+        "name": "mcp-test-20261118-vibeforged-matched-contribution",
+        "commit": {
+          "id": "84afaf401b29753b6810e4f92f253e0d28637dbf",
+          "message": "Handle terminal Nicotine transfer refusals\n",
+          "url": "https://gitea.rcs1.top/hermes-agent/hermes-mcp-test-20261117-vf-144838/commit/84afaf401b29753b6810e4f92f253e0d28637dbf",
+          "author": {
+            "name": "sickprodigy",
+            "email": "[USER_EMAIL]",
+            "username": "sickprodigy"
+          },
+          "committer": {
+            "name": "sickprodigy",
+            "email": "[USER_EMAIL]",
+            "username": "sickprodigy"
+          },
+          "verification": {
+            "verified": false,
+            "reason": "gpg.error.not_signed_commit",
+            "signature": "",
+            "signer": null,
+            "payload": ""
+          },
+          "timestamp": "2026-11-01T12:05:55-05:00",
+          "added": null,
+          "removed": null,
+          "modified": null
+        },
+        "protected": false,
+        "required_approvals": 0,
+        "enable_status_check": false,
+        "status_check_contexts": [],
+        "user_can_push": false,
+        "user_can_merge": false,
+        "effective_branch_protection_name": ""
+      },
+      "file": {
+        "name": "README.md",
+        "path": "README.md",
+        "sha": "d76505d7be1b961353005157d9c4041f006a1a89",
+        "last_commit_sha": "480d33ffbbff06c41a3543ce1692342dec9d7eff",
+        "last_committer_date": "2026-10-14T21:37:56Z",
+        "last_author_date": "2026-10-14T21:37:56Z",
+        "type": "file",
+        "size": 4808,
+        "encoding": "base64",
+        "content": "IyDwn461IE5pY290aW5lUGx1cyBQbHVnaW5zCgpbIVtMaWNlbnNlXShodHRwczovL2ltZy5zaGllbGRzLmlvL2JhZGdlL0xpY2Vuc2UtTUlULWJsdWUuc3ZnKV0oTElDRU5TRSkKWyFbUHl0aG9uXShodHRwczovL2ltZy5zaGllbGRzLmlvL2JhZGdlL1B5dGhvbi0zLjYrLWdyZWVuLnN2ZyldKGh0dHBzOi8vd3d3LnB5dGhvbi5vcmcvKQpbIVtOaWNvdGluZStdKGh0dHBzOi8vaW1nLnNoaWVsZHMuaW8vYmFkZ2UvTmljb3RpbmUrLUNvbXBhdGlibGUtYnJpZ2h0Z3JlZW4uc3ZnKV0oaHR0cHM6Ly9uaWNvdGluZS1wbHVzLm9yZy8pCgo+IEVuaGFuY2UgeW91ciBOaWNvdGluZSsgZXhwZXJpZW5jZSB3aXRoIHBvd2VyZnVsLCBjb21tdW5pdHktZHJpdmVuIHBsdWdpbnMuCgojIyDwn5OLIFRhYmxlIG9mIENvbnRlbnRzCgotIFtBYm91dF0oI2Fib3V0KQotIFtBdmFpbGFibGUgUGx1Z2luc10oI2F2YWlsYWJsZS1wbHVnaW5zKQotIFtJbnN0YWxsYXRpb25dKCNpbnN0YWxsYXRpb24pCi0gW0NvbnRyaWJ1dGluZ10oI2NvbnRyaWJ1dGluZykKCiMjIEFib3V0CgpUaGlzIGRpcmVjdG9yeSBjb250YWlucyBwbHVnaW5zIGZvciAqKk5pY290aW5lKyoqLCBhIGdyYXBoaWNhbCBjbGllbnQgZm9yIHRoZSBTb3Vsc2VlayBmaWxlIHNoYXJpbmcgbmV0d29yay4gCgpBIHBsdWdpbiBpcyBhIFB5dGhvbiBtb2R1bGUgdGhhdCBleHRlbmRzIHRoZSBmdW5jdGlvbmFsaXR5IG9mIHRoZSBtYWluIGFwcGxpY2F0aW9uLiBQbHVnaW5zIGNhbjoKLSDinKggQWRkIG5ldyBmZWF0dXJlcwotIPCflKcgTW9kaWZ5IGV4aXN0aW5nIGZlYXR1cmVzCi0g8J+UlyBJbnRlZ3JhdGUgd2l0aCBvdGhlciBhcHBsaWNhdGlvbnMKLSDwn6SWIEF1dG9tYXRlIGNvbW1vbiB0YXNrcwoKIyMgQXZhaWxhYmxlIFBsdWdpbnMKCiMjIyBbQm9vayBTZWFyY2hdKGJvb2tzZWFyY2gpCgpTZWFyY2ggbGF3ZnVsIGVib29rIGFuZCBhdWRpb2Jvb2sgY2F0YWxvZ3MgZnJvbSByb29tIG9yIHByaXZhdGUgY2hhdCB3aXRob3V0CmJsb2NraW5nIE5pY290aW5lKydzIFVJLiBSZW1vdGUgYCFib29rYCByZXF1ZXN0cyBhcmUgb3B0LWluLCByb29tLWZpbHRlcmFibGUsCmFuZCByYXRlLWxpbWl0ZWQuIFRoZSBpbml0aWFsIHByb3ZpZGVyIGlzIE9wZW4gTGlicmFyeSwgd2l0aCBhIHByb3ZpZGVyCmludGVyZmFjZSBmb3IgYWRkaW5nIG90aGVyIGF1dGhvcml6ZWQgY2F0YWxvZ3MgbGF0ZXIuCgojIyMgW0xvY2FsIEFJIENoYXRdKGxvY2FsYWkpCgpDb25uZWN0IHJvb20gb3IgcHJpdmF0ZSBjaGF0IHRvIGEgbG9jYWwgT2xsYW1hIG9yIGxsYW1hLmNwcCBzZXJ2ZXIgd2l0aG91dApibG9ja2luZyBOaWNvdGluZSsncyBVSS4gT3duZXIgYC9haWAgcHJvbXB0cyB3b3JrIGltbWVkaWF0ZWx5IGFmdGVyIHNlcnZlcgpjb25maWd1cmF0aW9uOyByZW1vdGUgYCFhaWAgcHJvbXB0cyByZW1haW4gb3B0LWluLCByb29tLWZpbHRlcmFibGUsCnJhdGUtbGltaXRlZCwgY29uY3VycmVuY3ktbGltaXRlZCwgYW5kIGJvdW5kZWQgZm9yIGNoYXQtc2FmZSByZXBsaWVzLgoKIyMjIFtCZWV0cyBQb3N0LURvd25sb2FkXShiZWV0c2JyaWRnZSkKClF1ZXVlIGNvbXBsZXRlZCBtdXNpYyBmb2xkZXJzIGZvciBhIGNvbmZpZ3VyZWQsIG5vbi1pbnRlcmFjdGl2ZSBiZWV0cyBpbXBvcnQuCkF1dG9tYXRpYyBpbXBvcnRzIGFyZSBkaXNhYmxlZCBieSBkZWZhdWx0IGFuZCBndWFyZGVkIGJ5IGFuIGFsbG93ZWQgZG93bmxvYWQKcm9vdCwgZmlsZS10eXBlIGZpbHRlcmluZywgYSBzZXR0bGUgdGltZXIsIHNlcmlhbGl6ZWQgZXhlY3V0aW9uLCBleHBsaWNpdApjb3B5L21vdmUvaW4tcGxhY2UgbW9kZXMsIGFuZCBib3VuZGVkIHN1YnByb2Nlc3MgdGltZW91dHMuCgojIyMgW0F1dG8gU3BhbSBJZ25vcmVdKGF1dG9zcGFtaWdub3JlKQoKQXBwbHkgY29uZmlndXJhYmxlIHJvbGxpbmcgbWVzc2FnZS1yYXRlLCBwaHJhc2UsIGFuZCBvYnNlcnZlZC1jb3VudHJ5IHJ1bGVzIGluCmpvaW5lZCByb29tcywgd2l0aCBsb2NhbCByb29tIGFuZCBkZXNrdG9wIG5vdGlmaWNhdGlvbnMuIEVuZm9yY2VtZW50IGlzIGRpc2FibGVkCmJ5IGRlZmF1bHQ7IG1hdGNoaW5nIHVzZXJzIGNhbiBvcHRpb25hbGx5IGJlIGFkZGVkIHRvIE5pY290aW5lKydzIHBlcnNpc3RlbnQKaWdub3JlIGxpc3QuIFJvb20gc2NvcGVzLCB0cnVzdGVkLXVzZXIgZXhlbXB0aW9ucywgc3RhdHVzLCBhbmQgY291bnRlci1yZXNldApjb21tYW5kcyBhcmUgYnVpbHQgaW4uCgojIyMgW0FyciBSZXF1ZXN0c10oYXJycmVxdWVzdHMpCgpBcHByb3ZlZC11c2VyLCByZWFkLW9ubHkgbG9va3VwcyBmb3IgU29uYXJyLCBSYWRhcnIsIGFuZCBMaWRhcnIgZnJvbSByb29tIG9yCnByaXZhdGUgY2hhdC4gVGhlIHN0YWdlZCBmb3VuZGF0aW9uIHZlcmlmaWVzIGNvbm5lY3Rpb25zIGFuZCBzZWFyY2hlcyBjYXRhbG9ncywKYnV0IGNhbm5vdCBhZGQsIG1vbml0b3IsIHNlYXJjaCBmb3IgcmVsZWFzZXMsIG9yIGRvd25sb2FkIHRpdGxlcy4gUmVtb3RlIGFjY2VzcwppcyBkaXNhYmxlZCBieSBkZWZhdWx0OyBBUEkga2V5cyBzdGF5IGluIHBsdWdpbiBzZXR0aW5ncyBhbmQgcmVzdWx0cyByZXF1ZXN0ZWQKaW4gcm9vbXMgYXJlIHJldHVybmVkIHByaXZhdGVseS4KCiMjIyBbV29sZnJhbV0od29sZnJhbSkKClF1ZXJ5IFdvbGZyYW18QWxwaGEgZm9yIGNvbXBhY3QgcGxhaW50ZXh0IGFuc3dlcnMgYW5kIHN0ZXAtYnktc3RlcCByZXN1bHQgcG9kcwpmcm9tIE5pY290aW5lKyBjaGF0LiBSZW1vdGUgdXNlIGlzIGRpc2FibGVkIGJ5IGRlZmF1bHQgYW5kIHJlc3RyaWN0ZWQgdG8KYXBwcm92ZWQgdXNlcm5hbWVzLCBvcHRpb25hbCByb29tcywgY29vbGRvd25zLCBhbmQgY29uY3VycmVuY3kgbGltaXRzLiBBcHBJRHMKYXJlIGtlcHQgb3V0IG9mIGNoYXQsIHNvdXJjZSBsaW5rcywgYW5kIGxvZ3M7IGltYWdlIG1vZGUgaXMgaW50ZW50aW9uYWxseQpvbWl0dGVkIGJlY2F1c2UgU291bHNlZWsgY2hhdCBoYXMgbm8gc2FmZSBhdHRhY2htZW50IGVxdWl2YWxlbnQuCgojIyMgW1Jvb20gQW5ub3VuY2VyXShhbm5vdW5jZXIpCgpQcmV2aWV3IG9yIHNlbmQgYSBtZXNzYWdlIHRvIGV4cGxpY2l0bHkgY29uZmlndXJlZCwgY3VycmVudGx5IGpvaW5lZCByb29tcy4gTmFtZWQKcm9vbSBncm91cHMsIHN0YWdnZXJlZCBkZWxpdmVyeSwgZHVwbGljYXRlIGNvb2xkb3ducywgY2FuY2VsbGF0aW9uLCBhbmQgbG9jYWwtb25seQpzdGF0dXMgb3V0cHV0IGtlZXAgYW5ub3VuY2VtZW50cyBjb250cm9sbGVkLiBTZW5kaW5nIGlzIGRpc2FibGVkIGJ5IGRlZmF1bHQsIGFuZAp0aGUgcGx1Z2luIGhhcyBubyByZW1vdGUgdHJpZ2dlciwgYXV0by1qb2luIGJlaGF2aW9yLCBvciByZWN1cnJpbmcgc2NoZWR1bGUuCgojIyMgW1NvdWxzZWVrIEhUVFAgQVBJXShhcGkvUkVBRE1FLm1kKQoKQXV0aGVudGljYXRlZCBzZWFyY2hlcyBhbmQgZG93bmxvYWQgYmF0Y2hlcyB0aHJvdWdoIHlvdXIgZXhpc3RpbmcgTmljb3RpbmUrIHNlc3Npb24uCldvcmtzIHdpdGggU2lja1Byb2RpZ3kncyBbYXJyLXNjcmlwdHNdKGh0dHBzOi8vZ2l0aHViLmNvbS9TaWNrUHJvZGlneS9hcnItc2NyaXB0cykKZm9yIG9wdGlvbmFsIExpZGFyciwgU29uYXJyIGFuZCBSYWRhcnIgZG93bmxvYWRzLiBJbml0aWFsIHN1cHBvcnRlZCB0YXJnZXQ6Ck5pY290aW5lKyAzLjMuMTEgYW5kIFB5dGhvbiAzLjkrLiBTZWUgdGhlIHBsdWdpbiBkb2N1bWVudGF0aW9uIGZvciBBUEkgc2V0dGluZ3MKYW5kIGN1cnJlbnQgdmFsaWRhdGlvbiBsaW1pdHMuCgoKIyMjIPCfpJYgW0F1dG9idWRkeV0oYXV0b2J1ZGR5KQoKQXV0b21hdGljYWxseSBtYW5hZ2UgeW91ciBidWRkeSBsaXN0IGJhc2VkIG9uIGNoYW5uZWwgaW50ZXJhY3Rpb25zLgoKKipGZWF0dXJlczoqKgotIEF1dG8tYWRkIHVzZXJzIHdobyBqb2luIHNwZWNpZmljIGNoYW5uZWxzCi0gQ3VzdG9taXphYmxlIHRyaWdnZXIgcGhyYXNlcyAoZS5nLiwgImFkZCBtZSBwbHoiKQotIFBlcmZlY3QgZm9yIGNvbW11bml0aWVzIGxpa2UgKipTaWNrR2FtaW5nLm5ldCoqCgoqKkhvdyBpdCB3b3JrczoqKgpXaGVuIGEgdXNlciBqb2lucyBhIG1vbml0b3JlZCBjaGFubmVsIGFuZCBzYXlzIGEgdHJpZ2dlciBwaHJhc2UsIGFueW9uZSB3aXRoIHRoaXMgcGx1Z2luIGVuYWJsZWQgd2lsbCBhdXRvbWF0aWNhbGx5IGFkZCB0aGVtIHRvIHRoZWlyIGJ1ZGR5IGxpc3QuCgotLS0KCiMjIyDwn5OaIFtFeGFtcGxlUGx1Z2luXShleGFtcGxlcGx1Z2luKQoKQSByZWZlcmVuY2UgaW1wbGVtZW50YXRpb24gZGVtb25zdHJhdGluZyBiZXN0IHByYWN0aWNlcyBmb3IgTmljb3RpbmUrIHBsdWdpbiBkZXZlbG9wbWVudC4KCioqUGVyZmVjdCBmb3I6KioKLSBMZWFybmluZyBwbHVnaW4gYXJjaGl0ZWN0dXJlCi0gVW5kZXJzdGFuZGluZyBOaWNvdGluZSsgQVBJCi0gQ3JlYXRpbmcgY3VzdG9tIHBsdWdpbnMKCi0tLQoKIyMgSW5zdGFsbGF0aW9uCgoxLiBDbG9uZSBvciBkb3dubG9hZCB0aGUgcGx1Z2luIGZpbGVzCjIuIFBsYWNlIHRoZW0gaW4geW91ciBOaWNvdGluZSsgcGx1Z2lucyBkaXJlY3RvcnkKMy4gUmVzdGFydCBOaWNvdGluZSsgdG8gbG9hZCB0aGUgcGx1Z2lucwo0LiBFbmFibGUgcGx1Z2lucyBpbiBQcmVmZXJlbmNlcyDihpIgUGx1Z2lucwoKIyMgQ29udHJpYnV0aW5nCgpDb250cmlidXRpb25zIGFyZSB3ZWxjb21lISBGZWVsIGZyZWUgdG86Ci0gUmVwb3J0IGlzc3VlcwotIFN1Z2dlc3QgbmV3IGZlYXR1cmVzCi0gU3VibWl0IHB1bGwgcmVxdWVzdHMKCi0tLQoKKipNYWRlIHdpdGgg4p2k77iPIGZvciB0aGUgU291bHNlZWsgY29tbXVuaXR5Kio=",
+        "target": null,
+        "url": "https://gitea.rcs1.top/api/v1/repos/hermes-agent/hermes-mcp-test-20261117-vf-144838/contents/README.md?ref=mcp-test-20261118-vibeforged-matched-contribution",
+        "html_url": "https://gitea.rcs1.top/hermes-agent/hermes-mcp-test-20261117-vf-144838/src/branch/mcp-test-20261118-vibeforged-matched-contribution/README.md",
+        "git_url": "https://gitea.rcs1.top/api/v1/repos/hermes-agent/hermes-mcp-test-20261117-vf-144838/git/blobs/d76505d7be1b961353005157d9c4041f006a1a89",
+        "download_url": "https://gitea.rcs1.top/hermes-agent/hermes-mcp-test-20261117-vf-144838/raw/branch/mcp-test-20261118-vibeforged-matched-contribution/README.md",
+        "submodule_git_url": null,
+        "_links": {
+          "self": "https://gitea.rcs1.top/api/v1/repos/hermes-agent/hermes-mcp-test-20261117-vf-144838/contents/README.md?ref=mcp-test-20261118-vibeforged-matched-contribution",
+          "git": "https://gitea.rcs1.top/api/v1/repos/hermes-agent/hermes-mcp-test-20261117-vf-144838/git/blobs/d76505d7be1b961353005157d9c4041f006a1a89",
+          "html": "https://gitea.rcs1.top/hermes-agent/hermes-mcp-test-20261117-vf-144838/src/branch/mcp-test-20261118-vibeforged-matched-contribution/README.md"
+        }
+      },
+      "pr": {},
+      "pr_files": [],
+      "returned_resource_urls": {
+        "issue": false,
+        "pr": false,
+        "file_or_branch": false
+      },
+      "implementation_workflow_pass": false,
+      "whole_workflow_pass": false,
+      "issue_created_in_this_run": true,
+      "variant": "full Discord profile",
+      "harness_invalidated": false
+    },
+    {
+      "requested_issue_first": true,
+      "fork_parent": "sickprodigy/nicotineplus-plugins",
+      "run_id": "20261118-qwen9-q5-matched-contribution",
+      "issue_matches": true,
+      "issue_created": true,
+      "issue_number": 10,
+      "issue_url": "https://gitea.rcs1.top/sickprodigy/nicotineplus-plugins/issues/10",
+      "branch_created": true,
+      "file_exact": true,
+      "pr_correct": false,
+      "pr_number": null,
+      "pr_url": null,
+      "only_requested_pr_file": false,
+      "readback": {
+        "issue": false,
+        "file": false,
+        "pr": false
+      },
+      "state": {
+        "early_stop": "repeated identical rejected call",
+        "validation_rejections": 3,
+        "validation_rejections_by_tool": {
+          "mcp__mcp_gitea_hermes__branch_write": 1,
+          "mcp__mcp_gitea_hermes__create_or_update_file": 1,
+          "mcp__mcp_gitea_hermes__pull_request_write": 1
+        },
+        "elapsed": 127.319,
+        "tool_calls": 10,
+        "issue_number": 10,
+        "branch_created": true,
+        "commit_created": true,
+        "pr_number": null,
+        "dispatched_stages": [
+          "branch",
+          "commit",
+          "issue"
+        ],
+        "effective_fork_name": "hermes-mcp-test-20261117-vf-144838"
+      },
+      "branch": {
+        "name": "mcp-test-20261118-qwen9-q5-matched-contribution",
+        "commit": {
+          "id": "6c531625e5c39781688e881c25ac8d3285b93fc5",
+          "message": "Docs: qwen9-q5-matched contribution test 20261118-qwen9-q5-matched-contribution\n",
+          "url": "https://gitea.rcs1.top/hermes-agent/hermes-mcp-test-20261117-vf-144838/commit/6c531625e5c39781688e881c25ac8d3285b93fc5",
+          "author": {
+            "name": "hermes-agent",
+            "email": "[USER_EMAIL]",
+            "username": "hermes-agent"
+          },
+          "committer": {
+            "name": "hermes-agent",
+            "email": "[USER_EMAIL]",
+            "username": "hermes-agent"
+          },
+          "verification": {
+            "verified": false,
+            "reason": "gpg.error.not_signed_commit",
+            "signature": "",
+            "signer": null,
+            "payload": ""
+          },
+          "timestamp": "2026-11-18T16:26:47-05:00",
+          "added": null,
+          "removed": null,
+          "modified": null
+        },
+        "protected": false,
+        "required_approvals": 0,
+        "enable_status_check": false,
+        "status_check_contexts": [],
+        "user_can_push": false,
+        "user_can_merge": false,
+        "effective_branch_protection_name": ""
+      },
+      "file": {
+        "name": "README.md",
+        "path": "README.md",
+        "sha": "34159625196c101e907584b0f6e8e0a4dd035c63",
+        "last_commit_sha": "6c531625e5c39781688e881c25ac8d3285b93fc5",
+        "last_committer_date": "2026-11-18T16:26:47-05:00",
+        "last_author_date": "2026-11-18T16:26:47-05:00",
+        "type": "file",
+        "size": 4803,
+        "encoding": "base64",
+        "content": "IyDwn461IE5pY290aW5lUGx1cyBQbHVnaW5zCgpbIVtMaWNlbnNlXShodHRwczovL2ltZy5zaGllbGRzLmlvL2JhZGdlL0xpY2Vuc2UtTUlULWJsdWUuc3ZnKV0oTElDRU5TRSkKWyFbUHl0aG9uXShodHRwczovL2ltZy5zaGllbGRzLmlvL2JhZGdlL1B5dGhvbi0zLjYrLWdyZWVuLnN2ZyldKGh0dHBzOi8vd3d3LnB5dGhvbi5vcmcvKQpbIVtOaWNvdGluZStdKGh0dHBzOi8vaW1nLnNoaWVsZHMuaW8vYmFkZ2UvTmljb3RpbmUrLUNvbXBhdGlibGUtYnJpZ2h0Z3JlZW4uc3ZnKV0oaHR0cHM6Ly9uaWNvdGluZS1wbHVzLm9yZy8pCgo+IEVuaGFuY2UgeW91ciBOaWNvdGluZSsgZXhwZXJpZW5jZSB3aXRoIHBvd2VyZnVsLCBjb21tdW5pdHktZHJpdmVuIHBsdWdpbnMuCgojIyDwn5OLIFRhYmxlIG9mIENvbnRlbnRzCgotIFtBYm91dF0oI2Fib3V0KQotIFtBdmFpbGFibGUgUGx1Z2luc10oI2F2YWlsYWJsZS1wbHVnaW5zKQotIFtJbnN0YWxsYXRpb25dKCNpbnN0YWxsYXRpb24pCi0gW0NvbnRyaWJ1dGluZ10oI2NvbnRyaWJ1dGluZykKCiMjIEFib3V0CgpUaGlzIGRpcmVjdG9yeSBjb250YWlucyBwbHVnaW5zIGZvciAqKk5pY290aW5lKyoqLCBhIGdyYXBoaWNhbCBjbGllbnQgZm9yIHRoZSBTb3Vsc2VlayBmaWxlIHNoYXJpbmcgbmV0d29yay4gCgpBIHBsdWdpbiBpcyBhIFB5dGhvbiBtb2R1bGUgdGhhdCBleHRlbmRzIHRoZSBmdW5jdGlvbmFsaXR5IG9mIHRoZSBtYWluIGFwcGxpY2F0aW9uLiBQbHVnaW5zIGNhbjoKLSDinKggQWRkIG5ldyBmZWF0dXJlcwotIPCflKcgTW9kaWZ5IGV4aXN0aW5nIGZlYXR1cmVzCi0g8J+UlyBJbnRlZ3JhdGUgd2l0aCBvdGhlciBhcHBsaWNhdGlvbnMKLSDwn6SWIEF1dG9tYXRlIGNvbW1vbiB0YXNrcwoKIyMgQXZhaWxhYmxlIFBsdWdpbnMKCiMjIyBbQm9vayBTZWFyY2hdKGJvb2tzZWFyY2gpCgpTZWFyY2ggbGF3ZnVsIGVib29rIGFuZCBhdWRpb2Jvb2sgY2F0YWxvZ3MgZnJvbSByb29tIG9yIHByaXZhdGUgY2hhdCB3aXRob3V0CmJsb2NraW5nIE5pY290aW5lKydzIFVJLiBSZW1vdGUgYCFib29rYCByZXF1ZXN0cyBhcmUgb3B0LWluLCByb29tLWZpbHRlcmFibGUsCmFuZCByYXRlLWxpbWl0ZWQuIFRoZSBpbml0aWFsIHByb3ZpZGVyIGlzIE9wZW4gTGlicmFyeSwgd2l0aCBhIHByb3ZpZGVyCmludGVyZmFjZSBmb3IgYWRkaW5nIG90aGVyIGF1dGhvcml6ZWQgY2F0YWxvZ3MgbGF0ZXIuCgojIyMgW0xvY2FsIEFJIENoYXRdKGxvY2FsYWkpCgpDb25uZWN0IHJvb20gb3IgcHJpdmF0ZSBjaGF0IHRvIGEgbG9jYWwgT2xsYW1hIG9yIGxsYW1hLmNwcCBzZXJ2ZXIgd2l0aG91dApibG9ja2luZyBOaWNvdGluZSsncyBVSS4gT3duZXIgYC9haWAgcHJvbXB0cyB3b3JrIGltbWVkaWF0ZWx5IGFmdGVyIHNlcnZlcgpjb25maWd1cmF0aW9uOyByZW1vdGUgYCFhaWAgcHJvbXB0cyByZW1haW4gb3B0LWluLCByb29tLWZpbHRlcmFibGUsCnJhdGUtbGltaXRlZCwgY29uY3VycmVuY3ktbGltaXRlZCwgYW5kIGJvdW5kZWQgZm9yIGNoYXQtc2FmZSByZXBsaWVzLgoKIyMjIFtCZWV0cyBQb3N0LURvd25sb2FkXShiZWV0c2JyaWRnZSkKClF1ZXVlIGNvbXBsZXRlZCBtdXNpYyBmb2xkZXJzIGZvciBhIGNvbmZpZ3VyZWQsIG5vbi1pbnRlcmFjdGl2ZSBiZWV0cyBpbXBvcnQuCkF1dG9tYXRpYyBpbXBvcnRzIGFyZSBkaXNhYmxlZCBieSBkZWZhdWx0IGFuZCBndWFyZGVkIGJ5IGFuIGFsbG93ZWQgZG93bmxvYWQKcm9vdCwgZmlsZS10eXBlIGZpbHRlcmluZywgYSBzZXR0bGUgdGltZXIsIHNlcmlhbGl6ZWQgZXhlY3V0aW9uLCBleHBsaWNpdApjb3B5L21vdmUvaW4tcGxhY2UgbW9kZXMsIGFuZCBib3VuZGVkIHN1YnByb2Nlc3MgdGltZW91dHMuCgojIyMgW0F1dG8gU3BhbSBJZ25vcmVdKGF1dG9zcGFtaWdub3JlKQoKQXBwbHkgY29uZmlndXJhYmxlIHJvbGxpbmcgbWVzc2FnZS1yYXRlLCBwaHJhc2UsIGFuZCBvYnNlcnZlZC1jb3VudHJ5IHJ1bGVzIGluCmpvaW5lZCByb29tcywgd2l0aCBsb2NhbCByb29tIGFuZCBkZXNrdG9wIG5vdGlmaWNhdGlvbnMuIEVuZm9yY2VtZW50IGlzIGRpc2FibGVkCmJ5IGRlZmF1bHQ7IG1hdGNoaW5nIHVzZXJzIGNhbiBvcHRpb25hbGx5IGJlIGFkZGVkIHRvIE5pY290aW5lKydzIHBlcnNpc3RlbnQKaWdub3JlIGxpc3QuIFJvb20gc2NvcGVzLCB0cnVzdGVkLXVzZXIgZXhlbXB0aW9ucywgc3RhdHVzLCBhbmQgY291bnRlci1yZXNldApjb21tYW5kcyBhcmUgYnVpbHQgaW4uCgojIyMgW0FyciBSZXF1ZXN0c10oYXJycmVxdWVzdHMpCgpBcHByb3ZlZC11c2VyLCByZWFkLW9ubHkgbG9va3VwcyBmb3IgU29uYXJyLCBSYWRhcnIsIGFuZCBMaWRhcnIgZnJvbSByb29tIG9yCnByaXZhdGUgY2hhdC4gVGhlIHN0YWdlZCBmb3VuZGF0aW9uIHZlcmlmaWVzIGNvbm5lY3Rpb25zIGFuZCBzZWFyY2hlcyBjYXRhbG9ncywKYnV0IGNhbm5vdCBhZGQsIG1vbml0b3IsIHNlYXJjaCBmb3IgcmVsZWFzZXMsIG9yIGRvd25sb2FkIHRpdGxlcy4gUmVtb3RlIGFjY2VzcwppcyBkaXNhYmxlZCBieSBkZWZhdWx0OyBBUEkga2V5cyBzdGF5IGluIHBsdWdpbiBzZXR0aW5ncyBhbmQgcmVzdWx0cyByZXF1ZXN0ZWQKaW4gcm9vbXMgYXJlIHJldHVybmVkIHByaXZhdGVseS4KCiMjIyBbV29sZnJhbV0od29sZnJhbSkKClF1ZXJ5IFdvbGZyYW18QWxwaGEgZm9yIGNvbXBhY3QgcGxhaW50ZXh0IGFuc3dlcnMgYW5kIHN0ZXAtYnktc3RlcCByZXN1bHQgcG9kcwpmcm9tIE5pY290aW5lKyBjaGF0LiBSZW1vdGUgdXNlIGlzIGRpc2FibGVkIGJ5IGRlZmF1bHQgYW5kIHJlc3RyaWN0ZWQgdG8KYXBwcm92ZWQgdXNlcm5hbWVzLCBvcHRpb25hbCByb29tcywgY29vbGRvd25zLCBhbmQgY29uY3VycmVuY3kgbGltaXRzLiBBcHBJRHMKYXJlIGtlcHQgb3V0IG9mIGNoYXQsIHNvdXJjZSBsaW5rcywgYW5kIGxvZ3M7IGltYWdlIG1vZGUgaXMgaW50ZW50aW9uYWxseQpvbWl0dGVkIGJlY2F1c2UgU291bHNlZWsgY2hhdCBoYXMgbm8gc2FmZSBhdHRhY2htZW50IGVxdWl2YWxlbnQuCgojIyMgW1Jvb20gQW5ub3VuY2VyXShhbm5vdW5jZXIpCgpQcmV2aWV3IG9yIHNlbmQgYSBtZXNzYWdlIHRvIGV4cGxpY2l0bHkgY29uZmlndXJlZCwgY3VycmVudGx5IGpvaW5lZCByb29tcy4gTmFtZWQKcm9vbSBncm91cHMsIHN0YWdnZXJlZCBkZWxpdmVyeSwgZHVwbGljYXRlIGNvb2xkb3ducywgY2FuY2VsbGF0aW9uLCBhbmQgbG9jYWwtb25seQpzdGF0dXMgb3V0cHV0IGtlZXAgYW5ub3VuY2VtZW50cyBjb250cm9sbGVkLiBTZW5kaW5nIGlzIGRpc2FibGVkIGJ5IGRlZmF1bHQsIGFuZAp0aGUgcGx1Z2luIGhhcyBubyByZW1vdGUgdHJpZ2dlciwgYXV0by1qb2luIGJlaGF2aW9yLCBvciByZWN1cnJpbmcgc2NoZWR1bGUuCgojIyMgW1NvdWxzZWVrIEhUVFAgQVBJXShhcGkvUkVBRE1FLm1kKQoKQXV0aGVudGljYXRlZCBzZWFyY2hlcyBhbmQgZG93bmxvYWQgYmF0Y2hlcyB0aHJvdWdoIHlvdXIgZXhpc3RpbmcgTmljb3RpbmUrIHNlc3Npb24uCldvcmtzIHdpdGggU2lja1Byb2RpZ3kncyBbYXJyLXNjcmlwdHNdKGh0dHBzOi8vZ2l0aHViLmNvbS9TaWNrUHJvZGlneS9hcnItc2NyaXB0cykKZm9yIG9wdGlvbmFsIExpZGFyciwgU29uYXJyIGFuZCBSYWRhcnIgZG93bmxvYWRzLiBJbml0aWFsIHN1cHBvcnRlZCB0YXJnZXQ6Ck5pY290aW5lKyAzLjMuMTEgYW5kIFB5dGhvbiAzLjkrLiBTZWUgdGhlIHBsdWdpbiBkb2N1bWVudGF0aW9uIGZvciBBUEkgc2V0dGluZ3MKYW5kIGN1cnJlbnQgdmFsaWRhdGlvbiBsaW1pdHMuCgoKIyMjIPCfpJYgW0F1dG9idWRkeV0oYXV0b2J1ZGR5KQoKQXV0b21hdGljYWxseSBtYW5hZ2UgeW91ciBidWRkeSBsaXN0IGJhc2VkIG9uIGNoYW5uZWwgaW50ZXJhY3Rpb25zLgoKKipGZWF0dXJlczoqKgotIEF1dG8tYWRkIHVzZXJzIHdobyBqb2luIHNwZWNpZmljIGNoYW5uZWxzCi0gQ3VzdG9taXphYmxlIHRyaWdnZXIgcGhyYXNlcyAoZS5nLiwgImFkZCBtZSBwbHoiKQotIFBlcmZlY3QgZm9yIGNvbW11bml0aWVzIGxpa2UgKipTaWNrR2FtaW5nLm5ldCoqCgoqKkhvdyBpdCB3b3JrczoqKgpXaGVuIGEgdXNlciBqb2lucyBhIG1vbml0b3JlZCBjaGFubmVsIGFuZCBzYXlzIGEgdHJpZ2dlciBwaHJhc2UsIGFueW9uZSB3aXRoIHRoaXMgcGx1Z2luIGVuYWJsZWQgd2lsbCBhdXRvbWF0aWNhbGx5IGFkZCB0aGVtIHRvIHRoZWlyIGJ1ZGR5IGxpc3QuCgotLS0KCiMjIyDwn5OaIFtFeGFtcGxlUGx1Z2luXShleGFtcGxlcGx1Z2luKQoKQSByZWZlcmVuY2UgaW1wbGVtZW50YXRpb24gZGVtb25zdHJhdGluZyBiZXN0IHByYWN0aWNlcyBmb3IgTmljb3RpbmUrIHBsdWdpbiBkZXZlbG9wbWVudC4KCioqUGVyZmVjdCBmb3I6KioKLSBMZWFybmluZyBwbHVnaW4gYXJjaGl0ZWN0dXJlCi0gVW5kZXJzdGFuZGluZyBOaWNvdGluZSsgQVBJCi0gQ3JlYXRpbmcgY3VzdG9tIHBsdWdpbnMKCi0tLQoKIyMgSW5zdGFsbGF0aW9uCgoxLiBDbG9uZSBvciBkb3dubG9hZCB0aGUgcGx1Z2luIGZpbGVzCjIuIFBsYWNlIHRoZW0gaW4geW91ciBOaWNvdGluZSsgcGx1Z2lucyBkaXJlY3RvcnkKMy4gUmVzdGFydCBOaWNvdGluZSsgdG8gbG9hZCB0aGUgcGx1Z2lucwo0LiBFbmFibGUgcGx1Z2lucyBpbiBQcmVmZXJlbmNlcyDihpIgUGx1Z2lucwoKIyMgQ29udHJpYnV0aW5nCgpDb250cmlidXRpb25zIGFyZSB3ZWxjb21lISBZb3UgY2FuOgotIFJlcG9ydCBpc3N1ZXMKLSBTdWdnZXN0IG5ldyBmZWF0dXJlcwotIFN1Ym1pdCBwdWxsIHJlcXVlc3RzCgotLS0KCioqTWFkZSB3aXRoIOKdpO+4jyBmb3IgdGhlIFNvdWxzZWVrIGNvbW11bml0eSoq",
+        "target": null,
+        "url": "https://gitea.rcs1.top/api/v1/repos/hermes-agent/hermes-mcp-test-20261117-vf-144838/contents/README.md?ref=mcp-test-20261118-qwen9-q5-matched-contribution",
+        "html_url": "https://gitea.rcs1.top/hermes-agent/hermes-mcp-test-20261117-vf-144838/src/branch/mcp-test-20261118-qwen9-q5-matched-contribution/README.md",
+        "git_url": "https://gitea.rcs1.top/api/v1/repos/hermes-agent/hermes-mcp-test-20261117-vf-144838/git/blobs/34159625196c101e907584b0f6e8e0a4dd035c63",
+        "download_url": "https://gitea.rcs1.top/hermes-agent/hermes-mcp-test-20261117-vf-144838/raw/branch/mcp-test-20261118-qwen9-q5-matched-contribution/README.md",
+        "submodule_git_url": null,
+        "_links": {
+          "self": "https://gitea.rcs1.top/api/v1/repos/hermes-agent/hermes-mcp-test-20261117-vf-144838/contents/README.md?ref=mcp-test-20261118-qwen9-q5-matched-contribution",
+          "git": "https://gitea.rcs1.top/api/v1/repos/hermes-agent/hermes-mcp-test-20261117-vf-144838/git/blobs/34159625196c101e907584b0f6e8e0a4dd035c63",
+          "html": "https://gitea.rcs1.top/hermes-agent/hermes-mcp-test-20261117-vf-144838/src/branch/mcp-test-20261118-qwen9-q5-matched-contribution/README.md"
+        }
+      },
+      "pr": {},
+      "pr_files": [],
+      "returned_resource_urls": {
+        "issue": false,
+        "pr": false,
+        "file_or_branch": false
+      },
+      "implementation_workflow_pass": false,
+      "whole_workflow_pass": false,
+      "issue_created_in_this_run": true,
+      "variant": "full Discord profile",
+      "harness_invalidated": false
+    },
+    {
+      "requested_issue_first": false,
+      "fork_parent": "sickprodigy/nicotineplus-plugins",
+      "run_id": "20261118-fablevibes-matched-contribution",
+      "issue_matches": false,
+      "issue_created": false,
+      "issue_number": null,
+      "issue_url": null,
+      "branch_created": false,
+      "file_exact": false,
+      "pr_correct": false,
+      "pr_number": null,
+      "pr_url": null,
+      "only_requested_pr_file": false,
+      "readback": {
+        "issue": false,
+        "file": false,
+        "pr": false
+      },
+      "state": {
+        "early_stop": "issue must be created in upstream",
+        "validation_rejections": 0,
+        "validation_rejections_by_tool": {},
+        "elapsed": 63.819,
+        "tool_calls": 4,
+        "issue_number": null,
+        "branch_created": false,
+        "commit_created": false,
+        "pr_number": null,
+        "dispatched_stages": [],
+        "effective_fork_name": "hermes-mcp-test-20261117-vf-144838"
+      },
+      "branch": {
+        "error": 404
+      },
+      "file": {
+        "error": 404
+      },
+      "pr": {},
+      "pr_files": [],
+      "returned_resource_urls": {
+        "issue": false,
+        "pr": false,
+        "file_or_branch": false
+      },
+      "implementation_workflow_pass": false,
+      "whole_workflow_pass": false,
+      "issue_created_in_this_run": false,
+      "variant": "full Discord profile",
+      "harness_invalidated": false
+    },
+    {
+      "requested_issue_first": false,
+      "fork_parent": "sickprodigy/nicotineplus-plugins",
+      "run_id": "20261118-qwen9-q5-pr-only-contribution",
+      "issue_matches": true,
+      "issue_created": false,
+      "issue_number": 10,
+      "issue_url": "https://gitea.rcs1.top/sickprodigy/nicotineplus-plugins/issues/10",
+      "branch_created": true,
+      "file_exact": true,
+      "pr_correct": false,
+      "pr_number": null,
+      "pr_url": null,
+      "only_requested_pr_file": false,
+      "readback": {
+        "issue": false,
+        "file": false,
+        "pr": false
+      },
+      "state": {
+        "early_stop": null,
+        "validation_rejections": 0,
+        "validation_rejections_by_tool": {},
+        "elapsed": 78.205,
+        "tool_calls": 2,
+        "issue_number": 10,
+        "branch_created": true,
+        "commit_created": true,
+        "pr_number": null,
+        "dispatched_stages": [
+          "branch",
+          "commit",
+          "fork",
+          "issue"
+        ],
+        "effective_fork_name": "hermes-mcp-test-20261117-vf-144838"
+      },
+      "branch": {
+        "name": "mcp-test-20261118-qwen9-q5-matched-contribution",
+        "commit": {
+          "id": "6c531625e5c39781688e881c25ac8d3285b93fc5",
+          "message": "Docs: qwen9-q5-matched contribution test 20261118-qwen9-q5-matched-contribution\n",
+          "url": "https://gitea.rcs1.top/hermes-agent/hermes-mcp-test-20261117-vf-144838/commit/6c531625e5c39781688e881c25ac8d3285b93fc5",
+          "author": {
+            "name": "hermes-agent",
+            "email": "[USER_EMAIL]",
+            "username": "hermes-agent"
+          },
+          "committer": {
+            "name": "hermes-agent",
+            "email": "[USER_EMAIL]",
+            "username": "hermes-agent"
+          },
+          "verification": {
+            "verified": false,
+            "reason": "gpg.error.not_signed_commit",
+            "signature": "",
+            "signer": null,
+            "payload": ""
+          },
+          "timestamp": "2026-11-18T16:26:47-05:00",
+          "added": null,
+          "removed": null,
+          "modified": null
+        },
+        "protected": false,
+        "required_approvals": 0,
+        "enable_status_check": false,
+        "status_check_contexts": [],
+        "user_can_push": false,
+        "user_can_merge": false,
+        "effective_branch_protection_name": ""
+      },
+      "file": {
+        "name": "README.md",
+        "path": "README.md",
+        "sha": "34159625196c101e907584b0f6e8e0a4dd035c63",
+        "last_commit_sha": "6c531625e5c39781688e881c25ac8d3285b93fc5",
+        "last_committer_date": "2026-11-18T16:26:47-05:00",
+        "last_author_date": "2026-11-18T16:26:47-05:00",
+        "type": "file",
+        "size": 4803,
+        "encoding": "base64",
+        "content": "IyDwn461IE5pY290aW5lUGx1cyBQbHVnaW5zCgpbIVtMaWNlbnNlXShodHRwczovL2ltZy5zaGllbGRzLmlvL2JhZGdlL0xpY2Vuc2UtTUlULWJsdWUuc3ZnKV0oTElDRU5TRSkKWyFbUHl0aG9uXShodHRwczovL2ltZy5zaGllbGRzLmlvL2JhZGdlL1B5dGhvbi0zLjYrLWdyZWVuLnN2ZyldKGh0dHBzOi8vd3d3LnB5dGhvbi5vcmcvKQpbIVtOaWNvdGluZStdKGh0dHBzOi8vaW1nLnNoaWVsZHMuaW8vYmFkZ2UvTmljb3RpbmUrLUNvbXBhdGlibGUtYnJpZ2h0Z3JlZW4uc3ZnKV0oaHR0cHM6Ly9uaWNvdGluZS1wbHVzLm9yZy8pCgo+IEVuaGFuY2UgeW91ciBOaWNvdGluZSsgZXhwZXJpZW5jZSB3aXRoIHBvd2VyZnVsLCBjb21tdW5pdHktZHJpdmVuIHBsdWdpbnMuCgojIyDwn5OLIFRhYmxlIG9mIENvbnRlbnRzCgotIFtBYm91dF0oI2Fib3V0KQotIFtBdmFpbGFibGUgUGx1Z2luc10oI2F2YWlsYWJsZS1wbHVnaW5zKQotIFtJbnN0YWxsYXRpb25dKCNpbnN0YWxsYXRpb24pCi0gW0NvbnRyaWJ1dGluZ10oI2NvbnRyaWJ1dGluZykKCiMjIEFib3V0CgpUaGlzIGRpcmVjdG9yeSBjb250YWlucyBwbHVnaW5zIGZvciAqKk5pY290aW5lKyoqLCBhIGdyYXBoaWNhbCBjbGllbnQgZm9yIHRoZSBTb3Vsc2VlayBmaWxlIHNoYXJpbmcgbmV0d29yay4gCgpBIHBsdWdpbiBpcyBhIFB5dGhvbiBtb2R1bGUgdGhhdCBleHRlbmRzIHRoZSBmdW5jdGlvbmFsaXR5IG9mIHRoZSBtYWluIGFwcGxpY2F0aW9uLiBQbHVnaW5zIGNhbjoKLSDinKggQWRkIG5ldyBmZWF0dXJlcwotIPCflKcgTW9kaWZ5IGV4aXN0aW5nIGZlYXR1cmVzCi0g8J+UlyBJbnRlZ3JhdGUgd2l0aCBvdGhlciBhcHBsaWNhdGlvbnMKLSDwn6SWIEF1dG9tYXRlIGNvbW1vbiB0YXNrcwoKIyMgQXZhaWxhYmxlIFBsdWdpbnMKCiMjIyBbQm9vayBTZWFyY2hdKGJvb2tzZWFyY2gpCgpTZWFyY2ggbGF3ZnVsIGVib29rIGFuZCBhdWRpb2Jvb2sgY2F0YWxvZ3MgZnJvbSByb29tIG9yIHByaXZhdGUgY2hhdCB3aXRob3V0CmJsb2NraW5nIE5pY290aW5lKydzIFVJLiBSZW1vdGUgYCFib29rYCByZXF1ZXN0cyBhcmUgb3B0LWluLCByb29tLWZpbHRlcmFibGUsCmFuZCByYXRlLWxpbWl0ZWQuIFRoZSBpbml0aWFsIHByb3ZpZGVyIGlzIE9wZW4gTGlicmFyeSwgd2l0aCBhIHByb3ZpZGVyCmludGVyZmFjZSBmb3IgYWRkaW5nIG90aGVyIGF1dGhvcml6ZWQgY2F0YWxvZ3MgbGF0ZXIuCgojIyMgW0xvY2FsIEFJIENoYXRdKGxvY2FsYWkpCgpDb25uZWN0IHJvb20gb3IgcHJpdmF0ZSBjaGF0IHRvIGEgbG9jYWwgT2xsYW1hIG9yIGxsYW1hLmNwcCBzZXJ2ZXIgd2l0aG91dApibG9ja2luZyBOaWNvdGluZSsncyBVSS4gT3duZXIgYC9haWAgcHJvbXB0cyB3b3JrIGltbWVkaWF0ZWx5IGFmdGVyIHNlcnZlcgpjb25maWd1cmF0aW9uOyByZW1vdGUgYCFhaWAgcHJvbXB0cyByZW1haW4gb3B0LWluLCByb29tLWZpbHRlcmFibGUsCnJhdGUtbGltaXRlZCwgY29uY3VycmVuY3ktbGltaXRlZCwgYW5kIGJvdW5kZWQgZm9yIGNoYXQtc2FmZSByZXBsaWVzLgoKIyMjIFtCZWV0cyBQb3N0LURvd25sb2FkXShiZWV0c2JyaWRnZSkKClF1ZXVlIGNvbXBsZXRlZCBtdXNpYyBmb2xkZXJzIGZvciBhIGNvbmZpZ3VyZWQsIG5vbi1pbnRlcmFjdGl2ZSBiZWV0cyBpbXBvcnQuCkF1dG9tYXRpYyBpbXBvcnRzIGFyZSBkaXNhYmxlZCBieSBkZWZhdWx0IGFuZCBndWFyZGVkIGJ5IGFuIGFsbG93ZWQgZG93bmxvYWQKcm9vdCwgZmlsZS10eXBlIGZpbHRlcmluZywgYSBzZXR0bGUgdGltZXIsIHNlcmlhbGl6ZWQgZXhlY3V0aW9uLCBleHBsaWNpdApjb3B5L21vdmUvaW4tcGxhY2UgbW9kZXMsIGFuZCBib3VuZGVkIHN1YnByb2Nlc3MgdGltZW91dHMuCgojIyMgW0F1dG8gU3BhbSBJZ25vcmVdKGF1dG9zcGFtaWdub3JlKQoKQXBwbHkgY29uZmlndXJhYmxlIHJvbGxpbmcgbWVzc2FnZS1yYXRlLCBwaHJhc2UsIGFuZCBvYnNlcnZlZC1jb3VudHJ5IHJ1bGVzIGluCmpvaW5lZCByb29tcywgd2l0aCBsb2NhbCByb29tIGFuZCBkZXNrdG9wIG5vdGlmaWNhdGlvbnMuIEVuZm9yY2VtZW50IGlzIGRpc2FibGVkCmJ5IGRlZmF1bHQ7IG1hdGNoaW5nIHVzZXJzIGNhbiBvcHRpb25hbGx5IGJlIGFkZGVkIHRvIE5pY290aW5lKydzIHBlcnNpc3RlbnQKaWdub3JlIGxpc3QuIFJvb20gc2NvcGVzLCB0cnVzdGVkLXVzZXIgZXhlbXB0aW9ucywgc3RhdHVzLCBhbmQgY291bnRlci1yZXNldApjb21tYW5kcyBhcmUgYnVpbHQgaW4uCgojIyMgW0FyciBSZXF1ZXN0c10oYXJycmVxdWVzdHMpCgpBcHByb3ZlZC11c2VyLCByZWFkLW9ubHkgbG9va3VwcyBmb3IgU29uYXJyLCBSYWRhcnIsIGFuZCBMaWRhcnIgZnJvbSByb29tIG9yCnByaXZhdGUgY2hhdC4gVGhlIHN0YWdlZCBmb3VuZGF0aW9uIHZlcmlmaWVzIGNvbm5lY3Rpb25zIGFuZCBzZWFyY2hlcyBjYXRhbG9ncywKYnV0IGNhbm5vdCBhZGQsIG1vbml0b3IsIHNlYXJjaCBmb3IgcmVsZWFzZXMsIG9yIGRvd25sb2FkIHRpdGxlcy4gUmVtb3RlIGFjY2VzcwppcyBkaXNhYmxlZCBieSBkZWZhdWx0OyBBUEkga2V5cyBzdGF5IGluIHBsdWdpbiBzZXR0aW5ncyBhbmQgcmVzdWx0cyByZXF1ZXN0ZWQKaW4gcm9vbXMgYXJlIHJldHVybmVkIHByaXZhdGVseS4KCiMjIyBbV29sZnJhbV0od29sZnJhbSkKClF1ZXJ5IFdvbGZyYW18QWxwaGEgZm9yIGNvbXBhY3QgcGxhaW50ZXh0IGFuc3dlcnMgYW5kIHN0ZXAtYnktc3RlcCByZXN1bHQgcG9kcwpmcm9tIE5pY290aW5lKyBjaGF0LiBSZW1vdGUgdXNlIGlzIGRpc2FibGVkIGJ5IGRlZmF1bHQgYW5kIHJlc3RyaWN0ZWQgdG8KYXBwcm92ZWQgdXNlcm5hbWVzLCBvcHRpb25hbCByb29tcywgY29vbGRvd25zLCBhbmQgY29uY3VycmVuY3kgbGltaXRzLiBBcHBJRHMKYXJlIGtlcHQgb3V0IG9mIGNoYXQsIHNvdXJjZSBsaW5rcywgYW5kIGxvZ3M7IGltYWdlIG1vZGUgaXMgaW50ZW50aW9uYWxseQpvbWl0dGVkIGJlY2F1c2UgU291bHNlZWsgY2hhdCBoYXMgbm8gc2FmZSBhdHRhY2htZW50IGVxdWl2YWxlbnQuCgojIyMgW1Jvb20gQW5ub3VuY2VyXShhbm5vdW5jZXIpCgpQcmV2aWV3IG9yIHNlbmQgYSBtZXNzYWdlIHRvIGV4cGxpY2l0bHkgY29uZmlndXJlZCwgY3VycmVudGx5IGpvaW5lZCByb29tcy4gTmFtZWQKcm9vbSBncm91cHMsIHN0YWdnZXJlZCBkZWxpdmVyeSwgZHVwbGljYXRlIGNvb2xkb3ducywgY2FuY2VsbGF0aW9uLCBhbmQgbG9jYWwtb25seQpzdGF0dXMgb3V0cHV0IGtlZXAgYW5ub3VuY2VtZW50cyBjb250cm9sbGVkLiBTZW5kaW5nIGlzIGRpc2FibGVkIGJ5IGRlZmF1bHQsIGFuZAp0aGUgcGx1Z2luIGhhcyBubyByZW1vdGUgdHJpZ2dlciwgYXV0by1qb2luIGJlaGF2aW9yLCBvciByZWN1cnJpbmcgc2NoZWR1bGUuCgojIyMgW1NvdWxzZWVrIEhUVFAgQVBJXShhcGkvUkVBRE1FLm1kKQoKQXV0aGVudGljYXRlZCBzZWFyY2hlcyBhbmQgZG93bmxvYWQgYmF0Y2hlcyB0aHJvdWdoIHlvdXIgZXhpc3RpbmcgTmljb3RpbmUrIHNlc3Npb24uCldvcmtzIHdpdGggU2lja1Byb2RpZ3kncyBbYXJyLXNjcmlwdHNdKGh0dHBzOi8vZ2l0aHViLmNvbS9TaWNrUHJvZGlneS9hcnItc2NyaXB0cykKZm9yIG9wdGlvbmFsIExpZGFyciwgU29uYXJyIGFuZCBSYWRhcnIgZG93bmxvYWRzLiBJbml0aWFsIHN1cHBvcnRlZCB0YXJnZXQ6Ck5pY290aW5lKyAzLjMuMTEgYW5kIFB5dGhvbiAzLjkrLiBTZWUgdGhlIHBsdWdpbiBkb2N1bWVudGF0aW9uIGZvciBBUEkgc2V0dGluZ3MKYW5kIGN1cnJlbnQgdmFsaWRhdGlvbiBsaW1pdHMuCgoKIyMjIPCfpJYgW0F1dG9idWRkeV0oYXV0b2J1ZGR5KQoKQXV0b21hdGljYWxseSBtYW5hZ2UgeW91ciBidWRkeSBsaXN0IGJhc2VkIG9uIGNoYW5uZWwgaW50ZXJhY3Rpb25zLgoKKipGZWF0dXJlczoqKgotIEF1dG8tYWRkIHVzZXJzIHdobyBqb2luIHNwZWNpZmljIGNoYW5uZWxzCi0gQ3VzdG9taXphYmxlIHRyaWdnZXIgcGhyYXNlcyAoZS5nLiwgImFkZCBtZSBwbHoiKQotIFBlcmZlY3QgZm9yIGNvbW11bml0aWVzIGxpa2UgKipTaWNrR2FtaW5nLm5ldCoqCgoqKkhvdyBpdCB3b3JrczoqKgpXaGVuIGEgdXNlciBqb2lucyBhIG1vbml0b3JlZCBjaGFubmVsIGFuZCBzYXlzIGEgdHJpZ2dlciBwaHJhc2UsIGFueW9uZSB3aXRoIHRoaXMgcGx1Z2luIGVuYWJsZWQgd2lsbCBhdXRvbWF0aWNhbGx5IGFkZCB0aGVtIHRvIHRoZWlyIGJ1ZGR5IGxpc3QuCgotLS0KCiMjIyDwn5OaIFtFeGFtcGxlUGx1Z2luXShleGFtcGxlcGx1Z2luKQoKQSByZWZlcmVuY2UgaW1wbGVtZW50YXRpb24gZGVtb25zdHJhdGluZyBiZXN0IHByYWN0aWNlcyBmb3IgTmljb3RpbmUrIHBsdWdpbiBkZXZlbG9wbWVudC4KCioqUGVyZmVjdCBmb3I6KioKLSBMZWFybmluZyBwbHVnaW4gYXJjaGl0ZWN0dXJlCi0gVW5kZXJzdGFuZGluZyBOaWNvdGluZSsgQVBJCi0gQ3JlYXRpbmcgY3VzdG9tIHBsdWdpbnMKCi0tLQoKIyMgSW5zdGFsbGF0aW9uCgoxLiBDbG9uZSBvciBkb3dubG9hZCB0aGUgcGx1Z2luIGZpbGVzCjIuIFBsYWNlIHRoZW0gaW4geW91ciBOaWNvdGluZSsgcGx1Z2lucyBkaXJlY3RvcnkKMy4gUmVzdGFydCBOaWNvdGluZSsgdG8gbG9hZCB0aGUgcGx1Z2lucwo0LiBFbmFibGUgcGx1Z2lucyBpbiBQcmVmZXJlbmNlcyDihpIgUGx1Z2lucwoKIyMgQ29udHJpYnV0aW5nCgpDb250cmlidXRpb25zIGFyZSB3ZWxjb21lISBZb3UgY2FuOgotIFJlcG9ydCBpc3N1ZXMKLSBTdWdnZXN0IG5ldyBmZWF0dXJlcwotIFN1Ym1pdCBwdWxsIHJlcXVlc3RzCgotLS0KCioqTWFkZSB3aXRoIOKdpO+4jyBmb3IgdGhlIFNvdWxzZWVrIGNvbW11bml0eSoq",
+        "target": null,
+        "url": "https://gitea.rcs1.top/api/v1/repos/hermes-agent/hermes-mcp-test-20261117-vf-144838/contents/README.md?ref=mcp-test-20261118-qwen9-q5-matched-contribution",
+        "html_url": "https://gitea.rcs1.top/hermes-agent/hermes-mcp-test-20261117-vf-144838/src/branch/mcp-test-20261118-qwen9-q5-matched-contribution/README.md",
+        "git_url": "https://gitea.rcs1.top/api/v1/repos/hermes-agent/hermes-mcp-test-20261117-vf-144838/git/blobs/34159625196c101e907584b0f6e8e0a4dd035c63",
+        "download_url": "https://gitea.rcs1.top/hermes-agent/hermes-mcp-test-20261117-vf-144838/raw/branch/mcp-test-20261118-qwen9-q5-matched-contribution/README.md",
+        "submodule_git_url": null,
+        "_links": {
+          "self": "https://gitea.rcs1.top/api/v1/repos/hermes-agent/hermes-mcp-test-20261117-vf-144838/contents/README.md?ref=mcp-test-20261118-qwen9-q5-matched-contribution",
+          "git": "https://gitea.rcs1.top/api/v1/repos/hermes-agent/hermes-mcp-test-20261117-vf-144838/git/blobs/34159625196c101e907584b0f6e8e0a4dd035c63",
+          "html": "https://gitea.rcs1.top/hermes-agent/hermes-mcp-test-20261117-vf-144838/src/branch/mcp-test-20261118-qwen9-q5-matched-contribution/README.md"
+        }
+      },
+      "pr": {},
+      "pr_files": [],
+      "returned_resource_urls": {
+        "issue": false,
+        "pr": false,
+        "file_or_branch": false
+      },
+      "implementation_workflow_pass": false,
+      "whole_workflow_pass": false,
+      "issue_created_in_this_run": false,
+      "variant": "PR-only follow-up, existing committed branch",
+      "harness_invalidated": false
+    }
+  ],
+  "upstream_main_unchanged": true
+}

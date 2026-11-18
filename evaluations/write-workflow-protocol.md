@@ -1,7 +1,9 @@
-# Next evaluation: upstream issue, fork fix and upstream PR
+# Bounded evaluation: upstream issue, fork fix and upstream PR
 
-Revised November 18 to match the owner's contribution workflow. This revised
-protocol has not run. The [November 17 results](2026-11-17-fork-issue/investigation.md)
+Executed November 18 against the approved fixture. See the
+[three-model comparison](2026-11-18-contribution/investigation.md): no final full
+pass; native same-account control succeeded. The original runtime was restored.
+The [November 17 results](2026-11-17-fork-issue/investigation.md)
 remain historical: the direct control created its issue in a fork, and neither
 model attempt passed. Preserve those resources and grades.
 
@@ -13,8 +15,10 @@ Keep the first two prompts unchanged:
 ## Third prompt
 
 Before running, select one independently verified small README correction and
-substitute exact text below. Use the same prompt and correction for matched
-comparisons, with fixture state recorded and duplicates prevented.
+substitute exact text below. Use the same task instructions across models.
+When reusing one upstream, use equivalent distinct one-line corrections to avoid
+duplicate contributions, and record those differences. An identical-correction
+comparison requires isolated fixtures or an explicitly approved reset.
 
 > Using only the configured Gitea MCP, contribute this documentation fix to
 > `sickprodigy/nicotineplus-plugins`: in `<path>`, replace `<old-text>` with
@@ -31,6 +35,11 @@ comparisons, with fixture state recorded and duplicates prevented.
 
 The issue and PR belong to upstream; the branch and commit belong to the fork.
 Fork Issues need not be enabled. Test repository selection as well as arguments.
+
+The concrete run manifest fixes issue and PR titles/bodies for traceability.
+Corrections are deliberately small documentation edits; success proves bounded
+MCP operations, not arbitrary code-repair ability. No model-created fresh fork
+was scored when an existing fork was reused.
 
 ## Fixture and guard requirements
 
@@ -58,7 +67,7 @@ Fork Issues need not be enabled. Test repository selection as well as arguments.
 
 Use 300 seconds and 20 top-level tool calls for this longer workflow. These are
 new limits, separate from the old 180-second/12-call probe. Allow one corrected
-argument retry; block repeated identical failures. Stop before any forbidden
+argument retry per operation/tool; block repeated identical failures. Stop before any forbidden
 detour, settings change, upstream code write or write outside the manifest.
 Ordinary Gitea reads and internal skill reads are allowed. Preserve partial
 resources and traces; do not rescue a scored turn with corrective user hints.
@@ -80,6 +89,15 @@ controls are not model passes. Keep these results separate from historical
 read-only and fork/issue probes. The upstream default branch stays unchanged.
 Leave the PR open; deletion, issue closure, merging and Discord messages are
 outside the test. Record resources for later owner-approved cleanup.
+
+## Native response preflight
+
+Before scoring, exercise guard state handling against the actual MCP response
+formats. Branch/file success can be JSON strings rather than objects. Validate
+that branch and commit state advance and that valid subsequent writes remain
+allowed. Keep preliminary harness failures ungraded and preserve their partial
+resources; do not turn them into model failures. Independently verify writes,
+including after ambiguous timeouts, before retrying.
 
 ## Historical fixture lesson
 

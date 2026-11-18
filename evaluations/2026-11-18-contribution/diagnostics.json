@@ -1,0 +1,30 @@
+[
+  {
+    "run_id": "20261118-fablevibes-focused-contribution",
+    "model": "qwen3.6-14b-a3b-fablevibes-q4_k_m",
+    "variant": "MCP-only, temperature 0.2, existing issue",
+    "seconds": 75.661,
+    "tool_calls": 9,
+    "seed_issue_number": 8,
+    "final_response": "The Gitea MCP service (`mcp-gitea-hermes`) is rejecting all calls \u2014 every attempt returns a 409 or a \"rejected the last 3 calls\" error. This is a genuine blocker: I cannot read the upstream issue, access the fork, or create any PR without the MCP connection.\n\n**Error:** `MCP server 'mcp-gitea-hermes' rejected the last 3 calls (it is reachable; see the error text those calls returned).`\n\nThe fork `hermes-agent/hermes-mcp-test-20261117-vf-144838` exists (confirmed by the fork error message), but I cannot access it or any repository through MCP to read the README.md, create a branch, commit the change, or open the PR.\n\n**To proceed:** the Gitea MCP service needs to be restarted or its configuration fixed so it accepts API calls again.",
+    "new_issue_created": false,
+    "new_branch_created": false,
+    "new_commit_created": false,
+    "new_pr_created": false,
+    "workflow_pass": false
+  },
+  {
+    "run_id": "20261118-qwen9-q5-pr-only-contribution",
+    "model": "qwen3.5-9b-q5_k_m",
+    "variant": "PR-only follow-up, existing committed branch",
+    "seconds": 78.205,
+    "tool_calls": 2,
+    "seed_issue_number": 10,
+    "final_response": "I found an existing PR (#7) with a similar head branch pattern, but it doesn't match the exact branches you specified. The branch `hermes-mcp-test-20261117-vf-144838/mcp-test-20261118-qwen9-q5-matched-contribution` doesn't exist on the sickprodigy/nicotineplus-plugins repository.\n\nTo create a pull request with the specified head branch, that branch must first exist on the repository. Since it doesn't exist, the Gitea MCP cannot create the PR as requested.\n\n**Error: Branch not found**\n\nThe source branch `hermes-mcp-test-20261117-vf-144838/mcp-test-20261118-qwen9-q5-matched-contribution` does not exist on sickprodigy/nicotineplus-plugins. Before creating the PR, you would need to:\n1. Ensure the fork branch exists (either on hermes-agent's fork of nicotineplus-plugins, or directly on sickprodigy/nicotineplus-plugins)\n2. Verify the branch contains the committed README correction\n\nWould you like me to:\n- Create a PR from the existing PR #7's head branch (`mcp-control-20261118`) instead?\n- Check if the branch exists under a different owner?\n- Search for any branches containing \"qwen9-q5-matched-contribution\"?",
+    "new_issue_created": false,
+    "new_branch_created": false,
+    "new_commit_created": false,
+    "new_pr_created": false,
+    "workflow_pass": false
+  }
+]

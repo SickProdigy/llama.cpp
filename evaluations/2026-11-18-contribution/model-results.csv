@@ -1,0 +1,4 @@
+run_id,model,context,seconds,first_api_seconds,peak_gpu_mib,max_completed_input_tokens,tool_calls,early_stop,issue_created,issue_number,branch_created,file_exact,pr_correct,whole_workflow_pass
+20261118-vibeforged-matched-contribution,qwen3.6-14b-a3b-vibeforged-v2-q4_k_m,98304,142.561,51.5,9082,26614,9,invalid combined branch/commit,True,9,True,False,False,False
+20261118-qwen9-q5-matched-contribution,qwen3.5-9b-q5_k_m,98304,127.319,49.4,7472,26017,10,repeated identical rejected call,True,10,True,True,False,False
+20261118-fablevibes-matched-contribution,qwen3.6-14b-a3b-fablevibes-q4_k_m,98304,63.819,49.0,9082,18352,4,issue must be created in upstream,False,,False,False,False,False

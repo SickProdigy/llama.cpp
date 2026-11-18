@@ -1,0 +1,74 @@
+{
+  "hermes": {
+    "running": true,
+    "same_container": true,
+    "same_image": true,
+    "same_command": true,
+    "same_environment": true,
+    "same_mounts": true
+  },
+  "llama-cpp": {
+    "running": true,
+    "same_container": true,
+    "same_image": true,
+    "same_command": true,
+    "same_environment": true,
+    "same_mounts": true
+  },
+  "config.yaml_unchanged": true,
+  ".env_unchanged": true,
+  "backend": {
+    "model_path": "/models/Qwen3.6-14B-A3B-VibeForged-v2-Q4_K_M.gguf",
+    "model_alias": "qwen3.6-14b-a3b-vibeforged-v2-q4_k_m",
+    "build_info": "b12464-d3c3e242c",
+    "context": 98304
+  },
+  "checked_utc": "2026-11-18T21:33:09.995586+00:00",
+  "retained_model_issues": [
+    {
+      "number": 10,
+      "title": "MCP contribution test 20261118-qwen9-q5-matched-contribution",
+      "url": "https://gitea.rcs1.top/sickprodigy/nicotineplus-plugins/issues/10",
+      "state": "open"
+    },
+    {
+      "number": 9,
+      "title": "MCP contribution test 20261118-vibeforged-matched-contribution",
+      "url": "https://gitea.rcs1.top/sickprodigy/nicotineplus-plugins/issues/9",
+      "state": "open"
+    },
+    {
+      "number": 8,
+      "title": "MCP contribution test 20261118-fablevibes-retry-contribution",
+      "url": "https://gitea.rcs1.top/sickprodigy/nicotineplus-plugins/issues/8",
+      "state": "open"
+    },
+    {
+      "number": 6,
+      "title": "MCP contribution test 20261118-qwen9-q5-retry-contribution",
+      "url": "https://gitea.rcs1.top/sickprodigy/nicotineplus-plugins/issues/6",
+      "state": "open"
+    },
+    {
+      "number": 5,
+      "title": "MCP contribution test 20261118-qwen9-q5-contribution",
+      "url": "https://gitea.rcs1.top/sickprodigy/nicotineplus-plugins/issues/5",
+      "state": "open"
+    },
+    {
+      "number": 4,
+      "title": "MCP contribution test 20261118-vibeforged-contribution",
+      "url": "https://gitea.rcs1.top/sickprodigy/nicotineplus-plugins/issues/4",
+      "state": "open"
+    }
+  ],
+  "retained_prs": [
+    {
+      "number": 7,
+      "title": "Docs: repository wording (MCP capability control)",
+      "url": "https://gitea.rcs1.top/sickprodigy/nicotineplus-plugins/pulls/7",
+      "state": "open",
+      "merged": false
+    }
+  ]
+}

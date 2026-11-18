@@ -4,12 +4,30 @@ GGUF testing notes for Hermes Agent running through llama.cpp.
 
 This file tracks which local GGUF models can actually complete the Hermes Agent plus Gitea MCP workflow, not just whether they answer a prompt or make a promising first tool call. Use the matrix for quick comparison and the detailed sections below for why a model passed, failed, or landed in the middle.
 
-## Next write test: upstream contribution workflow
+## November 18, 2026 upstream contribution workflow comparison
 
-The third test now targets an issue in `sickprodigy/nicotineplus-plugins`, a
-small fix on a branch in `hermes-agent`'s fork, and a PR back to upstream
-referencing that issue. This revised test is **not yet run**; prepare the exact
-change manifest and runner guard first. See the
+**No model completed the full upstream issue → fork fix → upstream PR workflow.**
+The final three runs used the same frozen Discord agent profile, 42 tool
+schemas, validated guard, sampling and llama.cpp b12464 at 98,304 context.
+Earlier harness-affected probes were excluded and preserved separately.
+
+| Model | Read/review sample | Final contribution result | Peak VRAM |
+|---|---|---|---:|
+| VibeForged v2 Q4_K_M | Useful explanation with unsupported fork claim; review drifted to web | Created issue #9 and fork branch; file update tried creating that branch again | 9,082 MiB |
+| Qwen3.5-9B Q5_K_M | Useful explanation with unsupported claims; review drifted to local files | Created issue #10, branch and exact file commit; repeatedly omitted PR head/base | 7,472 MiB |
+| FableVibes Q4_K_M | Passed both single read/review prompts | Tried opening the issue under the wrong upstream owner; blocked | 9,082 MiB |
+
+Qwen got furthest on writes and uses the least memory, but a separate PR-only
+follow-up also failed. Fable's MCP-only/temperature-0.2 implementation probe
+failed after changing the supplied fork identifier. Neither diagnostic counts
+as a full pass. A **non-model** control through the same Hermes MCP connection
+opened [PR #7](https://gitea.rcs1.top/sickprodigy/nicotineplus-plugins/pulls/7),
+confirming the required connection permissions and cross-fork PR capability.
+
+These are small capability probes, not reliability estimates; do not pool them
+with earlier nine-session scores. The original runtime/model/configuration was
+restored. See the [full results, exact task setup and retained artifacts](evaluations/2026-11-18-contribution/investigation.md),
+[final write results](evaluations/2026-11-18-contribution/model-results.csv) and
 [contribution test protocol](evaluations/write-workflow-protocol.md).
 
 ## November 17, 2026 real Gitea fork/issue probe
@@ -169,7 +187,7 @@ gateway parity.
 
 ## Test Matrix
 
-### Latest Ordinary Repository Results
+### Nine-session Ordinary Repository Results (November 12–16)
 
 Each row uses nine fresh full-agent sessions. November 16 uses the repaired
 Discord agent profile on b12407; older rows use CLI selection on b12316 (Nov 13)
@@ -186,8 +204,10 @@ The dated sections retain all configurations and earlier scores.
 | Qwen3.5-9B Q8_0 | [Nov 12](evaluations/2026-11-12/investigation.md) | 65,536 | 6/9 | 4/9 | 3/9 | 9,474 MiB | 3.3s | 91.5s | Not retested |
 | Qwen3.5-9B Q8_0 | [Nov 12](evaluations/2026-11-12/investigation.md) | 98,304 | 5/9 | 3/9 | 3/9 | 9,922 MiB | 3.7s | 127.9s | Not retested |
 
-No candidate established reliable ordinary repository reviews. Keep VibeForged Q4:
-Qwen Q5 uses less VRAM but ties its 3/9 combined score and has a slower median turn.
+No candidate established reliable ordinary repository reviews in that comparison.
+The November 16 decision was to keep VibeForged Q4: Qwen Q5 used less VRAM but
+tied its 3/9 combined score and had a slower median turn. The November 18 write
+comparison above is separate and does not establish an unattended-workflow winner.
 Both finish the November 16 history sequence, with content defects remaining.
 The tested local summary budget/read-default/routing profile fixes are deployed;
 the existing model/credentials/endpoints remain. See the dated report and

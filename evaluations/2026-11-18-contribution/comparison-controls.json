@@ -1,0 +1,71 @@
+{
+  "profile_hashes": {
+    "config.yaml": "c9e8e03135cb4d488b2a331b3ff6fefb96e9222fd5ee0698bbb5b222691948ac",
+    ".env": "3e480d3460053c9e084d962c69bdd06bc821ff9b06b5b1a483c15aceb793e722"
+  },
+  "models": [
+    {
+      "label": "vibeforged-matched",
+      "alias": "qwen3.6-14b-a3b-vibeforged-v2-q4_k_m",
+      "guard_hash": "234c52f8661328284ce483a6e20b95be027466faa219c41f9fdf2b49d20e20cd",
+      "schemas_hash": "ab7eaa559caa451fc4df61ced3f43a1e70d59835ee279905cf17da334516a5d2",
+      "max_tokens": 4096,
+      "reasoning_effort": "medium",
+      "context": 98304,
+      "build": "b12464-d3c3e242c",
+      "sampling": {
+        "temperature": 1.0,
+        "top_k": 20,
+        "top_p": 0.949999988079071,
+        "min_p": 0.05000000074505806,
+        "repeat_penalty": 1.0,
+        "presence_penalty": 0.0,
+        "frequency_penalty": 0.0
+      },
+      "tools": 42
+    },
+    {
+      "label": "qwen9-q5-matched",
+      "alias": "qwen3.5-9b-q5_k_m",
+      "guard_hash": "234c52f8661328284ce483a6e20b95be027466faa219c41f9fdf2b49d20e20cd",
+      "schemas_hash": "ab7eaa559caa451fc4df61ced3f43a1e70d59835ee279905cf17da334516a5d2",
+      "max_tokens": 4096,
+      "reasoning_effort": "medium",
+      "context": 98304,
+      "build": "b12464-d3c3e242c",
+      "sampling": {
+        "temperature": 1.0,
+        "top_k": 20,
+        "top_p": 0.949999988079071,
+        "min_p": 0.05000000074505806,
+        "repeat_penalty": 1.0,
+        "presence_penalty": 0.0,
+        "frequency_penalty": 0.0
+      },
+      "tools": 42
+    },
+    {
+      "label": "fablevibes-matched",
+      "alias": "qwen3.6-14b-a3b-fablevibes-q4_k_m",
+      "guard_hash": "234c52f8661328284ce483a6e20b95be027466faa219c41f9fdf2b49d20e20cd",
+      "schemas_hash": "ab7eaa559caa451fc4df61ced3f43a1e70d59835ee279905cf17da334516a5d2",
+      "max_tokens": 4096,
+      "reasoning_effort": "medium",
+      "context": 98304,
+      "build": "b12464-d3c3e242c",
+      "sampling": {
+        "temperature": 1.0,
+        "top_k": 20,
+        "top_p": 0.949999988079071,
+        "min_p": 0.05000000074505806,
+        "repeat_penalty": 1.0,
+        "presence_penalty": 0.0,
+        "frequency_penalty": 0.0
+      },
+      "tools": 42
+    }
+  ],
+  "same_guard": true,
+  "same_schemas": true,
+  "same_sampling": true
+}

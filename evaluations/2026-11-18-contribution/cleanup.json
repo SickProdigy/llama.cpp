@@ -1,0 +1,13 @@
+{
+  "checked_utc": "2026-11-18T21:45:12.473985+00:00",
+  "task_containers_remaining": [],
+  "task_volume_removed": true,
+  "private_profile_auth_inspection_and_request_workdir_removed": true,
+  "remote_resources_retained": true,
+  "merges_closures_deletions": false,
+  "hermes_running": true,
+  "llama-cpp_running": true,
+  "backend_health": {
+    "status": "ok"
+  }
+}
