@@ -16,6 +16,9 @@ including stale calls from old conversation history. Internal bridge dispatch
 still uses the native registry handlers. Disable the plugin to return a profile
 to the original native interface. Read results normalize the native
 line-JSON representation to bounded readable text and present public Gitea URLs.
+Directory reads use the repository tree for empty, `.`, `/` and `./` root paths;
+the native directory reader rejects both `.` and an empty path.
+ordinary paths are passed through unchanged.
 
 ## Requirements and configuration
 

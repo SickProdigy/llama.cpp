@@ -14,7 +14,7 @@ SPECS = {
  'search_repositories': ('Search configured Gitea repositories; returns default branches and full names.', {'query':'string'}, {}),
  'repository_info': ('Read exact repository metadata, including its upstream parent if it is a fork.', {'owner':'string','repo':'string'}, {}),
  'list_branches': ('List branches of this exact Gitea repository.', {'owner':'string','repo':'string'}, {}),
- 'list_directory': ('List a directory at an explicit branch or commit.', {'owner':'string','repo':'string','path':'string','ref':'string'}, {}),
+ 'list_directory': ('List a directory at an explicit branch or commit. For the repository root use path "" or "."; never repeat the repository name as the path.', {'owner':'string','repo':'string','path':'string','ref':'string'}, {}),
  'read_file': ('Read bounded source text at an explicit branch or commit. Use the fork branch to verify edits.', {'owner':'string','repo':'string','path':'string','ref':'string'}, {'start_line':'integer','end_line':'integer'}),
  'list_issues': ('List upstream issues before creating a duplicate.', {'owner':'string','repo':'string'}, {'state':'string'}),
  'read_issue': ('Read an upstream issue by number.', {'owner':'string','repo':'string','issue_number':'integer'}, {}),
@@ -96,7 +96,10 @@ class Bridge:
    elif operation=='search_repositories':value=self.native('search_repos',{'query':a['query'],'per_page':30})
    elif operation=='repository_info':value=self.native('repo_read',{'method':'get',**target})
    elif operation=='list_branches':value=self.native('branch_read',{'method':'list',**target,'per_page':50})
-   elif operation=='list_directory':value=self.native('get_dir_contents',{**target,'path':a['path'],'ref':a['ref']})
+   elif operation=='list_directory':
+    if a['path'] in ('','.','/','./'):
+     value=self.native('get_repository_tree',{**target,'tree_sha':a['ref'],'recursive':False,'per_page':100})
+    else:value=self.native('get_dir_contents',{**target,'path':a['path'],'ref':a['ref']})
    elif operation=='read_file':
     start=a.get('start_line',1);end=a.get('end_line',start+159)
     if end<start or end-start>=300:raise ValueError('Read a range of at most 300 lines')

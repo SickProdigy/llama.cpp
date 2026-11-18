@@ -1,0 +1,23 @@
+{
+  "pass": true,
+  "expected": {
+    "EARLY": "cedar-4817",
+    "MIDDLE": "harbor-9362",
+    "LATE": "willow-2759",
+    "heading": "# \ud83c\udfb5 NicotinePlus Plugins"
+  },
+  "actual": {
+    "EARLY": "cedar-4817",
+    "MIDDLE": "harbor-9362",
+    "LATE": "willow-2759",
+    "heading": "# \ud83c\udfb5 NicotinePlus Plugins"
+  },
+  "last_prompt_tokens": 64290,
+  "sum_prompt_tokens_across_two_requests": 128272,
+  "api_calls": 2,
+  "all_requests_preserve_full_archive": true,
+  "compression_events": [],
+  "peak_vram_mib": 9082,
+  "seconds": 152.238,
+  "limitation": "Synthetic marker retrieval plus one real MCP read; not a long coding-session benchmark or validation of every position up to 98304."
+}

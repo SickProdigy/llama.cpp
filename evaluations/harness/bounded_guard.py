@@ -71,7 +71,7 @@ class Guard:
    if not self.issue:raise ValueError('PR must reference the created upstream issue')
    if a.get('base')!='main' or a.get('head')!=fork[0]+':'+p['branch']:raise Reject('wrong PR base/head direction')
    if a.get('title')!=p['pr_title']:raise ValueError('PR title differs from prompt')
-   if a.get('body')!=p['pr_body'].replace('<issue-number>',str(self.issue)):raise ValueError('PR body must reference created upstream issue')
+   if a.get('body')!=p['pr_body'].replace('<issue-number>',str(self.issue)):raise ValueError('PR body must match the requested text and reference the created upstream issue')
    if set(a)-{'method','owner','repo','title','body','base','head','draft'}:raise Reject('unrequested PR fields')
    stage='pr'
   else:raise Reject('unapproved mutation: '+n)

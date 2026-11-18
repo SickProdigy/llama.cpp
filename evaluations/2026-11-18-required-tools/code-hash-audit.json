@@ -1,0 +1,925 @@
+{
+  "all_recorded_hashes_match_retained_source": true,
+  "checks": [
+    {
+      "run": "20261118-required-fablevibes-q4-facade-announcer-wording-recheck",
+      "file": "session.py",
+      "sha256": "cfb0b9cead0dd73946ca339abb367917e4038c9748f88a30ec4068bc86f9e246",
+      "matching_archive_members": [
+        "harness/session.py"
+      ]
+    },
+    {
+      "run": "20261118-required-fablevibes-q4-facade-announcer-wording-recheck",
+      "file": "guard.py",
+      "sha256": "b4daa424c4f842b80d247dd40be75674161d475518ea77a2d35465b163b43daa",
+      "matching_archive_members": [
+        "harness/guard-before-body-message.py"
+      ]
+    },
+    {
+      "run": "20261118-required-fablevibes-q4-facade-announcer-wording-recheck",
+      "file": "retry_ledger.py",
+      "sha256": "9c48a898005575b41edaa79b206c88a423270188dbdac29e7ca9681a4874f668",
+      "matching_archive_members": [
+        "harness/retry_ledger.py"
+      ]
+    },
+    {
+      "run": "20261118-required-fablevibes-q4-facade-announcer-wording-recheck",
+      "file": "prepare_profile.py",
+      "sha256": "50b8fbe495ffa316ac61799755bbcd5d4fef1faa12a5916fe7e4641cc69798b8",
+      "matching_archive_members": [
+        "harness/prepare_profile.py"
+      ]
+    },
+    {
+      "run": "20261118-required-fablevibes-q4-facade-announcer-wording-recheck",
+      "file": "gitea-focused/__init__.py",
+      "sha256": "ebfaca7a1ef94fd4df17df1900cbf086ee8b3cac5572c33014c75427d955a310",
+      "matching_archive_members": [
+        "plugin-v0.1.0/__init__.py"
+      ]
+    },
+    {
+      "run": "20261118-required-fablevibes-q4-read-explain",
+      "file": "session.py",
+      "sha256": "cfb0b9cead0dd73946ca339abb367917e4038c9748f88a30ec4068bc86f9e246",
+      "matching_archive_members": [
+        "harness/session.py"
+      ]
+    },
+    {
+      "run": "20261118-required-fablevibes-q4-read-explain",
+      "file": "guard.py",
+      "sha256": "b4daa424c4f842b80d247dd40be75674161d475518ea77a2d35465b163b43daa",
+      "matching_archive_members": [
+        "harness/guard-before-body-message.py"
+      ]
+    },
+    {
+      "run": "20261118-required-fablevibes-q4-read-explain",
+      "file": "retry_ledger.py",
+      "sha256": "9c48a898005575b41edaa79b206c88a423270188dbdac29e7ca9681a4874f668",
+      "matching_archive_members": [
+        "harness/retry_ledger.py"
+      ]
+    },
+    {
+      "run": "20261118-required-fablevibes-q4-read-explain",
+      "file": "prepare_profile.py",
+      "sha256": "50b8fbe495ffa316ac61799755bbcd5d4fef1faa12a5916fe7e4641cc69798b8",
+      "matching_archive_members": [
+        "harness/prepare_profile.py"
+      ]
+    },
+    {
+      "run": "20261118-required-fablevibes-q4-read-explain",
+      "file": "gitea-focused/__init__.py",
+      "sha256": "19e1eb408af05d852077d75b84d60ff3d7aebb01db9a2f0c11869a9b695dbd13",
+      "matching_archive_members": [
+        "plugin-v0.1.1/__init__.py"
+      ]
+    },
+    {
+      "run": "20261118-required-fablevibes-q4-read-review",
+      "file": "session.py",
+      "sha256": "cfb0b9cead0dd73946ca339abb367917e4038c9748f88a30ec4068bc86f9e246",
+      "matching_archive_members": [
+        "harness/session.py"
+      ]
+    },
+    {
+      "run": "20261118-required-fablevibes-q4-read-review",
+      "file": "guard.py",
+      "sha256": "b4daa424c4f842b80d247dd40be75674161d475518ea77a2d35465b163b43daa",
+      "matching_archive_members": [
+        "harness/guard-before-body-message.py"
+      ]
+    },
+    {
+      "run": "20261118-required-fablevibes-q4-read-review",
+      "file": "retry_ledger.py",
+      "sha256": "9c48a898005575b41edaa79b206c88a423270188dbdac29e7ca9681a4874f668",
+      "matching_archive_members": [
+        "harness/retry_ledger.py"
+      ]
+    },
+    {
+      "run": "20261118-required-fablevibes-q4-read-review",
+      "file": "prepare_profile.py",
+      "sha256": "50b8fbe495ffa316ac61799755bbcd5d4fef1faa12a5916fe7e4641cc69798b8",
+      "matching_archive_members": [
+        "harness/prepare_profile.py"
+      ]
+    },
+    {
+      "run": "20261118-required-fablevibes-q4-read-review",
+      "file": "gitea-focused/__init__.py",
+      "sha256": "19e1eb408af05d852077d75b84d60ff3d7aebb01db9a2f0c11869a9b695dbd13",
+      "matching_archive_members": [
+        "plugin-v0.1.1/__init__.py"
+      ]
+    },
+    {
+      "run": "20261118-required-fablevibes-q4-repeat-example-api",
+      "file": "session.py",
+      "sha256": "cfb0b9cead0dd73946ca339abb367917e4038c9748f88a30ec4068bc86f9e246",
+      "matching_archive_members": [
+        "harness/session.py"
+      ]
+    },
+    {
+      "run": "20261118-required-fablevibes-q4-repeat-example-api",
+      "file": "guard.py",
+      "sha256": "b4daa424c4f842b80d247dd40be75674161d475518ea77a2d35465b163b43daa",
+      "matching_archive_members": [
+        "harness/guard-before-body-message.py"
+      ]
+    },
+    {
+      "run": "20261118-required-fablevibes-q4-repeat-example-api",
+      "file": "retry_ledger.py",
+      "sha256": "9c48a898005575b41edaa79b206c88a423270188dbdac29e7ca9681a4874f668",
+      "matching_archive_members": [
+        "harness/retry_ledger.py"
+      ]
+    },
+    {
+      "run": "20261118-required-fablevibes-q4-repeat-example-api",
+      "file": "prepare_profile.py",
+      "sha256": "50b8fbe495ffa316ac61799755bbcd5d4fef1faa12a5916fe7e4641cc69798b8",
+      "matching_archive_members": [
+        "harness/prepare_profile.py"
+      ]
+    },
+    {
+      "run": "20261118-required-fablevibes-q4-repeat-example-api",
+      "file": "gitea-focused/__init__.py",
+      "sha256": "19e1eb408af05d852077d75b84d60ff3d7aebb01db9a2f0c11869a9b695dbd13",
+      "matching_archive_members": [
+        "plugin-v0.1.1/__init__.py"
+      ]
+    },
+    {
+      "run": "20261118-required-fablevibes-q4-repeat-wolfram-rooms",
+      "file": "session.py",
+      "sha256": "cfb0b9cead0dd73946ca339abb367917e4038c9748f88a30ec4068bc86f9e246",
+      "matching_archive_members": [
+        "harness/session.py"
+      ]
+    },
+    {
+      "run": "20261118-required-fablevibes-q4-repeat-wolfram-rooms",
+      "file": "guard.py",
+      "sha256": "b4daa424c4f842b80d247dd40be75674161d475518ea77a2d35465b163b43daa",
+      "matching_archive_members": [
+        "harness/guard-before-body-message.py"
+      ]
+    },
+    {
+      "run": "20261118-required-fablevibes-q4-repeat-wolfram-rooms",
+      "file": "retry_ledger.py",
+      "sha256": "9c48a898005575b41edaa79b206c88a423270188dbdac29e7ca9681a4874f668",
+      "matching_archive_members": [
+        "harness/retry_ledger.py"
+      ]
+    },
+    {
+      "run": "20261118-required-fablevibes-q4-repeat-wolfram-rooms",
+      "file": "prepare_profile.py",
+      "sha256": "50b8fbe495ffa316ac61799755bbcd5d4fef1faa12a5916fe7e4641cc69798b8",
+      "matching_archive_members": [
+        "harness/prepare_profile.py"
+      ]
+    },
+    {
+      "run": "20261118-required-fablevibes-q4-repeat-wolfram-rooms",
+      "file": "gitea-focused/__init__.py",
+      "sha256": "19e1eb408af05d852077d75b84d60ff3d7aebb01db9a2f0c11869a9b695dbd13",
+      "matching_archive_members": [
+        "plugin-v0.1.1/__init__.py"
+      ]
+    },
+    {
+      "run": "20261118-required-fablevibes-root-tree-review",
+      "file": "session.py",
+      "sha256": "cfb0b9cead0dd73946ca339abb367917e4038c9748f88a30ec4068bc86f9e246",
+      "matching_archive_members": [
+        "harness/session.py"
+      ]
+    },
+    {
+      "run": "20261118-required-fablevibes-root-tree-review",
+      "file": "guard.py",
+      "sha256": "158c49e4b9f036fe60f74e6b81605052e46b2db715bc0fd7d5b1419315d1522e",
+      "matching_archive_members": [
+        "harness/guard.py"
+      ]
+    },
+    {
+      "run": "20261118-required-fablevibes-root-tree-review",
+      "file": "retry_ledger.py",
+      "sha256": "9c48a898005575b41edaa79b206c88a423270188dbdac29e7ca9681a4874f668",
+      "matching_archive_members": [
+        "harness/retry_ledger.py"
+      ]
+    },
+    {
+      "run": "20261118-required-fablevibes-root-tree-review",
+      "file": "prepare_profile.py",
+      "sha256": "50b8fbe495ffa316ac61799755bbcd5d4fef1faa12a5916fe7e4641cc69798b8",
+      "matching_archive_members": [
+        "harness/prepare_profile.py"
+      ]
+    },
+    {
+      "run": "20261118-required-fablevibes-root-tree-review",
+      "file": "gitea-focused/__init__.py",
+      "sha256": "f0fa37e3e569aa45e0f0b3d8c9a3ac8209fe35a593a0cb486a3b475b0392b92b",
+      "matching_archive_members": [
+        "plugin-v0.1.3/__init__.py"
+      ]
+    },
+    {
+      "run": "20261118-required-fablevibes-rootfix-review",
+      "file": "session.py",
+      "sha256": "cfb0b9cead0dd73946ca339abb367917e4038c9748f88a30ec4068bc86f9e246",
+      "matching_archive_members": [
+        "harness/session.py"
+      ]
+    },
+    {
+      "run": "20261118-required-fablevibes-rootfix-review",
+      "file": "guard.py",
+      "sha256": "158c49e4b9f036fe60f74e6b81605052e46b2db715bc0fd7d5b1419315d1522e",
+      "matching_archive_members": [
+        "harness/guard.py"
+      ]
+    },
+    {
+      "run": "20261118-required-fablevibes-rootfix-review",
+      "file": "retry_ledger.py",
+      "sha256": "9c48a898005575b41edaa79b206c88a423270188dbdac29e7ca9681a4874f668",
+      "matching_archive_members": [
+        "harness/retry_ledger.py"
+      ]
+    },
+    {
+      "run": "20261118-required-fablevibes-rootfix-review",
+      "file": "prepare_profile.py",
+      "sha256": "50b8fbe495ffa316ac61799755bbcd5d4fef1faa12a5916fe7e4641cc69798b8",
+      "matching_archive_members": [
+        "harness/prepare_profile.py"
+      ]
+    },
+    {
+      "run": "20261118-required-fablevibes-rootfix-review",
+      "file": "gitea-focused/__init__.py",
+      "sha256": "afe0a789d10990d3064a3494318a494e4888a8659713396d7c025ddac031c8cb",
+      "matching_archive_members": [
+        "plugin-v0.1.2/__init__.py"
+      ]
+    },
+    {
+      "run": "20261118-required-preview-pr-reference-only",
+      "file": "session.py",
+      "sha256": "cfb0b9cead0dd73946ca339abb367917e4038c9748f88a30ec4068bc86f9e246",
+      "matching_archive_members": [
+        "harness/session.py"
+      ]
+    },
+    {
+      "run": "20261118-required-preview-pr-reference-only",
+      "file": "guard.py",
+      "sha256": "b4daa424c4f842b80d247dd40be75674161d475518ea77a2d35465b163b43daa",
+      "matching_archive_members": [
+        "harness/guard-before-body-message.py"
+      ]
+    },
+    {
+      "run": "20261118-required-preview-pr-reference-only",
+      "file": "retry_ledger.py",
+      "sha256": "9c48a898005575b41edaa79b206c88a423270188dbdac29e7ca9681a4874f668",
+      "matching_archive_members": [
+        "harness/retry_ledger.py"
+      ]
+    },
+    {
+      "run": "20261118-required-preview-pr-reference-only",
+      "file": "prepare_profile.py",
+      "sha256": "50b8fbe495ffa316ac61799755bbcd5d4fef1faa12a5916fe7e4641cc69798b8",
+      "matching_archive_members": [
+        "harness/prepare_profile.py"
+      ]
+    },
+    {
+      "run": "20261118-required-preview-pr-reference-only",
+      "file": "gitea-focused/__init__.py",
+      "sha256": "ebfaca7a1ef94fd4df17df1900cbf086ee8b3cac5572c33014c75427d955a310",
+      "matching_archive_members": [
+        "plugin-v0.1.0/__init__.py"
+      ]
+    },
+    {
+      "run": "20261118-required-preview9-q4-read-explain",
+      "file": "session.py",
+      "sha256": "cfb0b9cead0dd73946ca339abb367917e4038c9748f88a30ec4068bc86f9e246",
+      "matching_archive_members": [
+        "harness/session.py"
+      ]
+    },
+    {
+      "run": "20261118-required-preview9-q4-read-explain",
+      "file": "guard.py",
+      "sha256": "b4daa424c4f842b80d247dd40be75674161d475518ea77a2d35465b163b43daa",
+      "matching_archive_members": [
+        "harness/guard-before-body-message.py"
+      ]
+    },
+    {
+      "run": "20261118-required-preview9-q4-read-explain",
+      "file": "retry_ledger.py",
+      "sha256": "9c48a898005575b41edaa79b206c88a423270188dbdac29e7ca9681a4874f668",
+      "matching_archive_members": [
+        "harness/retry_ledger.py"
+      ]
+    },
+    {
+      "run": "20261118-required-preview9-q4-read-explain",
+      "file": "prepare_profile.py",
+      "sha256": "50b8fbe495ffa316ac61799755bbcd5d4fef1faa12a5916fe7e4641cc69798b8",
+      "matching_archive_members": [
+        "harness/prepare_profile.py"
+      ]
+    },
+    {
+      "run": "20261118-required-preview9-q4-read-explain",
+      "file": "gitea-focused/__init__.py",
+      "sha256": "19e1eb408af05d852077d75b84d60ff3d7aebb01db9a2f0c11869a9b695dbd13",
+      "matching_archive_members": [
+        "plugin-v0.1.1/__init__.py"
+      ]
+    },
+    {
+      "run": "20261118-required-preview9-q4-read-review",
+      "file": "session.py",
+      "sha256": "cfb0b9cead0dd73946ca339abb367917e4038c9748f88a30ec4068bc86f9e246",
+      "matching_archive_members": [
+        "harness/session.py"
+      ]
+    },
+    {
+      "run": "20261118-required-preview9-q4-read-review",
+      "file": "guard.py",
+      "sha256": "b4daa424c4f842b80d247dd40be75674161d475518ea77a2d35465b163b43daa",
+      "matching_archive_members": [
+        "harness/guard-before-body-message.py"
+      ]
+    },
+    {
+      "run": "20261118-required-preview9-q4-read-review",
+      "file": "retry_ledger.py",
+      "sha256": "9c48a898005575b41edaa79b206c88a423270188dbdac29e7ca9681a4874f668",
+      "matching_archive_members": [
+        "harness/retry_ledger.py"
+      ]
+    },
+    {
+      "run": "20261118-required-preview9-q4-read-review",
+      "file": "prepare_profile.py",
+      "sha256": "50b8fbe495ffa316ac61799755bbcd5d4fef1faa12a5916fe7e4641cc69798b8",
+      "matching_archive_members": [
+        "harness/prepare_profile.py"
+      ]
+    },
+    {
+      "run": "20261118-required-preview9-q4-read-review",
+      "file": "gitea-focused/__init__.py",
+      "sha256": "19e1eb408af05d852077d75b84d60ff3d7aebb01db9a2f0c11869a9b695dbd13",
+      "matching_archive_members": [
+        "plugin-v0.1.1/__init__.py"
+      ]
+    },
+    {
+      "run": "20261118-required-preview9-q4-repeat-book-ui",
+      "file": "session.py",
+      "sha256": "cfb0b9cead0dd73946ca339abb367917e4038c9748f88a30ec4068bc86f9e246",
+      "matching_archive_members": [
+        "harness/session.py"
+      ]
+    },
+    {
+      "run": "20261118-required-preview9-q4-repeat-book-ui",
+      "file": "guard.py",
+      "sha256": "b4daa424c4f842b80d247dd40be75674161d475518ea77a2d35465b163b43daa",
+      "matching_archive_members": [
+        "harness/guard-before-body-message.py"
+      ]
+    },
+    {
+      "run": "20261118-required-preview9-q4-repeat-book-ui",
+      "file": "retry_ledger.py",
+      "sha256": "9c48a898005575b41edaa79b206c88a423270188dbdac29e7ca9681a4874f668",
+      "matching_archive_members": [
+        "harness/retry_ledger.py"
+      ]
+    },
+    {
+      "run": "20261118-required-preview9-q4-repeat-book-ui",
+      "file": "prepare_profile.py",
+      "sha256": "50b8fbe495ffa316ac61799755bbcd5d4fef1faa12a5916fe7e4641cc69798b8",
+      "matching_archive_members": [
+        "harness/prepare_profile.py"
+      ]
+    },
+    {
+      "run": "20261118-required-preview9-q4-repeat-book-ui",
+      "file": "gitea-focused/__init__.py",
+      "sha256": "19e1eb408af05d852077d75b84d60ff3d7aebb01db9a2f0c11869a9b695dbd13",
+      "matching_archive_members": [
+        "plugin-v0.1.1/__init__.py"
+      ]
+    },
+    {
+      "run": "20261118-required-qwen9-q5-read-explain",
+      "file": "session.py",
+      "sha256": "cfb0b9cead0dd73946ca339abb367917e4038c9748f88a30ec4068bc86f9e246",
+      "matching_archive_members": [
+        "harness/session.py"
+      ]
+    },
+    {
+      "run": "20261118-required-qwen9-q5-read-explain",
+      "file": "guard.py",
+      "sha256": "b4daa424c4f842b80d247dd40be75674161d475518ea77a2d35465b163b43daa",
+      "matching_archive_members": [
+        "harness/guard-before-body-message.py"
+      ]
+    },
+    {
+      "run": "20261118-required-qwen9-q5-read-explain",
+      "file": "retry_ledger.py",
+      "sha256": "9c48a898005575b41edaa79b206c88a423270188dbdac29e7ca9681a4874f668",
+      "matching_archive_members": [
+        "harness/retry_ledger.py"
+      ]
+    },
+    {
+      "run": "20261118-required-qwen9-q5-read-explain",
+      "file": "prepare_profile.py",
+      "sha256": "50b8fbe495ffa316ac61799755bbcd5d4fef1faa12a5916fe7e4641cc69798b8",
+      "matching_archive_members": [
+        "harness/prepare_profile.py"
+      ]
+    },
+    {
+      "run": "20261118-required-qwen9-q5-read-explain",
+      "file": "gitea-focused/__init__.py",
+      "sha256": "19e1eb408af05d852077d75b84d60ff3d7aebb01db9a2f0c11869a9b695dbd13",
+      "matching_archive_members": [
+        "plugin-v0.1.1/__init__.py"
+      ]
+    },
+    {
+      "run": "20261118-required-qwen9-q5-read-review",
+      "file": "session.py",
+      "sha256": "cfb0b9cead0dd73946ca339abb367917e4038c9748f88a30ec4068bc86f9e246",
+      "matching_archive_members": [
+        "harness/session.py"
+      ]
+    },
+    {
+      "run": "20261118-required-qwen9-q5-read-review",
+      "file": "guard.py",
+      "sha256": "b4daa424c4f842b80d247dd40be75674161d475518ea77a2d35465b163b43daa",
+      "matching_archive_members": [
+        "harness/guard-before-body-message.py"
+      ]
+    },
+    {
+      "run": "20261118-required-qwen9-q5-read-review",
+      "file": "retry_ledger.py",
+      "sha256": "9c48a898005575b41edaa79b206c88a423270188dbdac29e7ca9681a4874f668",
+      "matching_archive_members": [
+        "harness/retry_ledger.py"
+      ]
+    },
+    {
+      "run": "20261118-required-qwen9-q5-read-review",
+      "file": "prepare_profile.py",
+      "sha256": "50b8fbe495ffa316ac61799755bbcd5d4fef1faa12a5916fe7e4641cc69798b8",
+      "matching_archive_members": [
+        "harness/prepare_profile.py"
+      ]
+    },
+    {
+      "run": "20261118-required-qwen9-q5-read-review",
+      "file": "gitea-focused/__init__.py",
+      "sha256": "19e1eb408af05d852077d75b84d60ff3d7aebb01db9a2f0c11869a9b695dbd13",
+      "matching_archive_members": [
+        "plugin-v0.1.1/__init__.py"
+      ]
+    },
+    {
+      "run": "20261118-required-qwen9-q5-repeat-beets-wording",
+      "file": "session.py",
+      "sha256": "cfb0b9cead0dd73946ca339abb367917e4038c9748f88a30ec4068bc86f9e246",
+      "matching_archive_members": [
+        "harness/session.py"
+      ]
+    },
+    {
+      "run": "20261118-required-qwen9-q5-repeat-beets-wording",
+      "file": "guard.py",
+      "sha256": "b4daa424c4f842b80d247dd40be75674161d475518ea77a2d35465b163b43daa",
+      "matching_archive_members": [
+        "harness/guard-before-body-message.py"
+      ]
+    },
+    {
+      "run": "20261118-required-qwen9-q5-repeat-beets-wording",
+      "file": "retry_ledger.py",
+      "sha256": "9c48a898005575b41edaa79b206c88a423270188dbdac29e7ca9681a4874f668",
+      "matching_archive_members": [
+        "harness/retry_ledger.py"
+      ]
+    },
+    {
+      "run": "20261118-required-qwen9-q5-repeat-beets-wording",
+      "file": "prepare_profile.py",
+      "sha256": "50b8fbe495ffa316ac61799755bbcd5d4fef1faa12a5916fe7e4641cc69798b8",
+      "matching_archive_members": [
+        "harness/prepare_profile.py"
+      ]
+    },
+    {
+      "run": "20261118-required-qwen9-q5-repeat-beets-wording",
+      "file": "gitea-focused/__init__.py",
+      "sha256": "19e1eb408af05d852077d75b84d60ff3d7aebb01db9a2f0c11869a9b695dbd13",
+      "matching_archive_members": [
+        "plugin-v0.1.1/__init__.py"
+      ]
+    },
+    {
+      "run": "20261118-required-qwen9-q5-repeat-catalog-wording",
+      "file": "session.py",
+      "sha256": "cfb0b9cead0dd73946ca339abb367917e4038c9748f88a30ec4068bc86f9e246",
+      "matching_archive_members": [
+        "harness/session.py"
+      ]
+    },
+    {
+      "run": "20261118-required-qwen9-q5-repeat-catalog-wording",
+      "file": "guard.py",
+      "sha256": "b4daa424c4f842b80d247dd40be75674161d475518ea77a2d35465b163b43daa",
+      "matching_archive_members": [
+        "harness/guard-before-body-message.py"
+      ]
+    },
+    {
+      "run": "20261118-required-qwen9-q5-repeat-catalog-wording",
+      "file": "retry_ledger.py",
+      "sha256": "9c48a898005575b41edaa79b206c88a423270188dbdac29e7ca9681a4874f668",
+      "matching_archive_members": [
+        "harness/retry_ledger.py"
+      ]
+    },
+    {
+      "run": "20261118-required-qwen9-q5-repeat-catalog-wording",
+      "file": "prepare_profile.py",
+      "sha256": "50b8fbe495ffa316ac61799755bbcd5d4fef1faa12a5916fe7e4641cc69798b8",
+      "matching_archive_members": [
+        "harness/prepare_profile.py"
+      ]
+    },
+    {
+      "run": "20261118-required-qwen9-q5-repeat-catalog-wording",
+      "file": "gitea-focused/__init__.py",
+      "sha256": "19e1eb408af05d852077d75b84d60ff3d7aebb01db9a2f0c11869a9b695dbd13",
+      "matching_archive_members": [
+        "plugin-v0.1.1/__init__.py"
+      ]
+    },
+    {
+      "run": "20261118-required-vibeforged-freshfork-sonicratings",
+      "file": "session.py",
+      "sha256": "cfb0b9cead0dd73946ca339abb367917e4038c9748f88a30ec4068bc86f9e246",
+      "matching_archive_members": [
+        "harness/session.py"
+      ]
+    },
+    {
+      "run": "20261118-required-vibeforged-freshfork-sonicratings",
+      "file": "guard.py",
+      "sha256": "158c49e4b9f036fe60f74e6b81605052e46b2db715bc0fd7d5b1419315d1522e",
+      "matching_archive_members": [
+        "harness/guard.py"
+      ]
+    },
+    {
+      "run": "20261118-required-vibeforged-freshfork-sonicratings",
+      "file": "retry_ledger.py",
+      "sha256": "9c48a898005575b41edaa79b206c88a423270188dbdac29e7ca9681a4874f668",
+      "matching_archive_members": [
+        "harness/retry_ledger.py"
+      ]
+    },
+    {
+      "run": "20261118-required-vibeforged-freshfork-sonicratings",
+      "file": "prepare_profile.py",
+      "sha256": "50b8fbe495ffa316ac61799755bbcd5d4fef1faa12a5916fe7e4641cc69798b8",
+      "matching_archive_members": [
+        "harness/prepare_profile.py"
+      ]
+    },
+    {
+      "run": "20261118-required-vibeforged-freshfork-sonicratings",
+      "file": "gitea-focused/__init__.py",
+      "sha256": "afe0a789d10990d3064a3494318a494e4888a8659713396d7c025ddac031c8cb",
+      "matching_archive_members": [
+        "plugin-v0.1.2/__init__.py"
+      ]
+    },
+    {
+      "run": "20261118-required-vibeforged-longcontext",
+      "file": "session.py",
+      "sha256": "cfb0b9cead0dd73946ca339abb367917e4038c9748f88a30ec4068bc86f9e246",
+      "matching_archive_members": [
+        "harness/session.py"
+      ]
+    },
+    {
+      "run": "20261118-required-vibeforged-longcontext",
+      "file": "guard.py",
+      "sha256": "158c49e4b9f036fe60f74e6b81605052e46b2db715bc0fd7d5b1419315d1522e",
+      "matching_archive_members": [
+        "harness/guard.py"
+      ]
+    },
+    {
+      "run": "20261118-required-vibeforged-longcontext",
+      "file": "retry_ledger.py",
+      "sha256": "9c48a898005575b41edaa79b206c88a423270188dbdac29e7ca9681a4874f668",
+      "matching_archive_members": [
+        "harness/retry_ledger.py"
+      ]
+    },
+    {
+      "run": "20261118-required-vibeforged-longcontext",
+      "file": "prepare_profile.py",
+      "sha256": "50b8fbe495ffa316ac61799755bbcd5d4fef1faa12a5916fe7e4641cc69798b8",
+      "matching_archive_members": [
+        "harness/prepare_profile.py"
+      ]
+    },
+    {
+      "run": "20261118-required-vibeforged-longcontext",
+      "file": "gitea-focused/__init__.py",
+      "sha256": "afe0a789d10990d3064a3494318a494e4888a8659713396d7c025ddac031c8cb",
+      "matching_archive_members": [
+        "plugin-v0.1.2/__init__.py"
+      ]
+    },
+    {
+      "run": "20261118-required-vibeforged-q4-read-explain",
+      "file": "session.py",
+      "sha256": "cfb0b9cead0dd73946ca339abb367917e4038c9748f88a30ec4068bc86f9e246",
+      "matching_archive_members": [
+        "harness/session.py"
+      ]
+    },
+    {
+      "run": "20261118-required-vibeforged-q4-read-explain",
+      "file": "guard.py",
+      "sha256": "b4daa424c4f842b80d247dd40be75674161d475518ea77a2d35465b163b43daa",
+      "matching_archive_members": [
+        "harness/guard-before-body-message.py"
+      ]
+    },
+    {
+      "run": "20261118-required-vibeforged-q4-read-explain",
+      "file": "retry_ledger.py",
+      "sha256": "9c48a898005575b41edaa79b206c88a423270188dbdac29e7ca9681a4874f668",
+      "matching_archive_members": [
+        "harness/retry_ledger.py"
+      ]
+    },
+    {
+      "run": "20261118-required-vibeforged-q4-read-explain",
+      "file": "prepare_profile.py",
+      "sha256": "50b8fbe495ffa316ac61799755bbcd5d4fef1faa12a5916fe7e4641cc69798b8",
+      "matching_archive_members": [
+        "harness/prepare_profile.py"
+      ]
+    },
+    {
+      "run": "20261118-required-vibeforged-q4-read-explain",
+      "file": "gitea-focused/__init__.py",
+      "sha256": "19e1eb408af05d852077d75b84d60ff3d7aebb01db9a2f0c11869a9b695dbd13",
+      "matching_archive_members": [
+        "plugin-v0.1.1/__init__.py"
+      ]
+    },
+    {
+      "run": "20261118-required-vibeforged-q4-read-review",
+      "file": "session.py",
+      "sha256": "cfb0b9cead0dd73946ca339abb367917e4038c9748f88a30ec4068bc86f9e246",
+      "matching_archive_members": [
+        "harness/session.py"
+      ]
+    },
+    {
+      "run": "20261118-required-vibeforged-q4-read-review",
+      "file": "guard.py",
+      "sha256": "b4daa424c4f842b80d247dd40be75674161d475518ea77a2d35465b163b43daa",
+      "matching_archive_members": [
+        "harness/guard-before-body-message.py"
+      ]
+    },
+    {
+      "run": "20261118-required-vibeforged-q4-read-review",
+      "file": "retry_ledger.py",
+      "sha256": "9c48a898005575b41edaa79b206c88a423270188dbdac29e7ca9681a4874f668",
+      "matching_archive_members": [
+        "harness/retry_ledger.py"
+      ]
+    },
+    {
+      "run": "20261118-required-vibeforged-q4-read-review",
+      "file": "prepare_profile.py",
+      "sha256": "50b8fbe495ffa316ac61799755bbcd5d4fef1faa12a5916fe7e4641cc69798b8",
+      "matching_archive_members": [
+        "harness/prepare_profile.py"
+      ]
+    },
+    {
+      "run": "20261118-required-vibeforged-q4-read-review",
+      "file": "gitea-focused/__init__.py",
+      "sha256": "19e1eb408af05d852077d75b84d60ff3d7aebb01db9a2f0c11869a9b695dbd13",
+      "matching_archive_members": [
+        "plugin-v0.1.1/__init__.py"
+      ]
+    },
+    {
+      "run": "20261118-required-vibeforged-q4-repeat-spam-status",
+      "file": "session.py",
+      "sha256": "cfb0b9cead0dd73946ca339abb367917e4038c9748f88a30ec4068bc86f9e246",
+      "matching_archive_members": [
+        "harness/session.py"
+      ]
+    },
+    {
+      "run": "20261118-required-vibeforged-q4-repeat-spam-status",
+      "file": "guard.py",
+      "sha256": "b4daa424c4f842b80d247dd40be75674161d475518ea77a2d35465b163b43daa",
+      "matching_archive_members": [
+        "harness/guard-before-body-message.py"
+      ]
+    },
+    {
+      "run": "20261118-required-vibeforged-q4-repeat-spam-status",
+      "file": "retry_ledger.py",
+      "sha256": "9c48a898005575b41edaa79b206c88a423270188dbdac29e7ca9681a4874f668",
+      "matching_archive_members": [
+        "harness/retry_ledger.py"
+      ]
+    },
+    {
+      "run": "20261118-required-vibeforged-q4-repeat-spam-status",
+      "file": "prepare_profile.py",
+      "sha256": "50b8fbe495ffa316ac61799755bbcd5d4fef1faa12a5916fe7e4641cc69798b8",
+      "matching_archive_members": [
+        "harness/prepare_profile.py"
+      ]
+    },
+    {
+      "run": "20261118-required-vibeforged-q4-repeat-spam-status",
+      "file": "gitea-focused/__init__.py",
+      "sha256": "19e1eb408af05d852077d75b84d60ff3d7aebb01db9a2f0c11869a9b695dbd13",
+      "matching_archive_members": [
+        "plugin-v0.1.1/__init__.py"
+      ]
+    },
+    {
+      "run": "20261118-required-vibeforged-q4-repeat-wolfram-wording",
+      "file": "session.py",
+      "sha256": "cfb0b9cead0dd73946ca339abb367917e4038c9748f88a30ec4068bc86f9e246",
+      "matching_archive_members": [
+        "harness/session.py"
+      ]
+    },
+    {
+      "run": "20261118-required-vibeforged-q4-repeat-wolfram-wording",
+      "file": "guard.py",
+      "sha256": "b4daa424c4f842b80d247dd40be75674161d475518ea77a2d35465b163b43daa",
+      "matching_archive_members": [
+        "harness/guard-before-body-message.py"
+      ]
+    },
+    {
+      "run": "20261118-required-vibeforged-q4-repeat-wolfram-wording",
+      "file": "retry_ledger.py",
+      "sha256": "9c48a898005575b41edaa79b206c88a423270188dbdac29e7ca9681a4874f668",
+      "matching_archive_members": [
+        "harness/retry_ledger.py"
+      ]
+    },
+    {
+      "run": "20261118-required-vibeforged-q4-repeat-wolfram-wording",
+      "file": "prepare_profile.py",
+      "sha256": "50b8fbe495ffa316ac61799755bbcd5d4fef1faa12a5916fe7e4641cc69798b8",
+      "matching_archive_members": [
+        "harness/prepare_profile.py"
+      ]
+    },
+    {
+      "run": "20261118-required-vibeforged-q4-repeat-wolfram-wording",
+      "file": "gitea-focused/__init__.py",
+      "sha256": "19e1eb408af05d852077d75b84d60ff3d7aebb01db9a2f0c11869a9b695dbd13",
+      "matching_archive_members": [
+        "plugin-v0.1.1/__init__.py"
+      ]
+    },
+    {
+      "run": "20261118-required-vibeforged-root-tree-review",
+      "file": "session.py",
+      "sha256": "cfb0b9cead0dd73946ca339abb367917e4038c9748f88a30ec4068bc86f9e246",
+      "matching_archive_members": [
+        "harness/session.py"
+      ]
+    },
+    {
+      "run": "20261118-required-vibeforged-root-tree-review",
+      "file": "guard.py",
+      "sha256": "158c49e4b9f036fe60f74e6b81605052e46b2db715bc0fd7d5b1419315d1522e",
+      "matching_archive_members": [
+        "harness/guard.py"
+      ]
+    },
+    {
+      "run": "20261118-required-vibeforged-root-tree-review",
+      "file": "retry_ledger.py",
+      "sha256": "9c48a898005575b41edaa79b206c88a423270188dbdac29e7ca9681a4874f668",
+      "matching_archive_members": [
+        "harness/retry_ledger.py"
+      ]
+    },
+    {
+      "run": "20261118-required-vibeforged-root-tree-review",
+      "file": "prepare_profile.py",
+      "sha256": "50b8fbe495ffa316ac61799755bbcd5d4fef1faa12a5916fe7e4641cc69798b8",
+      "matching_archive_members": [
+        "harness/prepare_profile.py"
+      ]
+    },
+    {
+      "run": "20261118-required-vibeforged-root-tree-review",
+      "file": "gitea-focused/__init__.py",
+      "sha256": "f0fa37e3e569aa45e0f0b3d8c9a3ac8209fe35a593a0cb486a3b475b0392b92b",
+      "matching_archive_members": [
+        "plugin-v0.1.3/__init__.py"
+      ]
+    },
+    {
+      "run": "20261118-required-vibeforged-rootfix-review",
+      "file": "session.py",
+      "sha256": "cfb0b9cead0dd73946ca339abb367917e4038c9748f88a30ec4068bc86f9e246",
+      "matching_archive_members": [
+        "harness/session.py"
+      ]
+    },
+    {
+      "run": "20261118-required-vibeforged-rootfix-review",
+      "file": "guard.py",
+      "sha256": "158c49e4b9f036fe60f74e6b81605052e46b2db715bc0fd7d5b1419315d1522e",
+      "matching_archive_members": [
+        "harness/guard.py"
+      ]
+    },
+    {
+      "run": "20261118-required-vibeforged-rootfix-review",
+      "file": "retry_ledger.py",
+      "sha256": "9c48a898005575b41edaa79b206c88a423270188dbdac29e7ca9681a4874f668",
+      "matching_archive_members": [
+        "harness/retry_ledger.py"
+      ]
+    },
+    {
+      "run": "20261118-required-vibeforged-rootfix-review",
+      "file": "prepare_profile.py",
+      "sha256": "50b8fbe495ffa316ac61799755bbcd5d4fef1faa12a5916fe7e4641cc69798b8",
+      "matching_archive_members": [
+        "harness/prepare_profile.py"
+      ]
+    },
+    {
+      "run": "20261118-required-vibeforged-rootfix-review",
+      "file": "gitea-focused/__init__.py",
+      "sha256": "afe0a789d10990d3064a3494318a494e4888a8659713396d7c025ddac031c8cb",
+      "matching_archive_members": [
+        "plugin-v0.1.2/__init__.py"
+      ]
+    }
+  ]
+}

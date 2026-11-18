@@ -104,3 +104,15 @@ including after ambiguous timeouts, before retrying.
 The earlier fork-issue probe encountered disabled Issues on the new fork. That
 setting is irrelevant to this revised upstream-issue workflow. Its later manual
 enablement and successful read-back do not change the original model grades.
+
+## Focused-tool comparison
+
+The [November 18 focused-tool evaluation](2026-11-18-required-tools/investigation.md)
+uses an optional plugin with separate required-field operations. Record native
+and focused modes separately; changing the tool interface is an experimental
+condition, not a new model. Preserve non-Gitea schemas when comparing them.
+
+Report both verified created resources and the stricter complete result including
+requested read-backs and final URLs. A successful PR-only follow-up never credits
+the failed full run that produced its branch. Read-only failures caused by a
+verified server/schema defect are diagnostic, not model-only evidence.

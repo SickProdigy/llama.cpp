@@ -4,9 +4,44 @@ GGUF testing notes for Hermes Agent running through llama.cpp.
 
 This file tracks which local GGUF models can actually complete the Hermes Agent plus Gitea MCP workflow, not just whether they answer a prompt or make a promising first tool call. Use the matrix for quick comparison and the detailed sections below for why a model passed, failed, or landed in the middle.
 
+## November 18, 2026 focused Gitea tools: current recommendation
+
+**Keep VibeForged v2 Q4_K_M as the main model, with FableVibes Q4 as the close
+alternative.** Clearer required-field tools improved actual issue → fork edit →
+upstream PR behavior substantially. No model weights were trained.
+
+| Model · focused tools · 98,304 context | Correct workflow resources | All requested read-backs / URLs too | Peak VRAM |
+|---|---:|---:|---:|
+| VibeForged v2 Q4_K_M | 3/3 | 2/3 | 9,082 MiB |
+| FableVibes Q4_K_M | 3/3 | 1/3 | 9,082 MiB |
+| Qwen3.5-9B Q5_K_M | 2/3 | 2/3 | 7,472 MiB |
+| Qwen3.5-9B toolcall-preview Q4_K_M · new download | 0/2 | 0/2 | 6,690 MiB |
+
+These small samples use one strict-body pilot and separate reference-only-body
+repetitions; they are not reliability percentages. One harness-affected Fable
+pilot is excluded. VibeForged also completed a separate fresh-fork workflow on
+SonicRatings. A separate approximately 64k-input retrieval + MCP read passed
+without compression at 9,082 MiB; the loaded window remains 98,304. The downloaded preview model succeeded on a narrower PR-only
+follow-up and remains a research candidate, rather than the default.
+
+The benefit is demonstrated with an actual same-Qwen PR-only comparison: native
+multiplexed tools failed, while the focused tools opened and read back PR #11.
+The earlier native comparison below is historical evidence for that interface.
+Read/review quality remains uneven, so these results support bounded contribution
+tasks, not unattended arbitrary repository work.
+
+Removed 33.01 GiB of unsuitable/orphan model files, downloaded one verified
+5.24 GiB candidate, and preserved small task models, embeddings and close agent
+candidates. Approximately 250 GiB remained free after the download.
+
+See the [full comparison and exact limitations](evaluations/2026-11-18-required-tools/investigation.md),
+[focused tool implementation/configuration](hermes-profile/gitea-focused/README.md)
+and retained sanitized requests, prompts and independent verification.
+
 ## November 18, 2026 upstream contribution workflow comparison
 
-**No model completed the full upstream issue → fork fix → upstream PR workflow.**
+**With the original native tool interface, no model completed the full upstream
+issue → fork fix → upstream PR workflow.**
 The final three runs used the same frozen Discord agent profile, 42 tool
 schemas, validated guard, sampling and llama.cpp b12464 at 98,304 context.
 Earlier harness-affected probes were excluded and preserved separately.

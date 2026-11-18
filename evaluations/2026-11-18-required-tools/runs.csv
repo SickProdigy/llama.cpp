@@ -1,0 +1,31 @@
+run_id,model,mode,task,phase,seconds,first_tool_completed_seconds,model_tool_calls,native_calls,peak_vram_mib,issue,pr,fork_created_this_run,workflow_resources_pass,all_readbacks_and_urls_pass,pr_only_pass,early_stop
+20261118-required-fablevibes-q4-facade-announcer-wording,qwen3.6-14b-a3b-fablevibes-q4_k_m,facade,full,excluded_harness_or_interface_defect,56.368,45.631,5,6,9082,,,False,False,False,False,repeated identical rejected call
+20261118-required-fablevibes-q4-facade-announcer-wording-recheck,qwen3.6-14b-a3b-fablevibes-q4_k_m,facade,full,pilot_strict_body,91.011,44.795,9,16,9082,18,19,False,True,False,False,
+20261118-required-fablevibes-q4-read-explain,qwen3.6-14b-a3b-fablevibes-q4_k_m,facade,explain,read,22.073,6.04,2,2,9082,,,,,,,
+20261118-required-fablevibes-q4-read-review,qwen3.6-14b-a3b-fablevibes-q4_k_m,facade,review,read,6.15,6.133,1,0,9082,,,,,,,mutation during read-only task: repo_write
+20261118-required-fablevibes-q4-repeat-example-api,qwen3.6-14b-a3b-fablevibes-q4_k_m,facade,full,repeat_reference_body,55.322,6.839,9,16,9082,29,30,False,True,True,False,
+20261118-required-fablevibes-q4-repeat-wolfram-rooms,qwen3.6-14b-a3b-fablevibes-q4_k_m,facade,full,repeat_reference_body,95.352,41.221,10,17,9082,27,28,False,True,False,False,
+20261118-required-fablevibes-root-tree-review,qwen3.6-14b-a3b-fablevibes-q4_k_m,facade,review,root_tree_recheck,40.052,40.032,1,0,9082,,,,,,,mutation during read-only task: repo_write
+20261118-required-fablevibes-rootfix-review,qwen3.6-14b-a3b-fablevibes-q4_k_m,facade,review,root_adapter_probe,40.921,40.902,1,0,9082,,,,,,,mutation during read-only task: repo_write
+20261118-required-preview-pr-reference-only,qwen3.5-9b-toolcall-preview-q4_k_m,facade,pr-only,pr_only,60.326,49.362,2,5,6690,15,20,False,False,False,True,
+20261118-required-preview9-q4-facade-api-wording,qwen3.5-9b-toolcall-preview-q4_k_m,facade,full,pilot_strict_body,94.03,36.778,9,11,6690,15,,False,False,False,False,repeated identical rejected call
+20261118-required-preview9-q4-native-buddy-wording,qwen3.5-9b-toolcall-preview-q4_k_m,native,full,pilot_strict_body,126.94,56.398,8,6,6690,14,,False,False,False,False,PR must be created upstream
+20261118-required-preview9-q4-read-explain,qwen3.5-9b-toolcall-preview-q4_k_m,facade,explain,read,48.779,5.899,7,7,6690,,,,,,,
+20261118-required-preview9-q4-read-review,qwen3.5-9b-toolcall-preview-q4_k_m,facade,review,read,132.861,9.564,11,11,6690,,,,,,,
+20261118-required-preview9-q4-repeat-book-ui,qwen3.5-9b-toolcall-preview-q4_k_m,facade,full,repeat_reference_body,78.73,52.866,4,3,6690,,,False,False,False,False,file commit outside fork
+20261118-required-qwen-pr-facade,qwen3.5-9b-q5_k_m,facade,pr-only,pr_only,44.965,33.033,2,5,7472,10,11,False,False,False,True,
+20261118-required-qwen-pr-native,qwen3.5-9b-q5_k_m,native,pr-only,pr_only,81.858,49.987,7,7,7472,10,,False,False,False,False,
+20261118-required-qwen9-q5-facade-example-wording,qwen3.5-9b-q5_k_m,facade,full,pilot_strict_body,107.988,43.603,9,15,7472,12,13,False,True,True,False,
+20261118-required-qwen9-q5-read-explain,qwen3.5-9b-q5_k_m,facade,explain,read,25.692,5.846,2,2,7472,,,,,,,
+20261118-required-qwen9-q5-read-review,qwen3.5-9b-q5_k_m,facade,review,read,27.728,6.819,7,6,7472,,,,,,,off-task tool attempt: web_search
+20261118-required-qwen9-q5-repeat-beets-wording,qwen3.5-9b-q5_k_m,facade,full,repeat_reference_body,78.514,11.983,10,17,7472,21,22,False,True,True,False,
+20261118-required-qwen9-q5-repeat-catalog-wording,qwen3.5-9b-q5_k_m,facade,full,repeat_reference_body,46.038,46.024,1,0,7472,,,False,False,False,False,issue must be created in upstream
+20261118-required-vibeforged-freshfork-sonicratings,qwen3.6-14b-a3b-vibeforged-v2-q4_k_m,facade,full,fresh_fork,59.622,5.872,12,19,9082,24,25,True,True,True,False,
+20261118-required-vibeforged-longcontext,qwen3.6-14b-a3b-vibeforged-v2-q4_k_m,facade,longcontext,long_context,152.238,145.07,1,1,9082,,,,,,,
+20261118-required-vibeforged-q4-facade-localai-wording,qwen3.6-14b-a3b-vibeforged-v2-q4_k_m,facade,full,pilot_strict_body,89.485,44.442,9,16,9082,16,17,False,True,True,False,
+20261118-required-vibeforged-q4-read-explain,qwen3.6-14b-a3b-vibeforged-v2-q4_k_m,facade,explain,read,22.089,5.433,2,2,9082,,,,,,,
+20261118-required-vibeforged-q4-read-review,qwen3.6-14b-a3b-vibeforged-v2-q4_k_m,facade,review,read,23.971,5.943,8,7,9082,,,,,,,off-task tool attempt: terminal
+20261118-required-vibeforged-q4-repeat-spam-status,qwen3.6-14b-a3b-vibeforged-v2-q4_k_m,facade,full,repeat_reference_body,81.077,43.153,8,15,9082,23,24,False,True,False,False,
+20261118-required-vibeforged-q4-repeat-wolfram-wording,qwen3.6-14b-a3b-vibeforged-v2-q4_k_m,facade,full,repeat_reference_body,61.149,9.774,10,17,9082,25,26,False,True,True,False,
+20261118-required-vibeforged-root-tree-review,qwen3.6-14b-a3b-vibeforged-v2-q4_k_m,facade,review,root_tree_recheck,40.99,40.967,1,0,9082,,,,,,,mutation during read-only task: repo_write
+20261118-required-vibeforged-rootfix-review,qwen3.6-14b-a3b-vibeforged-v2-q4_k_m,facade,review,excluded_harness_or_interface_defect,47.557,42.105,3,2,9082,,,,,,,repeated identical rejected call

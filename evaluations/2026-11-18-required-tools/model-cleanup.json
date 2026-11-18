@@ -1,0 +1,80 @@
+{
+  "utc": "2026-11-18T22:12:06.621148+00:00",
+  "files": [
+    {
+      "filename": "Qwen3-14B-Q4_K_M.gguf",
+      "bytes": 9001752960,
+      "nlink": 1,
+      "metadata": {
+        "version": 3,
+        "tensors": 443,
+        "metadata_count": 28,
+        "general.architecture": "qwen3",
+        "general.type": "model",
+        "general.name": "Qwen3 14B Awq Compatible Instruct",
+        "qwen3.block_count": 40,
+        "qwen3.context_length": 40960,
+        "qwen3.embedding_length": 5120,
+        "general.file_type": 15
+      },
+      "container_references": [],
+      "reason": "Repeated failed guided tool runs; 40,960 native context and high VRAM do not meet this Hermes setup.",
+      "deleted": true
+    },
+    {
+      "filename": "Qwen3-14B.Q5_K_M.gguf",
+      "bytes": 10514569984,
+      "nlink": 1,
+      "metadata": {
+        "version": 3,
+        "tensors": 443,
+        "metadata_count": 34,
+        "general.architecture": "qwen3",
+        "general.type": "model",
+        "general.name": "Models Qwen Qwen3 14B",
+        "qwen3.block_count": 40,
+        "qwen3.context_length": 40960,
+        "qwen3.embedding_length": 5120,
+        "general.file_type": 17
+      },
+      "container_references": [],
+      "reason": "Repeated failed guided tool runs; 40,960 native context and high VRAM do not meet this Hermes setup.",
+      "deleted": true
+    },
+    {
+      "filename": "qwen2.5-coder-14b-instruct-q6_k.gguf",
+      "bytes": 12124683712,
+      "nlink": 1,
+      "metadata": {
+        "version": 3,
+        "tensors": 579,
+        "metadata_count": 29,
+        "general.architecture": "qwen2",
+        "general.type": "model",
+        "general.name": "Qwen2.5 Coder 14B Instruct AWQ",
+        "qwen2.block_count": 48,
+        "qwen2.context_length": 131072,
+        "qwen2.embedding_length": 5120,
+        "general.file_type": 18
+      },
+      "container_references": [],
+      "reason": "Repeated loading instability, no usable tool run, ~15.2 GiB at 65k; smaller Q4 counterpart retained.",
+      "deleted": true
+    },
+    {
+      "filename": "DeepSeek-V4-Flash-MTP-Q4K-Q8_0-F32.gguf",
+      "bytes": 3807602400,
+      "container_references": [],
+      "metadata": {
+        "general.architecture": "deepseek4_mtp_support",
+        "tensors": 32
+      },
+      "reason": "Auxiliary MTP support weights, not a standalone chat model; no matching base model present.",
+      "deleted": true
+    }
+  ],
+  "logical_bytes_removed": 35448609056,
+  "disk_free_before": 238822834176,
+  "disk_free_after": 274271469568,
+  "preserved": "Small task models, current VibeForged Q4, FableVibes Q4, Qwen9 Q5/Q8, Gemma4 Q6 and models with prior successes or unresolved template-dependent failures."
+}

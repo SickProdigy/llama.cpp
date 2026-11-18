@@ -1,0 +1,9 @@
+{
+  "repo": "am17an/Qwen3.5-9B-toolcall-preview-GGUF",
+  "revision": "02fe3b87e1c2ccd5989edadbde131a33bb3ae601",
+  "filename": "Qwen3.5-9B-9b-v5s1-imat-Q4_K_M.gguf",
+  "bytes": 5629108960,
+  "sha256": "6e0665f447c8e33e24b923f53094e45a319b30c837ac316efb8d2817573135cb",
+  "seconds": 522.0,
+  "disk_free_after": 268866027520
+}

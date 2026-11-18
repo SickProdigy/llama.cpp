@@ -1,5 +1,5 @@
 name: gitea-focused
-version: "0.1.1"
+version: "0.1.3"
 description: "Required-field Gitea contribution tools backed exclusively by the configured Hermes MCP connection."
 provides_tools:
   - gitea_identity

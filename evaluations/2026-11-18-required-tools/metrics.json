@@ -1,0 +1,45 @@
+{
+  "qwen3.5-9b-q5_k_m": {
+    "peak_vram_mib": 7472,
+    "full_scored_runs": 3,
+    "correct_resources": 2,
+    "strict_complete": 2,
+    "successful_full_seconds": [
+      107.988,
+      78.514
+    ],
+    "median_successful_full_seconds": 93.251
+  },
+  "qwen3.5-9b-toolcall-preview-q4_k_m": {
+    "peak_vram_mib": 6690,
+    "full_scored_runs": 2,
+    "correct_resources": 0,
+    "strict_complete": 0,
+    "successful_full_seconds": [],
+    "median_successful_full_seconds": null
+  },
+  "qwen3.6-14b-a3b-fablevibes-q4_k_m": {
+    "peak_vram_mib": 9082,
+    "full_scored_runs": 3,
+    "correct_resources": 3,
+    "strict_complete": 1,
+    "successful_full_seconds": [
+      91.011,
+      55.322,
+      95.352
+    ],
+    "median_successful_full_seconds": 91.011
+  },
+  "qwen3.6-14b-a3b-vibeforged-v2-q4_k_m": {
+    "peak_vram_mib": 9082,
+    "full_scored_runs": 3,
+    "correct_resources": 3,
+    "strict_complete": 2,
+    "successful_full_seconds": [
+      89.485,
+      81.077,
+      61.149
+    ],
+    "median_successful_full_seconds": 81.077
+  }
+}

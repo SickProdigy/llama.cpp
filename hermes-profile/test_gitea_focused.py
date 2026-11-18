@@ -40,6 +40,10 @@ class Focused(unittest.TestCase):
   out=self.pr();self.assertEqual(out['html_url'],'https://gitea.rcs1.top/'+UP+'/pulls/11');name,args=self.native.calls[-1];self.assertEqual(name,'pull_request_write');self.assertEqual(args['head'],'hermes-agent:feature');self.assertEqual(args['owner'],'sickprodigy');self.assertEqual(args['base'],'main')
  def test_fork_never_sends_personal_username_as_org(self):
   self.call('fork_repository',upstream_owner='sickprodigy',upstream_repo='nicotineplus-plugins',fork_name='fixture');self.assertNotIn('org',self.native.calls[-1][1])
+ def test_root_directory_aliases_use_repository_tree(self):
+  for path in ('', '.', '/', './'):
+   self.call('list_directory',owner='sickprodigy',repo='Sick-Cogs',path=path,ref='main');self.assertEqual(self.native.calls[-1],('get_repository_tree',{'owner':'sickprodigy','repo':'Sick-Cogs','tree_sha':'main','recursive':False,'per_page':100}))
+  self.call('list_directory',owner='sickprodigy',repo='Sick-Cogs',path='folder',ref='main');self.assertEqual(self.native.calls[-1][1]['path'],'folder')
  def test_line_json_is_returned_as_readable_text(self):
   out=self.call('read_file',owner='sickprodigy',repo='nicotineplus-plugins',path='README.md',ref='main');self.assertEqual(out['text'],'1: # Title\n2: body');self.assertEqual(self.native.calls[-1][1]['end_line'],160)
  def test_direct_native_names_are_blocked(self):

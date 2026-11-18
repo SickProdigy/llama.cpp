@@ -1,0 +1,30 @@
+{
+  "checked_utc": "2026-11-18T23:50:31.625821+00:00",
+  "removed_containers": [
+    "hermes-required-store",
+    "mcp-gitea-required-eval"
+  ],
+  "transient_session_and_backend_already_removed": true,
+  "removed_volume": "hermes-required-evidence",
+  "private_working_directory_removed": true,
+  "sanitized_evidence_retained": true,
+  "normal_runtime": {
+    "hermes": {
+      "running": true,
+      "health": null
+    },
+    "llama-cpp": {
+      "running": true,
+      "health": "healthy"
+    },
+    "mcp-gitea-hermes": {
+      "running": true,
+      "health": "healthy"
+    },
+    "hermes-codex": {
+      "running": true,
+      "health": null
+    }
+  },
+  "disk_free_bytes": 269172297728
+}

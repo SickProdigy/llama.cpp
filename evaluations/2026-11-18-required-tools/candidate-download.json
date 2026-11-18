@@ -1,0 +1,26 @@
+{
+  "repo": "am17an/Qwen3.5-9B-toolcall-preview-GGUF",
+  "revision": "02fe3b87e1c2ccd5989edadbde131a33bb3ae601",
+  "file": {
+    "rfilename": "Qwen3.5-9B-9b-v5s1-imat-Q4_K_M.gguf",
+    "blobId": "d9bdb9faa5e45d4a9e2bf52b5134c010dc1618f1",
+    "size": 5629108960,
+    "lfs": {
+      "sha256": "6e0665f447c8e33e24b923f53094e45a319b30c837ac316efb8d2817573135cb",
+      "size": 5629108960,
+      "pointerSize": 135
+    }
+  },
+  "url": "https://huggingface.co/am17an/Qwen3.5-9B-toolcall-preview-GGUF/resolve/02fe3b87e1c2ccd5989edadbde131a33bb3ae601/Qwen3.5-9B-9b-v5s1-imat-Q4_K_M.gguf",
+  "metadata": {
+    "version": 3,
+    "tensors": 427,
+    "metadata_count": 39,
+    "general.architecture": "qwen35",
+    "general.type": "model",
+    "general.name": "Merged",
+    "qwen35.block_count": 32,
+    "qwen35.context_length": 262144,
+    "qwen35.embedding_length": 4096
+  }
+}
