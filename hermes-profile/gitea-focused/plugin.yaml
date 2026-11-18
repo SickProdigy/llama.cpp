@@ -1,0 +1,21 @@
+name: gitea-focused
+version: "0.1.1"
+description: "Required-field Gitea contribution tools backed exclusively by the configured Hermes MCP connection."
+provides_tools:
+  - gitea_identity
+  - gitea_search_repositories
+  - gitea_repository_info
+  - gitea_list_branches
+  - gitea_list_directory
+  - gitea_read_file
+  - gitea_list_issues
+  - gitea_read_issue
+  - gitea_list_pull_requests
+  - gitea_read_pull_request
+  - gitea_create_issue
+  - gitea_fork_repository
+  - gitea_create_branch
+  - gitea_edit_file
+  - gitea_create_pull_request
+provides_hooks:
+  - pre_tool_call

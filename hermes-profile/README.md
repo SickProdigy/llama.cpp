@@ -47,3 +47,18 @@ llama.cpp backend; do not transfer its template arguments to an unrelated API
 provider. The main agent output cap remains 4,096. The dated report records the
 other tested routing/skill changes; the archive's profile repair script is a
 snapshot-specific reproducer, not a general-purpose configuration installer.
+
+## Focused contribution interface
+
+The optional [gitea-focused plugin](gitea-focused/README.md) exposes separate
+required-field issue, fork, branch, edit and PR operations over the existing MCP
+connection. It verifies fork ownership and parent relationships, restricts
+writes to an operator-configured upstream list, and blocks model calls to the
+hidden native namespace. Its readable-file output also avoids double-encoded
+line JSON. This is tool/runtime tuning, not model-weight training.
+
+Keep native MCP discovery enabled while hiding its toolset from the model.
+The MCP allowlist must include the read-only `repo_read` operation. The guide
+explains profile selection and compatibility hints. A normal loaded-profile
+preflight must pass before deployment; unit checks alone do not prove remote
+mutation success.

@@ -2,3 +2,4 @@ models/
 *.gguf
 docker-compose.yml
 AGENTS.md
+__pycache__/
