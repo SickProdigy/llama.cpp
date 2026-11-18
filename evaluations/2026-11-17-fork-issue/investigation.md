@@ -4,8 +4,9 @@
 
 Neither model-driven attempt completed the workflow. A separate direct MCP
 control proved that the same `hermes-agent` connection can fork the repository
-and obtain an accepted issue-creation response. The created issue cannot yet be
-read back while the test fork reports `has_issues: false`.
+and obtain an accepted issue-creation response. Read-back initially failed with
+Issues disabled; after the owner enabled Issues, the same MCP account successfully
+read the existing issue on November 18. The model attempts remain failures.
 
 | Model-driven variant | Seconds | Tool attempts | Fork created | Issue created | Early stop |
 |---|---:|---:|---|---|---|
@@ -100,19 +101,22 @@ permission was changed. The disabled Issues feature is consistent with the
 read-back failure; a successful recheck after enabling it is still needed to
 confirm recovery. The create response alone is not a complete workflow pass.
 
-## Next step
+## November 18 follow-up: read-back resolved
 
-Enable Issues on this test fork using an account with the required repository
-settings access, then recheck **existing issue #1** through Hermes MCP. Do not
-create another fork or duplicate issue to retry this read-back. The current
-MCP allowlist cannot toggle that setting. Future combined fork/issue tests must
-account for the issue feature on newly created forks; alternatively, separate
-fork and issue-creation probes using an approved issues-enabled fixture.
+The owner enabled Issues on the test fork. A fresh independent repository/API
+check confirms `has_issues: true`, one open issue and HTTP 200 for issue #1.
+A direct call through the live Hermes MCP connection reverified the principal
+as `hermes-agent`; `issue_read(method: get)` returned the existing issue's exact
+title, body, number and open state. [Issue #1](https://gitea.rcs1.top/hermes-agent/hermes-mcp-test-20261117-vf-144838/issues/1)
+is now accessible.
 
-This is a more useful next target than more repository-advice prompts: it exposes
-personal-account argument handling and actual write/read-back capability. It
-also demonstrates why a direct tool control and an agent success must be scored
-separately.
+The [recheck record](readback-recheck-2026-11-18.json) is separate from the original
+archive, preserving the earlier 404 evidence. No new fork, issue, comment or
+setting mutation was made during this recheck. This completes the direct MCP
+control's write/read-back check; it does not turn either failed model run into
+a pass or constitute a new model-driven write test. Do not duplicate the existing
+objects to retry a read. Future combined write tests still need a fixture with
+Issues enabled and separately recorded model versus direct-control outcomes.
 
 ## Runtime and evidence
 

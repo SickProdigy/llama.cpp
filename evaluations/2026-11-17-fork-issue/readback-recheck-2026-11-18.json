@@ -1,0 +1,19 @@
+{
+  "utc": "2026-11-18T20:40:17.689695+00:00",
+  "repo": "hermes-agent/hermes-mcp-test-20261117-vf-144838",
+  "has_issues": true,
+  "open_issues_count": 1,
+  "public_api_issue_status": 200,
+  "principal": "hermes-agent",
+  "mcp_method": "issue_read.get",
+  "mcp_issue_read_succeeded": true,
+  "issue_number": 1,
+  "title": "MCP workflow test 20261117-vf-144838",
+  "body": "Created by the Hermes MCP workflow test. No implementation requested.",
+  "state": "open",
+  "mcp_reported_url": "http://gitea:3000/hermes-agent/hermes-mcp-test-20261117-vf-144838/issues/1",
+  "verified_public_url": "https://gitea.rcs1.top/hermes-agent/hermes-mcp-test-20261117-vf-144838/issues/1",
+  "new_writes": 0,
+  "model_attempt_grades_changed": false,
+  "check_type": "direct MCP read-back, not a new model run"
+}

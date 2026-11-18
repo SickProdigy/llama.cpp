@@ -3,8 +3,10 @@
 Status: exercised on November 17 against `sickprodigy/nicotineplus-plugins`,
 with destination `hermes-agent`. See the [first write-probe results](2026-11-17-fork-issue/investigation.md).
 Both model variants failed; a separate direct MCP control created the fork and
-received an issue-creation response, but issue read-back remains blocked with
-Issues disabled on the fork. These are separate from earlier read-only scores.
+received an issue-creation response. Read-back was initially blocked with
+Issues disabled; after the owner enabled Issues, the same Hermes MCP account
+verified existing issue #1 on November 18. Model grades are unchanged. These
+results are separate from earlier read-only scores.
 The template below applies to future approved fixtures; do not repeat writes to
 the existing test objects.
 

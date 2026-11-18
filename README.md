@@ -12,10 +12,10 @@ supplied a personal account as an organization and were stopped before unrelated
 tool use. No model-created fork or issue resulted.
 
 A separate direct control using the same Hermes MCP account created the test
-fork and obtained an accepted issue #1 response. Fork read-back passed; issue
-read-back returns 404 while the fork's Issues feature is disabled. Enabling it
-through the current MCP is blocked by the method allowlist. This control is
-**not an agent pass**. The live model/profile/credentials remain unchanged.
+fork and obtained an accepted issue #1 response. Read-back initially returned
+404 with Issues disabled. After the owner enabled Issues, the same Hermes MCP
+account successfully read issue #1 on November 18. This direct control is
+**not an agent pass**; the two model failures remain unchanged.
 
 See the [write probe and actual resource state](evaluations/2026-11-17-fork-issue/investigation.md)
 and [bounded write-test protocol](evaluations/write-workflow-protocol.md).
