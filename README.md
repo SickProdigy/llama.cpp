@@ -4,9 +4,17 @@ GGUF testing notes for Hermes Agent running through llama.cpp.
 
 This file tracks which local GGUF models can actually complete the Hermes Agent plus Gitea MCP workflow, not just whether they answer a prompt or make a promising first tool call. Use the matrix for quick comparison and the detailed sections below for why a model passed, failed, or landed in the middle.
 
+## Next write test: upstream contribution workflow
+
+The third test now targets an issue in `sickprodigy/nicotineplus-plugins`, a
+small fix on a branch in `hermes-agent`'s fork, and a PR back to upstream
+referencing that issue. This revised test is **not yet run**; prepare the exact
+change manifest and runner guard first. See the
+[contribution test protocol](evaluations/write-workflow-protocol.md).
+
 ## November 17, 2026 real Gitea fork/issue probe
 
-The third test now exercises actual writes against the approved small
+The earlier third-test probe exercised actual writes against the approved small
 `nicotineplus-plugins` fixture. Both VibeForged model attempts failed: they
 supplied a personal account as an organization and were stopped before unrelated
 tool use. No model-created fork or issue resulted.

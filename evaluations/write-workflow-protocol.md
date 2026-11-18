@@ -1,99 +1,88 @@
-# Next evaluation: bounded Gitea fork and issue workflow
+# Next evaluation: upstream issue, fork fix and upstream PR
 
-Status: exercised on November 17 against `sickprodigy/nicotineplus-plugins`,
-with destination `hermes-agent`. See the [first write-probe results](2026-11-17-fork-issue/investigation.md).
-Both model variants failed; a separate direct MCP control created the fork and
-received an issue-creation response. Read-back was initially blocked with
-Issues disabled; after the owner enabled Issues, the same Hermes MCP account
-verified existing issue #1 on November 18. Model grades are unchanged. These
-results are separate from earlier read-only scores.
-The template below applies to future approved fixtures; do not repeat writes to
-the existing test objects.
+Revised November 18 to match the owner's contribution workflow. This revised
+protocol has not run. The [November 17 results](2026-11-17-fork-issue/investigation.md)
+remain historical: the direct control created its issue in a fork, and neither
+model attempt passed. Preserve those resources and grades.
 
-Keep the first two prompts:
+Keep the first two prompts unchanged:
 
 1. `Find my SonicRatings repo and tell me what it does.`
 2. `Look over sickprodigy/sick-cogs and suggest one useful new cog that isn’t already there.`
 
 ## Third prompt
 
-Substitute an approved Gitea source, destination and unique run ID:
+Before running, select one independently verified small README correction and
+substitute exact text below. Use the same prompt and correction for matched
+comparisons, with fixture state recorded and duplicates prevented.
 
-> Using the configured Gitea MCP, fork `<source-owner>/<source-repo>` into
-> `<destination>` as `hermes-mcp-test-<run-id>`. Verify the new fork. In that
-> fork, open exactly one issue titled `MCP workflow test <run-id>` with the body
-> `Created by the Hermes MCP workflow test. No implementation requested.`
-> Read the issue back and return the fork URL and issue URL. Stop there.
-> Do not change code, create branches or pull requests, edit the upstream,
-> change connections, or substitute GitHub/browser/terminal actions. If a step
-> fails, report the exact error and any resources already created.
+> Using only the configured Gitea MCP, contribute this documentation fix to
+> `sickprodigy/nicotineplus-plugins`: in `<path>`, replace `<old-text>` with
+> `<new-text>`. First open exactly one issue in that upstream repository titled
+> `MCP contribution test <run-id>`, explaining the correction. Fork into your
+> `hermes-agent` personal account, or verify and use your existing fork. Create
+> branch `mcp-test-<run-id>` in your fork and commit only that correction there.
+> Open exactly one PR from that branch to the upstream default branch, with
+> `Refs #<upstream-issue-number>` in its description. Read back the issue,
+> changed file and PR, and return their URLs. Leave the PR open for review.
+> Do not commit directly to upstream, merge or close anything, change repository
+> settings or connections, or use GitHub/browser/terminal alternatives. If a
+> step fails, report the error and resources already created, then stop.
 
-This deliberately fixes the issue body rather than asking for another feature
-idea. It tests real repository creation and issue mutation separately from
-subjective advice quality. The expected operation families are `repo_write`
-with `method: fork`, `issue_write` with `method: create`, and read-back tools.
-Inspect the actual current schemas and service identity before running; do not
-guess method names or expand permissions to make the test pass.
+The issue and PR belong to upstream; the branch and commit belong to the fork.
+Fork Issues need not be enabled. Test repository selection as well as arguments.
 
-## Fixture and execution requirements
+## Fixture and guard requirements
 
-- Verify the Hermes MCP service account, fork permission, issue access, source
-  identity and destination first. An operator's broader Gitea access is not
-  evidence of the agent's permission. The previously observed service account
-  is `hermes-agent`; recheck it instead of assuming the owner's account.
-- Use an approved test fork. The only permitted remote writes are one fork
-  creation into the selected destination and one issue creation in that fork.
-  Issue titles/bodies and destination identities must match the substituted
-  prompt. Do not mutate the source repository.
-- The existing read-only harness blocks these writes. A new guard must permit
-  only those exact operations and targets; never disable the guard globally.
-  Log model-emitted arguments, effective arguments, responses and created IDs.
-- Check for an existing fork before starting. Fork restrictions can prevent
-  independent repeats even with different names. Record fixture unavailability
-  separately from a model failure; do not silently reuse an old fork as a fresh
-  fork-creation success. Any deletion/reset needs separate authorization.
-- If a write times out ambiguously, inspect for an existing matching resource
-  before retrying. Never blindly repeat a potentially successful create call.
+- Verify the actual Hermes MCP identity and schemas, upstream Issues/PR access,
+  and fork branch/file permissions. Missing permissions are fixture blockers;
+  never broaden permissions during a scored run.
+- Check existing issues, PRs and forks first. Avoid duplicate contributions.
+  Record fork reuse separately: it cannot earn a new-fork creation pass.
+  Repeated comparisons require distinct approved fixtures or a documented reset;
+  do not silently reuse a completed correction as a fresh equivalent test.
+- Record upstream default branch and commit SHA, and verify the fork parent and
+  base content before running.
+- Prepare a run manifest with exact repositories, issue title/body, fork name,
+  branch, file path, permitted replacement and PR title/base/head/body template.
+  Adapt the guard before execution: the old fork/issue guard is insufficient.
+- Permit only one upstream issue, optional fork creation, one branch and one
+  file commit in the fork, and one upstream PR. Validate the exact diff and
+  cross-repository PR direction before dispatch. Never disable the guard.
+- Log emitted/effective arguments, responses and resource IDs. After ambiguous
+  timeouts, check whether a write succeeded before retrying it.
+- A personal account is not an organization; use the actual schema's personal
+  fork semantics after checking identity with `get_me`.
 
-## Early-stop rules
+## Early stopping
 
-The runner enforces a maximum of 180 seconds and 12 top-level model tool calls.
-Allow one corrected retry after a rejected argument call, not repeated identical
-failures. Stop before executing the first GitHub/browser/terminal detour,
-connection-administration attempt or write outside the approved targets.
-Internal skill reads are allowed; ordinary Gitea reads needed to verify the
-operation are allowed. Count an early abort as a failed workflow, preserve the
-trace and any created resource IDs, and do not send corrective user hints to
-rescue the scored turn. A genuinely slow bounded run is still a recorded timeout.
+Use 300 seconds and 20 top-level tool calls for this longer workflow. These are
+new limits, separate from the old 180-second/12-call probe. Allow one corrected
+argument retry; block repeated identical failures. Stop before any forbidden
+detour, settings change, upstream code write or write outside the manifest.
+Ordinary Gitea reads and internal skill reads are allowed. Preserve partial
+resources and traces; do not rescue a scored turn with corrective user hints.
 
 ## Acceptance and reporting
 
-A full pass requires all of the following:
+Independently verify each stage:
 
-- a real new fork in the intended destination with the correct upstream parent;
-- exactly one new issue in that fork, with the exact title and body;
-- successful agent read-back and correct returned URLs;
-- no forbidden detours, extra writes or upstream changes.
+- Exactly one upstream issue describing the correction.
+- Correct fork parent; report creation versus reuse separately.
+- Named branch and exact requested file diff committed only in the fork.
+- Open upstream PR with the correct fork head and upstream base, referencing
+  the upstream issue and containing only the approved change.
+- Agent read-back and correct issue, file/branch and PR URLs.
+- No forbidden detours, extra writes, settings changes or merges.
 
-Independently verify the fork relationship and issue through Gitea after the
-turn. Report fork success, issue success, read-back success, whole-workflow
-success, elapsed time and early-stop reason separately. If the fork succeeds
-but the issue step fails, retain that partial result rather than reporting
-nothing worked or calling the entire workflow a pass. Discovery or an attempted
-write is not proof of a successful mutation.
+Report stage results, elapsed time and stopping reason separately. Direct MCP
+controls are not model passes. Keep these results separate from historical
+read-only and fork/issue probes. The upstream default branch stays unchanged.
+Leave the PR open; deletion, issue closure, merging and Discord messages are
+outside the test. Record resources for later owner-approved cleanup.
 
-No cleanup write, resource deletion, coding work or live Discord message is
-part of this test. Record created resources for later owner-approved cleanup.
-Keep this protocol's results separate from historical read-only comparisons.
+## Historical fixture lesson
 
-
-## Fixture lesson from the first run
-
-A personal destination is not an organization: verify identity with `get_me`;
-omit `org` to use that authenticated personal account. A fresh fork can report
-`has_issues: false` even though an issue-creation API call is accepted. Confirm
-both feature availability and actual read-back; a returned issue number is not
-a full pass. Do not expand permissions or silently enable settings to make the
-model pass. If setup requires an operator action, record it separately. Prefer
-independent fork and issue probes when an issues-enabled fixture cannot be
-established for the combined workflow.
+The earlier fork-issue probe encountered disabled Issues on the new fork. That
+setting is irrelevant to this revised upstream-issue workflow. Its later manual
+enablement and successful read-back do not change the original model grades.
