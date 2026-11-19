@@ -1,0 +1,59 @@
+{
+  "reserve_bytes": 107374182400,
+  "models": [
+    {
+      "label": "ornith9-q5",
+      "repo": "mradermacher/Ornith-1.5-9B-uncensored-GGUF",
+      "revision": "6fd9d4f96fc8efe5032032a2635898f744903d01",
+      "filename": "Ornith-1.5-9B-uncensored.Q5_K_M.gguf",
+      "bytes": 6467970208,
+      "sha256": "7f06a0e1da5103610153d1533ea9d75ab5e688acc44aa49391377188dbf2e203"
+    },
+    {
+      "label": "ministral8-q5",
+      "repo": "mistralai/Ministral-3-8B-Instruct-2512-GGUF",
+      "revision": "0102285ad796bd99af90f58de616092e5630e970",
+      "filename": "Ministral-3-8B-Instruct-2512-Q5_K_M.gguf",
+      "bytes": 6059268512,
+      "sha256": "7a5454127ec772e2389f0e71a77fedb88b83d4366d8a69facd0cfd0898f04d35"
+    },
+    {
+      "label": "armand9-q5",
+      "repo": "armand0e/Qwen3.5-9B-Agent-GGUF",
+      "revision": "f333035ff910881722350b2703e80749c8725393",
+      "filename": "Qwen3.5-9B-Agent.q5_k_m.gguf",
+      "bytes": 6467971392,
+      "sha256": "ec90ccf000f6684e917954c501882c319ec3fae4b03d0dda9006afc1dc569477"
+    },
+    {
+      "label": "flash9-q5",
+      "repo": "flashback2k/FlashModel-Qwen3.5-9B-GGUF",
+      "revision": "6c8478b81bbee48b17dcc8c34f4c08b0ecb4d3f9",
+      "filename": "FlashModel-Qwen3.5-9B-Q5_K_M.gguf",
+      "bytes": 6467969664,
+      "sha256": "ca959629157052f7a8a358d51d151bf2d9fe822914d93957c3dd9d27e815f84c"
+    },
+    {
+      "label": "gptoss20",
+      "repo": "ggml-org/gpt-oss-20b-GGUF",
+      "revision": "41e8a94d15d62070b36cf4553a0250717ecf46b8",
+      "filename": "gpt-oss-20b-MXFP4.gguf",
+      "bytes": 12109566624,
+      "sha256": "27cd6c432c7672cb812a92f611cf3ba7bbc35928262bb1e1253ff4ee6ae35901"
+    },
+    {
+      "label": "qwen35-q4",
+      "repo": "unsloth/Qwen3.6-35B-A3B-GGUF",
+      "revision": "a483e9e6cbd595906af30beda3187c2663a1118c",
+      "filename": "Qwen3.6-35B-A3B-UD-Q4_K_XL.gguf",
+      "bytes": 22360456160,
+      "sha256": "707a55a8a4397ecde44de0c499d3e68c1ad1d240d1da65826b4949d1043f4450"
+    }
+  ],
+  "deferred": [
+    {
+      "repo": "willhar/Qwen3.5-9B-AgentTuned-GGUF",
+      "reason": "Only 18.4 GB F16 published; no quantization authorized, no ready-made small GGUF found."
+    }
+  ]
+}

@@ -1,0 +1,338 @@
+[
+  {
+    "label": "armand9-q5",
+    "phase": "matched",
+    "contexts": [
+      98304
+    ],
+    "runs": 3,
+    "read_passes": 1,
+    "read_runs": 2,
+    "correct_workflows": 0,
+    "strict_complete_workflows": 0,
+    "full_runs": 1,
+    "peak_vram_mib": 7368,
+    "seconds": [
+      75.061,
+      55.046,
+      22.665
+    ]
+  },
+  {
+    "label": "armand9-q5",
+    "phase": "publisher-sampler",
+    "contexts": [
+      98304
+    ],
+    "runs": 3,
+    "read_passes": 1,
+    "read_runs": 2,
+    "correct_workflows": 1,
+    "strict_complete_workflows": 1,
+    "full_runs": 1,
+    "peak_vram_mib": 7368,
+    "seconds": [
+      71.379,
+      174.275,
+      9.171
+    ]
+  },
+  {
+    "label": "fablevibes-control",
+    "phase": "matched",
+    "contexts": [
+      98304
+    ],
+    "runs": 3,
+    "read_passes": 1,
+    "read_runs": 2,
+    "correct_workflows": 1,
+    "strict_complete_workflows": 1,
+    "full_runs": 1,
+    "peak_vram_mib": 9082,
+    "seconds": [
+      57.269,
+      62.791,
+      6.421
+    ]
+  },
+  {
+    "label": "flash9-q5",
+    "phase": "matched",
+    "contexts": [
+      98304
+    ],
+    "runs": 3,
+    "read_passes": 1,
+    "read_runs": 2,
+    "correct_workflows": 1,
+    "strict_complete_workflows": 1,
+    "full_runs": 1,
+    "peak_vram_mib": 7368,
+    "seconds": [
+      96.784,
+      101.809,
+      180.04
+    ]
+  },
+  {
+    "label": "flash9-q5",
+    "phase": "precise-coding-sampler",
+    "contexts": [
+      98304
+    ],
+    "runs": 3,
+    "read_passes": 0,
+    "read_runs": 2,
+    "correct_workflows": 1,
+    "strict_complete_workflows": 1,
+    "full_runs": 1,
+    "peak_vram_mib": 7368,
+    "seconds": [
+      82.209,
+      124.69,
+      177.774
+    ]
+  },
+  {
+    "label": "gptoss20",
+    "phase": "matched",
+    "contexts": [
+      98304
+    ],
+    "runs": 3,
+    "read_passes": 1,
+    "read_runs": 2,
+    "correct_workflows": 1,
+    "strict_complete_workflows": 1,
+    "full_runs": 1,
+    "peak_vram_mib": 12260,
+    "seconds": [
+      48.252,
+      64.076,
+      19.263
+    ]
+  },
+  {
+    "label": "ministral14-q4",
+    "phase": "matched",
+    "contexts": [
+      98304
+    ],
+    "runs": 3,
+    "read_passes": 1,
+    "read_runs": 2,
+    "correct_workflows": 1,
+    "strict_complete_workflows": 0,
+    "full_runs": 1,
+    "peak_vram_mib": 12824,
+    "seconds": [
+      50.678,
+      82.375,
+      38.225
+    ]
+  },
+  {
+    "label": "ministral14-q4",
+    "phase": "native-diagnostic",
+    "contexts": [
+      98304
+    ],
+    "runs": 1,
+    "read_passes": 0,
+    "read_runs": 0,
+    "correct_workflows": 0,
+    "strict_complete_workflows": 0,
+    "full_runs": 1,
+    "peak_vram_mib": 12824,
+    "seconds": [
+      174.084
+    ]
+  },
+  {
+    "label": "ministral8-q5",
+    "phase": "long-probe",
+    "contexts": [
+      98304
+    ],
+    "runs": 1,
+    "read_passes": 0,
+    "read_runs": 0,
+    "correct_workflows": 0,
+    "strict_complete_workflows": 0,
+    "full_runs": 0,
+    "peak_vram_mib": 10046,
+    "seconds": [
+      370.716
+    ]
+  },
+  {
+    "label": "ministral8-q5",
+    "phase": "matched",
+    "contexts": [
+      98304
+    ],
+    "runs": 3,
+    "read_passes": 2,
+    "read_runs": 2,
+    "correct_workflows": 1,
+    "strict_complete_workflows": 1,
+    "full_runs": 1,
+    "peak_vram_mib": 10046,
+    "seconds": [
+      36.95,
+      68.279,
+      58.329
+    ]
+  },
+  {
+    "label": "ministral8-q5",
+    "phase": "matched-repeat-1",
+    "contexts": [
+      98304
+    ],
+    "runs": 3,
+    "read_passes": 1,
+    "read_runs": 2,
+    "correct_workflows": 1,
+    "strict_complete_workflows": 1,
+    "full_runs": 1,
+    "peak_vram_mib": 10046,
+    "seconds": [
+      40.553,
+      78.023,
+      33.841
+    ]
+  },
+  {
+    "label": "ministral8-q5",
+    "phase": "matched-repeat-2",
+    "contexts": [
+      98304
+    ],
+    "runs": 3,
+    "read_passes": 0,
+    "read_runs": 2,
+    "correct_workflows": 1,
+    "strict_complete_workflows": 1,
+    "full_runs": 1,
+    "peak_vram_mib": 10046,
+    "seconds": [
+      46.149,
+      77.022,
+      35.942
+    ]
+  },
+  {
+    "label": "ministral8-q5",
+    "phase": "native-diagnostic",
+    "contexts": [
+      98304
+    ],
+    "runs": 3,
+    "read_passes": 1,
+    "read_runs": 2,
+    "correct_workflows": 0,
+    "strict_complete_workflows": 0,
+    "full_runs": 1,
+    "peak_vram_mib": 10046,
+    "seconds": [
+      51.555,
+      55.698,
+      18.793
+    ]
+  },
+  {
+    "label": "ministral8-q5",
+    "phase": "publisher-sampler",
+    "contexts": [
+      98304
+    ],
+    "runs": 3,
+    "read_passes": 1,
+    "read_runs": 2,
+    "correct_workflows": 1,
+    "strict_complete_workflows": 1,
+    "full_runs": 1,
+    "peak_vram_mib": 10046,
+    "seconds": [
+      40.577,
+      70.979,
+      33.989
+    ]
+  },
+  {
+    "label": "ornith9-q5",
+    "phase": "matched",
+    "contexts": [
+      98304
+    ],
+    "runs": 3,
+    "read_passes": 1,
+    "read_runs": 2,
+    "correct_workflows": 1,
+    "strict_complete_workflows": 1,
+    "full_runs": 1,
+    "peak_vram_mib": 7368,
+    "seconds": [
+      73.808,
+      92.756,
+      180.129
+    ]
+  },
+  {
+    "label": "ornith9-q5",
+    "phase": "q8-cache-diagnostic",
+    "contexts": [
+      98304
+    ],
+    "runs": 1,
+    "read_passes": 0,
+    "read_runs": 1,
+    "correct_workflows": 0,
+    "strict_complete_workflows": 0,
+    "full_runs": 0,
+    "peak_vram_mib": 8136,
+    "seconds": [
+      180.179
+    ]
+  },
+  {
+    "label": "qwen35-q4",
+    "phase": "matched",
+    "contexts": [
+      98304
+    ],
+    "runs": 3,
+    "read_passes": 1,
+    "read_runs": 2,
+    "correct_workflows": 1,
+    "strict_complete_workflows": 1,
+    "full_runs": 1,
+    "peak_vram_mib": 11012,
+    "seconds": [
+      168.123,
+      154.322,
+      180.074
+    ]
+  },
+  {
+    "label": "vibeforged-control",
+    "phase": "matched",
+    "contexts": [
+      98304
+    ],
+    "runs": 3,
+    "read_passes": 1,
+    "read_runs": 2,
+    "correct_workflows": 1,
+    "strict_complete_workflows": 1,
+    "full_runs": 1,
+    "peak_vram_mib": 9082,
+    "seconds": [
+      66.3,
+      70.292,
+      180.517
+    ]
+  }
+]

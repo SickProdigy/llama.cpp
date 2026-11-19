@@ -1,0 +1,11 @@
+{
+  "label": "ministral14-q4",
+  "repo": "mistralai/Ministral-3-14B-Instruct-2512-GGUF",
+  "revision": "74fac473c43357d7fb2671713608183cc72496d0",
+  "filename": "Ministral-3-14B-Instruct-2512-Q4_K_M.gguf",
+  "bytes": 8239593024,
+  "sha256": "824e0f3373e69b84f2cae46fdcb9bd1ebc6ab3bfc7acc125d818b7b8178cc613",
+  "alias": "ministral-3-14b-instruct-q4_k_m",
+  "control": false,
+  "selection_reason": "Public 8.24GB sibling of the promising 8B; test greater capacity at similar file size to VibeForged."
+}

@@ -1,0 +1,69 @@
+{
+  "new_public_files": [
+    {
+      "label": "armand9-q5",
+      "filename": "Qwen3.5-9B-Agent.q5_k_m.gguf",
+      "bytes": 6467971392,
+      "sha256": "ec90ccf000f6684e917954c501882c319ec3fae4b03d0dda9006afc1dc569477",
+      "retained": true,
+      "reason": "Completed a correct core explanation and/or a verified contribution in at least one tested profile; not an all-tests-fail model."
+    },
+    {
+      "label": "flash9-q5",
+      "filename": "FlashModel-Qwen3.5-9B-Q5_K_M.gguf",
+      "bytes": 6467969664,
+      "sha256": "ca959629157052f7a8a358d51d151bf2d9fe822914d93957c3dd9d27e815f84c",
+      "retained": true,
+      "reason": "Completed a correct core explanation and/or a verified contribution in at least one tested profile; not an all-tests-fail model."
+    },
+    {
+      "label": "gptoss20",
+      "filename": "gpt-oss-20b-MXFP4.gguf",
+      "bytes": 12109566624,
+      "sha256": "27cd6c432c7672cb812a92f611cf3ba7bbc35928262bb1e1253ff4ee6ae35901",
+      "retained": true,
+      "reason": "Completed a correct core explanation and/or a verified contribution in at least one tested profile; not an all-tests-fail model."
+    },
+    {
+      "label": "ministral14-q4",
+      "filename": "Ministral-3-14B-Instruct-2512-Q4_K_M.gguf",
+      "bytes": 8239593024,
+      "sha256": "824e0f3373e69b84f2cae46fdcb9bd1ebc6ab3bfc7acc125d818b7b8178cc613",
+      "retained": true,
+      "reason": "Completed a correct core explanation and/or a verified contribution in at least one tested profile; not an all-tests-fail model."
+    },
+    {
+      "label": "ministral8-q5",
+      "filename": "Ministral-3-8B-Instruct-2512-Q5_K_M.gguf",
+      "bytes": 6059268512,
+      "sha256": "7a5454127ec772e2389f0e71a77fedb88b83d4366d8a69facd0cfd0898f04d35",
+      "retained": true,
+      "reason": "Completed a correct core explanation and/or a verified contribution in at least one tested profile; not an all-tests-fail model."
+    },
+    {
+      "label": "ornith9-q5",
+      "filename": "Ornith-1.5-9B-uncensored.Q5_K_M.gguf",
+      "bytes": 6467970208,
+      "sha256": "7f06a0e1da5103610153d1533ea9d75ab5e688acc44aa49391377188dbf2e203",
+      "retained": true,
+      "reason": "Completed a correct core explanation and/or a verified contribution in at least one tested profile; not an all-tests-fail model."
+    },
+    {
+      "label": "qwen35-q4",
+      "filename": "Qwen3.6-35B-A3B-UD-Q4_K_XL.gguf",
+      "bytes": 22360456160,
+      "sha256": "707a55a8a4397ecde44de0c499d3e68c1ad1d240d1da65826b4949d1043f4450",
+      "retained": true,
+      "reason": "Completed a correct core explanation and/or a verified contribution in at least one tested profile; not an all-tests-fail model."
+    }
+  ],
+  "total_new_bytes": 68172795584,
+  "deleted_model_files": [],
+  "existing_small_task_models_preserved": true,
+  "reserve_bytes": 107374182400,
+  "free_bytes": 194819174400,
+  "oversized_experiments": [
+    "GPT-OSS 20B and full Qwen35B exceed the approximate 8 GB file target; they work on this hardware/profile but did not establish superior broad review behavior."
+  ],
+  "no_local_quantization_conversion_or_training": true
+}

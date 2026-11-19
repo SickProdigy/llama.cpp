@@ -1,0 +1,43 @@
+{
+  "checked_utc": "2026-11-19T16:56:43.484485+00:00",
+  "task_containers_removed": [
+    {
+      "container": "hermes-required-store",
+      "was_running": true,
+      "volumes": [
+        "hermes-required-evidence",
+        "2566da086737dfbcbe720160afb5bd35b123edf3db2a26c9d3398a44f9c80b22"
+      ]
+    },
+    {
+      "container": "mcp-gitea-required-eval",
+      "was_running": true,
+      "volumes": []
+    },
+    {
+      "container": "hermes-public-download-helper",
+      "was_running": false,
+      "volumes": [
+        "hermes-required-evidence",
+        "a5b3b6a65e8357d71009e6d92a0af0b1c3c4832298ed0e8277d984d7c613e558"
+      ]
+    },
+    {
+      "container": "hermes-public-extra-download",
+      "was_running": false,
+      "volumes": [
+        "hermes-required-evidence",
+        "1809bb61b1717bc54c0bf2630d7aded1f7159bbfb84e83cdb38d3e7f5f50f416"
+      ]
+    }
+  ],
+  "anonymous_home_volumes_removed": [
+    "2566da086737dfbcbe720160afb5bd35b123edf3db2a26c9d3398a44f9c80b22",
+    "a5b3b6a65e8357d71009e6d92a0af0b1c3c4832298ed0e8277d984d7c613e558",
+    "1809bb61b1717bc54c0bf2630d7aded1f7159bbfb84e83cdb38d3e7f5f50f416"
+  ],
+  "named_evidence_volume_removed": true,
+  "broad_prune_used": false,
+  "private_snapshot_directory_removed": true,
+  "free_bytes": 194818048000
+}

@@ -4,7 +4,51 @@ GGUF testing notes for Hermes Agent running through llama.cpp.
 
 This file tracks which local GGUF models can actually complete the Hermes Agent plus Gitea MCP workflow, not just whether they answer a prompt or make a promising first tool call. Use the matrix for quick comparison and the detailed sections below for why a model passed, failed, or landed in the middle.
 
-## November 18, 2026 focused Gitea tools: current recommendation
+## November 19, 2026 public-model comparison: current shortlist
+
+**Ministral 3 8B Instruct Q5 is the strongest new compact candidate for explicit
+Gitea contribution tasks with the focused tools.** Its official 6.06 GB file
+completed three matched contributions, including all read-backs/URLs, in
+68–78 seconds. It also passed a separate approximately 63k-input retrieval +
+MCP read at 10,046 MiB VRAM, with 98,304 context loaded.
+
+Its read quality is less reliable: only 3/6 read answers across three
+matched batches passed whole-answer grounding, and its native-tool contribution
+failed. A separate temperature-zero run completed another contribution but did
+not fix unsupported attribution in its explanation. Keep VibeForged as the
+unchanged everyday model; the 8B result supports a bounded focused-tool profile,
+not a model-only cure for unattended repository work.
+
+Seven existing public GGUFs were downloaded and verified; no weights were
+trained, converted or quantized locally. Together with two fresh controls, the
+primary comparison is:
+
+| Model | Public file GB | Grounded reads | Correct workflow | Strict contribution | Contribution seconds | Peak VRAM MiB | First completed tool, explain seconds |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| VibeForged v2 Q4 control | 8.47 | 1/2 | 1/1 | 1/1 | 70.3 | 9,082 | 41.7 |
+| FableVibes Q4 control | 8.47 | 1/2 | 1/1 | 1/1 | 62.8 | 9,082 | 42.1 |
+| Ornith 1.5 9B Q5 | 6.47 | 1/2 | 1/1 | 1/1 | 92.8 | 7,368 | 36.8 |
+| Ministral 3 8B Q5 | 6.06 | 2/2 | 1/1 | 1/1 | 68.3 | 10,046 | 30.9 |
+| Armand Qwen3.5 9B Agent Q5 | 6.47 | 1/2 | 0/1 | 0/1 | 55.0 | 7,368 | 40.7 |
+| FlashModel Qwen3.5 9B Q5 | 6.47 | 1/2 | 1/1 | 1/1 | 101.8 | 7,368 | 41.3 |
+| GPT-OSS 20B MXFP4 | 12.11 | 1/2 | 1/1 | 1/1 | 64.1 | 12,260 | 32.7 |
+| Full Qwen3.6 35B Q4, CPU experts | 22.36 | 1/2 | 1/1 | 1/1 | 154.3 | 11,012 | 131.9 |
+| Ministral 3 14B Q4 follow-up | 8.24 | 1/2 | 1/1 | 0/1 | 82.4 | 12,824 | 41.3 |
+
+These are single primary samples per task, not reliability percentages. The
+14B follow-up made correct resources but missed issue/PR read-backs; its polling
+proposal also substantially overlapped existing predictions functionality, an
+explicitly conservative novelty grade. Repetitions and native/publisher/cache
+diagnostics remain separate. The 14B native contribution also failed on the fork source before any write.
+The full 35B uses CPU expert offload; loading 98k
+does not validate full-window coding. File size alone did not predict VRAM.
+
+See the [full results and recommendation limits](evaluations/2026-11-19-public-models/investigation.md),
+[exact prompts/protocol](evaluations/2026-11-19-public-models/protocol.md), and
+[per-run testing matrix](evaluations/2026-11-19-public-models/runs.csv).
+Original runtime/configuration is restored; the focused plugin is not deployed.
+
+## November 18, 2026 focused Gitea tools: previous comparison
 
 **Keep VibeForged v2 Q4_K_M as the main model, with FableVibes Q4 as the close
 alternative.** Clearer required-field tools improved actual issue → fork edit →
@@ -48,9 +92,15 @@ Earlier harness-affected probes were excluded and preserved separately.
 
 | Model | Read/review sample | Final contribution result | Peak VRAM |
 |---|---|---|---:|
-| VibeForged v2 Q4_K_M | Useful explanation with unsupported fork claim; review drifted to web | Created issue #9 and fork branch; file update tried creating that branch again | 9,082 MiB |
+| VibeForged v2 Q4_K_M | Useful explanation; see fork-metadata correction below; review drifted to web | Created issue #9 and fork branch; file update tried creating that branch again | 9,082 MiB |
 | Qwen3.5-9B Q5_K_M | Useful explanation with unsupported claims; review drifted to local files | Created issue #10, branch and exact file commit; repeatedly omitted PR head/base | 7,472 MiB |
 | FableVibes Q4_K_M | Passed both single read/review prompts | Tried opening the issue under the wrong upstream owner; blocked | 9,082 MiB |
+
+November 19 grading clarification: captured SonicRatings metadata explicitly says
+`(sptnr fork)`. That phrase alone is supported, and Gitea `fork: false` does not
+disprove imported ancestry. Maintainer identity or unchanged fork contents need
+additional evidence. Historical CSV grades have not been silently rewritten;
+see the [grounding correction](evaluations/2026-11-19-public-models/investigation.md#interpretation-and-grading-caveat).
 
 Qwen got furthest on writes and uses the least memory, but a separate PR-only
 follow-up also failed. Fable's MCP-only/temperature-0.2 implementation probe

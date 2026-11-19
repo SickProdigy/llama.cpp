@@ -1,0 +1,126 @@
+{
+  "20261119-public-vibeforged-control-matched-explain": {
+    "pass": true,
+    "note": "Correct owner/repository and core provider-to-Navidrome explanation grounded in search metadata and bounded README."
+  },
+  "20261119-public-vibeforged-control-matched-review": {
+    "pass": false,
+    "note": "Stayed on MCP but inspected many files and reached the 180-second limit without a completed proposal."
+  },
+  "20261119-public-fablevibes-control-matched-explain": {
+    "pass": true,
+    "note": "Core explanation supported. Wording about bundled NSP playlists is ambiguous; the companion repository supplies the playlist definitions."
+  },
+  "20261119-public-fablevibes-control-matched-review": {
+    "pass": false,
+    "note": "Attempted a fork for a read-only request; blocked before RPC."
+  },
+  "20261119-public-ornith9-q5-matched-explain": {
+    "pass": true,
+    "note": "Owner, behavior, providers, command examples and repository counters supported by captured metadata/README; correctly describes SPTNR as a former name."
+  },
+  "20261119-public-ornith9-q5-matched-review": {
+    "pass": false,
+    "note": "No completed proposal before the 180-second limit; six model tool calls including internal skill reads."
+  },
+  "20261119-public-ministral8-q5-matched-explain": {
+    "pass": true,
+    "note": "Correct concise identification and core purpose from repository metadata; explicitly limits its claims to that evidence."
+  },
+  "20261119-public-ministral8-q5-matched-review": {
+    "pass": true,
+    "note": "Read conventions, checked main and develop roots and README, then proposed an absent serverstats cog. Rust appears on develop, supporting that reference; proposed implementation details were not tested."
+  },
+  "20261119-public-armand9-q5-matched-explain": {
+    "pass": true,
+    "note": "Core provider-to-Navidrome explanation is supported by the captured README; deployment and locking details are descriptive, not executed validation."
+  },
+  "20261119-public-armand9-q5-matched-review": {
+    "pass": false,
+    "note": "Guessed master, received 404, then attempted local read_file instead of continuing with Gitea; stopped before dispatch."
+  },
+  "20261119-public-armand9-q5-publisher-sampler-explain": {
+    "pass": true,
+    "note": "Core purpose, provider details and separate smart-playlist companion supported by the captured README."
+  },
+  "20261119-public-armand9-q5-publisher-sampler-review": {
+    "pass": false,
+    "note": "Attempted terminal immediately for a remote repository task; stopped before dispatch."
+  },
+  "20261119-public-flash9-q5-matched-explain": {
+    "pass": true,
+    "note": "Core explanation and documented provider/native/Docker examples supported by captured README. Metadata explicitly says sptnr fork; that phrase alone is not a hallucination."
+  },
+  "20261119-public-flash9-q5-matched-review": {
+    "pass": false,
+    "note": "No completed proposal within 180 seconds and sixteen model calls."
+  },
+  "20261119-public-flash9-q5-precise-coding-sampler-explain": {
+    "pass": false,
+    "note": "Core purpose is correct, but invented Docker quick-start mounts a local Navidrome directory and omits required Navidrome connection configuration; the supplied Docker command is not a supported runnable example. Conservative whole-answer grounding grade."
+  },
+  "20261119-public-flash9-q5-precise-coding-sampler-review": {
+    "pass": false,
+    "note": "Misidentifies coc as Code of Conduct; the actual cog is Clash of Clans. Also claims no event management despite calendarevents on develop."
+  },
+  "20261119-public-gptoss20-matched-explain": {
+    "pass": true,
+    "note": "Concise purpose and feature summary grounded in the README; correctly treats smart playlists as a companion project."
+  },
+  "20261119-public-gptoss20-matched-review": {
+    "pass": false,
+    "note": "Switched to local search_files with empty path after remote root lookup; no local checkout mounted; guard stopped dispatch."
+  },
+  "20261119-public-ministral8-q5-matched-repeat-1-explain": {
+    "pass": false,
+    "note": "Core purpose correct, but attributes maintenance to sptnr as an account/person and asserts the personal fork has no changes without comparison. The metadata phrase sptnr fork itself is supported."
+  },
+  "20261119-public-ministral8-q5-matched-repeat-1-review": {
+    "pass": true,
+    "note": "Proposed server analytics is absent in captured main/develop roots and is distinct from incidents modlog browsing. Checked main and README, but omitted develop despite conventions; novelty judgment uses independent reference snapshot."
+  },
+  "20261119-public-ministral8-q5-matched-repeat-2-explain": {
+    "pass": false,
+    "note": "Core purpose correct; maintainer attribution to sptnr is unestablished even with the following hedge, and mirrored status was not compared. Conservative whole-answer grounding grade; fork phrase itself supported."
+  },
+  "20261119-public-ministral8-q5-matched-repeat-2-review": {
+    "pass": false,
+    "note": "Claims event scheduling/reminders are missing, duplicating calendarevents on develop; checked only main."
+  },
+  "20261119-public-ministral8-q5-native-diagnostic-explain": {
+    "pass": true,
+    "note": "Correct repository and core purpose supported by metadata. sptnr fork label supported; internal Docker URL is less useful externally and continuation wording is imprecise."
+  },
+  "20261119-public-ministral8-q5-native-diagnostic-review": {
+    "pass": false,
+    "note": "Attempted local read_file during a remote repository review; blocked before dispatch."
+  },
+  "20261119-public-ministral8-q5-publisher-sampler-explain": {
+    "pass": false,
+    "note": "Core purpose correct, but again attributes original maintenance to sptnr without evidence. Date/issue counts come from metadata and fork label itself is supported; active maintenance is not established solely by updated_at."
+  },
+  "20261119-public-ministral8-q5-publisher-sampler-review": {
+    "pass": true,
+    "note": "Proposed server activity metrics are absent in main/develop reference roots; no factual contradiction found. Only main was inspected, so evidence coverage remains weaker than the first primary review."
+  },
+  "20261119-public-ornith9-q5-q8-cache-diagnostic-review": {
+    "pass": false,
+    "note": "Same read-only review reached the 180-second limit without a completed proposal; separate cache diagnostic, not a primary retry."
+  },
+  "20261119-public-qwen35-q4-matched-explain": {
+    "pass": true,
+    "note": "Correct purpose, former SPTNR name, providers, CLI and separate smart-playlist companion grounded in the captured README. First cold-session completion took 168.123 seconds with CPU expert offload."
+  },
+  "20261119-public-qwen35-q4-matched-review": {
+    "pass": false,
+    "note": "Stayed within permitted repository reads but reached the 180-second limit after fifteen model calls without a completed proposal. CPU expert offload profile; timeout is not a universal model-capability claim."
+  },
+  "20261119-public-ministral14-q4-matched-explain": {
+    "pass": true,
+    "note": "Correct concise core purpose and metadata. Reads only search metadata; Spotify is a correct default-provider inference corroborated by the independent README snapshot, not a source file inspected by this run. No unsupported sptnr-person attribution."
+  },
+  "20261119-public-ministral14-q4-matched-review": {
+    "pass": false,
+    "note": "Conservative novelty grade: a general polling cog substantially overlaps existing predictions question/outcome voting, durations, results and management. It acknowledges possible overlap but only inspects main directory, not predictions details or develop. Reaction voting is a potentially distinct feature; this is an interpretive novelty failure rather than an objectively nonexistent-directory error. Independent predictions README/info and external-cog references retained."
+  }
+}

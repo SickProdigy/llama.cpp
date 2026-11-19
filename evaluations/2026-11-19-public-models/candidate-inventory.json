@@ -1,0 +1,404 @@
+[
+  {
+    "label": "ornith9-q5",
+    "repo": "mradermacher/Ornith-1.5-9B-uncensored-GGUF",
+    "revision": "6fd9d4f96fc8efe5032032a2635898f744903d01",
+    "matches": [
+      {
+        "filename": "Ornith-1.5-9B-uncensored.Q5_K_M.gguf",
+        "bytes": 6467970208,
+        "sha256": "7f06a0e1da5103610153d1533ea9d75ab5e688acc44aa49391377188dbf2e203"
+      }
+    ],
+    "all_gguf_files": [
+      {
+        "filename": "Ornith-1.5-9B-uncensored.IQ4_XS.gguf",
+        "bytes": 5227898016
+      },
+      {
+        "filename": "Ornith-1.5-9B-uncensored.Q2_K.gguf",
+        "bytes": 3827262624
+      },
+      {
+        "filename": "Ornith-1.5-9B-uncensored.Q3_K_L.gguf",
+        "bytes": 4925514912
+      },
+      {
+        "filename": "Ornith-1.5-9B-uncensored.Q3_K_M.gguf",
+        "bytes": 4623525024
+      },
+      {
+        "filename": "Ornith-1.5-9B-uncensored.Q3_K_S.gguf",
+        "bytes": 4259407008
+      },
+      {
+        "filename": "Ornith-1.5-9B-uncensored.Q4_K_M.gguf",
+        "bytes": 5629109408
+      },
+      {
+        "filename": "Ornith-1.5-9B-uncensored.Q4_K_S.gguf",
+        "bytes": 5351629984
+      },
+      {
+        "filename": "Ornith-1.5-9B-uncensored.Q5_K_M.gguf",
+        "bytes": 6467970208
+      },
+      {
+        "filename": "Ornith-1.5-9B-uncensored.Q5_K_S.gguf",
+        "bytes": 6305309856
+      },
+      {
+        "filename": "Ornith-1.5-9B-uncensored.Q6_K.gguf",
+        "bytes": 7359259808
+      },
+      {
+        "filename": "Ornith-1.5-9B-uncensored.Q8_0.gguf",
+        "bytes": 9527501984
+      },
+      {
+        "filename": "Ornith-1.5-9B-uncensored.f16.gguf",
+        "bytes": 17920697504
+      },
+      {
+        "filename": "Ornith-1.5-9B-uncensored.mmproj-Q8_0.gguf",
+        "bytes": 624229760
+      },
+      {
+        "filename": "Ornith-1.5-9B-uncensored.mmproj-f16.gguf",
+        "bytes": 918166016
+      }
+    ]
+  },
+  {
+    "label": "ministral8-q5",
+    "repo": "mistralai/Ministral-3-8B-Instruct-2512-GGUF",
+    "revision": "0102285ad796bd99af90f58de616092e5630e970",
+    "matches": [
+      {
+        "filename": "Ministral-3-8B-Instruct-2512-Q5_K_M.gguf",
+        "bytes": 6059268512,
+        "sha256": "7a5454127ec772e2389f0e71a77fedb88b83d4366d8a69facd0cfd0898f04d35"
+      }
+    ],
+    "all_gguf_files": [
+      {
+        "filename": "Ministral-3-8B-Instruct-2512-BF16-mmproj.gguf",
+        "bytes": 858283168
+      },
+      {
+        "filename": "Ministral-3-8B-Instruct-2512-BF16.gguf",
+        "bytes": 16988084640
+      },
+      {
+        "filename": "Ministral-3-8B-Instruct-2512-Q4_K_M.gguf",
+        "bytes": 5198911904
+      },
+      {
+        "filename": "Ministral-3-8B-Instruct-2512-Q5_K_M.gguf",
+        "bytes": 6059268512
+      },
+      {
+        "filename": "Ministral-3-8B-Instruct-2512-Q8_0.gguf",
+        "bytes": 9029392800
+      }
+    ]
+  },
+  {
+    "label": "armand9-q5",
+    "repo": "armand0e/Qwen3.5-9B-Agent-GGUF",
+    "revision": "f333035ff910881722350b2703e80749c8725393",
+    "matches": [
+      {
+        "filename": "Qwen3.5-9B-Agent.q5_k_m.gguf",
+        "bytes": 6467971392,
+        "sha256": "ec90ccf000f6684e917954c501882c319ec3fae4b03d0dda9006afc1dc569477"
+      }
+    ],
+    "all_gguf_files": [
+      {
+        "filename": "Qwen3.5-9B-Agent.bf16.gguf",
+        "bytes": 17920698688
+      },
+      {
+        "filename": "Qwen3.5-9B-Agent.f16.gguf",
+        "bytes": 17920698688
+      },
+      {
+        "filename": "Qwen3.5-9B-Agent.iq4_nl.gguf",
+        "bytes": 5443381568
+      },
+      {
+        "filename": "Qwen3.5-9B-Agent.q3_k_m.gguf",
+        "bytes": 4623526208
+      },
+      {
+        "filename": "Qwen3.5-9B-Agent.q3_k_s.gguf",
+        "bytes": 4259408192
+      },
+      {
+        "filename": "Qwen3.5-9B-Agent.q4_k_m.gguf",
+        "bytes": 5629110592
+      },
+      {
+        "filename": "Qwen3.5-9B-Agent.q5_k_m.gguf",
+        "bytes": 6467971392
+      },
+      {
+        "filename": "Qwen3.5-9B-Agent.q6_k.gguf",
+        "bytes": 7359260992
+      },
+      {
+        "filename": "Qwen3.5-9B-Agent.q8_0.gguf",
+        "bytes": 9527503168
+      },
+      {
+        "filename": "mmproj-BF16.gguf",
+        "bytes": 921706112
+      },
+      {
+        "filename": "mmproj-F16.gguf",
+        "bytes": 918167168
+      },
+      {
+        "filename": "mmproj-F32.gguf",
+        "bytes": 1824063104
+      }
+    ]
+  },
+  {
+    "label": "flash9-q5",
+    "repo": "flashback2k/FlashModel-Qwen3.5-9B-GGUF",
+    "revision": "6c8478b81bbee48b17dcc8c34f4c08b0ecb4d3f9",
+    "matches": [
+      {
+        "filename": "FlashModel-Qwen3.5-9B-Q5_K_M.gguf",
+        "bytes": 6467969664,
+        "sha256": "ca959629157052f7a8a358d51d151bf2d9fe822914d93957c3dd9d27e815f84c"
+      },
+      {
+        "filename": "FlashModel-Qwen3.5-9B-Q5_K_S.gguf",
+        "bytes": 6305309312,
+        "sha256": "12b9816190c5df633921b3aa397749e7cb5400e554a947001b111bca038772be"
+      },
+      {
+        "filename": "FlashModel-Qwen3.5-9B-Q5_K_XL.gguf",
+        "bytes": 6743679616,
+        "sha256": "2a4ecaaa05af8d216c90f7084291bdd9b05554acf342643acc837d76584412da"
+      }
+    ],
+    "all_gguf_files": [
+      {
+        "filename": "FlashModel-Qwen3.5-9B-IQ3_M.gguf",
+        "bytes": 4415382144
+      },
+      {
+        "filename": "FlashModel-Qwen3.5-9B-IQ4_NL.gguf",
+        "bytes": 5418214016
+      },
+      {
+        "filename": "FlashModel-Qwen3.5-9B-IQ4_XS.gguf",
+        "bytes": 5196440192
+      },
+      {
+        "filename": "FlashModel-Qwen3.5-9B-Q3_K_M.gguf",
+        "bytes": 4623524480
+      },
+      {
+        "filename": "FlashModel-Qwen3.5-9B-Q3_K_XL.gguf",
+        "bytes": 5053833856
+      },
+      {
+        "filename": "FlashModel-Qwen3.5-9B-Q4_K_M.gguf",
+        "bytes": 5629108864
+      },
+      {
+        "filename": "FlashModel-Qwen3.5-9B-Q4_K_S.gguf",
+        "bytes": 5351629440
+      },
+      {
+        "filename": "FlashModel-Qwen3.5-9B-Q4_K_XL.gguf",
+        "bytes": 5966094976
+      },
+      {
+        "filename": "FlashModel-Qwen3.5-9B-Q5_K_M.gguf",
+        "bytes": 6467969664
+      },
+      {
+        "filename": "FlashModel-Qwen3.5-9B-Q5_K_S.gguf",
+        "bytes": 6305309312
+      },
+      {
+        "filename": "FlashModel-Qwen3.5-9B-Q5_K_XL.gguf",
+        "bytes": 6743679616
+      },
+      {
+        "filename": "FlashModel-Qwen3.5-9B.imatrix.gguf",
+        "bytes": 5150176
+      }
+    ]
+  },
+  {
+    "label": "gptoss20",
+    "repo": "ggml-org/gpt-oss-20b-GGUF",
+    "revision": "41e8a94d15d62070b36cf4553a0250717ecf46b8",
+    "matches": [
+      {
+        "filename": "gpt-oss-20b-MXFP4.gguf",
+        "bytes": 12109566624,
+        "sha256": "27cd6c432c7672cb812a92f611cf3ba7bbc35928262bb1e1253ff4ee6ae35901"
+      }
+    ],
+    "all_gguf_files": [
+      {
+        "filename": "eagle3-gpt-oss-20b-BF16.gguf",
+        "bytes": 1722588800
+      },
+      {
+        "filename": "eagle3-gpt-oss-20b-Q8_0.gguf",
+        "bytes": 921488000
+      },
+      {
+        "filename": "gpt-oss-20b-MXFP4.gguf",
+        "bytes": 12109566624
+      }
+    ]
+  },
+  {
+    "label": "qwen35-q4",
+    "repo": "unsloth/Qwen3.6-35B-A3B-GGUF",
+    "revision": "a483e9e6cbd595906af30beda3187c2663a1118c",
+    "matches": [
+      {
+        "filename": "Qwen3.6-35B-A3B-UD-Q4_K_XL.gguf",
+        "bytes": 22360456160,
+        "sha256": "707a55a8a4397ecde44de0c499d3e68c1ad1d240d1da65826b4949d1043f4450"
+      }
+    ],
+    "all_gguf_files": [
+      {
+        "filename": "BF16/Qwen3.6-35B-A3B-BF16-00001-of-00002.gguf",
+        "bytes": 49913715424
+      },
+      {
+        "filename": "BF16/Qwen3.6-35B-A3B-BF16-00002-of-00002.gguf",
+        "bytes": 19462922752
+      },
+      {
+        "filename": "Qwen3.6-35B-A3B-MXFP4_MOE.gguf",
+        "bytes": 21706144736
+      },
+      {
+        "filename": "Qwen3.6-35B-A3B-Q8_0.gguf",
+        "bytes": 36903140320
+      },
+      {
+        "filename": "Qwen3.6-35B-A3B-UD-IQ1_M.gguf",
+        "bytes": 10047749088
+      },
+      {
+        "filename": "Qwen3.6-35B-A3B-UD-IQ2_M.gguf",
+        "bytes": 11522702304
+      },
+      {
+        "filename": "Qwen3.6-35B-A3B-UD-IQ2_XXS.gguf",
+        "bytes": 10756586464
+      },
+      {
+        "filename": "Qwen3.6-35B-A3B-UD-IQ3_S.gguf",
+        "bytes": 13676723168
+      },
+      {
+        "filename": "Qwen3.6-35B-A3B-UD-IQ3_XXS.gguf",
+        "bytes": 13211155424
+      },
+      {
+        "filename": "Qwen3.6-35B-A3B-UD-IQ4_NL.gguf",
+        "bytes": 18040888288
+      },
+      {
+        "filename": "Qwen3.6-35B-A3B-UD-IQ4_NL_XL.gguf",
+        "bytes": 19500506080
+      },
+      {
+        "filename": "Qwen3.6-35B-A3B-UD-IQ4_XS.gguf",
+        "bytes": 17730509792
+      },
+      {
+        "filename": "Qwen3.6-35B-A3B-UD-Q2_K_XL.gguf",
+        "bytes": 12290628576
+      },
+      {
+        "filename": "Qwen3.6-35B-A3B-UD-Q3_K_M.gguf",
+        "bytes": 16600710112
+      },
+      {
+        "filename": "Qwen3.6-35B-A3B-UD-Q3_K_S.gguf",
+        "bytes": 15359196128
+      },
+      {
+        "filename": "Qwen3.6-35B-A3B-UD-Q3_K_XL.gguf",
+        "bytes": 16845511648
+      },
+      {
+        "filename": "Qwen3.6-35B-A3B-UD-Q4_K_M.gguf",
+        "bytes": 22134528992
+      },
+      {
+        "filename": "Qwen3.6-35B-A3B-UD-Q4_K_S.gguf",
+        "bytes": 20893015008
+      },
+      {
+        "filename": "Qwen3.6-35B-A3B-UD-Q4_K_XL.gguf",
+        "bytes": 22360456160
+      },
+      {
+        "filename": "Qwen3.6-35B-A3B-UD-Q5_K_M.gguf",
+        "bytes": 26456194016
+      },
+      {
+        "filename": "Qwen3.6-35B-A3B-UD-Q5_K_S.gguf",
+        "bytes": 24942050272
+      },
+      {
+        "filename": "Qwen3.6-35B-A3B-UD-Q5_K_XL.gguf",
+        "bytes": 26592508896
+      },
+      {
+        "filename": "Qwen3.6-35B-A3B-UD-Q6_K.gguf",
+        "bytes": 29308320736
+      },
+      {
+        "filename": "Qwen3.6-35B-A3B-UD-Q6_K_XL.gguf",
+        "bytes": 31843777504
+      },
+      {
+        "filename": "Qwen3.6-35B-A3B-UD-Q8_K_XL.gguf",
+        "bytes": 38451182560
+      },
+      {
+        "filename": "mmproj-BF16.gguf",
+        "bytes": 902822624
+      },
+      {
+        "filename": "mmproj-F16.gguf",
+        "bytes": 899283680
+      },
+      {
+        "filename": "mmproj-F32.gguf",
+        "bytes": 1786305248
+      }
+    ]
+  },
+  {
+    "label": "willhar9",
+    "repo": "willhar/Qwen3.5-9B-AgentTuned-GGUF",
+    "revision": "78e7ecc0d3eca0fcf8901228f5a7a90bcc30bbfb",
+    "matches": [],
+    "all_gguf_files": [
+      {
+        "filename": "Qwen3.5-9B-AgentTuned-F16.gguf",
+        "bytes": 18407321344
+      }
+    ]
+  }
+]
