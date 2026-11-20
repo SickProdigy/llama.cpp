@@ -1,0 +1,195 @@
+{
+  "redaction": "Credential values, email addresses and unrelated repository metadata removed. Private profiles, environment and Docker inspections excluded. Third-party model cards are not republished.",
+  "members": [
+    {
+      "path": "20261120-gemma-real-code-fix/agent.log",
+      "bytes": 5475,
+      "sha256": "af476833c4edf502bf31df14b822534be2cc3f5191a3eb677d1042bc28a05b3b"
+    },
+    {
+      "path": "20261120-gemma-real-code-fix/calls.json",
+      "bytes": 15026,
+      "sha256": "6940597cad3c1e30e9503c79bf85d8f78a8d08beb6eb9a19ec724acab13017f9"
+    },
+    {
+      "path": "20261120-gemma-real-code-fix/code-hashes.json",
+      "bytes": 448,
+      "sha256": "15d0bb32ecfbf03824771c6feef8b3dd7f3e88f4251e8b9d2226ffa2c92e262c"
+    },
+    {
+      "path": "20261120-gemma-real-code-fix/independent-validation.json",
+      "bytes": 2299,
+      "sha256": "843c1c2b21dd3ddf556f78bb56c5fa4f44f00fe29250d7a244046c5996ca3051"
+    },
+    {
+      "path": "20261120-gemma-real-code-fix/independent-validation.py",
+      "bytes": 2048,
+      "sha256": "28c50a2fee6974bb6d890fe1ea3355a87501b28cdd1443ce7684a83e07b1e0d1"
+    },
+    {
+      "path": "20261120-gemma-real-code-fix/manifest.json",
+      "bytes": 13914,
+      "sha256": "9b432604837a16f72fd40a64012b194147f528fdf2eda9fb78d0799eb418a00a"
+    },
+    {
+      "path": "20261120-gemma-real-code-fix/native-calls.json",
+      "bytes": 35082,
+      "sha256": "c24786b6096bf99a2d35cb270f24e21257f66ea41ee714696338b5d236bd50c2"
+    },
+    {
+      "path": "20261120-gemma-real-code-fix/prompt.txt",
+      "bytes": 1375,
+      "sha256": "dffcebaea2f3bfbc642ee23e302c61f91763f5a6d054d1892ab4ae211355b01f"
+    },
+    {
+      "path": "20261120-gemma-real-code-fix/request-001.json",
+      "bytes": 62528,
+      "sha256": "d91a2ec4554529407abbb7037b06d7032ef12d458d6d7b95a7e056ee972cdd43"
+    },
+    {
+      "path": "20261120-gemma-real-code-fix/request-002.json",
+      "bytes": 68778,
+      "sha256": "8ae08dddda15e3004deb2ad61197e40b285ff5840889593d74872ed9ac3d516c"
+    },
+    {
+      "path": "20261120-gemma-real-code-fix/request-003.json",
+      "bytes": 78184,
+      "sha256": "da249ede154cda3f2e4e29a72ca711c84734c9b971965650b2148248b74ace97"
+    },
+    {
+      "path": "20261120-gemma-real-code-fix/request-004.json",
+      "bytes": 89435,
+      "sha256": "73d41caad88aa75e7335f0e614ec8a8386a42b18f6fd0db3b2cc91933ff50091"
+    },
+    {
+      "path": "20261120-gemma-real-code-fix/request-005.json",
+      "bytes": 90717,
+      "sha256": "626b25cf9a5155ffc03f2e207ff3c07e4e0be1522d45145f709633b278c160cc"
+    },
+    {
+      "path": "20261120-gemma-real-code-fix/request-006.json",
+      "bytes": 96035,
+      "sha256": "5e7d16cb226900371d3242c3ca4184d577973637d5f5ccdd6bc2cda0561c8208"
+    },
+    {
+      "path": "20261120-gemma-real-code-fix/request-007.json",
+      "bytes": 98682,
+      "sha256": "52c1d1ae2c9f73e9b9185b984eafc21891eb7be2a1c5694303dbec118240b2d7"
+    },
+    {
+      "path": "20261120-gemma-real-code-fix/result.json",
+      "bytes": 44344,
+      "sha256": "75c58a96029fe78bed0d2e1843f3cde0eb4adbc5945c7a25490d8c5665dbc23d"
+    },
+    {
+      "path": "20261120-gemma-real-code-fix/schemas.json",
+      "bytes": 49402,
+      "sha256": "d66569465eed30533c869c400c198fb64351c493d9ef29b0e0b378d42e2040ad"
+    },
+    {
+      "path": "20261120-gemma-real-code-fix/started.json",
+      "bytes": 45,
+      "sha256": "c5200aa9bf48a74d3ef664e0a48bb936be1fc39d73cc224e55d12ff6150ab3c4"
+    },
+    {
+      "path": "20261120-gemma-real-code-fix/state.json",
+      "bytes": 317,
+      "sha256": "7fe7f93dd562174c40470a819864176ca0c0dc132be714a159103573056be998"
+    },
+    {
+      "path": "harness/gemma-real-code-fix-props.json",
+      "bytes": 21734,
+      "sha256": "c877b48860787bcc2b2393b3059ba6392834070b294fac3c247472e0f1d456ca"
+    },
+    {
+      "path": "harness/initial-props.json",
+      "bytes": 10385,
+      "sha256": "e12d227e75bc28c2a0f1c5a7c94cea0ba77604d64e3ef6dbf781587475f6e0e5"
+    },
+    {
+      "path": "harness/20261120-gemma-real-code-fix-gpu.json",
+      "bytes": 2603,
+      "sha256": "0fb4238781f7a695ab8dcc210eeb4dd0971928540ebefa32b7a3ced063ce9acc"
+    },
+    {
+      "path": "harness/20261120-gemma-real-code-fix-console.log",
+      "bytes": 288,
+      "sha256": "b662887b0919bc9a7ea46dcad9e70aa3819da20685b8be3399cf6d039b966f95"
+    },
+    {
+      "path": "harness/gemma-real-code-fix-backend.log",
+      "bytes": 12471,
+      "sha256": "88f22dfd13bcbcc05b136667672da1f5e0596433134e0be218c56c6df1e52c97"
+    },
+    {
+      "path": "harness/gemma-real-code-fix-launch.json",
+      "bytes": 698,
+      "sha256": "3ca6a3e592bf717ca01f4e5a2cd044c9f937b609ab4616980ae13290b3a046d3"
+    },
+    {
+      "path": "harness/restoration-1795206089.json",
+      "bytes": 74,
+      "sha256": "6bdef8e611c6972fd98eacd7f6cd02e1afcf79809f646723cb2adeff06b74900"
+    },
+    {
+      "path": "harness/run_real.py",
+      "bytes": 2346,
+      "sha256": "a566dd9aca46b8de73e3fad7aa3edeadbf6121bdf634a84c046c89559247deb8"
+    },
+    {
+      "path": "harness/setup.py",
+      "bytes": 1424,
+      "sha256": "9966f57d9b224af8bd58e11831f77a84923eb977d2a5b2515c287bac454383cf"
+    },
+    {
+      "path": "harness/driver.py",
+      "bytes": 4863,
+      "sha256": "52768da20610994008fba685b775d2dbe8555ae90872fcda6dc54a1ec649b1fc"
+    },
+    {
+      "path": "harness/session.py",
+      "bytes": 8044,
+      "sha256": "5c7aaa2224e0e98f45d23e60f3ab5ad0bca9ec89fcbbf935203d72945da33c40"
+    },
+    {
+      "path": "harness/guard.py",
+      "bytes": 7038,
+      "sha256": "3b35a3a127ffab85bd06e3de854fa48a9dbf087bbe1ce74036e5eb2067ebfc10"
+    },
+    {
+      "path": "harness/retry_ledger.py",
+      "bytes": 726,
+      "sha256": "9c48a898005575b41edaa79b206c88a423270188dbdac29e7ca9681a4874f668"
+    },
+    {
+      "path": "harness/prepare_profile.py",
+      "bytes": 1881,
+      "sha256": "efe1af1e948fe3a5e5392c03c58e95aa683eaf745ebe8431bbd2a573da10ffbc"
+    },
+    {
+      "path": "harness/source-before.json",
+      "bytes": 853,
+      "sha256": "be1ce7d324812b5f7d19d98afefdccc16fe56c6cedb74ee6b7140685fd8fa902"
+    },
+    {
+      "path": "harness/final-restoration.json",
+      "bytes": 1026,
+      "sha256": "66d9c8255d53b0b771bd5ba1c0dc5ef6c210d84a9c3b9f09dc091e2c4e9fff1d"
+    },
+    {
+      "path": "plugin-v0.1.3/__init__.py",
+      "bytes": 12202,
+      "sha256": "f0fa37e3e569aa45e0f0b3d8c9a3ac8209fe35a593a0cb486a3b475b0392b92b"
+    },
+    {
+      "path": "plugin-v0.1.3/README.md",
+      "bytes": 3852,
+      "sha256": "956c8f64dd694f5a0399d679c2f7d1855cb1250378af09794f903db2c9e6fb16"
+    },
+    {
+      "path": "plugin-v0.1.3/plugin.yaml",
+      "bytes": 569,
+      "sha256": "7be75893ccf7d406b7e384aefb378f84f50f203b268017811cc8030bad66ce7c"
+    }
+  ]
+}

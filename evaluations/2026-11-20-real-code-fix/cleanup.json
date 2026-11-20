@@ -1,0 +1,10 @@
+{
+  "removed_containers": [
+    "hermes-required-store",
+    "mcp-gitea-required-eval"
+  ],
+  "evidence_volume_removed": true,
+  "private_task_snapshots_removed": true,
+  "original_runtime_verified": true,
+  "broad_prune_used": false
+}

@@ -6,6 +6,16 @@ This file tracks which local GGUF models can actually complete the Hermes Agent 
 
 Future options: [local quantization and spare-GPU testing](MODEL-OPTIONS.md).
 
+## November 20, 2026 real code-fix follow-up
+
+**Gemma failed the first symptom-led Python fix.** It created upstream issue
+#75 and a fork branch, but two invalid source replacements stopped the run at
+139 seconds before any code commit or PR. Its proposed infinity identity check
+was also incorrect. Earlier exact-edit workflow successes do not establish
+independent coding reliability. Keep the recommendation below limited to a
+supervised trial. [Full result and retained evidence](evaluations/2026-11-20-real-code-fix/investigation.md).
+Original VibeForged runtime/configuration is restored; upstream main is unchanged.
+
 ## November 19, 2026 additional models: current trial recommendation
 
 **Try Gemma 4 E4B Instruct Q5_K_M with the focused Gitea tools.** Across two
