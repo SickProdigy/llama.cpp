@@ -1,0 +1,649 @@
+{
+  "checked_primary_runs": 18,
+  "primary_schema_hashes": [
+    "4b4079e6b3558d6803d1fadf8b8faec878f244bc67fd5738b48c39563a5584e1"
+  ],
+  "primary_temperatures": [
+    0.2
+  ],
+  "primary_output_caps": [
+    4096
+  ],
+  "runs": [
+    {
+      "run_id": "20261120-newer-gemma4-e4b-q5-long-probe-longcontext",
+      "phase": "long-probe",
+      "mode": "facade",
+      "schema_count": 32,
+      "gitea_schema_sha256": "5f827a726b88476456be7e3f032028d3901ff67e7cb15a7dbebcb170bb0edc36",
+      "schema_sha256": "4b4079e6b3558d6803d1fadf8b8faec878f244bc67fd5738b48c39563a5584e1",
+      "code_hashes": {
+        "session.py": "5c7aaa2224e0e98f45d23e60f3ab5ad0bca9ec89fcbbf935203d72945da33c40",
+        "guard.py": "158c49e4b9f036fe60f74e6b81605052e46b2db715bc0fd7d5b1419315d1522e",
+        "retry_ledger.py": "9c48a898005575b41edaa79b206c88a423270188dbdac29e7ca9681a4874f668",
+        "prepare_profile.py": "efe1af1e948fe3a5e5392c03c58e95aa683eaf745ebe8431bbd2a573da10ffbc",
+        "gitea-focused/__init__.py": "f0fa37e3e569aa45e0f0b3d8c9a3ac8209fe35a593a0cb486a3b475b0392b92b"
+      },
+      "context_length": 98304,
+      "actual_temperature": 0.2,
+      "actual_max_tokens": 4096
+    },
+    {
+      "run_id": "20261120-newer-gemma4-e4b-q5-matched-explain",
+      "phase": "matched",
+      "mode": "facade",
+      "schema_count": 32,
+      "gitea_schema_sha256": "5f827a726b88476456be7e3f032028d3901ff67e7cb15a7dbebcb170bb0edc36",
+      "schema_sha256": "4b4079e6b3558d6803d1fadf8b8faec878f244bc67fd5738b48c39563a5584e1",
+      "code_hashes": {
+        "session.py": "5c7aaa2224e0e98f45d23e60f3ab5ad0bca9ec89fcbbf935203d72945da33c40",
+        "guard.py": "158c49e4b9f036fe60f74e6b81605052e46b2db715bc0fd7d5b1419315d1522e",
+        "retry_ledger.py": "9c48a898005575b41edaa79b206c88a423270188dbdac29e7ca9681a4874f668",
+        "prepare_profile.py": "efe1af1e948fe3a5e5392c03c58e95aa683eaf745ebe8431bbd2a573da10ffbc",
+        "gitea-focused/__init__.py": "f0fa37e3e569aa45e0f0b3d8c9a3ac8209fe35a593a0cb486a3b475b0392b92b"
+      },
+      "context_length": 98304,
+      "actual_temperature": 0.2,
+      "actual_max_tokens": 4096
+    },
+    {
+      "run_id": "20261120-newer-gemma4-e4b-q5-matched-full-book-through",
+      "phase": "matched",
+      "mode": "facade",
+      "schema_count": 32,
+      "gitea_schema_sha256": "5f827a726b88476456be7e3f032028d3901ff67e7cb15a7dbebcb170bb0edc36",
+      "schema_sha256": "4b4079e6b3558d6803d1fadf8b8faec878f244bc67fd5738b48c39563a5584e1",
+      "code_hashes": {
+        "session.py": "5c7aaa2224e0e98f45d23e60f3ab5ad0bca9ec89fcbbf935203d72945da33c40",
+        "guard.py": "158c49e4b9f036fe60f74e6b81605052e46b2db715bc0fd7d5b1419315d1522e",
+        "retry_ledger.py": "9c48a898005575b41edaa79b206c88a423270188dbdac29e7ca9681a4874f668",
+        "prepare_profile.py": "efe1af1e948fe3a5e5392c03c58e95aa683eaf745ebe8431bbd2a573da10ffbc",
+        "gitea-focused/__init__.py": "f0fa37e3e569aa45e0f0b3d8c9a3ac8209fe35a593a0cb486a3b475b0392b92b"
+      },
+      "context_length": 98304,
+      "actual_temperature": 0.2,
+      "actual_max_tokens": 4096
+    },
+    {
+      "run_id": "20261120-newer-gemma4-e4b-q5-matched-repeat-1-explain",
+      "phase": "matched-repeat-1",
+      "mode": "facade",
+      "schema_count": 32,
+      "gitea_schema_sha256": "5f827a726b88476456be7e3f032028d3901ff67e7cb15a7dbebcb170bb0edc36",
+      "schema_sha256": "4b4079e6b3558d6803d1fadf8b8faec878f244bc67fd5738b48c39563a5584e1",
+      "code_hashes": {
+        "session.py": "5c7aaa2224e0e98f45d23e60f3ab5ad0bca9ec89fcbbf935203d72945da33c40",
+        "guard.py": "158c49e4b9f036fe60f74e6b81605052e46b2db715bc0fd7d5b1419315d1522e",
+        "retry_ledger.py": "9c48a898005575b41edaa79b206c88a423270188dbdac29e7ca9681a4874f668",
+        "prepare_profile.py": "efe1af1e948fe3a5e5392c03c58e95aa683eaf745ebe8431bbd2a573da10ffbc",
+        "gitea-focused/__init__.py": "f0fa37e3e569aa45e0f0b3d8c9a3ac8209fe35a593a0cb486a3b475b0392b92b"
+      },
+      "context_length": 98304,
+      "actual_temperature": 0.2,
+      "actual_max_tokens": 4096
+    },
+    {
+      "run_id": "20261120-newer-gemma4-e4b-q5-matched-repeat-1-full-example-useful",
+      "phase": "matched-repeat-1",
+      "mode": "facade",
+      "schema_count": 32,
+      "gitea_schema_sha256": "5f827a726b88476456be7e3f032028d3901ff67e7cb15a7dbebcb170bb0edc36",
+      "schema_sha256": "4b4079e6b3558d6803d1fadf8b8faec878f244bc67fd5738b48c39563a5584e1",
+      "code_hashes": {
+        "session.py": "5c7aaa2224e0e98f45d23e60f3ab5ad0bca9ec89fcbbf935203d72945da33c40",
+        "guard.py": "158c49e4b9f036fe60f74e6b81605052e46b2db715bc0fd7d5b1419315d1522e",
+        "retry_ledger.py": "9c48a898005575b41edaa79b206c88a423270188dbdac29e7ca9681a4874f668",
+        "prepare_profile.py": "efe1af1e948fe3a5e5392c03c58e95aa683eaf745ebe8431bbd2a573da10ffbc",
+        "gitea-focused/__init__.py": "f0fa37e3e569aa45e0f0b3d8c9a3ac8209fe35a593a0cb486a3b475b0392b92b"
+      },
+      "context_length": 98304,
+      "actual_temperature": 0.2,
+      "actual_max_tokens": 4096
+    },
+    {
+      "run_id": "20261120-newer-gemma4-e4b-q5-matched-repeat-1-review",
+      "phase": "matched-repeat-1",
+      "mode": "facade",
+      "schema_count": 32,
+      "gitea_schema_sha256": "5f827a726b88476456be7e3f032028d3901ff67e7cb15a7dbebcb170bb0edc36",
+      "schema_sha256": "4b4079e6b3558d6803d1fadf8b8faec878f244bc67fd5738b48c39563a5584e1",
+      "code_hashes": {
+        "session.py": "5c7aaa2224e0e98f45d23e60f3ab5ad0bca9ec89fcbbf935203d72945da33c40",
+        "guard.py": "158c49e4b9f036fe60f74e6b81605052e46b2db715bc0fd7d5b1419315d1522e",
+        "retry_ledger.py": "9c48a898005575b41edaa79b206c88a423270188dbdac29e7ca9681a4874f668",
+        "prepare_profile.py": "efe1af1e948fe3a5e5392c03c58e95aa683eaf745ebe8431bbd2a573da10ffbc",
+        "gitea-focused/__init__.py": "f0fa37e3e569aa45e0f0b3d8c9a3ac8209fe35a593a0cb486a3b475b0392b92b"
+      },
+      "context_length": 98304,
+      "actual_temperature": 0.2,
+      "actual_max_tokens": 4096
+    },
+    {
+      "run_id": "20261120-newer-gemma4-e4b-q5-matched-review",
+      "phase": "matched",
+      "mode": "facade",
+      "schema_count": 32,
+      "gitea_schema_sha256": "5f827a726b88476456be7e3f032028d3901ff67e7cb15a7dbebcb170bb0edc36",
+      "schema_sha256": "4b4079e6b3558d6803d1fadf8b8faec878f244bc67fd5738b48c39563a5584e1",
+      "code_hashes": {
+        "session.py": "5c7aaa2224e0e98f45d23e60f3ab5ad0bca9ec89fcbbf935203d72945da33c40",
+        "guard.py": "158c49e4b9f036fe60f74e6b81605052e46b2db715bc0fd7d5b1419315d1522e",
+        "retry_ledger.py": "9c48a898005575b41edaa79b206c88a423270188dbdac29e7ca9681a4874f668",
+        "prepare_profile.py": "efe1af1e948fe3a5e5392c03c58e95aa683eaf745ebe8431bbd2a573da10ffbc",
+        "gitea-focused/__init__.py": "f0fa37e3e569aa45e0f0b3d8c9a3ac8209fe35a593a0cb486a3b475b0392b92b"
+      },
+      "context_length": 98304,
+      "actual_temperature": 0.2,
+      "actual_max_tokens": 4096
+    },
+    {
+      "run_id": "20261120-newer-gemma4-e4b-q5-native-diagnostic-full-wolfram-through",
+      "phase": "native-diagnostic",
+      "mode": "native",
+      "schema_count": 42,
+      "gitea_schema_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "schema_sha256": "1d01ca9be0841129cf1dcf0851ae62104fef69c4650fe30d5b510cd3904c9fe5",
+      "code_hashes": {
+        "session.py": "5c7aaa2224e0e98f45d23e60f3ab5ad0bca9ec89fcbbf935203d72945da33c40",
+        "guard.py": "158c49e4b9f036fe60f74e6b81605052e46b2db715bc0fd7d5b1419315d1522e",
+        "retry_ledger.py": "9c48a898005575b41edaa79b206c88a423270188dbdac29e7ca9681a4874f668",
+        "prepare_profile.py": "efe1af1e948fe3a5e5392c03c58e95aa683eaf745ebe8431bbd2a573da10ffbc",
+        "gitea-focused/__init__.py": "f0fa37e3e569aa45e0f0b3d8c9a3ac8209fe35a593a0cb486a3b475b0392b92b"
+      },
+      "context_length": 98304,
+      "actual_temperature": 0.2,
+      "actual_max_tokens": 4096
+    },
+    {
+      "run_id": "20261120-newer-lfm25-q5-matched-explain",
+      "phase": "matched",
+      "mode": "facade",
+      "schema_count": 32,
+      "gitea_schema_sha256": "5f827a726b88476456be7e3f032028d3901ff67e7cb15a7dbebcb170bb0edc36",
+      "schema_sha256": "4b4079e6b3558d6803d1fadf8b8faec878f244bc67fd5738b48c39563a5584e1",
+      "code_hashes": {
+        "session.py": "5c7aaa2224e0e98f45d23e60f3ab5ad0bca9ec89fcbbf935203d72945da33c40",
+        "guard.py": "158c49e4b9f036fe60f74e6b81605052e46b2db715bc0fd7d5b1419315d1522e",
+        "retry_ledger.py": "9c48a898005575b41edaa79b206c88a423270188dbdac29e7ca9681a4874f668",
+        "prepare_profile.py": "efe1af1e948fe3a5e5392c03c58e95aa683eaf745ebe8431bbd2a573da10ffbc",
+        "gitea-focused/__init__.py": "f0fa37e3e569aa45e0f0b3d8c9a3ac8209fe35a593a0cb486a3b475b0392b92b"
+      },
+      "context_length": 98304,
+      "actual_temperature": 0.2,
+      "actual_max_tokens": 4096
+    },
+    {
+      "run_id": "20261120-newer-lfm25-q5-matched-full-suggest-plugin",
+      "phase": "matched",
+      "mode": "facade",
+      "schema_count": 32,
+      "gitea_schema_sha256": "5f827a726b88476456be7e3f032028d3901ff67e7cb15a7dbebcb170bb0edc36",
+      "schema_sha256": "4b4079e6b3558d6803d1fadf8b8faec878f244bc67fd5738b48c39563a5584e1",
+      "code_hashes": {
+        "session.py": "5c7aaa2224e0e98f45d23e60f3ab5ad0bca9ec89fcbbf935203d72945da33c40",
+        "guard.py": "158c49e4b9f036fe60f74e6b81605052e46b2db715bc0fd7d5b1419315d1522e",
+        "retry_ledger.py": "9c48a898005575b41edaa79b206c88a423270188dbdac29e7ca9681a4874f668",
+        "prepare_profile.py": "efe1af1e948fe3a5e5392c03c58e95aa683eaf745ebe8431bbd2a573da10ffbc",
+        "gitea-focused/__init__.py": "f0fa37e3e569aa45e0f0b3d8c9a3ac8209fe35a593a0cb486a3b475b0392b92b"
+      },
+      "context_length": 98304,
+      "actual_temperature": 0.2,
+      "actual_max_tokens": 4096
+    },
+    {
+      "run_id": "20261120-newer-lfm25-q5-matched-review",
+      "phase": "matched",
+      "mode": "facade",
+      "schema_count": 32,
+      "gitea_schema_sha256": "5f827a726b88476456be7e3f032028d3901ff67e7cb15a7dbebcb170bb0edc36",
+      "schema_sha256": "4b4079e6b3558d6803d1fadf8b8faec878f244bc67fd5738b48c39563a5584e1",
+      "code_hashes": {
+        "session.py": "5c7aaa2224e0e98f45d23e60f3ab5ad0bca9ec89fcbbf935203d72945da33c40",
+        "guard.py": "158c49e4b9f036fe60f74e6b81605052e46b2db715bc0fd7d5b1419315d1522e",
+        "retry_ledger.py": "9c48a898005575b41edaa79b206c88a423270188dbdac29e7ca9681a4874f668",
+        "prepare_profile.py": "efe1af1e948fe3a5e5392c03c58e95aa683eaf745ebe8431bbd2a573da10ffbc",
+        "gitea-focused/__init__.py": "f0fa37e3e569aa45e0f0b3d8c9a3ac8209fe35a593a0cb486a3b475b0392b92b"
+      },
+      "context_length": 98304,
+      "actual_temperature": 0.2,
+      "actual_max_tokens": 4096
+    },
+    {
+      "run_id": "20261120-newer-lfm25-q5-publisher-explain",
+      "phase": "publisher",
+      "mode": "facade",
+      "schema_count": 32,
+      "gitea_schema_sha256": "5f827a726b88476456be7e3f032028d3901ff67e7cb15a7dbebcb170bb0edc36",
+      "schema_sha256": "4b4079e6b3558d6803d1fadf8b8faec878f244bc67fd5738b48c39563a5584e1",
+      "code_hashes": {
+        "session.py": "5c7aaa2224e0e98f45d23e60f3ab5ad0bca9ec89fcbbf935203d72945da33c40",
+        "guard.py": "158c49e4b9f036fe60f74e6b81605052e46b2db715bc0fd7d5b1419315d1522e",
+        "retry_ledger.py": "9c48a898005575b41edaa79b206c88a423270188dbdac29e7ca9681a4874f668",
+        "prepare_profile.py": "efe1af1e948fe3a5e5392c03c58e95aa683eaf745ebe8431bbd2a573da10ffbc",
+        "gitea-focused/__init__.py": "f0fa37e3e569aa45e0f0b3d8c9a3ac8209fe35a593a0cb486a3b475b0392b92b"
+      },
+      "context_length": 98304,
+      "actual_temperature": 0.2,
+      "actual_max_tokens": 8192
+    },
+    {
+      "run_id": "20261120-newer-lfm25-q5-publisher-full-submit-plugin",
+      "phase": "publisher",
+      "mode": "facade",
+      "schema_count": 32,
+      "gitea_schema_sha256": "5f827a726b88476456be7e3f032028d3901ff67e7cb15a7dbebcb170bb0edc36",
+      "schema_sha256": "4b4079e6b3558d6803d1fadf8b8faec878f244bc67fd5738b48c39563a5584e1",
+      "code_hashes": {
+        "session.py": "5c7aaa2224e0e98f45d23e60f3ab5ad0bca9ec89fcbbf935203d72945da33c40",
+        "guard.py": "158c49e4b9f036fe60f74e6b81605052e46b2db715bc0fd7d5b1419315d1522e",
+        "retry_ledger.py": "9c48a898005575b41edaa79b206c88a423270188dbdac29e7ca9681a4874f668",
+        "prepare_profile.py": "efe1af1e948fe3a5e5392c03c58e95aa683eaf745ebe8431bbd2a573da10ffbc",
+        "gitea-focused/__init__.py": "f0fa37e3e569aa45e0f0b3d8c9a3ac8209fe35a593a0cb486a3b475b0392b92b"
+      },
+      "context_length": 98304,
+      "actual_temperature": 0.2,
+      "actual_max_tokens": 8192
+    },
+    {
+      "run_id": "20261120-newer-lfm25-q5-publisher-review",
+      "phase": "publisher",
+      "mode": "facade",
+      "schema_count": 32,
+      "gitea_schema_sha256": "5f827a726b88476456be7e3f032028d3901ff67e7cb15a7dbebcb170bb0edc36",
+      "schema_sha256": "4b4079e6b3558d6803d1fadf8b8faec878f244bc67fd5738b48c39563a5584e1",
+      "code_hashes": {
+        "session.py": "5c7aaa2224e0e98f45d23e60f3ab5ad0bca9ec89fcbbf935203d72945da33c40",
+        "guard.py": "158c49e4b9f036fe60f74e6b81605052e46b2db715bc0fd7d5b1419315d1522e",
+        "retry_ledger.py": "9c48a898005575b41edaa79b206c88a423270188dbdac29e7ca9681a4874f668",
+        "prepare_profile.py": "efe1af1e948fe3a5e5392c03c58e95aa683eaf745ebe8431bbd2a573da10ffbc",
+        "gitea-focused/__init__.py": "f0fa37e3e569aa45e0f0b3d8c9a3ac8209fe35a593a0cb486a3b475b0392b92b"
+      },
+      "context_length": 98304,
+      "actual_temperature": 0.2,
+      "actual_max_tokens": 8192
+    },
+    {
+      "run_id": "20261120-newer-ministral8-control-matched-explain",
+      "phase": "matched",
+      "mode": "facade",
+      "schema_count": 32,
+      "gitea_schema_sha256": "5f827a726b88476456be7e3f032028d3901ff67e7cb15a7dbebcb170bb0edc36",
+      "schema_sha256": "4b4079e6b3558d6803d1fadf8b8faec878f244bc67fd5738b48c39563a5584e1",
+      "code_hashes": {
+        "session.py": "5c7aaa2224e0e98f45d23e60f3ab5ad0bca9ec89fcbbf935203d72945da33c40",
+        "guard.py": "158c49e4b9f036fe60f74e6b81605052e46b2db715bc0fd7d5b1419315d1522e",
+        "retry_ledger.py": "9c48a898005575b41edaa79b206c88a423270188dbdac29e7ca9681a4874f668",
+        "prepare_profile.py": "efe1af1e948fe3a5e5392c03c58e95aa683eaf745ebe8431bbd2a573da10ffbc",
+        "gitea-focused/__init__.py": "f0fa37e3e569aa45e0f0b3d8c9a3ac8209fe35a593a0cb486a3b475b0392b92b"
+      },
+      "context_length": 98304,
+      "actual_temperature": 0.2,
+      "actual_max_tokens": 4096
+    },
+    {
+      "run_id": "20261120-newer-ministral8-control-matched-full-modify-wording",
+      "phase": "matched",
+      "mode": "facade",
+      "schema_count": 32,
+      "gitea_schema_sha256": "5f827a726b88476456be7e3f032028d3901ff67e7cb15a7dbebcb170bb0edc36",
+      "schema_sha256": "4b4079e6b3558d6803d1fadf8b8faec878f244bc67fd5738b48c39563a5584e1",
+      "code_hashes": {
+        "session.py": "5c7aaa2224e0e98f45d23e60f3ab5ad0bca9ec89fcbbf935203d72945da33c40",
+        "guard.py": "158c49e4b9f036fe60f74e6b81605052e46b2db715bc0fd7d5b1419315d1522e",
+        "retry_ledger.py": "9c48a898005575b41edaa79b206c88a423270188dbdac29e7ca9681a4874f668",
+        "prepare_profile.py": "efe1af1e948fe3a5e5392c03c58e95aa683eaf745ebe8431bbd2a573da10ffbc",
+        "gitea-focused/__init__.py": "f0fa37e3e569aa45e0f0b3d8c9a3ac8209fe35a593a0cb486a3b475b0392b92b"
+      },
+      "context_length": 98304,
+      "actual_temperature": 0.2,
+      "actual_max_tokens": 4096
+    },
+    {
+      "run_id": "20261120-newer-ministral8-control-matched-review",
+      "phase": "matched",
+      "mode": "facade",
+      "schema_count": 32,
+      "gitea_schema_sha256": "5f827a726b88476456be7e3f032028d3901ff67e7cb15a7dbebcb170bb0edc36",
+      "schema_sha256": "4b4079e6b3558d6803d1fadf8b8faec878f244bc67fd5738b48c39563a5584e1",
+      "code_hashes": {
+        "session.py": "5c7aaa2224e0e98f45d23e60f3ab5ad0bca9ec89fcbbf935203d72945da33c40",
+        "guard.py": "158c49e4b9f036fe60f74e6b81605052e46b2db715bc0fd7d5b1419315d1522e",
+        "retry_ledger.py": "9c48a898005575b41edaa79b206c88a423270188dbdac29e7ca9681a4874f668",
+        "prepare_profile.py": "efe1af1e948fe3a5e5392c03c58e95aa683eaf745ebe8431bbd2a573da10ffbc",
+        "gitea-focused/__init__.py": "f0fa37e3e569aa45e0f0b3d8c9a3ac8209fe35a593a0cb486a3b475b0392b92b"
+      },
+      "context_length": 98304,
+      "actual_temperature": 0.2,
+      "actual_max_tokens": 4096
+    },
+    {
+      "run_id": "20261120-newer-ministral8-reasoning-q5-matched-explain",
+      "phase": "matched",
+      "mode": "facade",
+      "schema_count": 32,
+      "gitea_schema_sha256": "5f827a726b88476456be7e3f032028d3901ff67e7cb15a7dbebcb170bb0edc36",
+      "schema_sha256": "4b4079e6b3558d6803d1fadf8b8faec878f244bc67fd5738b48c39563a5584e1",
+      "code_hashes": {
+        "session.py": "5c7aaa2224e0e98f45d23e60f3ab5ad0bca9ec89fcbbf935203d72945da33c40",
+        "guard.py": "158c49e4b9f036fe60f74e6b81605052e46b2db715bc0fd7d5b1419315d1522e",
+        "retry_ledger.py": "9c48a898005575b41edaa79b206c88a423270188dbdac29e7ca9681a4874f668",
+        "prepare_profile.py": "efe1af1e948fe3a5e5392c03c58e95aa683eaf745ebe8431bbd2a573da10ffbc",
+        "gitea-focused/__init__.py": "f0fa37e3e569aa45e0f0b3d8c9a3ac8209fe35a593a0cb486a3b475b0392b92b"
+      },
+      "context_length": 98304,
+      "actual_temperature": 0.2,
+      "actual_max_tokens": 4096
+    },
+    {
+      "run_id": "20261120-newer-ministral8-reasoning-q5-matched-full-announcer-default",
+      "phase": "matched",
+      "mode": "facade",
+      "schema_count": 32,
+      "gitea_schema_sha256": "5f827a726b88476456be7e3f032028d3901ff67e7cb15a7dbebcb170bb0edc36",
+      "schema_sha256": "4b4079e6b3558d6803d1fadf8b8faec878f244bc67fd5738b48c39563a5584e1",
+      "code_hashes": {
+        "session.py": "5c7aaa2224e0e98f45d23e60f3ab5ad0bca9ec89fcbbf935203d72945da33c40",
+        "guard.py": "158c49e4b9f036fe60f74e6b81605052e46b2db715bc0fd7d5b1419315d1522e",
+        "retry_ledger.py": "9c48a898005575b41edaa79b206c88a423270188dbdac29e7ca9681a4874f668",
+        "prepare_profile.py": "efe1af1e948fe3a5e5392c03c58e95aa683eaf745ebe8431bbd2a573da10ffbc",
+        "gitea-focused/__init__.py": "f0fa37e3e569aa45e0f0b3d8c9a3ac8209fe35a593a0cb486a3b475b0392b92b"
+      },
+      "context_length": 98304,
+      "actual_temperature": 0.2,
+      "actual_max_tokens": 4096
+    },
+    {
+      "run_id": "20261120-newer-ministral8-reasoning-q5-matched-review",
+      "phase": "matched",
+      "mode": "facade",
+      "schema_count": 32,
+      "gitea_schema_sha256": "5f827a726b88476456be7e3f032028d3901ff67e7cb15a7dbebcb170bb0edc36",
+      "schema_sha256": "4b4079e6b3558d6803d1fadf8b8faec878f244bc67fd5738b48c39563a5584e1",
+      "code_hashes": {
+        "session.py": "5c7aaa2224e0e98f45d23e60f3ab5ad0bca9ec89fcbbf935203d72945da33c40",
+        "guard.py": "158c49e4b9f036fe60f74e6b81605052e46b2db715bc0fd7d5b1419315d1522e",
+        "retry_ledger.py": "9c48a898005575b41edaa79b206c88a423270188dbdac29e7ca9681a4874f668",
+        "prepare_profile.py": "efe1af1e948fe3a5e5392c03c58e95aa683eaf745ebe8431bbd2a573da10ffbc",
+        "gitea-focused/__init__.py": "f0fa37e3e569aa45e0f0b3d8c9a3ac8209fe35a593a0cb486a3b475b0392b92b"
+      },
+      "context_length": 98304,
+      "actual_temperature": 0.2,
+      "actual_max_tokens": 4096
+    },
+    {
+      "run_id": "20261120-newer-ministral8-reasoning-q5-publisher-explain",
+      "phase": "publisher",
+      "mode": "facade",
+      "schema_count": 32,
+      "gitea_schema_sha256": "5f827a726b88476456be7e3f032028d3901ff67e7cb15a7dbebcb170bb0edc36",
+      "schema_sha256": "4b4079e6b3558d6803d1fadf8b8faec878f244bc67fd5738b48c39563a5584e1",
+      "code_hashes": {
+        "session.py": "5c7aaa2224e0e98f45d23e60f3ab5ad0bca9ec89fcbbf935203d72945da33c40",
+        "guard.py": "158c49e4b9f036fe60f74e6b81605052e46b2db715bc0fd7d5b1419315d1522e",
+        "retry_ledger.py": "9c48a898005575b41edaa79b206c88a423270188dbdac29e7ca9681a4874f668",
+        "prepare_profile.py": "efe1af1e948fe3a5e5392c03c58e95aa683eaf745ebe8431bbd2a573da10ffbc",
+        "gitea-focused/__init__.py": "f0fa37e3e569aa45e0f0b3d8c9a3ac8209fe35a593a0cb486a3b475b0392b92b"
+      },
+      "context_length": 98304,
+      "actual_temperature": 0.7,
+      "actual_max_tokens": 8192
+    },
+    {
+      "run_id": "20261120-newer-ministral8-reasoning-q5-publisher-full-plugin-features",
+      "phase": "publisher",
+      "mode": "facade",
+      "schema_count": 32,
+      "gitea_schema_sha256": "5f827a726b88476456be7e3f032028d3901ff67e7cb15a7dbebcb170bb0edc36",
+      "schema_sha256": "4b4079e6b3558d6803d1fadf8b8faec878f244bc67fd5738b48c39563a5584e1",
+      "code_hashes": {
+        "session.py": "5c7aaa2224e0e98f45d23e60f3ab5ad0bca9ec89fcbbf935203d72945da33c40",
+        "guard.py": "158c49e4b9f036fe60f74e6b81605052e46b2db715bc0fd7d5b1419315d1522e",
+        "retry_ledger.py": "9c48a898005575b41edaa79b206c88a423270188dbdac29e7ca9681a4874f668",
+        "prepare_profile.py": "efe1af1e948fe3a5e5392c03c58e95aa683eaf745ebe8431bbd2a573da10ffbc",
+        "gitea-focused/__init__.py": "f0fa37e3e569aa45e0f0b3d8c9a3ac8209fe35a593a0cb486a3b475b0392b92b"
+      },
+      "context_length": 98304,
+      "actual_temperature": 0.7,
+      "actual_max_tokens": 8192
+    },
+    {
+      "run_id": "20261120-newer-ministral8-reasoning-q5-publisher-guidance-explain",
+      "phase": "publisher-guidance",
+      "mode": "facade",
+      "schema_count": 32,
+      "gitea_schema_sha256": "5f827a726b88476456be7e3f032028d3901ff67e7cb15a7dbebcb170bb0edc36",
+      "schema_sha256": "4b4079e6b3558d6803d1fadf8b8faec878f244bc67fd5738b48c39563a5584e1",
+      "code_hashes": {
+        "session.py": "5c7aaa2224e0e98f45d23e60f3ab5ad0bca9ec89fcbbf935203d72945da33c40",
+        "guard.py": "158c49e4b9f036fe60f74e6b81605052e46b2db715bc0fd7d5b1419315d1522e",
+        "retry_ledger.py": "9c48a898005575b41edaa79b206c88a423270188dbdac29e7ca9681a4874f668",
+        "prepare_profile.py": "efe1af1e948fe3a5e5392c03c58e95aa683eaf745ebe8431bbd2a573da10ffbc",
+        "gitea-focused/__init__.py": "f0fa37e3e569aa45e0f0b3d8c9a3ac8209fe35a593a0cb486a3b475b0392b92b"
+      },
+      "context_length": 98304,
+      "actual_temperature": 0.7,
+      "actual_max_tokens": 8192
+    },
+    {
+      "run_id": "20261120-newer-ministral8-reasoning-q5-publisher-guidance-full-community-wording",
+      "phase": "publisher-guidance",
+      "mode": "facade",
+      "schema_count": 32,
+      "gitea_schema_sha256": "5f827a726b88476456be7e3f032028d3901ff67e7cb15a7dbebcb170bb0edc36",
+      "schema_sha256": "4b4079e6b3558d6803d1fadf8b8faec878f244bc67fd5738b48c39563a5584e1",
+      "code_hashes": {
+        "session.py": "5c7aaa2224e0e98f45d23e60f3ab5ad0bca9ec89fcbbf935203d72945da33c40",
+        "guard.py": "158c49e4b9f036fe60f74e6b81605052e46b2db715bc0fd7d5b1419315d1522e",
+        "retry_ledger.py": "9c48a898005575b41edaa79b206c88a423270188dbdac29e7ca9681a4874f668",
+        "prepare_profile.py": "efe1af1e948fe3a5e5392c03c58e95aa683eaf745ebe8431bbd2a573da10ffbc",
+        "gitea-focused/__init__.py": "f0fa37e3e569aa45e0f0b3d8c9a3ac8209fe35a593a0cb486a3b475b0392b92b"
+      },
+      "context_length": 98304,
+      "actual_temperature": 0.7,
+      "actual_max_tokens": 8192
+    },
+    {
+      "run_id": "20261120-newer-ministral8-reasoning-q5-publisher-guidance-review",
+      "phase": "publisher-guidance",
+      "mode": "facade",
+      "schema_count": 32,
+      "gitea_schema_sha256": "5f827a726b88476456be7e3f032028d3901ff67e7cb15a7dbebcb170bb0edc36",
+      "schema_sha256": "4b4079e6b3558d6803d1fadf8b8faec878f244bc67fd5738b48c39563a5584e1",
+      "code_hashes": {
+        "session.py": "5c7aaa2224e0e98f45d23e60f3ab5ad0bca9ec89fcbbf935203d72945da33c40",
+        "guard.py": "158c49e4b9f036fe60f74e6b81605052e46b2db715bc0fd7d5b1419315d1522e",
+        "retry_ledger.py": "9c48a898005575b41edaa79b206c88a423270188dbdac29e7ca9681a4874f668",
+        "prepare_profile.py": "efe1af1e948fe3a5e5392c03c58e95aa683eaf745ebe8431bbd2a573da10ffbc",
+        "gitea-focused/__init__.py": "f0fa37e3e569aa45e0f0b3d8c9a3ac8209fe35a593a0cb486a3b475b0392b92b"
+      },
+      "context_length": 98304,
+      "actual_temperature": 0.7,
+      "actual_max_tokens": 8192
+    },
+    {
+      "run_id": "20261120-newer-ministral8-reasoning-q5-publisher-review",
+      "phase": "publisher",
+      "mode": "facade",
+      "schema_count": 32,
+      "gitea_schema_sha256": "5f827a726b88476456be7e3f032028d3901ff67e7cb15a7dbebcb170bb0edc36",
+      "schema_sha256": "4b4079e6b3558d6803d1fadf8b8faec878f244bc67fd5738b48c39563a5584e1",
+      "code_hashes": {
+        "session.py": "5c7aaa2224e0e98f45d23e60f3ab5ad0bca9ec89fcbbf935203d72945da33c40",
+        "guard.py": "158c49e4b9f036fe60f74e6b81605052e46b2db715bc0fd7d5b1419315d1522e",
+        "retry_ledger.py": "9c48a898005575b41edaa79b206c88a423270188dbdac29e7ca9681a4874f668",
+        "prepare_profile.py": "efe1af1e948fe3a5e5392c03c58e95aa683eaf745ebe8431bbd2a573da10ffbc",
+        "gitea-focused/__init__.py": "f0fa37e3e569aa45e0f0b3d8c9a3ac8209fe35a593a0cb486a3b475b0392b92b"
+      },
+      "context_length": 98304,
+      "actual_temperature": 0.7,
+      "actual_max_tokens": 8192
+    },
+    {
+      "run_id": "20261120-newer-qwen38-q5-matched-explain",
+      "phase": "matched",
+      "mode": "facade",
+      "schema_count": 32,
+      "gitea_schema_sha256": "5f827a726b88476456be7e3f032028d3901ff67e7cb15a7dbebcb170bb0edc36",
+      "schema_sha256": "4b4079e6b3558d6803d1fadf8b8faec878f244bc67fd5738b48c39563a5584e1",
+      "code_hashes": {
+        "session.py": "5c7aaa2224e0e98f45d23e60f3ab5ad0bca9ec89fcbbf935203d72945da33c40",
+        "guard.py": "158c49e4b9f036fe60f74e6b81605052e46b2db715bc0fd7d5b1419315d1522e",
+        "retry_ledger.py": "9c48a898005575b41edaa79b206c88a423270188dbdac29e7ca9681a4874f668",
+        "prepare_profile.py": "efe1af1e948fe3a5e5392c03c58e95aa683eaf745ebe8431bbd2a573da10ffbc",
+        "gitea-focused/__init__.py": "f0fa37e3e569aa45e0f0b3d8c9a3ac8209fe35a593a0cb486a3b475b0392b92b"
+      },
+      "context_length": 98304,
+      "actual_temperature": 0.2,
+      "actual_max_tokens": 4096
+    },
+    {
+      "run_id": "20261120-newer-qwen38-q5-matched-full-report-plugin",
+      "phase": "matched",
+      "mode": "facade",
+      "schema_count": 32,
+      "gitea_schema_sha256": "5f827a726b88476456be7e3f032028d3901ff67e7cb15a7dbebcb170bb0edc36",
+      "schema_sha256": "4b4079e6b3558d6803d1fadf8b8faec878f244bc67fd5738b48c39563a5584e1",
+      "code_hashes": {
+        "session.py": "5c7aaa2224e0e98f45d23e60f3ab5ad0bca9ec89fcbbf935203d72945da33c40",
+        "guard.py": "158c49e4b9f036fe60f74e6b81605052e46b2db715bc0fd7d5b1419315d1522e",
+        "retry_ledger.py": "9c48a898005575b41edaa79b206c88a423270188dbdac29e7ca9681a4874f668",
+        "prepare_profile.py": "efe1af1e948fe3a5e5392c03c58e95aa683eaf745ebe8431bbd2a573da10ffbc",
+        "gitea-focused/__init__.py": "f0fa37e3e569aa45e0f0b3d8c9a3ac8209fe35a593a0cb486a3b475b0392b92b"
+      },
+      "context_length": 98304,
+      "actual_temperature": 0.2,
+      "actual_max_tokens": 4096
+    },
+    {
+      "run_id": "20261120-newer-qwen38-q5-matched-review",
+      "phase": "matched",
+      "mode": "facade",
+      "schema_count": 32,
+      "gitea_schema_sha256": "5f827a726b88476456be7e3f032028d3901ff67e7cb15a7dbebcb170bb0edc36",
+      "schema_sha256": "4b4079e6b3558d6803d1fadf8b8faec878f244bc67fd5738b48c39563a5584e1",
+      "code_hashes": {
+        "session.py": "5c7aaa2224e0e98f45d23e60f3ab5ad0bca9ec89fcbbf935203d72945da33c40",
+        "guard.py": "158c49e4b9f036fe60f74e6b81605052e46b2db715bc0fd7d5b1419315d1522e",
+        "retry_ledger.py": "9c48a898005575b41edaa79b206c88a423270188dbdac29e7ca9681a4874f668",
+        "prepare_profile.py": "efe1af1e948fe3a5e5392c03c58e95aa683eaf745ebe8431bbd2a573da10ffbc",
+        "gitea-focused/__init__.py": "f0fa37e3e569aa45e0f0b3d8c9a3ac8209fe35a593a0cb486a3b475b0392b92b"
+      },
+      "context_length": 98304,
+      "actual_temperature": 0.2,
+      "actual_max_tokens": 4096
+    },
+    {
+      "run_id": "20261120-newer-qwen38-q8-matched-explain",
+      "phase": "matched",
+      "mode": "facade",
+      "schema_count": 32,
+      "gitea_schema_sha256": "5f827a726b88476456be7e3f032028d3901ff67e7cb15a7dbebcb170bb0edc36",
+      "schema_sha256": "4b4079e6b3558d6803d1fadf8b8faec878f244bc67fd5738b48c39563a5584e1",
+      "code_hashes": {
+        "session.py": "5c7aaa2224e0e98f45d23e60f3ab5ad0bca9ec89fcbbf935203d72945da33c40",
+        "guard.py": "158c49e4b9f036fe60f74e6b81605052e46b2db715bc0fd7d5b1419315d1522e",
+        "retry_ledger.py": "9c48a898005575b41edaa79b206c88a423270188dbdac29e7ca9681a4874f668",
+        "prepare_profile.py": "efe1af1e948fe3a5e5392c03c58e95aa683eaf745ebe8431bbd2a573da10ffbc",
+        "gitea-focused/__init__.py": "f0fa37e3e569aa45e0f0b3d8c9a3ac8209fe35a593a0cb486a3b475b0392b92b"
+      },
+      "context_length": 98304,
+      "actual_temperature": 0.2,
+      "actual_max_tokens": 4096
+    },
+    {
+      "run_id": "20261120-newer-qwen38-q8-matched-full-beets-settling",
+      "phase": "matched",
+      "mode": "facade",
+      "schema_count": 32,
+      "gitea_schema_sha256": "5f827a726b88476456be7e3f032028d3901ff67e7cb15a7dbebcb170bb0edc36",
+      "schema_sha256": "4b4079e6b3558d6803d1fadf8b8faec878f244bc67fd5738b48c39563a5584e1",
+      "code_hashes": {
+        "session.py": "5c7aaa2224e0e98f45d23e60f3ab5ad0bca9ec89fcbbf935203d72945da33c40",
+        "guard.py": "158c49e4b9f036fe60f74e6b81605052e46b2db715bc0fd7d5b1419315d1522e",
+        "retry_ledger.py": "9c48a898005575b41edaa79b206c88a423270188dbdac29e7ca9681a4874f668",
+        "prepare_profile.py": "efe1af1e948fe3a5e5392c03c58e95aa683eaf745ebe8431bbd2a573da10ffbc",
+        "gitea-focused/__init__.py": "f0fa37e3e569aa45e0f0b3d8c9a3ac8209fe35a593a0cb486a3b475b0392b92b"
+      },
+      "context_length": 98304,
+      "actual_temperature": 0.2,
+      "actual_max_tokens": 4096
+    },
+    {
+      "run_id": "20261120-newer-qwen38-q8-matched-review",
+      "phase": "matched",
+      "mode": "facade",
+      "schema_count": 32,
+      "gitea_schema_sha256": "5f827a726b88476456be7e3f032028d3901ff67e7cb15a7dbebcb170bb0edc36",
+      "schema_sha256": "4b4079e6b3558d6803d1fadf8b8faec878f244bc67fd5738b48c39563a5584e1",
+      "code_hashes": {
+        "session.py": "5c7aaa2224e0e98f45d23e60f3ab5ad0bca9ec89fcbbf935203d72945da33c40",
+        "guard.py": "158c49e4b9f036fe60f74e6b81605052e46b2db715bc0fd7d5b1419315d1522e",
+        "retry_ledger.py": "9c48a898005575b41edaa79b206c88a423270188dbdac29e7ca9681a4874f668",
+        "prepare_profile.py": "efe1af1e948fe3a5e5392c03c58e95aa683eaf745ebe8431bbd2a573da10ffbc",
+        "gitea-focused/__init__.py": "f0fa37e3e569aa45e0f0b3d8c9a3ac8209fe35a593a0cb486a3b475b0392b92b"
+      },
+      "context_length": 98304,
+      "actual_temperature": 0.2,
+      "actual_max_tokens": 4096
+    },
+    {
+      "run_id": "20261120-newer-qwen38-q8-publisher-explain",
+      "phase": "publisher",
+      "mode": "facade",
+      "schema_count": 32,
+      "gitea_schema_sha256": "5f827a726b88476456be7e3f032028d3901ff67e7cb15a7dbebcb170bb0edc36",
+      "schema_sha256": "4b4079e6b3558d6803d1fadf8b8faec878f244bc67fd5738b48c39563a5584e1",
+      "code_hashes": {
+        "session.py": "5c7aaa2224e0e98f45d23e60f3ab5ad0bca9ec89fcbbf935203d72945da33c40",
+        "guard.py": "158c49e4b9f036fe60f74e6b81605052e46b2db715bc0fd7d5b1419315d1522e",
+        "retry_ledger.py": "9c48a898005575b41edaa79b206c88a423270188dbdac29e7ca9681a4874f668",
+        "prepare_profile.py": "efe1af1e948fe3a5e5392c03c58e95aa683eaf745ebe8431bbd2a573da10ffbc",
+        "gitea-focused/__init__.py": "f0fa37e3e569aa45e0f0b3d8c9a3ac8209fe35a593a0cb486a3b475b0392b92b"
+      },
+      "context_length": 98304,
+      "actual_temperature": 0.6,
+      "actual_max_tokens": 8192
+    },
+    {
+      "run_id": "20261120-newer-qwen38-q8-publisher-full-arr-downloads",
+      "phase": "publisher",
+      "mode": "facade",
+      "schema_count": 32,
+      "gitea_schema_sha256": "5f827a726b88476456be7e3f032028d3901ff67e7cb15a7dbebcb170bb0edc36",
+      "schema_sha256": "4b4079e6b3558d6803d1fadf8b8faec878f244bc67fd5738b48c39563a5584e1",
+      "code_hashes": {
+        "session.py": "5c7aaa2224e0e98f45d23e60f3ab5ad0bca9ec89fcbbf935203d72945da33c40",
+        "guard.py": "158c49e4b9f036fe60f74e6b81605052e46b2db715bc0fd7d5b1419315d1522e",
+        "retry_ledger.py": "9c48a898005575b41edaa79b206c88a423270188dbdac29e7ca9681a4874f668",
+        "prepare_profile.py": "efe1af1e948fe3a5e5392c03c58e95aa683eaf745ebe8431bbd2a573da10ffbc",
+        "gitea-focused/__init__.py": "f0fa37e3e569aa45e0f0b3d8c9a3ac8209fe35a593a0cb486a3b475b0392b92b"
+      },
+      "context_length": 98304,
+      "actual_temperature": 0.6,
+      "actual_max_tokens": 8192
+    },
+    {
+      "run_id": "20261120-newer-qwen38-q8-publisher-review",
+      "phase": "publisher",
+      "mode": "facade",
+      "schema_count": 32,
+      "gitea_schema_sha256": "5f827a726b88476456be7e3f032028d3901ff67e7cb15a7dbebcb170bb0edc36",
+      "schema_sha256": "4b4079e6b3558d6803d1fadf8b8faec878f244bc67fd5738b48c39563a5584e1",
+      "code_hashes": {
+        "session.py": "5c7aaa2224e0e98f45d23e60f3ab5ad0bca9ec89fcbbf935203d72945da33c40",
+        "guard.py": "158c49e4b9f036fe60f74e6b81605052e46b2db715bc0fd7d5b1419315d1522e",
+        "retry_ledger.py": "9c48a898005575b41edaa79b206c88a423270188dbdac29e7ca9681a4874f668",
+        "prepare_profile.py": "efe1af1e948fe3a5e5392c03c58e95aa683eaf745ebe8431bbd2a573da10ffbc",
+        "gitea-focused/__init__.py": "f0fa37e3e569aa45e0f0b3d8c9a3ac8209fe35a593a0cb486a3b475b0392b92b"
+      },
+      "context_length": 98304,
+      "actual_temperature": 0.6,
+      "actual_max_tokens": 8192
+    }
+  ],
+  "primary_gitea_schema_hashes": [
+    "5f827a726b88476456be7e3f032028d3901ff67e7cb15a7dbebcb170bb0edc36"
+  ],
+  "schema_caveat": "Hermes exposes the mode/patch extension of the unrelated local patch tool for GPT-OSS. The 15 focused Gitea schemas are identical; forbidden local patch would be blocked before dispatch. All complete schemas retained.",
+  "frozen_runner_guard_profile_plugin_match_retained_sources": true
+}

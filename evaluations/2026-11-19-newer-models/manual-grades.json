@@ -1,0 +1,90 @@
+{
+  "20261120-newer-ministral8-control-matched-explain": {
+    "pass": false,
+    "note": "Core purpose and former-name/fork label are supported. Asserts unchanged fork contents without comparing commits/files; metadata alone does not establish no active development."
+  },
+  "20261120-newer-ministral8-control-matched-review": {
+    "pass": false,
+    "note": "Proposes server event tracking/scheduling/reminders already provided by calendarevents on develop. Reads only main; independent live branch/functionality references retained."
+  },
+  "20261120-newer-qwen38-q5-matched-explain": {
+    "pass": true,
+    "note": "Grounded provider-to-Navidrome explanation after metadata and README reads; former SPTNR name and companion smart-playlist project supported; supplied Docker configuration is consistent with the documentation."
+  },
+  "20261120-newer-qwen38-q5-matched-review": {
+    "pass": false,
+    "note": "Proposed message-level automod may be useful and is not the same as incidents, but the broad claim that there is no moderation cog ignores incidents on develop. It inspected only main and unrelated dictionary example code, not contribution guidance/develop. Also says 1\u20132 files then lists three. Conservative whole-answer factual grade; proposal novelty itself remains plausible. Recovered from a guessed-master 404 without off-task tools."
+  },
+  "20261120-newer-lfm25-q5-matched-explain": {
+    "pass": false,
+    "note": "Core purpose correct from metadata, but calls the personal hermes-agent account an organization without evidence and asks which repository rather than resolving the configured identity. Search results do not establish organization status."
+  },
+  "20261120-newer-lfm25-q5-matched-review": {
+    "pass": false,
+    "note": "Repeated an identical rejected read request; guard stopped before repeated dispatch. No completed proposal."
+  },
+  "20261120-newer-lfm25-q5-publisher-explain": {
+    "pass": true,
+    "note": "Concise purpose and issue/PR counts match captured repository metadata; no unsupported fork-history addition."
+  },
+  "20261120-newer-lfm25-q5-publisher-review": {
+    "pass": false,
+    "note": "Switched to local read_file instead of continuing through configured Gitea MCP; blocked before dispatch."
+  },
+  "20261120-newer-gemma4-e4b-q5-matched-explain": {
+    "pass": true,
+    "note": "Accurate limited summary quoting both relevant repository search descriptions; avoids unsupported maintainer/unchanged-fork claims. It lists source and personal fork rather than inspecting README, which is sufficient for the narrow stated purpose."
+  },
+  "20261120-newer-gemma4-e4b-q5-matched-review": {
+    "pass": true,
+    "note": "Proposes server analytics/growth/activity metrics absent in captured main and develop roots; distinct from incidents ModLog browsing. Only main inspected, so coverage is limited, but independent references show no duplicate. Does not invent a misleading cog expansion or unsupported history."
+  },
+  "20261120-newer-ministral8-reasoning-q5-matched-explain": {
+    "pass": false,
+    "note": "Invents SonicPi as a rating source and equates it with sptnr. Actual supported providers are Spotify/TIDAL/Last.fm/MusicBrainz/Discogs; SPTNR is the old project name. Core Navidrome destination is correct."
+  },
+  "20261120-newer-ministral8-reasoning-q5-matched-review": {
+    "pass": false,
+    "note": "Switched to local read_file during remote repository review; blocked before dispatch."
+  },
+  "20261120-newer-ministral8-reasoning-q5-publisher-explain": {
+    "pass": false,
+    "note": "Core provider summary is now correct after README reads. However, file-purpose table extrapolates uninspected files from their names (including Docker/automation attribution), and says no significant fork modifications were found without any upstream comparison. Several guessed source paths returned 404. Conservative whole-answer grounding failure, not a wrong core purpose."
+  },
+  "20261120-newer-ministral8-reasoning-q5-publisher-review": {
+    "pass": true,
+    "note": "General message/server-event logging proposal is absent in the captured roots, distinct from incidents browsing existing moderation cases. Only main inspected; Red integration, storage approach and privacy behavior were suggested, not implemented or validated."
+  },
+  "20261120-newer-gemma4-e4b-q5-matched-repeat-1-explain": {
+    "pass": true,
+    "note": "Core purpose and sptnr-fork labels are supported by the returned descriptions. Both relevant repositories listed; no unsupported personal-maintainer or unchanged-code claim."
+  },
+  "20261120-newer-gemma4-e4b-q5-matched-repeat-1-review": {
+    "pass": true,
+    "note": "Traditional stock/commodity/FX tracker absent from main/develop snapshots; tokenfactory/cryptowallet are correctly described as crypto tools. Develop-only polymarket is a distinct prediction-market connector. Read main root and README; integration and market-data service behavior remain proposed, not implemented."
+  },
+  "20261120-newer-qwen38-q8-matched-explain": {
+    "pass": true,
+    "note": "Provider/preview/companion-project/former-name summary is supported by captured metadata and README. Correct distinction between personal ratings and imported popularity; no unsupported fork-maintainer or unchanged-code claim."
+  },
+  "20261120-newer-qwen38-q8-matched-review": {
+    "pass": false,
+    "note": "Reached the 16-dispatched-call budget without a completed proposal (17th attempt stopped before dispatch). Stayed on configured Gitea tools. This is a bounded-workflow failure, not proof higher precision is universally worse."
+  },
+  "20261120-newer-qwen38-q8-publisher-explain": {
+    "pass": true,
+    "note": "README-grounded provider, preview, companion smart-playlist, Docker and former-name explanation; source credentials example consistent with documentation."
+  },
+  "20261120-newer-qwen38-q8-publisher-review": {
+    "pass": false,
+    "note": "Conservative usefulness/novelty grade: trivia directory is absent from Sick-Cogs, but Red already ships trivia with categories, custom question lists, configurable sessions and leaderboards. API/team/MCQ features might be extensions; the answer does not explain why a new cog is needed over the bundled one. This is an interpretive framework-aware novelty judgment, not a false claim that trivia exists in the target repository."
+  },
+  "20261120-newer-ministral8-reasoning-q5-publisher-guidance-explain": {
+    "pass": false,
+    "note": "Correct core provider summary, but invents file details without reading those modules: __init__.py contains only a docstring and version, not imports; automation.py handles queued Lidarr imports/rating work rather than Docker orchestration. Actual module references and hashes retained. Vendor guidance elicited explicit reasoning, but did not establish whole-answer grounding."
+  },
+  "20261120-newer-ministral8-reasoning-q5-publisher-guidance-review": {
+    "pass": true,
+    "note": "Generic arbitrary-command scheduling/multi-bot automation proposal is absent from captured main/develop roots; broader than calendarevents event reminders. Only main/README inspected. Integration and multi-bot control feasibility are proposed, not implemented or validated; novelty judgment is necessarily broad."
+  }
+}

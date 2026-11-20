@@ -1,0 +1,34 @@
+{
+  "checked_utc": "2026-11-20T03:37:01.600991+00:00",
+  "task_containers_removed": [
+    {
+      "container": "hermes-required-store",
+      "was_running": true,
+      "volumes": [
+        "hermes-required-evidence",
+        "0ac3d31c0c647a35018cffdcb98f6189b4031a51f12b4746d888d72b13dd979f"
+      ]
+    },
+    {
+      "container": "mcp-gitea-required-eval",
+      "was_running": true,
+      "volumes": []
+    },
+    {
+      "container": "hermes-newer-download",
+      "was_running": false,
+      "volumes": [
+        "hermes-required-evidence",
+        "e6ed74a7dcf1a8f6a0e6170429bdf9b7554d710ca9b48aeef6f121c055d2daf3"
+      ]
+    }
+  ],
+  "anonymous_home_volumes_removed": [
+    "0ac3d31c0c647a35018cffdcb98f6189b4031a51f12b4746d888d72b13dd979f",
+    "e6ed74a7dcf1a8f6a0e6170429bdf9b7554d710ca9b48aeef6f121c055d2daf3"
+  ],
+  "named_evidence_volume_removed": true,
+  "broad_prune_used": false,
+  "private_snapshot_directory_removed": true,
+  "free_bytes": 161216520192
+}

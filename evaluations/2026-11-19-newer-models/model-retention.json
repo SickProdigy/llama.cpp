@@ -1,0 +1,51 @@
+{
+  "new_public_files": [
+    {
+      "label": "qwen38-q5",
+      "filename": "Qwen3.8-9B-Q5_K_M.gguf",
+      "bytes": 6642543936,
+      "verified_sha256": "c6667345d4e45d8cddca3c8e997a483a4f9ae04ee9402273c24e959dee7173dc",
+      "retained": true,
+      "reason": "Grounded explanation and strict complete contribution; plausible bounded writer, inconsistent repository review."
+    },
+    {
+      "label": "lfm25-q5",
+      "filename": "LFM2.5-8B-A1B-Q5_K_M.gguf",
+      "bytes": 6030339296,
+      "verified_sha256": "eb8bd10148ea21e195502d6d6a205983ba40815302068ce72eb160684df92b3e",
+      "retained": true,
+      "reason": "Fast narrow metadata summary under publisher settings; unsuitable as the main Gitea agent in these full/review tests, but not an all-tests-fail file."
+    },
+    {
+      "label": "gemma4-e4b-q5",
+      "filename": "gemma-4-E4B-it-Q5_K_M.gguf",
+      "bytes": 5481798784,
+      "verified_sha256": "a5d6e634db151368d2caa4270fd32ab604d96c2d1291950586989f46d8e17d36",
+      "retained": true,
+      "reason": "Strongest new reader in this small cohort; two correct contribution resource sets, one strict complete workflow, and a passed 63k-input probe."
+    },
+    {
+      "label": "ministral8-reasoning-q5",
+      "filename": "Ministral-3-8B-Reasoning-2512-Q5_K_M.gguf",
+      "bytes": 6059266976,
+      "verified_sha256": "f757e064451e98bca57b98eb0a5c863a9a935a9efe12d7621fb24b7054fc6341",
+      "retained": true,
+      "reason": "Strict complete contributions with primary and recommended sampler; read grounding uneven and vendor-guidance profile incomplete."
+    },
+    {
+      "label": "qwen38-q8",
+      "filename": "Qwen3.8-9B-Q8_0.gguf",
+      "bytes": 9786060096,
+      "verified_sha256": "79ca5d342a07922f2bbf38c8d892a79a3c8620c65feaf4b1c66b7830ae724db8",
+      "retained": true,
+      "reason": "Useful paired precision reference; both contribution profiles complete. No demonstrated primary-workflow advantage over the smaller Q5 file."
+    }
+  ],
+  "total_new_bytes": 34000009088,
+  "deleted_model_files": [],
+  "existing_models_preserved": true,
+  "reserve_bytes": 107374182400,
+  "free_bytes": 161222795264,
+  "local_quantization_or_training_performed": false,
+  "reason_no_local_quantization_needed": "All selected public files loaded at 98,304 context on the P100. Existing public Q5/Q8 files provided the precision comparison without requantizing or building a new weight file."
+}

@@ -1,0 +1,323 @@
+[
+  {
+    "label": "gemma4-e4b-q5",
+    "phase": "long-probe",
+    "contexts": [
+      98304
+    ],
+    "runs": 1,
+    "actual_temperatures": [
+      0.2
+    ],
+    "actual_output_caps": [
+      4096
+    ],
+    "read_passes": 0,
+    "read_runs": 0,
+    "correct_workflows": 0,
+    "strict_complete_workflows": 0,
+    "full_runs": 0,
+    "peak_vram_mib": 4804,
+    "seconds": [
+      125.996
+    ]
+  },
+  {
+    "label": "gemma4-e4b-q5",
+    "phase": "matched",
+    "contexts": [
+      98304
+    ],
+    "runs": 3,
+    "actual_temperatures": [
+      0.2
+    ],
+    "actual_output_caps": [
+      4096
+    ],
+    "read_passes": 2,
+    "read_runs": 2,
+    "correct_workflows": 1,
+    "strict_complete_workflows": 0,
+    "full_runs": 1,
+    "peak_vram_mib": 4804,
+    "seconds": [
+      31.269,
+      101.464,
+      36.218
+    ]
+  },
+  {
+    "label": "gemma4-e4b-q5",
+    "phase": "matched-repeat-1",
+    "contexts": [
+      98304
+    ],
+    "runs": 3,
+    "actual_temperatures": [
+      0.2
+    ],
+    "actual_output_caps": [
+      4096
+    ],
+    "read_passes": 2,
+    "read_runs": 2,
+    "correct_workflows": 1,
+    "strict_complete_workflows": 1,
+    "full_runs": 1,
+    "peak_vram_mib": 4804,
+    "seconds": [
+      29.838,
+      92.197,
+      43.528
+    ]
+  },
+  {
+    "label": "gemma4-e4b-q5",
+    "phase": "native-diagnostic",
+    "contexts": [
+      98304
+    ],
+    "runs": 1,
+    "actual_temperatures": [
+      0.2
+    ],
+    "actual_output_caps": [
+      4096
+    ],
+    "read_passes": 0,
+    "read_runs": 0,
+    "correct_workflows": 0,
+    "strict_complete_workflows": 0,
+    "full_runs": 1,
+    "peak_vram_mib": 4804,
+    "seconds": [
+      121.418
+    ]
+  },
+  {
+    "label": "lfm25-q5",
+    "phase": "matched",
+    "contexts": [
+      98304
+    ],
+    "runs": 3,
+    "actual_temperatures": [
+      0.2
+    ],
+    "actual_output_caps": [
+      4096
+    ],
+    "read_passes": 0,
+    "read_runs": 2,
+    "correct_workflows": 0,
+    "strict_complete_workflows": 0,
+    "full_runs": 1,
+    "peak_vram_mib": 6714,
+    "seconds": [
+      27.139,
+      13.737,
+      9.096
+    ]
+  },
+  {
+    "label": "lfm25-q5",
+    "phase": "publisher",
+    "contexts": [
+      98304
+    ],
+    "runs": 3,
+    "actual_temperatures": [
+      0.2
+    ],
+    "actual_output_caps": [
+      8192
+    ],
+    "read_passes": 1,
+    "read_runs": 2,
+    "correct_workflows": 0,
+    "strict_complete_workflows": 0,
+    "full_runs": 1,
+    "peak_vram_mib": 6716,
+    "seconds": [
+      7.437,
+      24.223,
+      11.188
+    ]
+  },
+  {
+    "label": "ministral8-control",
+    "phase": "matched",
+    "contexts": [
+      98304
+    ],
+    "runs": 3,
+    "actual_temperatures": [
+      0.2
+    ],
+    "actual_output_caps": [
+      4096
+    ],
+    "read_passes": 0,
+    "read_runs": 2,
+    "correct_workflows": 1,
+    "strict_complete_workflows": 0,
+    "full_runs": 1,
+    "peak_vram_mib": 10046,
+    "seconds": [
+      43.011,
+      73.073,
+      34.176
+    ]
+  },
+  {
+    "label": "ministral8-reasoning-q5",
+    "phase": "matched",
+    "contexts": [
+      98304
+    ],
+    "runs": 3,
+    "actual_temperatures": [
+      0.2
+    ],
+    "actual_output_caps": [
+      4096
+    ],
+    "read_passes": 0,
+    "read_runs": 2,
+    "correct_workflows": 1,
+    "strict_complete_workflows": 1,
+    "full_runs": 1,
+    "peak_vram_mib": 10046,
+    "seconds": [
+      33.637,
+      96.627,
+      22.933
+    ]
+  },
+  {
+    "label": "ministral8-reasoning-q5",
+    "phase": "publisher",
+    "contexts": [
+      98304
+    ],
+    "runs": 3,
+    "actual_temperatures": [
+      0.7
+    ],
+    "actual_output_caps": [
+      8192
+    ],
+    "read_passes": 1,
+    "read_runs": 2,
+    "correct_workflows": 1,
+    "strict_complete_workflows": 1,
+    "full_runs": 1,
+    "peak_vram_mib": 10046,
+    "seconds": [
+      72.707,
+      150.857,
+      56.921
+    ]
+  },
+  {
+    "label": "ministral8-reasoning-q5",
+    "phase": "publisher-guidance",
+    "contexts": [
+      98304
+    ],
+    "runs": 3,
+    "actual_temperatures": [
+      0.7
+    ],
+    "actual_output_caps": [
+      8192
+    ],
+    "read_passes": 1,
+    "read_runs": 2,
+    "correct_workflows": 0,
+    "strict_complete_workflows": 0,
+    "full_runs": 1,
+    "peak_vram_mib": 10046,
+    "seconds": [
+      142.055,
+      170.334,
+      74.893
+    ]
+  },
+  {
+    "label": "qwen38-q5",
+    "phase": "matched",
+    "contexts": [
+      98304
+    ],
+    "runs": 3,
+    "actual_temperatures": [
+      0.2
+    ],
+    "actual_output_caps": [
+      4096
+    ],
+    "read_passes": 1,
+    "read_runs": 2,
+    "correct_workflows": 1,
+    "strict_complete_workflows": 1,
+    "full_runs": 1,
+    "peak_vram_mib": 7368,
+    "seconds": [
+      62.851,
+      84.355,
+      71.41
+    ]
+  },
+  {
+    "label": "qwen38-q8",
+    "phase": "matched",
+    "contexts": [
+      98304
+    ],
+    "runs": 3,
+    "actual_temperatures": [
+      0.2
+    ],
+    "actual_output_caps": [
+      4096
+    ],
+    "read_passes": 1,
+    "read_runs": 2,
+    "correct_workflows": 1,
+    "strict_complete_workflows": 1,
+    "full_runs": 1,
+    "peak_vram_mib": 9922,
+    "seconds": [
+      62.256,
+      97.478,
+      158.686
+    ]
+  },
+  {
+    "label": "qwen38-q8",
+    "phase": "publisher",
+    "contexts": [
+      98304
+    ],
+    "runs": 3,
+    "actual_temperatures": [
+      0.6
+    ],
+    "actual_output_caps": [
+      8192
+    ],
+    "read_passes": 1,
+    "read_runs": 2,
+    "correct_workflows": 1,
+    "strict_complete_workflows": 1,
+    "full_runs": 1,
+    "peak_vram_mib": 9922,
+    "seconds": [
+      32.908,
+      103.711,
+      93.919
+    ]
+  }
+]

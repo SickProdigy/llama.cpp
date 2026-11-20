@@ -1,0 +1,55 @@
+{
+  "reserve_bytes": 107374182400,
+  "models": [
+    {
+      "label": "qwen38-q5",
+      "repo": "empero-ai/Qwen3.8-9B-Distill-GGUF",
+      "revision": "760121cd70bb4c36b2b5ec58eb765e0df5987efe",
+      "filename": "Qwen3.8-9B-Q5_K_M.gguf",
+      "bytes": 6642543936,
+      "sha256": "c6667345d4e45d8cddca3c8e997a483a4f9ae04ee9402273c24e959dee7173dc",
+      "alias": "qwen38-q5",
+      "control": false
+    },
+    {
+      "label": "lfm25-q5",
+      "repo": "LiquidAI/LFM2.5-8B-A1B-GGUF",
+      "revision": "49c14831707011e64d70b2ebd8462ba08d608434",
+      "filename": "LFM2.5-8B-A1B-Q5_K_M.gguf",
+      "bytes": 6030339296,
+      "sha256": "eb8bd10148ea21e195502d6d6a205983ba40815302068ce72eb160684df92b3e",
+      "alias": "lfm25-q5",
+      "control": false
+    },
+    {
+      "label": "gemma4-e4b-q5",
+      "repo": "unsloth/gemma-4-E4B-it-GGUF",
+      "revision": "bfc15c382204943c3a8fff0c750b94ae2364d7a3",
+      "filename": "gemma-4-E4B-it-Q5_K_M.gguf",
+      "bytes": 5481798784,
+      "sha256": "a5d6e634db151368d2caa4270fd32ab604d96c2d1291950586989f46d8e17d36",
+      "alias": "gemma4-e4b-q5",
+      "control": false
+    },
+    {
+      "label": "ministral8-reasoning-q5",
+      "repo": "mistralai/Ministral-3-8B-Reasoning-2512-GGUF",
+      "revision": "4413bc9b7b091ddad28101650d1395f5e045a328",
+      "filename": "Ministral-3-8B-Reasoning-2512-Q5_K_M.gguf",
+      "bytes": 6059266976,
+      "sha256": "f757e064451e98bca57b98eb0a5c863a9a935a9efe12d7621fb24b7054fc6341",
+      "alias": "ministral8-reasoning-q5",
+      "control": false
+    },
+    {
+      "label": "qwen38-q8",
+      "repo": "empero-ai/Qwen3.8-9B-Distill-GGUF",
+      "revision": "760121cd70bb4c36b2b5ec58eb765e0df5987efe",
+      "filename": "Qwen3.8-9B-Q8_0.gguf",
+      "bytes": 9786060096,
+      "sha256": "79ca5d342a07922f2bbf38c8d892a79a3c8620c65feaf4b1c66b7830ae724db8",
+      "alias": "qwen38-q8",
+      "control": false
+    }
+  ]
+}

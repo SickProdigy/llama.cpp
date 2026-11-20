@@ -4,7 +4,35 @@ GGUF testing notes for Hermes Agent running through llama.cpp.
 
 This file tracks which local GGUF models can actually complete the Hermes Agent plus Gitea MCP workflow, not just whether they answer a prompt or make a promising first tool call. Use the matrix for quick comparison and the detailed sections below for why a model passed, failed, or landed in the middle.
 
-## November 19, 2026 public-model comparison: current shortlist
+## November 19, 2026 additional models: current trial recommendation
+
+**Try Gemma 4 E4B Instruct Q5_K_M with the focused Gitea tools.** Across two
+matched batches it passed all four read answers and created correct issue,
+branch, exact commit and upstream PR resources twice. It completed every
+read-back twice, but returned an incorrect file URL once, so only one of two
+contributions met every strict requirement. Contribution conversations took
+92–101 seconds.
+
+A separate 63,098-token input retrieval plus actual MCP read passed in 126
+seconds at 4,804 MiB GPU memory, with 98,304 context loaded. This validates that
+specific long-input task, not full-window coding. The native-tool contribution
+still failed; the focused interface remains part of the recommendation.
+
+The additional evaluation records 35 runs: 18 primary tasks across six files
+and 17 separate repetitions, sampler, native-interface, vendor-guidance and
+context probes. Five verified public GGUF files were downloaded (four untested
+checkpoints, including Q5/Q8 variants of one checkpoint). No local quantization
+or GPU upgrade was needed. Keep the P100 for this trial; roughly 150 GiB remains
+free, and existing small/task models were preserved.
+
+See the [results and limitations](evaluations/2026-11-19-newer-models/investigation.md),
+[testing matrix](evaluations/2026-11-19-newer-models/matrix.md),
+[exact protocol](evaluations/2026-11-19-newer-models/protocol.md), and
+[hardware assessment](evaluations/2026-11-19-newer-models/hardware.md).
+The original VibeForged runtime and configuration are restored. Gemma and the
+focused plugin have not been deployed as the everyday default.
+
+## November 19, 2026 public-model comparison: earlier shortlist
 
 **Ministral 3 8B Instruct Q5 is the strongest new compact candidate for explicit
 Gitea contribution tasks with the focused tools.** Its official 6.06 GB file
