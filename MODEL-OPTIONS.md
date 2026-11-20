@@ -77,7 +77,10 @@ intermediates only after successful output verification and evidence retention.
 
 ## Test and retention checklist
 
-- First validate a real small code fix with Gemma and the focused Gitea tools.
+- Real-code follow-up completed: Gemma failed; FableVibes produced a correct
+  patch with the focused tools, but its write-up still had factual mistakes.
+  See [comparison](evaluations/2026-11-20-real-code-comparison/investigation.md);
+  prefer Fable for the next supervised trial rather than repeating Gemma first.
 - On each spare PC, verify backend properties, actual available VRAM, loaded
   context, idle/active memory and the first completed tool-call time.
 - Run repository explanation/review and an authorized issue → fork branch →

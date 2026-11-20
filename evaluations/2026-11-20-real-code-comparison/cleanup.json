@@ -1,0 +1,11 @@
+{
+  "removed_task_containers": [
+    "hermes-required-store",
+    "mcp-gitea-required-eval"
+  ],
+  "named_evidence_volume_removed": true,
+  "private_snapshots_removed": true,
+  "original_runtime_verified": true,
+  "broad_prune_used": false,
+  "archive_and_four_runner_hash_sets_verified": true
+}

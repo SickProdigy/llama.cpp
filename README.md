@@ -6,6 +6,23 @@ This file tracks which local GGUF models can actually complete the Hermes Agent 
 
 Future options: [local quantization and spare-GPU testing](MODEL-OPTIONS.md).
 
+## November 20, 2026 VibeForged/FableVibes follow-up: current trial candidate
+
+**FableVibes Q4 with focused Gitea tools is the strongest next supervised
+code-workflow candidate.** It independently selected the correct one-line
+Python fix, created issue #76 and upstream PR #77, and completed all read-backs
+and URLs in 136 seconds. The patch passed ten independent helper checks.
+Its issue/PR prose still contains unsupported reproduction/version details and
+an incorrect NaN claim, so this is not an unattended or fully grounded pass.
+VibeForged attempted terminal after eight Gitea calls and was stopped with no writes.
+
+Both models also found and explained SonicRatings using Gitea from the same
+short request, with no hosting-service reminder. The existing persistent
+Gitea preference was unchanged. All four runs used 98,304 context and peaked
+at 9,082 MiB. [Comparison, caveats and evidence](evaluations/2026-11-20-real-code-comparison/investigation.md).
+The original VibeForged runtime/profile is restored; the focused plugin remains
+optional and is not deployed as the everyday tool surface.
+
 ## November 20, 2026 real code-fix follow-up
 
 **Gemma failed the first symptom-led Python fix.** It created upstream issue
@@ -16,7 +33,7 @@ independent coding reliability. Keep the recommendation below limited to a
 supervised trial. [Full result and retained evidence](evaluations/2026-11-20-real-code-fix/investigation.md).
 Original VibeForged runtime/configuration is restored; upstream main is unchanged.
 
-## November 19, 2026 additional models: current trial recommendation
+## November 19, 2026 additional models: earlier trial recommendation
 
 **Try Gemma 4 E4B Instruct Q5_K_M with the focused Gitea tools.** Across two
 matched batches it passed all four read answers and created correct issue,

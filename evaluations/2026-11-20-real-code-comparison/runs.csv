@@ -1,0 +1,5 @@
+run_id,model,phase,context,seconds,first_tool_seconds,first_tool,calls,peak_vram_mib,early_stop,issue,pr,patch_tests_pass,gitea_routing_pass
+20261120-fablevibes-implicit-routing,fablevibes,implicit-routing,98304,56.038,40.609,gitea_search_repositories,2,9082,,,,,True
+20261120-fablevibes-real-code-fix,fablevibes,real-code-fix,98304,136.472,42.223,gitea_identity,12,9082,,76,77,True,
+20261120-vibeforged-implicit-routing,vibeforged,implicit-routing,98304,82.329,52.25,gitea_search_repositories,4,9082,,,,,True
+20261120-vibeforged-real-code-fix,vibeforged,real-code-fix,98304,192.408,41.342,gitea_identity,9,9082,off-task tool attempt: terminal,,,,
