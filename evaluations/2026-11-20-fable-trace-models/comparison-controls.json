@@ -1,0 +1,92 @@
+{
+  "scored_runs": [
+    {
+      "run_id": "20261120-fable-cohort-fable-control-full",
+      "source_hashes": {
+        "session.py": "5c7aaa2224e0e98f45d23e60f3ab5ad0bca9ec89fcbbf935203d72945da33c40",
+        "guard.py": "3b35a3a127ffab85bd06e3de854fa48a9dbf087bbe1ce74036e5eb2067ebfc10",
+        "retry_ledger.py": "9c48a898005575b41edaa79b206c88a423270188dbdac29e7ca9681a4874f668",
+        "prepare_profile.py": "efe1af1e948fe3a5e5392c03c58e95aa683eaf745ebe8431bbd2a573da10ffbc",
+        "gitea-focused/__init__.py": "f0fa37e3e569aa45e0f0b3d8c9a3ac8209fe35a593a0cb486a3b475b0392b92b"
+      },
+      "schemas_sha256": "d66569465eed30533c869c400c198fb64351c493d9ef29b0e0b378d42e2040ad",
+      "tool_count": 32,
+      "temperature": 0.2,
+      "max_tokens": 4096
+    },
+    {
+      "run_id": "20261120-fable-cohort-fable-control-routing",
+      "source_hashes": {
+        "session.py": "5c7aaa2224e0e98f45d23e60f3ab5ad0bca9ec89fcbbf935203d72945da33c40",
+        "guard.py": "3b35a3a127ffab85bd06e3de854fa48a9dbf087bbe1ce74036e5eb2067ebfc10",
+        "retry_ledger.py": "9c48a898005575b41edaa79b206c88a423270188dbdac29e7ca9681a4874f668",
+        "prepare_profile.py": "efe1af1e948fe3a5e5392c03c58e95aa683eaf745ebe8431bbd2a573da10ffbc",
+        "gitea-focused/__init__.py": "f0fa37e3e569aa45e0f0b3d8c9a3ac8209fe35a593a0cb486a3b475b0392b92b"
+      },
+      "schemas_sha256": "d66569465eed30533c869c400c198fb64351c493d9ef29b0e0b378d42e2040ad",
+      "tool_count": 32,
+      "temperature": 0.2,
+      "max_tokens": 4096
+    },
+    {
+      "run_id": "20261120-fable-cohort-qwable9-q5-full",
+      "source_hashes": {
+        "session.py": "5c7aaa2224e0e98f45d23e60f3ab5ad0bca9ec89fcbbf935203d72945da33c40",
+        "guard.py": "3b35a3a127ffab85bd06e3de854fa48a9dbf087bbe1ce74036e5eb2067ebfc10",
+        "retry_ledger.py": "9c48a898005575b41edaa79b206c88a423270188dbdac29e7ca9681a4874f668",
+        "prepare_profile.py": "efe1af1e948fe3a5e5392c03c58e95aa683eaf745ebe8431bbd2a573da10ffbc",
+        "gitea-focused/__init__.py": "f0fa37e3e569aa45e0f0b3d8c9a3ac8209fe35a593a0cb486a3b475b0392b92b"
+      },
+      "schemas_sha256": "d66569465eed30533c869c400c198fb64351c493d9ef29b0e0b378d42e2040ad",
+      "tool_count": 32,
+      "temperature": 0.2,
+      "max_tokens": 4096
+    },
+    {
+      "run_id": "20261120-fable-cohort-qwable9-q5-routing",
+      "source_hashes": {
+        "session.py": "5c7aaa2224e0e98f45d23e60f3ab5ad0bca9ec89fcbbf935203d72945da33c40",
+        "guard.py": "3b35a3a127ffab85bd06e3de854fa48a9dbf087bbe1ce74036e5eb2067ebfc10",
+        "retry_ledger.py": "9c48a898005575b41edaa79b206c88a423270188dbdac29e7ca9681a4874f668",
+        "prepare_profile.py": "efe1af1e948fe3a5e5392c03c58e95aa683eaf745ebe8431bbd2a573da10ffbc",
+        "gitea-focused/__init__.py": "f0fa37e3e569aa45e0f0b3d8c9a3ac8209fe35a593a0cb486a3b475b0392b92b"
+      },
+      "schemas_sha256": "d66569465eed30533c869c400c198fb64351c493d9ef29b0e0b378d42e2040ad",
+      "tool_count": 32,
+      "temperature": 0.2,
+      "max_tokens": 4096
+    },
+    {
+      "run_id": "20261120-fable-cohort-qwopus4-q5-full",
+      "source_hashes": {
+        "session.py": "5c7aaa2224e0e98f45d23e60f3ab5ad0bca9ec89fcbbf935203d72945da33c40",
+        "guard.py": "3b35a3a127ffab85bd06e3de854fa48a9dbf087bbe1ce74036e5eb2067ebfc10",
+        "retry_ledger.py": "9c48a898005575b41edaa79b206c88a423270188dbdac29e7ca9681a4874f668",
+        "prepare_profile.py": "efe1af1e948fe3a5e5392c03c58e95aa683eaf745ebe8431bbd2a573da10ffbc",
+        "gitea-focused/__init__.py": "f0fa37e3e569aa45e0f0b3d8c9a3ac8209fe35a593a0cb486a3b475b0392b92b"
+      },
+      "schemas_sha256": "d66569465eed30533c869c400c198fb64351c493d9ef29b0e0b378d42e2040ad",
+      "tool_count": 32,
+      "temperature": 0.2,
+      "max_tokens": 4096
+    },
+    {
+      "run_id": "20261120-fable-cohort-qwopus4-q5-routing",
+      "source_hashes": {
+        "session.py": "5c7aaa2224e0e98f45d23e60f3ab5ad0bca9ec89fcbbf935203d72945da33c40",
+        "guard.py": "3b35a3a127ffab85bd06e3de854fa48a9dbf087bbe1ce74036e5eb2067ebfc10",
+        "retry_ledger.py": "9c48a898005575b41edaa79b206c88a423270188dbdac29e7ca9681a4874f668",
+        "prepare_profile.py": "efe1af1e948fe3a5e5392c03c58e95aa683eaf745ebe8431bbd2a573da10ffbc",
+        "gitea-focused/__init__.py": "f0fa37e3e569aa45e0f0b3d8c9a3ac8209fe35a593a0cb486a3b475b0392b92b"
+      },
+      "schemas_sha256": "d66569465eed30533c869c400c198fb64351c493d9ef29b0e0b378d42e2040ad",
+      "tool_count": 32,
+      "temperature": 0.2,
+      "max_tokens": 4096
+    }
+  ],
+  "runtime_exclusions": [
+    "parable8-q5"
+  ],
+  "all_sources_and_schemas_matched": true
+}

@@ -1,0 +1,32 @@
+{
+  "reserve_bytes": 107374182400,
+  "models": [
+    {
+      "label": "qwable9-q5",
+      "repo": "empero-ai/Qwable-9B-Claude-Fable-5-GGUF",
+      "revision": "176c101fb7e8900ea69ddee7e89996b6cd3289a8",
+      "filename": "Qwable-9B-Claude-Fable-5-Q5_K_M.gguf",
+      "bytes": 6467969760,
+      "sha256": "8f9645c0f9be1e4aa937863b6fd036a744c7f8e3f8ca9cea9746eac9e4115090",
+      "alias": "qwable9-q5"
+    },
+    {
+      "label": "parable8-q5",
+      "repo": "AnkitAI/Parable-Qwen3-8B-Claude-Fable-5-GGUF",
+      "revision": "6d07b3bc329fb55e5d1bf2ddcb9244f4e5753553",
+      "filename": "Parable-Qwen3-8B-Claude-Fable-5-GGUF-Q5_K_M.gguf",
+      "bytes": 5851112416,
+      "sha256": "e77c26c5708e1ff69cea55c591c5631f6ab64935bab16b69ee605b70298289b9",
+      "alias": "parable8-q5"
+    },
+    {
+      "label": "qwopus4-q5",
+      "repo": "shuhulx/Qwopus3.5-4B-Coder-Fable5-v1-GGUF",
+      "revision": "6c1f922760d09de87465f87554dbe5e78efcc37e",
+      "filename": "Qwopus3.5-4B-Coder-Fable5-v1-Q5_K_M.gguf",
+      "bytes": 3161425312,
+      "sha256": "8f48d43eca68c80ec2455bd482ca4c0efab411402edc4dcee48383585b8fedc8",
+      "alias": "qwopus4-q5"
+    }
+  ]
+}

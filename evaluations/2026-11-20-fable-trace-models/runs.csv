@@ -1,0 +1,7 @@
+run_id,model,phase,context,seconds,first_tool_seconds,first_tool,calls,peak_vram_mib,early_stop,issue,pr,patch_tests_pass,user_repository_selected,gitea_routing_pass
+20261120-fable-cohort-fable-control-full,fable-control,fable-trace-cohort,98304,207.736,5.528,gitea_identity,14,9082,,78,79,True,,
+20261120-fable-cohort-fable-control-routing,fable-control,fable-trace-cohort,98304,90.155,39.985,gitea_search_repositories,9,9082,,,,,True,True
+20261120-fable-cohort-qwable9-q5-full,qwable9-q5,fable-trace-cohort,98304,171.282,9.666,gitea_identity,6,7368,off-task tool attempt: search_files,,,,,
+20261120-fable-cohort-qwable9-q5-routing,qwable9-q5,fable-trace-cohort,98304,75.976,37.737,gitea_search_repositories,3,7368,,,,,False,True
+20261120-fable-cohort-qwopus4-q5-full,qwopus4-q5,fable-trace-cohort,98304,42.763,15.78,gitea_identity,5,4742,off-task tool attempt: search_files,,,,,
+20261120-fable-cohort-qwopus4-q5-routing,qwopus4-q5,fable-trace-cohort,98304,52.576,31.364,gitea_search_repositories,3,4742,,,,,False,True

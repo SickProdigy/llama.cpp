@@ -1,0 +1,20 @@
+{
+  "removed_task_containers": [
+    "hermes-required-store",
+    "mcp-gitea-required-eval",
+    "hermes-fable-download"
+  ],
+  "anonymous_volumes_removed": [
+    "294ad9d8ef02aab83cd5341051d510afb9fe2d74beaf097de8179e7dac1b04f3",
+    "0913aacbcca8fbdbd5b76b07ba5e4b71e962fe11ccdf1185afbfd5658eb8f557"
+  ],
+  "named_evidence_volume_removed": true,
+  "private_snapshots_removed": true,
+  "original_runtime_verified": true,
+  "broad_prune_used": false,
+  "six_runner_hash_sets_and_archive_verified": true,
+  "new_test_issues_closed": [
+    78
+  ],
+  "pull_requests_unchanged": true
+}

@@ -104,3 +104,13 @@ intermediates only after successful output verification and evidence retention.
 - [llama.cpp quantization documentation](https://github.com/ggml-org/llama.cpp/blob/master/tools/quantize/README.md)
 - [llama.cpp importance-matrix documentation](https://github.com/ggml-org/llama.cpp/blob/master/tools/imatrix/README.md)
 - [NVIDIA desktop RTX 5080 specifications](https://www.nvidia.com/en-us/geforce/graphics-cards/50-series/rtx-5080/)
+
+## November 20 Fable-trace follow-up
+
+[Comparison](evaluations/2026-11-20-fable-trace-models/investigation.md): Qwable
+and Qwopus failed the MCP code task on local search; Parable could not load
+98k context. Fable remains the strongest supervised workflow trial, with
+assistance/prose caveats. Only the 3.16 GB Qwopus Q5 file is retained from this
+new cohort, as a small helper candidate. Its 4,742 MiB P100 result is not yet a
+2070 measurement. Verify owner namespace selection and remote source navigation
+before another everyday-agent profile switch.

@@ -1,0 +1,40 @@
+{
+  "checked_utc": "2026-11-20T21:20:20.669933+00:00",
+  "containers": {
+    "hermes": {
+      "running": true,
+      "health": null,
+      "same_image": true,
+      "same_command": true,
+      "same_environment": true,
+      "same_mounts": true
+    },
+    "llama-cpp": {
+      "running": true,
+      "health": "healthy",
+      "same_image": true,
+      "same_command": true,
+      "same_environment": true,
+      "same_mounts": true
+    },
+    "mcp-gitea-hermes": {
+      "running": true,
+      "health": "healthy",
+      "same_image": true,
+      "same_command": true,
+      "same_environment": true,
+      "same_mounts": true
+    }
+  },
+  "normal_profile_config_unchanged": true,
+  "backend": {
+    "alias": "qwen3.6-14b-a3b-vibeforged-v2-q4_k_m",
+    "context": 98304
+  },
+  "upstream_main": "84afaf401b29753b6810e4f92f253e0d28637dbf",
+  "upstream_main_unchanged": true,
+  "focused_plugin_deployed": false,
+  "hermes_codex_touched": false,
+  "no_model_quantization_or_conversion": true,
+  "disk_free_bytes": 158052331520
+}

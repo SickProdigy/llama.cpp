@@ -6,6 +6,23 @@ This file tracks which local GGUF models can actually complete the Hermes Agent 
 
 Future options: [local quantization and spare-GPU testing](MODEL-OPTIONS.md).
 
+## November 20, 2026 Fable-trace alternatives: latest comparison
+
+**No new candidate beat FableVibes on the focused MCP workflow.** Qwable 9B Q5
+and Qwopus Fable 4B Q5 used Gitea for the short request but selected the agent's
+fork, then failed the code task by attempting local search. Parable 8B Q5 was
+excluded because the backend loaded only 40,960 context instead of 98,304.
+A fresh Fable control completed the patch and PR in 208 seconds, passing ten
+helper checks, but read the prior issue containing the fix and copied its
+factual errors. Treat that as assisted workflow success, not unaided diagnosis.
+
+Six scored runs plus the separate context exclusion are documented in the
+[full results](evaluations/2026-11-20-fable-trace-models/investigation.md) and
+[per-run matrix](evaluations/2026-11-20-fable-trace-models/runs.csv).
+Kept the small Qwopus file as a helper candidate; removed this cohort's larger
+Qwable/Parable downloads after verification. About 147 GiB remains free. New
+test issue #78 is closed; the original runtime/profile is restored.
+
 ## November 20, 2026 VibeForged/FableVibes follow-up: current trial candidate
 
 **FableVibes Q4 with focused Gitea tools is the strongest next supervised
