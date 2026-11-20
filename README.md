@@ -4,6 +4,8 @@ GGUF testing notes for Hermes Agent running through llama.cpp.
 
 This file tracks which local GGUF models can actually complete the Hermes Agent plus Gitea MCP workflow, not just whether they answer a prompt or make a promising first tool call. Use the matrix for quick comparison and the detailed sections below for why a model passed, failed, or landed in the middle.
 
+Future options: [local quantization and spare-GPU testing](MODEL-OPTIONS.md).
+
 ## November 19, 2026 additional models: current trial recommendation
 
 **Try Gemma 4 E4B Instruct Q5_K_M with the focused Gitea tools.** Across two
