@@ -1,0 +1,5 @@
+name: selected-project
+version: "0.1.0"
+description: "Attach selected-checkout Git facts to each turn without repeating user instructions."
+provides_hooks:
+  - pre_llm_call

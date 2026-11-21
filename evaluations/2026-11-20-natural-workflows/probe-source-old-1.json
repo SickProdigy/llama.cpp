@@ -1,0 +1,1006 @@
+{
+  "scope": "HTTP tool-loop navigation diagnostic, NOT full Hermes; no local/web tools; no routing-compliance claim",
+  "utc": "2026-11-21T01:30:23.963164+00:00",
+  "variant": "old",
+  "trial": 1,
+  "task": "source",
+  "plugin_sha256": "f0fa37e3e569aa45e0f0b3d8c9a3ac8209fe35a593a0cb486a3b475b0392b92b",
+  "model": "qwen3.6-14b-a3b-vibeforged-v2-q4_k_m",
+  "context": 98304,
+  "system": "You are a repository assistant. The owner's account is sickprodigy; hermes-agent is the automation account. The owner's repositories live on the configured Gitea service. Use evidence from tools and state uncertainty. Do not mutate repositories for read-only requests.",
+  "prompt": "In sickprodigy/nicotineplus-plugins, explain how autospamignore bounds numeric settings and which conversion errors it handles. Base your answer on the code.",
+  "tools": [
+    {
+      "type": "function",
+      "function": {
+        "name": "gitea_identity",
+        "description": "Get the authenticated Gitea account. Uses the configured Gitea MCP connection.",
+        "parameters": {
+          "type": "object",
+          "properties": {},
+          "required": [],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "gitea_search_repositories",
+        "description": "Search configured Gitea repositories; returns default branches and full names. Uses the configured Gitea MCP connection.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "query": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "query"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "gitea_repository_info",
+        "description": "Read exact repository metadata, including its upstream parent if it is a fork. Uses the configured Gitea MCP connection.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "owner": {
+              "type": "string",
+              "minLength": 1
+            },
+            "repo": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "owner",
+            "repo"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "gitea_list_branches",
+        "description": "List branches of this exact Gitea repository. Uses the configured Gitea MCP connection.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "owner": {
+              "type": "string",
+              "minLength": 1
+            },
+            "repo": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "owner",
+            "repo"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "gitea_list_directory",
+        "description": "List a directory at an explicit branch or commit. For the repository root use path \"\" or \".\"; never repeat the repository name as the path. Uses the configured Gitea MCP connection.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "owner": {
+              "type": "string",
+              "minLength": 1
+            },
+            "repo": {
+              "type": "string",
+              "minLength": 1
+            },
+            "path": {
+              "type": "string"
+            },
+            "ref": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "owner",
+            "repo",
+            "path",
+            "ref"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "gitea_read_file",
+        "description": "Read bounded source text at an explicit branch or commit. Use the fork branch to verify edits. Uses the configured Gitea MCP connection.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "owner": {
+              "type": "string",
+              "minLength": 1
+            },
+            "repo": {
+              "type": "string",
+              "minLength": 1
+            },
+            "path": {
+              "type": "string"
+            },
+            "ref": {
+              "type": "string",
+              "minLength": 1
+            },
+            "start_line": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "end_line": {
+              "type": "integer",
+              "minimum": 1
+            }
+          },
+          "required": [
+            "owner",
+            "repo",
+            "path",
+            "ref"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "gitea_list_issues",
+        "description": "List upstream issues before creating a duplicate. Uses the configured Gitea MCP connection.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "owner": {
+              "type": "string",
+              "minLength": 1
+            },
+            "repo": {
+              "type": "string",
+              "minLength": 1
+            },
+            "state": {
+              "type": "string",
+              "minLength": 1,
+              "enum": [
+                "open",
+                "closed",
+                "all"
+              ]
+            }
+          },
+          "required": [
+            "owner",
+            "repo"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "gitea_read_issue",
+        "description": "Read an upstream issue by number. Uses the configured Gitea MCP connection.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "owner": {
+              "type": "string",
+              "minLength": 1
+            },
+            "repo": {
+              "type": "string",
+              "minLength": 1
+            },
+            "issue_number": {
+              "type": "integer",
+              "minimum": 1
+            }
+          },
+          "required": [
+            "owner",
+            "repo",
+            "issue_number"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "gitea_list_pull_requests",
+        "description": "List pull requests in their destination upstream repository. Uses the configured Gitea MCP connection.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "owner": {
+              "type": "string",
+              "minLength": 1
+            },
+            "repo": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "owner",
+            "repo"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "gitea_read_pull_request",
+        "description": "Read a pull request in its destination upstream repository. Uses the configured Gitea MCP connection.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "owner": {
+              "type": "string",
+              "minLength": 1
+            },
+            "repo": {
+              "type": "string",
+              "minLength": 1
+            },
+            "pull_number": {
+              "type": "integer",
+              "minimum": 1
+            }
+          },
+          "required": [
+            "owner",
+            "repo",
+            "pull_number"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "gitea_create_issue",
+        "description": "Create an issue in the UPSTREAM repository specified by the user, not in its working fork. Uses the configured Gitea MCP connection.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "upstream_owner": {
+              "type": "string",
+              "minLength": 1
+            },
+            "upstream_repo": {
+              "type": "string",
+              "minLength": 1
+            },
+            "title": {
+              "type": "string",
+              "minLength": 1
+            },
+            "body": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "upstream_owner",
+            "upstream_repo",
+            "title",
+            "body"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "gitea_fork_repository",
+        "description": "Create a personal fork of the specified upstream using the authenticated account. If a fork exists, inspect and reuse it instead. There is no organization argument. Uses the configured Gitea MCP connection.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "upstream_owner": {
+              "type": "string",
+              "minLength": 1
+            },
+            "upstream_repo": {
+              "type": "string",
+              "minLength": 1
+            },
+            "fork_name": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "upstream_owner",
+            "upstream_repo",
+            "fork_name"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "gitea_create_branch",
+        "description": "Create a new feature branch in the authenticated account's existing fork. All branch names are required. Uses the configured Gitea MCP connection.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "fork_owner": {
+              "type": "string",
+              "minLength": 1
+            },
+            "fork_repo": {
+              "type": "string",
+              "minLength": 1
+            },
+            "branch_name": {
+              "type": "string",
+              "minLength": 1
+            },
+            "base_branch": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "fork_owner",
+            "fork_repo",
+            "branch_name",
+            "base_branch"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "gitea_edit_file",
+        "description": "Commit one exact text replacement to an EXISTING feature branch in the working fork. Does not create another branch or rewrite the whole file. Uses the configured Gitea MCP connection.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "fork_owner": {
+              "type": "string",
+              "minLength": 1
+            },
+            "fork_repo": {
+              "type": "string",
+              "minLength": 1
+            },
+            "branch_name": {
+              "type": "string",
+              "minLength": 1
+            },
+            "path": {
+              "type": "string"
+            },
+            "old_text": {
+              "type": "string",
+              "minLength": 1
+            },
+            "new_text": {
+              "type": "string"
+            },
+            "commit_message": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "fork_owner",
+            "fork_repo",
+            "branch_name",
+            "path",
+            "old_text",
+            "new_text",
+            "commit_message"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "gitea_create_pull_request",
+        "description": "Open a PR in UPSTREAM from an existing branch in the authenticated account's verified fork. Pass owner/repo/branch separately; the MCP head reference is constructed for you. Leave the PR open. Uses the configured Gitea MCP connection.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "upstream_owner": {
+              "type": "string",
+              "minLength": 1
+            },
+            "upstream_repo": {
+              "type": "string",
+              "minLength": 1
+            },
+            "fork_owner": {
+              "type": "string",
+              "minLength": 1
+            },
+            "fork_repo": {
+              "type": "string",
+              "minLength": 1
+            },
+            "head_branch": {
+              "type": "string",
+              "minLength": 1
+            },
+            "base_branch": {
+              "type": "string",
+              "minLength": 1
+            },
+            "title": {
+              "type": "string",
+              "minLength": 1
+            },
+            "body": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "upstream_owner",
+            "upstream_repo",
+            "fork_owner",
+            "fork_repo",
+            "head_branch",
+            "base_branch",
+            "title",
+            "body"
+          ],
+          "additionalProperties": false
+        }
+      }
+    }
+  ],
+  "calls": [],
+  "requests": [
+    {
+      "model": "qwen3.6-14b-a3b-vibeforged-v2-q4_k_m",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a repository assistant. The owner's account is sickprodigy; hermes-agent is the automation account. The owner's repositories live on the configured Gitea service. Use evidence from tools and state uncertainty. Do not mutate repositories for read-only requests."
+        },
+        {
+          "role": "user",
+          "content": "In sickprodigy/nicotineplus-plugins, explain how autospamignore bounds numeric settings and which conversion errors it handles. Base your answer on the code."
+        }
+      ],
+      "tools": [
+        {
+          "type": "function",
+          "function": {
+            "name": "gitea_identity",
+            "description": "Get the authenticated Gitea account. Uses the configured Gitea MCP connection.",
+            "parameters": {
+              "type": "object",
+              "properties": {},
+              "required": [],
+              "additionalProperties": false
+            }
+          }
+        },
+        {
+          "type": "function",
+          "function": {
+            "name": "gitea_search_repositories",
+            "description": "Search configured Gitea repositories; returns default branches and full names. Uses the configured Gitea MCP connection.",
+            "parameters": {
+              "type": "object",
+              "properties": {
+                "query": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "query"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        {
+          "type": "function",
+          "function": {
+            "name": "gitea_repository_info",
+            "description": "Read exact repository metadata, including its upstream parent if it is a fork. Uses the configured Gitea MCP connection.",
+            "parameters": {
+              "type": "object",
+              "properties": {
+                "owner": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "repo": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "owner",
+                "repo"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        {
+          "type": "function",
+          "function": {
+            "name": "gitea_list_branches",
+            "description": "List branches of this exact Gitea repository. Uses the configured Gitea MCP connection.",
+            "parameters": {
+              "type": "object",
+              "properties": {
+                "owner": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "repo": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "owner",
+                "repo"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        {
+          "type": "function",
+          "function": {
+            "name": "gitea_list_directory",
+            "description": "List a directory at an explicit branch or commit. For the repository root use path \"\" or \".\"; never repeat the repository name as the path. Uses the configured Gitea MCP connection.",
+            "parameters": {
+              "type": "object",
+              "properties": {
+                "owner": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "repo": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "path": {
+                  "type": "string"
+                },
+                "ref": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "owner",
+                "repo",
+                "path",
+                "ref"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        {
+          "type": "function",
+          "function": {
+            "name": "gitea_read_file",
+            "description": "Read bounded source text at an explicit branch or commit. Use the fork branch to verify edits. Uses the configured Gitea MCP connection.",
+            "parameters": {
+              "type": "object",
+              "properties": {
+                "owner": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "repo": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "path": {
+                  "type": "string"
+                },
+                "ref": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "start_line": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "end_line": {
+                  "type": "integer",
+                  "minimum": 1
+                }
+              },
+              "required": [
+                "owner",
+                "repo",
+                "path",
+                "ref"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        {
+          "type": "function",
+          "function": {
+            "name": "gitea_list_issues",
+            "description": "List upstream issues before creating a duplicate. Uses the configured Gitea MCP connection.",
+            "parameters": {
+              "type": "object",
+              "properties": {
+                "owner": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "repo": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "state": {
+                  "type": "string",
+                  "minLength": 1,
+                  "enum": [
+                    "open",
+                    "closed",
+                    "all"
+                  ]
+                }
+              },
+              "required": [
+                "owner",
+                "repo"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        {
+          "type": "function",
+          "function": {
+            "name": "gitea_read_issue",
+            "description": "Read an upstream issue by number. Uses the configured Gitea MCP connection.",
+            "parameters": {
+              "type": "object",
+              "properties": {
+                "owner": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "repo": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "issue_number": {
+                  "type": "integer",
+                  "minimum": 1
+                }
+              },
+              "required": [
+                "owner",
+                "repo",
+                "issue_number"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        {
+          "type": "function",
+          "function": {
+            "name": "gitea_list_pull_requests",
+            "description": "List pull requests in their destination upstream repository. Uses the configured Gitea MCP connection.",
+            "parameters": {
+              "type": "object",
+              "properties": {
+                "owner": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "repo": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "owner",
+                "repo"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        {
+          "type": "function",
+          "function": {
+            "name": "gitea_read_pull_request",
+            "description": "Read a pull request in its destination upstream repository. Uses the configured Gitea MCP connection.",
+            "parameters": {
+              "type": "object",
+              "properties": {
+                "owner": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "repo": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "pull_number": {
+                  "type": "integer",
+                  "minimum": 1
+                }
+              },
+              "required": [
+                "owner",
+                "repo",
+                "pull_number"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        {
+          "type": "function",
+          "function": {
+            "name": "gitea_create_issue",
+            "description": "Create an issue in the UPSTREAM repository specified by the user, not in its working fork. Uses the configured Gitea MCP connection.",
+            "parameters": {
+              "type": "object",
+              "properties": {
+                "upstream_owner": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "upstream_repo": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "title": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "body": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "upstream_owner",
+                "upstream_repo",
+                "title",
+                "body"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        {
+          "type": "function",
+          "function": {
+            "name": "gitea_fork_repository",
+            "description": "Create a personal fork of the specified upstream using the authenticated account. If a fork exists, inspect and reuse it instead. There is no organization argument. Uses the configured Gitea MCP connection.",
+            "parameters": {
+              "type": "object",
+              "properties": {
+                "upstream_owner": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "upstream_repo": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "fork_name": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "upstream_owner",
+                "upstream_repo",
+                "fork_name"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        {
+          "type": "function",
+          "function": {
+            "name": "gitea_create_branch",
+            "description": "Create a new feature branch in the authenticated account's existing fork. All branch names are required. Uses the configured Gitea MCP connection.",
+            "parameters": {
+              "type": "object",
+              "properties": {
+                "fork_owner": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "fork_repo": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "branch_name": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "base_branch": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "fork_owner",
+                "fork_repo",
+                "branch_name",
+                "base_branch"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        {
+          "type": "function",
+          "function": {
+            "name": "gitea_edit_file",
+            "description": "Commit one exact text replacement to an EXISTING feature branch in the working fork. Does not create another branch or rewrite the whole file. Uses the configured Gitea MCP connection.",
+            "parameters": {
+              "type": "object",
+              "properties": {
+                "fork_owner": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "fork_repo": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "branch_name": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "path": {
+                  "type": "string"
+                },
+                "old_text": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "new_text": {
+                  "type": "string"
+                },
+                "commit_message": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "fork_owner",
+                "fork_repo",
+                "branch_name",
+                "path",
+                "old_text",
+                "new_text",
+                "commit_message"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        {
+          "type": "function",
+          "function": {
+            "name": "gitea_create_pull_request",
+            "description": "Open a PR in UPSTREAM from an existing branch in the authenticated account's verified fork. Pass owner/repo/branch separately; the MCP head reference is constructed for you. Leave the PR open. Uses the configured Gitea MCP connection.",
+            "parameters": {
+              "type": "object",
+              "properties": {
+                "upstream_owner": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "upstream_repo": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "fork_owner": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "fork_repo": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "head_branch": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "base_branch": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "title": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "body": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "upstream_owner",
+                "upstream_repo",
+                "fork_owner",
+                "fork_repo",
+                "head_branch",
+                "base_branch",
+                "title",
+                "body"
+              ],
+              "additionalProperties": false
+            }
+          }
+        }
+      ],
+      "temperature": 0.2,
+      "top_k": 20,
+      "top_p": 0.95,
+      "min_p": 0.05,
+      "max_tokens": 2048,
+      "stream": false
+    }
+  ],
+  "native_calls": [],
+  "exception": {
+    "type": "TimeoutError",
+    "message": "timed out"
+  },
+  "seconds": 20.024
+}

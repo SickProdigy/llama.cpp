@@ -1,0 +1,54 @@
+{
+  "note": "Final development selection before API inference. Same complete samplers/cache/context/offload; common native persistence and title-off correction applies. GPT effective CLI sampler defaults materialized and observed medium reasoning explicit. Neither profile has qualified as a complete repository agent.",
+  "models": [
+    {
+      "label": "qwen38-27b-hermes-iq3xxs",
+      "alias": "qwen3.8-27b-hermes-adapted-iq3xxs",
+      "filename": "Qwen3.8-27B-hermes-IQ3_XXS.gguf",
+      "context": 98304,
+      "cache": "q4_0",
+      "temperature": 0.8,
+      "extra_args": [],
+      "request_overrides": {
+        "temperature": 0.8,
+        "top_p": 1.0,
+        "presence_penalty": 0.0,
+        "extra_body": {
+          "top_k": 0,
+          "min_p": 0.0,
+          "repeat_penalty": 1.0,
+          "chat_template_kwargs": {
+            "enable_thinking": false
+          }
+        }
+      }
+    },
+    {
+      "label": "gptoss20-mxfp4",
+      "alias": "gpt-oss-20b-mxfp4-real",
+      "filename": "gpt-oss-20b-MXFP4.gguf",
+      "context": 131072,
+      "cache": "q4_0",
+      "temperature": 0.2,
+      "extra_args": [],
+      "request_overrides": {
+        "temperature": 0.2,
+        "top_p": 0.95,
+        "presence_penalty": 0.0,
+        "reasoning_effort": "medium",
+        "extra_body": {
+          "top_k": 20,
+          "min_p": 0.05,
+          "repeat_penalty": 1.0
+        }
+      }
+    }
+  ],
+  "selection_policy": "Protected strongest ordinary genuine first-turn contribution plus strongest other complete aggregate profile, recorded before any API inference.",
+  "selection_evidence": {
+    "protected_ordinary": "adapted27 ordinary4/6+actual initial PR20+correct-contract JSON regressions; bulk0/6 remains failure",
+    "aggregate_other": "GPT default/medium ordinary3/6 and bulk4/6; no full contribution; preserve those failures",
+    "excluded_coder": "0/6 ordinary and0/6 bulk; test copies implementation; no contribution",
+    "excluded_35b": "ordinary2/6 and context/runtime-affected bulk4/6; lower aggregate than GPT and not protected ordinary lead"
+  }
+}

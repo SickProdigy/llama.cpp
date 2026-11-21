@@ -1,0 +1,133 @@
+{
+  "checked_utc": "2026-11-21T01:29:35.644530+00:00",
+  "scope": "read-only transport diagnostics; no Hermes conversation or model inference",
+  "backend": {
+    "model_alias": "qwen3.6-14b-a3b-vibeforged-v2-q4_k_m",
+    "model_path": "/models/Qwen3.6-14B-A3B-VibeForged-v2-Q4_K_M.gguf",
+    "chat_template_caps": {
+      "supports_object_arguments": true,
+      "supports_parallel_tool_calls": true,
+      "supports_preserve_reasoning": true,
+      "supports_reasoning_effort": false,
+      "supports_string_content": true,
+      "supports_system_role": true,
+      "supports_tool_calls": true,
+      "supports_tools": true,
+      "supports_typed_content": true,
+      "reasoning_effort_levels": [],
+      "reasoning_effort_rejected": []
+    }
+  },
+  "context": 98304,
+  "schema_count": 25,
+  "schema_sha256": "0eb52c634e9bf7c556b4c0f104d784bb40f0aed63457dbec9ac0e0c3604bfefe",
+  "checks": [
+    {
+      "case": "root-dot",
+      "tool": "get_dir_contents",
+      "arguments": {
+        "owner": "sickprodigy",
+        "repo": "SonicRatings",
+        "ref": "main",
+        "path": "."
+      },
+      "seconds": 0.227,
+      "summary": {
+        "type": "dict",
+        "keys": [
+          "error"
+        ],
+        "error": [
+          {
+            "type": "text",
+            "text": "get dir content err: path contains a malformed path component [path: .]"
+          }
+        ]
+      }
+    },
+    {
+      "case": "root-empty",
+      "tool": "get_dir_contents",
+      "arguments": {
+        "owner": "sickprodigy",
+        "repo": "SonicRatings",
+        "ref": "main",
+        "path": ""
+      },
+      "seconds": 0.017,
+      "summary": {
+        "type": "dict",
+        "keys": [
+          "error"
+        ],
+        "error": [
+          {
+            "type": "text",
+            "text": "path is required"
+          }
+        ]
+      }
+    },
+    {
+      "case": "root-tree",
+      "tool": "get_repository_tree",
+      "arguments": {
+        "owner": "sickprodigy",
+        "repo": "SonicRatings",
+        "tree_sha": "main",
+        "recursive": false,
+        "per_page": 100
+      },
+      "seconds": 0.04,
+      "summary": {
+        "type": "dict",
+        "keys": [
+          "sha",
+          "total_count",
+          "tree",
+          "truncated"
+        ],
+        "truncated": false
+      }
+    },
+    {
+      "case": "source-range",
+      "tool": "get_file_contents",
+      "arguments": {
+        "owner": "sickprodigy",
+        "repo": "nicotineplus-plugins",
+        "ref": "main",
+        "path": "autospamignore/__init__.py",
+        "with_lines": true,
+        "start_line": 1,
+        "end_line": 160
+      },
+      "seconds": 0.056,
+      "summary": {
+        "type": "dict",
+        "keys": [
+          "content",
+          "download_url",
+          "encoding",
+          "end_line",
+          "html_url",
+          "name",
+          "path",
+          "sha",
+          "size",
+          "start_line",
+          "total_lines",
+          "truncated",
+          "type"
+        ],
+        "start_line": 1,
+        "end_line": 160,
+        "total_lines": 269,
+        "truncated": true,
+        "content_chars": 13265,
+        "returned_lines": 160,
+        "last_line": 160
+      }
+    }
+  ]
+}

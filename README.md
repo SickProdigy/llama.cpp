@@ -6,7 +6,32 @@ This file tracks which local GGUF models can actually complete the Hermes Agent 
 
 Future options: [local quantization and spare-GPU testing](MODEL-OPTIONS.md).
 
-## November 20, 2026 Fable-trace alternatives: latest comparison
+## November 21, 2026 novel-fix investigation
+
+**The older guided MCP passes below do not establish editor-like bug-fixing
+reliability.** Fresh tests now allow normal terminal/file work in a selected
+checkout, independently grade behavior and immutable original tests, inspect
+actual published code, and retain a README followup in the same conversation.
+Several models pass their own tests while leaving the requested defect. No
+current model has yet qualified on this complete real-source workflow.
+
+The [fresh matrix](evaluations/2026-11-21-goal-investigation/fresh-matrix.md),
+[investigation](evaluations/2026-11-21-goal-investigation/investigation.md),
+[protocol](evaluations/2026-11-21-goal-investigation/protocol.md), and
+[research](evaluations/2026-11-21-goal-investigation/research.md) separate code,
+forge operations, honesty and context behavior. A controller interruption lost
+some earlier raw coding evidence; fresh complete trials use durable storage,
+and historical summaries are labeled accordingly. Production VibeForged
+configuration has not been replaced by an experimental winner.
+
+The strongest tested supervised lead is now the Hermes-adapted 27B IQ3XXS
+profile: it delivered a correct novel API patch, genuine regression test and
+verified upstream PR, but its README still overstates terminal behavior and
+its best ordinary Booksearch run misses 2/6 defect cases. The
+[exact candidate configuration](evaluations/2026-11-21-goal-investigation/supervised-candidate.json)
+and report preserve these limits; it is not an unattended replacement.
+
+## November 20, 2026 Fable-trace alternatives: earlier guided comparison
 
 **No new candidate beat FableVibes on the focused MCP workflow.** Qwable 9B Q5
 and Qwopus Fable 4B Q5 used Gitea for the short request but selected the agent's
@@ -23,7 +48,7 @@ Kept the small Qwopus file as a helper candidate; removed this cohort's larger
 Qwable/Parable downloads after verification. About 147 GiB remains free. New
 test issue #78 is closed; the original runtime/profile is restored.
 
-## November 20, 2026 VibeForged/FableVibes follow-up: current trial candidate
+## November 20, 2026 VibeForged/FableVibes follow-up: earlier supervised candidate
 
 **FableVibes Q4 with focused Gitea tools is the strongest next supervised
 code-workflow candidate.** It independently selected the correct one-line

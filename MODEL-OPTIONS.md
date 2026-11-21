@@ -3,7 +3,39 @@
 Recorded November 19, 2026. This is a reminder of possible next steps, not a
 record of tests on the spare PCs or a change to the deployed model.
 
-## First direction: test existing files on spare hardware
+## November 21 investigation: best tested supervised lead
+
+Earlier guided-edit passes are insufficient for selecting an editor-like coding
+agent. The [new investigation](evaluations/2026-11-21-goal-investigation/investigation.md)
+checks a fresh real-source defect, independent behavior checks, original tests,
+actual published code and a retained followup. No candidate has yet qualified
+on that complete workflow. Keep the older hardware shortlist provisional.
+
+Completed ordinary/bulk real-source trials include the existing full Qwen3.6
+35B A3B with CPU expert offloading, public Qwen3.5 27B UD-IQ3_XXS, the
+Hermes-adapted 27B IQ3_XXS, and Qwen3-Coder 30B A3B IQ3_XXS. They fit tested
+configurations, but none repairs all six booksearch defects. The adapted 27B
+ordinary run is the strongest supervised lead: four defects, meaningful executed
+tests and a verified issue/PR/followup. Its 11.638 GB file peaked at 13,094 MiB
+with 98,304 context loaded. The larger file limit is a measured practical fit,
+not an assumption that an 8 GB file is required. The final API diagnostic published a correct fix with genuine coverage and
+passes preservation checks, but its README overgeneralizes terminal states.
+Context controls are complete; none establishes unattended reliability.
+[Exact candidate configuration](evaluations/2026-11-21-goal-investigation/supervised-candidate.json)
+records the effective sampler, full backend launch, memory and limits.
+
+After all model jobs finished, the newly downloaded stock dense 27B and
+Qwen3-Coder 30B files were removed only after their exact sizes/hashes matched.
+All other GGUF files were unchanged, including the adapted 27B and existing
+useful models. About 125.3 GiB was free at cleanup, above the 100 GiB reserve.
+
+The ordinary/bulk native coding precision comparisons did not show a consistent
+benefit from higher weight precision or F16 cache across checkpoints. Those
+small unseeded samples do not prove that precision never matters. No model has
+been quantized locally during this investigation; the new download is a public
+publisher-provided quant. Preserve the 100 GiB reserve.
+
+## Spare-PC options (not yet validated on those GPUs)
 
 Keep the P100 16 GiB server as the reference. Test the public GGUFs already
 available before spending time making custom quants or buying hardware.
@@ -11,8 +43,8 @@ available before spending time making custom quants or buying hardware.
 | Machine | First candidates | Purpose and limits |
 |---|---|---|
 | RTX 2070, 8 GB | Gemma 4 E4B Instruct Q5_K_M first; consider Q4 only if needed | Backup for smaller jobs. Gemma peaked at 4,804 MiB on the P100; fit, context and speed on the 2070 remain untested. Reserve memory for desktop use. |
-| RTX 5080, 16 GB, if available | Gemma first, then VibeForged/FableVibes | Measure faster task execution and preserve useful backup models. The desktop 5080 has the same nominal VRAM capacity as the P100, not a larger model budget. No speed multiplier has been measured. |
-| Current P100, 16 GiB | Existing VibeForged default; Gemma with focused Gitea tools as next trial | Stable reference for matched comparisons. Gemma is a promising trial, not established unattended coding reliability. |
+| RTX 5080, 16 GB, if available | Adapted27B IQ3XXS after native runtime compatibility checks; existing small files for lighter tasks | Reuse the measured P100 candidate as a starting point. The same nominal 16 GB capacity does not establish fit or speed on the 5080; those measurements remain pending. |
+| Current P100, 16 GiB | Existing VibeForged production default; adapted 27B IQ3XXS is the current supervised evaluation lead | Production default is preserved. No tested model has qualified for unattended repository work; see November 21 matrices. |
 
 Use a llama.cpp build and driver appropriate for each GPU. Do not copy the
 P100 CUDA image onto the 5080 and assume compatibility. A GGUF can move between
@@ -97,8 +129,8 @@ intermediates only after successful output verification and evidence retention.
 
 ## Evidence and references
 
-- [Current recommendation and limitations](evaluations/2026-11-19-newer-models/investigation.md)
-- [Current testing matrix](evaluations/2026-11-19-newer-models/matrix.md)
+- [Historical November 19 recommendation and limitations](evaluations/2026-11-19-newer-models/investigation.md)
+- [Historical November 19 testing matrix](evaluations/2026-11-19-newer-models/matrix.md)
 - [Exact evaluation protocol](evaluations/2026-11-19-newer-models/protocol.md)
 - [Hardware research](evaluations/2026-11-19-newer-models/hardware.md)
 - [llama.cpp quantization documentation](https://github.com/ggml-org/llama.cpp/blob/master/tools/quantize/README.md)
@@ -114,3 +146,44 @@ assistance/prose caveats. Only the 3.16 GB Qwopus Q5 file is retained from this
 new cohort, as a small helper candidate. Its 4,742 MiB P100 result is not yet a
 2070 measurement. Verify owner namespace selection and remote source navigation
 before another everyday-agent profile switch.
+
+
+### Qwen3-Coder coding-specialist control (completed; new file removed)
+
+[Qwen3-Coder 30B A3B Instruct](https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct)
+is a non-thinking agentic-coding checkpoint, distinct from the older Qwen2.5
+Coder files already tested and the general Qwen3.5/3.6 controls. Its publisher
+specifies .7 temperature, .8 top-p, top-k20 and repetition penalty 1.05.
+Native context is 262,144; the advertised 1M extension is not measured P100 capacity.
+
+A public [Unsloth IQ3_XXS](https://huggingface.co/unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF)
+is 12,848,766,112 bytes, revision `b17cb02dd882d5b6ab62fc777ad2995f19668350`,
+SHA256 `d6b85d2b6633c55be3751848acc74fab40d28d93b27dabacd96ceabe10962057`.
+The current goal downloaded and verified this file, preserving about 102.8 GiB
+free. It loaded 98,304 entirely on the P100 (no CPU fallback), with 15,348 MiB
+observed in the ordinary run. That run finished in 488 seconds but repaired
+0/6 public defects, used a test copying its own algorithm, and published no
+contribution. The paired bulk run also repaired 0/6, used a self-contained test simulation
+and published nothing (1,288 seconds including both turns and independent
+grading, 15,350 MiB observed). Both edited/original suites pass despite wrong
+behavior. Fit and faster decoding did not establish useful repository-agent
+correctness. Keep the earlier Qwen2.5 results separate and preserve the 100 GiB
+reserve. The new file was removed after exact-hash verification at final cleanup;
+its pinned public revision and results remain available for reproducibility.
+
+### Later software-speed option: speculative decoding (not measured here)
+
+The [speculative-decoding documentation at our pinned llama.cpp source](https://github.com/ggml-org/llama.cpp/blob/d3c3e242c16b8cbf51400fad410cd69b22d64f35/docs/speculative.md)
+lists `draft-mtp` and n-gram methods. The adapted file retains MTP tensors, but
+all scored runs here use ordinary decoding: retained tensors do not mean the
+feature was enabled. A later speed experiment could reuse existing weights,
+measure acceptance and memory, and repeat actual tool/coding checks before
+changing the recommended profile. No P100 speedup is established.
+
+[Upstream #25618](https://github.com/ggml-org/llama.cpp/issues/25618) reports
+nonidentical greedy outputs in quantized speculative configurations on other
+setups. That report is not a reproduced P100 defect; it is a reason to verify
+the actual configuration instead of promising unchanged output. The pinned
+documentation also says synthetic-acceptance benchmark output is not valid
+model output. Do not use synthetic acceptance to score repository-agent quality.
+This is a recorded future lead, not another cohort in the current investigation.

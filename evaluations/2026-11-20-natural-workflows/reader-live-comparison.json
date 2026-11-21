@@ -1,0 +1,19 @@
+{
+  "same_readable_text": true,
+  "old_keys": [
+    "owner",
+    "path",
+    "ref",
+    "repo",
+    "text",
+    "url"
+  ],
+  "new_metadata": {
+    "start_line": 1,
+    "end_line": 160,
+    "total_lines": 269,
+    "truncated": true,
+    "next_start_line": 161
+  },
+  "scope": "real read-only MCP bridge output; no model inference"
+}

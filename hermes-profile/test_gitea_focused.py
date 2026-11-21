@@ -18,8 +18,37 @@ class Focused(unittest.TestCase):
   for op in ['create_issue','fork_repository','create_branch','edit_file','create_pull_request']:
    schema=s['gitea_'+op]['parameters'];self.assertEqual(set(schema['required']),set(schema['properties']));self.assertFalse(schema['additionalProperties'])
   self.assertNotIn('method',s['gitea_create_pull_request']['parameters']['properties'])
+ def test_update_prose_only_maps_to_correct_native_number(self):
+  for op,tool,key in [('update_issue','issue_write','issue_number'),('update_pull_request','pull_request_write','pull_number')]:
+   self.call(op,upstream_owner='sickprodigy',upstream_repo='nicotineplus-plugins',title='Correction',body='Actual checks',**{key:10})
+   self.assertEqual(self.native.calls[-1],(tool,{'method':'update','owner':'sickprodigy','repo':'nicotineplus-plugins',key:10,'title':'Correction','body':'Actual checks'}))
+ def test_prose_update_rejects_unallowed_upstream_and_state(self):
+  self.assertIn('error',self.call('update_issue',upstream_owner='other',upstream_repo='repo',issue_number=10,title='x',body='y'))
+  self.assertIn('error',self.call('update_issue',upstream_owner='sickprodigy',upstream_repo='nicotineplus-plugins',issue_number=10,title='x',body='y',state='closed'))
+  self.assertEqual(self.native.calls,[])
  def test_missing_head_never_reaches_transport(self):
   self.assertIn('error',self.call('create_pull_request',upstream_owner='sickprodigy'));self.assertEqual(self.native.calls,[])
+ def test_forty_character_branch_uses_commit_sha_for_pr_tree(self):
+  branch='feature-'.ljust(40,'x');original=self.native
+  def transport(name,args):
+   if name.endswith('branch_read'):
+    self.native.calls.append(('branch_read',args));return [{'name':branch,'commit_sha':'a'*40}]
+   return original(name,args)
+  self.b.transport=transport
+  self.assertEqual(self.pr(head_branch=branch)['number'],11)
+  tree=next(a for n,a in self.native.calls if n=='get_repository_tree')
+  self.assertEqual(tree['tree_sha'],'a'*40)
+  self.assertEqual(self.native.calls[-1][1]['head'],'hermes-agent:'+branch)
+ def test_forty_character_root_branch_resolved_but_commit_is_unchanged(self):
+  branch='feature-'.ljust(40,'x');original=self.native
+  self.b.transport=lambda name,args:[{'name':branch,'commit':{'id':'b'*40}}] if name.endswith('branch_read') else original(name,args)
+  self.call('list_directory',owner='hermes-agent',repo=FORK,path='',ref=branch)
+  self.assertEqual(self.native.calls[-1][1]['tree_sha'],'b'*40)
+  self.call('list_directory',owner='hermes-agent',repo=FORK,path='',ref='c'*40)
+  self.assertEqual(self.native.calls[-1][1]['tree_sha'],'c'*40)
+ def test_missing_forty_character_branch_never_opens_pr(self):
+  out=self.pr(head_branch='feature-'.ljust(40,'x'))
+  self.assertIn('error',out);self.assertFalse(any(n=='pull_request_write' for n,a in self.native.calls))
  def test_wrong_upstream_blocked(self):
   self.assertIn('error',self.call('create_issue',upstream_owner='nicotineplus',upstream_repo='nicotineplus-plugins',title='title',body='body'));self.assertEqual(self.native.calls,[])
  def test_default_is_deny_writes(self):
@@ -50,6 +79,19 @@ class Focused(unittest.TestCase):
   self.assertEqual(m.block_direct_native(m.PREFIX+'issue_write',{})['action'],'block')
   self.assertIsNone(m.block_direct_native('gitea_create_issue',{}))
   self.assertIsNone(m.block_direct_native('terminal',{}))
+ def test_partial_read_retains_mcp_pagination_metadata(self):
+  payload={'content':json.dumps([{'line':160,'content':'last returned line'}]),'start_line':1,'end_line':160,'total_lines':400,'truncated':True}
+  bridge=m.Bridge(lambda name,args:json.dumps({'result':json.dumps(payload)}),[UP])
+  out=bridge.invoke('read_file',{'owner':'sickprodigy','repo':'nicotineplus-plugins','path':'README.md','ref':'main'})
+  self.assertEqual(out['total_lines'],400);self.assertTrue(out['truncated']);self.assertEqual(out['next_start_line'],161);self.assertEqual(out['text'],'160: last returned line')
+ def test_complete_read_does_not_offer_another_page(self):
+  payload={'content':'last page','start_line':301,'end_line':350,'total_lines':350,'truncated':False}
+  bridge=m.Bridge(lambda name,args:payload,[UP])
+  out=bridge.invoke('read_file',{'owner':'sickprodigy','repo':'nicotineplus-plugins','path':'README.md','ref':'main','start_line':301,'end_line':350})
+  self.assertFalse(out['truncated']);self.assertNotIn('next_start_line',out);self.assertEqual(out['end_line'],350)
+ def test_missing_metadata_does_not_invent_file_length_or_continuation(self):
+  out=self.call('read_file',owner='sickprodigy',repo='nicotineplus-plugins',path='README.md',ref='main')
+  self.assertNotIn('total_lines',out);self.assertNotIn('truncated',out);self.assertNotIn('next_start_line',out)
  def test_handler_contract_is_serialized_json(self):
   result=self.b.handle('identity',{});self.assertIsInstance(result,str);self.assertEqual(json.loads(result)['login'],'hermes-agent')
  def test_identity_does_not_return_email(self):self.assertNotIn('email',self.call('identity'))

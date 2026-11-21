@@ -4,7 +4,7 @@ No credentials, HTTP client, shell, implicit retries or model-specific defaults.
 Native tools remain registered for transport but should be hidden by toolset config.
 """
 from functools import partial
-import json
+import json,re
 from pathlib import PurePosixPath
 
 PREFIX = 'mcp__mcp_gitea_hermes__'
@@ -15,12 +15,14 @@ SPECS = {
  'repository_info': ('Read exact repository metadata, including its upstream parent if it is a fork.', {'owner':'string','repo':'string'}, {}),
  'list_branches': ('List branches of this exact Gitea repository.', {'owner':'string','repo':'string'}, {}),
  'list_directory': ('List a directory at an explicit branch or commit. For the repository root use path "" or "."; never repeat the repository name as the path.', {'owner':'string','repo':'string','path':'string','ref':'string'}, {}),
- 'read_file': ('Read bounded source text at an explicit branch or commit. Use the fork branch to verify edits.', {'owner':'string','repo':'string','path':'string','ref':'string'}, {'start_line':'integer','end_line':'integer'}),
+ 'read_file': ('Read bounded source text at an explicit branch or commit. Output preserves total_lines and truncated when supplied by MCP; use next_start_line to continue a truncated excerpt. Use the fork branch to verify edits.', {'owner':'string','repo':'string','path':'string','ref':'string'}, {'start_line':'integer','end_line':'integer'}),
  'list_issues': ('List upstream issues before creating a duplicate.', {'owner':'string','repo':'string'}, {'state':'string'}),
  'read_issue': ('Read an upstream issue by number.', {'owner':'string','repo':'string','issue_number':'integer'}, {}),
  'list_pull_requests': ('List pull requests in their destination upstream repository.', {'owner':'string','repo':'string'}, {}),
  'read_pull_request': ('Read a pull request in its destination upstream repository.', {'owner':'string','repo':'string','pull_number':'integer'}, {}),
  'create_issue': ('Create an issue in the UPSTREAM repository specified by the user, not in its working fork.', {'upstream_owner':'string','upstream_repo':'string','title':'string','body':'string'}, {}),
+ 'update_issue': ('Correct the title and body of an existing allowed upstream issue; does not change its state.', {'upstream_owner':'string','upstream_repo':'string','issue_number':'integer','title':'string','body':'string'}, {}),
+ 'update_pull_request': ('Correct the title and body of an existing allowed upstream PR; does not merge or close it.', {'upstream_owner':'string','upstream_repo':'string','pull_number':'integer','title':'string','body':'string'}, {}),
  'fork_repository': ('Create a personal fork of the specified upstream using the authenticated account. If a fork exists, inspect and reuse it instead. There is no organization argument.', {'upstream_owner':'string','upstream_repo':'string','fork_name':'string'}, {}),
  'create_branch': ('Create a new feature branch in the authenticated account\'s existing fork. All branch names are required.', {'fork_owner':'string','fork_repo':'string','branch_name':'string','base_branch':'string'}, {}),
  'edit_file': ('Commit one exact text replacement to an EXISTING feature branch in the working fork. Does not create another branch or rewrite the whole file.', {'fork_owner':'string','fork_repo':'string','branch_name':'string','path':'string','old_text':'string','new_text':'string','commit_message':'string'}, {}),
@@ -66,6 +68,23 @@ class Bridge:
   return decode(self.transport(PREFIX+name,args))
  def upstream(self,owner,repo):
   if owner+'/'+repo not in self.allowed:raise ValueError('Upstream is outside the operator-configured write allowlist: '+owner+'/'+repo)
+ def tree_ref(self,owner,repo,ref,branch_required=False):
+  # Gitea's tree endpoint interprets a 40-character ref as an object ID.
+  if len(ref)!=40 or (not branch_required and re.fullmatch(r'[0-9a-fA-F]{40}',ref)):return ref
+  previous=None
+  for page in range(1,51):
+   rows=self.native('branch_read',{'method':'list','owner':owner,'repo':repo,'per_page':100,'page':page})
+   if not isinstance(rows,list):raise ValueError('Missing branch metadata for tree lookup')
+   signature=tuple(row.get('name') for row in rows)
+   if rows and signature==previous:raise ValueError('Branch pagination did not advance')
+   previous=signature
+   for row in rows:
+    if row.get('name')!=ref:continue
+    commit=row.get('commit');sha=row.get('commit_sha') or (commit.get('sha') or commit.get('id') if isinstance(commit,dict) else None)
+    if not isinstance(sha,str) or not re.fullmatch(r'[0-9a-fA-F]{40}',sha):raise ValueError('Missing branch commit SHA')
+    return sha
+   if len(rows)<100:break
+  raise ValueError('Branch not found for tree lookup: '+ref)
  def fork(self,owner,repo,branch=None):
   me=self.native('get_me',{})
   if owner!=me.get('login'):raise ValueError('Working fork owner must be the authenticated Gitea account: '+str(me.get('login')))
@@ -98,7 +117,7 @@ class Bridge:
    elif operation=='list_branches':value=self.native('branch_read',{'method':'list',**target,'per_page':50})
    elif operation=='list_directory':
     if a['path'] in ('','.','/','./'):
-     value=self.native('get_repository_tree',{**target,'tree_sha':a['ref'],'recursive':False,'per_page':100})
+     value=self.native('get_repository_tree',{**target,'tree_sha':self.tree_ref(owner,repo,a['ref']),'recursive':False,'per_page':100})
     else:value=self.native('get_dir_contents',{**target,'path':a['path'],'ref':a['ref']})
    elif operation=='read_file':
     start=a.get('start_line',1);end=a.get('end_line',start+159)
@@ -110,7 +129,13 @@ class Bridge:
      try:lines=json.loads(text)
      except ValueError:lines=None
      if isinstance(lines,list) and all(isinstance(x,dict) and 'line' in x and 'content' in x for x in lines):text='\n'.join(str(x['line'])+': '+x['content'] for x in lines)
+    source=value
     value={'owner':owner,'repo':repo,'path':a['path'],'ref':a['ref'],'text':text,'url':self.public_url+'/'+owner+'/'+repo+'/src/branch/'+a['ref']+'/'+a['path']}
+    for key in ('start_line','end_line','total_lines','truncated'):
+     if key in source:value[key]=source[key]
+    last=source.get('end_line');total=source.get('total_lines')
+    if source.get('truncated') is True and type(last) is int and type(total) is int and 0<last<total:
+     value['next_start_line']=last+1
    elif operation=='list_issues':value=self.native('list_issues',{**target,'state':a.get('state','open'),'per_page':50})
    elif operation=='read_issue':value=self.native('issue_read',{'method':'get',**target,'issue_number':a['issue_number']})
    elif operation=='list_pull_requests':value=self.native('list_pull_requests',{**target,'state':'open','per_page':50})
@@ -118,6 +143,10 @@ class Bridge:
    elif operation=='create_issue':
     self.upstream(a['upstream_owner'],a['upstream_repo'])
     value=self.native('issue_write',{'method':'create','owner':a['upstream_owner'],'repo':a['upstream_repo'],'title':a['title'],'body':a['body']})
+   elif operation in ('update_issue','update_pull_request'):
+    self.upstream(a['upstream_owner'],a['upstream_repo'])
+    number_key='issue_number' if operation=='update_issue' else 'pull_number'
+    value=self.native('issue_write' if operation=='update_issue' else 'pull_request_write',{'method':'update','owner':a['upstream_owner'],'repo':a['upstream_repo'],number_key:a[number_key],'title':a['title'],'body':a['body']})
    elif operation=='fork_repository':
     self.upstream(a['upstream_owner'],a['upstream_repo'])
     value=self.native('repo_write',{'method':'fork','owner':a['upstream_owner'],'repo':a['upstream_repo'],'name':a['fork_name']})
@@ -133,7 +162,7 @@ class Bridge:
    elif operation=='create_pull_request':
     self.upstream(a['upstream_owner'],a['upstream_repo']);_,parent=self.fork(a['fork_owner'],a['fork_repo'],a['head_branch'])
     if parent!=a['upstream_owner']+'/'+a['upstream_repo']:raise ValueError('PR upstream does not match this fork\'s parent')
-    self.native('get_repository_tree',{'owner':a['fork_owner'],'repo':a['fork_repo'],'tree_sha':a['head_branch'],'recursive':False,'per_page':1})
+    self.native('get_repository_tree',{'owner':a['fork_owner'],'repo':a['fork_repo'],'tree_sha':self.tree_ref(a['fork_owner'],a['fork_repo'],a['head_branch'],True),'recursive':False,'per_page':1})
     value=self.native('pull_request_write',{'method':'create','owner':a['upstream_owner'],'repo':a['upstream_repo'],'head':a['fork_owner']+':'+a['head_branch'],'base':a['base_branch'],'title':a['title'],'body':a['body']})
    else:raise ValueError('Unknown operation')
    return self.urls(value)

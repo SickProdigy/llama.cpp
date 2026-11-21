@@ -20,6 +20,12 @@ Directory reads use the repository tree for empty, `.`, `/` and `./` root paths;
 the native directory reader rejects both `.` and an empty path.
 ordinary paths are passed through unchanged.
 
+Version 0.1.4 also preserves the MCP reader's `start_line`, `end_line`,
+`total_lines` and `truncated` fields. A truncated excerpt with valid line
+metadata supplies `next_start_line` so the model can continue the remote read.
+No extra fetch or content search happens automatically. This revision needs a
+separate model comparison; archived version 0.1.3 results remain unchanged.
+
 ## Requirements and configuration
 
 Use this only for the paired `hermes-agent` instance. Native MCP discovery must
@@ -74,3 +80,20 @@ fork ownership/parent checks, default-branch protection, exact edits, error
 propagation, response serialization, readable text and public links. Real MCP
 preflight and model-controlled writes are evaluated separately; mocked transport
 checks are not evidence of a successful remote mutation.
+
+Version 0.1.5 also exposes explicit upstream issue/PR prose updates. These tools
+require a number, title and body, use the same upstream write allowlist, and do
+not expose state changes or merge operations. They support correcting a report
+or updating an existing contribution without creating duplicate resources.
+
+For local coding plus MCP publication, see the optional
+[selected-workspace publisher](../gitea-workspace/README.md). Its session needs
+an actual selected checkout; Gitea tools alone do not create a local project.
+
+Version 0.1.6 resolves 40-character branch names to their actual commit SHA
+before root-tree reads and PR preflight. The installed tree endpoint rejects
+such branch names even when they exist; 39/41-character controls and actual
+commit SHAs work. Resolution uses bounded paginated native branch metadata,
+without renaming the branch or changing write authority. Twenty-eight unit
+checks cover this profile. The dated native SDK smoke verifies a scoped
+40-character branch, two publisher commits and correct upstream PR.

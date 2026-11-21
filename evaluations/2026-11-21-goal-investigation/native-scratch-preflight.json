@@ -1,0 +1,44 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "check": "Strict checkout-only root denies the advertised native scratch path",
+      "passed": true
+    },
+    {
+      "check": "Native scratch writes work with two exact allowed roots",
+      "passed": true
+    },
+    {
+      "check": "Native scratch patches work",
+      "passed": true
+    },
+    {
+      "check": "Selected checkout writes remain allowed",
+      "passed": true
+    },
+    {
+      "check": "Profile credentials remain denied",
+      "passed": true
+    },
+    {
+      "check": "Unrelated profile configuration remains outside the safe roots",
+      "passed": true
+    },
+    {
+      "check": "Sibling-prefix paths remain denied",
+      "passed": true
+    },
+    {
+      "check": "Scratch symlink cannot bypass the protected credential boundary",
+      "passed": true
+    },
+    {
+      "check": "Native terminal executes the temporary scratch probe",
+      "passed": true
+    }
+  ],
+  "recommended_write_safe_root": "/workspace:/opt/data/cache/scratch",
+  "native_file_safety_sha256": "d29b1880f4bb61a0d431d73f9dbda78d3f0af79a09ab14ad19d442c960346d5c",
+  "scope": "Isolated operator preflight, no model inference or production/profile edits. Scored model trials retain their original checkout-only policy."
+}
