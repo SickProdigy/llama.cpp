@@ -6,20 +6,27 @@ This file tracks which local GGUF models can actually complete the Hermes Agent 
 
 Future options: [local quantization and spare-GPU testing](MODEL-OPTIONS.md).
 
-## November 22, 2026 compact-review follow-up — in progress
+## November 22, 2026 compact-review follow-up — parts 1 and 2 delivered
 
-[Part 1](evaluations/2026-11-22-compact-review/part1.md) is delivered: complete
-publication diffs, relevant actual-source context and compact execution evidence
-reduce fifteen historical packets from about 34–45k to 3.8–7.3k text tokens on the
-same tokenizer (median 87% reduction). Nineteen offline framework checks pass.
-This is not a reviewer speed/accuracy or fresh-workflow result.
+**Review is faster; no tested reviewer qualifies as a correctness gate.**
+The [Part 2 comparison](evaluations/2026-11-22-compact-review/part2.md) covers
+27B, Qwopus4B and FableVibes, including partial GPU offload beside the 27B.
+Median review times range from 12 to 65 seconds; all five profiles miss the
+four predefined faulty proposals. FableVibes alone finds one independently
+confirmed additional test gap, mixed with unsupported claims. Valid JSON,
+passing own tests and blocked publication do not establish correctness.
 
-The [staged plan](evaluations/2026-11-22-compact-review/plan.md) next compares timed
-reviewers and then tests fresh native bug workflows. Part 1 uses only the current
-VibeForged Q4 tokenizer at 98,304 loaded context: no model inference, first-call
-latency/VRAM measurement or Gitea write occurs. Production settings and all 29
-models are unchanged; Hermes-Codex remains untouched. The new library is optional
-experimental source, not a deployed publication policy.
+[Part 1](evaluations/2026-11-22-compact-review/part1.md) reduced fifteen historical
+packets by a median 87% in text tokens. The new protocol now delivers all 41
+recorded review responses within its deadline; changes to packet content, output
+cap and schema handling are evaluated together. Both partial-offload reviewers
+fit with measured GPU headroom, but their solo speed/quality does not carry over
+unchanged. The tested 19K actor cache survives self-review on this pinned server.
+
+The [staged plan](evaluations/2026-11-22-compact-review/plan.md) still requires
+fresh native workflows and independent publication audits. The experimental
+library is not deployed. Original VibeForged runtime/profile and all 29 models
+are preserved, about 124 GiB remains free, and Hermes-Codex was not restarted.
 
 ## November 22, 2026 everyday native Hermes pilot
 

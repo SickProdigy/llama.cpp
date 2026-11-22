@@ -1,0 +1,19 @@
+{
+  "original_ids_images_configurations_match": true,
+  "all_original_containers_running": true,
+  "hermes_codex_snapshot_identical": true,
+  "four_profile_hashes_match": true,
+  "model_inventory_size_mtime_match": true,
+  "retained_models": 29,
+  "free_bytes": 133347897344,
+  "reserve_minimum_bytes": 107374182400,
+  "backend_alias_context_match": true,
+  "restoration_per_gpu_controller": [
+    true,
+    true,
+    true
+  ],
+  "initial_aborted_controller_restored": true,
+  "owned_helpers_and_internal_network_removed": true,
+  "scope": "Model inventory metadata for29files; full SHA verified for tested27B/4B against prior manifests and recorded for retainedFable. No claim of full rehash of all29files."
+}

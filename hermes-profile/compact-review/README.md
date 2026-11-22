@@ -1,9 +1,9 @@
 # Compact publication review — experimental primitives
 
-This library is **not installed in the production Hermes profile**. Part 1
-implements packet construction and offline admission checks; native transport,
-trusted Docker execution integration, timed reviewers and fresh workflows remain
-later stages. See the [staged evaluation](../../evaluations/2026-11-22-compact-review/plan.md).
+This library is **not installed in the production Hermes profile**. It includes
+packet/admission primitives, a trusted Docker test adapter, timed response capture
+and an experimental MCP publication adapter. Native workflow integration and
+independent fresh-workflow qualification remain separate evaluation stages. See the [staged evaluation](../../evaluations/2026-11-22-compact-review/plan.md).
 
 ## Packet
 
@@ -16,8 +16,9 @@ owner profiles, raw skill history, private graders, reference fixes or future
 prompts. Oversized packets block; nothing is silently cut to fit.
 
 The default limit is 32 KiB of compact JSON. This is a byte bound, not a universal
-token count. The eventual transport must measure the actual reviewer tokenizer,
-rendered chat input and output reserve. AST indexing must run in a Python version
+token count. The controller must measure the actual reviewer tokenizer, rendered chat input
+and output reserve; the calibration uses `/apply-template` and `/tokenize` and
+checks the backend-reported usage. AST indexing must run in a Python version
 compatible with the source. Context retrieval is a heuristic: it does not prove
 all relevant dependencies are visible. A reviewer can request more context.
 
@@ -31,9 +32,12 @@ in the regression suite is deliberately public and must never be deployed.
 
 `run_suite()` executes that fixed argv, records the actual return code/timeout
 and compact output digest/tail, verifies source stability and signs the receipt.
-It does not itself provide a sandbox: the later adapter must run against the
-exact proposed publication snapshot, read-only, without owner credentials,
-private graders, profile or Docker socket. A callback or inventory supplied by
+It does not itself provide a sandbox. `DockerExecution` runs the exact proposed
+publication snapshot read-only, as UID1000, network-none, without capabilities,
+owner credentials, private graders, profile or Docker socket, with CPU/memory/time
+bounds. The adapter itself is trusted and needs Docker access. A container hard
+kill is a nonzero failed execution; the receipt timeout flag specifically records
+a host subprocess timeout, not a diagnosis of every killed child. A callback or inventory supplied by
 the model would violate this boundary and provide no execution guarantee.
 
 `admission()` checks authenticated latest receipts for the same source and
@@ -51,11 +55,11 @@ signed exit-zero result is not a semantic oracle.
 ## Tests and historical size replay
 
 ```bash
-python3 -m unittest discover -s hermes-profile/compact-review -p 'test_*.py' -v
+PYTHONDONTWRITEBYTECODE=1 python3 -m pytest -q -p no:cacheprovider hermes-profile/compact-review
 ```
 
-The public evaluation records the same 19 checks in the pinned Python 3.14.9
-image. Negative cases cover forged/stale evidence, failing latest tests,
+Part 1 records 19 checks. The expanded suite has 30 checks plus 20 subtests
+in the pinned Python 3.14.9 / pytest9.1.1 image. Negative cases cover forged/stale evidence, failing latest tests,
 timeouts, source drift, omitted coverage, bad paths, malformed reviews and
 missing documentation/test assessments. The positive execution case runs an
 actual unittest against its bound temporary source tree.
@@ -69,6 +73,32 @@ review request and labeled as observations, not authenticated new execution.
 Diagnostic replay permits measuring oversize packets, while default admission
 still refuses them. Historical packets cannot authorize a new publication.
 
-Source inventories currently cover text files only. A future adapter must preserve
-exact byte/newline content when decoding its inventory, and must reject unsupported
-binary mutations rather than claiming they were reviewed.
+Source inventories currently cover text files only. The Docker adapter decodes
+raw UTF-8 bytes without newline translation and rejects symlinks/binary source.
+File modes and the actual remote Git tree need independent publication audits.
+
+## Timed transport and publication adapter
+
+`TimedReview` preserves the whole nonstreaming body after caller expiry. Late,
+truncated, malformed or non-stop responses cannot authorize publication. Capture
+must finish before a calibration case is replayed or its server is removed;
+a socket-read timeout is not a universal backend cancellation deadline. An outer
+trusted controller must enforce its stage guard and restore the original runtime.
+`request_body()` binds a simple JSON schema to the packet ID. Constrained valid
+JSON does not establish valid reasoning or supported findings.
+
+`PublicationGate` materializes the actual cumulative MCP payload over the
+pristine base and already accepted remote writes, runs the project suite against
+that snapshot, and requests review. It does not substitute a local scratch tree.
+The outer MCP scope checks ownership, branch, paths and turn lease first; only a
+successful matching remote write updates the gate's published state. Signing
+keys stay outside actor/test mounts. Never expose this trusted Docker adapter
+or its socket through an actor file or command tool.
+
+Full mode requires explicit supported test/docs assessments and no unresolved
+findings. `docs_only_control` is an experimental comparison control: genuine
+project tests and an external documentation check are common to both arms, while
+behavioral/coverage findings are withheld from the control. It is not full review
+qualification or a no-review latency measurement. Both modes can still miss bugs
+and accept poor tests or false documentation; independent audits are required.
+The native MCP adapter has not yet completed the fresh-workflow stage.

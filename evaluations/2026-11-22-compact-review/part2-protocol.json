@@ -1,0 +1,40 @@
+{
+  "stage": 2,
+  "development_only": true,
+  "comparison": [
+    "27b full GPU ctx98304",
+    "4b full GPU solo ctx16384",
+    "4b 12 GPU layers co-resident with27b ctx16384 if >=1024MiB free"
+  ],
+  "cases": 7,
+  "warm_repeat": 1,
+  "execution_failure_control_without_inference": 1,
+  "order": "fixed frozen seed20261122 same across profiles",
+  "caller_seconds": 240,
+  "capture_socket_seconds": 600,
+  "join_seconds_after_caller": 620,
+  "overall_guard_seconds": 5400,
+  "max_packet_bytes": 32768,
+  "max_rendered_input_tokens": 10000,
+  "max_output_tokens": 1024,
+  "sampler": {
+    "temperature": 0.8,
+    "top_p": 1,
+    "top_k": 0,
+    "min_p": 0,
+    "repeat_penalty": 1,
+    "presence_penalty": 0,
+    "seed": 20261122,
+    "enable_thinking": false
+  },
+  "schema": "packet-ID-bound JSON schema actual pinned runtime preflight before scored cases",
+  "accuracy": "Manual independent gold comparison after response capture. Timeouts, context requests and malformed answers are not semantic detections; approvals with inadequate checks do not pass gate. Exact bug recall separately from generic revision or false positives. Three clean controls include limited-contract room input case. No significance claim.",
+  "cache_probes": "Synthetic actor-prefix cold/warm/review interference and co-residence; not task success. Model loads warm OS disk cache; after full file SHA reads.",
+  "source": "https://raw.githubusercontent.com/ggml-org/llama.cpp/d3c3e242c/tools/server/README.md",
+  "restore": "finally remove owned test servers and restart exact original backend and Hermes; Codex never stopped; verify baseline ID/image/config and Codex entire state",
+  "publication": "none in calibration; failure-control test exit1 blocks without critic call",
+  "frozen_corpus_sha256": "f58bab6dd6c16c927a39361c40ecb18a485be5f0f4025344f3606ffff16d6c50",
+  "framework_validation": "24 passed,20 subtests in pinned Python3.14.9 pytest9.1.1 read-only network-none container",
+  "host_mem_available_kib_before": 35323804,
+  "models_disk_reserve_gib_minimum": 100
+}

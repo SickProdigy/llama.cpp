@@ -1,0 +1,52 @@
+{
+  "27b": {
+    "cases": 7,
+    "delivered": 7,
+    "valid_stop_responses": 7,
+    "median_seconds": 65.034464,
+    "min_seconds": 28.877755,
+    "max_seconds": 79.481581,
+    "warm_repeat_excluded": true,
+    "transport_validity_is_not_semantic_accuracy": true
+  },
+  "4b": {
+    "cases": 7,
+    "delivered": 7,
+    "valid_stop_responses": 7,
+    "median_seconds": 12.235768,
+    "min_seconds": 6.369579,
+    "max_seconds": 18.509574,
+    "warm_repeat_excluded": true,
+    "transport_validity_is_not_semantic_accuracy": true
+  },
+  "4b-co": {
+    "cases": 7,
+    "delivered": 7,
+    "valid_stop_responses": 7,
+    "median_seconds": 38.162917,
+    "min_seconds": 24.979199,
+    "max_seconds": 52.218494,
+    "warm_repeat_excluded": true,
+    "transport_validity_is_not_semantic_accuracy": true
+  },
+  "fable14": {
+    "cases": 7,
+    "delivered": 7,
+    "valid_stop_responses": 7,
+    "median_seconds": 15.797077,
+    "min_seconds": 6.862242,
+    "max_seconds": 26.991674,
+    "warm_repeat_excluded": true,
+    "transport_validity_is_not_semantic_accuracy": true
+  },
+  "fable14-co": {
+    "cases": 7,
+    "delivered": 7,
+    "valid_stop_responses": 7,
+    "median_seconds": 57.462673,
+    "min_seconds": 28.920657,
+    "max_seconds": 87.076985,
+    "warm_repeat_excluded": true,
+    "transport_validity_is_not_semantic_accuracy": true
+  }
+}

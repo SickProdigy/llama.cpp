@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "framework_tests": 30,
+  "subtests": 20,
+  "native_python": "3.14.9",
+  "pytest": "9.1.1",
+  "image": "sha256:97b08c5ce375113809299fc8c5dd86ae60600f618158d15fe4ad5fc9d7f4b7ae",
+  "source_sha256": {
+    "hermes-profile/compact-review/docker_execution.py": "e7614ecb789722d80d35d852e43a5324573ca80b7f2b6c15c9aba07f47dde7d7",
+    "hermes-profile/compact-review/measure_historical_packets.py": "0402abb0efe2018afb505bfd4ced37b04f63fce52502e1b81d755ecdb30c44ce",
+    "hermes-profile/compact-review/publication_gate.py": "4829477982956563da434a4c8fc56e53343ee688f1d39f2bcbf282df3e1a3810",
+    "hermes-profile/compact-review/review_packet.py": "b684d94e157d349a5ea900df29ca954a606a348493beb93c2823228b3148988c",
+    "hermes-profile/compact-review/review_transport.py": "b2b65084672da0e24994f70b56dd222acc56164dcde7cd7a44e189af54c64eca",
+    "hermes-profile/compact-review/test_publication_gate.py": "5a75941843b131848fc7f45a16f58892f7bf41d55a9ec00985b154cf40e1e6a5",
+    "hermes-profile/compact-review/test_review_packet.py": "e0bd3f6826bd0a70d7468be5c808513792e3cf77c411c87f2c7f6f5a69f30028",
+    "hermes-profile/compact-review/test_review_transport.py": "e686a23d063b4b9d3d89f0979b1b5a34c2ee8b17a0da8903a5cf75b204cdfff3"
+  },
+  "scope": "Framework controls, real fixture suites and loopback transport; not model review accuracy or native MCP qualification."
+}

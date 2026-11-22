@@ -1,0 +1,38 @@
+{
+  "status": "selected diagnostic configuration; no reviewer qualified; complete native protocol/code preflight still required before fresh inference",
+  "main_model": "Qwen3.8-27B-hermes-IQ3_XXS.gguf",
+  "main_alias": "qwen3.8-27b-hermes-adapted-iq3xxs",
+  "review_model": "same27B isolated role request",
+  "context": 98304,
+  "cache_k": "q4_0",
+  "cache_v": "q4_0",
+  "gpu_layers": 999,
+  "batch": 512,
+  "ubatch": 128,
+  "backend_image": "sha256:0eee1b477a28c1bd8806885d50447caa302eef5c977846f1177330def5fcd185",
+  "test_image": "sha256:97b08c5ce375113809299fc8c5dd86ae60600f618158d15fe4ad5fc9d7f4b7ae",
+  "packet_max_bytes": 32768,
+  "review_rendered_input_max": 10000,
+  "review_output_cap": 1024,
+  "review_caller_seconds": 240,
+  "sampler": {
+    "temperature": 0.8,
+    "top_p": 1,
+    "top_k": 0,
+    "min_p": 0,
+    "repeat_penalty": 1,
+    "presence_penalty": 0,
+    "seed": 20261122,
+    "enable_thinking": false
+  },
+  "rationale": "No predefined detection winner. Choose simplest measured path with19Kcache retained, no swaps and fewer unsupported factual claims than small reviewers; not an accuracy win over soloFable or unattended qualification.",
+  "source_context_change_planned": "Generic static class declarations, source-backed, bounded, to expose unchanged GUI metadata; implement/size/test/freeze before native calls. Distinct from Part2 context policy.",
+  "comparison": "common genuine execution+external docs control versus full behavioral/test/docs feedback; same critic and caller policy across arms",
+  "publication": "private disposable upstream/personal forks, no merges, close issues; final independent source/preservation/tests/docs/claims/actual remote tree audits; operator never sends grader corrections",
+  "deadline_basis": "27B maximum79.5s for measured1.4\u20135.6k inputs with <=643observed output tokens; retain240s for next-stage <=10kinput/1024output bound. This is headroom from observed rates, not a guaranteed timeout-free bound.",
+  "prepublication_required_suites_planned": [
+    "project",
+    "immutable_public_original_tests"
+  ],
+  "private_new_behavior_grader": "Independent posthoc audit only, never sent to actor/reviewer"
+}

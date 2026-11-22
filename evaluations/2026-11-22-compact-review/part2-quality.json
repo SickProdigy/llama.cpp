@@ -1,0 +1,201 @@
+{
+  "scoring": "Require identification of an actual seeded defect, not generic revision, invented coverage claims, context request or timeout. Clean-control blocking reported separately; cosmetic true nit distinguished from false factual claim.",
+  "profiles": {
+    "27b": {
+      "predefined_faults_detected": 0,
+      "predefined_faulty_proposals": 4,
+      "clean_controls_approved": 2,
+      "clean_controls": 3,
+      "confirmed_additional_test_gap": false,
+      "additional_concern_not_confirmed_active_bug": false
+    },
+    "4b": {
+      "predefined_faults_detected": 0,
+      "predefined_faulty_proposals": 4,
+      "clean_controls_approved": 1,
+      "clean_controls": 3,
+      "confirmed_additional_test_gap": false,
+      "additional_concern_not_confirmed_active_bug": false
+    },
+    "4b-co": {
+      "predefined_faults_detected": 0,
+      "predefined_faulty_proposals": 4,
+      "clean_controls_approved": 2,
+      "clean_controls": 3,
+      "confirmed_additional_test_gap": false,
+      "additional_concern_not_confirmed_active_bug": false
+    },
+    "fable14": {
+      "predefined_faults_detected": 0,
+      "predefined_faulty_proposals": 4,
+      "clean_controls_approved": 3,
+      "clean_controls": 3,
+      "confirmed_additional_test_gap": true,
+      "additional_concern_not_confirmed_active_bug": false
+    },
+    "fable14-co": {
+      "predefined_faults_detected": 0,
+      "predefined_faulty_proposals": 4,
+      "clean_controls_approved": 2,
+      "clean_controls": 3,
+      "confirmed_additional_test_gap": false,
+      "additional_concern_not_confirmed_active_bug": true
+    }
+  },
+  "manual_case_notes": {
+    "basis": "Independent source/contract comparison after each captured response; expected defects frozen before inference. Not fed to any model.",
+    "scoring": "Require identification of an actual seeded defect, not generic revision, invented coverage claims, context request or timeout. Clean-control blocking reported separately; cosmetic true nit distinguished from false factual claim.",
+    "27b": {
+      "case-b5da32b088": {
+        "seeded_detection": false,
+        "note": "Approves despite supplied loaded_notification resetting stopping flag; old serialized waiter can resume after reload."
+      },
+      "case-d2d9e1f134": {
+        "seeded_detection": false,
+        "note": "Approves despite unresolved relative same-origin redirect behavior."
+      },
+      "case-0a5d21cdf8": {
+        "seeded_detection": false,
+        "note": "Approves false 50-hop-limit and relative-redirect documentation."
+      },
+      "case-3e19435225": {
+        "seeded_detection": false,
+        "note": "Approves missing HTTPS request initialization and false certificate-error predicate documentation."
+      },
+      "case-2dba2454d8": {
+        "clean_approved": false,
+        "blocking_kind": "true cosmetic nit, not behavioral defect",
+        "note": "Missing space in error text is real but outside predefined behavioral acceptance criterion. Do not call this a hallucinated fact."
+      },
+      "case-aeb2405681": {
+        "clean_approved": true
+      },
+      "case-5d88c569d2": {
+        "clean_approved": true,
+        "caveat": "Normal GUI string inputs, not arbitrary None list entries."
+      }
+    },
+    "4b": {
+      "case-b5da32b088": {
+        "seeded_detection": false,
+        "unsupported_findings": true,
+        "note": "Asks for documentation of a nonexistent newly added disabled import mode and timer coverage, rather than detecting lifecycle reload. Revision alone is not true positive."
+      },
+      "case-d2d9e1f134": {
+        "seeded_detection": false
+      },
+      "case-0a5d21cdf8": {
+        "seeded_detection": false,
+        "unsupported_findings": true,
+        "note": "Misreads README does-not-strip same-origin headers as claiming cross-origin stripping; neither expected docs defect identified. Correct behavior is preserving same-origin headers and refusing cross-origin forwarding."
+      },
+      "case-3e19435225": {
+        "seeded_detection": false
+      },
+      "case-2dba2454d8": {
+        "clean_approved": false,
+        "blocking_kind": "false factual claim",
+        "note": "Claims missing None/non-string and decimal-string tests despite explicit None/1.5/True/False and string 12 cases in supplied test patch."
+      },
+      "case-aeb2405681": {
+        "clean_approved": true
+      },
+      "case-5d88c569d2": {
+        "clean_approved": false,
+        "blocking_kind": "unrequired documentation specificity and unsupported coverage claims",
+        "note": "Existing README already distinguishes CSV default_rooms and JSON group lists. Naming new tests and documenting a specific comma example are not required for existing accurate interface docs; no concrete inconsistency shown."
+      }
+    },
+    "limits": [
+      "Four buggy proposals share Arr code and are not independent bug samples.",
+      "Clean controls are bounded contracts, not proofs of general correctness.",
+      "Needs-context is operationally blocked but is not itself a false code-defect assertion or valid detection.",
+      "Warm repeats and cache interference repeats are excluded from accuracy sample counts."
+    ],
+    "4b-co": {
+      "case-b5da32b088": {
+        "seeded_detection": false,
+        "note": "Approves the known faulty proposal without a finding."
+      },
+      "case-d2d9e1f134": {
+        "seeded_detection": false,
+        "note": "Approves the known faulty proposal without a finding."
+      },
+      "case-0a5d21cdf8": {
+        "seeded_detection": false,
+        "note": "Approves the known faulty proposal without a finding."
+      },
+      "case-3e19435225": {
+        "seeded_detection": false,
+        "note": "Approves the known faulty proposal without a finding."
+      },
+      "case-5d88c569d2": {
+        "clean_approved": true,
+        "note": "No unresolved finding."
+      },
+      "case-2dba2454d8": {
+        "clean_approved": false,
+        "note": "Unsupported decimal-string claim on integer control; int(\"12\") succeeds and is explicitly tested."
+      },
+      "case-aeb2405681": {
+        "clean_approved": true,
+        "note": "No unresolved finding."
+      }
+    },
+    "fable14": {
+      "case-b5da32b088": {
+        "seeded_detection": false
+      },
+      "case-d2d9e1f134": {
+        "seeded_detection": false
+      },
+      "case-0a5d21cdf8": {
+        "seeded_detection": false,
+        "confirmed_additional_test_gap": true,
+        "note": "One valid extra finding: scheme-only test also changes port, so it misses removal of scheme comparison. Independent native mutant retains86pass+2subtests while direct native same-host/port scheme probe becomesTrue. Wrong original-port detail8989 and two unsupported claims kept separate. Neither predeclared docs defect detected."
+      },
+      "case-3e19435225": {
+        "seeded_detection": false
+      },
+      "case-5d88c569d2": {
+        "clean_approved": true
+      },
+      "case-2dba2454d8": {
+        "clean_approved": true
+      },
+      "case-aeb2405681": {
+        "clean_approved": true
+      }
+    },
+    "fable14-co": {
+      "case-b5da32b088": {
+        "seeded_detection": false
+      },
+      "case-d2d9e1f134": {
+        "seeded_detection": false
+      },
+      "case-0a5d21cdf8": {
+        "seeded_detection": false,
+        "additional_coverage_concern": "No multi-hop-chain regression test. Source inspection supports absence; not a predefined seeded detection or confirmed active-code bug.",
+        "false_factual_claim": "Says same-origin test never makes second request; source explicitly checks len(headers)==2 and redirected request header.",
+        "unsupported_documentation_judgment": "Missing test alone does not prove the claimed chain behavior false. Existing50-hop/relative claims are defective, but this review does not identify why."
+      },
+      "case-3e19435225": {
+        "seeded_detection": false
+      },
+      "case-5d88c569d2": {
+        "clean_approved": false,
+        "blocking_kind": "unsupported revision with no findings",
+        "note": "Valid JSON says revise while findings are empty and both checks positive. Gate must block; cannot normalize this into approval after seeing the result."
+      },
+      "case-2dba2454d8": {
+        "clean_approved": true
+      },
+      "case-aeb2405681": {
+        "clean_approved": true
+      }
+    }
+  },
+  "independent_supplemental_proof": "unseeded-scheme-test-audit in evidence archive",
+  "not_fed_to_any_model": true
+}

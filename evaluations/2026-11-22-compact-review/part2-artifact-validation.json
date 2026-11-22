@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "manifest_files_verified": 648,
+  "source_packets_verified": 8,
+  "complete_model_reviews": 41,
+  "scored_reviews": 35,
+  "warm_repeats_excluded": 5,
+  "cache_interference_review_excluded": 1,
+  "failed_suite_control_blocked_without_critic": true,
+  "packet_token_usage_matches_template_measurement": true,
+  "not_a_new_project_test_run": true,
+  "not_semantic_correctness_or_public_MAC_verification": true
+}

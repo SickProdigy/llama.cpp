@@ -8,7 +8,7 @@ missing experiments are not.
 | Part | Deliverable | State |
 |---|---|---|
 | 1 | Bounded exact-mutation packets, compact source-backed evidence, offline execution/admission controls and historical size measurements | Complete; [report](part1.md) |
-| 2 | Timed reviewer comparison, transport/timeout and output-schema checks, detection/false-positive evaluation, cache/switch cost and frozen next-stage configuration | Pending |
+| 2 | Timed reviewer comparison, transport/timeout and output-schema checks, detection/false-positive evaluation, cache/switch cost and selected next-stage configuration | Complete; [report](part2.md) |
 | 3 | Fresh symptom-led native Hermes workflows with dependent followups, real Gitea issues/forks/commits/PRs and independent whole-workflow audit | Pending |
 
 ## Part 2
@@ -41,8 +41,10 @@ review settings and budgets before the scored calls. Preserve normal native
 persistence, memory/skill approval and real selected-checkout context. Followups
 must use the same logical session; report actual compaction/retention behavior.
 
-Use fresh paired unassisted/review workflows when assessing contribution from
-review. Give the same symptom-led requests and dependent followups across arms;
+Use fresh paired control/full-review workflows when assessing contribution from
+behavioral review. Both arms require genuine execution and an external
+documentation check; the control withholds behavioral/coverage feedback. This
+common safety baseline is not a pure no-review latency measurement. Give the same symptom-led requests and dependent followups across arms;
 never send operator grader findings or corrective task hints to either model.
 Review-generated findings are the declared treatment, not private-test feedback.
 Independently inspect actual code, unchanged behavior, relevant regressions,
