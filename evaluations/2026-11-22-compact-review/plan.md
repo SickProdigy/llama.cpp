@@ -9,7 +9,8 @@ missing experiments are not.
 |---|---|---|
 | 1 | Bounded exact-mutation packets, compact source-backed evidence, offline execution/admission controls and historical size measurements | Complete; [report](part1.md) |
 | 2 | Timed reviewer comparison, transport/timeout and output-schema checks, detection/false-positive evaluation, cache/switch cost and selected next-stage configuration | Complete; [report](part2.md) |
-| 3 | Fresh symptom-led native Hermes workflows with dependent followups, real Gitea issues/forks/commits/PRs and independent whole-workflow audit | Pending |
+| 3a | First fresh family, two arms and six turns, real publication and independent source/test/docs/claims audit | Complete; [report](part3a.md) |
+| 3b | Second fresh family under the same frozen code, restoration, audit and delivery | Pending |
 
 ## Part 2
 

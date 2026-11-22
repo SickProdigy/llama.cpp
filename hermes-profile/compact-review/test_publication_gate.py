@@ -71,3 +71,12 @@ def test_rendered_bound_blocks_before_reviewer(tmp_path):
         with pytest.raises(ReviewBlocked,match='Rendered reviewer input'):
             g.check('create_or_update_file',{'files':[{'path':'README.md','content':'Returns the sum.\n'}]})
     assert Approved.calls==0 and not g.published
+
+
+def test_static_class_metadata_is_actual_source():
+    from review_packet import related_code_context
+    original='class Plugin:\n    settings = {"enabled": False}\n    metasettings = {"enabled": {"type": "bool"}}\n    def run(self): return 1\n'
+    changed=original.replace('return 1','return 2')
+    rows=related_code_context({'p.py':original},{'p.py':changed},{'p.py':changed},class_declarations=True)
+    assert any('metasettings' in r['symbol'] and '"type": "bool"' in r['content'] for r in rows)
+    assert all(r['candidate_file_sha256'] for r in rows)

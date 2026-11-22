@@ -1,5 +1,5 @@
 {
-  "status": "selected diagnostic configuration; no reviewer qualified; complete native protocol/code preflight still required before fresh inference",
+  "status": "First fresh family complete and restored; second family still required. No reviewer qualified; diagnostic configuration only.",
   "main_model": "Qwen3.8-27B-hermes-IQ3_XXS.gguf",
   "main_alias": "qwen3.8-27b-hermes-adapted-iq3xxs",
   "review_model": "same27B isolated role request",
@@ -26,7 +26,7 @@
     "enable_thinking": false
   },
   "rationale": "No predefined detection winner. Choose simplest measured path with19Kcache retained, no swaps and fewer unsupported factual claims than small reviewers; not an accuracy win over soloFable or unattended qualification.",
-  "source_context_change_planned": "Generic static class declarations, source-backed, bounded, to expose unchanged GUI metadata; implement/size/test/freeze before native calls. Distinct from Part2 context policy.",
+  "source_context_change_planned": "Implemented, tested and frozen before fresh calls: optional generic static class declarations; bounded context is not whole-program coverage.",
   "comparison": "common genuine execution+external docs control versus full behavioral/test/docs feedback; same critic and caller policy across arms",
   "publication": "private disposable upstream/personal forks, no merges, close issues; final independent source/preservation/tests/docs/claims/actual remote tree audits; operator never sends grader corrections",
   "deadline_basis": "27B maximum79.5s for measured1.4\u20135.6k inputs with <=643observed output tokens; retain240s for next-stage <=10kinput/1024output bound. This is headroom from observed rates, not a guaranteed timeout-free bound.",
@@ -34,5 +34,11 @@
     "project",
     "immutable_public_original_tests"
   ],
-  "private_new_behavior_grader": "Independent posthoc audit only, never sent to actor/reviewer"
+  "private_new_behavior_grader": "Independent posthoc audit only, never sent to actor/reviewer",
+  "sampler_scope": "Existing sampler object applies to critic requests; native main uses same sampling values with backend-default seed and normal8192 output cap.",
+  "prepublication_required_suites": [
+    "project",
+    "preservation"
+  ],
+  "suite_name_mapping": "preservation is immutable_public_original_tests from the design plan"
 }

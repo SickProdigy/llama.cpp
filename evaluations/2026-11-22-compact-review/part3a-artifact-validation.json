@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "manifest_files_verified": 1260,
+  "exact_source_packets_rebuilt": 8,
+  "complete_captures_verified": 8,
+  "admissions_verified": 8,
+  "local_and_actual_remote_grades_bound": 12,
+  "not_new_project_test_run_or_semantic_correctness": true,
+  "historic_MACs_require_private_issuer_keys": true
+}

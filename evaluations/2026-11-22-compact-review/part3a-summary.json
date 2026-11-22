@@ -1,0 +1,29 @@
+{
+  "family": "bounded_replies",
+  "turns": 6,
+  "workflows": 2,
+  "primary_local_actual_remote_passes": 12,
+  "whole_global_delivery_contract_passes": 0,
+  "review_calls": 8,
+  "review_approvals": 8,
+  "review_findings": 0,
+  "review_timeouts": 0,
+  "packet_bytes_min": 11121,
+  "packet_bytes_max": 21071,
+  "rendered_tokens_min": 4126,
+  "rendered_tokens_max": 6844,
+  "review_seconds_min": 62.659741,
+  "review_seconds_max": 96.339246,
+  "native_seconds": {
+    "docs": 2406.491982093954,
+    "full": 2299.3380805630004
+  },
+  "review_seconds": {
+    "docs": 292.37687900000003,
+    "full": 276.930648
+  },
+  "all_eight_prerequisites_source_log_and_private_MAC_verified": true,
+  "primary_oracle_gap_and_posthoc_scope_disclosed": true,
+  "no_causal_benefit_claim": true,
+  "remaining_goal": "second fresh family, restoration, audit and delivery"
+}

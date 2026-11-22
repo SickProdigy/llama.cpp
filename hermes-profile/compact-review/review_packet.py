@@ -123,7 +123,7 @@ def execution_summaries(receipts, *, key, required_suites, candidate_digest, env
             raise ReviewBlocked('Latest required test run failed or timed out')
     return [latest[suite] for suite in sorted(required_suites)]
 
-def related_code_context(base, proposed, changes):
+def related_code_context(base, proposed, changes, *, class_declarations=False):
     """One-hop actual-source context, selected without bug-specific names.
 
     Include unchanged writers of instance attributes read by changed functions,
@@ -181,13 +181,13 @@ def related_code_context(base, proposed, changes):
                 if not isinstance(node,(ast.Assign,ast.AnnAssign)):continue
                 targets = node.targets if isinstance(node,ast.Assign) else [node.target]
                 names = {n.id for target in targets for n in ast.walk(target) if isinstance(n,ast.Name)}
-                if names & wanted_fields.get(cls.name,set()):
+                if class_declarations or names & wanted_fields.get(cls.name,set()):
                     line,content=excerpt(after,node)
                     output.append({'path':path,'symbol':cls.name+'.'+','.join(sorted(names)),'line':line,'candidate_file_sha256':sha(after.encode()),'content':content})
     return output
 
 def build_packet(*, tasks, base_revision, base, changes, context_paths=(),
-                 documentation_paths=(), execution=(), publication=None, max_bytes=32768):
+                 documentation_paths=(), execution=(), publication=None, max_bytes=32768, class_declarations=False):
     """Complete exact patch plus explicit actual-tree context; never silent tails.
 
     context_paths are selected by the trusted repository adapter, never copied
@@ -223,9 +223,9 @@ def build_packet(*, tasks, base_revision, base, changes, context_paths=(),
     if publication and (not isinstance(publication, dict) or not set(publication).issubset(allowed_metadata) or not all(isinstance(x, str) for x in publication.values())):
         raise ReviewBlocked('Publication metadata cannot duplicate source bodies or carry arbitrary context')
     packet = {'schema': 'compact-review-v1', 'tasks': tasks, 'base_revision': base_revision,
-              'context_policy': 'Requested actual-tree files plus one-hop local state writers/calls; not complete whole-program context',
+              'context_policy': 'Requested actual-tree files plus one-hop local state writers/calls' + (' and actual class declarations' if class_declarations else '') + '; not complete whole-program context',
               'base_source_digest': source_digest(base), 'candidate_source_digest': source_digest(proposed),
-              'patches': patches, 'context': contexts, 'related_code_context': related_code_context(base, proposed, changes), 'documentation_paths': sorted(set(documentation_paths)),
+              'patches': patches, 'context': contexts, 'related_code_context': related_code_context(base, proposed, changes, class_declarations=class_declarations), 'documentation_paths': sorted(set(documentation_paths)),
               'execution': list(execution), 'publication': publication or {},
               'coverage': {'patch_complete': True, 'requested_context_complete': True, 'omissions': []}}
     packet['packet_id'] = sha(encoded(packet))

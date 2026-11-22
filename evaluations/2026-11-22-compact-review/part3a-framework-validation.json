@@ -1,0 +1,8 @@
+{
+  "image": "sha256:97b08c5ce375113809299fc8c5dd86ae60600f618158d15fe4ad5fc9d7f4b7ae",
+  "passed": true,
+  "tests": 31,
+  "subtests": 20,
+  "log_sha256": "65caa410becd90e69038458566a823ce58f2a9a88227ef6bc30bfabe3feb1855",
+  "immutable_original_tests_negative_control_blocked_before_critic": true
+}

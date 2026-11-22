@@ -56,7 +56,7 @@ def mutation(args, current):
     return result
 
 
-def docs_only_admission(packet, review, *, receipts, key, current_digest, environment_id):
+def docs_only_admission(packet, review, *, receipts, key, current_digest, environment_id, required_suites=('project',)):
     """Comparison control: actual tests plus external docs check, no code feedback.
 
     This deliberately is not full-review qualification. A separate report must
@@ -68,7 +68,7 @@ def docs_only_admission(packet, review, *, receipts, key, current_digest, enviro
             review.get('packet_id') != packet['packet_id'] or packet['coverage'] != {
                 'patch_complete':True,'requested_context_complete':True,'omissions':[]}):
         raise ReviewBlocked('Documentation control source/packet/coverage mismatch')
-    actual = execution_summaries(receipts, key=key, required_suites=['project'],
+    actual = execution_summaries(receipts, key=key, required_suites=required_suites,
                                  candidate_digest=current_digest, environment_id=environment_id)
     if encoded(actual) != encoded(packet['execution']):
         raise ReviewBlocked('Documentation control execution mismatch')
@@ -86,8 +86,12 @@ class PublicationGate:
     def __init__(self, *, base, base_revision, record_root, engine_record_root,
                  image, endpoint, alias, phase_file, documentation_paths,
                  context_paths=(), caller_seconds=240, mode='full', max_attempts=4,
-                 execute_factory=DockerExecution, input_measure=measure_input, max_rendered_tokens=10000):
+                 execute_factory=DockerExecution, input_measure=measure_input, max_rendered_tokens=10000, preservation_tests=None, preservation_digest=None, class_declarations=False):
         if mode not in {'full','docs_only_control'}:raise ValueError('Unknown comparison mode')
+        self.preservation_tests=preservation_tests;self.class_declarations=class_declarations
+        if preservation_tests and not preservation_digest:raise ReviewBlocked('Immutable test policy digest required')
+        self.environment_id=image+('+original-tests:'+preservation_digest if preservation_tests else '')
+        self.required_suites=['project','preservation'] if preservation_tests else ['project']
         self.base=dict(base); source_digest(self.base)
         self.base_revision=base_revision; self.root=Path(record_root); self.root.mkdir(parents=True,exist_ok=True)
         self.engine_root=engine_record_root; self.image=image; self.endpoint=endpoint; self.alias=alias
@@ -118,16 +122,25 @@ class PublicationGate:
         engine_source=self.engine_root+'/'+attempt+'/source'
         executor=self.execute_factory(source,engine_source,self.image)
         digest=source_digest(executor.inventory())
+        if self.preservation_tests:
+            executor.environment_id=self.environment_id
+            executor.output_log=root/'project.log'
         receipt=executor.run(expected_digest=digest,key=self.key)
+        receipts=[receipt]
         (root/'receipt.json').write_bytes(encoded(receipt))
-        try:evidence=execution_summaries([receipt],key=self.key,required_suites=['project'],candidate_digest=digest,environment_id=self.image)
-        except ReviewBlocked as error:raise ReviewBlocked(str(error)+'; actual suite output: '+receipt['payload']['output_tail']) from error
+        if self.preservation_tests:
+            preserved=DockerExecution(source,engine_source,self.image,suite_id='preservation',
+                environment_id=self.environment_id,preservation_tests=self.preservation_tests,output_log=root/'preservation.log')
+            original=preserved.run(expected_digest=digest,key=self.key)
+            receipts.append(original);(root/'preservation-receipt.json').write_bytes(encoded(original))
+        try:evidence=execution_summaries(receipts,key=self.key,required_suites=self.required_suites,candidate_digest=digest,environment_id=self.environment_id)
+        except ReviewBlocked as error:raise ReviewBlocked(str(error)+'; actual suite output: '+json.dumps([r['payload']['output_tail'] for r in receipts])) from error
         metadata={'operation':name}
         for field in ['owner','repo','branch_name','title','body','message','head','base']:
             if field in args:metadata[field]=args[field]
         packet=build_packet(tasks=phase['tasks_so_far'],base_revision=self.base_revision,
                             base=self.base,changes=cumulative,context_paths=self.context,
-                            documentation_paths=self.docs,execution=evidence,publication=metadata)
+                            documentation_paths=self.docs,execution=evidence,publication=metadata,class_declarations=self.class_declarations)
         (root/'packet.json').write_bytes(encoded(packet))
         body=request_body(packet,self.alias)
         metrics=self.input_measure(self.endpoint,body)
@@ -144,10 +157,10 @@ class PublicationGate:
         if (not isinstance(observed,int) or observed>self.max_rendered_tokens or
                 observed+body['max_tokens']>=metrics['context']):
             raise ReviewBlocked('Actual reviewer usage does not verify the input bound/reserve')
-        kwargs=dict(receipts=[receipt],key=self.key,current_digest=source_digest(executor.inventory()),environment_id=self.image)
+        kwargs=dict(receipts=receipts,key=self.key,current_digest=source_digest(executor.inventory()),environment_id=self.environment_id)
         try:
-            if self.mode=='full':admission(packet,review,required_suites=['project'],**kwargs)
-            else:docs_only_admission(packet,review,**kwargs)
+            if self.mode=='full':admission(packet,review,required_suites=self.required_suites,**kwargs)
+            else:docs_only_admission(packet,review,required_suites=self.required_suites,**kwargs)
         except ReviewBlocked as error:
             feedback=review if self.mode=='full' else {'documentation':review.get('checks',{}).get('documentation',{}),'findings':[f for f in review.get('findings',[]) if f.get('file') in self.docs]}
             raise ReviewBlocked(str(error)+'; automatic review feedback: '+json.dumps(feedback)) from error

@@ -1,0 +1,20 @@
+{
+  "model": "Qwen3.8-27B-hermes-IQ3_XXS.gguf",
+  "context": 98304,
+  "kv": "q4_0/q4_0",
+  "gpu_peak_MiB": {
+    "docs": 12932,
+    "full": 12930
+  },
+  "backend_readiness_seconds": 61.44341840501875,
+  "first_native_API_seconds": 157.4900450706482,
+  "first_API_prompt_tokens": 13659,
+  "first_API_output_tokens": 30,
+  "first_API_cache_tokens": 0,
+  "disk_cache_state": "uncontrolled; not a cold-start claim",
+  "native_main_seed": "backend default",
+  "native_main_output_cap": 8192,
+  "both_workflows_no_compaction": true,
+  "both_real_upstream_issues_created": true,
+  "primary_passes_not_clean_whole_workflow_success": true
+}

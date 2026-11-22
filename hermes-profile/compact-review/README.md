@@ -58,7 +58,7 @@ signed exit-zero result is not a semantic oracle.
 PYTHONDONTWRITEBYTECODE=1 python3 -m pytest -q -p no:cacheprovider hermes-profile/compact-review
 ```
 
-Part 1 records 19 checks. The expanded suite has 30 checks plus 20 subtests
+Part 1 records 19 checks. The expanded suite has 31 checks plus 20 subtests
 in the pinned Python 3.14.9 / pytest9.1.1 image. Negative cases cover forged/stale evidence, failing latest tests,
 timeouts, source drift, omitted coverage, bad paths, malformed reviews and
 missing documentation/test assessments. The positive execution case runs an
@@ -101,4 +101,21 @@ project tests and an external documentation check are common to both arms, while
 behavioral/coverage findings are withheld from the control. It is not full review
 qualification or a no-review latency measurement. Both modes can still miss bugs
 and accept poor tests or false documentation; independent audits are required.
-The native MCP adapter has not yet completed the fresh-workflow stage.
+The native MCP adapter completed the first fresh family in [Part 3a](../../evaluations/2026-11-22-compact-review/part3a.md); the second family remains required. Authentic tests and timely reviews still approved task-relevant mistakes.
+
+
+## Immutable preservation and source context
+
+When `preservation_tests` and its digest are configured, `PublicationGate` requires
+both `project` and `preservation` receipts. `DockerExecution` runs the latter with
+the original tests mounted read-only over the candidate tests directory, and the
+environment identity binds that original-test digest. Rewriting candidate tests
+cannot erase this suite. Complete output logs are independently hash-bound.
+
+`build_packet(class_declarations=True)` includes actual static class assignments,
+such as settings/metasettings, in generic Python context. It remains optional
+and bounded; it does not include every unchanged caller. Part3a exposes the
+consequence: an unchanged public reply prefix was absent from review context.
+The independent primary grader/reference also missed that path. Passing either
+test policy or requested-context coverage does not establish whole-program
+coverage, meaningful tests, truthful docs or a correct delivered result.

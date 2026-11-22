@@ -6,7 +6,7 @@ This file tracks which local GGUF models can actually complete the Hermes Agent 
 
 Future options: [local quantization and spare-GPU testing](MODEL-OPTIONS.md).
 
-## November 22, 2026 compact-review follow-up — parts 1 and 2 delivered
+## November 22, 2026 compact-review follow-up — parts 1, 2 and 3a delivered
 
 **Review is faster; no tested reviewer qualifies as a correctness gate.**
 The [Part 2 comparison](evaluations/2026-11-22-compact-review/part2.md) covers
@@ -23,10 +23,19 @@ cap and schema handling are evaluated together. Both partial-offload reviewers
 fit with measured GPU headroom, but their solo speed/quality does not carry over
 unchanged. The tested 19K actor cache survives self-review on this pinned server.
 
+[Part 3a](evaluations/2026-11-22-compact-review/part3a.md) completes six fresh
+LocalAI turns with real upstream issues, personal forks and PRs. All eight
+reviews finish in 63–96 seconds and approve, yet independent source/delivery
+checks find mistakes despite green tests. The 27B IQ3XXS uses 98,304 q4 KV,
+peaks at 12,932 MiB, loads in 61.44 seconds and answers its first native call in
+157.49 seconds; disk-cache state is uncontrolled. Neither arm satisfies the complete
+message-cap contract. The primary grader/reference also missed a delivery path;
+the report separates frozen primary results from posthoc source-audit findings.
+
 The [staged plan](evaluations/2026-11-22-compact-review/plan.md) still requires
-fresh native workflows and independent publication audits. The experimental
+the second fresh family and its independent publication audit. The experimental
 library is not deployed. Original VibeForged runtime/profile and all 29 models
-are preserved, about 124 GiB remains free, and Hermes-Codex was not restarted.
+are preserved, 123.86 GiB remains free, and Hermes-Codex was not restarted.
 
 ## November 22, 2026 everyday native Hermes pilot
 
