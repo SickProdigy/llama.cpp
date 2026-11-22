@@ -1,0 +1,12 @@
+arm,review_id,phase,operation,packet_bytes,rendered_input_tokens,output_tokens,seconds,caller_completed,body_complete,finish_reason,decision,admitted
+docs,2e47d4d47dc64806a155e0a1629308f7,0,create_or_update_file,14547,5281,306,88.879502,True,True,stop,revise,False
+docs,3fc956aff4b6427994d54b5c798b73b5,1,create_or_update_file,14405,5304,215,78.745546,True,True,stop,approve,True
+docs,a49ee521e6bd4ebfb479794d174b1f89,0,pull_request_write,13591,5140,163,72.204234,True,True,stop,approve,True
+docs,b8e8c116be6c454faa9381cb2cf7c104,0,create_or_update_file,12970,4975,170,70.810145,True,True,stop,approve,True
+docs,f1c8f888cf1747f7a6220da7e77cfd72,2,create_or_update_file,17579,6028,259,92.278213,True,True,stop,approve,True
+full,7736142affdb4ad4b80f7dacafcc509e,0,create_or_update_file,18507,6822,162,90.108725,True,True,stop,approve,True
+full,9b348c9665fc42a1907c9129774d3ef5,0,pull_request_write,19745,7175,306,108.749929,True,True,stop,approve,False
+full,a68ce608e05447b2b072d5278725747f,0,create_or_update_file,18497,6846,184,92.307359,True,True,stop,approve,True
+full,bc294859c480412090a72058cdd3b59d,2,create_or_update_file,21470,7663,189,102.512941,True,True,stop,approve,True
+full,cf405352098b486cb86b8b8f8a173f32,0,create_or_update_file,18227,6760,165,89.794556,True,True,stop,approve,True
+full,ef1241ac07a54b6c9e0c429608e71b07,1,create_or_update_file,18284,6810,220,95.68923,True,True,stop,approve,True

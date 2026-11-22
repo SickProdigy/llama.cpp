@@ -1,0 +1,11 @@
+{
+  "all_original_container_ids_images_configuration_running_preserved": true,
+  "codex_entire_snapshot_unchanged": true,
+  "four_original_profile_hashes_unchanged": true,
+  "all_29_models_metadata_unchanged": true,
+  "model_free_GiB": 124.01092147827148,
+  "model_reserve_at_least_100_GiB": true,
+  "original_alias_context_restored": true,
+  "intentional_hermes_backend_restart_cycles": true,
+  "new_model_downloads": 0
+}

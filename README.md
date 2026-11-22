@@ -6,7 +6,7 @@ This file tracks which local GGUF models can actually complete the Hermes Agent 
 
 Future options: [local quantization and spare-GPU testing](MODEL-OPTIONS.md).
 
-## November 22, 2026 compact-review follow-up — parts 1, 2 and 3a delivered
+## November 22, 2026 compact-review follow-up — parts 1, 2, 3a and 3b delivered
 
 **Review is faster; no tested reviewer qualifies as a correctness gate.**
 The [Part 2 comparison](evaluations/2026-11-22-compact-review/part2.md) covers
@@ -32,10 +32,20 @@ peaks at 12,932 MiB, loads in 61.44 seconds and answers its first native call in
 message-cap contract. The primary grader/reference also missed a delivery path;
 the report separates frozen primary results from posthoc source-audit findings.
 
-The [staged plan](evaluations/2026-11-22-compact-review/plan.md) still requires
-the second fresh family and its independent publication audit. The experimental
-library is not deployed. Original VibeForged runtime/profile and all 29 models
-are preserved, 123.86 GiB remains free, and Hermes-Codex was not restarted.
+[Part 3b](evaluations/2026-11-22-compact-review/part3b.md) completes the other
+six fresh turns. All eleven reviews finish in 71–109 seconds. Full review fixes
+XML behavior but never opens its PR; control opens a PR with a wrong failure
+predicate and a no-result regression despite passing tests. A later workspace
+publication also overwrites prior remote artifact cleanup. Across both families,
+none of four workflows meets the entire task contract. These tests use native
+Hermes CLI with experimental focused Gitea/workspace wrappers making real MCP
+calls, rather than the normal full native MCP interface.
+
+The [staged plan](evaluations/2026-11-22-compact-review/plan.md) now requires only
+a bounded four-request posthoc context diagnostic and its delivery. The library
+is experimental. Original VibeForged runtime/profile and all 29 models are
+preserved, 124.01 GiB remains free, and Hermes-Codex was not restarted. Wider
+P100 plus 8 GiB host-memory candidates are planned separately, not tested fits.
 
 ## November 22, 2026 everyday native Hermes pilot
 
@@ -423,6 +433,27 @@ gateway parity.
 | Output discipline | Avoids duplicate tool retries and runaway decode length |
 
 ## Test Matrix
+
+### November 22 compact-review evaluation
+
+These rows measure reviewers on seven development proposals each, not native
+agent routing. Fresh native results are reported separately below.
+
+| Reviewer/layout | Predefined faults detected | Clean approvals | Median review seconds |
+|---|---|---|---|
+| Adapted 27B IQ3_XXS, solo | 0/4 | 2/3 | 65.03 |
+| Qwopus 4B, solo | 0/4 | 1/3 | 12.24 |
+| Qwopus 4B, partial offload beside 27B | 0/4 | 2/3 | 38.16 |
+| FableVibes, solo | 0/4 | 3/3 | 15.80 |
+| FableVibes, partial offload beside 27B | 0/4 | 2/3 | 57.46 |
+
+Solo Fable also identifies one confirmed additional coverage gap; that is
+separate from the four predefined faults. No reviewer qualifies. All 19 critic
+calls across the subsequent twelve native turns finish before their deadline,
+but none of four three-turn workflows meets the whole contract. See
+[comparison](evaluations/2026-11-22-compact-review/part2.md),
+[LocalAI](evaluations/2026-11-22-compact-review/part3a.md) and
+[XML/publication](evaluations/2026-11-22-compact-review/part3b.md).
 
 ### Nine-session Ordinary Repository Results (November 12–16)
 

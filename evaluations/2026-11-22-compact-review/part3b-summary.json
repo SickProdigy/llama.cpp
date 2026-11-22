@@ -1,0 +1,68 @@
+{
+  "scope": "Posthoc independent audit after all twelve fresh turns; never fed to actors/reviewers. One sample per arm/family; no causal reliability estimate.",
+  "docs": {
+    "core_contract_pass": false,
+    "actual_upstream_pr": 4,
+    "issue": 3,
+    "issue_closed": true,
+    "pr_unmerged": true,
+    "wrong_predicate": "success=false used instead of requested error=true",
+    "counterexample": {
+      "xml": "<queryresult error=\"false\" success=\"false\"/>",
+      "original": "NO_RESULT",
+      "published": "NO_RESULT_ERROR"
+    },
+    "exception_oracle_limitation": "Primary checker expects WolframError; exception choice alone is not sufficient to reject an alternative implementation. Wrong attribute and changed genuine no-result behavior independently violate the task.",
+    "feature_wrong_root_correct": true,
+    "project_tests_pass": true,
+    "review_behavior": "Initial README coverage objection; no identification of wrong predicate/no-result regression.",
+    "test_relevance": "Initial added tests fail original on missing NO_RESULT_ERROR constant, not meaningful provider-flag assertions."
+  },
+  "full": {
+    "core_contract_pass": true,
+    "feature_wrong_root_correct": true,
+    "project_tests_pass": true,
+    "actual_upstream_pr": null,
+    "issue": 3,
+    "issue_closed": true,
+    "workflow_complete": false,
+    "native_outer_timeout_phase0": true,
+    "timeout_limitation": "Final assistant stop response existed before outer guard; process remained active. No established teardown diagnosis or semantic detection credit.",
+    "reviews": "One block for actual duplicate conftest/placeholder artifacts; factual cleanup findings, not functional bug detection. Four-review allowance exhausted before PR.",
+    "publication_drift": "Remote cleanup of two artifact files was overwritten by subsequent stale local workspace publication. Functional fix preserved; cleanup state not preserved.",
+    "test_relevance": "Four genuine initial error-flag assertion failures on original, additional wrong-root assertions later."
+  },
+  "feature_mutation_manual_audit": {
+    "maximum": 4,
+    "performed": 4,
+    "assertion_failures_not_import_errors": true,
+    "full_LocalAI_worker_setting_mutant_survives_project_tests": true,
+    "other_three_caught_by_project_assertions": true,
+    "original_full_LocalAI_worker_correct": true,
+    "mutants_published": false,
+    "fresh_detection_credit": false
+  },
+  "fresh_workflow_whole_contract_passes": 0,
+  "fresh_workflow_count": 4,
+  "critic_timeouts_xml": 0,
+  "critic_requests_xml": 11,
+  "admissions_xml": 9,
+  "blocked_xml": 2,
+  "native_outer_guards_xml": 1,
+  "actor_interface": "Native Hermes CLI with experimental focused Gitea/workspace plugins calling real MCP; normal full native MCP toolset disabled in isolated profiles. Not an unmodified production-interface benchmark.",
+  "measured_reviews": {
+    "count": 11,
+    "latency_min_seconds": 70.810145,
+    "latency_median_seconds": 90.108725,
+    "latency_max_seconds": 108.749929,
+    "packet_bytes_min": 12970,
+    "packet_bytes_max": 21470,
+    "rendered_tokens_min": 4975,
+    "rendered_tokens_max": 7663,
+    "all_delivered_before_240s": true
+  },
+  "native_seconds_by_arm": {
+    "docs": 1829.2523763600038,
+    "full": 3508.429992318037
+  }
+}

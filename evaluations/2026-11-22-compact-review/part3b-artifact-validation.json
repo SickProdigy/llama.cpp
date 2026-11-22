@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "mutant_sources_and_execution_payloads_verified": 4,
+  "manifest_files_verified": 1809,
+  "exact_source_packets_rebuilt": 11,
+  "complete_captures_verified": 11,
+  "admissions_verified": 9,
+  "local_and_actual_remote_grades_bound": 12,
+  "not_new_project_test_run_or_semantic_correctness": true,
+  "historic_MACs_require_private_issuer_keys": true
+}

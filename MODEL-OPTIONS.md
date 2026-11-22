@@ -3,6 +3,47 @@
 Recorded November 19, 2026. This is a reminder of possible next steps, not a
 record of tests on the spare PCs or a change to the deployed model.
 
+## November 22: full P100 plus up to 8 GiB host spillover
+
+The owner widened the candidate budget to the P100's 16 GiB VRAM plus up to
+8 GiB additional system RAM for model spillover. This is a proposed next
+comparison, not a completed load or quality result. Keep the current fresh
+review cohort unchanged, finish its audits/restoration, then test wider layouts
+in a separate stage. The separate Hermes-Codex stack stays unchanged.
+
+| Candidate | Why consider it | What still needs measurement |
+|---|---|---|
+| Same Hermes-adapted 27B Q3_K_M, 13.75 GB published file | Intermediate precision; may fit mostly or entirely on GPU | Actual 98k context memory, speed and task correctness |
+| Same Hermes-adapted 27B Q4_K_M, 16.81 GB published file | Compare higher precision within the same adapted checkpoint using limited CPU offload | CPU-resident weights/runtime overhead within 8 GiB, GPU buffers/KV, latency and independent quality |
+| Devstral Small 2 24B public GGUF | Its historical local failure was GPU OOM at 64k, not a demonstrated coding-quality failure; the new budget changes that blocker | Current pinned backend/template support, 64k+ actual fit and useful task performance |
+| GLM-4.7-Flash 30B MoE, public Q4 file about 18.2 GB | Different coding/tool-use checkpoint newly plausible with a small CPU share | Pinned-runtime architecture/template, expert offload, 98k cache and actual quality; no P100 fit claim yet |
+
+The [same-checkpoint publisher](https://huggingface.co/netprojects/Qwen3.8-27B-hermes-adapted-GGUF)
+provides these larger quants. Its short-prompt precision measurements do not
+establish agent reliability. The [original adapter author](https://huggingface.co/harness-hub/Qwen3.8-27B-hermes-adapted-GGUF)
+also distinguishes BF16 training/evaluation from quantized llama.cpp behavior.
+[Devstral's author](https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512)
+describes coding/tool-use training; [public GGUFs](https://huggingface.co/unsloth/Devstral-Small-2-24B-Instruct-2512-GGUF)
+still need a pinned revision, byte length and hash before use.
+
+[GLM model author](https://huggingface.co/zai-org/GLM-4.7-Flash) and
+[llama.cpp-maintainer GGUF files](https://huggingface.co/ggml-org/GLM-4.7-Flash-GGUF/tree/main)
+provide a separate family to consider; third-party RAM estimates are not load evidence.
+
+Also inspect the retained 35B MoE's previous CPU-expert results before another
+trial; its existing offload layout is not proof of staying within the new 8 GiB
+host budget. Do not repeat a previously fitting but unsuccessful model solely
+because its file now looks affordable.
+
+Sixteen plus eight is not 24 GiB of usable model weights: context/KV, execution
+buffers and host overhead also count. CPU offload can slow generation, and
+better quantization is a hypothesis, not a fix for tool coordination or review
+reasoning. Measure model RSS/PSS, anonymous/file memory, active swap deltas,
+GPU peak and actual prompt latency. Existing host swap use is not evidence that
+a new model caused swapping; do not flush system swap or disturb other services.
+Preserve original useful models and at least 100 GiB model-disk reserve, using
+one additional large download at a time when necessary.
+
 ## November 21 investigation: best tested supervised lead
 
 Earlier guided-edit passes are insufficient for selecting an editor-like coding
