@@ -1,0 +1,121 @@
+{
+  "epoch": 1795346130.182811,
+  "archive_sha256": "799f36ddc1f84c19337379e32cbfef7268de4a6644a1498c4b619069cf9f1cf0",
+  "archive_manifest_entries_verified": 2205,
+  "native_image": "sha256:97b08c5ce375113809299fc8c5dd86ae60600f618158d15fe4ad5fc9d7f4b7ae",
+  "network": "none, loopback-only fixtures",
+  "readonly_archive_extract": true,
+  "passed": true,
+  "checks": [
+    {
+      "name": "reference-primary",
+      "python_argv": [
+        "harness/hidden_checks.py"
+      ],
+      "environment": {
+        "CHECKOUT": "/replay/reference-controls",
+        "PHASE": "2"
+      },
+      "exit_code": 0,
+      "seconds": 1.016,
+      "log": "replay/reference-primary.log",
+      "log_sha256": "ee7c61f28de9e03352c8f0d21bf532356145c0989cf438de05109e3f791c178d",
+      "expected_recorded_behavior_reproduced": true
+    },
+    {
+      "name": "reference-redirects",
+      "python_argv": [
+        "harness/supplemental_arr_redirects.py"
+      ],
+      "environment": {
+        "CHECKOUT": "/replay/reference-controls"
+      },
+      "exit_code": 0,
+      "seconds": 0.665,
+      "log": "replay/reference-redirects.log",
+      "log_sha256": "3884abc96db2f18c6f9062ca012f204fe96df6a227fbcb409b69819c5014f1d9",
+      "expected_recorded_behavior_reproduced": true
+    },
+    {
+      "name": "original-tests",
+      "python_argv": [
+        "-m",
+        "pytest",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "source-baseline/tests"
+      ],
+      "environment": {},
+      "exit_code": 0,
+      "seconds": 4.122,
+      "log": "replay/original-tests.log",
+      "log_sha256": "87f275dc3431784f8e490ce8a4469dcfb0dedce51407eaa37ab9d427dbefac8d",
+      "expected_recorded_behavior_reproduced": true
+    },
+    {
+      "name": "offline-recorder",
+      "python_argv": [
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "next-run-recorder",
+        "-p",
+        "test_recorder.py",
+        "-v"
+      ],
+      "environment": {},
+      "exit_code": 0,
+      "seconds": 0.565,
+      "log": "replay/offline-recorder.log",
+      "log_sha256": "a827d481c1fbc38a43436b4fd282d164f935b60cf3a0105adb6cfde1cda02ed6",
+      "expected_recorded_behavior_reproduced": true
+    },
+    {
+      "name": "captured-announcer",
+      "python_argv": [
+        "harness/hidden_checks.py",
+        "Announcer"
+      ],
+      "environment": {
+        "CHECKOUT": "/replay/runs/review-announcer/turn2/local-source",
+        "PHASE": "2"
+      },
+      "exit_code": 0,
+      "seconds": 0.665,
+      "log": "replay/captured-announcer.log",
+      "log_sha256": "c11a0fe2ab9dd27a370d9828e7e7784336f51cc1dc915760ad73d08c4cd12c42",
+      "expected_recorded_behavior_reproduced": true
+    },
+    {
+      "name": "https-reference",
+      "python_argv": [
+        "harness/posthoc_arr_https.py"
+      ],
+      "environment": {
+        "CHECKOUT": "/replay/reference-controls"
+      },
+      "exit_code": 0,
+      "seconds": 0.765,
+      "log": "replay/https-reference.log",
+      "log_sha256": "d9fb18b0f3444f952f707df6a9ab2af918373f1c73d97f30b78cdc393a349bce",
+      "expected_recorded_behavior_reproduced": true
+    },
+    {
+      "name": "https-review",
+      "python_argv": [
+        "harness/posthoc_arr_https.py"
+      ],
+      "environment": {
+        "CHECKOUT": "/replay/runs/review-arrrequests/turn1/local-source"
+      },
+      "exit_code": 0,
+      "seconds": 0.665,
+      "log": "replay/https-review.log",
+      "log_sha256": "d985bd8fa2f0708ca354148bcb8dc4fc7d3180c440689f06e146c2cf9d579a42",
+      "expected_recorded_behavior_reproduced": true
+    }
+  ],
+  "scope": "Actual public archive behavior replay only; no inference, credentials, profile, system prompts or Gitea access. Observation-only HTTPS probe is checked for its expected positive reference and negative captured behavior."
+}

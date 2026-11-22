@@ -1,0 +1,9 @@
+test_chain_origin_boundary_all_statuses (__main__.RedirectCoverage.test_chain_origin_boundary_all_statuses) ... ok
+test_cross_origin_all_standard_statuses (__main__.RedirectCoverage.test_cross_origin_all_standard_statuses) ... ok
+test_protocol_relative_cross_origin_all_statuses (__main__.RedirectCoverage.test_protocol_relative_cross_origin_all_statuses) ... ok
+test_same_origin_preserves_get_and_auth_all_statuses (__main__.RedirectCoverage.test_same_origin_preserves_get_and_auth_all_statuses) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.137s
+
+OK

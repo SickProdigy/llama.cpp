@@ -1,0 +1,21 @@
+test_all_rooms_preserves_json_and_csv (__main__.Announcer.test_all_rooms_preserves_json_and_csv) ... ok
+test_existing_csv_normalization (__main__.Announcer.test_existing_csv_normalization) ... ok
+test_group_literal_target_and_dedup (__main__.Announcer.test_group_literal_target_and_dedup) ... ok
+test_preview_has_no_sends_scheduling_or_cooldown (__main__.Announcer.test_preview_has_no_sends_scheduling_or_cooldown) ... ok
+test_status_group_inspects_without_side_effect (__main__.Announcer.test_status_group_inspects_without_side_effect) ... ok
+test_status_unknown_and_noargument_preserved (__main__.Announcer.test_status_unknown_and_noargument_preserved) ... ok
+test_allow_redirects_false_propagates_to_status_and_lookup (__main__.Arr.test_allow_redirects_false_propagates_to_status_and_lookup) ... ok
+test_cross_origin_does_not_receive_key (__main__.Arr.test_cross_origin_does_not_receive_key) ... ok
+test_direct_status_lookup_unchanged_and_get_only (__main__.Arr.test_direct_status_lookup_unchanged_and_get_only) ... ok
+test_redirect_chain_keeps_origin_boundary (__main__.Arr.test_redirect_chain_keeps_origin_boundary) ... ok
+test_same_origin_redirect_keeps_authentication (__main__.Arr.test_same_origin_redirect_keeps_authentication) ... ok
+test_cancel_command_keeps_enabled_and_later_imports (__main__.Beets.test_cancel_command_keeps_enabled_and_later_imports) ... ok
+test_disable_discards_waiter_and_timer_not_active (__main__.Beets.test_disable_discards_waiter_and_timer_not_active) ... ok
+test_ordinary_serial_imports_preserved (__main__.Beets.test_ordinary_serial_imports_preserved) ... ok
+test_reload_cannot_revive_cancelled_waiter (__main__.Beets.test_reload_cannot_revive_cancelled_waiter) ... ok
+test_shutdown_discards_waiter_not_active (__main__.Beets.test_shutdown_discards_waiter_not_active) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.307s
+
+OK

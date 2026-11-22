@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "archive_sha256": "799f36ddc1f84c19337379e32cbfef7268de4a6644a1498c4b619069cf9f1cf0",
+  "archive_bytes": 3320874,
+  "manifest_entries_verified": 2205,
+  "archive_members": 2206,
+  "baseline_source_files": 40,
+  "replay_checks_verified": 7,
+  "credential_values_checked": 9,
+  "credential_variants_checked": 19,
+  "credential_scope": "Supplied known values only; public structural verification needs no secrets.",
+  "private_profiles_raw_requests_sqlite_and_owner_instructions_excluded": true,
+  "explicit_partial_critic_prefix_exception": "controls/announcer-doc-critic-partial-response.txt",
+  "credential_redacted_files": [
+    "harness/plugins/gitea-focused/README.md"
+  ],
+  "epoch": 1795346447.2276688,
+  "verification_source_sha256": "93d17c9e34d9ef2e6dfbd827dc0f5d4d63449a556053d3bc345afe2368a0f5e3",
+  "excluded_nonsecret_environment_fields": [
+    "HERMES_DASHBOARD_BASIC_AUTH_USERNAME"
+  ],
+  "nonsecret_exclusion_reason": "Dashboard username equals an already-public repository-owner handle in historical README URLs. It is not a password/token and is not in the private secret seed set. No runtime credential or historical URL was changed.",
+  "export_scan_recovery": "Original exporter finished tar creation but redundantly reread gzip members per credential variant. Operator stopped that scan and verified identical archive bytes with one read per member and the same variant construction; all7actual-archive replays match this SHA. Archived original exporter is preserved. No inference or model results changed.",
+  "final_public_files_scan_epoch": 1795346760.3314846,
+  "final_public_files_scan_passed": true,
+  "final_public_files_checked": 24
+}

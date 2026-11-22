@@ -1,0 +1,11 @@
+test_all_rooms_preserves_json_and_csv (__main__.Announcer.test_all_rooms_preserves_json_and_csv) ... ok
+test_existing_csv_normalization (__main__.Announcer.test_existing_csv_normalization) ... ok
+test_group_literal_target_and_dedup (__main__.Announcer.test_group_literal_target_and_dedup) ... ok
+test_preview_has_no_sends_scheduling_or_cooldown (__main__.Announcer.test_preview_has_no_sends_scheduling_or_cooldown) ... ok
+test_status_group_inspects_without_side_effect (__main__.Announcer.test_status_group_inspects_without_side_effect) ... ok
+test_status_unknown_and_noargument_preserved (__main__.Announcer.test_status_unknown_and_noargument_preserved) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.061s
+
+OK

@@ -6,6 +6,28 @@ This file tracks which local GGUF models can actually complete the Hermes Agent 
 
 Future options: [local quantization and spare-GPU testing](MODEL-OPTIONS.md).
 
+## November 22, 2026 everyday native Hermes pilot
+
+**The Hermes-adapted 27B is still a supervised lead, not an autonomous replacement.**
+Three fresh bug families, each with README and dependent feature followups, were
+run both unassisted and with automatic prepublication review:18 turns, no full
+workflow passes. Own tests and real PR publication missed behavior/documentation
+errors. All 15 real critic calls timed out before usable feedback.
+
+The [final matrix](evaluations/2026-11-22-everyday-pilot/matrix.md),
+[report](evaluations/2026-11-22-everyday-pilot/investigation.md),
+[measurements](evaluations/2026-11-22-everyday-pilot/measurements.md), and
+[replay](evaluations/2026-11-22-everyday-pilot/REPLAY.md) distinguish local drafts,
+actual fork commits/PRs, preserved behavior, execution claims and native compaction.
+First recorded native model calls took 111–139 seconds; see the matrix for timing
+definitions. The candidate used 98,304 context at 13,094 MiB observed VRAM. Native compression
+occurred, but one compacted child did not retain the README query verbatim.
+
+Original VibeForged runtime/profile is restored; Hermes-Codex was not restarted.
+All 29 retained models remain, with 124 GiB free at final preservation. Test issues
+are closed and disposable PRs remain unmerged. No production profile replacement,
+new model download, custom quantization or GPU purchase was made.
+
 ## November 21, 2026 novel-fix investigation
 
 **The older guided MCP passes below do not establish editor-like bug-fixing

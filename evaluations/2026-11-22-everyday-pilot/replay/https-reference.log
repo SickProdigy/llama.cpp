@@ -1,0 +1,48 @@
+{
+  "posthoc_not_primary": true,
+  "not_fed_to_models": true,
+  "ephemeral_loopback_TLS_fixture": true,
+  "results": {
+    "/ok": {
+      "response": {
+        "appName": "Sonarr",
+        "version": "TLS-fixture"
+      },
+      "error": null,
+      "request_count": 1,
+      "foreign_key_received": false,
+      "all_observed_requests_authenticate": true
+    },
+    "/absolute": {
+      "response": {
+        "appName": "Sonarr",
+        "version": "TLS-fixture"
+      },
+      "error": null,
+      "request_count": 2,
+      "foreign_key_received": false,
+      "all_observed_requests_authenticate": true
+    },
+    "/relative": {
+      "response": {
+        "appName": "Sonarr",
+        "version": "TLS-fixture"
+      },
+      "error": null,
+      "request_count": 2,
+      "foreign_key_received": false,
+      "all_observed_requests_authenticate": true
+    },
+    "/cross": {
+      "response": null,
+      "error": {
+        "type": "ArrError",
+        "message": "Cross-origin redirect refused.",
+        "safe_ArrError": true
+      },
+      "request_count": 1,
+      "foreign_key_received": false,
+      "all_observed_requests_authenticate": true
+    }
+  }
+}

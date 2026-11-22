@@ -1,0 +1,50 @@
+{
+  "posthoc_not_primary": true,
+  "not_fed_to_models": true,
+  "ephemeral_loopback_TLS_fixture": true,
+  "results": {
+    "/ok": {
+      "response": {
+        "appName": "Sonarr",
+        "version": "TLS-fixture"
+      },
+      "error": null,
+      "request_count": 1,
+      "foreign_key_received": false,
+      "all_observed_requests_authenticate": true
+    },
+    "/absolute": {
+      "response": null,
+      "error": {
+        "type": "AttributeError",
+        "message": "'Request' object has no attribute '_arr_original_url'",
+        "safe_ArrError": false
+      },
+      "request_count": 1,
+      "foreign_key_received": false,
+      "all_observed_requests_authenticate": true
+    },
+    "/relative": {
+      "response": null,
+      "error": {
+        "type": "AttributeError",
+        "message": "'Request' object has no attribute '_arr_original_url'",
+        "safe_ArrError": false
+      },
+      "request_count": 1,
+      "foreign_key_received": false,
+      "all_observed_requests_authenticate": true
+    },
+    "/cross": {
+      "response": null,
+      "error": {
+        "type": "AttributeError",
+        "message": "'Request' object has no attribute '_arr_original_url'",
+        "safe_ArrError": false
+      },
+      "request_count": 1,
+      "foreign_key_received": false,
+      "all_observed_requests_authenticate": true
+    }
+  }
+}

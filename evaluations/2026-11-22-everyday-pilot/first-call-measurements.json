@@ -1,0 +1,41 @@
+{
+  "rows": [
+    {
+      "workflow": "plain-announcer",
+      "first_recorded_request": "llm-records-continuation2/91",
+      "request_seconds": 121.518,
+      "first_persisted_tool_receipt_from_turn_start_seconds": 144.14
+    },
+    {
+      "workflow": "plain-arrrequests",
+      "first_recorded_request": "llm-records-continuation2/123",
+      "request_seconds": 117.079,
+      "first_persisted_tool_receipt_from_turn_start_seconds": 140.525
+    },
+    {
+      "workflow": "plain-beetsbridge",
+      "first_recorded_request": "llm-records/2",
+      "request_seconds": 116.226,
+      "first_persisted_tool_receipt_from_turn_start_seconds": 136.744
+    },
+    {
+      "workflow": "review-announcer",
+      "first_recorded_request": "llm-records-continuation2/35",
+      "request_seconds": 139.351,
+      "first_persisted_tool_receipt_from_turn_start_seconds": 173.973
+    },
+    {
+      "workflow": "review-arrrequests",
+      "first_recorded_request": "llm-records-continuation3/1",
+      "request_seconds": 128.933,
+      "first_persisted_tool_receipt_from_turn_start_seconds": 152.715
+    },
+    {
+      "workflow": "review-beetsbridge",
+      "first_recorded_request": "llm-records-continuation1/4",
+      "request_seconds": 111.025,
+      "first_persisted_tool_receipt_from_turn_start_seconds": 137.375
+    }
+  ],
+  "scope": "First recorded native tool-enabled model request latency, plus persisted tool receipt timestamp relative to native turn start. Not first Gitea mutation, not time to correct answer; startup and adopted-turn coverage caveats apply."
+}
