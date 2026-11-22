@@ -1,0 +1,24 @@
+test_actual_execution_and_complete_supported_review_admits (test_review_packet.PacketTests.test_actual_execution_and_complete_supported_review_admits) ... ok
+test_admission_rechecks_byte_budget_even_for_a_diagnostic_packet (test_review_packet.PacketTests.test_admission_rechecks_byte_budget_even_for_a_diagnostic_packet) ... ok
+test_budget_refuses_instead_of_truncating (test_review_packet.PacketTests.test_budget_refuses_instead_of_truncating) ... ok
+test_deleted_added_unicode_and_missing_final_newline (test_review_packet.PacketTests.test_deleted_added_unicode_and_missing_final_newline) ... ok
+test_environment_and_stale_approval_rejected (test_review_packet.PacketTests.test_environment_and_stale_approval_rejected) ... ok
+test_false_passing_output_does_not_override_nonzero_exit (test_review_packet.PacketTests.test_false_passing_output_does_not_override_nonzero_exit) ... ok
+test_forged_receipt_is_rejected (test_review_packet.PacketTests.test_forged_receipt_is_rejected) ... ok
+test_malformed_needs_context_and_unresolved_findings_block (test_review_packet.PacketTests.test_malformed_needs_context_and_unresolved_findings_block) ... ok
+test_missing_execution_and_wrong_tree_rejected (test_review_packet.PacketTests.test_missing_execution_and_wrong_tree_rejected) ... ok
+test_newer_failure_overrides_older_passing_run (test_review_packet.PacketTests.test_newer_failure_overrides_older_passing_run) ... ok
+test_paths_context_and_duplicated_payload_fail_closed (test_review_packet.PacketTests.test_paths_context_and_duplicated_payload_fail_closed) ... ok
+test_shell_pipeline_cannot_be_registered_as_a_suite (test_review_packet.PacketTests.test_shell_pipeline_cannot_be_registered_as_a_suite) ... ok
+test_short_verification_key_cannot_authorize_forged_pass (test_review_packet.PacketTests.test_short_verification_key_cannot_authorize_forged_pass) ... ok
+test_source_mutation_during_suite_rejected (test_review_packet.PacketTests.test_source_mutation_during_suite_rejected) ... ok
+test_state_writers_are_visible_without_bug_specific_selection (test_review_packet.PacketTests.test_state_writers_are_visible_without_bug_specific_selection) ... ok
+test_tampering_and_different_execution_not_reviewed_blocks (test_review_packet.PacketTests.test_tampering_and_different_execution_not_reviewed_blocks) ... ok
+test_timeout_never_counts_as_pass (test_review_packet.PacketTests.test_timeout_never_counts_as_pass) ... ok
+test_unknown_missing_or_inconsistent_review_checks_block (test_review_packet.PacketTests.test_unknown_missing_or_inconsistent_review_checks_block) ... ok
+test_wall_clock_ties_do_not_hide_the_later_failure (test_review_packet.PacketTests.test_wall_clock_ties_do_not_hide_the_later_failure) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.106s
+
+OK

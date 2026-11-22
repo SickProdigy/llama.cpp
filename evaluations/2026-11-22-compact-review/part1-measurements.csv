@@ -1,0 +1,16 @@
+workflow,phase,record,old_bytes,new_bytes,old_text_tokens_same_current_tokenizer,new_text_tokens_same_current_tokenizer,build_seconds,historical_observations
+review-announcer,0,001-review.json,145287,18126,40138,5257,0.019896,3
+review-announcer,0,002-review.json,145297,18126,40233,5257,0.033028,3
+review-announcer,0,003-review.json,145457,17107,40282,5014,0.019918,3
+review-announcer,1,004-review.json,149891,15990,41115,4851,0.023609,3
+review-announcer,1,005-review.json,124910,26132,34850,6980,0.003001,3
+review-announcer,2,006-review.json,156855,24520,42779,7240,0.029687,2
+review-arrrequests,1,001-review.json,167626,21524,45034,6191,0.028864,3
+review-arrrequests,1,002-review.json,166621,20445,44841,5926,0.03028,3
+review-arrrequests,1,003-review.json,166507,20445,44744,5926,0.033296,3
+review-beetsbridge,0,001-review.json,150072,16356,39214,4652,0.027946,2
+review-beetsbridge,0,002-review.json,150116,16356,39148,4652,0.018416,2
+review-beetsbridge,1,003-review.json,155167,12977,40042,3813,0.032989,1
+review-beetsbridge,1,004-review.json,155351,15345,40646,4522,0.029253,3
+review-beetsbridge,1,005-review.json,127310,20342,33928,5530,0.015617,3
+review-beetsbridge,2,006-review.json,171514,27609,41731,7308,0.029306,3

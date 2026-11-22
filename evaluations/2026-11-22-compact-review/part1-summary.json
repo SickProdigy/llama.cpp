@@ -1,0 +1,33 @@
+{
+  "part": 1,
+  "complete": true,
+  "model_inference_calls": 0,
+  "Gitea_writes": 0,
+  "fresh_bug_workflows": 0,
+  "historical_development_packets": 15,
+  "all_packets_fit_32768_bytes": true,
+  "all_packet_texts_fit_7500_token_target": true,
+  "old_text_token_range": [
+    33928,
+    45034
+  ],
+  "new_text_token_range": [
+    3813,
+    7308
+  ],
+  "median_token_reduction_percent": 86.9,
+  "maximum_packet_bytes": 27609,
+  "maximum_build_seconds": 0.033296,
+  "tokenizer_alias": "qwen3.6-14b-a3b-vibeforged-v2-q4_k_m",
+  "system_text_tokens": 193,
+  "framework_regressions": 19,
+  "production_changed": false,
+  "original_container_ids_images_configuration_start_times_restarts_unchanged": true,
+  "profile_files_unchanged": true,
+  "separate_codex_unchanged": true,
+  "retained_models": 29,
+  "retained_model_metadata_unchanged": true,
+  "free_GiB": 124.14,
+  "reserve_GiB": 100,
+  "scope": "Size and offline enforcement only. Current tokenizer text counts exclude rendered chat/template overhead. No reviewer latency/detection benefit or end-to-end success measured. Historical observations do not authorize new publication."
+}

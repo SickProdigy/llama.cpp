@@ -6,6 +6,21 @@ This file tracks which local GGUF models can actually complete the Hermes Agent 
 
 Future options: [local quantization and spare-GPU testing](MODEL-OPTIONS.md).
 
+## November 22, 2026 compact-review follow-up — in progress
+
+[Part 1](evaluations/2026-11-22-compact-review/part1.md) is delivered: complete
+publication diffs, relevant actual-source context and compact execution evidence
+reduce fifteen historical packets from about 34–45k to 3.8–7.3k text tokens on the
+same tokenizer (median 87% reduction). Nineteen offline framework checks pass.
+This is not a reviewer speed/accuracy or fresh-workflow result.
+
+The [staged plan](evaluations/2026-11-22-compact-review/plan.md) next compares timed
+reviewers and then tests fresh native bug workflows. Part 1 uses only the current
+VibeForged Q4 tokenizer at 98,304 loaded context: no model inference, first-call
+latency/VRAM measurement or Gitea write occurs. Production settings and all 29
+models are unchanged; Hermes-Codex remains untouched. The new library is optional
+experimental source, not a deployed publication policy.
+
 ## November 22, 2026 everyday native Hermes pilot
 
 **The Hermes-adapted 27B is still a supervised lead, not an autonomous replacement.**
