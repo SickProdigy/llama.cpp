@@ -1,0 +1,80 @@
+{
+  "source": "Independent connected Gitea MCP final completion readback",
+  "rows": [
+    {
+      "arm": "docs",
+      "kind": "issues",
+      "items": [
+        {
+          "number": 3,
+          "state": "closed",
+          "title": "Wolfram plugin masks provider error as ordinary no-result sentence",
+          "user": "hermes-agent"
+        },
+        {
+          "number": 1,
+          "state": "closed",
+          "title": "Local AI Chat: reply chunk can exceed reply_chunk_chars when truncation marker is appended",
+          "user": "hermes-agent"
+        }
+      ]
+    },
+    {
+      "arm": "docs",
+      "kind": "pull_requests",
+      "items": [
+        {
+          "number": 4,
+          "state": "open",
+          "title": "Wolfram: distinguish provider error (success='false') from genuine no-result",
+          "merged": false,
+          "user": "hermes-agent",
+          "head": "compact-xml-docs-wolfram-provider-error",
+          "base": "main"
+        },
+        {
+          "number": 2,
+          "state": "open",
+          "title": "localai: keep every delivered reply within reply_chunk_chars",
+          "merged": false,
+          "user": "hermes-agent",
+          "head": "compact-limits-docs-fix-localai-chunk-limit",
+          "base": "main"
+        }
+      ]
+    },
+    {
+      "arm": "full",
+      "kind": "issues",
+      "items": [
+        {
+          "number": 3,
+          "state": "closed",
+          "title": "Wolfram: HTTP 200 with error='true' reported as ordinary no-result",
+          "user": "hermes-agent"
+        },
+        {
+          "number": 1,
+          "state": "closed",
+          "title": "Local AI Chat: reply can exceed reply_chunk_chars when truncation marker is added",
+          "user": "hermes-agent"
+        }
+      ]
+    },
+    {
+      "arm": "full",
+      "kind": "pull_requests",
+      "items": [
+        {
+          "number": 2,
+          "state": "open",
+          "title": "localai: keep truncated reply chunks within reply_chunk_chars",
+          "merged": false,
+          "user": "hermes-agent",
+          "head": "compact-limits-full-localai-chunk-limit",
+          "base": "main"
+        }
+      ]
+    }
+  ]
+}

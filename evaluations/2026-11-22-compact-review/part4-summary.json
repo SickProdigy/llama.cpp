@@ -1,0 +1,137 @@
+{
+  "classification": "Posthoc four-request context diagnostic, not fresh model qualification or a statistical reliability estimate",
+  "requests": [
+    {
+      "case": "docs-initial",
+      "variant": "minimal",
+      "caller_completed": true,
+      "would_admit": true,
+      "reason": null,
+      "actual_publication": false,
+      "not_a_fresh_qualification_score": true,
+      "seconds": 77.480867,
+      "packet_bytes": 13548,
+      "rendered_tokens": 4720,
+      "output_tokens": 190,
+      "review": {
+        "checks": {
+          "documentation": {
+            "evidence": "README.md provided in context; content is consistent with the plugin behavior described in the code and tests (Ollama/llama.cpp backends, chunking, remote prompts).",
+            "status": "consistent"
+          },
+          "tests": {
+            "evidence": "Execution summaries show 83-88 tests passed. The patch adds specific regression tests for the `_chunk_text` logic, covering the truncation marker edge case (final chunk budget), unbroken words, and multi-chunk limits.",
+            "status": "adequate"
+          }
+        },
+        "decision": "approve",
+        "findings": [],
+        "packet_id": "d897343124e74c3716306bbdd068df63cbc2d2daebe7fdef2550333b2c762569"
+      }
+    },
+    {
+      "case": "docs-initial",
+      "variant": "whole_changed_production_modules",
+      "caller_completed": true,
+      "would_admit": true,
+      "reason": null,
+      "actual_publication": false,
+      "not_a_fresh_qualification_score": true,
+      "seconds": 91.435417,
+      "packet_bytes": 24692,
+      "rendered_tokens": 7376,
+      "output_tokens": 178,
+      "review": {
+        "checks": {
+          "documentation": {
+            "evidence": "README accurately describes the plugin's purpose, commands, backends, and safety constraints. It does not detail the specific chunking marker logic, which is an internal implementation detail, so it is consistent with the code behavior.",
+            "status": "consistent"
+          },
+          "tests": {
+            "evidence": "Execution summaries show 83 and 88 tests passed. The patch adds specific regression tests for `_chunk_text` verifying the truncation marker reservation. The tests cover edge cases like unbroken words and exact limits.",
+            "status": "adequate"
+          }
+        },
+        "decision": "approve",
+        "findings": [],
+        "packet_id": "ded0eefcc9cb32fbec428c0be4e060b6f8d93b38536e4b62bd3be0b080e44e9d"
+      }
+    },
+    {
+      "case": "full-initial",
+      "variant": "whole_changed_production_modules",
+      "caller_completed": true,
+      "would_admit": true,
+      "reason": null,
+      "actual_publication": false,
+      "not_a_fresh_qualification_score": true,
+      "seconds": 94.859687,
+      "packet_bytes": 23512,
+      "rendered_tokens": 7092,
+      "output_tokens": 200,
+      "review": {
+        "checks": {
+          "documentation": {
+            "evidence": "README accurately describes the plugin's stateless nature, command interface, and configuration options; no claims contradicted by the code.",
+            "status": "consistent"
+          },
+          "tests": {
+            "evidence": "Execution summaries show 83-87 passed tests. New regression tests specifically target the `chunk_size` limit violation with unbroken words and marker inclusion, verifying the fix.",
+            "status": "adequate"
+          }
+        },
+        "decision": "approve",
+        "findings": [],
+        "packet_id": "4239cdaebfd174a7579dd9d808d31c28aadd321ec8d7e8a0c6f3fc6eda34039e"
+      }
+    },
+    {
+      "case": "full-initial",
+      "variant": "minimal",
+      "caller_completed": true,
+      "would_admit": true,
+      "reason": null,
+      "actual_publication": false,
+      "not_a_fresh_qualification_score": true,
+      "seconds": 63.664492,
+      "packet_bytes": 12301,
+      "rendered_tokens": 4420,
+      "output_tokens": 183,
+      "review": {
+        "checks": {
+          "documentation": {
+            "evidence": "README.md states that model replies are shortened and split into bounded chat messages, which is consistent with the code change ensuring chunks respect the limit including the marker.",
+            "status": "consistent"
+          },
+          "tests": {
+            "evidence": "Execution summaries show 83 and 87 tests passed. The patch adds specific regression tests for the truncation edge case (long unbroken words), various chunk sizes, and whitespace normalization, directly verifying the fix.",
+            "status": "adequate"
+          }
+        },
+        "decision": "approve",
+        "findings": [],
+        "packet_id": "94b86df875ee09850ea0d22e7291eff4d0bc6d04b7782df013e038780b63881d"
+      }
+    }
+  ],
+  "maximum_requests": 4,
+  "actual_requests": 4,
+  "all_complete_stop_within_deadline": true,
+  "predefined_known_defect_detections": 0,
+  "all_would_admit": true,
+  "whole_module_context_did_not_improve_detection_in_these_pairs": true,
+  "docs_initial_independent_defects": [
+    "Unchanged public caller adds username prefix after chunking:208 chars with cap200",
+    "Unconditional marker reservation changes nine of18 complete near/exact capacity inputs"
+  ],
+  "full_initial_independent_defects": [
+    "Unchanged public caller adds username prefix after chunking:208 chars with cap200"
+  ],
+  "full_initial_exact_fit_preservation_passes": "18/18",
+  "review_findings_valid_or_false": "No findings in any response; approvals/test-adequacy claims do not establish correctness",
+  "paired_evidence": "Same actual source and fresh execution payloads within each pair, only generic code context differs",
+  "input_rule": "Whole changed production module, no selected counterexample/caller hints or private expected audit in model messages",
+  "actual_publication": false,
+  "restored_and_verified": true,
+  "causal_limitations": "Two selected historical proposals, one sample per variant; fresh receipt timestamps/packet IDs differ from historical runs and prompt-cache/order differ. Not evidence that all context expansion is useless."
+}

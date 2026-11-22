@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "manifest_files": 190,
+  "paired_cases_exactly_rebuilt": 2,
+  "complete_captures_verified": 4,
+  "fresh_execution_payloads_bound": 4,
+  "not_new_execution_or_historic_MAC_authentication": true
+}

@@ -1,7 +1,7 @@
 # Compact review goal — staged delivery
 
-The full goal remains active until all stages, independent audits, runtime
-restoration and delivery checks are finished. Small samples cannot establish
+All planned stages, independent audits and runtime restoration are complete.
+See [completion audit](completion-audit.md) and [final diagnostic](part4.md). Small samples cannot establish
 unattended reliability. A negative model result is a valid completed evaluation;
 missing experiments are not.
 
@@ -11,7 +11,7 @@ missing experiments are not.
 | 2 | Timed reviewer comparison, transport/timeout and output-schema checks, detection/false-positive evaluation, cache/switch cost and selected next-stage configuration | Complete; [report](part2.md) |
 | 3a | First fresh family, two arms and six turns, real publication and independent source/test/docs/claims audit | Complete; [report](part3a.md) |
 | 3b | Second fresh family under the same frozen code, restoration, audit and delivery | Complete; [report](part3b.md) |
-| 4 | Four registered posthoc context requests on completed proposals; restore, audit and deliver | Pending; diagnostic only |
+| 4 | Four registered posthoc context requests on completed proposals; restore, audit and deliver | Complete; [report](part4.md), diagnostic only |
 
 ## Part 2
 

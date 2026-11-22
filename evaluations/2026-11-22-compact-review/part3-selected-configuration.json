@@ -1,5 +1,5 @@
 {
-  "status": "Both fresh families complete and restored. No reviewer qualified; bounded four-request posthoc context diagnostic remains.",
+  "status": "Evaluation complete, including four-request posthoc context diagnostic and verified restoration. No reviewer qualified; configuration remains experimental and is not deployed.",
   "main_model": "Qwen3.8-27B-hermes-IQ3_XXS.gguf",
   "main_alias": "qwen3.8-27b-hermes-adapted-iq3xxs",
   "review_model": "same27B isolated role request",

@@ -1,0 +1,73 @@
+{
+  "passed": true,
+  "scope": "Re-extracted published archives and executed public offline verifiers; archive/source/log/capture consistency, not fresh inference or semantic proof. Initial-to-final restoration comparison uses private snapshots.",
+  "archives": {
+    "part2": {
+      "archive_sha256": "95d1a0cc5929cebc2472287842ca7f2ca42f5e2fad5edd585b03bf040d2e5f86",
+      "regular_files": 649,
+      "public_verifier_result": {
+        "passed": true,
+        "manifest_files_verified": 648,
+        "source_packets_verified": 8,
+        "complete_model_reviews": 41,
+        "scored_reviews": 35,
+        "warm_repeats_excluded": 5,
+        "cache_interference_review_excluded": 1,
+        "failed_suite_control_blocked_without_critic": true,
+        "packet_token_usage_matches_template_measurement": true,
+        "not_a_new_project_test_run": true,
+        "not_semantic_correctness_or_public_MAC_verification": true
+      }
+    },
+    "part3a": {
+      "archive_sha256": "07fcf2b94ff07564cff3ce51b9fb07a920af3e76cd8008e31f035e191d45feec",
+      "regular_files": 1261,
+      "public_verifier_result": {
+        "passed": true,
+        "manifest_files_verified": 1260,
+        "exact_source_packets_rebuilt": 8,
+        "complete_captures_verified": 8,
+        "admissions_verified": 8,
+        "local_and_actual_remote_grades_bound": 12,
+        "not_new_project_test_run_or_semantic_correctness": true,
+        "historic_MACs_require_private_issuer_keys": true
+      }
+    },
+    "part3b": {
+      "archive_sha256": "f37a43a00c100a009e4eb60e00ea96d89ecda82e8da88342ff25552b71eba807",
+      "regular_files": 1810,
+      "public_verifier_result": {
+        "passed": true,
+        "mutant_sources_and_execution_payloads_verified": 4,
+        "manifest_files_verified": 1809,
+        "exact_source_packets_rebuilt": 11,
+        "complete_captures_verified": 11,
+        "admissions_verified": 9,
+        "local_and_actual_remote_grades_bound": 12,
+        "not_new_project_test_run_or_semantic_correctness": true,
+        "historic_MACs_require_private_issuer_keys": true
+      }
+    },
+    "part4": {
+      "archive_sha256": "91c63832557b093f978af75f58d38cee38bd8acb816095e49449e4f86add5621",
+      "regular_files": 191,
+      "public_verifier_result": {
+        "passed": true,
+        "manifest_files": 190,
+        "paired_cases_exactly_rebuilt": 2,
+        "complete_captures_verified": 4,
+        "fresh_execution_payloads_bound": 4,
+        "not_new_execution_or_historic_MAC_authentication": true
+      }
+    }
+  },
+  "initial_to_final_preservation": {
+    "initial_to_final_profile_hashes_match": true,
+    "initial_to_final_model_inventory_metadata_match": true,
+    "initial_to_final_backend_alias_context_match": true,
+    "initial_to_final_codex_entire_snapshot_match": true,
+    "original_ids_images_configuration_running_match": true
+  },
+  "final_model_free_GiB": 123.98001480102539,
+  "models": 29
+}

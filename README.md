@@ -6,7 +6,7 @@ This file tracks which local GGUF models can actually complete the Hermes Agent 
 
 Future options: [local quantization and spare-GPU testing](MODEL-OPTIONS.md).
 
-## November 22, 2026 compact-review follow-up — parts 1, 2, 3a and 3b delivered
+## November 22, 2026 compact-review follow-up — evaluation complete
 
 **Review is faster; no tested reviewer qualifies as a correctness gate.**
 The [Part 2 comparison](evaluations/2026-11-22-compact-review/part2.md) covers
@@ -41,10 +41,13 @@ none of four workflows meets the entire task contract. These tests use native
 Hermes CLI with experimental focused Gitea/workspace wrappers making real MCP
 calls, rather than the normal full native MCP interface.
 
-The [staged plan](evaluations/2026-11-22-compact-review/plan.md) now requires only
-a bounded four-request posthoc context diagnostic and its delivery. The library
-is experimental. Original VibeForged runtime/profile and all 29 models are
-preserved, 124.01 GiB remains free, and Hermes-Codex was not restarted. Wider
+[Part 4](evaluations/2026-11-22-compact-review/part4.md) adds four bounded
+posthoc requests comparing compact packets with whole changed modules. All four
+approve defective code; larger context provides no observed detection benefit
+in those two pairs. The [staged evaluation](evaluations/2026-11-22-compact-review/plan.md)
+is complete with a negative qualification result; the library remains
+experimental. Original VibeForged runtime/profile and all 29 models are
+preserved, 123.98 GiB remains free, and Hermes-Codex was not restarted. Wider
 P100 plus 8 GiB host-memory candidates are planned separately, not tested fits.
 
 ## November 22, 2026 everyday native Hermes pilot
