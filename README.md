@@ -6,7 +6,11 @@ This file tracks which local GGUF models can actually complete the Hermes Agent 
 
 Future options: [local quantization and spare-GPU testing](MODEL-OPTIONS.md).
 
-New active goal: [P100 plus 8 GiB host-RAM model evaluation](evaluations/2026-11-23-wide-memory/plan.md), prioritizing correctness over speed. No new fit or quality result yet.
+New active goal: [P100 plus 8 GiB host-RAM model evaluation](evaluations/2026-11-23-wide-memory/plan.md), prioritizing correctness over speed.
+The [initial resource baseline](evaluations/2026-11-23-wide-memory/resource-baseline.md)
+completes tool/16k/60k probes, but mapped loading briefly exceeds 8 GiB process
+PSS despite the container cap. An explicit loading-mode pilot follows. The Q4
+file is downloaded; no new candidate agent-quality result is claimed.
 
 ## November 22, 2026 compact-review follow-up — evaluation complete
 
@@ -438,6 +442,14 @@ gateway parity.
 | Output discipline | Avoids duplicate tool retries and runaway decode length |
 
 ## Test Matrix
+
+### November 23 wider-memory study — in progress
+
+The retained IQ3 resource baseline completes 16k/60k probes at 98,304 context
+with zero observed backend swap. Mapped loading reaches 8.93 GiB process PSS,
+so this does not prove a strict 8 GiB resident budget. Q4 is downloaded; explicit
+non-mapped loading and actual agent tasks are next. These are resource results,
+not new coding accuracy scores. [Evidence](evaluations/2026-11-23-wide-memory/resource-baseline.md).
 
 ### November 22 compact-review evaluation
 

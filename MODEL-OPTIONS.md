@@ -3,6 +3,15 @@
 Recorded November 19, 2026. This is a reminder of possible next steps, not a
 record of tests on the spare PCs or a change to the deployed model.
 
+## November 23: wider-memory testing started
+
+The [new evaluation](evaluations/2026-11-23-wide-memory/plan.md) is active.
+The retained IQ3 baseline completes 16k/60k resource probes, but mapped loading
+shows why the Docker memory cap alone is insufficient proof of an 8 GiB resident
+budget. See [measurements and loading-mode amendment](evaluations/2026-11-23-wide-memory/resource-baseline.md).
+The adapted Q4 public file is downloaded; candidate fit and actor correctness
+remain unproven. The original runtime is restored after the first pilot.
+
 ## November 22: full P100 plus up to 8 GiB host spillover
 
 The owner widened the candidate budget to the P100's 16 GiB VRAM plus up to

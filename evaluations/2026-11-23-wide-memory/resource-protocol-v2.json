@@ -1,0 +1,82 @@
+{
+  "registered_epoch": 1795453121.806675,
+  "classification": "Resource/transport pilots, not fresh agent-quality scores",
+  "backend_image": "sha256:7561b4761f849925a728c5ac2bd1f4a649b6a76f24544e7f992b047ad016cec3",
+  "host_backend_memory_limit_bytes": 8589934592,
+  "backend_swap_limit_bytes": 0,
+  "cpu_threads": 8,
+  "parallel": 1,
+  "cache_k": "q4_0",
+  "cache_v": "q4_0",
+  "host_prompt_cache_MiB": 512,
+  "explicit_fit": "off",
+  "cpu_poll": 0,
+  "minimum_gpu_free_MiB_observation_target": 256,
+  "host_low_available_abort_bytes": 4294967296,
+  "probe_output_cap": 512,
+  "per_probe_deadline_seconds": 5400,
+  "load_deadline_seconds": 900,
+  "per_model_stage_guard_seconds": 14400,
+  "synthetic_prompt_targets": [
+    16000,
+    60000
+  ],
+  "prompt_sizing": "Actual template/tokenizer counts within5% of target, below context plus output reserve. Resource probes, not agent benchmarks.",
+  "probe_order": [
+    "one_tool_call",
+    "synthetic_16k",
+    "synthetic_60k"
+  ],
+  "baseline": {
+    "file": "Qwen3.8-27B-hermes-IQ3_XXS.gguf",
+    "sha256": "390a54c26ed8fc42a558f073e5745b7c0c1922086bbcc07e2e6357a7b527c345",
+    "layouts": [
+      {
+        "context": 98304,
+        "gpu_layers": 999
+      }
+    ]
+  },
+  "adapted_27B_Q4": {
+    "file": "Qwen3.8-27B-hermes-Q4_K_M.gguf",
+    "sha256": "6512bb1c2595575fc0aed39b7d72a6aaf71084b1164b5d3749f87a6c2a3d3bf3",
+    "layouts": [
+      {
+        "context": 98304,
+        "gpu_layers": 56
+      },
+      {
+        "context": 98304,
+        "gpu_layers": 52
+      },
+      {
+        "context": 98304,
+        "gpu_layers": 48
+      },
+      {
+        "context": 65536,
+        "gpu_layers": 52
+      }
+    ],
+    "selection": "Stop at first complete resource pass. Other layouts only after hardware/runtime failure; a wrong semantic tool response is not hardware OOM."
+  },
+  "remaining_model_layouts": "Declare before their first calls using inspected architecture and previous resource observations.",
+  "measurements": [
+    "GPU total/used/free/utilization sampled5s",
+    "cgroup current/peak/anon/file/events/swap",
+    "process RSS/PSS/status",
+    "host MemAvailable and pswpin/pswpout deltas",
+    "actual prompt/output/cache counts and complete HTTP bodies",
+    "load errors, Docker OOMKilled and exact launch args"
+  ],
+  "memory_scope": "8GiB cgroup cap includes charged file cache, allocations and prompt cache. Record PSS/global host activity to disclose driver/accounting gaps; cap alone is not proof of whole-host delta.",
+  "safety": "Snapshot original IDs/config/profile; stop only Hermes+llama, never Codex. No public ports. Exact owned cleanup and original readiness restoration in finally. No cache/swap flush or global prune.",
+  "no_model_quality_or_unattended_reliability_claim": true,
+  "amendment": "v2: explicit --load-mode none after v1 shared mapped-weight accounting observation",
+  "load_mode": "none",
+  "reason": "v1 completed all probes with cgroup swap0 but process PSS during loading peaked9593393152bytes (>8GiB). Cap alone did not prove strict resident budget. Nonmapped loading is available in current b12627 help.",
+  "prior_protocol_sha256": "d685e83fbfdc16c618cb8c021a61583f115413eabaac2663b0505a664ae2681a",
+  "memory_guard": "Abort if sampled PSS exceeds8GiB, in addition to cgroup memory8g/no-swap and host low-available guard.",
+  "baseline_retest": "One matched IQ3 pilot with new loading mode, not a fresh quality score; Q4 pilot may run first once verified download completes.",
+  "no_candidate_actor_quality_calls_yet": true
+}

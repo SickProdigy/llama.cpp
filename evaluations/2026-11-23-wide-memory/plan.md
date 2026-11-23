@@ -76,3 +76,10 @@ no backend swap, limited host prompt cache, measured 16k/60k context probes and
 bounded layout fallback before any new inference. A same-checkpoint IQ3 baseline
 will use the same resource settings. The protocol does not claim loaded or
 active fit yet.
+
+## First resource stage delivered
+
+[Initial baseline and its loading-memory caveat](resource-baseline.md) are complete
+and restored. The Q4 file download is complete. [Protocol v2](resource-protocol-v2.json)
+registers non-mapped loading before any Q4 inference. Full native actor workflows
+and the remaining candidate trials are still required.

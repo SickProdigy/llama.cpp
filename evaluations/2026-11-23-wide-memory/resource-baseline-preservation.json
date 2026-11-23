@@ -1,0 +1,11 @@
+{
+  "original_ids_images_configuration_running_preserved": true,
+  "codex_entire_snapshot_unchanged": true,
+  "four_profile_hashes_unchanged": true,
+  "all_original_29_models_metadata_unchanged": true,
+  "only_registered_new_model_name_allowed": true,
+  "original_alias_context_restored": true,
+  "at_least_100_GiB_free": true,
+  "free_GiB": 109.9924545288086,
+  "extra_model_names": []
+}

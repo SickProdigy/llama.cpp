@@ -1,0 +1,7 @@
+{
+  "supervisor_exact_id": "47ae40736fcdb5959fb71c13ae719b539bee2a552d1956e02151a073ac44376b",
+  "supervisor_removed": true,
+  "owned_backend_absent": true,
+  "owned_internal_network_absent": true,
+  "no_global_prune": true
+}

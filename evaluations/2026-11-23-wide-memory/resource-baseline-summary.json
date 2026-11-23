@@ -1,0 +1,72 @@
+{
+  "model": "baseline",
+  "layouts": [
+    {
+      "result": {
+        "layout": {
+          "context": 98304,
+          "gpu_layers": 999
+        },
+        "resource_probes_completed": true,
+        "tool_call_correct": true,
+        "no_agent_quality_claim": true
+      },
+      "samples": 172,
+      "probes": [
+        {
+          "name": "tool",
+          "seconds": 17.645992809033487,
+          "actual_input_tokens": 293,
+          "output_tokens": 28,
+          "finish_reason": "tool_calls",
+          "body_complete": true
+        },
+        {
+          "name": "prompt16000",
+          "seconds": 172.83108658296987,
+          "actual_input_tokens": 16152,
+          "output_tokens": 9,
+          "finish_reason": "stop",
+          "body_complete": true
+        },
+        {
+          "name": "prompt60000",
+          "seconds": 608.8513381420053,
+          "actual_input_tokens": 59937,
+          "output_tokens": 9,
+          "finish_reason": "stop",
+          "body_complete": true
+        }
+      ],
+      "memory_peak_bytes": {
+        "memory.current": 8587288576,
+        "memory.peak": 8590196736,
+        "memory.swap.current": 0,
+        "cgroup_anon": 1154772992,
+        "cgroup_file": 8357654528,
+        "cgroup_kernel": 26632192,
+        "Pss": 9593393152,
+        "Pss_Anon": 1154555904,
+        "Pss_File": 9377329152,
+        "Swap": 0
+      },
+      "gpu_peak_used_MiB": 12930,
+      "gpu_minimum_free_MiB": 3345,
+      "host_min_available_bytes": 34549239808,
+      "load_seconds": 85.45948504301487,
+      "build": "b12627-225a5345b",
+      "sampled_active_process_Pss_peak_bytes": 1360955392
+    }
+  ],
+  "runtime_restored": true,
+  "host_global_swap_activity_delta_pages": {
+    "pswpin_pages": 65726,
+    "pswpout_pages": 6111
+  },
+  "swap_scope": "Global host deltas include unrelated services; process/cgroup swap tracked separately. No attribution to model from global counters alone.",
+  "memory_scope": "Charged cgroup memory includes reclaimable file cache. Process PSS and anon/file recorded separately. Tiny observed cgroup limit overshoots are reported, not hidden. Driver/shared accounting is not proven solely by the cap.",
+  "load_scope": "Full model SHA read warms file cache; concurrent model download and ambient host workload are uncontrolled. Not a cold-load benchmark or a quantization-only speed comparison.",
+  "not_fresh_agent_quality": true,
+  "strict_load_and_active_8GiB_resident_budget_proven": false,
+  "loading_residency_caveat": "Process PSS during mapped loading exceeds8GiB despite8GiB charged-cgroup limit; process PSS includes shared/reclaimable mapped pages. New v2 loading-mode pilot required before strict resident-fit claims."
+}

@@ -1,0 +1,14 @@
+{
+  "repo": "netprojects/Qwen3.8-27B-hermes-adapted-GGUF",
+  "revision": "10fdf357f14825c61ad7eb42a932e1f1e4390e8f",
+  "file": "Qwen3.8-27B-hermes-Q4_K_M.gguf",
+  "expected_bytes": 16810714560,
+  "expected_sha256": "6512bb1c2595575fc0aed39b7d72a6aaf71084b1164b5d3749f87a6c2a3d3bf3",
+  "started_epoch": 1795451357.2728126,
+  "received_bytes": 16810714560,
+  "free_bytes": 116284211200,
+  "updated_epoch": 1795453151.1048481,
+  "complete": true,
+  "actual_sha256": "6512bb1c2595575fc0aed39b7d72a6aaf71084b1164b5d3749f87a6c2a3d3bf3",
+  "finished_epoch": 1795453164.556239
+}

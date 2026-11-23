@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "manifest_files": 39,
+  "complete_probes_verified": 3,
+  "memory_samples": 172,
+  "mapped_loading_resident_overshoot_preserved": true,
+  "not_new_inference_or_agent_correctness": true
+}
