@@ -1,0 +1,64 @@
+{
+  "epoch": 1795458189.2948663,
+  "sources": [
+    {
+      "repo": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+      "revision": "55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128",
+      "files": [
+        {
+          "file": "README.md",
+          "bytes": 61545,
+          "sha256": "e1aa7a24bc4845a11cf8defacd723a67fe5cc551ca9311e0276933d9176f55d7",
+          "url": "https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/resolve/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md"
+        },
+        {
+          "file": "generation_config.json",
+          "bytes": 175,
+          "sha256": "c5ee59a086c5504838db2a66cafdf04d10aac11cb021dd4e92a15946645c2dda",
+          "url": "https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/resolve/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/generation_config.json"
+        },
+        {
+          "file": "config.json",
+          "bytes": 1822,
+          "sha256": "8d570ae877badd9ff5442afdc726385aba07f5757ba875a7491bde9549457e72",
+          "url": "https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/resolve/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/config.json"
+        }
+      ]
+    },
+    {
+      "repo": "zai-org/GLM-4.7-Flash",
+      "revision": "7dd20894a642a0aa287e9827cb1a1f7f91386b67",
+      "files": [
+        {
+          "file": "README.md",
+          "bytes": 8174,
+          "sha256": "7bfcbced42741ceb3fff8809f8d6c84ada9696850e257c4e53e6c2fe9ef4f9bf",
+          "url": "https://huggingface.co/zai-org/GLM-4.7-Flash/resolve/7dd20894a642a0aa287e9827cb1a1f7f91386b67/README.md"
+        },
+        {
+          "file": "generation_config.json",
+          "bytes": 181,
+          "sha256": "e19f4eb8be12cdb62a3737b52a332c7c142cbf5ee24a5de7d806f6132b782425",
+          "url": "https://huggingface.co/zai-org/GLM-4.7-Flash/resolve/7dd20894a642a0aa287e9827cb1a1f7f91386b67/generation_config.json"
+        },
+        {
+          "file": "config.json",
+          "bytes": 1070,
+          "sha256": "dc9b97c7c9bed726a2e6939da4234d5c43abb3edec8812068c9a1af1dbc13acb",
+          "url": "https://huggingface.co/zai-org/GLM-4.7-Flash/resolve/7dd20894a642a0aa287e9827cb1a1f7f91386b67/config.json"
+        }
+      ]
+    }
+  ],
+  "not_model_test_results": true,
+  "settings_notes": [
+    {
+      "model": "Devstral Small 2",
+      "finding": "Author deployment/tool-call examples use temperature 0.15. This is example guidance, not evidence that it is optimal in Hermes. Preserve Hermes system policy and inspect pinned llama.cpp chat/template/tool compatibility before a quality run."
+    },
+    {
+      "model": "GLM-4.7-Flash",
+      "finding": "Author coding benchmarks use temperature 0.7/top-p1/output16384 and recommend preserved thinking for multiturn agentic tasks. Do not inherit Qwen thinking-off. Verify pinned runtime template and actual reasoning/tool-history wire retention. The Q4 primary cap8192 would differ from author benchmark cap; declare appropriate architecture-specific output budget and its comparison limitation before GLM calls."
+    }
+  ]
+}

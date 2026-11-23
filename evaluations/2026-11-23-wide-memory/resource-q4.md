@@ -32,9 +32,9 @@ stays zero; the global delta cannot be attributed to this model alone.
 
 Loading takes 75.45 seconds after the controller independently reads and verifies
 the on-disk file SHA. That read warms file cache. The download had already
-finished, but ambient host activity is uncontrolled. The matched IQ3 test with
-this explicit loading mode is still required before a fair layout-speed
-comparison. Do not rank model quality from these short synthetic outputs.
+finished, but ambient host activity is uncontrolled. The [matched IQ3 test](resource-baseline-v2.md) with this explicit loading
+mode is now complete. Its resource timings are observations with ambient-host
+and cache limitations. Do not rank model quality from these short synthetic outputs.
 
 ## Identity and configuration
 

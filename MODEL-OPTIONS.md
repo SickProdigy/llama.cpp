@@ -9,6 +9,10 @@ The [new evaluation](evaluations/2026-11-23-wide-memory/plan.md) is active.
 The retained IQ3 baseline completes 16k/60k resource probes, but mapped loading
 shows why the Docker memory cap alone is insufficient proof of an 8 GiB resident
 budget. See [measurements and loading-mode amendment](evaluations/2026-11-23-wide-memory/resource-baseline.md).
+The [matched non-mapped IQ3 baseline](evaluations/2026-11-23-wide-memory/resource-baseline-v2.md)
+now completes the same probes at 1.87 GiB peak process PSS and zero observed
+backend swap. That resolves the loading caveat for the measured layout, without
+establishing whole-host fit or agent correctness.
 The adapted Q4 public file now [completes resource probes](evaluations/2026-11-23-wide-memory/resource-q4.md)
 at 98,304 context with 56 GPU layers and non-mapped loading: 15.09 GiB GPU and
 4.50 GiB peak process PSS. Actor correctness remains unproven. The original runtime is restored after the first pilot.

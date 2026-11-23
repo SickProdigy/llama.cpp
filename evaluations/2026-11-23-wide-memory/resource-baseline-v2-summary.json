@@ -1,0 +1,75 @@
+{
+  "model": "baseline",
+  "layouts": [
+    {
+      "result": {
+        "layout": {
+          "context": 98304,
+          "gpu_layers": 999
+        },
+        "resource_probes_completed": true,
+        "tool_call_correct": true,
+        "no_agent_quality_claim": true
+      },
+      "samples": 170,
+      "probes": [
+        {
+          "name": "tool",
+          "seconds": 21.968279468012042,
+          "actual_input_tokens": 293,
+          "output_tokens": 28,
+          "finish_reason": "tool_calls",
+          "body_complete": true
+        },
+        {
+          "name": "prompt16000",
+          "seconds": 173.22135418304242,
+          "actual_input_tokens": 16152,
+          "output_tokens": 9,
+          "finish_reason": "stop",
+          "body_complete": true
+        },
+        {
+          "name": "prompt60000",
+          "seconds": 611.5288729029708,
+          "actual_input_tokens": 59937,
+          "output_tokens": 9,
+          "finish_reason": "stop",
+          "body_complete": true
+        }
+      ],
+      "memory_peak_bytes": {
+        "memory.current": 8586727424,
+        "memory.peak": 8589938688,
+        "memory.swap.current": 0,
+        "cgroup_anon": 1209593856,
+        "cgroup_file": 8324288512,
+        "cgroup_kernel": 9359360,
+        "Pss": 2009163776,
+        "Pss_Anon": 1209376768,
+        "Pss_File": 205240320,
+        "Swap": 0,
+        "Pss_Shmem": 594546688,
+        "VmHWM": 2008576000,
+        "cgroup_shmem": 594550784
+      },
+      "gpu_peak_used_MiB": 12930,
+      "gpu_minimum_free_MiB": 3345,
+      "host_min_available_bytes": 34415001600,
+      "load_seconds": 61.68786132405512,
+      "build": "b12627-225a5345b"
+    }
+  ],
+  "runtime_restored": true,
+  "host_global_swap_activity_delta_pages": {
+    "pswpin_pages": 2013,
+    "pswpout_pages": 9928
+  },
+  "swap_scope": "Global host deltas include unrelated services; process/cgroup swap tracked separately. No attribution to model from global counters alone.",
+  "memory_scope": "Charged cgroup memory includes reclaimable file cache. Process PSS and anon/file recorded separately. Tiny observed cgroup limit overshoots are reported, not hidden. Driver/shared accounting is not proven solely by the cap.",
+  "load_scope": "Full model SHA read warms OS cache; download already complete before this pilot. Ambient host services and separate CPU-only preflights are uncontrolled. Matched explicit-loading-mode IQ3/Q4 resource observations, not a quantization-only causal speed comparison or agent-quality result.",
+  "not_fresh_agent_quality": true,
+  "registered_sampled_resident_budget_met": true,
+  "resident_or_host_guard_triggered": false,
+  "memory_components_note": "file includes shared-memory buffers as well as reclaimable cache; independent peak columns occur at different times and must not be summed."
+}

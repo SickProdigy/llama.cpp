@@ -9,7 +9,8 @@ Future options: [local quantization and spare-GPU testing](MODEL-OPTIONS.md).
 New active goal: [P100 plus 8 GiB host-RAM model evaluation](evaluations/2026-11-23-wide-memory/plan.md), prioritizing correctness over speed.
 The [initial resource baseline](evaluations/2026-11-23-wide-memory/resource-baseline.md)
 completes tool/16k/60k probes, but mapped loading briefly exceeds 8 GiB process
-PSS despite the container cap. An explicit loading-mode pilot follows. [Q4 now completes the resource probes](evaluations/2026-11-23-wide-memory/resource-q4.md)
+PSS despite the container cap. The [matched non-mapped baseline](evaluations/2026-11-23-wide-memory/resource-baseline-v2.md)
+completes those probes with 1.87 GiB peak process PSS. [Q4 now completes the resource probes](evaluations/2026-11-23-wide-memory/resource-q4.md)
 at 98,304 context, with 15.09 GiB GPU and 4.50 GiB peak process PSS.
 No new candidate agent-quality result is claimed.
 
@@ -446,12 +447,18 @@ gateway parity.
 
 ### November 23 wider-memory study — in progress
 
-The retained IQ3 resource baseline completes 16k/60k probes at 98,304 context
-with zero observed backend swap. Mapped loading reaches 8.93 GiB process PSS,
-so this does not prove a strict 8 GiB resident budget. Q4 now completes explicit
-non-mapped resource probes at 98,304 context (15.09 GiB GPU, 4.50 GiB PSS);
-actual agent tasks are next. These are resource results,
-not new coding accuracy scores. [Evidence](evaluations/2026-11-23-wide-memory/resource-baseline.md).
+Both explicit non-mapped layouts complete the registered tool/16k/60k resource
+probes. These are backend measurements, not fresh coding/Gitea accuracy scores.
+The original mapped IQ3 loading caveat remains historical evidence.
+
+| Adapted 27B layout | Context | Peak GPU | Peak process PSS | 60k probe seconds | Native workflow |
+|---|---:|---:|---:|---:|---|
+| IQ3_XXS, all layers GPU | 98,304 | 12,930 MiB | 1.87 GiB | 611.53 | New tasks pending |
+| Q4_K_M, 56 layers GPU | 98,304 | 15,456 MiB | 4.50 GiB | 657.92 | New tasks next |
+
+Both have zero observed backend swap. The 60k probe reuses 16,020 prompt-cache
+tokens; output is nine tokens. No cold-prefill, coding-throughput or quality
+ranking follows. [Matched evidence and accounting limits](evaluations/2026-11-23-wide-memory/resource-baseline-v2.md).
 
 ### November 22 compact-review evaluation
 

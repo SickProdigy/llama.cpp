@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "known_credential_values_checked": 5,
+  "private_receipt_keys_checked": 3,
+  "patterns_checked": 19,
+  "payloads_checked": 75,
+  "matching_paths": [],
+  "archive_sha256": "5ba95362dad1c4878e6136cb3c47d27ff92e3361bfa2f92fa9a6ace014f903b0",
+  "scope": "Known credential values plus actual private signing keys and common encodings; not general secret detection. No values persisted or printed."
+}
