@@ -12,7 +12,10 @@ completes tool/16k/60k probes, but mapped loading briefly exceeds 8 GiB process
 PSS despite the container cap. The [matched non-mapped baseline](evaluations/2026-11-23-wide-memory/resource-baseline-v2.md)
 completes those probes with 1.87 GiB peak process PSS. [Q4 now completes the resource probes](evaluations/2026-11-23-wide-memory/resource-q4.md)
 at 98,304 context, with 15.09 GiB GPU and 4.50 GiB peak process PSS.
-No new candidate agent-quality result is claimed.
+The [first native Q4 attempt hits a host cgroup OOM](evaluations/2026-11-23-wide-memory/checkpoint-comparison.md)
+before completing its task. A matched captured-prefix replay succeeds with two
+context checkpoints instead of the default 32. Native recovery and the fresh
+second family remain pending; no new candidate quality pass is claimed.
 
 ## November 22, 2026 compact-review follow-up — evaluation complete
 
@@ -454,11 +457,19 @@ The original mapped IQ3 loading caveat remains historical evidence.
 | Adapted 27B layout | Context | Peak GPU | Peak process PSS | 60k probe seconds | Native workflow |
 |---|---:|---:|---:|---:|---|
 | IQ3_XXS, all layers GPU | 98,304 | 12,930 MiB | 1.87 GiB | 611.53 | New tasks pending |
-| Q4_K_M, 56 layers GPU | 98,304 | 15,456 MiB | 4.50 GiB | 657.92 | New tasks next |
+| Q4_K_M, 56 layers GPU | 98,304 | 15,456 MiB | 4.50 GiB | 657.92 | Initial attempt interrupted by host OOM |
 
 Both have zero observed backend swap. The 60k probe reuses 16,020 prompt-cache
 tokens; output is nine tokens. No cold-prefill, coding-throughput or quality
 ranking follows. [Matched evidence and accounting limits](evaluations/2026-11-23-wide-memory/resource-baseline-v2.md).
+
+The native attempt exposes checkpoint retention missed by those few resource
+calls. A [separate checkpoint comparison](evaluations/2026-11-23-wide-memory/checkpoint-comparison.md)
+replays 12 requests / 11 unique histories with one-token outputs: default32
+completes10 then OOMs; checkpoint2 completes12, with sampled main+supervisor PSS
+4.42 GiB instead of6.61 GiB. This is a runtime-capacity result, not coding accuracy.
+The next native runs use `--ctx-checkpoints 2`, a6.5GiB backend cap and measured
+aggregate overhead. Private task/grade content is not supplied as feedback.
 
 ### November 22 compact-review evaluation
 

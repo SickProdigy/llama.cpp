@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "manifest_files": 111,
+  "arms": [
+    {
+      "arm": 32,
+      "complete_responses": 10,
+      "samples": 90,
+      "measurement_errors": 0,
+      "OOMKilled": true
+    },
+    {
+      "arm": 2,
+      "complete_responses": 12,
+      "samples": 118,
+      "measurement_errors": 0,
+      "OOMKilled": false
+    }
+  ],
+  "private_prompt_bodies_not_reconstructed": true,
+  "not_model_quality_or_full_native_fit": true
+}

@@ -37,9 +37,10 @@ Original services are restored and exact owned test containers/network removed.
 Original configuration, four profile hashes, all 30 GGUF metadata entries,
 owner pending work/instructions and the entire Hermes-Codex snapshot match.
 The fresh audit finds **104.86 GiB free**; no model was added/deleted during
-this pilot. Later native workflows reserve overhead with a 7 GiB backend cap
-and measure the combined experimental runtime against 8 GiB, with an ongoing
-100 GiB disk-reserve guard. That differs from these backend-only pilots.
+this pilot. Later native trials amend the backend cap to6.5GiB, measure combined runtime
+overhead against8GiB and maintain the100GiB disk reserve. An interactive
+[checkpoint-memory comparison](checkpoint-comparison.md) follows the native OOM.
+Those configurations differ from these backend-only pilots.
 
 See [summary](resource-baseline-v2-summary.json),
 [preservation](resource-baseline-v2-preservation.json),

@@ -15,7 +15,20 @@ backend swap. That resolves the loading caveat for the measured layout, without
 establishing whole-host fit or agent correctness.
 The adapted Q4 public file now [completes resource probes](evaluations/2026-11-23-wide-memory/resource-q4.md)
 at 98,304 context with 56 GPU layers and non-mapped loading: 15.09 GiB GPU and
-4.50 GiB peak process PSS. Actor correctness remains unproven. The original runtime is restored after the first pilot.
+4.50 GiB peak process PSS. Actor correctness remains unproven. The first native attempt hits a host cgroup
+OOM despite the short resource pass. A [checkpoint comparison](evaluations/2026-11-23-wide-memory/checkpoint-comparison.md)
+completes with `--ctx-checkpoints 2` while default32 reproduces the OOM.
+Native recovery/fresh tests remain required. The original runtime is restored
+and audited after each completed GPU stage.
+
+Public [format metadata](evaluations/2026-11-23-wide-memory/candidate-format-preflight.json)
+is inspected from16MiB prefixes for Devstral and GLM, without downloading their
+complete weights or proving runtime/fit compatibility. GLM's embedded template
+uses `clear_thinking: false` with `enable_thinking: true` to preserve reasoning
+across user turns; the eventual native wire/history must still be verified.
+Do not copy Qwen's thinking-off settings. Devstral declares `mistral3`,40layers,
+8KVheads; GLM declares `deepseek2` with MLA and47layers. These guide bounded
+layout trials; file size and metadata are not quality/fit proof.
 
 ## November 22: full P100 plus up to 8 GiB host spillover
 
