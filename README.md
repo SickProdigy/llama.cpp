@@ -476,6 +476,11 @@ passes reasoning retention through a terminal call and persisted user followup,
 with its thinking settings and 16,384-token output cap serialized. It uses no
 model inference; GLM runtime, fit and coding/Gitea results remain pending.
 
+The [adapted Q3/Q4 header preflight](evaluations/2026-11-23-wide-memory/quant-header-preflight/README.md)
+also finds different importance-matrix metadata despite matching tokenizer and
+tensor schemas. This limits precision-only attribution in the eventual public
+quant comparison; header compatibility is not a runtime or quality pass.
+
 ### November 22 compact-review evaluation
 
 These rows measure reviewers on seven development proposals each, not native

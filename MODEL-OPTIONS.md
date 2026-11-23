@@ -33,6 +33,12 @@ Do not copy Qwen's thinking-off settings. Devstral declares `mistral3`,40layers,
 8KVheads; GLM declares `deepseek2` with MLA and47layers. These guide bounded
 layout trials; file size and metadata are not quality/fit proof.
 
+The [pinned adapted Q3/Q4 header comparison](evaluations/2026-11-23-wide-memory/quant-header-preflight/README.md)
+finds matching tensor names/shapes and tokenizer metadata, but differing
+importance-matrix metadata. Compare these public files as provided; a quality
+difference cannot be attributed solely to bit precision. Q3's full file and
+inference remain untested at this metadata stage.
+
 ## November 22: full P100 plus up to 8 GiB host spillover
 
 The owner widened the candidate budget to the P100's 16 GiB VRAM plus up to

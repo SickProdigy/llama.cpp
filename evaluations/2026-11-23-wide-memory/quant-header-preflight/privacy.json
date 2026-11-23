@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "known_credential_values_checked": 5,
+  "private_receipt_keys_checked": 8,
+  "patterns_checked": 25,
+  "payloads_checked": 6,
+  "matching_paths": [],
+  "scope": "Known credential values and private signing keys with common encodings; no values persisted or printed. Raw logs, full requests and profiles excluded."
+}
