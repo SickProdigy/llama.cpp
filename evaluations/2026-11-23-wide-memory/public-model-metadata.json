@@ -1,0 +1,77 @@
+{
+  "netprojects/Qwen3.8-27B-hermes-adapted-GGUF": {
+    "revision": "10fdf357f14825c61ad7eb42a932e1f1e4390e8f",
+    "files": [
+      {
+        "rfilename": "Qwen3.8-27B-hermes-Q3_K_M.gguf",
+        "blobId": "41dea4be62b59d1c3bdde40e5b8424609aabcc18",
+        "size": 13752764064,
+        "lfs": {
+          "sha256": "a0c809f93de2bcd813e1b6fbd5c2d1f692821814a4261a316f7c8bca9cf23248",
+          "size": 13752764064,
+          "pointerSize": 136
+        }
+      },
+      {
+        "rfilename": "Qwen3.8-27B-hermes-Q4_K_M.gguf",
+        "blobId": "178ac49b897dbd5332b01ef2f7c8c37c2e2b922a",
+        "size": 16810714560,
+        "lfs": {
+          "sha256": "6512bb1c2595575fc0aed39b7d72a6aaf71084b1164b5d3749f87a6c2a3d3bf3",
+          "size": 16810714560,
+          "pointerSize": 136
+        }
+      }
+    ]
+  },
+  "unsloth/Devstral-Small-2-24B-Instruct-2512-GGUF": {
+    "revision": "6e458b8add42681bfd023de5eab93637694aaf82",
+    "files": [
+      {
+        "rfilename": "Devstral-Small-2-24B-Instruct-2512-Q3_K_M.gguf",
+        "blobId": "300d92823f273aa43eee12f25130623383ec511b",
+        "size": 11474619552,
+        "lfs": {
+          "sha256": "53466aa3e486e6f0068c2593d12aeb15fb079c1dfe443ab922c468c39761bd16",
+          "size": 11474619552,
+          "pointerSize": 136
+        }
+      },
+      {
+        "rfilename": "Devstral-Small-2-24B-Instruct-2512-Q4_0.gguf",
+        "blobId": "645c4fddb3b49aedaff4d25689e3053c826644a6",
+        "size": 13494766752,
+        "lfs": {
+          "sha256": "af9a7e072a101d0ee2befef444de1b78cdb4dce7f4515bcba7751ce78eecded5",
+          "size": 13494766752,
+          "pointerSize": 136
+        }
+      },
+      {
+        "rfilename": "Devstral-Small-2-24B-Instruct-2512-Q4_K_M.gguf",
+        "blobId": "bac810d96105f8617c5b09f0b7690b4a901c3950",
+        "size": 14334446752,
+        "lfs": {
+          "sha256": "d14ba9edee1bb4c4996a726deb81e49ae81800a3216f0774634238c380aee496",
+          "size": 14334446752,
+          "pointerSize": 136
+        }
+      }
+    ]
+  },
+  "ggml-org/GLM-4.7-Flash-GGUF": {
+    "revision": "7559e96b7e324ab405897dc2b91492b0f376ad4a",
+    "files": [
+      {
+        "rfilename": "GLM-4.7-Flash-Q4_K.gguf",
+        "blobId": "58229d61b9821150330ddbb877806a3c924dec49",
+        "size": 18244193920,
+        "lfs": {
+          "sha256": "b6019edc5fbe37d3660d2e994d16c839a7855a6f03362c5dcf8142ba479cd0d2",
+          "size": 18244193920,
+          "pointerSize": 136
+        }
+      }
+    ]
+  }
+}

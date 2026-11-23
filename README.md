@@ -6,6 +6,8 @@ This file tracks which local GGUF models can actually complete the Hermes Agent 
 
 Future options: [local quantization and spare-GPU testing](MODEL-OPTIONS.md).
 
+New active goal: [P100 plus 8 GiB host-RAM model evaluation](evaluations/2026-11-23-wide-memory/plan.md), prioritizing correctness over speed. No new fit or quality result yet.
+
 ## November 22, 2026 compact-review follow-up — evaluation complete
 
 **Review is faster; no tested reviewer qualifies as a correctness gate.**
