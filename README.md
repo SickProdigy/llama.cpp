@@ -14,8 +14,11 @@ completes those probes with 1.87 GiB peak process PSS. [Q4 now completes the res
 at 98,304 context, with 15.09 GiB GPU and 4.50 GiB peak process PSS.
 The [first native Q4 attempt hits a host cgroup OOM](evaluations/2026-11-23-wide-memory/checkpoint-comparison.md)
 before completing its task. A matched captured-prefix replay succeeds with two
-context checkpoints instead of the default 32. Native recovery and the fresh
-second family remain pending; no new candidate quality pass is claimed.
+context checkpoints instead of the default 32. The [conditional recovery](evaluations/2026-11-23-wide-memory/native-q4-recovery.md)
+now completes the fix, documentation and feature with independently checked
+published code. Its final URLs are wrong and PR description is stale; this is
+not a clean workflow pass. The [fresh second family and remaining candidates](evaluations/2026-11-23-wide-memory/matrix.md)
+are still in progress or pending; no model winner is claimed.
 
 ## November 22, 2026 compact-review follow-up — evaluation complete
 
@@ -470,6 +473,14 @@ completes10 then OOMs; checkpoint2 completes12, with sampled main+supervisor PSS
 4.42 GiB instead of6.61 GiB. This is a runtime-capacity result, not coding accuracy.
 The next native runs use `--ctx-checkpoints 2`, a6.5GiB backend cap and measured
 aggregate overhead. Private task/grade content is not supplied as feedback.
+
+The completed [conditional native recovery](evaluations/2026-11-23-wide-memory/native-q4-recovery.md)
+passes scoped source/behavior/docs checks across all three dependent stages,
+including 92 project tests at the final published commit and all 83 original
+tests. It reaches 77,968 native prompt tokens; sampled aggregate host memory
+peaks at7.09GiB with zero observed experiment swap. Final links use the wrong
+host and PR metadata remains stale. See the [current testing matrix](evaluations/2026-11-23-wide-memory/matrix.md)
+for the fresh sample and untested candidates; these results do not prove autonomy.
 
 GLM's [scripted client-history control](evaluations/2026-11-23-wide-memory/glm-cli-history-control/README.md)
 passes reasoning retention through a terminal call and persisted user followup,

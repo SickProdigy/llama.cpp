@@ -18,8 +18,11 @@ at 98,304 context with 56 GPU layers and non-mapped loading: 15.09 GiB GPU and
 4.50 GiB peak process PSS. Actor correctness remains unproven. The first native attempt hits a host cgroup
 OOM despite the short resource pass. A [checkpoint comparison](evaluations/2026-11-23-wide-memory/checkpoint-comparison.md)
 completes with `--ctx-checkpoints 2` while default32 reproduces the OOM.
-Native recovery/fresh tests remain required. The original runtime is restored
-and audited after each completed GPU stage.
+The [conditional native recovery](evaluations/2026-11-23-wide-memory/native-q4-recovery.md)
+completes independently checked code/docs/forge stages, with wrong final URLs
+and stale PR metadata. The [fresh sample and other candidates](evaluations/2026-11-23-wide-memory/matrix.md)
+remain in progress or pending. No winner or autonomous reliability is established.
+The original runtime is restored and audited after each completed GPU stage.
 
 Public [format metadata](evaluations/2026-11-23-wide-memory/candidate-format-preflight.json)
 is inspected from16MiB prefixes for Devstral and GLM, without downloading their

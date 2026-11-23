@@ -1,0 +1,343 @@
+{
+  "classification": "Conditional recovery, not clean fresh primary or autonomous reliability proof",
+  "model": {
+    "file": "Qwen3.8-27B-hermes-Q4_K_M.gguf",
+    "bytes": 16810714560,
+    "sha256": "6512bb1c2595575fc0aed39b7d72a6aaf71084b1164b5d3749f87a6c2a3d3bf3",
+    "after_full_SHA_advised_DONTNEED_for_only_this_study_owned_file": true,
+    "not_global_cache_flush_or_proof_of_cold_cache": true
+  },
+  "phases": [
+    {
+      "family": "spam_enforcement",
+      "arm": "q4",
+      "phase": 0,
+      "elapsed_seconds": 3002.8117905789986,
+      "exit_code": 0,
+      "external_timeout": false,
+      "query_sha256": "a5a471adb72c2e45baeaa00adbf89a8b22db97bb79a8ea3ba1733553fe6998c2",
+      "native_session_fingerprints": {
+        "logical_root": "cfb9cdbe86701f9ff153f29ec073ead762f4632aa68f3fd20cb5dfa84c2e33b8",
+        "incoming_sid": "cfb9cdbe86701f9ff153f29ec073ead762f4632aa68f3fd20cb5dfa84c2e33b8",
+        "effective_sid": "cfb9cdbe86701f9ff153f29ec073ead762f4632aa68f3fd20cb5dfa84c2e33b8"
+      },
+      "private_original_run_sha256": "86fc39b9da3b00674772dc757f67a38c8cddd857a1864ca1d1a0380f840188ba",
+      "local_grade": {
+        "kind": "unpublished-local-draft",
+        "family": "spam_enforcement",
+        "phase": 0,
+        "source_digest": "b407529d657fdea0b1a8ed5250d48129b82c5adebd3b7b0c3e9a988e555f6930",
+        "project_exit": 0,
+        "preservation_exit": 0,
+        "independent_exit": 0,
+        "changed_paths": [
+          "autospamignore/README.md",
+          "autospamignore/__init__.py",
+          "tests/test_autospamignore.py"
+        ],
+        "not_fed_to_models": true
+      },
+      "remote_grade": {
+        "kind": "actual-fork-commit",
+        "family": "spam_enforcement",
+        "phase": 0,
+        "source_digest": "b407529d657fdea0b1a8ed5250d48129b82c5adebd3b7b0c3e9a988e555f6930",
+        "project_exit": 0,
+        "preservation_exit": 0,
+        "independent_exit": 0,
+        "changed_paths": [
+          "autospamignore/README.md",
+          "autospamignore/__init__.py",
+          "tests/test_autospamignore.py"
+        ],
+        "not_fed_to_models": true
+      },
+      "forge": {
+        "scope_state": {
+          "issue": 1,
+          "pr": 2,
+          "branch": "wide-spam-q4-enforcement-switch",
+          "commits": 1
+        },
+        "phase": 0,
+        "issue": {
+          "number": 1,
+          "state": "open",
+          "title": "Auto Spam Ignore: switching enforcement on does not act on a user already above the threshold",
+          "created_at": "2026-11-23T15:20:28-05:00",
+          "updated_at": "2026-11-23T15:26:02-05:00",
+          "closed_at": null
+        },
+        "pr": {
+          "number": 2,
+          "state": "open",
+          "merged": false,
+          "title": "Auto Spam Ignore: act on next qualifying message when enforcement is enabled",
+          "created_at": "2026-11-23T15:26:02-05:00",
+          "updated_at": "2026-11-23T15:26:02-05:00",
+          "closed_at": null,
+          "head": {
+            "sha": "fad4f886b6cec54a4f9fc3679409e019f1c81e54",
+            "ref": "wide-spam-q4-enforcement-switch",
+            "repo": "hermes-agent/hermes-wide-q4-20261123"
+          },
+          "base": {
+            "sha": "e940b2c6326bb037f2e8029f638db53cdbc77740",
+            "ref": "main",
+            "repo": "chatgpt-codex/hermes-wide-q4-20261123"
+          }
+        },
+        "clone": {
+          "name": "q4-spam_enforcement-remote-0",
+          "head": "fad4f886b6cec54a4f9fc3679409e019f1c81e54",
+          "tree": "fcc3574585b891082b80c5a5888af7c8bd2d0f55"
+        }
+      }
+    },
+    {
+      "family": "spam_enforcement",
+      "arm": "q4",
+      "phase": 1,
+      "elapsed_seconds": 1023.3394592539989,
+      "exit_code": 0,
+      "external_timeout": false,
+      "query_sha256": "8c19c61c6bf4694d849a06d3c0e8f1d35a464f9984c3212c188065abbeaec1bd",
+      "native_session_fingerprints": {
+        "logical_root": "cfb9cdbe86701f9ff153f29ec073ead762f4632aa68f3fd20cb5dfa84c2e33b8",
+        "incoming_sid": "cfb9cdbe86701f9ff153f29ec073ead762f4632aa68f3fd20cb5dfa84c2e33b8",
+        "effective_sid": "cfb9cdbe86701f9ff153f29ec073ead762f4632aa68f3fd20cb5dfa84c2e33b8"
+      },
+      "private_original_run_sha256": "219a89de6fce7e0b5f0262f82d8d6e8fb7c5af43341c3d1ae01e3ba9d64eda66",
+      "local_grade": {
+        "kind": "unpublished-local-draft",
+        "family": "spam_enforcement",
+        "phase": 1,
+        "source_digest": "b5521d42dfaa15b2a9ba73c75572c6d3a3c9d0ca4759d06315e54537cc7ba81d",
+        "project_exit": 0,
+        "preservation_exit": 0,
+        "independent_exit": 0,
+        "changed_paths": [
+          "autospamignore/README.md",
+          "autospamignore/__init__.py",
+          "tests/test_autospamignore.py"
+        ],
+        "not_fed_to_models": true
+      },
+      "remote_grade": {
+        "kind": "actual-fork-commit",
+        "family": "spam_enforcement",
+        "phase": 1,
+        "source_digest": "b5521d42dfaa15b2a9ba73c75572c6d3a3c9d0ca4759d06315e54537cc7ba81d",
+        "project_exit": 0,
+        "preservation_exit": 0,
+        "independent_exit": 0,
+        "changed_paths": [
+          "autospamignore/README.md",
+          "autospamignore/__init__.py",
+          "tests/test_autospamignore.py"
+        ],
+        "not_fed_to_models": true
+      },
+      "forge": {
+        "scope_state": {
+          "issue": 1,
+          "pr": 2,
+          "branch": "wide-spam-q4-enforcement-switch",
+          "commits": 2
+        },
+        "phase": 1,
+        "issue": {
+          "number": 1,
+          "state": "open",
+          "title": "Auto Spam Ignore: switching enforcement on does not act on a user already above the threshold",
+          "created_at": "2026-11-23T15:20:28-05:00",
+          "updated_at": "2026-11-23T15:26:02-05:00",
+          "closed_at": null
+        },
+        "pr": {
+          "number": 2,
+          "state": "open",
+          "merged": false,
+          "title": "Auto Spam Ignore: act on next qualifying message when enforcement is enabled",
+          "created_at": "2026-11-23T15:26:02-05:00",
+          "updated_at": "2026-11-23T15:42:13-05:00",
+          "closed_at": null,
+          "head": {
+            "sha": "c17f6603e36c4b8d712ad78bbf20dd7c218bb852",
+            "ref": "wide-spam-q4-enforcement-switch",
+            "repo": "hermes-agent/hermes-wide-q4-20261123"
+          },
+          "base": {
+            "sha": "e940b2c6326bb037f2e8029f638db53cdbc77740",
+            "ref": "main",
+            "repo": "chatgpt-codex/hermes-wide-q4-20261123"
+          }
+        },
+        "clone": {
+          "name": "q4-spam_enforcement-remote-1",
+          "head": "c17f6603e36c4b8d712ad78bbf20dd7c218bb852",
+          "tree": "1a6cc3b0d955c51a674002510a831636a3aff567"
+        }
+      }
+    },
+    {
+      "family": "spam_enforcement",
+      "arm": "q4",
+      "phase": 2,
+      "elapsed_seconds": 2574.752884432033,
+      "exit_code": 0,
+      "external_timeout": false,
+      "query_sha256": "6bec1d319469811ce1a71496c504d0e809b9d442fccfea8e4e8de3bf426e00f0",
+      "native_session_fingerprints": {
+        "logical_root": "cfb9cdbe86701f9ff153f29ec073ead762f4632aa68f3fd20cb5dfa84c2e33b8",
+        "incoming_sid": "cfb9cdbe86701f9ff153f29ec073ead762f4632aa68f3fd20cb5dfa84c2e33b8",
+        "effective_sid": "cfb9cdbe86701f9ff153f29ec073ead762f4632aa68f3fd20cb5dfa84c2e33b8"
+      },
+      "private_original_run_sha256": "1aff913db627dba7f89aca597d9c47f5e032f97370c2b2ef5e804000666fa528",
+      "local_grade": {
+        "kind": "unpublished-local-draft",
+        "family": "spam_enforcement",
+        "phase": 2,
+        "source_digest": "c02aa1f091fdf8397770ca23f949dc938177ab4dcaaa79947d9687e33e814a0f",
+        "project_exit": 0,
+        "preservation_exit": 0,
+        "independent_exit": 0,
+        "changed_paths": [
+          "autospamignore/README.md",
+          "autospamignore/__init__.py",
+          "tests/test_autospamignore.py"
+        ],
+        "not_fed_to_models": true
+      },
+      "remote_grade": {
+        "kind": "actual-fork-commit",
+        "family": "spam_enforcement",
+        "phase": 2,
+        "source_digest": "c02aa1f091fdf8397770ca23f949dc938177ab4dcaaa79947d9687e33e814a0f",
+        "project_exit": 0,
+        "preservation_exit": 0,
+        "independent_exit": 0,
+        "changed_paths": [
+          "autospamignore/README.md",
+          "autospamignore/__init__.py",
+          "tests/test_autospamignore.py"
+        ],
+        "not_fed_to_models": true
+      },
+      "forge": {
+        "scope_state": {
+          "issue": 1,
+          "pr": 2,
+          "branch": "wide-spam-q4-enforcement-switch",
+          "commits": 3
+        },
+        "phase": 2,
+        "issue": {
+          "number": 1,
+          "state": "open",
+          "title": "Auto Spam Ignore: switching enforcement on does not act on a user already above the threshold",
+          "created_at": "2026-11-23T15:20:28-05:00",
+          "updated_at": "2026-11-23T15:26:02-05:00",
+          "closed_at": null
+        },
+        "pr": {
+          "number": 2,
+          "state": "open",
+          "merged": false,
+          "title": "Auto Spam Ignore: act on next qualifying message when enforcement is enabled",
+          "created_at": "2026-11-23T15:26:02-05:00",
+          "updated_at": "2026-11-23T16:26:10-05:00",
+          "closed_at": null,
+          "head": {
+            "sha": "1c43b71c7b8461c7ad7caad0232388187ab8ae43",
+            "ref": "wide-spam-q4-enforcement-switch",
+            "repo": "hermes-agent/hermes-wide-q4-20261123"
+          },
+          "base": {
+            "sha": "e940b2c6326bb037f2e8029f638db53cdbc77740",
+            "ref": "main",
+            "repo": "chatgpt-codex/hermes-wide-q4-20261123"
+          }
+        },
+        "clone": {
+          "name": "q4-spam_enforcement-remote-2",
+          "head": "1c43b71c7b8461c7ad7caad0232388187ab8ae43",
+          "tree": "f36995fba4a576ac902969dab25995391af52db1"
+        }
+      }
+    }
+  ],
+  "independent_final_audit": {
+    "audit_complete": true,
+    "not_actor_feedback": true,
+    "classification": "Conditional recovery: all three code/docs/forge stages pass scoped independent checks; reporting accuracy is not a clean pass",
+    "fresh_primary": false,
+    "all_three_independent_local_and_remote_checks_passed": true,
+    "source_and_behavior_preservation_passed": true,
+    "project_tests_by_phase": [
+      86,
+      86,
+      92
+    ],
+    "original_tests_each_phase": 83,
+    "new_tests_meaningful_but_coverage_gaps_recorded": true,
+    "correct_Gitea_upstream_issue_personal_fork_branch_and_PR": true,
+    "final_published_commit": "1c43b71c7b8461c7ad7caad0232388187ab8ae43",
+    "all_three_final_answers_use_wrong_hostname": true,
+    "final_PR_description_stale_after_feature": true,
+    "test_issue_verified_closed": true,
+    "PR_preserved_open_unmerged": true,
+    "runtime_restoration_settings_models_owner_and_Codex_independently_verified": true,
+    "phase_actor_seconds": [
+      3002.8117905789986,
+      1023.3394592539989,
+      2574.752884432033
+    ],
+    "prior_interrupted_coding_segment_seconds": 635.209121465683,
+    "read_control_seconds_separate": 311.02878603397403,
+    "limitations": [
+      "An interrupted partially edited checkout/history was resumed with a neutral continuation; not a clean fresh first sample.",
+      "Only one coding family and its dependent followups, not three independent trials.",
+      "Focused scoped forge plugins and publication execution gate, not an unconstrained vanilla Hermes deployment.",
+      "Fake-peer public-callback tests, original unit suite and source audits do not replace live Nicotine+ GUI/network testing.",
+      "Peak aggregate memory is sampled; transient audit jobs/driver memory and whole-host attribution have stated limits.",
+      "No autonomous-reliability or hardware-purchase conclusion from this sample."
+    ],
+    "manual_audit_sha256": {
+      "native-q4-recovery-initial-manual-audit.json": "c65bab74a5f0b09313d85b328c4b1942f20c119d8b3f4ab87a5e3b7b489b2bef",
+      "native-q4-readme-manual-audit.json": "c2d2ceb49e909d878a6dd07a2eeafc8743d351b7b4269c5bde4b7a11121f5a2f",
+      "native-q4-recovery-feature-manual-audit.json": "9e13400944da623adc807f99ed6b5c98af6c1a388153f24e4208eb8ec156672b"
+    }
+  },
+  "measurements": {
+    "sample_count": 632,
+    "complete_aggregate_sample_count": 632,
+    "measurement_error_sample_count": 0,
+    "peak_observed_cgroup_bytes": 7616655360,
+    "peak_observed_all_process_PSS_bytes": 5766981632,
+    "peak_observed_experiment_swap_bytes": 0,
+    "resource_guard_samples": 0,
+    "global_pswpin_delta_pages": 78232,
+    "global_pswpout_delta_pages": 79369,
+    "global_swap_not_attributed_to_model": true,
+    "HTTP_records": 64,
+    "completed_HTTP_records_without_transport_error": 64,
+    "transport_error_record_count": 0,
+    "incomplete_backend_body_record_count": 0,
+    "maximum_completed_prompt_tokens": 77968,
+    "HTTP_latency_seconds": {
+      "min": 12.175462484359741,
+      "median": 71.49915480613708,
+      "max": 402.2438933849335,
+      "sum": 6501.396328687668
+    },
+    "not_isolated_decode_throughput": true,
+    "sampling_not_continuous_peak_or_entire_host_attribution": true
+  },
+  "comparison_limits": [
+    "Recovery resumes an interrupted partially edited checkout and history; account for the prior coding segment separately.",
+    "Same predefined followups, no private grade feedback; final model sampling is not seed-pinned.",
+    "Focused scoped Gitea tools and publication execution gate are part of this configuration.",
+    "Private source snapshots, raw wire captures, profiles, tasks, graders and receipt keys remain local. Public evidence verification does not recreate the whole private workflow or prove all behavior correct."
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "manifest_files": 131,
+  "memory_samples": 632,
+  "HTTP_records": 64,
+  "completed_HTTP_records": 64,
+  "private_behavior_not_reexecuted": true,
+  "scope": "Saved evidence consistency only; independent source/behavior audits and private inputs remain separate. No autonomous reliability claim."
+}
