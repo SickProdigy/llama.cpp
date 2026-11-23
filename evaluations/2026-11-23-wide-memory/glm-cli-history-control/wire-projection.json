@@ -1,0 +1,79 @@
+[
+  {
+    "request": 1,
+    "model": "glm-4.7-flash-q4k",
+    "max_tokens": 16384,
+    "chat_template_kwargs": {
+      "clear_thinking": false,
+      "enable_thinking": true
+    },
+    "assistant_and_tool_messages_only": []
+  },
+  {
+    "request": 2,
+    "model": "glm-4.7-flash-q4k",
+    "max_tokens": 16384,
+    "chat_template_kwargs": {
+      "clear_thinking": false,
+      "enable_thinking": true
+    },
+    "assistant_and_tool_messages_only": [
+      {
+        "role": "assistant",
+        "reasoning_content": "control-reasoning-tool-one",
+        "tool_calls": [
+          {
+            "id": "call_history_control_1",
+            "type": "function",
+            "function": {
+              "name": "terminal",
+              "arguments": "{\"command\":\"printf hermes-glm-history-control\",\"timeout\":10}"
+            }
+          }
+        ],
+        "content": ""
+      },
+      {
+        "role": "tool",
+        "tool_call_id": "call_history_control_1",
+        "content": "{\"output\": \"hermes-glm-history-control\", \"exit_code\": 0, \"error\": null}"
+      }
+    ]
+  },
+  {
+    "request": 3,
+    "model": "glm-4.7-flash-q4k",
+    "max_tokens": 16384,
+    "chat_template_kwargs": {
+      "clear_thinking": false,
+      "enable_thinking": true
+    },
+    "assistant_and_tool_messages_only": [
+      {
+        "role": "assistant",
+        "reasoning_content": "control-reasoning-tool-one",
+        "tool_calls": [
+          {
+            "id": "call_history_control_1",
+            "type": "function",
+            "function": {
+              "name": "terminal",
+              "arguments": "{\"command\":\"printf hermes-glm-history-control\",\"timeout\":10}"
+            }
+          }
+        ],
+        "content": ""
+      },
+      {
+        "role": "tool",
+        "tool_call_id": "call_history_control_1",
+        "content": "{\"output\": \"hermes-glm-history-control\", \"exit_code\": 0, \"error\": null}"
+      },
+      {
+        "role": "assistant",
+        "reasoning_content": "control-reasoning-final-one",
+        "content": "Control one complete."
+      }
+    ]
+  }
+]

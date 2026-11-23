@@ -471,6 +471,11 @@ completes10 then OOMs; checkpoint2 completes12, with sampled main+supervisor PSS
 The next native runs use `--ctx-checkpoints 2`, a6.5GiB backend cap and measured
 aggregate overhead. Private task/grade content is not supplied as feedback.
 
+GLM's [scripted client-history control](evaluations/2026-11-23-wide-memory/glm-cli-history-control/README.md)
+passes reasoning retention through a terminal call and persisted user followup,
+with its thinking settings and 16,384-token output cap serialized. It uses no
+model inference; GLM runtime, fit and coding/Gitea results remain pending.
+
 ### November 22 compact-review evaluation
 
 These rows measure reviewers on seven development proposals each, not native

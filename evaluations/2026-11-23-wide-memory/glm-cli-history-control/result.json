@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "checks": {
+    "same_turn_reasoning_retained": true,
+    "cross_user_tool_reasoning_retained": true,
+    "cross_user_final_reasoning_retained": true,
+    "real_terminal_result_seen": true,
+    "GLM_template_kwargs_serialized": true,
+    "output_cap_16384_serialized": true
+  },
+  "native_CLI_processes": 2,
+  "requests": 3,
+  "model_inference": false,
+  "scripted_responses": true,
+  "actual_forge_actions": false,
+  "normal_native_discard_preserved_history": true,
+  "not_actual_model_template_or_hardware_compatibility_or_quality": true,
+  "scope": "Minimal terminal-only no-inference CLI integration control; full normal-profile scored trials remain separate."
+}

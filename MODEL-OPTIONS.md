@@ -25,7 +25,10 @@ Public [format metadata](evaluations/2026-11-23-wide-memory/candidate-format-pre
 is inspected from16MiB prefixes for Devstral and GLM, without downloading their
 complete weights or proving runtime/fit compatibility. GLM's embedded template
 uses `clear_thinking: false` with `enable_thinking: true` to preserve reasoning
-across user turns; the eventual native wire/history must still be verified.
+across user turns. A [scripted native CLI control](evaluations/2026-11-23-wide-memory/glm-cli-history-control/README.md)
+now verifies client reasoning retention through a real terminal call and
+persisted followup, with the intended settings serialized. Actual GLM template,
+GPU compatibility, full-profile behavior and quality remain unverified.
 Do not copy Qwen's thinking-off settings. Devstral declares `mistral3`,40layers,
 8KVheads; GLM declares `deepseek2` with MLA and47layers. These guide bounded
 layout trials; file size and metadata are not quality/fit proof.
