@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "manifest_files": 36,
+  "complete_probes_verified": 3,
+  "memory_samples": 185,
+  "sampled_residency_under_8GiB_verified": true,
+  "not_new_inference_or_agent_correctness": true
+}

@@ -83,3 +83,10 @@ active fit yet.
 and restored. The Q4 file download is complete. [Protocol v2](resource-protocol-v2.json)
 registers non-mapped loading before any Q4 inference. Full native actor workflows
 and the remaining candidate trials are still required.
+
+## Q4 resource stage delivered
+
+[Q4 completes the registered resource probes](resource-q4.md) in its first
+98,304-context layout, without swap or a residency guard. Original runtime is
+restored. Matched non-mapped IQ3 measurement, native multi-turn correctness and
+the Q3/Devstral/GLM candidate stages remain.
