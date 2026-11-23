@@ -63,3 +63,16 @@ credentials, pending source edits and model files must be preserved. Only new
 study-owned downloads may be removed as required by the sequential disk budget,
 with exact identity checks and recorded disposition; do not delete useful owner
 models to make several new files fit simultaneously.
+
+## Pre-inference preparation
+
+Two fresh initial defects reproduce through actual public plugin callbacks;
+reference corrections pass independent checks and all 83 original tests plus
+two subtests. [Validation summary](fixture-validation.json) is not model output;
+private checks and references stay outside model profiles.
+
+[Resource pilot bounds](resource-protocol.json) register the 8 GiB host cap,
+no backend swap, limited host prompt cache, measured 16k/60k context probes and
+bounded layout fallback before any new inference. A same-checkpoint IQ3 baseline
+will use the same resource settings. The protocol does not claim loaded or
+active fit yet.

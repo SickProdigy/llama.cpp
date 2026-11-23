@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "phase": "pre-inference fixture/reference validation",
+  "fresh_bug_families": 2,
+  "independent_baseline_failures": 2,
+  "reference_checks_pass": 2,
+  "original_project_suites_pass": 3,
+  "original_tests": 83,
+  "original_subtests": 2,
+  "model_inference_calls": 0,
+  "private_checks_and_references_not_exported_before_scored_runs": true,
+  "harness_attempt1": "Independent checks behaved as expected; pytest capture lacked writable temp directory. Added bounded /tmp tmpfs; attempt2 all expected results. Not a model failure."
+}
