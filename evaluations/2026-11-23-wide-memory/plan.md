@@ -1,8 +1,25 @@
 # Wider-memory Hermes model evaluation
 
-Started November 23, 2026. Goal active; no new model fit or agent-quality result
-is claimed. The owner prioritizes correct agent work over speed and permits the
-full P100 plus up to 8 GiB additional host RAM for model spillover.
+Started November 23, 2026; status updated November 24. Goal active. The owner
+prioritizes correct agent work over speed and permits the full P100 plus up to
+8 GiB additional host RAM for model spillover, including relevant runtime/cache.
+The [current matrix](matrix.md) records results and qualifications; the sections
+below retain the original protocol and successive resource milestones.
+
+- Adapted Q4: [resource completion](resource-q4.md), [conditional Spam recovery](native-q4-recovery.md)
+  and [fresh Announcer](native-q4-fresh.md) are audited. Recovery is not a fresh
+  Spam trial; reporting/documentation qualifications remain.
+- Adapted Q3: [resource completion](resource-q3.md), [failed fresh Spam repair](native-q3-spam.md)
+  and [qualified fresh Announcer pass](native-q3-queue.md) are audited.
+- Devstral: [resource completion](resource-devstral.md) and [fresh Spam failure](native-devstral-spam.md)
+  are audited. Spam passes scoped local checks but fails notification preservation
+  and required publication. Separate fresh Announcer is running.
+- GLM: scripted client-history preparation is complete; full pinned download,
+  measured P100/runtime compatibility and native task quality remain pending.
+
+No winner or autonomous reliability is established. Remaining named stages,
+independent audits, restoration, fair comparison and retained-model disposition
+are still required for goal completion.
 
 ## Stages
 
