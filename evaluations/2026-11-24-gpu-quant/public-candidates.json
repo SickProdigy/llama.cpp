@@ -1,0 +1,78 @@
+[
+  {
+    "repo": "tvall43/Qwen3.6-14B-A3B-FableVibes-GGUF",
+    "revision": "9cf910a7ad68dfedcbdfc46ef0fe5003dec07c23",
+    "retrieved_epoch": 1795545691.9742286,
+    "files": [
+      {
+        "name": "Qwen3.6-14B-A3B-FableVibes-Q3_K_M.gguf",
+        "bytes": 6766985728,
+        "sha256": "41beaee055acc2c3ea38ac09abeea6e880f7fa33dcb187af0ea1643288f12d93"
+      },
+      {
+        "name": "Qwen3.6-14B-A3B-FableVibes-Q4_K_M.gguf",
+        "bytes": 8465553920,
+        "sha256": "21aa4b0b28090469e8a319c889451df2f1ea6aad27ac3818c8c8a86f86d5bc9e"
+      },
+      {
+        "name": "Qwen3.6-14B-A3B-FableVibes-Q5_K_M.gguf",
+        "bytes": 9852131840,
+        "sha256": "d8fe99004cefb2cf26a1750851acf3cabd53247958e144f88e08beeb36ffbcab"
+      },
+      {
+        "name": "Qwen3.6-14B-A3B-FableVibes-Q6_K.gguf",
+        "bytes": 11325370880,
+        "sha256": "7ae56e5003365c568635c14158381df134577877c90ae15f34dbc6de2ca7ffb1"
+      }
+    ]
+  },
+  {
+    "repo": "tvall43/Qwen3.6-14B-A3B-VibeForged-v2-GGUF",
+    "revision": "4f08fded2aee1e27fb0335104307ade516508d37",
+    "retrieved_epoch": 1795545692.2126102,
+    "files": [
+      {
+        "name": "Qwen3.6-14B-A3B-VibeForged-v2-Q3_K_M.gguf",
+        "bytes": 6766985280,
+        "sha256": "805f33a94f0d3234be310e68fde5b802ac977867940e39ef9b790805fc70134d"
+      },
+      {
+        "name": "Qwen3.6-14B-A3B-VibeForged-v2-Q4_K_M.gguf",
+        "bytes": 8465553472,
+        "sha256": "273777783847f3a9eba912abc35407d651a575064a478ed9fbd7ad90b962b6b6"
+      },
+      {
+        "name": "Qwen3.6-14B-A3B-VibeForged-v2-Q6_K.gguf",
+        "bytes": 11325370432,
+        "sha256": "56695b1ce0fa47b7d2d94bbb57bd71e5c24decfcd4af76b6a9c3073ee464fe9c"
+      }
+    ]
+  },
+  {
+    "repo": "netprojects/Qwen3.8-27B-hermes-adapted-GGUF",
+    "revision": "10fdf357f14825c61ad7eb42a932e1f1e4390e8f",
+    "retrieved_epoch": 1795545692.3405092,
+    "files": [
+      {
+        "name": "Qwen3.8-27B-hermes-Q3_K_M.gguf",
+        "bytes": 13752764064,
+        "sha256": "a0c809f93de2bcd813e1b6fbd5c2d1f692821814a4261a316f7c8bca9cf23248"
+      },
+      {
+        "name": "Qwen3.8-27B-hermes-Q4_K_M.gguf",
+        "bytes": 16810714560,
+        "sha256": "6512bb1c2595575fc0aed39b7d72a6aaf71084b1164b5d3749f87a6c2a3d3bf3"
+      },
+      {
+        "name": "Qwen3.8-27B-hermes-Q5_K_M.gguf",
+        "bytes": 19535701664,
+        "sha256": "5a1f384eeb456d90fcc4c8dae9be80b883ed16fbf36eb15ebdc1d861b2b68bba"
+      },
+      {
+        "name": "Qwen3.8-27B-hermes-Q6_K.gguf",
+        "bytes": 22431000000,
+        "sha256": "ffe8ac1a889f27ad99f4b6075f3b9a5fa37c2257d51bebb1b342f08dd61ee5c7"
+      }
+    ]
+  }
+]

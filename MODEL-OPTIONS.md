@@ -3,6 +3,28 @@
 Recorded November 19, 2026. This is a reminder of possible next steps, not a
 record of tests on the spare PCs or a change to the deployed model.
 
+## November 24: GPU-resident quantization goal active
+
+The next [registered comparison](evaluations/2026-11-24-gpu-quant/plan.md) prioritizes
+practical GPU residency at 98,304 context, with correctness and turn/total latency
+reported together. Start with retained FableVibes Q4/Q6 and VibeForged v2 Q4/Q6;
+public Fable Q5 is a possible intermediate after these files. Public pins and
+capacity exclusions are recorded before new scored runs.
+
+Fable Q6 completes the first short/tool-history, 16k and 60k-input capacity
+probes: 11,566 MiB peak sampled GPU, zero study swap, and 152.76 seconds for the
+59,937-token probe. Relevant aggregate cgroups peak at 6.562 GiB including charged
+cache; process PSS peaks at 1.617 GiB. Whole-host swap counters move and are not
+attributed to the study. The all-GPU layout is requested with automatic fit off;
+explicit tensor-placement logging is registered for the native stage. Capacity
+is not coding quality. The original runtime is restored after this resource
+stage; a separate isolated fresh native workflow is now launched.
+
+The adapted 27B Q5/Q6 public files exceed the entire 16 GiB device before context
+and runtime overhead, so they are excluded from this GPU-resident shortlist.
+This does not change the earlier Q4 correctness result or its slow-work tradeoff.
+No new everyday model/profile selection or autonomous-reliability claim is made.
+
 ## November 24: wider-memory evaluation complete
 
 The [P100 plus up to 8 GiB host-RAM evaluation](evaluations/2026-11-23-wide-memory/comparison.md)

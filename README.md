@@ -1,5 +1,11 @@
 # Llama.cpp and Hermes-Agent Model Notes
 
+The [November 24 GPU-resident quantization comparison](evaluations/2026-11-24-gpu-quant/matrix.md)
+is active: retained Fable/Vibe Q4 and Q6 first, evaluating correctness and latency
+together at realistic context. Fable Q6 completes its first capacity stage at
+98,304 context (11,566 MiB sampled GPU peak; no study swap); fresh coding remains
+unscored. See the protocol/results before treating fit as useful agent behavior.
+
 GGUF testing notes for Hermes Agent running through llama.cpp.
 
 This file tracks which local GGUF models can actually complete the Hermes Agent plus Gitea MCP workflow, not just whether they answer a prompt or make a promising first tool call. Use the matrix for quick comparison and the detailed sections below for why a model passed, failed, or landed in the middle.
