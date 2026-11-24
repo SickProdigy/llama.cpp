@@ -17,7 +17,8 @@ below retain the original protocol and successive resource milestones.
   original behavior but leaves empty-job reply state in its feature and publishes
   nothing. Its frozen metadata failure is qualified against pinned dispatchers.
 - GLM: scripted client-history preparation is complete; the full pinned download
-  is underway after verified temporary rotation of only the owned Devstral file.
+  [passes its hash check](glm-download-verification.json) after verified temporary
+  rotation of only the owned Devstral file. Resource preflight is underway.
   Measured P100/runtime compatibility and native task quality remain pending.
 
 No winner or autonomous reliability is established. Remaining named stages,

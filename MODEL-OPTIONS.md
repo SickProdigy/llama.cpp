@@ -32,8 +32,9 @@ at the end; rotation is not a quality-failure verdict.
 
 Public [format metadata](evaluations/2026-11-23-wide-memory/candidate-format-preflight.json)
 was initially inspected from16MiB prefixes for Devstral and GLM. Devstral's full
-pinned file now completes the resource stage below; GLM's full weight and actual
-runtime remain untested. GLM's embedded template
+pinned file now completes the resource stage below; GLM's full public weight
+[passes its pinned hash check](evaluations/2026-11-23-wide-memory/glm-download-verification.json),
+while actual runtime compatibility and resource fit remain untested. GLM's embedded template
 uses `clear_thinking: false` with `enable_thinking: true` to preserve reasoning
 across user turns. A [scripted native CLI control](evaluations/2026-11-23-wide-memory/glm-cli-history-control/README.md)
 now verifies client reasoning retention through a real terminal call and
@@ -66,8 +67,8 @@ retains reply state for emptied jobs and no contribution is published. The raw
 metadata-check failure is qualified by actual pinned dispatcher behavior;
 [matched posthoc controls](evaluations/2026-11-23-wide-memory/announcer-dispatch-cleanup-comparison.json)
 show Q3/Q4 clear that state. The owned Devstral weight is temporarily rotated
-after both completed audits; the full pinned GLM download is underway. No GLM
-runtime/fit/quality result is claimed. Resource fit is not quality proof.
+after both completed audits; the full pinned GLM download is verified and its
+resource preflight is underway. No GLM runtime/fit/quality result is claimed. Resource fit is not quality proof.
 
 ## November 22: full P100 plus up to 8 GiB host spillover
 

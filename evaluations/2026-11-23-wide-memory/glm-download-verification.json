@@ -1,0 +1,19 @@
+{
+  "candidate": "glm",
+  "repo": "ggml-org/GLM-4.7-Flash-GGUF",
+  "revision": "7559e96b7e324ab405897dc2b91492b0f376ad4a",
+  "file": "GLM-4.7-Flash-Q4_K.gguf",
+  "expected_bytes": 18244193920,
+  "expected_sha256": "b6019edc5fbe37d3660d2e994d16c839a7855a6f03362c5dcf8142ba479cd0d2",
+  "canonical_url": "https://huggingface.co/ggml-org/GLM-4.7-Flash-GGUF/resolve/7559e96b7e324ab405897dc2b91492b0f376ad4a/GLM-4.7-Flash-Q4_K.gguf",
+  "worker_sha256": "289a55a8ab474a5e1a433cee9d89c168d5b18cffab1b50fe2189e8e29b121600",
+  "minimum_free_bytes": 107374182400,
+  "received_bytes": 18244193920,
+  "complete": true,
+  "actual_sha256": "b6019edc5fbe37d3660d2e994d16c839a7855a6f03362c5dcf8142ba479cd0d2",
+  "finished_epoch": 1795504229.034026,
+  "download_worker_exit_code": 0,
+  "download_worker_oom_killed": false,
+  "free_bytes_at_completion": 120009945088,
+  "resource_and_task_quality_proven": false
+}
