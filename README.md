@@ -9,7 +9,7 @@ coding minutes. Q4 also completes without edits or publication (1.70 coding minu
 See the protocol/results before treating fit as useful agent behavior.
 The [fresh trusted Vibe Q4 run](evaluations/2026-11-24-gpu-quant/native-vibe-q4-trusted-beets.md)
 executes Python successfully but fails wrong-path recovery without code or publication.
-Matching Q6 is launched after native resume validation; separate publisher-mode controls remain pending.
+Matching Q6 also fails the full workflow after partial cancellation/docs; reasoning-mode controls for both families remain pending.
 
 GGUF testing notes for Hermes Agent running through llama.cpp.
 

@@ -1,0 +1,25 @@
+{
+  "epoch": 1795555208.4801428,
+  "source_repo": "tvall43/Qwen3.6-14B-A3B-VibeForged-v2",
+  "source_revision": "9e221dc2178b9666ac49e2522aa12fa92e5621cb",
+  "generation_config_url": "https://huggingface.co/tvall43/Qwen3.6-14B-A3B-VibeForged-v2/resolve/9e221dc2178b9666ac49e2522aa12fa92e5621cb/generation_config.json",
+  "generation_config_SHA256": "7ae9e193dbcef99733ccf647c95ef668c35d1a80a8aa88a51ee40a9bcacf5a74",
+  "generation_config": {
+    "bos_token_id": 248044,
+    "do_sample": true,
+    "eos_token_id": [
+      248046,
+      248044
+    ],
+    "pad_token_id": 248044,
+    "temperature": 1.0,
+    "top_k": 20,
+    "top_p": 0.95,
+    "transformers_version": "5.9.0"
+  },
+  "pinned_GGUF_card_SHA256": "7f59aa4314e705742845798bdbdc2d393a47b45acea4fae31189d4d6df7cd2b9",
+  "reason": "Pinned publisher card also describes strict think XML reasoning training. Evaluate a fresh reasoning-enabled Vibe pair as well; do not generalize thinking-disabled failures to best practical configuration.",
+  "existing_baselines_unchanged": true,
+  "prospective_only": true,
+  "not_precision_only_causal_comparison": true
+}

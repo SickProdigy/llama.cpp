@@ -1,93 +1,113 @@
 # GPU-resident quantization comparison — November 24, 2026
 
-Status: all four retained-file capacity stages complete. Fable Q4/Q6 nonthinking
-workflows fail independently audited task/publication checks. Vibe Q4's baseline
-is confounded by unattended code-tool approval policy; the original Q6 deny-policy
-coding cell is prospectively deferred. The fresh trusted-profile Vibe Q4 run also fails path recovery without edits;
-matching Q6 is launched after actual logical-handle/physical-tip resume validation. The separate publisher-mode Fable profiles
-pass SDK and pure-code preflights, with no reasoning inference started. Original
-settings and retained models are preserved; each GPU stage restores and verifies
-the original services before the next stage.
-See [current matrix](matrix.md) and [resource evidence](resource-fable-q6-summary.json).
+The goal remains in progress. All four original retained-file capacity stages
+complete at98,304 context. Fable Q4/Q6 nonthinking workflows fail the audited
+coding/publication requirements. Vibe Q4's original baseline is blocked by copied
+unattended execution policy; the original Vibe Q6 deny-policy coding cell is
+prospectively deferred. Fresh explicitly trusted Vibe Q4/Q6 runs also fail the
+full workflow, although Q6 produces partial code/docs and a grounded read.
+See the [current matrix](matrix.md), [trusted Q4 audit](native-vibe-q4-trusted-beets.md)
+and [trusted Q6 audit](native-vibe-q6-trusted-beets.md).
 
-Compare retained FableVibes Q4/Q6 and VibeForged v2 Q4/Q6 first. Earlier native
-coding controls show mixed quantization outcomes: Fable Q6 improved one queue
-case; Vibe Q6 failed where Q4 passed. Later real-source tasks also failed at
-these precisions. Those limited historical samples are not new passes or proof
-that precision caused the differences.
+Original runtime/settings and retained models are independently verified restored
+after each completed GPU stage. The first new artifact, adapted27B IQ4_XS, is now
+downloading to a separately owned volume while scored GPU inference is idle.
+No full-file hash, fit or quality claim follows until download and trials finish.
 
-Public file pins are in public-candidates.json. Retained filenames must still
-match full SHA256 before use. Start at 98,304 context, all GPU layers, q4 K/V,
-non-mapped loading, one slot, two context checkpoints, 512 MiB prompt cache.
-Measure short/tool-history, 16k and 60k active prompts, actual allocation,
-charged host cache/helpers, swap and latency before scoring real coding.
-Resource completion is not a task-quality pass. Preserve comparable settings
-within a checkpoint and record sampler/template/calibration differences.
+## Registered comparison and controls
 
-Fable Q5 is available publicly and may provide an intermediate comparison after
-existing files. The author's pinned Vibe v2 repository lists Q4 and Q6 but no
-Q5_K_M. Do not invent an available version. Download one new artifact at a time
-only when at least 100 GiB reserve remains, preserving all retained models.
+Compare the same leading checkpoints at public quantizations, starting with the
+retained FableVibes Q4/Q6 and VibeForged v2 Q4/Q6 files. Earlier matched development
+controls show mixed Q4/Q6 outcomes; those historical samples do not prove a
+precision effect. Public files/revisions/full hashes are in [public-candidates.json](public-candidates.json).
+Reverify each retained full file before inference. Header comparisons preserve
+actual tensor/tokenizer/template and recorded importance-matrix differences;
+matching names and dimensions do not prove identical source weights or production.
 
-Adapted 27B Q5/Q6 are excluded from this GPU-resident shortlist: their weight
-files alone exceed the 16 GiB device, before KV/runtime allocations. This is a
-capacity-screen exclusion, not an observed loading or quality failure. Its
-prior Q4 slow successful workflow remains documented in the wider-memory study.
+Start with98,304 context, requested full GPU offload, q4 K/V, non-mapped loading,
+one slot, two context checkpoints and512MiB prompt cache. Before coding, measure
+short/tool-history exchange,16k and60k active prompts, actual placement, charged
+host cache/helpers, swap and latency. Requested layers and file size do not prove
+GPU fit; native placement evidence is separate. If a layout fails, register a
+justified batch/context or minimal spillover alternative before testing it and
+preserve the actual failure. Prefer GPU-fitting layouts and disclose CPU tensors.
 
-After resource checks, use fresh natural coding tasks with dependent docs and
-feature turns and real upstream issue/personal fork/PR actions. Independently
-check code, original behavior, tests, docs, claims and actual published snapshots.
-Keep graders/private controls out of actor prompts. Report turn/total latency,
-intervention and correctness together; no autonomous reliability claims.
+Vibe stages advise only the selected inactive model file after stopping the
+original backend, then record kernel page residency. Its Q4 file is also the
+production mapped model, so pre-stop advice alone could misattribute pages. No
+global cache flush occurs. Original files and settings remain preserved.
 
-Experiments must restore original runtime/settings, preserve owner pending edits,
-credentials and Hermes-Codex, close owned test issues, and retain sanitized
-reproducible evidence. Commit/push completed stages with README/options/matrix.
+Use unchanged natural coding requests for the Beets lifecycle repair, dependent
+README clarification and cancellation feature. Perform actual upstream issue,
+personal fork and upstream PR actions through configured Gitea. Audit actual
+source/published snapshots, original behavior, authored-test adequacy and real
+counterfactuals, documentation/claims and remote publication independently. Keep
+private graders/reference answers out of actor inputs. No corrective operator
+hints, resends or continuation rescue. Preserve ordinary native guards and record
+human continuation requests separately from successful completion.
 
-## Prospective reasoning-mode control
+Task correctness, requested intervention, individual-turn and total latency must
+be considered together. Synthetic retrieval, green existing tests, CLI exit zero,
+large allocation and correct metadata reads are not whole-workflow success. Keep
+slower useful results from the [wider-memory study](../2026-11-23-wide-memory/comparison.md)
+as measured tradeoffs without claiming everyday practicality or GPT-5 equivalence.
 
-Before assigning a practical Fable recommendation, compare a separately registered
-fresh Q4/Q6 pair with reasoning enabled and the author's generation sampling.
-The original registered quartet remains documented as a thinking-disabled, temperature .2
-baseline; its Q6 Vibe coding cell is deferred for the policy confound. no actor receives a corrective hint or restart. The author's pinned
-[source generation configuration](https://huggingface.co/tvall43/Qwen3.6-14B-A3B-FableVibes/blob/758757ae225247b95c28ad2897d89aafe3bd3d52/generation_config.json)
-sets temperature 1.0, top-p .95 and top-k20. The pinned GGUF card describes a
-reasoning-trained model and expects reasoning output. These are publisher
-settings, not independent evidence of better local results. Register output,
-compression, time and memory budgets before the new pair; report it separately
-as a configuration comparison, never as a precision-only effect or rescued
-baseline pass. No new reasoning-enabled actor run has started yet.
+## Fresh reasoning-enabled profile comparisons
 
-[Retained-file header comparison](quant-header-comparison.json) finds identical
-names/shapes and tokenizer/template metadata within each Q4/Q6 pair; only the
-general file-type field differs. No importance-matrix metadata is recorded.
-That absence does not prove none was used or establish identical source weights
-and conversion/calibration history. Full file SHA256 verification is separate
-and occurs before each model's inference.
+Thinking-disabled temperature.2 baselines remain unchanged. Both retained
+families' publisher cards describe reasoning training. Their pinned generation
+configs use temperature1.0/top-p.95/top-k20. Separately test fresh Q4/Q6 pairs with
+reasoning enabled, main output16k, auxiliary compression8k/nonthinking, explicit
+experimental one-shot code approval and otherwise matched settings. Enabling
+thinking is an experimental choice motivated by the cards; the vendor JSON does
+not itself set that template flag. Do not claim to reproduce every Transformers
+EOS/backend detail or isolate precision causally across these profile changes.
 
-## Prospective adapted27B IQ4_XS fit check
+[Fable preflights](publisher-profile-preflights.json), [Vibe generation pins](vibe-publisher-mode-followup-proposal.json)
+and [Vibe preflights](vibe-thinking-profile-preflights.json) retain actual SDK and
+pure-code execution checks on fresh isolated profiles. These are not reasoning
+inference or quality results. No reasoning inference has started yet. Original
+deployed approval settings remain unchanged.
 
-The [pinned public IQ4_XS option](prospective-adapted-iq4-xs.json) is smaller
-than the earlier adapted27B Q4_K_M while retaining the same trained checkpoint
-family. It is not downloaded or measured here yet. Its weight file alone is
-14.27 GiB, so room for context/runtime must be measured; no full-GPU claim follows
-from that size. Inspect prior 27B controls before registering layouts. Preserve
-all 30 retained models and the 100 GiB reserve. An owned staging volume on another
-filesystem may avoid consuming the model drive's narrow reserve, but its actual
-free space and ownership must be verified before download. No GPU purchase or
-local quantization is implied.
+The [actual native compression-handle control](native-compression-handle-control.json)
+resumes a scratch copy of an already compressed native conversation for two
+followups. Native CLI retains a logical receipt-owner handle while transcript
+storage moves to a child segment. The prospective V3 observer records both
+separately and verifies actual ancestry. Q4 coding did not compact; its read
+observer pointer difference alone does not prove lost coding history. Unsuccessful
+operator-control setups are retained and never counted as model failures.
 
+## Additional public quantizations and fit choices
 
-The [VibeForged Q4 unattended baseline](native-vibe-q4-beets.md) completed without code changes: all 18 selected `execute_code` attempts were blocked by copied-profile one-shot approval policy. Repository read control succeeded; code-tool ability remains unmeasured. A separate isolated deny/approve pure-code control confirms this mechanism without model calls. Original deployed settings remain unchanged. The prospective comparison now uses a fresh explicitly trusted Vibe Q4/Q6 pair; Q6 deny-profile coding is deferred, with its capacity check now completed independently. Fable Q4/Q6 baseline outcomes remain preserved. Higher precision has not yet demonstrated a quality gain.
+The same adapted27B checkpoint's [IQ4_XS artifact](prospective-adapted-iq4-xs.json)
+is smaller than its previously useful slow Q4_K_M variant. A bounded HTTP206
+[header inspection](adapted-iq4-header-inspection.json) confirms866 tensors and
+imatrix metadata (496 entries,104 chunks,`calib-train.txt`), not full-file integrity
+or GPU fit. The standalone reader actually reproduces the saved prefix metadata.
+The separately owned staging volume has been measured to retain over100GiB after
+this download; original model storage lacks that margin. Recheck actual reserves
+throughout transfer. Start fit testing with full GPU98k; register justified smaller
+batch/context or minimal CPU alternatives before any retry, documenting tradeoffs.
 
+Fable Q5 is publicly available and can provide an intermediate comparison after
+existing files/configurations. The pinned Vibe v2 repository has no Q5_K_M; do not
+invent one. Adapted27B Q5/Q6 files alone exceed the entire16GiB device before
+context/runtime and are excluded from this GPU-resident shortlist as capacity
+screens, not observed quality failures. Additional retained pairs remain options
+if the leading practical profiles do not meet the workflow.
 
-Vibe Q6 [capacity evidence](resource-vibe-q6-summary.json) now completes: 98,304-token allocation, requested full GPU offload, 11,566 MiB peak GPU, 6.561 GiB charged study cgroups, no study swap or guards, and a 59,937-token probe in 153.634 seconds. Original services/settings/models were independently verified restored afterwards. Capacity is not coding quality. Fresh trusted Vibe Q4 coding is launched; the trusted Q6 profile is frozen and pending, with identical task/source/sampler/seed/caps. Both copied profiles actually execute the no-model pure-code approval check successfully.
+## Preservation and delivery
 
+Download one new public artifact at a time; preserve all original30 retained
+files and at least100GiB actual filesystem reserve. Pin revisions/files/full hashes,
+importance-matrix and production differences. Do not run bulk downloads or
+separate CPU mock controls during future timed GPU turns. The brief CPU-only
+control overlap in trusted Q4 is explicitly retained in its audit; those timings
+are not an isolated precision throughput comparison.
 
-A bounded HTTP range [inspection](adapted-iq4-header-inspection.json) of the pinned adapted27B IQ4_XS header now confirms 866 tensors and importance-matrix metadata (496 entries, 104 chunks, `calib-train.txt`). This differs from the Fable/Vibe files with no recorded imatrix fields; no isolated precision-only claim follows. It is still not a full download, full-file hash verification, GPU-fit result or coding test. A separately owned Docker staging volume has been measured to retain over 100 GiB after this artifact; bulk download is deferred during timed GPU stages.
-
-
-The separate [publisher-profile preflights](publisher-profile-preflights.json) pass for both fresh Fable profiles: actual SDK serialization checks reasoning-enabled main16k, auxiliary nonthinking8k and author sampling; actual pure-code checks execute in copied profiles already set to explicit experimental trust. No reasoning-model calls have started. These controls establish configuration/execution capability, not model quality.
-
-
-The [native compression-handle control](native-compression-handle-control.json) actually resumes a scratch copy of the completed compressed read session for two followups, preserving literal followup history. Native CLI uses a stable receipt-owner handle, while compressed transcript storage uses a child segment. Source-pinned observer V3 records both separately; Q6 is launched with that prospective observer fix. Q4 coding did not compact and remains a valid observed path-recovery failure. Earlier unsuccessful control setups remain retained and are not model trials. No live trial was corrected, continued or replayed.
+Preserve credentials, owner pending edits/settings and Hermes-Codex. Close owned
+test issues, save and remove exact owned runtime containers/networks, restore and
+verify original services after GPU stages, and retain sanitized reproducible
+records. Commit/push completed stages with README/options/matrix. Public verifiers
+check saved-evidence bindings and coherent negative controls; they do not rerun
+private behavior graders or turn a small sample into autonomous reliability.

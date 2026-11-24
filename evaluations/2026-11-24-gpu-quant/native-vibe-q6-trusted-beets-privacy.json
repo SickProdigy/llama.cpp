@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "known_credential_values_checked": 5,
+  "private_receipt_keys_checked": 26,
+  "patterns_checked": 28,
+  "payloads_checked": 866,
+  "matching_paths": [],
+  "archive_sha256": "c3328e63c7a772d1019898b2b9743df2b66b938b3787e3010987268c33faac38",
+  "archives_checked": {
+    "native-fable-q4-beets-evidence.tar.gz": "f3ffdaae276d504660bfc98647876dbef7ff7484a92de27711e8f8580500f680",
+    "native-fable-q6-beets-evidence.tar.gz": "56dff62e711907c8ece6f202045c35ebdf568f8cf4a11f69cee0eba2cd32e51a",
+    "native-vibe-q4-beets-evidence.tar.gz": "13ad966ea649199df871d985600b7a8aad872c23002b69aec419daab2084e7c8",
+    "native-vibe-q4-trusted-beets-evidence.tar.gz": "dece119917e266da231d6f32d45869936f3d217bb20647fce496d24cab312652",
+    "native-vibe-q6-trusted-beets-evidence.tar.gz": "c3328e63c7a772d1019898b2b9743df2b66b938b3787e3010987268c33faac38",
+    "resource-fable-q4-evidence.tar.gz": "621a9bf642fc89f24fdf3420c1f773d3f95f9c28b36f1ebbcee14a107aa12dda",
+    "resource-fable-q6-evidence.tar.gz": "0ce120c27a0ff024765ba52c69a72d4e69187d6cfa9c152bc700f94ff612c88c",
+    "resource-vibe-q4-evidence.tar.gz": "e9bdaa7f4abfaae99e8c5b46d3f194f7e7430e41833f904e23a7df978a516b54",
+    "resource-vibe-q6-evidence.tar.gz": "d536292ed81b956779bd4feb6f34ec0f9d398c4f337a6619bc62393411f1991c"
+  },
+  "scanner_worker_sha256": "ab4820de3856fd2414db34462ee16926046dfb4fcd5ac09b39c7eac6140be51b",
+  "scope": "Known credential values plus actual private signing keys and common encodings; not general secret detection. No values persisted or printed."
+}

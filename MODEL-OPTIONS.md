@@ -28,7 +28,7 @@ no study swap); its fresh native workflow also completes with no edits/publicati
 skill-request stops ([Q4 audit](evaluations/2026-11-24-gpu-quant/native-fable-q4-beets.md)).
 Neither nonthinking Fable variant qualifies; faster no-op is not a quality win.
 The Vibe Q4 capacity stage completes with post-original-stop page-cache accounting;
-its completed baseline is confounded by unattended code-tool policy. Vibe Q6 capacity also completes. The fresh trusted Vibe Q4 workflow also fails wrong-path recovery despite17 successful Python calls; matched Q6 is launched after native resume validation. A separate prospective Fable Q4/Q6
+its completed baseline is confounded by unattended code-tool policy. Vibe Q6 capacity also completes. The fresh trusted Vibe Q4 workflow also fails wrong-path recovery despite17 successful Python calls; matched Q6 also fails the full workflow despite partial code/docs and a grounded read. A separate prospective Fable Q4/Q6
 publisher-sampling, reasoning-enabled pair is registered; this low-temperature
 nonthinking baseline is not a verdict on Fable's best practical configuration.
 
@@ -347,3 +347,6 @@ This is a recorded future lead, not another cohort in the current investigation.
 
 
 The [VibeForged Q4 unattended baseline](evaluations/2026-11-24-gpu-quant/native-vibe-q4-beets.md) completed without code changes: all 18 selected `execute_code` attempts were blocked by copied-profile one-shot approval policy. Repository read control succeeded; code-tool ability remains unmeasured. A separate isolated deny/approve pure-code control confirms this mechanism without model calls. Original deployed settings remain unchanged. The prospective comparison now uses a fresh explicitly trusted Vibe Q4/Q6 pair; Q6 deny-profile coding is deferred, with its capacity check now completed independently. Fable Q4/Q6 baseline outcomes remain preserved. Higher precision has not yet demonstrated a quality gain.
+
+
+The [trusted Q6 result](evaluations/2026-11-24-gpu-quant/native-vibe-q6-trusted-beets.md) does more source work but does not repair the initial lifecycle defect, provide collecting regression tests or publish. Reasoning-enabled controls are now prepared for both Fable and Vibe; the current nonthinking results do not establish their best practical settings. Adapted27B IQ4_XS is downloading into a separately owned volume with100GiB reserves, with full hash and hardware fit still pending.

@@ -1,7 +1,7 @@
 # GPU-resident quantization comparison
 
 November 24, 2026. In progress. The first thinking-disabled Fable Q6 workflow
-fails independently audited correctness and publication checks; Q4 also fails without any edits. Vibe Q4 is policy-confounded; fresh trusted-profile and publisher-mode controls are in progress.
+fails independently audited correctness and publication checks; Q4 also fails without any edits. Vibe Q4 is policy-confounded; fresh trusted-profile runs also fail the full workflow; reasoning-mode controls remain pending.
 
 | Checkpoint / public quant | Capacity at 98,304 context | Fresh Beets coding/Gitea workflow |
 |---|---|---|
@@ -9,7 +9,7 @@ fails independently audited correctness and publication checks; Q4 also fails wi
 | Same FableVibes Q4_K_M, retained | Capacity probes complete; 8,964 MiB sampled GPU | All three coding turns make no edits/tests/publication; skill-request stops; 1.70 coding minutes ([audit](native-fable-q4-beets.md)) |
 | VibeForged v2 Q4_K_M, retained | Capacity complete; 8,964 MiB sampled GPU; selected-file cache verified 0 after originals stop | Unchanged source; all18 code-tool calls blocked by unattended policy ([audit](native-vibe-q4-beets.md)); fresh trusted run also fails path recovery ([audit](native-vibe-q4-trusted-beets.md)) |
 | VibeForged v2 Q4_K_M, explicitly trusted profile | Same measured GPU layout; native41/41;8,964MiB peak |17 Python executions succeed but repeat wrong `~/beetsbridge`; no edits/tests/forge writes;2.217 coding minutes plus15.327-minute inefficient read ([audit](native-vibe-q4-trusted-beets.md)) |
-| Same VibeForged v2 Q6_K, retained | Capacity complete; 11,566 MiB sampled GPU; 60k probe153.634s | Original deny-policy coding cell deferred; fresh trusted run launched |
+| Same VibeForged v2 Q6_K, explicitly trusted | Capacity complete; native41/41;11,566MiB sampled GPU | Grounded read and partial cancellation/docs; lifecycle unfixed,19 authored tests fail collection, no publication;9.564 coding minutes ([audit](native-vibe-q6-trusted-beets.md)) |
 | FableVibes Q5_K_M, public | Possible intermediate; not downloaded or measured in this study | Not started |
 | Adapted 27B Q5/Q6 | Weight files alone exceed 16 GiB; excluded from GPU-resident shortlist | Not run; no quality-failure claim |
 
@@ -115,3 +115,10 @@ The separate [publisher-profile preflights](publisher-profile-preflights.json) p
 
 
 The [native compression-handle control](native-compression-handle-control.json) actually resumes a scratch copy of the completed compressed read session for two followups, preserving literal followup history. Native CLI uses a stable receipt-owner handle, while compressed transcript storage uses a child segment. Source-pinned observer V3 records both separately; Q6 is launched with that prospective observer fix. Q4 coding did not compact and remains a valid observed path-recovery failure. Earlier unsuccessful control setups remain retained and are not model trials. No live trial was corrected, continued or replayed.
+
+
+The [trusted Q6 audit](native-vibe-q6-trusted-beets.md) confirms a partial feature attempt, preserved manual-command parsing and a grounded read, but no correct full workflow. Original source lifecycle functions remain unchanged; new tests fail collection on candidate and prior source. Invalid `git diff --no-header` calls hide child stderr/exit status. The scored Q4/Q6 tool schemas are identical33-tool JSON; trajectory differences are not an isolated precision benchmark.
+
+Both model families' publisher descriptions motivate fresh reasoning-enabled controls. The newly pinned [Vibe generation configuration](vibe-publisher-mode-followup-proposal.json) matches Fable sampling1.0/.95/top-k20. Its [fresh profiles](vibe-thinking-profile-preflights.json) pass actual SDK16k-main/8k-aux and isolated code-approval checks. Enabling thinking is our experiment based on the reasoning-training description; the vendor JSON does not itself set that template flag. No reasoning inference is claimed yet.
+
+The pinned adapted27B IQ4_XS artifact is now downloading sequentially to its separately owned volume while scored GPU inference is idle. Both actual filesystem reserves are guarded at100GiB; no full-file hash, fit or quality result exists until completion and subsequent trials. Original30 retained files remain preserved.

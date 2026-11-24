@@ -1,0 +1,1 @@
+{"passed": true, "candidate": "vibe-q6-trusted", "manifest_files": 123, "memory_samples": 83, "completed_HTTP": 52, "observed_overall_quality_pass": false, "private_behavior_not_reexecuted": true, "archive_SHA256": "c3328e63c7a772d1019898b2b9743df2b66b938b3787e3010987268c33faac38"}
