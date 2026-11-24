@@ -27,7 +27,11 @@ Spam workflow now [fails the requested repair](evaluations/2026-11-23-wide-memor
 despite green project tests and correct publication; its cooldown feature passes
 separately. Fresh [Q3 Announcer](evaluations/2026-11-23-wide-memory/native-q3-queue.md)
 passes source/behavior checks with documentation and reporting qualifications.
-Devstral is downloading next; no model winner is claimed.
+Devstral now [completes resource probes](evaluations/2026-11-23-wide-memory/resource-devstral.md)
+at 98k context using 32 GPU layers and CPU spill: 14,880 MiB GPU, 6.56 GiB
+peak charged host memory and zero observed experiment swap. Fresh native coding
+tests are underway; this capacity result does not establish task quality.
+No model winner is claimed.
 
 ## November 22, 2026 compact-review follow-up — evaluation complete
 

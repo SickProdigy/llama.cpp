@@ -1,0 +1,192 @@
+{
+  "candidate": "devstral",
+  "classification": "Resource/template/history controls; not native coding/Gitea task quality",
+  "layouts": [
+    {
+      "layout": "layout0",
+      "result": {
+        "layout": {
+          "context": 98304,
+          "gpu_layers": 32
+        },
+        "resource_probes_completed": true,
+        "tool_call_correct": true,
+        "no_agent_quality_claim": true
+      },
+      "samples": 227,
+      "complete_samples": 227,
+      "measurement_error_samples": 0,
+      "guard_samples": 0,
+      "probes": {
+        "tool": {
+          "capture": {
+            "body_complete": true,
+            "seconds": 19.65967461501714,
+            "usage": {
+              "completion_tokens": 13,
+              "prompt_tokens": 639,
+              "total_tokens": 652,
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              }
+            },
+            "finish_reason": "tool_calls",
+            "response_sha256": "128abe88635e0506c55ce33bd1030441be22b7e73f0077007c6d4c772497b691",
+            "timings": {
+              "cache_n": 0,
+              "prompt_n": 639,
+              "prompt_ms": 9082.788,
+              "prompt_per_token_ms": 14.21406572769953,
+              "prompt_per_second": 70.35284760582323,
+              "predicted_n": 13,
+              "predicted_ms": 10571.357,
+              "predicted_per_token_ms": 880.9464166666667,
+              "predicted_per_second": 1.1351428203588243
+            }
+          },
+          "input": {
+            "rendered_tokens": 639,
+            "context": 98304,
+            "kind": "one_tool_call"
+          }
+        },
+        "tool-result": {
+          "capture": {
+            "body_complete": true,
+            "seconds": 6.381470160966273,
+            "usage": {
+              "completion_tokens": 26,
+              "prompt_tokens": 673,
+              "total_tokens": 699,
+              "prompt_tokens_details": {
+                "cached_tokens": 651
+              }
+            },
+            "finish_reason": "stop",
+            "response_sha256": "aeadf487c9ff2fa15c95756b5f6cd55ffdd31da664e3c9a752a432bd45cba83c",
+            "timings": {
+              "cache_n": 651,
+              "prompt_n": 22,
+              "prompt_ms": 1691.929,
+              "prompt_per_token_ms": 76.90586363636363,
+              "prompt_per_second": 13.002909696565279,
+              "predicted_n": 26,
+              "predicted_ms": 4684.131,
+              "predicted_per_token_ms": 187.36524,
+              "predicted_per_second": 5.337169263626486
+            }
+          },
+          "input": {
+            "rendered_tokens": 673,
+            "context": 98304,
+            "kind": "tool_result_completion"
+          }
+        },
+        "tool-followup": {
+          "capture": {
+            "body_complete": true,
+            "seconds": 2.505698317021597,
+            "usage": {
+              "completion_tokens": 7,
+              "prompt_tokens": 714,
+              "total_tokens": 721,
+              "prompt_tokens_details": {
+                "cached_tokens": 698
+              }
+            },
+            "finish_reason": "stop",
+            "response_sha256": "f2e590563c325a714a9cd294928c974a28ad88c7b05f0b7d2c0fce9f2ee491a0",
+            "timings": {
+              "cache_n": 698,
+              "prompt_n": 16,
+              "prompt_ms": 1343.937,
+              "prompt_per_token_ms": 83.9960625,
+              "prompt_per_second": 11.905319966635341,
+              "predicted_n": 7,
+              "predicted_ms": 1148.27,
+              "predicted_per_token_ms": 191.37833333333333,
+              "predicted_per_second": 5.225251900685379
+            }
+          },
+          "input": {
+            "rendered_tokens": 714,
+            "context": 98304,
+            "kind": "dependent_tool_history"
+          }
+        },
+        "prompt16000": {
+          "capture": {
+            "body_complete": true,
+            "seconds": 217.4109968150151,
+            "usage": {
+              "completion_tokens": 10,
+              "prompt_tokens": 16055,
+              "total_tokens": 16065,
+              "prompt_tokens_details": {
+                "cached_tokens": 553
+              }
+            },
+            "finish_reason": "stop",
+            "response_sha256": "6a09a4372d694f8eeaffbbc16a46d9c16c9eee9731f9af31be3b0278bf1e2a42",
+            "timings": {
+              "cache_n": 553,
+              "prompt_n": 15502,
+              "prompt_ms": 214100.172,
+              "prompt_per_token_ms": 13.811132241001161,
+              "prompt_per_second": 72.40535986117752,
+              "predicted_n": 10,
+              "predicted_ms": 3269.355,
+              "predicted_per_token_ms": 363.26166666666666,
+              "predicted_per_second": 2.7528365686809786
+            }
+          },
+          "input": {
+            "rendered_tokens": 16055,
+            "context": 98304,
+            "kind": "synthetic_16000"
+          }
+        },
+        "prompt60000": {
+          "capture": {
+            "body_complete": true,
+            "seconds": 856.5951925640111,
+            "usage": {
+              "completion_tokens": 10,
+              "prompt_tokens": 61640,
+              "total_tokens": 61650,
+              "prompt_tokens_details": {
+                "cached_tokens": 16039
+              }
+            },
+            "finish_reason": "stop",
+            "response_sha256": "33727fcbde567c73f01a01f92d9cbb3f1c21e2d87b473f101d28fed671e2a666",
+            "timings": {
+              "cache_n": 16039,
+              "prompt_n": 45601,
+              "prompt_ms": 851835.392,
+              "prompt_per_token_ms": 18.68019104844192,
+              "prompt_per_second": 53.53264307665676,
+              "predicted_n": 10,
+              "predicted_ms": 3931.226,
+              "predicted_per_token_ms": 436.8028888888889,
+              "predicted_per_second": 2.289362148093241
+            }
+          },
+          "input": {
+            "rendered_tokens": 61640,
+            "context": 98304,
+            "kind": "synthetic_60000"
+          }
+        }
+      },
+      "peaks": {
+        "total_cgroup_bytes": 7046447104,
+        "total_process_pss_bytes": 5519460352,
+        "total_cgroup_swap_bytes": 0
+      }
+    }
+  ],
+  "sampling_limit": "Observed cgroup/file-cache and all-process PSS, not continuous entire-host attribution; no global cache flush. Global swap counter changes are not model swap proof.",
+  "prior_attempt_preserved": "First pilot stopped on add_special=false measurement mismatch638vs639 after complete valid tool response; not model quality or fit failure. Exact old source/registration, observations and restoration retained.",
+  "second_prior_attempt_preserved": "Token counting agrees; noncanonical user-after-tool history rejected by template. Canonical tool-result completion added before fresh-user probe, retaining actual answers."
+}

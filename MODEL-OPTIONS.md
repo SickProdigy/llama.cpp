@@ -31,8 +31,9 @@ the original29 and disk reserve. The selected model can be retained from its pin
 at the end; rotation is not a quality-failure verdict.
 
 Public [format metadata](evaluations/2026-11-23-wide-memory/candidate-format-preflight.json)
-is inspected from16MiB prefixes for Devstral and GLM, without downloading their
-complete weights or proving runtime/fit compatibility. GLM's embedded template
+was initially inspected from16MiB prefixes for Devstral and GLM. Devstral's full
+pinned file now completes the resource stage below; GLM's full weight and actual
+runtime remain untested. GLM's embedded template
 uses `clear_thinking: false` with `enable_thinking: true` to preserve reasoning
 across user turns. A [scripted native CLI control](evaluations/2026-11-23-wide-memory/glm-cli-history-control/README.md)
 now verifies client reasoning retention through a real terminal call and
@@ -52,7 +53,11 @@ Spam coding [fails the requested repair](evaluations/2026-11-23-wide-memory/nati
 despite green project tests and correct Gitea publication; the cooldown feature
 passes separately. [Fresh Q3 Announcer](evaluations/2026-11-23-wide-memory/native-q3-queue.md)
 passes scoped source/behavior checks with documentation/reporting qualifications.
-Devstral is downloading next. Resource fit is not quality proof.
+Devstral's [full pinned Q4_K_M resource stage](evaluations/2026-11-23-wide-memory/resource-devstral.md)
+completes tool/history/16k/61k probes at 98k context with 32 GPU layers and CPU
+spill: 14,880 MiB GPU, 6.56 GiB peak charged host memory and zero observed
+experiment swap. Its 61,640-token request takes 856.60 seconds with 16,039 cached
+tokens. Fresh native coding/Gitea tests are underway. Resource fit is not quality proof.
 
 ## November 22: full P100 plus up to 8 GiB host spillover
 
