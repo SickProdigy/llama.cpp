@@ -1,0 +1,271 @@
+{
+  "candidate": "adapted-iq4",
+  "classification": "measured public IQ4_XS fit selection, not coding/MCP reliability",
+  "model_identity": {
+    "file": "Qwen3.8-27B-hermes-IQ4_XS.gguf",
+    "bytes": 15321491104,
+    "sha256": "d25b50a2bfdfba157c2baf959f298d706d70083255bab95232ffcd40fbafcaba",
+    "specific_study_file_advised_DONTNEED_after_hash": true,
+    "not_global_cache_flush_or_cold_cache_proof": true
+  },
+  "layouts": [
+    {
+      "index": 0,
+      "result": {
+        "layout": {
+          "context": 98304,
+          "gpu_layers": 99,
+          "ubatch": 128
+        },
+        "resource_probes_completed": false,
+        "error": "RuntimeError: Backend exited before ready",
+        "no_model_quality_score": true,
+        "backend_state": {
+          "Status": "exited",
+          "Running": false,
+          "Paused": false,
+          "Restarting": false,
+          "OOMKilled": false,
+          "Dead": false,
+          "Pid": 0,
+          "ExitCode": 1,
+          "Error": "",
+          "StartedAt": "2026-11-24T21:53:08.925930586Z",
+          "FinishedAt": "2026-11-24T21:53:47.299564906Z"
+        },
+        "GPU_OOM_log_marker": true,
+        "retry_next_GPU_layout": true
+      },
+      "samples": 8,
+      "complete_samples": 8,
+      "measurement_error_samples": 0,
+      "peak_GPU_MiB": 13990,
+      "peak_cgroup_bytes": 7046885376,
+      "peak_PSS_bytes": 1146567680,
+      "peak_study_swap_bytes": 0,
+      "guard_samples": 0,
+      "minimum_original_model_disk_free_bytes": 118606225408,
+      "minimum_staging_disk_free_bytes": 134436483072,
+      "probes": {}
+    },
+    {
+      "index": 1,
+      "result": {
+        "layout": {
+          "context": 98304,
+          "gpu_layers": 99,
+          "ubatch": 64
+        },
+        "resource_probes_completed": false,
+        "error": "RuntimeError: Backend exited before ready",
+        "no_model_quality_score": true,
+        "backend_state": {
+          "Status": "exited",
+          "Running": false,
+          "Paused": false,
+          "Restarting": false,
+          "OOMKilled": false,
+          "Dead": false,
+          "Pid": 0,
+          "ExitCode": 1,
+          "Error": "",
+          "StartedAt": "2026-11-24T21:53:51.961566572Z",
+          "FinishedAt": "2026-11-24T21:54:28.967196398Z"
+        },
+        "GPU_OOM_log_marker": true,
+        "retry_next_GPU_layout": true
+      },
+      "samples": 7,
+      "complete_samples": 7,
+      "measurement_error_samples": 0,
+      "peak_GPU_MiB": 13990,
+      "peak_cgroup_bytes": 7058792448,
+      "peak_PSS_bytes": 1147367424,
+      "peak_study_swap_bytes": 0,
+      "guard_samples": 0,
+      "minimum_original_model_disk_free_bytes": 118606045184,
+      "minimum_staging_disk_free_bytes": 134484111360,
+      "probes": {}
+    },
+    {
+      "index": 2,
+      "result": {
+        "layout": {
+          "context": 65536,
+          "gpu_layers": 99,
+          "ubatch": 64,
+          "synthetic_prompt_targets": [
+            16000,
+            52000
+          ]
+        },
+        "resource_probes_completed": true,
+        "tool_call_correct": true,
+        "no_agent_quality_claim": true
+      },
+      "samples": 176,
+      "complete_samples": 176,
+      "measurement_error_samples": 0,
+      "peak_GPU_MiB": 15788,
+      "peak_cgroup_bytes": 7051190272,
+      "peak_PSS_bytes": 2360057856,
+      "peak_study_swap_bytes": 0,
+      "guard_samples": 0,
+      "minimum_original_model_disk_free_bytes": 118600683520,
+      "minimum_staging_disk_free_bytes": 134309896192,
+      "probes": {
+        "tool-followup": {
+          "body_complete": true,
+          "seconds": 1.5881824699463323,
+          "usage": {
+            "completion_tokens": 6,
+            "prompt_tokens": 411,
+            "total_tokens": 417,
+            "prompt_tokens_details": {
+              "cached_tokens": 384
+            }
+          },
+          "finish_reason": "stop",
+          "response_sha256": "a2571ca42a61b07f85762cba09db20346a4f972789221f0ad7226608e6e77332",
+          "timings": {
+            "cache_n": 384,
+            "prompt_n": 27,
+            "prompt_ms": 1201.171,
+            "prompt_per_token_ms": 44.48781481481482,
+            "prompt_per_second": 22.478065154753153,
+            "predicted_n": 6,
+            "predicted_ms": 363.41,
+            "predicted_per_token_ms": 72.682,
+            "predicted_per_second": 13.758564706529814
+          }
+        },
+        "tool-result": {
+          "body_complete": true,
+          "seconds": 3.0985837050247937,
+          "usage": {
+            "completion_tokens": 29,
+            "prompt_tokens": 356,
+            "total_tokens": 385,
+            "prompt_tokens_details": {
+              "cached_tokens": 320
+            }
+          },
+          "finish_reason": "stop",
+          "response_sha256": "a4e708ff99dcafb7d3c19a018b66a1506a8d60977b203f3a0ccf6b4bcf8253f3",
+          "timings": {
+            "cache_n": 320,
+            "prompt_n": 36,
+            "prompt_ms": 1056.317,
+            "prompt_per_token_ms": 29.34213888888889,
+            "prompt_per_second": 34.080678432705334,
+            "predicted_n": 29,
+            "predicted_ms": 2036.626,
+            "predicted_per_token_ms": 72.73664285714285,
+            "predicted_per_second": 13.748228688035997
+          }
+        },
+        "prompt16000": {
+          "body_complete": true,
+          "seconds": 226.31423434603494,
+          "usage": {
+            "completion_tokens": 9,
+            "prompt_tokens": 16152,
+            "total_tokens": 16161,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          },
+          "finish_reason": "stop",
+          "response_sha256": "6f0fd1e324e8e450fb4d49b7839e18e38e001ffdd5a6c8aa883dd6cd48906334",
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 16152,
+            "prompt_ms": 225495.061,
+            "prompt_per_token_ms": 13.960813583457156,
+            "prompt_per_second": 71.62906330795424,
+            "predicted_n": 9,
+            "predicted_ms": 713.146,
+            "predicted_per_token_ms": 89.14325,
+            "predicted_per_second": 11.217899280091315
+          }
+        },
+        "prompt52000": {
+          "body_complete": true,
+          "seconds": 598.8591779649723,
+          "usage": {
+            "completion_tokens": 9,
+            "prompt_tokens": 51942,
+            "total_tokens": 51951,
+            "prompt_tokens_details": {
+              "cached_tokens": 16084
+            }
+          },
+          "finish_reason": "stop",
+          "response_sha256": "ec34a58973ac9d6158d213a7443bfc1127ea2b3f4d30bf16bc1b201f7b54ba95",
+          "timings": {
+            "cache_n": 16084,
+            "prompt_n": 35858,
+            "prompt_ms": 597865.698,
+            "prompt_per_token_ms": 16.67314680127168,
+            "prompt_per_second": 59.97668058219992,
+            "predicted_n": 9,
+            "predicted_ms": 848.404,
+            "predicted_per_token_ms": 106.0505,
+            "predicted_per_second": 9.429469922348316
+          }
+        },
+        "tool": {
+          "body_complete": true,
+          "seconds": 24.28565289103426,
+          "usage": {
+            "completion_tokens": 28,
+            "prompt_tokens": 293,
+            "total_tokens": 321,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          },
+          "finish_reason": "tool_calls",
+          "response_sha256": "017cda501174d93e0282fb43dac13c23cf985b7e64a0b166075e472685466204",
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 293,
+            "prompt_ms": 19092.76,
+            "prompt_per_token_ms": 65.16300341296927,
+            "prompt_per_second": 15.346131203660446,
+            "predicted_n": 28,
+            "predicted_ms": 5187.041,
+            "predicted_per_token_ms": 192.11262962962962,
+            "predicted_per_second": 5.205279850303863
+          }
+        }
+      }
+    }
+  ],
+  "selected_layout_index": 2,
+  "capacity_pass": true,
+  "not_coding_quality": true,
+  "original_runtime_restored": true,
+  "placement_limit": "Requested ngl99 with fitoff, no tensor overrides; resource logs do not enumerate every tensor. Native lv5 placement must be independently confirmed before actor. Host embedding/cache/helper memory is recorded separately.",
+  "latency_limit": "Operational synthetic capacity timings, not isolated decode throughput. No useful whole-window code reasoning claim.",
+  "failed_layouts_not_model_quality_failures": true,
+  "global_swap_not_attributed_to_model": true,
+  "owned_download_integrity_receipt": {
+    "passed": true,
+    "repo": "netprojects/Qwen3.8-27B-hermes-adapted-GGUF",
+    "revision": "10fdf357f14825c61ad7eb42a932e1f1e4390e8f",
+    "file": "Qwen3.8-27B-hermes-IQ4_XS.gguf",
+    "bytes": 15321491104,
+    "sha256": "d25b50a2bfdfba157c2baf959f298d706d70083255bab95232ffcd40fbafcaba",
+    "full_file_SHA256_verified": true,
+    "seconds": 1491.7308378219604,
+    "volume": "hermes-gpuquant-20261124-model-stage",
+    "minimum_observed_staging_free_bytes": 126470311936,
+    "final_staging_free_bytes": 134768402432,
+    "original_model_drive_free_bytes": 118607450112,
+    "both_reserves_at_least_100GiB": true,
+    "original_model_files_not_written": true,
+    "download_not_a_GPU_fit_or_quality_test": true,
+    "only_new_owned_file_advised_DONTNEED_after_fsync": true
+  }
+}

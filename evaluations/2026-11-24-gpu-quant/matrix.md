@@ -3,13 +3,14 @@
 November 24, 2026. In progress. The first thinking-disabled Fable Q6 workflow
 fails independently audited correctness and publication checks; Q4 also fails without any edits. Vibe Q4 is policy-confounded; fresh trusted-profile runs also fail the full workflow; reasoning-mode controls remain pending.
 
-| Checkpoint / public quant | Capacity at 98,304 context | Fresh Beets coding/Gitea workflow |
+| Checkpoint / public quant | Measured capacity (98,304 unless stated) | Fresh Beets coding/Gitea workflow |
 |---|---|---|
 | FableVibes Q6_K, retained | Probes complete; capacity layout complete; native confirms 41/41 layers offloaded; 11,566 MiB peak sampled GPU | Repair not performed; README inaccurate; feature breaks manual imports, tests fail collection, no publication ([audit](native-fable-q6-beets.md)); 21.05 coding minutes |
 | Same FableVibes Q4_K_M, retained | Capacity probes complete; 8,964 MiB sampled GPU | All three coding turns make no edits/tests/publication; skill-request stops; 1.70 coding minutes ([audit](native-fable-q4-beets.md)) |
 | VibeForged v2 Q4_K_M, retained | Capacity complete; 8,964 MiB sampled GPU; selected-file cache verified 0 after originals stop | Unchanged source; all18 code-tool calls blocked by unattended policy ([audit](native-vibe-q4-beets.md)); fresh trusted run also fails path recovery ([audit](native-vibe-q4-trusted-beets.md)) |
 | VibeForged v2 Q4_K_M, explicitly trusted profile | Same measured GPU layout; native41/41;8,964MiB peak |17 Python executions succeed but repeat wrong `~/beetsbridge`; no edits/tests/forge writes;2.217 coding minutes plus15.327-minute inefficient read ([audit](native-vibe-q4-trusted-beets.md)) |
 | Same VibeForged v2 Q6_K, explicitly trusted | Capacity complete; native41/41;11,566MiB sampled GPU | Grounded read and partial cancellation/docs; lifecycle unfixed,19 authored tests fail collection, no publication;9.564 coding minutes ([audit](native-vibe-q6-trusted-beets.md)) |
+| Adapted27B IQ4_XS, public |98k CUDA OOM at ub128/64;64k passes all probes,15,788MiB peak GPU/no study swap;51,942-input request598.86s ([evidence](resource-adapted-iq4.md)); native tensor placement pending | Fresh workflow next; no quality score |
 | FableVibes Q5_K_M, public | Possible intermediate; not downloaded or measured in this study | Not started |
 | Adapted 27B Q5/Q6 | Weight files alone exceed 16 GiB; excluded from GPU-resident shortlist | Not run; no quality-failure claim |
 

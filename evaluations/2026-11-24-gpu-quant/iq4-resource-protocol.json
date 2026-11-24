@@ -1,0 +1,62 @@
+{
+  "registered_epoch": 1795556173.887756,
+  "classification": "Pinned public adapted27B IQ4_XS measured fit selection; not coding quality",
+  "backend_image": "sha256:7561b4761f849925a728c5ac2bd1f4a649b6a76f24544e7f992b047ad016cec3",
+  "load_mode": "none",
+  "per_probe_deadline_seconds": 5400,
+  "load_deadline_seconds": 1200,
+  "per_model_stage_guard_seconds": 21600,
+  "synthetic_prompt_targets": [
+    16000,
+    60000
+  ],
+  "host_aggregate_limit_bytes": 8589934592,
+  "backend_cap_bytes": 6979321856,
+  "all_container_swap_disallowed": true,
+  "minimum_disk_reserve_bytes": 107374182400,
+  "layout_selection": "Try full-GPU98k ub128, then ub64 only on verified GPU OOM, then full-GPU64k ub64. Preserve each result; no automatic substantial CPU fallback.",
+  "minimum_staging_disk_reserve_bytes": 107374182400,
+  "adapted-iq4": {
+    "repo": "netprojects/Qwen3.8-27B-hermes-adapted-GGUF",
+    "revision": "10fdf357f14825c61ad7eb42a932e1f1e4390e8f",
+    "file": "Qwen3.8-27B-hermes-IQ4_XS.gguf",
+    "expected_bytes": 15321491104,
+    "sha256": "d25b50a2bfdfba157c2baf959f298d706d70083255bab95232ffcd40fbafcaba",
+    "layouts": [
+      {
+        "context": 98304,
+        "gpu_layers": 99,
+        "ubatch": 128
+      },
+      {
+        "context": 98304,
+        "gpu_layers": 99,
+        "ubatch": 64
+      },
+      {
+        "context": 65536,
+        "gpu_layers": 99,
+        "ubatch": 64,
+        "synthetic_prompt_targets": [
+          16000,
+          52000
+        ]
+      }
+    ],
+    "sampler": {
+      "temperature": 0.8,
+      "top_p": 1,
+      "top_k": 0,
+      "min_p": 0,
+      "repeat_penalty": 1,
+      "presence_penalty": 0,
+      "chat_template_kwargs": {
+        "enable_thinking": false
+      }
+    },
+    "probe_output_cap": 8192,
+    "retained_file_requires_full_hash_verification": true,
+    "storage_volume": "hermes-gpuquant-20261124-model-stage",
+    "comparison_sampling_source": "Earlier adapted27B Q3/Q4 native profiles use0.8/top_p1/top_k0/nonthinking; selected to preserve that runtime sampling. Different calibration/contexts/tasks prevent isolated precision conclusions."
+  }
+}

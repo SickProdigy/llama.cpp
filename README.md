@@ -11,6 +11,10 @@ The [fresh trusted Vibe Q4 run](evaluations/2026-11-24-gpu-quant/native-vibe-q4-
 executes Python successfully but fails wrong-path recovery without code or publication.
 Matching Q6 also fails the full workflow after partial cancellation/docs; reasoning-mode controls for both families remain pending.
 
+The [public27B IQ4_XS capacity check](evaluations/2026-11-24-gpu-quant/resource-adapted-iq4.md)
+passes at64k context after98k CUDA allocation failures; the52k-input request takes
+598.86seconds, with15,788MiB sampled GPU peak and no study swap. Real coding quality is next.
+
 GGUF testing notes for Hermes Agent running through llama.cpp.
 
 This file tracks which local GGUF models can actually complete the Hermes Agent plus Gitea MCP workflow, not just whether they answer a prompt or make a promising first tool call. Use the matrix for quick comparison and the detailed sections below for why a model passed, failed, or landed in the middle.

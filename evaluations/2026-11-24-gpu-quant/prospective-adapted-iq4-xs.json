@@ -25,5 +25,14 @@
   "transfer_in_progress": false,
   "fit_protocol": "prospective-iq4-fit-protocol.json",
   "capacity_stage_started": true,
-  "download_evidence": "adapted-iq4-download-receipt.json"
+  "download_evidence": "adapted-iq4-download-receipt.json",
+  "capacity_result": {
+    "completed": true,
+    "selected_context": 65536,
+    "failed_contexts": [
+      98304
+    ],
+    "coding_quality_measured": false,
+    "evidence": "resource-adapted-iq4.md"
+  }
 }
