@@ -1,0 +1,196 @@
+{
+  "classification": "fresh_explicitly_trusted_nonthinking_comparison",
+  "candidate_key": "vibe-q4-trusted",
+  "family": "beets_lifecycle",
+  "model": {
+    "file": "Qwen3.6-14B-A3B-VibeForged-v2-Q4_K_M.gguf",
+    "bytes": 8465553472,
+    "sha256": "273777783847f3a9eba912abc35407d651a575064a478ed9fbd7ad90b962b6b6",
+    "after_full_SHA_advised_DONTNEED_for_only_selected_model_file": true,
+    "not_global_cache_flush_or_proof_of_cold_cache": true
+  },
+  "phases": [
+    {
+      "family": "beets_lifecycle",
+      "arm": "vibe-q4-trusted",
+      "phase": 0,
+      "elapsed_seconds": 81.85339088691399,
+      "exit_code": 0,
+      "external_timeout": false,
+      "query_sha256": "beee14a6776b2978bc452d856b39e32ae9c10e2deba5b5ed5ffba2f5fc1460a3",
+      "native_session_fingerprints": {
+        "logical_root": "082157b26ccaa6a5411896e9967ee9dd573c6a68f6701823de2bc4c18a376d98",
+        "incoming_sid": null,
+        "effective_sid": "082157b26ccaa6a5411896e9967ee9dd573c6a68f6701823de2bc4c18a376d98"
+      },
+      "local_grade": {
+        "kind": "unpublished-local-draft",
+        "family": "beets_lifecycle",
+        "phase": 0,
+        "source_digest": "06d454e90056f73359a168f0d15ecedd3ee8e3d555797450257ed0bb2dcfa68e",
+        "project_exit": 0,
+        "preservation_exit": 0,
+        "independent_exit": 1,
+        "changed_paths": [],
+        "not_fed_to_models": true
+      },
+      "remote_grade": null,
+      "remote_grade_absent": true,
+      "forge": {
+        "scope_state": {
+          "issue": null,
+          "pr": null,
+          "branch": null,
+          "commits": 0
+        },
+        "phase": 0
+      }
+    },
+    {
+      "family": "beets_lifecycle",
+      "arm": "vibe-q4-trusted",
+      "phase": 1,
+      "elapsed_seconds": 25.525485445046797,
+      "exit_code": 0,
+      "external_timeout": false,
+      "query_sha256": "260b662f2b7392663ab74c6926c6e00cc1e27488f1ad2d056eb7c1b187b08588",
+      "native_session_fingerprints": {
+        "logical_root": "082157b26ccaa6a5411896e9967ee9dd573c6a68f6701823de2bc4c18a376d98",
+        "incoming_sid": "082157b26ccaa6a5411896e9967ee9dd573c6a68f6701823de2bc4c18a376d98",
+        "effective_sid": "082157b26ccaa6a5411896e9967ee9dd573c6a68f6701823de2bc4c18a376d98"
+      },
+      "local_grade": {
+        "kind": "unpublished-local-draft",
+        "family": "beets_lifecycle",
+        "phase": 1,
+        "source_digest": "06d454e90056f73359a168f0d15ecedd3ee8e3d555797450257ed0bb2dcfa68e",
+        "project_exit": 0,
+        "preservation_exit": 0,
+        "independent_exit": 1,
+        "changed_paths": [],
+        "not_fed_to_models": true
+      },
+      "remote_grade": null,
+      "remote_grade_absent": true,
+      "forge": {
+        "scope_state": {
+          "issue": null,
+          "pr": null,
+          "branch": null,
+          "commits": 0
+        },
+        "phase": 1
+      }
+    },
+    {
+      "family": "beets_lifecycle",
+      "arm": "vibe-q4-trusted",
+      "phase": 2,
+      "elapsed_seconds": 25.647346326964907,
+      "exit_code": 0,
+      "external_timeout": false,
+      "query_sha256": "40914ef6af6210cffc2728f9e6811a52ed1b88e402397599ae4233c4692853eb",
+      "native_session_fingerprints": {
+        "logical_root": "082157b26ccaa6a5411896e9967ee9dd573c6a68f6701823de2bc4c18a376d98",
+        "incoming_sid": "082157b26ccaa6a5411896e9967ee9dd573c6a68f6701823de2bc4c18a376d98",
+        "effective_sid": "082157b26ccaa6a5411896e9967ee9dd573c6a68f6701823de2bc4c18a376d98"
+      },
+      "local_grade": {
+        "kind": "unpublished-local-draft",
+        "family": "beets_lifecycle",
+        "phase": 2,
+        "source_digest": "06d454e90056f73359a168f0d15ecedd3ee8e3d555797450257ed0bb2dcfa68e",
+        "project_exit": 0,
+        "preservation_exit": 0,
+        "independent_exit": 1,
+        "changed_paths": [],
+        "not_fed_to_models": true
+      },
+      "remote_grade": null,
+      "remote_grade_absent": true,
+      "forge": {
+        "scope_state": {
+          "issue": null,
+          "pr": null,
+          "branch": null,
+          "commits": 0
+        },
+        "phase": 2
+      }
+    }
+  ],
+  "coding_elapsed_seconds": 133.0262226589257,
+  "whole_supervised_stage_seconds": 1270.784056186676,
+  "read_only_control_seconds": 919.6471086909296,
+  "independent_final_audit": {
+    "epoch": 1795553702.0585477,
+    "audit_complete": true,
+    "not_actor_feedback": true,
+    "candidate": "vibe-q4-trusted",
+    "family": "beets_lifecycle",
+    "overall_workflow_completed_correctly": false,
+    "initial_repair_completed": false,
+    "requested_README_update_completed": false,
+    "feature_completed": false,
+    "remote_publication_completed": false,
+    "no_candidate_edits_any_phase": true,
+    "authored_tests_any_phase": 0,
+    "counterfactual_and_additional_dispatch_tests_not_repeated_for_unchanged_source": true,
+    "original_runtime_restored_and_independently_verified": true,
+    "all30retained_models_unchanged": true,
+    "owner_pending_edits_and_Codex_preserved": true,
+    "all_owned_issues_closed_or_absent": true,
+    "owned_containers_network_removed": true,
+    "evidence_SHA256": {
+      "vibe-q4-trusted-beets-initial-manual-audit.json": "8d119c6e8c59a63106bfb78aec6ea29b0a310f796aea20b0a9380a13a865cf55",
+      "vibe-q4-trusted-beets-README-manual-audit.json": "6890fc9f78da60160ca7ece4f688966f5394273149b5a3e2bfe4fed676e7b1ce",
+      "vibe-q4-trusted-beets-feature-manual-audit.json": "9e4bad2aafea4113c5645b30690905d33814ca9d0cab71519a06db5f97888d5b",
+      "vibe-q4-trusted-beets-read-control-audit.json": "9b2291dc9ced9555a34a1abfdd047ade9d3d3710cfb8f6b5d70e5a458262ef95",
+      "vibe-q4-trusted-beets-context-instruction-audit.json": "c06a115ed827e0cfe53b61bde12739d2b5e202a7caf6fc8f17de8977ed61d48c",
+      "vibe-q4-trusted-beets-publication-independent-readback.json": "6d50be2367777a225e5f85937674dac34b2f82a45083e43308a32b5c217899de",
+      "vibe-q4-trusted-beets-command-dispatch-control.json": "292993fb3a77c6dae87097e78462af0e3b6aff746554dfc2042d6fdf72f65168",
+      "vibe-q4-trusted-beets-approval-policy-control.json": "eba76b78acb656451ed3d5b851d1a42950449430132b920ca12ef63c4030161e",
+      "native-vibe-q4-trusted-beets-cleanup.json": "061baed3de346122775473572258bef4ae7683282e1a731ab436df2ebbc0be6e",
+      "native-vibe-q4-trusted-beets_lifecycle-preservation.json": "e36cc9a74aeb2213a0454bb33368cdbad679b3caf4ccd4aa15c845ab78ca095b",
+      "native-vibe-q4-trusted-beets_lifecycle-owner-preservation.json": "495561fdf2a1591525cbf7baafa1d68ef99415de9e0179c55c64362b23a06204",
+      "vibe-q4-trusted-beets-diagnostic-overlap.json": "406b268f5698caa17c09879a67adfa2a0ec631733bd27d7136b6c67e5efd8288"
+    },
+    "limitation": "One explicitly trusted nonthinking native coding lineage.17 actual Python executions succeed but repeat wrong ~/beetsbridge location; no code/tests/publication. Read control compacts and observer records logical ancestor as effective pointer, independently distinguished; coding starts fresh with no compaction and literal dependent-task history, so this read observation does not establish lost coding history or invalidate the observed path failure.",
+    "CPU_mock_helper_overlap_disclosed": true
+  },
+  "measurements": {
+    "sample_count": 114,
+    "complete_aggregate_sample_count": 114,
+    "measurement_error_sample_count": 0,
+    "peak_GPU_MiB": 8964,
+    "peak_observed_cgroup_bytes": 7617638400,
+    "peak_observed_all_process_PSS_bytes": 2489269248,
+    "peak_observed_experiment_swap_bytes": 0,
+    "resource_guard_samples": 0,
+    "minimum_model_disk_free_bytes": 118746656768,
+    "global_pswpin_delta_pages": 15126,
+    "global_pswpout_delta_pages": 3479,
+    "global_swap_not_attributed_to_model": true,
+    "HTTP_records": 86,
+    "completed_HTTP_records_without_transport_error": 86,
+    "maximum_completed_prompt_tokens": 82224,
+    "HTTP_latency_seconds": {
+      "min": 0.6192705631256104,
+      "median": 4.700661540031433,
+      "max": 155.36343455314636,
+      "sum": 969.9129855632782
+    },
+    "sampling_not_continuous_whole_host_bound": true,
+    "not_isolated_decode_throughput": true
+  },
+  "comparison_limits": [
+    "One fresh native coding lineage with dependent followups; read control is separate.",
+    "Matched sampler/seed within checkpoint; seed does not isolate precision causally.",
+    "Current baseline disables thinking; publisher reasoning mode remains a separately registered comparison.",
+    "Internal actor network permits selected checkout and scoped configured MCP, but external terminal Git/DNS is blocked. Unrestricted-network performance is unmeasured.",
+    "Actual CLI includes normal skills and 33 tools, a larger schema than explicit-subset transport preflight.",
+    "Native budget-message presence is audited per candidate; no operator resend, continuation or private grader feedback.",
+    "Actual prompt size and context composition are audited per candidate; neither allocation nor literal retention proves useful whole-window reasoning.",
+    "Private source snapshots, raw requests/responses, profiles, session DBs, graders, references and signing keys stay local. Saved-evidence consistency verification does not rerun the private workflow or prove behavior correct."
+  ]
+}

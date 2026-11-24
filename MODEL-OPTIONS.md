@@ -28,7 +28,7 @@ no study swap); its fresh native workflow also completes with no edits/publicati
 skill-request stops ([Q4 audit](evaluations/2026-11-24-gpu-quant/native-fable-q4-beets.md)).
 Neither nonthinking Fable variant qualifies; faster no-op is not a quality win.
 The Vibe Q4 capacity stage completes with post-original-stop page-cache accounting;
-its completed baseline is confounded by unattended code-tool policy. Vibe Q6 capacity also completes. A fresh trusted Vibe Q4 workflow is live, with matched Q6 frozen and pending. A separate prospective Fable Q4/Q6
+its completed baseline is confounded by unattended code-tool policy. Vibe Q6 capacity also completes. The fresh trusted Vibe Q4 workflow also fails wrong-path recovery despite17 successful Python calls; matched Q6 is launched after native resume validation. A separate prospective Fable Q4/Q6
 publisher-sampling, reasoning-enabled pair is registered; this low-temperature
 nonthinking baseline is not a verdict on Fable's best practical configuration.
 

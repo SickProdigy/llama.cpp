@@ -1,0 +1,73 @@
+{
+  "passed": true,
+  "native_CLI_processes": 2,
+  "scripted_HTTP_responses": 2,
+  "actual_scored_read_control_compression_seeded_into_scratch": true,
+  "runs": [
+    {
+      "query": "For this isolated persistence control, acknowledge only CONTROL_FOLLOWUP_1.",
+      "exit_code": 0,
+      "incoming_CLI_handle_SHA256": "77fdccad447bd0eb82702225548dc4efe48b7b58571a08e3f7001fb9d56f1684",
+      "emitted_CLI_handle_SHA256": "77fdccad447bd0eb82702225548dc4efe48b7b58571a08e3f7001fb9d56f1684"
+    },
+    {
+      "query": "For this isolated persistence control, acknowledge CONTROL_FOLLOWUP_2 and retain CONTROL_FOLLOWUP_1.",
+      "exit_code": 0,
+      "incoming_CLI_handle_SHA256": "77fdccad447bd0eb82702225548dc4efe48b7b58571a08e3f7001fb9d56f1684",
+      "emitted_CLI_handle_SHA256": "77fdccad447bd0eb82702225548dc4efe48b7b58571a08e3f7001fb9d56f1684"
+    }
+  ],
+  "actual_native_segments_before": [
+    {
+      "source": "oneshot",
+      "started_at": 1795552317.861656,
+      "end_reason": "compression",
+      "id_SHA256": "77fdccad447bd0eb82702225548dc4efe48b7b58571a08e3f7001fb9d56f1684",
+      "parent_session_id_SHA256": null
+    },
+    {
+      "source": "oneshot",
+      "started_at": 1795552895.8081458,
+      "end_reason": "cli_close",
+      "id_SHA256": "24a73c2b0c0ef8e518bba669d6e9ba679472dc8e7d7875bbbc066d465a0c68f0",
+      "parent_session_id_SHA256": "77fdccad447bd0eb82702225548dc4efe48b7b58571a08e3f7001fb9d56f1684"
+    }
+  ],
+  "actual_native_segments_after": [
+    {
+      "source": "oneshot",
+      "started_at": 1795552317.861656,
+      "end_reason": "compression",
+      "id_SHA256": "77fdccad447bd0eb82702225548dc4efe48b7b58571a08e3f7001fb9d56f1684",
+      "parent_session_id_SHA256": null
+    },
+    {
+      "source": "oneshot",
+      "started_at": 1795552895.8081458,
+      "end_reason": "cli_close",
+      "id_SHA256": "24a73c2b0c0ef8e518bba669d6e9ba679472dc8e7d7875bbbc066d465a0c68f0",
+      "parent_session_id_SHA256": "77fdccad447bd0eb82702225548dc4efe48b7b58571a08e3f7001fb9d56f1684"
+    }
+  ],
+  "followup_after_actual_compression_and_third_turn_verified": true,
+  "logical_CLI_resume_handle_distinguished_from_physical_segment": true,
+  "native_discard_preserved_all_message_rows": true,
+  "model_inference": false,
+  "forge_actions": false,
+  "owner_or_scored_profile_modified": false,
+  "scope": "Scratch copy of completed actual compressed read session, two new CLI followups with scripted HTTP responses. Earlier failed force-compression attempts retained, not successful controls or model results.",
+  "native_source_SHA256": {
+    "hermes_cli/cli_agent_setup_mixin.py": "9ee7a457fb3af1d855396efb6c24bf2369f940f3b81aeb8f66be5dafd142b920",
+    "hermes_cli/gateway_session_store.py": "4b1d6d9918f7b26df20dc4c0d936f1fd86fdef8a0ad5165230b3184629696de8",
+    "persistence/sqlite/conversation/_store/messages.py": "9f0a53bc4e9f25e6b8a3ec590df45b1a06399bcc6677c0d57c82618a4db1724e"
+  },
+  "controlled_source_sha256": "57c031006321df3e440be176a0cfb2d825bcd111aa465f66d73b6e67c1528e72",
+  "model_quality_or_hardware_proof": false,
+  "policy_contract": "Keep native CLI emitted receipt-owner handle for resume; separately record compressed physical tip. Same copied home path and frozen local test credential identity are preserved in an isolated tmpfs; no owner profile is written.",
+  "prior_failed_controls_not_model_results": [
+    "repetitive scripted padding hit native repetition guard",
+    "three scratch scripts did not actually trigger compression",
+    "seeded resume refused changed creation flags",
+    "seeded resume refused a different credential home"
+  ]
+}

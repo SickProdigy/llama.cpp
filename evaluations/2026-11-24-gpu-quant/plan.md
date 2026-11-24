@@ -3,8 +3,8 @@
 Status: all four retained-file capacity stages complete. Fable Q4/Q6 nonthinking
 workflows fail independently audited task/publication checks. Vibe Q4's baseline
 is confounded by unattended code-tool approval policy; the original Q6 deny-policy
-coding cell is prospectively deferred. A fresh trusted-profile Vibe Q4 run is live
-and matching Q6 is frozen and pending. The separate publisher-mode Fable profiles
+coding cell is prospectively deferred. The fresh trusted-profile Vibe Q4 run also fails path recovery without edits;
+matching Q6 is launched after actual logical-handle/physical-tip resume validation. The separate publisher-mode Fable profiles
 pass SDK and pure-code preflights, with no reasoning inference started. Original
 settings and retained models are preserved; each GPU stage restores and verifies
 the original services before the next stage.
@@ -88,3 +88,6 @@ A bounded HTTP range [inspection](adapted-iq4-header-inspection.json) of the pin
 
 
 The separate [publisher-profile preflights](publisher-profile-preflights.json) pass for both fresh Fable profiles: actual SDK serialization checks reasoning-enabled main16k, auxiliary nonthinking8k and author sampling; actual pure-code checks execute in copied profiles already set to explicit experimental trust. No reasoning-model calls have started. These controls establish configuration/execution capability, not model quality.
+
+
+The [native compression-handle control](native-compression-handle-control.json) actually resumes a scratch copy of the completed compressed read session for two followups, preserving literal followup history. Native CLI uses a stable receipt-owner handle, while compressed transcript storage uses a child segment. Source-pinned observer V3 records both separately; Q6 is launched with that prospective observer fix. Q4 coding did not compact and remains a valid observed path-recovery failure. Earlier unsuccessful control setups remain retained and are not model trials. No live trial was corrected, continued or replayed.

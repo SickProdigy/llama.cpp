@@ -5,9 +5,11 @@ is active: retained Fable/Vibe Q4 and Q6 first, evaluating correctness and laten
 together at realistic context. Fable Q6 completes its first capacity stage at
 98,304 context (11,566 MiB sampled GPU peak; no study swap), but its first
 thinking-disabled coding workflow fails correctness/publication checks in 21.05
-coding minutes. Q4 also completes without edits or publication (1.70 coding minutes). Vibe and
-publisher reasoning-mode comparisons remain pending.
+coding minutes. Q4 also completes without edits or publication (1.70 coding minutes). The matched Vibe comparison and publisher reasoning-mode controls continue.
 See the protocol/results before treating fit as useful agent behavior.
+The [fresh trusted Vibe Q4 run](evaluations/2026-11-24-gpu-quant/native-vibe-q4-trusted-beets.md)
+executes Python successfully but fails wrong-path recovery without code or publication.
+Matching Q6 is launched after native resume validation; separate publisher-mode controls remain pending.
 
 GGUF testing notes for Hermes Agent running through llama.cpp.
 

@@ -7,8 +7,9 @@ fails independently audited correctness and publication checks; Q4 also fails wi
 |---|---|---|
 | FableVibes Q6_K, retained | Probes complete; capacity layout complete; native confirms 41/41 layers offloaded; 11,566 MiB peak sampled GPU | Repair not performed; README inaccurate; feature breaks manual imports, tests fail collection, no publication ([audit](native-fable-q6-beets.md)); 21.05 coding minutes |
 | Same FableVibes Q4_K_M, retained | Capacity probes complete; 8,964 MiB sampled GPU | All three coding turns make no edits/tests/publication; skill-request stops; 1.70 coding minutes ([audit](native-fable-q4-beets.md)) |
-| VibeForged v2 Q4_K_M, retained | Capacity complete; 8,964 MiB sampled GPU; selected-file cache verified 0 after originals stop | Unchanged source; all18 code-tool calls blocked by unattended policy ([audit](native-vibe-q4-beets.md)); fresh trusted run live |
-| Same VibeForged v2 Q6_K, retained | Capacity complete; 11,566 MiB sampled GPU; 60k probe153.634s | Original deny-policy coding cell deferred; fresh trusted run frozen/pending |
+| VibeForged v2 Q4_K_M, retained | Capacity complete; 8,964 MiB sampled GPU; selected-file cache verified 0 after originals stop | Unchanged source; all18 code-tool calls blocked by unattended policy ([audit](native-vibe-q4-beets.md)); fresh trusted run also fails path recovery ([audit](native-vibe-q4-trusted-beets.md)) |
+| VibeForged v2 Q4_K_M, explicitly trusted profile | Same measured GPU layout; native41/41;8,964MiB peak |17 Python executions succeed but repeat wrong `~/beetsbridge`; no edits/tests/forge writes;2.217 coding minutes plus15.327-minute inefficient read ([audit](native-vibe-q4-trusted-beets.md)) |
+| Same VibeForged v2 Q6_K, retained | Capacity complete; 11,566 MiB sampled GPU; 60k probe153.634s | Original deny-policy coding cell deferred; fresh trusted run launched |
 | FableVibes Q5_K_M, public | Possible intermediate; not downloaded or measured in this study | Not started |
 | Adapted 27B Q5/Q6 | Weight files alone exceed 16 GiB; excluded from GPU-resident shortlist | Not run; no quality-failure claim |
 
@@ -111,3 +112,6 @@ A bounded HTTP range [inspection](adapted-iq4-header-inspection.json) of the pin
 
 
 The separate [publisher-profile preflights](publisher-profile-preflights.json) pass for both fresh Fable profiles: actual SDK serialization checks reasoning-enabled main16k, auxiliary nonthinking8k and author sampling; actual pure-code checks execute in copied profiles already set to explicit experimental trust. No reasoning-model calls have started. These controls establish configuration/execution capability, not model quality.
+
+
+The [native compression-handle control](native-compression-handle-control.json) actually resumes a scratch copy of the completed compressed read session for two followups, preserving literal followup history. Native CLI uses a stable receipt-owner handle, while compressed transcript storage uses a child segment. Source-pinned observer V3 records both separately; Q6 is launched with that prospective observer fix. Q4 coding did not compact and remains a valid observed path-recovery failure. Earlier unsuccessful control setups remain retained and are not model trials. No live trial was corrected, continued or replayed.
