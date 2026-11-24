@@ -11,8 +11,10 @@ and [trusted Q6 audit](native-vibe-q6-trusted-beets.md).
 
 Original runtime/settings and retained models are independently verified restored
 after each completed GPU stage. The first new artifact, adapted27B IQ4_XS, is downloaded to a separately owned
-volume and its full SHA256 matches the pin. Measured capacity testing is launched;
-no GPU-fit or quality claim follows before those trials finish.
+volume and its full SHA256 matches the pin. [Capacity testing](resource-adapted-iq4.md)
+completes at64k after98k CUDA OOMs. Native verbose logging confirms66/66 layers
+offloaded with fit disabled; the fresh coding/Gitea workflow is running, without
+a coding-quality verdict.
 
 ## Registered comparison and controls
 
@@ -86,8 +88,10 @@ imatrix metadata (496 entries,104 chunks,`calib-train.txt`), not full-file integ
 or GPU fit. The standalone reader actually reproduces the saved prefix metadata.
 The separately owned staging volume has been measured to retain over100GiB after
 this download; original model storage lacks that margin. Recheck actual reserves
-throughout transfer. Start fit testing with full GPU98k; register justified smaller
-batch/context or minimal CPU alternatives before any retry, documenting tradeoffs.
+throughout transfer. The registered full-GPU98k ub128/64 layouts both fail CUDA
+allocation; the predeclared64k ub64 fallback completes all probes. No CPU-layer
+fallback is tried; the52k-input request takes598.86seconds. Native placement
+confirms66/66 layers on GPU before the fresh actor runs.
 
 Fable Q5 is publicly available and can provide an intermediate comparison after
 existing files/configurations. The pinned Vibe v2 repository has no Q5_K_M; do not

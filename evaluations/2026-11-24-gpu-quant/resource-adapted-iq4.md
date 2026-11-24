@@ -4,8 +4,9 @@ The pinned public IQ4_XS completes all five capacity probes at **65,536 context*
 Both 98,304-context layouts fail CUDA allocation (microbatches 128 and64); these
 are fit exclusions, not coding-quality failures. No CPU-layer fallback was tried.
 The selected layout requests99 GPU layers, microbatch64, q4_0 KV and fit off.
-Resource logs do not enumerate every tensor: native verbose placement remains a
-required gate before the actor starts.
+Resource logs do not enumerate every tensor. The subsequent native verbose
+[placement gate](native-adapted-iq4-placement.json) confirms66/66 layers offloaded
+before the actor starts. Native coding/Gitea quality remains in progress.
 
 The 16,152-token input takes226.314 seconds. The 51,942-token input takes598.859
 seconds and returns `capacity-check-52000`;16,084 input tokens were cached from

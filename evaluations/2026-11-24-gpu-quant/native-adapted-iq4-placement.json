@@ -1,0 +1,12 @@
+{
+  "all_layers_offloaded": true,
+  "observed_layer_counts": [
+    [
+      "66",
+      "66"
+    ]
+  ],
+  "automatic_fit_disabled": true,
+  "log_sha256": "7500cad15fde2440ebbe71bebf69f4aade2dec987797f8cd98453e8469db4ca8",
+  "not_quality_proof": true
+}

@@ -8,11 +8,10 @@
   "weight_file_GiB": 14.26925054192543,
   "downloaded": true,
   "full_SHA_verified": true,
-  "GPU_fit_measured": false,
+  "GPU_fit_measured": true,
   "reason": "Same adapted27B checkpoint has the strongest earlier slow supervised result; IQ4_XS is smaller than Q4_K_M and merits a measured mostly-GPU fit check. File size alone does not prove room for98k context/runtime.",
   "planned_admission": "Inspect prior27B measured layouts and pinned header/runtime compatibility before choosing controls. Start with a measured all-GPU98k layout; only register justified smaller-batch/context or minimal CPU-residency alternatives before their trials, and report actual spillover/latency. No substantial CPU fallback by default.",
   "storage": "Guarded download complete; artifact retained in separately owned Docker volume, original30 files unchanged. Both actual filesystem reserves exceeded100GiB; see full download receipt.",
-  "not_a_quality_or_hardware_success": true,
   "bounded_header_inspected": true,
   "header_evidence": "adapted-iq4-header-inspection.json",
   "imatrix_metadata": {
@@ -34,5 +33,14 @@
     ],
     "coding_quality_measured": false,
     "evidence": "resource-adapted-iq4.md"
+  },
+  "not_a_coding_quality_success": true,
+  "native_workflow_in_progress": true,
+  "native_placement": {
+    "all_layers_offloaded": true,
+    "layer_count": 66,
+    "context": 65536,
+    "automatic_fit_disabled": true,
+    "evidence": "native-adapted-iq4-placement.json"
   }
 }

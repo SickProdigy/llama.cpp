@@ -39,7 +39,7 @@ The same publisher also has a [smaller IQ4_XS variant](evaluations/2026-11-24-gp
 now fully downloaded/hash-verified and [capacity-tested](evaluations/2026-11-24-gpu-quant/resource-adapted-iq4.md).
 Its 98k layouts fail CUDA allocation;64k completes the tool/history and52k-input
 probes at15,788MiB sampled GPU peak and zero study swap. The52k request takes
-598.86seconds. Native tensor placement and real coding/Gitea quality remain pending.
+598.86seconds. Native confirms66/66 GPU layers; real coding/Gitea quality remains pending.
 No new everyday model/profile selection or autonomous-reliability claim is made.
 
 ## November 24: wider-memory evaluation complete
