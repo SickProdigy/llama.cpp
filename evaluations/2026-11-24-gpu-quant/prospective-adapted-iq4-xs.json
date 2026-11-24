@@ -6,12 +6,12 @@
   "expected_bytes": 15321491104,
   "advertised_SHA256": "d25b50a2bfdfba157c2baf959f298d706d70083255bab95232ffcd40fbafcaba",
   "weight_file_GiB": 14.26925054192543,
-  "downloaded": false,
-  "full_SHA_verified": false,
+  "downloaded": true,
+  "full_SHA_verified": true,
   "GPU_fit_measured": false,
   "reason": "Same adapted27B checkpoint has the strongest earlier slow supervised result; IQ4_XS is smaller than Q4_K_M and merits a measured mostly-GPU fit check. File size alone does not prove room for98k context/runtime.",
   "planned_admission": "Inspect prior27B measured layouts and pinned header/runtime compatibility before choosing controls. Start with a measured all-GPU98k layout; only register justified smaller-batch/context or minimal CPU-residency alternatives before their trials, and report actual spillover/latency. No substantial CPU fallback by default.",
-  "storage": "The separately owned staging volume is in use for a guarded one-artifact download; original30 files are unchanged. Both actual filesystem reserves are checked against100GiB.",
+  "storage": "Guarded download complete; artifact retained in separately owned Docker volume, original30 files unchanged. Both actual filesystem reserves exceeded100GiB; see full download receipt.",
   "not_a_quality_or_hardware_success": true,
   "bounded_header_inspected": true,
   "header_evidence": "adapted-iq4-header-inspection.json",
@@ -21,8 +21,9 @@
     "entries_count": 496,
     "chunks_count": 104
   },
-  "full_file_SHA256_not_yet_verified": true,
   "staging_volume_measured_separately_with_100GiB_reserve": true,
-  "transfer_in_progress": true,
-  "fit_protocol": "prospective-iq4-fit-protocol.json"
+  "transfer_in_progress": false,
+  "fit_protocol": "prospective-iq4-fit-protocol.json",
+  "capacity_stage_started": true,
+  "download_evidence": "adapted-iq4-download-receipt.json"
 }

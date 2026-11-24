@@ -98,8 +98,8 @@ saved-evidence validator; no global cache flush occurs. This is an accounting
 control, not an accuracy improvement. The completed native stage is policy-confounded; see the appended finding below.
 
 The [adapted27B IQ4_XS option](prospective-adapted-iq4-xs.json) is additionally
-pinned for a future fit check; it is not downloaded or hardware/quality-tested in
-this study. It offers a smaller 4-bit format, not a newer trained checkpoint.
+pinned as a smaller4-bit format, not a newer trained checkpoint. Its download and
+full hash now complete; hardware fit is running and coding quality remains untested.
 
 
 The [VibeForged Q4 unattended baseline](native-vibe-q4-beets.md) completed without code changes: all 18 selected `execute_code` attempts were blocked by copied-profile one-shot approval policy. Repository read control succeeded; code-tool ability remains unmeasured. A separate isolated deny/approve pure-code control confirms this mechanism without model calls. Original deployed settings remain unchanged. The prospective comparison now uses a fresh explicitly trusted Vibe Q4/Q6 pair; Q6 deny-profile coding is deferred, with its capacity check now completed independently. Fable Q4/Q6 baseline outcomes remain preserved. Higher precision has not yet demonstrated a quality gain.
@@ -108,7 +108,7 @@ The [VibeForged Q4 unattended baseline](native-vibe-q4-beets.md) completed witho
 Vibe Q6 [capacity evidence](resource-vibe-q6-summary.json) now completes: 98,304-token allocation, requested full GPU offload, 11,566 MiB peak GPU, 6.561 GiB charged study cgroups, no study swap or guards, and a 59,937-token probe in 153.634 seconds. Original services/settings/models were independently verified restored afterwards. Capacity is not coding quality. Fresh trusted Vibe Q4 coding is launched; the trusted Q6 profile is frozen and pending, with identical task/source/sampler/seed/caps. Both copied profiles actually execute the no-model pure-code approval check successfully.
 
 
-A bounded HTTP range [inspection](adapted-iq4-header-inspection.json) of the pinned adapted27B IQ4_XS header now confirms 866 tensors and importance-matrix metadata (496 entries, 104 chunks, `calib-train.txt`). This differs from the Fable/Vibe files with no recorded imatrix fields; no isolated precision-only claim follows. It is still not a full download, full-file hash verification, GPU-fit result or coding test. A separately owned Docker staging volume has been measured to retain over 100 GiB after this artifact; bulk download is deferred during timed GPU stages.
+A bounded HTTP range [inspection](adapted-iq4-header-inspection.json) of the pinned adapted27B IQ4_XS header now confirms 866 tensors and importance-matrix metadata (496 entries, 104 chunks, `calib-train.txt`). This differs from the Fable/Vibe files with no recorded imatrix fields; no isolated precision-only claim follows. The prefix inspection itself does not verify the full file, GPU fit or coding quality; the separate full download receipt now verifies integrity. A separately owned Docker staging volume has been measured to retain over 100 GiB after this artifact; bulk download is deferred during timed GPU stages.
 
 
 The separate [publisher-profile preflights](publisher-profile-preflights.json) pass for both fresh Fable profiles: actual SDK serialization checks reasoning-enabled main16k, auxiliary nonthinking8k and author sampling; actual pure-code checks execute in copied profiles already set to explicit experimental trust. No reasoning-model calls have started. These controls establish configuration/execution capability, not model quality.
@@ -121,4 +121,7 @@ The [trusted Q6 audit](native-vibe-q6-trusted-beets.md) confirms a partial featu
 
 Both model families' publisher descriptions motivate fresh reasoning-enabled controls. The newly pinned [Vibe generation configuration](vibe-publisher-mode-followup-proposal.json) matches Fable sampling1.0/.95/top-k20. Its [fresh profiles](vibe-thinking-profile-preflights.json) pass actual SDK16k-main/8k-aux and isolated code-approval checks. Enabling thinking is our experiment based on the reasoning-training description; the vendor JSON does not itself set that template flag. No reasoning inference is claimed yet.
 
-The pinned adapted27B IQ4_XS artifact is now downloading sequentially to its separately owned volume while scored GPU inference is idle. Both actual filesystem reserves are guarded at100GiB; no full-file hash, fit or quality result exists until completion and subsequent trials. Original30 retained files remain preserved.
+The pinned adapted27B IQ4_XS artifact completed its full-file SHA256 check in the separately owned volume; both actual filesystem reserves stayed above100GiB. Capacity testing is launched, without a fit or quality claim yet. Original30 retained files remain preserved.
+
+
+[Download receipt](adapted-iq4-download-receipt.json):15,321,491,104 bytes match the pinned full hash. Transfer took1,491.731 seconds; minimum observed staging free space126,470,311,936 bytes, final134,768,402,432 bytes, original model drive118,607,450,112 bytes. Original30 files are not written. This is download/integrity evidence, not model inference latency or fit.

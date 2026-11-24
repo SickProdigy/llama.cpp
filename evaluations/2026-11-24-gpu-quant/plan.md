@@ -10,9 +10,9 @@ See the [current matrix](matrix.md), [trusted Q4 audit](native-vibe-q4-trusted-b
 and [trusted Q6 audit](native-vibe-q6-trusted-beets.md).
 
 Original runtime/settings and retained models are independently verified restored
-after each completed GPU stage. The first new artifact, adapted27B IQ4_XS, is now
-downloading to a separately owned volume while scored GPU inference is idle.
-No full-file hash, fit or quality claim follows until download and trials finish.
+after each completed GPU stage. The first new artifact, adapted27B IQ4_XS, is downloaded to a separately owned
+volume and its full SHA256 matches the pin. Measured capacity testing is launched;
+no GPU-fit or quality claim follows before those trials finish.
 
 ## Registered comparison and controls
 
@@ -111,3 +111,6 @@ verify original services after GPU stages, and retain sanitized reproducible
 records. Commit/push completed stages with README/options/matrix. Public verifiers
 check saved-evidence bindings and coherent negative controls; they do not rerun
 private behavior graders or turn a small sample into autonomous reliability.
+
+
+[Download receipt](adapted-iq4-download-receipt.json):15,321,491,104 bytes match the pinned full hash. Transfer took1,491.731 seconds; minimum observed staging free space126,470,311,936 bytes, final134,768,402,432 bytes, original model drive118,607,450,112 bytes. Original30 files are not written. This is download/integrity evidence, not model inference latency or fit.

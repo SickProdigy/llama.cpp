@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "repo": "netprojects/Qwen3.8-27B-hermes-adapted-GGUF",
+  "revision": "10fdf357f14825c61ad7eb42a932e1f1e4390e8f",
+  "file": "Qwen3.8-27B-hermes-IQ4_XS.gguf",
+  "bytes": 15321491104,
+  "sha256": "d25b50a2bfdfba157c2baf959f298d706d70083255bab95232ffcd40fbafcaba",
+  "full_file_SHA256_verified": true,
+  "seconds": 1491.7308378219604,
+  "volume": "hermes-gpuquant-20261124-model-stage",
+  "minimum_observed_staging_free_bytes": 126470311936,
+  "final_staging_free_bytes": 134768402432,
+  "original_model_drive_free_bytes": 118607450112,
+  "both_reserves_at_least_100GiB": true,
+  "original_model_files_not_written": true,
+  "download_not_a_GPU_fit_or_quality_test": true,
+  "only_new_owned_file_advised_DONTNEED_after_fsync": true
+}
