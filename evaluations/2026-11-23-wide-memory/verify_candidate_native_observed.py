@@ -20,6 +20,7 @@ for direction in ['in','out']:assert m['global_pswp'+direction+'_delta_pages']==
 records=[j(name)for name in sorted(files)if name.startswith('requests/')];complete=[r for r in records if r['capture_complete_without_transport_error']];assert len(records)==m['HTTP_records']and len(complete)==m['completed_HTTP_records_without_transport_error'];assert sum(r['client_transport_error_present']for r in records)==m['transport_error_record_count'];assert sum(not r['backend_body_complete']for r in records)==m['incomplete_backend_body_record_count']
 latency=[r['end_epoch']-r['backend_start_epoch']for r in complete];assert m['HTTP_latency_seconds']==dict(min=min(latency),median=statistics.median(latency),max=max(latency),sum=sum(latency));assert m['maximum_completed_prompt_tokens']==max(r['usage'].get('prompt_tokens',0)for r in complete)
 audit=summary['independent_final_audit'];assert audit==j('audits/'+KEY+'-'+SHORT+'-final-audit.json');assert audit['audit_complete']and audit['not_actor_feedback']and audit['fresh_primary']
+for name,digest in audit['manual_audit_sha256'].items():assert sha(files['audits/'+name])==digest
 assert len(summary['phases'])==len(audit['observed_grades_by_phase'])==3
 previous=None;roots=[];observed=[]
 for phase in range(3):
@@ -50,10 +51,40 @@ if 'controls/posthoc-dispatch-cleanup-result.json'in files:
  control=j('controls/posthoc-dispatch-cleanup-result.json');assert control['not_actor_feedback']and control['pinned_upstream_dispatcher_method_executed_without_body_changes'];assert control['source_sha256']==j('phases/2/local-grade/source-sha256.json')['announcer/__init__.py'];assert control['control_sha256']==sha(files['source/announcer_dispatch_cleanup_control.py']);pins={p['commit']:p for p in j('controls/upstream-dispatch-pins.json')if 'commit'in p}
  for row in control['results']:assert row['upstream_source_sha256']==pins[row['commit']]['sha256']and row['upstream_url']==pins[row['commit']]['url']
  posthoc_dispatch_source_checked=True
+posthoc_glm_initial_source_checked=False
+if 'controls/glm-spam-initial-supplementary/result.json'in files:
+ control=j('controls/glm-spam-initial-supplementary/result.json');initial=j('audits/glm-spam-initial-manual-audit.json');sources=j('phases/0/local-grade/source-sha256.json')
+ assert KEY=='glm'and FAMILY=='spam_enforcement'and control['not_actor_feedback']and control['source_kind']=='captured_unpublished_initial_draft'
+ assert control['control_sha256']==sha(files['source/glm_spam_initial_supplementary_control.py'])==initial['posthoc_rule_cleanup_control_sha256']
+ assert sha(files['controls/glm-spam-initial-supplementary/result.json'])==initial['posthoc_rule_cleanup_result_sha256']
+ assert control['candidate']['plugin_sha256']==sources['autospamignore/__init__.py']
+ assert control['candidate']['fixture_sha256']==control['baseline']['fixture_sha256']==sources['tests/test_autospamignore.py']
+ assert control['authored_explicit_pytest']['log_sha256']==sha(files['controls/glm-spam-initial-supplementary/authored-explicit-pytest.log'])
+ assert control['authored_explicit_pytest']['exit_code']==initial['test_adequacy']['authored_explicit_collection_exit']
+ posthoc_glm_initial_source_checked=True
+posthoc_glm_feature_source_checked=False
+if 'controls/glm-spam-feature-supplementary/result.json'in files:
+ control=j('controls/glm-spam-feature-supplementary/result.json');feature=j('audits/glm-spam-feature-manual-audit.json');sources=j('phases/2/local-grade/source-sha256.json')
+ assert KEY=='glm'and FAMILY=='spam_enforcement'and control['not_actor_feedback']and control['source_kind']=='captured_unpublished_feature_draft'
+ assert control['control_sha256']==sha(files['source/glm_spam_feature_supplementary_control.py'])==feature['posthoc_feature_control_sha256']
+ assert sha(files['controls/glm-spam-feature-supplementary/result.json'])==feature['posthoc_feature_result_sha256']
+ for name,digest in control['source_sha256'].items():assert sources[name]==digest
+ assert control['authored_explicit_pytest']['log_sha256']==sha(files['controls/glm-spam-feature-supplementary/authored-explicit-pytest.log'])
+ assert control['authored_explicit_pytest']['exit_code']==feature['test_adequacy']['explicit_collection_exit']
+ assert control['authored_method_counts']['TestEnforcementSwitch']==feature['test_adequacy']['actual_initial_methods']and control['authored_method_counts']['TestRuleAlertCooldown']==feature['test_adequacy']['actual_feature_methods']
+ posthoc_glm_feature_source_checked=True
+context_audit_name='audits/'+KEY+'-'+SHORT+'-context-instruction-audit.json'
+if context_audit_name in files:
+ context=j(context_audit_name);assert context['not_actor_feedback']and not context['final_feature_phase_still_pending']and len(context['phases'])==3
+ by_id={r['id']:r for r in records}
+ for row in context['phases']:
+  metric=by_id[row['last_complete_HTTP_id']];assert row['completed_phase']and metric['capture_complete_without_transport_error']
+  assert row['saved_request_JSON_sha256']==metric['private_saved_request_file_sha256']and row['wire_request_sha256_from_proxy_metrics']==metric['request_sha256']
+  assert row['prompt_tokens']==metric['usage']['prompt_tokens']
 assert len(set(roots))==1 and roots[0]
 restoration=j('runtime/runtime-restoration.json');assert restoration['restored'];before=j('runtime/runtime-before.json');after=restoration['after']
 for service in before:
  for key in ['id','image','signature','running']:assert before[service][key]==after[service][key]
 assert before['hermes-codex']==after['hermes-codex'];assert j('audits/'+RESTORE+'-preservation.json')['codex_entire_snapshot_unchanged'];assert j('audits/'+RESTORE+'-owner-preservation.json')['passed'];assert j('audits/'+LABEL+'-cleanup.json')['passed']
 assert audit['publication_independently_audited']and audit['test_issue_cleanup_independently_verified']
-result={'passed':True,'manifest_files':len(manifest),'memory_samples':len(samples),'HTTP_records':len(records),'completed_HTTP_records':len(complete),'private_behavior_not_reexecuted':True,'observed_grades_by_phase':observed,'posthoc_dispatch_source_fingerprint_checked':posthoc_dispatch_source_checked,'quality_classification':audit['classification'],'scope':'Saved bytes and observed outcome consistency only. Failed tests and absent publication remain failures/absence; not a coding-quality or autonomous-reliability certificate.'};(R/(LABEL+'-validation.json')).write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result))
+result={'passed':True,'manifest_files':len(manifest),'memory_samples':len(samples),'HTTP_records':len(records),'completed_HTTP_records':len(complete),'private_behavior_not_reexecuted':True,'observed_grades_by_phase':observed,'posthoc_dispatch_source_fingerprint_checked':posthoc_dispatch_source_checked,'posthoc_glm_initial_source_fingerprint_checked':posthoc_glm_initial_source_checked,'posthoc_glm_feature_source_fingerprint_checked':posthoc_glm_feature_source_checked,'quality_classification':audit['classification'],'scope':'Saved bytes and observed outcome consistency only. Failed tests and absent publication remain failures/absence; not a coding-quality or autonomous-reliability certificate.'};(R/(LABEL+'-validation.json')).write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result))

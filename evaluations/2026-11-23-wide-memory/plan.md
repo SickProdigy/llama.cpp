@@ -20,8 +20,14 @@ below retain the original protocol and successive resource milestones.
   [passes its hash check](glm-download-verification.json) after verified temporary
   rotation of only the owned Devstral file. [Five resource probes complete](resource-glm.md)
   at98k with CPU expert spill; the initial cache-configuration failure is preserved.
-  Resource restoration is independently verified. Fresh native Spam is underway,
-  followed by Announcer; coding/Gitea quality remains pending.
+  Resource restoration is independently verified. [Fresh Spam](native-glm-spam.md)
+  fails preservation/cooldown/test adequacy and PR publication, despite a correct
+  issue/fork; restoration and issue closure are independently verified. Fresh
+  Announcer is underway.
+- Registered comparison followup: run a fresh Q4 Spam lineage after both GLM
+  families complete their audits and cleanup. The earlier Q4 Spam recovery is
+  not matched fresh evidence. Reuse actual saved 6656m/6.5 GiB native launches,
+  not an old 7 GiB narrative; retain the aggregate 8 GiB guard and disk/inventory rules.
 
 No winner or autonomous reliability is established. Remaining named stages,
 independent audits, restoration, fair comparison and retained-model disposition

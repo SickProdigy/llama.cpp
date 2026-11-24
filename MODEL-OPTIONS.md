@@ -74,8 +74,12 @@ five-probe resource stage completes at98k with 12 CPU expert layers,15336MiB
 GPU and6.564GiB peak charged host memory, zero experiment swap. Whole-host
 swap counters rise substantially; no attribution to the model is made. The60k
 request takes1410.74s. The initial unequal K/V configuration failure and
-correction are preserved. Fresh GLM coding trials are underway; no quality
-result is claimed. Resource fit is not quality proof.
+correction are preserved. GLM's [fresh Spam workflow](evaluations/2026-11-23-wide-memory/native-glm-spam.md)
+fails preservation and cooldown correctness, has unusable undiscovered authored
+tests and creates no commit/PR despite a correct issue/fork. Coding takes 85 minutes
+within budget, with no experiment swap. Fresh Announcer remains underway.
+A matched fresh Q4 Spam trial is registered after both GLM audits; the recovered
+Q4 Spam outcome remains conditional. Resource fit is not quality proof.
 
 ## November 22: full P100 plus up to 8 GiB host spillover
 

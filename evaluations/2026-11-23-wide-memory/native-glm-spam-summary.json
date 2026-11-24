@@ -1,0 +1,426 @@
+{
+  "classification": "Fresh Spam fails original notification preservation and requested cooldown behavior; correct Gitea issue/fork but no published commit/PR; authored tests and claims fail audit",
+  "model": {
+    "file": "GLM-4.7-Flash-Q4_K.gguf",
+    "bytes": 18244193920,
+    "sha256": "b6019edc5fbe37d3660d2e994d16c839a7855a6f03362c5dcf8142ba479cd0d2",
+    "after_full_SHA_advised_DONTNEED_for_only_this_study_owned_file": true,
+    "not_global_cache_flush_or_proof_of_cold_cache": true
+  },
+  "candidate_key": "glm",
+  "family": "spam_enforcement",
+  "phases": [
+    {
+      "family": "spam_enforcement",
+      "arm": "glm",
+      "phase": 0,
+      "elapsed_seconds": 1398.2730698839878,
+      "exit_code": 0,
+      "external_timeout": false,
+      "query_sha256": "46baa5e46d25e6ee68d5870f0288eb1bd8f8d82d2f11c3db26d9347c0ebd7e9e",
+      "native_session_fingerprints": {
+        "logical_root": "ec969ac3a897a415d54047a853fe89f9d4445112c3489c1c72b18464b60d8764",
+        "incoming_sid": null,
+        "effective_sid": "ec969ac3a897a415d54047a853fe89f9d4445112c3489c1c72b18464b60d8764"
+      },
+      "private_original_run_sha256": "176dcfa460339249efabc9113d0af1282c70b4f83e6a87991587a85d429b079a",
+      "local_grade": {
+        "kind": "unpublished-local-draft",
+        "family": "spam_enforcement",
+        "phase": 0,
+        "source_digest": "6d6de1dd0908d3e328df128e7267d650a091ebdc5cc070b8f429ff61b18f50e8",
+        "project_exit": 1,
+        "preservation_exit": 1,
+        "independent_exit": 0,
+        "changed_paths": [
+          "PR_DESCRIPTION.md",
+          "autospamignore/__init__.py",
+          "autospamignore/tests.py"
+        ],
+        "not_fed_to_models": true
+      },
+      "remote_grade": null,
+      "remote_grade_absent": true,
+      "forge": {
+        "scope_state": {
+          "issue": 1,
+          "pr": null,
+          "branch": null,
+          "commits": 0
+        },
+        "phase": 0,
+        "issue": {
+          "number": 1,
+          "state": "open",
+          "title": "Auto Spam Ignore: enforcement switch doesn't act on threshold-crossing users",
+          "created_at": "2026-11-24T02:59:26-05:00",
+          "updated_at": "2026-11-24T02:59:26-05:00",
+          "closed_at": null
+        }
+      }
+    },
+    {
+      "family": "spam_enforcement",
+      "arm": "glm",
+      "phase": 1,
+      "elapsed_seconds": 305.636924617982,
+      "exit_code": 0,
+      "external_timeout": false,
+      "query_sha256": "8c19c61c6bf4694d849a06d3c0e8f1d35a464f9984c3212c188065abbeaec1bd",
+      "native_session_fingerprints": {
+        "logical_root": "ec969ac3a897a415d54047a853fe89f9d4445112c3489c1c72b18464b60d8764",
+        "incoming_sid": "ec969ac3a897a415d54047a853fe89f9d4445112c3489c1c72b18464b60d8764",
+        "effective_sid": "ec969ac3a897a415d54047a853fe89f9d4445112c3489c1c72b18464b60d8764"
+      },
+      "private_original_run_sha256": "e1d8c3b15959002ebb942845ad295c869f6278cba5f82749a55abe53f517cc00",
+      "local_grade": {
+        "kind": "unpublished-local-draft",
+        "family": "spam_enforcement",
+        "phase": 1,
+        "source_digest": "20a5a27803d76e5b0d915b1d5938d91d9c4651af251636406b5921e8f235c049",
+        "project_exit": 1,
+        "preservation_exit": 1,
+        "independent_exit": 0,
+        "changed_paths": [
+          "FINAL_PR_SUMMARY.md",
+          "PR_DESCRIPTION.md",
+          "autospamignore/README.md",
+          "autospamignore/__init__.py",
+          "autospamignore/tests.py"
+        ],
+        "not_fed_to_models": true
+      },
+      "remote_grade": null,
+      "remote_grade_absent": true,
+      "forge": {
+        "scope_state": {
+          "issue": 1,
+          "pr": null,
+          "branch": null,
+          "commits": 0
+        },
+        "phase": 1,
+        "issue": {
+          "number": 1,
+          "state": "open",
+          "title": "Auto Spam Ignore: enforcement switch doesn't act on threshold-crossing users",
+          "created_at": "2026-11-24T02:59:26-05:00",
+          "updated_at": "2026-11-24T02:59:26-05:00",
+          "closed_at": null
+        }
+      }
+    },
+    {
+      "family": "spam_enforcement",
+      "arm": "glm",
+      "phase": 2,
+      "elapsed_seconds": 3396.2643127219635,
+      "exit_code": 0,
+      "external_timeout": false,
+      "query_sha256": "6bec1d319469811ce1a71496c504d0e809b9d442fccfea8e4e8de3bf426e00f0",
+      "native_session_fingerprints": {
+        "logical_root": "ec969ac3a897a415d54047a853fe89f9d4445112c3489c1c72b18464b60d8764",
+        "incoming_sid": "ec969ac3a897a415d54047a853fe89f9d4445112c3489c1c72b18464b60d8764",
+        "effective_sid": "ec969ac3a897a415d54047a853fe89f9d4445112c3489c1c72b18464b60d8764"
+      },
+      "private_original_run_sha256": "ade440ab418b802a388e8ea58469d66fc6031f17f939e88e8ddf853c21573e9c",
+      "local_grade": {
+        "kind": "unpublished-local-draft",
+        "family": "spam_enforcement",
+        "phase": 2,
+        "source_digest": "5b69b9e6717629afd0e4b872e62d6edb97927240b25f75f77ec0e066101c3f9c",
+        "project_exit": 1,
+        "preservation_exit": 1,
+        "independent_exit": 1,
+        "changed_paths": [
+          "CONTRIBUTION_SUMMARY.md",
+          "FINAL_PR_SUMMARY.md",
+          "FINAL_SUMMARY.md",
+          "PR_DESCRIPTION.md",
+          "autospamignore/README.md",
+          "autospamignore/__init__.py",
+          "autospamignore/tests.py"
+        ],
+        "not_fed_to_models": true
+      },
+      "remote_grade": null,
+      "remote_grade_absent": true,
+      "forge": {
+        "scope_state": {
+          "issue": 1,
+          "pr": null,
+          "branch": null,
+          "commits": 0
+        },
+        "phase": 2,
+        "issue": {
+          "number": 1,
+          "state": "open",
+          "title": "Auto Spam Ignore: enforcement switch doesn't act on threshold-crossing users",
+          "created_at": "2026-11-24T02:59:26-05:00",
+          "updated_at": "2026-11-24T02:59:26-05:00",
+          "closed_at": null
+        }
+      }
+    }
+  ],
+  "independent_final_audit": {
+    "audit_complete": true,
+    "not_actor_feedback": true,
+    "fresh_primary": true,
+    "classification": "Fresh Spam fails original notification preservation and requested cooldown behavior; correct Gitea issue/fork but no published commit/PR; authored tests and claims fail audit",
+    "requested_initial_next_message_repair_local_passed": true,
+    "requested_cooldown_feature_local_passed": false,
+    "source_and_behavior_preservation_passed": false,
+    "original_tests_each_phase": 83,
+    "original_suite_passed_by_phase": [
+      82,
+      82,
+      81
+    ],
+    "original_suite_failed_by_phase": [
+      1,
+      1,
+      2
+    ],
+    "project_tests_by_phase": [
+      82,
+      82,
+      81
+    ],
+    "independent_exit_by_phase": [
+      0,
+      0,
+      1
+    ],
+    "original_test_AST_preserved": true,
+    "new_initial_authored_methods": 8,
+    "new_feature_authored_methods": 11,
+    "actual_total_authored_methods": 19,
+    "claimed_new_feature_methods": 18,
+    "claimed_total_authored_methods": 26,
+    "authored_file_not_collected_by_normal_project_suite": true,
+    "explicit_authored_collection_failed_in_prepared_image": true,
+    "new_authored_regression_test_adequacy_not_demonstrated": true,
+    "initial_ordinary_cleanup_rule_alert_regression_reproduced": true,
+    "feature_high_clock_expired_cooldown_still_suppressed_reproduced": true,
+    "feature_selected_reset_and_ordinary_cleanup_timestamp_type_exceptions_reproduced": true,
+    "feature_cleanup_control_before_long_unexpired_cooldown": true,
+    "feature_enforcement_bypass_supported": true,
+    "feature_correct_bounded_setting_source_present": true,
+    "required_Gitea_upstream_issue_personal_fork_branch_and_PR_completed": false,
+    "correct_upstream_issue_created": 1,
+    "personal_fork_id": 34331,
+    "fork_parent_independently_verified": true,
+    "successful_actual_forge_mutations": 2,
+    "successful_forge_mutation_kinds": [
+      "upstream_issue",
+      "personal_fork"
+    ],
+    "branch_attempts_rejected_by_local_scope_not_server_outage": 2,
+    "branch_prefix_visible_in_original_and_later_requests": true,
+    "final_published_commit": null,
+    "upstream_main_unchanged": "e703b9e32748cbd930c47b523fa4225dbf70691b",
+    "model_final_answers_delegate_push_and_PR_to_user": true,
+    "model_final_comprehensive_test_and_compatibility_claims_contradicted": true,
+    "read_control_Gitea_verified_claim_unsupported": true,
+    "original_and_followup_tasks_present_in_actual_final_requests": true,
+    "text_presence_not_attention_proof": true,
+    "publication_independently_audited": true,
+    "test_issue_cleanup_independently_verified": true,
+    "test_issues_opened": 1,
+    "test_issues_remaining_open": 0,
+    "test_PRs_opened": 0,
+    "runtime_restoration_settings_models_owner_and_Codex_independently_verified": true,
+    "owned_stage_cleanup_independently_verified": true,
+    "phase_actor_seconds": [
+      1398.2730698839878,
+      305.636924617982,
+      3396.2643127219635
+    ],
+    "observed_grades_by_phase": [
+      {
+        "local-grade": {
+          "kind": "unpublished-local-draft",
+          "family": "spam_enforcement",
+          "phase": 0,
+          "source_digest": "6d6de1dd0908d3e328df128e7267d650a091ebdc5cc070b8f429ff61b18f50e8",
+          "project_exit": 1,
+          "preservation_exit": 1,
+          "independent_exit": 0,
+          "changed_paths": [
+            "PR_DESCRIPTION.md",
+            "autospamignore/__init__.py",
+            "autospamignore/tests.py"
+          ],
+          "not_fed_to_models": true
+        }
+      },
+      {
+        "local-grade": {
+          "kind": "unpublished-local-draft",
+          "family": "spam_enforcement",
+          "phase": 1,
+          "source_digest": "20a5a27803d76e5b0d915b1d5938d91d9c4651af251636406b5921e8f235c049",
+          "project_exit": 1,
+          "preservation_exit": 1,
+          "independent_exit": 0,
+          "changed_paths": [
+            "FINAL_PR_SUMMARY.md",
+            "PR_DESCRIPTION.md",
+            "autospamignore/README.md",
+            "autospamignore/__init__.py",
+            "autospamignore/tests.py"
+          ],
+          "not_fed_to_models": true
+        }
+      },
+      {
+        "local-grade": {
+          "kind": "unpublished-local-draft",
+          "family": "spam_enforcement",
+          "phase": 2,
+          "source_digest": "5b69b9e6717629afd0e4b872e62d6edb97927240b25f75f77ec0e066101c3f9c",
+          "project_exit": 1,
+          "preservation_exit": 1,
+          "independent_exit": 1,
+          "changed_paths": [
+            "CONTRIBUTION_SUMMARY.md",
+            "FINAL_PR_SUMMARY.md",
+            "FINAL_SUMMARY.md",
+            "PR_DESCRIPTION.md",
+            "autospamignore/README.md",
+            "autospamignore/__init__.py",
+            "autospamignore/tests.py"
+          ],
+          "not_fed_to_models": true
+        }
+      }
+    ],
+    "test_log_sha256_by_phase": [
+      {
+        "local-grade": {
+          "project.log": "65d2aa40d1efddd95384bb94b074810c56b06a7570f3d18ab3fc60c98e6561e4",
+          "preservation.log": "ed6b72ab5cba5969227a70b0a7565d3604d774a4cc0bce471c502a1c8cea9d9c"
+        }
+      },
+      {
+        "local-grade": {
+          "project.log": "ed6b72ab5cba5969227a70b0a7565d3604d774a4cc0bce471c502a1c8cea9d9c",
+          "preservation.log": "b0c357337cb2515c496905b4ed528855c1c7800962df20b5e5dac20f84071aaa"
+        }
+      },
+      {
+        "local-grade": {
+          "project.log": "4cf4799fc78751bec20afe36456284cabfcbcf323961d2a176d184192c83f18d",
+          "preservation.log": "b1f74f3a68988f5e5ce926c7e0b17cae2173baed73d13168ea13bbc85c65032d"
+        }
+      }
+    ],
+    "source_changes_from_previous_phase": [
+      null,
+      [
+        "FINAL_PR_SUMMARY.md",
+        "autospamignore/README.md"
+      ],
+      [
+        "CONTRIBUTION_SUMMARY.md",
+        "FINAL_SUMMARY.md",
+        "autospamignore/README.md",
+        "autospamignore/__init__.py",
+        "autospamignore/tests.py"
+      ]
+    ],
+    "native_exit_by_phase": [
+      {
+        "exit_code": 0,
+        "external_timeout": false
+      },
+      {
+        "exit_code": 0,
+        "external_timeout": false
+      },
+      {
+        "exit_code": 0,
+        "external_timeout": false
+      }
+    ],
+    "publication_scope_by_phase": [
+      {
+        "issue": 1,
+        "pr": null,
+        "branch": null,
+        "commits": 0
+      },
+      {
+        "issue": 1,
+        "pr": null,
+        "branch": null,
+        "commits": 0
+      },
+      {
+        "issue": 1,
+        "pr": null,
+        "branch": null,
+        "commits": 0
+      }
+    ],
+    "read_control_seconds_separate": 234.1488800770021,
+    "manual_audit_sha256": {
+      "glm-spam-initial-manual-audit.json": "364f90542f594de6f3fe9789ac4e7c7b39fe71c04a13d1ca1e9f22ff9a90ba5f",
+      "glm-spam-README-manual-audit.json": "777da3785242a1d6305355e8a51070f404179be018b614492dba622c910ce2e2",
+      "glm-spam-feature-manual-audit.json": "28281735810dc402d5d38d368c5ac54e082a3e4247a9eed4ea710531b660a14b"
+    },
+    "posthoc_control_sha256": {
+      "glm-spam-initial-supplementary-control/result.json": "acbf5a73989b8d359d7a4d970465670fcc45eeea66a751a44434aa174a2c88db",
+      "glm-spam-feature-supplementary-control/result.json": "3dcb11b38cd6a02165eed8eded5961869d5679f09a73a22c1957c992fbd36e34",
+      "glm-spam-context-instruction-audit.json": "3a8698551e489c2eafbcf6195ead98d13403547a23121db9893c779adc3ecee4",
+      "glm-spam-publication-independent-readback.json": "e56fa43d3cbc6626c9831d7b5eebc216bb5513237d87b8a497bd0dab2bb66d44"
+    },
+    "peak_gpu_MiB": 15336,
+    "GPU_sample_count": 514,
+    "limits": [
+      "One fresh family with dependent followups is not an autonomous-reliability sample.",
+      "Scoped initial checks pass but original-suite notification preservation fails; requested feature checks also fail.",
+      "Low-clock first-alert failure is separately qualified by high-clock no-realert and type-exception controls.",
+      "Initial cleanup suppression finding applies before the intentional cooldown requirement; feature control uses a long unexpired interval.",
+      "Private tests, raw actor requests and full source snapshots remain local; artifact verification alone is not behavior reexecution.",
+      "Focused scoped Gitea wrappers, branch lease and execution publication gate are part of this setup.",
+      "No actual code publication occurred, so no remote behavior quality is claimed.",
+      "Read-only and coding conversations are separate; first coding request uses a warm backend prefix cache.",
+      "Samples are not continuous entire-host memory attribution; global swap changes cannot be attributed to the model.",
+      "Announcer is a separate required fresh family still underway, followed by the registered fresh Q4 Spam comparison."
+    ]
+  },
+  "measurements": {
+    "sample_count": 514,
+    "complete_aggregate_sample_count": 514,
+    "measurement_error_sample_count": 0,
+    "peak_observed_cgroup_bytes": 7038951424,
+    "peak_observed_all_process_PSS_bytes": 5786011648,
+    "peak_observed_experiment_swap_bytes": 0,
+    "resource_guard_samples": 0,
+    "global_pswpin_delta_pages": 1305985,
+    "global_pswpout_delta_pages": 1369390,
+    "global_swap_not_attributed_to_model": true,
+    "HTTP_records": 58,
+    "completed_HTTP_records_without_transport_error": 58,
+    "transport_error_record_count": 0,
+    "incomplete_backend_body_record_count": 0,
+    "maximum_completed_prompt_tokens": 72426,
+    "HTTP_latency_seconds": {
+      "min": 6.52092432975769,
+      "median": 49.7269971370697,
+      "max": 577.5999908447266,
+      "sum": 5258.771723747253
+    },
+    "not_isolated_decode_throughput": true,
+    "sampling_not_continuous_peak_or_entire_host_attribution": true
+  },
+  "comparison_limits": [
+    "Fresh primary starts independently of the read-only control; all three coding turns share one native lineage.",
+    "Same predefined followups, no private grade feedback; final model sampling is not seed-pinned.",
+    "Focused scoped Gitea tools and publication execution gate are part of this configuration.",
+    "Private source snapshots, raw wire captures, profiles, tasks, graders and receipt keys remain local. Public evidence verification does not recreate the whole private workflow or prove all behavior correct."
+  ]
+}

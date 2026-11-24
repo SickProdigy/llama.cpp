@@ -42,8 +42,12 @@ passed its pinned SHA-256 check and [completes five resource probes](evaluations
 at 98k context: 15,336 MiB GPU, 6.56 GiB peak charged host memory and no
 experiment swap. The 60k response takes 23.5 minutes; whole-host swap activity
 is substantial and separately reported. A corrected cache-configuration failure
-is preserved. Fresh GLM coding/Gitea trials are underway; quality is unproven.
-Capacity is not task quality.
+is preserved. GLM's [fresh Spam workflow](evaluations/2026-11-23-wide-memory/native-glm-spam.md)
+creates the correct issue/fork but fails notification preservation, cooldown
+re-alert/reset behavior, test adequacy and PR publication. Its 85 minutes of coding
+stay within budget without experiment swap. Fresh Announcer is underway.
+A fresh Q4 Spam comparison will follow both GLM audits; its prior Spam result
+was resumed recovery. Capacity is not task quality.
 No model winner is claimed.
 
 ## November 22, 2026 compact-review follow-up — evaluation complete
