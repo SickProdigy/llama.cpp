@@ -1,0 +1,205 @@
+{
+  "epoch": 1795538206.2293224,
+  "evaluation_measurements_and_quality_audits_complete": true,
+  "selected_supervised_lead": "q4",
+  "conditional_Q4_Spam_recovery_excluded_from_matched_fresh_comparison": true,
+  "all_named_public_candidates_resource_compatible_in_pinned_tested_layouts": true,
+  "autonomous_reliability_established": false,
+  "not_success_rates_or_precision_only_causal_effects": true,
+  "candidates": [
+    {
+      "candidate": "q4",
+      "public_pin": {
+        "repo": "netprojects/Qwen3.8-27B-hermes-adapted-GGUF",
+        "revision": "10fdf357f14825c61ad7eb42a932e1f1e4390e8f",
+        "file": "Qwen3.8-27B-hermes-Q4_K_M.gguf",
+        "expected_bytes": 16810714560,
+        "sha256": "6512bb1c2595575fc0aed39b7d72a6aaf71084b1164b5d3749f87a6c2a3d3bf3"
+      },
+      "assessment": "Strongest observed supervised actor lead",
+      "observed_quality": "Fresh Spam initial/README/feature source, original preservation and real publication pass. Fresh Announcer behavior passes with documentation/reporting and metadata-assertion qualifications.",
+      "cohorts": [
+        {
+          "family": "Spam",
+          "summary": "native-q4fresh-spam-summary.json",
+          "summary_sha256": "3462c9557b3bb24622e44244ae3ecf83cd2470a0323c9975588c2fe836e41259",
+          "evidence_archive": "native-q4fresh-spam-evidence.tar.gz",
+          "archive_sha256": "f02f8cf24c7be402a99c833043b3d7d9ddf2906f04ce385507830a0ee0555c97",
+          "coding_minutes": 115.60291672056677,
+          "peak_observed_cgroup_bytes": 7563862016,
+          "peak_observed_PSS_bytes": 5343998976,
+          "maximum_completed_prompt_tokens": 77347,
+          "experiment_swap_peak_bytes": 0,
+          "resource_guard_samples": 0,
+          "quality_classification": "Fresh Q4 Spam completes independently checked initial repair, documentation and feature on matching actual Gitea publication; meaningful authored coverage with explicit limitations; not autonomous reliability"
+        },
+        {
+          "family": "Announcer",
+          "summary": "native-q4-fresh-summary.json",
+          "summary_sha256": "d6196e20d4752d6b1a2b2c1eed3bd8e83c4d59e2f759e687021d963ca467d04e",
+          "evidence_archive": "native-q4-fresh-evidence.tar.gz",
+          "archive_sha256": "d1f370748f6e6a92fbba5ed4bf708c9356afa8f91d90af1a465e47b67210a2b7",
+          "coding_minutes": 116.53023888570024,
+          "peak_observed_cgroup_bytes": 7444996096,
+          "peak_observed_PSS_bytes": 5405542400,
+          "maximum_completed_prompt_tokens": 67720,
+          "experiment_swap_peak_bytes": 0,
+          "resource_guard_samples": 0,
+          "quality_classification": "Fresh primary completes source/behavior/forge workflow with documentation and reporting qualifications"
+        }
+      ],
+      "peak_observed_gpu_MiB": 15456,
+      "peak_observed_native_cgroup_GiB": 7.044395446777344,
+      "peak_observed_native_PSS_GiB": 5.034303665161133,
+      "maximum_completed_native_prompt_tokens": 77347
+    },
+    {
+      "candidate": "q3",
+      "public_pin": {
+        "repo": "netprojects/Qwen3.8-27B-hermes-adapted-GGUF",
+        "revision": "10fdf357f14825c61ad7eb42a932e1f1e4390e8f",
+        "file": "Qwen3.8-27B-hermes-Q3_K_M.gguf",
+        "expected_bytes": 13752764064,
+        "sha256": "a0c809f93de2bcd813e1b6fbd5c2d1f692821814a4261a316f7c8bca9cf23248"
+      },
+      "assessment": "Not selected for the complete requested workflow",
+      "observed_quality": "Fresh Spam misses the actual next-message repair despite green tests and correct publication. Fresh Announcer behavior passes with qualifications.",
+      "cohorts": [
+        {
+          "family": "Spam",
+          "summary": "native-q3-spam-summary.json",
+          "summary_sha256": "30bfa5d57c8c59b5c58e0689084eaf11e29b6357a17e038c5befa07b8cdbc429",
+          "evidence_archive": "native-q3-spam-evidence.tar.gz",
+          "archive_sha256": "be998d0a13b27d5daeffb781f4cfffb21283ba80238bcbc0091bca11f6ee6203",
+          "coding_minutes": 35.408743082150856,
+          "peak_observed_cgroup_bytes": 7429218304,
+          "peak_observed_PSS_bytes": 2557386752,
+          "maximum_completed_prompt_tokens": 62241,
+          "experiment_swap_peak_bytes": 0,
+          "resource_guard_samples": 0,
+          "quality_classification": "Fresh Spam workflow fails requested initial repair despite correct Gitea publication and scoped cooldown feature pass"
+        },
+        {
+          "family": "Announcer",
+          "summary": "native-q3-queue-summary.json",
+          "summary_sha256": "70937f6ce606c6874515b9a439482c66c11228e284bd654d2ff280e6aab2f020",
+          "evidence_archive": "native-q3-queue-evidence.tar.gz",
+          "archive_sha256": "3cbfa4618f2fb2993387445ea71f311486a3dc7d023c7d12d808b06b871cdd55",
+          "coding_minutes": 20.647398864965847,
+          "peak_observed_cgroup_bytes": 7084834816,
+          "peak_observed_PSS_bytes": 2552125440,
+          "maximum_completed_prompt_tokens": 39532,
+          "experiment_swap_peak_bytes": 0,
+          "resource_guard_samples": 0,
+          "quality_classification": "Fresh Announcer source/behavior and Gitea workflow pass with documentation test-scope and stale-PR qualifications"
+        }
+      ],
+      "peak_observed_gpu_MiB": 14946,
+      "peak_observed_native_cgroup_GiB": 6.918998718261719,
+      "peak_observed_native_PSS_GiB": 2.3817520141601562,
+      "maximum_completed_native_prompt_tokens": 62241
+    },
+    {
+      "candidate": "devstral",
+      "public_pin": {
+        "repo": "unsloth/Devstral-Small-2-24B-Instruct-2512-GGUF",
+        "revision": "6e458b8add42681bfd023de5eab93637694aaf82",
+        "file": "Devstral-Small-2-24B-Instruct-2512-Q4_K_M.gguf",
+        "expected_bytes": 14334446752,
+        "sha256": "d14ba9edee1bb4c4996a726deb81e49ae81800a3216f0774634238c380aee496"
+      },
+      "assessment": "Not selected for the complete requested workflow",
+      "observed_quality": "Fresh Spam fails original notification preservation and weakens an old test. Announcer feature leaves orphaned reply state; required publication absent.",
+      "cohorts": [
+        {
+          "family": "Spam",
+          "summary": "native-devstral-spam-summary.json",
+          "summary_sha256": "7ae37ea727d92445a4004edc84c6e5ff5bc502a9f03f0b1464fcf6464a49d727",
+          "evidence_archive": "native-devstral-spam-evidence.tar.gz",
+          "archive_sha256": "50524e3a59f58f49d7e203a92f8c770b895bd6b35a9c870881ae4e8f3b478815",
+          "coding_minutes": 48.930824118699334,
+          "peak_observed_cgroup_bytes": 7457681408,
+          "peak_observed_PSS_bytes": 6128865280,
+          "maximum_completed_prompt_tokens": 55723,
+          "experiment_swap_peak_bytes": 0,
+          "resource_guard_samples": 0,
+          "quality_classification": "Fresh Spam workflow fails preservation and required Gitea publication; next-message repair and cooldown pass scoped local checks"
+        },
+        {
+          "family": "Announcer",
+          "summary": "native-devstral-queue-summary.json",
+          "summary_sha256": "fce94234917d08eb8ee3bab8ec576c7f192d535f5742713c6ac60726c0f1f0f1",
+          "evidence_archive": "native-devstral-queue-evidence.tar.gz",
+          "archive_sha256": "efa5d34371fe58871eee78b2d5337b524ec0ce60a5e52ea7aaafb71d3080eb55",
+          "coding_minutes": 104.65306320143378,
+          "peak_observed_cgroup_bytes": 7488458752,
+          "peak_observed_PSS_bytes": 6146820096,
+          "maximum_completed_prompt_tokens": 73156,
+          "experiment_swap_peak_bytes": 0,
+          "resource_guard_samples": 0,
+          "quality_classification": "Fresh Announcer initial repair passes locally; feature leaves orphaned job reply state and required Gitea publication is absent; frozen metadata failure separately qualified"
+        }
+      ],
+      "peak_observed_gpu_MiB": 14880,
+      "peak_observed_native_cgroup_GiB": 6.974170684814453,
+      "peak_observed_native_PSS_GiB": 5.724672317504883,
+      "maximum_completed_native_prompt_tokens": 73156
+    },
+    {
+      "candidate": "glm",
+      "public_pin": {
+        "repo": "ggml-org/GLM-4.7-Flash-GGUF",
+        "revision": "7559e96b7e324ab405897dc2b91492b0f376ad4a",
+        "file": "GLM-4.7-Flash-Q4_K.gguf",
+        "expected_bytes": 18244193920,
+        "sha256": "b6019edc5fbe37d3660d2e994d16c839a7855a6f03362c5dcf8142ba479cd0d2"
+      },
+      "assessment": "Not selected for the complete requested workflow",
+      "observed_quality": "Fresh Spam preservation/cooldown/test adequacy fail; no PR. Announcer loses replies, retains room state and misdocuments cancellation; repetition termination and separate compression-guard confound are retained.",
+      "cohorts": [
+        {
+          "family": "Spam",
+          "summary": "native-glm-spam-summary.json",
+          "summary_sha256": "7cad127cb7c2e5ef972c08eb7d2ac8fb754b8d64a4ae70aeef8805667ce98c3b",
+          "evidence_archive": "native-glm-spam-evidence.tar.gz",
+          "archive_sha256": "64875291432d0836bd2eb4e6083a33082bb143da81e8ff991904871898807d3c",
+          "coding_minutes": 85.00290512039889,
+          "peak_observed_cgroup_bytes": 7038951424,
+          "peak_observed_PSS_bytes": 5786011648,
+          "maximum_completed_prompt_tokens": 72426,
+          "experiment_swap_peak_bytes": 0,
+          "resource_guard_samples": 0,
+          "quality_classification": "Fresh Spam fails original notification preservation and requested cooldown behavior; correct Gitea issue/fork but no published commit/PR; authored tests and claims fail audit"
+        },
+        {
+          "family": "Announcer",
+          "summary": "native-glm-queue-summary.json",
+          "summary_sha256": "d106d0434becdc9ef75a91822b545a4be12799d346d10c05d1026722f3bd7633",
+          "evidence_archive": "native-glm-queue-evidence.tar.gz",
+          "archive_sha256": "e32f0aa7cd1fb377af160411a3b07ef572908fc02fdd6497c4390b1aa73112e2",
+          "coding_minutes": 215.28985195011677,
+          "peak_observed_cgroup_bytes": 7337336832,
+          "peak_observed_PSS_bytes": 6344407040,
+          "maximum_completed_prompt_tokens": 84237,
+          "experiment_swap_peak_bytes": 0,
+          "resource_guard_samples": 0,
+          "quality_classification": "Fresh Announcer partially repairs disabled sends but loses completion replies, leaks new room bookkeeping and misdocuments cancellation; all turns repetition-stopped, no Gitea publication"
+        }
+      ],
+      "peak_observed_gpu_MiB": 15336,
+      "peak_observed_native_cgroup_GiB": 6.833427429199219,
+      "peak_observed_native_PSS_GiB": 5.908689498901367,
+      "maximum_completed_native_prompt_tokens": 84237
+    }
+  ],
+  "limits": [
+    "Two different fresh task families with dependent followups are small case studies, not independent repetition-based reliability estimates.",
+    "Prior Q4 conditional recovery is separate; fresh Spam closes that comparison gap.",
+    "Q3/Q4 imatrix metadata differs; architecture-specific templates/samplers/output and CPU layouts/cache reuse vary.",
+    "Some frozen room-command metadata failures are qualified by actual pinned dispatcher/source controls; genuine cleanup defects remain failures.",
+    "Whole-host swap activity is recorded but not attributed to a model; sampled aggregate bounds are not continuous whole-host accounting.",
+    "GLM auxiliary compression uses a separate300s guard that interrupted slow prefill and committed deterministic fallback; earlier quality failures precede it.",
+    "Focused scoped Gitea wrappers and an execution publication gate are part of these outcomes.",
+    "Private behavior/source/remote audits establish the classifications; archive verification alone does not prove coding quality."
+  ]
+}

@@ -1,6 +1,6 @@
 # Wider-memory Hermes model evaluation
 
-Started November 23, 2026; status updated November 24. Goal active. The owner
+Started November 23, 2026; trials and quality audits completed November 24. The owner
 prioritizes correct agent work over speed and permits the full P100 plus up to
 8 GiB additional host RAM for model spillover, including relevant runtime/cache.
 The [current matrix](matrix.md) records results and qualifications; the sections
@@ -8,7 +8,10 @@ below retain the original protocol and successive resource milestones.
 
 - Adapted Q4: [resource completion](resource-q4.md), [conditional Spam recovery](native-q4-recovery.md)
   and [fresh Announcer](native-q4-fresh.md) are audited. Recovery is not a fresh
-  Spam trial; reporting/documentation qualifications remain.
+  Spam trial; reporting/documentation qualifications remain. The registered
+  [fresh Spam comparison](native-q4fresh-spam.md) now passes all three source/behavior,
+  original-preservation and actual contribution stages; source/test/claims audits
+  are complete and original runtime is restored.
 - Adapted Q3: [resource completion](resource-q3.md), [failed fresh Spam repair](native-q3-spam.md)
   and [qualified fresh Announcer pass](native-q3-queue.md) are audited.
 - Devstral: [resource completion](resource-devstral.md) and [fresh Spam failure](native-devstral-spam.md)
@@ -27,17 +30,19 @@ below retain the original protocol and successive resource milestones.
   defects, all turns repetition-stopped and no publication. Its separate compression
   guard confound and deterministic fallback are documented; original runtime and
   owner state restored, stage cleaned.
-- Registered comparison followup: both GLM families are audited, restored, cleaned
-  and published. The fresh Q4 Spam protocol is now frozen and the pinned download
-  is running after verified temporary rotation of the study-owned GLM file. The earlier Q4 Spam recovery is
-  not matched fresh evidence. Reuse actual saved 6656m/6.5 GiB native launches,
-  not an old 7 GiB narrative; retain the aggregate 8 GiB guard and disk/inventory rules.
+- Registered comparison followup is complete. Fresh Q4 uses the actual saved
+  6656m/6.5 GiB native layout and the same frozen Spam tasks, normal full policy,
+  scoped tools and audit rules. It receives no recovery history or grader hints.
 
-No winner or autonomous reliability is established. Remaining named stages,
-independent audits, restoration, fair comparison and retained-model disposition
-are still required for goal completion.
+The [final comparison](comparison.md) identifies Q4 as the strongest observed
+supervised lead with small-sample and configuration limits. [Final retention](retained-models.json)
+preserves all 29 originals plus Q4 and the disk reserve; [test issues are closed](test-issue-cleanup.json).
+No unattended-reliability or precision-only causal claim is made.
 
-## Stages
+The original registration and successive milestone notes below are historical;
+the final comparison and matrix supersede their earlier pending-stage status.
+
+## Stages (original registration)
 
 1. Pin public model files and inspect current hardware, disk and previous tests.
    Download one additional large file at a time, keeping at least 100 GiB free

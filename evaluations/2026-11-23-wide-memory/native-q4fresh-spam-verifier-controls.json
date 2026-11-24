@@ -1,0 +1,46 @@
+{
+  "passed": true,
+  "kind": "artifact_consistency_controls_not_model_trials",
+  "actual_Q4_positive_accepted": true,
+  "negative_cases": [
+    {
+      "name": "manual_audit_wrong_source",
+      "rejected": true,
+      "exit_code": 1,
+      "manifest_archive_and_relevant_audit_summary_hashes_recomputed": true,
+      "targeted_binding_check_reached": "snapshot[path]==digest"
+    },
+    {
+      "name": "adequacy_control_wrong_candidate_source",
+      "rejected": true,
+      "exit_code": 1,
+      "manifest_archive_and_relevant_audit_summary_hashes_recomputed": true,
+      "targeted_binding_check_reached": "candidate==j("
+    },
+    {
+      "name": "context_audit_wrong_saved_request",
+      "rejected": true,
+      "exit_code": 1,
+      "manifest_archive_and_relevant_audit_summary_hashes_recomputed": true,
+      "targeted_binding_check_reached": "saved_request_JSON_sha256"
+    }
+  ],
+  "legacy_observed_archives": [
+    {
+      "candidate": "devstral",
+      "accepted_by_unchanged_generic_verifier": true,
+      "archive_unchanged": true,
+      "archive_sha256": "50524e3a59f58f49d7e203a92f8c770b895bd6b35a9c870881ae4e8f3b478815"
+    },
+    {
+      "candidate": "glm",
+      "accepted_by_unchanged_generic_verifier": true,
+      "archive_unchanged": true,
+      "archive_sha256": "64875291432d0836bd2eb4e6083a33082bb143da81e8ff991904871898807d3c"
+    }
+  ],
+  "original_Q4_archive_unchanged": true,
+  "verifier_sha256": "422413fe723ab64a4b8f5577590524374a84da79dbfdecd59b478df8daad424c",
+  "control_source_sha256": "a5f112ca49c4801c6239ee3bb585758a45d5267639db93af0505e13e2391a729",
+  "limits": "These checks validate recorded byte associations only; they do not rerun model inference, private behavior checks or remote publication audits."
+}

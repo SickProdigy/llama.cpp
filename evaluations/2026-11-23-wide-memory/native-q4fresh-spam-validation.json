@@ -1,0 +1,51 @@
+{
+  "passed": true,
+  "manifest_files": 149,
+  "memory_samples": 696,
+  "HTTP_records": 54,
+  "completed_HTTP_records": 54,
+  "private_behavior_not_reexecuted": true,
+  "observed_grades_by_phase": [
+    {
+      "local-grade": {
+        "project_exit": 0,
+        "preservation_exit": 0,
+        "independent_exit": 0
+      },
+      "remote-grade": {
+        "project_exit": 0,
+        "preservation_exit": 0,
+        "independent_exit": 0
+      }
+    },
+    {
+      "local-grade": {
+        "project_exit": 0,
+        "preservation_exit": 0,
+        "independent_exit": 0
+      },
+      "remote-grade": {
+        "project_exit": 0,
+        "preservation_exit": 0,
+        "independent_exit": 0
+      }
+    },
+    {
+      "local-grade": {
+        "project_exit": 0,
+        "preservation_exit": 0,
+        "independent_exit": 0
+      },
+      "remote-grade": {
+        "project_exit": 0,
+        "preservation_exit": 0,
+        "independent_exit": 0
+      }
+    }
+  ],
+  "posthoc_dispatch_source_fingerprint_checked": false,
+  "posthoc_glm_initial_source_fingerprint_checked": false,
+  "posthoc_glm_feature_source_fingerprint_checked": false,
+  "quality_classification": "Fresh Q4 Spam completes independently checked initial repair, documentation and feature on matching actual Gitea publication; meaningful authored coverage with explicit limitations; not autonomous reliability",
+  "scope": "Saved bytes and observed outcome consistency only. Failed tests and absent publication remain failures/absence; not a coding-quality or autonomous-reliability certificate."
+}

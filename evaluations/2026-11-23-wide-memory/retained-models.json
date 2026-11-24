@@ -1,0 +1,28 @@
+{
+  "epoch": 1795537742.1780057,
+  "passed": true,
+  "decision": "Retain the study-owned adapted27B Q4_K_M as the strongest observed supervised actor lead in this configuration; preserve all29 original models. This does not establish unattended reliability.",
+  "original_model_count": 29,
+  "original29_metadata_unchanged": true,
+  "total_retained_GGUF_files": 30,
+  "additional_large_study_files": 1,
+  "retained_study_model": {
+    "repo": "netprojects/Qwen3.8-27B-hermes-adapted-GGUF",
+    "revision": "10fdf357f14825c61ad7eb42a932e1f1e4390e8f",
+    "file": "Qwen3.8-27B-hermes-Q4_K_M.gguf",
+    "sha256": "6512bb1c2595575fc0aed39b7d72a6aaf71084b1164b5d3749f87a6c2a3d3bf3",
+    "expected_bytes": 16810714560
+  },
+  "target_identity_unchanged_since_full_hash_verification": true,
+  "full_SHA_verified_at_download_and_again_before_actor_inference": true,
+  "no_third_full_hash_claim_from_metadata_only_check": true,
+  "free_bytes": 119229362176,
+  "free_GiB": 111.04099655151367,
+  "minimum_reserve_GiB": 100,
+  "owned_prefix_partial_files_remaining": 0,
+  "original_inventory_metadata_sha256": "d97d95d0a41686a1f2cbe94b2ec3e597abcbf3606fc88cf7c2903832ce63d79b",
+  "original_runtime_restored_alias": "qwen3.6-14b-a3b-vibeforged-v2-q4_k_m",
+  "original_runtime_context": 98304,
+  "runtime_settings_not_replaced_by_retention_decision": true,
+  "scope": "Read-only engine-local models inventory against the pre-study inventory, pinned download identity and post-stage restoration. Other study weights were temporarily rotated with audited ownership/full hashes and remain reproducible from public pins."
+}

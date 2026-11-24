@@ -1,0 +1,75 @@
+{
+  "epoch": 1795537742.2082226,
+  "passed": true,
+  "read_only_connected_forge_audit": true,
+  "all_study_test_issues_closed": true,
+  "test_issues_verified_closed": 6,
+  "repositories_checked": [
+    {
+      "candidate": "q4",
+      "repository": "chatgpt-codex/hermes-wide-q4-20261123",
+      "issues": [
+        {
+          "number": 3,
+          "state": "closed",
+          "author": "hermes-agent"
+        },
+        {
+          "number": 1,
+          "state": "closed",
+          "author": "hermes-agent"
+        }
+      ],
+      "readback_sha256": "91a9a8c5b225676121419b1262f22dcaa042cf8c5169721dc7779efa2652f611"
+    },
+    {
+      "candidate": "q3",
+      "repository": "chatgpt-codex/hermes-wide-q3-20261123",
+      "issues": [
+        {
+          "number": 3,
+          "state": "closed",
+          "author": "hermes-agent"
+        },
+        {
+          "number": 1,
+          "state": "closed",
+          "author": "hermes-agent"
+        }
+      ],
+      "readback_sha256": "93cf4aec852c412d506064b1c3d9f941ab91b37ef305710d345d489753858544"
+    },
+    {
+      "candidate": "devstral",
+      "repository": "chatgpt-codex/hermes-wide-devstral-20261123",
+      "issues": [],
+      "readback_sha256": "56071a0d8b8741adf4d45fdd689843e616b9a1211978f52828e48b59d93159c1"
+    },
+    {
+      "candidate": "glm",
+      "repository": "chatgpt-codex/hermes-wide-glm-20261123",
+      "issues": [
+        {
+          "number": 1,
+          "state": "closed",
+          "author": "hermes-agent"
+        }
+      ],
+      "readback_sha256": "f8fadb541df8ec8004c6c4a39000aa75fc96cf4bd2876d208b4597aa89b4dd7b"
+    },
+    {
+      "candidate": "q4fresh",
+      "repository": "chatgpt-codex/hermes-wide-q4fresh-20261124",
+      "issues": [
+        {
+          "number": 1,
+          "state": "closed",
+          "author": "hermes-agent"
+        }
+      ],
+      "readback_sha256": "ccf02535ee4cb80c3ec731bd297395a7d9bf5399d49a2e0f38d4c050bb58a1ca"
+    }
+  ],
+  "PRs_are_separate_and_remain_unmerged_for_audit": true,
+  "no_unrelated_issues_changed": true
+}

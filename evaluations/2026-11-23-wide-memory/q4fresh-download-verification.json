@@ -1,0 +1,17 @@
+{
+  "candidate": "q4fresh",
+  "repo": "netprojects/Qwen3.8-27B-hermes-adapted-GGUF",
+  "revision": "10fdf357f14825c61ad7eb42a932e1f1e4390e8f",
+  "file": "Qwen3.8-27B-hermes-Q4_K_M.gguf",
+  "expected_bytes": 16810714560,
+  "expected_sha256": "6512bb1c2595575fc0aed39b7d72a6aaf71084b1164b5d3749f87a6c2a3d3bf3",
+  "actual_sha256": "6512bb1c2595575fc0aed39b7d72a6aaf71084b1164b5d3749f87a6c2a3d3bf3",
+  "canonical_url": "https://huggingface.co/netprojects/Qwen3.8-27B-hermes-adapted-GGUF/resolve/10fdf357f14825c61ad7eb42a932e1f1e4390e8f/Qwen3.8-27B-hermes-Q4_K_M.gguf",
+  "attempt_started_epoch": 1795527849.052143,
+  "finished_epoch": 1795529354.7704968,
+  "received_bytes": 16810714560,
+  "free_bytes": 121145171968,
+  "minimum_free_bytes": 107374182400,
+  "complete": true,
+  "study_owned_target": true
+}

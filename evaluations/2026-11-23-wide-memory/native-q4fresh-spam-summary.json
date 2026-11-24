@@ -1,0 +1,587 @@
+{
+  "classification": "Fresh Q4 Spam completes independently checked initial repair, documentation and feature on matching actual Gitea publication; meaningful authored coverage with explicit limitations; not autonomous reliability",
+  "model": {
+    "file": "Qwen3.8-27B-hermes-Q4_K_M.gguf",
+    "bytes": 16810714560,
+    "sha256": "6512bb1c2595575fc0aed39b7d72a6aaf71084b1164b5d3749f87a6c2a3d3bf3",
+    "after_full_SHA_advised_DONTNEED_for_only_this_study_owned_file": true,
+    "not_global_cache_flush_or_proof_of_cold_cache": true
+  },
+  "candidate_key": "q4fresh",
+  "family": "spam_enforcement",
+  "phases": [
+    {
+      "family": "spam_enforcement",
+      "arm": "q4fresh",
+      "phase": 0,
+      "elapsed_seconds": 3024.1222410949995,
+      "exit_code": 0,
+      "external_timeout": false,
+      "query_sha256": "46baa5e46d25e6ee68d5870f0288eb1bd8f8d82d2f11c3db26d9347c0ebd7e9e",
+      "native_session_fingerprints": {
+        "logical_root": "77c985a29f3062337afca8774c56df2b52151c63a8042096ef606b565d6b4c0b",
+        "incoming_sid": null,
+        "effective_sid": "77c985a29f3062337afca8774c56df2b52151c63a8042096ef606b565d6b4c0b"
+      },
+      "private_original_run_sha256": "aa6ca00dc1b5c5c8963ba93a3f5b51c2a59f77fb9de1fec59cecd0880e759edf",
+      "local_grade": {
+        "kind": "unpublished-local-draft",
+        "family": "spam_enforcement",
+        "phase": 0,
+        "source_digest": "c3477a8e54e6595f73a4d6c738d588da363c87e83d44ffd1c6f1ac87ba122ee0",
+        "project_exit": 0,
+        "preservation_exit": 0,
+        "independent_exit": 0,
+        "changed_paths": [
+          "autospamignore/__init__.py",
+          "tests/test_autospamignore.py"
+        ],
+        "not_fed_to_models": true
+      },
+      "remote_grade": {
+        "kind": "actual-fork-commit",
+        "family": "spam_enforcement",
+        "phase": 0,
+        "source_digest": "c3477a8e54e6595f73a4d6c738d588da363c87e83d44ffd1c6f1ac87ba122ee0",
+        "project_exit": 0,
+        "preservation_exit": 0,
+        "independent_exit": 0,
+        "changed_paths": [
+          "autospamignore/__init__.py",
+          "tests/test_autospamignore.py"
+        ],
+        "not_fed_to_models": true
+      },
+      "remote_grade_absent": false,
+      "forge": {
+        "scope_state": {
+          "issue": 1,
+          "pr": 2,
+          "branch": "wide-spam-q4fresh-enforcement-toggle",
+          "commits": 1
+        },
+        "phase": 0,
+        "issue": {
+          "number": 1,
+          "state": "open",
+          "title": "Auto Spam Ignore: enabling enforcement after a log-only detection does not ignore the next qualifying message",
+          "created_at": "2026-11-24T09:57:47-05:00",
+          "updated_at": "2026-11-24T10:04:53-05:00",
+          "closed_at": null
+        },
+        "pr": {
+          "number": 2,
+          "state": "open",
+          "merged": false,
+          "title": "Auto Spam Ignore: enforce on next qualifying message after enabling enforcement",
+          "created_at": "2026-11-24T10:04:53-05:00",
+          "updated_at": "2026-11-24T10:04:53-05:00",
+          "closed_at": null,
+          "head": {
+            "sha": "93f8ff8cdc2ffb76a4cd2b8c6af4bf24c50c6fcc",
+            "ref": "wide-spam-q4fresh-enforcement-toggle",
+            "repo": "hermes-agent/hermes-wide-q4fresh-20261124"
+          },
+          "base": {
+            "sha": "4c88d7324eab6bc448d87badacd17a80016e4fa7",
+            "ref": "main",
+            "repo": "chatgpt-codex/hermes-wide-q4fresh-20261124"
+          }
+        },
+        "clone": {
+          "name": "q4fresh-spam_enforcement-remote-0",
+          "head": "93f8ff8cdc2ffb76a4cd2b8c6af4bf24c50c6fcc",
+          "tree": "828edef1bc5ad7a3467cd4c2669b4004371ec1a8"
+        }
+      }
+    },
+    {
+      "family": "spam_enforcement",
+      "arm": "q4fresh",
+      "phase": 1,
+      "elapsed_seconds": 856.0597613489954,
+      "exit_code": 0,
+      "external_timeout": false,
+      "query_sha256": "8c19c61c6bf4694d849a06d3c0e8f1d35a464f9984c3212c188065abbeaec1bd",
+      "native_session_fingerprints": {
+        "logical_root": "77c985a29f3062337afca8774c56df2b52151c63a8042096ef606b565d6b4c0b",
+        "incoming_sid": "77c985a29f3062337afca8774c56df2b52151c63a8042096ef606b565d6b4c0b",
+        "effective_sid": "77c985a29f3062337afca8774c56df2b52151c63a8042096ef606b565d6b4c0b"
+      },
+      "private_original_run_sha256": "41a50bcb6e13ecc65abf0df02396245aa2ded2507e636ea6081554cfd77cf8b2",
+      "local_grade": {
+        "kind": "unpublished-local-draft",
+        "family": "spam_enforcement",
+        "phase": 1,
+        "source_digest": "03e7a5cfb37372c4269738ea6dc876588006aa12bddba00451a43fbbc367b344",
+        "project_exit": 0,
+        "preservation_exit": 0,
+        "independent_exit": 0,
+        "changed_paths": [
+          "autospamignore/README.md",
+          "autospamignore/__init__.py",
+          "tests/test_autospamignore.py"
+        ],
+        "not_fed_to_models": true
+      },
+      "remote_grade": {
+        "kind": "actual-fork-commit",
+        "family": "spam_enforcement",
+        "phase": 1,
+        "source_digest": "03e7a5cfb37372c4269738ea6dc876588006aa12bddba00451a43fbbc367b344",
+        "project_exit": 0,
+        "preservation_exit": 0,
+        "independent_exit": 0,
+        "changed_paths": [
+          "autospamignore/README.md",
+          "autospamignore/__init__.py",
+          "tests/test_autospamignore.py"
+        ],
+        "not_fed_to_models": true
+      },
+      "remote_grade_absent": false,
+      "forge": {
+        "scope_state": {
+          "issue": 1,
+          "pr": 2,
+          "branch": "wide-spam-q4fresh-enforcement-toggle",
+          "commits": 2
+        },
+        "phase": 1,
+        "issue": {
+          "number": 1,
+          "state": "open",
+          "title": "Auto Spam Ignore: enabling enforcement after a log-only detection does not ignore the next qualifying message",
+          "created_at": "2026-11-24T09:57:47-05:00",
+          "updated_at": "2026-11-24T10:04:53-05:00",
+          "closed_at": null
+        },
+        "pr": {
+          "number": 2,
+          "state": "open",
+          "merged": false,
+          "title": "Auto Spam Ignore: enforce on next qualifying message after enabling enforcement",
+          "created_at": "2026-11-24T10:04:53-05:00",
+          "updated_at": "2026-11-24T10:21:49-05:00",
+          "closed_at": null,
+          "head": {
+            "sha": "6bc37a70bcdd16b05d7eaa9f6d0a3fde23646449",
+            "ref": "wide-spam-q4fresh-enforcement-toggle",
+            "repo": "hermes-agent/hermes-wide-q4fresh-20261124"
+          },
+          "base": {
+            "sha": "4c88d7324eab6bc448d87badacd17a80016e4fa7",
+            "ref": "main",
+            "repo": "chatgpt-codex/hermes-wide-q4fresh-20261124"
+          }
+        },
+        "clone": {
+          "name": "q4fresh-spam_enforcement-remote-1",
+          "head": "6bc37a70bcdd16b05d7eaa9f6d0a3fde23646449",
+          "tree": "eccda591cc0dc18915b4bcbeb894151c946b7847"
+        }
+      }
+    },
+    {
+      "family": "spam_enforcement",
+      "arm": "q4fresh",
+      "phase": 2,
+      "elapsed_seconds": 3055.993000790011,
+      "exit_code": 0,
+      "external_timeout": false,
+      "query_sha256": "6bec1d319469811ce1a71496c504d0e809b9d442fccfea8e4e8de3bf426e00f0",
+      "native_session_fingerprints": {
+        "logical_root": "77c985a29f3062337afca8774c56df2b52151c63a8042096ef606b565d6b4c0b",
+        "incoming_sid": "77c985a29f3062337afca8774c56df2b52151c63a8042096ef606b565d6b4c0b",
+        "effective_sid": "77c985a29f3062337afca8774c56df2b52151c63a8042096ef606b565d6b4c0b"
+      },
+      "private_original_run_sha256": "cffc0b99be9c2c38d42b0bec5da3d48f0ae786e4500f2cb205f06bd55624a073",
+      "local_grade": {
+        "kind": "unpublished-local-draft",
+        "family": "spam_enforcement",
+        "phase": 2,
+        "source_digest": "044c1eb1a461242b05878fa0e33e4e1f26c9a7af737e7b65acbdcb2969f68b3d",
+        "project_exit": 0,
+        "preservation_exit": 0,
+        "independent_exit": 0,
+        "changed_paths": [
+          "autospamignore/README.md",
+          "autospamignore/__init__.py",
+          "tests/test_autospamignore.py"
+        ],
+        "not_fed_to_models": true
+      },
+      "remote_grade": {
+        "kind": "actual-fork-commit",
+        "family": "spam_enforcement",
+        "phase": 2,
+        "source_digest": "044c1eb1a461242b05878fa0e33e4e1f26c9a7af737e7b65acbdcb2969f68b3d",
+        "project_exit": 0,
+        "preservation_exit": 0,
+        "independent_exit": 0,
+        "changed_paths": [
+          "autospamignore/README.md",
+          "autospamignore/__init__.py",
+          "tests/test_autospamignore.py"
+        ],
+        "not_fed_to_models": true
+      },
+      "remote_grade_absent": false,
+      "forge": {
+        "scope_state": {
+          "issue": 1,
+          "pr": 2,
+          "branch": "wide-spam-q4fresh-enforcement-toggle",
+          "commits": 3
+        },
+        "phase": 2,
+        "issue": {
+          "number": 1,
+          "state": "open",
+          "title": "Auto Spam Ignore: enabling enforcement after a log-only detection does not ignore the next qualifying message",
+          "created_at": "2026-11-24T09:57:47-05:00",
+          "updated_at": "2026-11-24T10:04:53-05:00",
+          "closed_at": null
+        },
+        "pr": {
+          "number": 2,
+          "state": "open",
+          "merged": false,
+          "title": "Auto Spam Ignore: enforce on next qualifying message + rule alert cooldown",
+          "created_at": "2026-11-24T10:04:53-05:00",
+          "updated_at": "2026-11-24T11:12:19-05:00",
+          "closed_at": null,
+          "head": {
+            "sha": "30a8bdbf4e801f9a6ad62027ec0b3b9d24968464",
+            "ref": "wide-spam-q4fresh-enforcement-toggle",
+            "repo": "hermes-agent/hermes-wide-q4fresh-20261124"
+          },
+          "base": {
+            "sha": "4c88d7324eab6bc448d87badacd17a80016e4fa7",
+            "ref": "main",
+            "repo": "chatgpt-codex/hermes-wide-q4fresh-20261124"
+          }
+        },
+        "clone": {
+          "name": "q4fresh-spam_enforcement-remote-2",
+          "head": "30a8bdbf4e801f9a6ad62027ec0b3b9d24968464",
+          "tree": "b46254703e6017152c57d18fbdd5f721c184e781"
+        }
+      }
+    }
+  ],
+  "independent_final_audit": {
+    "audit_complete": true,
+    "not_actor_feedback": true,
+    "observed_epoch": 1795537500.0742562,
+    "fresh_primary": true,
+    "classification": "Fresh Q4 Spam completes independently checked initial repair, documentation and feature on matching actual Gitea publication; meaningful authored coverage with explicit limitations; not autonomous reliability",
+    "all_three_local_and_published_requested_behavior_checks_pass": true,
+    "original_behavior_and_test_AST_preserved": true,
+    "original_tests_each_phase": 83,
+    "original_suite_passed_by_phase": [
+      83,
+      83,
+      83
+    ],
+    "original_suite_failed_by_phase": [
+      0,
+      0,
+      0
+    ],
+    "project_tests_by_phase": [
+      86,
+      86,
+      96
+    ],
+    "project_suite_failed_by_phase": [
+      0,
+      0,
+      0
+    ],
+    "independent_exit_by_phase": [
+      0,
+      0,
+      0
+    ],
+    "new_initial_test_methods": 3,
+    "new_feature_test_methods": 10,
+    "new_feature_non_test_helpers": 1,
+    "actual_total_new_test_methods": 13,
+    "meaningful_prior_source_behavior_failures_initial": 2,
+    "meaningful_prior_source_failures_feature": 4,
+    "same_feature_test_methods_on_prior_passed": 6,
+    "original_tests_not_weakened": true,
+    "self_corrected_intermediate_new_test_setup_without_operator_hints": true,
+    "additional_public_callback_priority_isolation_reset_cleanup_boundary_bounds_controls_pass": true,
+    "README_claimed_network_non_delivery_not_full_GUI_or_network_verified": true,
+    "final_counts_URLs_diffstat_blob_and_PR_metadata_claims_supported": true,
+    "required_Gitea_upstream_issue_personal_fork_branch_and_PR_completed": true,
+    "successful_actual_forge_sequence": [
+      "upstream_issue1",
+      "personal_fork34333",
+      "feature_branch",
+      "three_commits",
+      "upstream_PR2",
+      "PR_metadata_followup_updates"
+    ],
+    "final_published_commit": "30a8bdbf4e801f9a6ad62027ec0b3b9d24968464",
+    "upstream_main_unchanged": "4c88d7324eab6bc448d87badacd17a80016e4fa7",
+    "publication_independently_audited": true,
+    "test_issue_cleanup_independently_verified": true,
+    "test_issues_opened": 1,
+    "test_issues_remaining_open": 0,
+    "test_PRs_opened": 1,
+    "test_PR_left_open_unmerged": true,
+    "runtime_restoration_settings_models_owner_and_Codex_independently_verified": true,
+    "owned_stage_cleanup_independently_verified": true,
+    "original29_preserved_with_Q4_only_additional_study_model": true,
+    "free_GiB_at_restoration": 111.05424499511719,
+    "first_coding_request_cache_tokens": 0,
+    "all_three_tasks_present_as_user_messages_in_final_primary_request": true,
+    "native_compression_lineage_lengths_by_phase": [
+      1,
+      1,
+      1
+    ],
+    "phase_actor_seconds": [
+      3024.1222410949995,
+      856.0597613489954,
+      3055.993000790011
+    ],
+    "observed_grades_by_phase": [
+      {
+        "local-grade": {
+          "kind": "unpublished-local-draft",
+          "family": "spam_enforcement",
+          "phase": 0,
+          "source_digest": "c3477a8e54e6595f73a4d6c738d588da363c87e83d44ffd1c6f1ac87ba122ee0",
+          "project_exit": 0,
+          "preservation_exit": 0,
+          "independent_exit": 0,
+          "changed_paths": [
+            "autospamignore/__init__.py",
+            "tests/test_autospamignore.py"
+          ],
+          "not_fed_to_models": true
+        },
+        "remote-grade": {
+          "kind": "actual-fork-commit",
+          "family": "spam_enforcement",
+          "phase": 0,
+          "source_digest": "c3477a8e54e6595f73a4d6c738d588da363c87e83d44ffd1c6f1ac87ba122ee0",
+          "project_exit": 0,
+          "preservation_exit": 0,
+          "independent_exit": 0,
+          "changed_paths": [
+            "autospamignore/__init__.py",
+            "tests/test_autospamignore.py"
+          ],
+          "not_fed_to_models": true
+        }
+      },
+      {
+        "local-grade": {
+          "kind": "unpublished-local-draft",
+          "family": "spam_enforcement",
+          "phase": 1,
+          "source_digest": "03e7a5cfb37372c4269738ea6dc876588006aa12bddba00451a43fbbc367b344",
+          "project_exit": 0,
+          "preservation_exit": 0,
+          "independent_exit": 0,
+          "changed_paths": [
+            "autospamignore/README.md",
+            "autospamignore/__init__.py",
+            "tests/test_autospamignore.py"
+          ],
+          "not_fed_to_models": true
+        },
+        "remote-grade": {
+          "kind": "actual-fork-commit",
+          "family": "spam_enforcement",
+          "phase": 1,
+          "source_digest": "03e7a5cfb37372c4269738ea6dc876588006aa12bddba00451a43fbbc367b344",
+          "project_exit": 0,
+          "preservation_exit": 0,
+          "independent_exit": 0,
+          "changed_paths": [
+            "autospamignore/README.md",
+            "autospamignore/__init__.py",
+            "tests/test_autospamignore.py"
+          ],
+          "not_fed_to_models": true
+        }
+      },
+      {
+        "local-grade": {
+          "kind": "unpublished-local-draft",
+          "family": "spam_enforcement",
+          "phase": 2,
+          "source_digest": "044c1eb1a461242b05878fa0e33e4e1f26c9a7af737e7b65acbdcb2969f68b3d",
+          "project_exit": 0,
+          "preservation_exit": 0,
+          "independent_exit": 0,
+          "changed_paths": [
+            "autospamignore/README.md",
+            "autospamignore/__init__.py",
+            "tests/test_autospamignore.py"
+          ],
+          "not_fed_to_models": true
+        },
+        "remote-grade": {
+          "kind": "actual-fork-commit",
+          "family": "spam_enforcement",
+          "phase": 2,
+          "source_digest": "044c1eb1a461242b05878fa0e33e4e1f26c9a7af737e7b65acbdcb2969f68b3d",
+          "project_exit": 0,
+          "preservation_exit": 0,
+          "independent_exit": 0,
+          "changed_paths": [
+            "autospamignore/README.md",
+            "autospamignore/__init__.py",
+            "tests/test_autospamignore.py"
+          ],
+          "not_fed_to_models": true
+        }
+      }
+    ],
+    "test_log_sha256_by_phase": [
+      {
+        "local-grade": {
+          "project.log": "a7497c91be1447c24e0f664d4bd62df950a2d5497c7f6e1a075bf0ecd774f9e1",
+          "preservation.log": "402a28e850b89ee0d5ea44ad50bc457dd075b931a3668eb035c2acee809eb14e"
+        },
+        "remote-grade": {
+          "project.log": "a7497c91be1447c24e0f664d4bd62df950a2d5497c7f6e1a075bf0ecd774f9e1",
+          "preservation.log": "8310019542099d2e4d0669533597a6e1a228d22f8880e37b40344ffaf191c2e4"
+        }
+      },
+      {
+        "local-grade": {
+          "project.log": "b675d0841981b71d50baadd1697e0f65b54e3718eb40f1835703bb0d360fc7bb",
+          "preservation.log": "d616234b319acf23658cea58403c5202730dfc15da4364f5a0d284c97f377e6c"
+        },
+        "remote-grade": {
+          "project.log": "4926dc5011b4c99aecfaa459d1c84f06919b1b60644ff2f9836a6b8311d9984d",
+          "preservation.log": "1890cd6b9c556636518d2dab66cdd5b628d331aee87904b4a0dcb637f6acab46"
+        }
+      },
+      {
+        "local-grade": {
+          "project.log": "10da72b7713fb54dbb006ea07883715030f1ee6abb7b2583d1e021d13bf2b137",
+          "preservation.log": "c10e4c81984c331a03af2ab7bd7fd89806fee7eb56a91a973ffb368653403992"
+        },
+        "remote-grade": {
+          "project.log": "7fbdfc8a72071d1a2ad6dd99b6f593bf098e94bd56ec9058232c5b16c6604fc9",
+          "preservation.log": "43baf44ff9a37dc91b6b42c95befa6ae6ab8ca2d67724f8ad06aa7536e8a171f"
+        }
+      }
+    ],
+    "source_changes_from_previous_phase": [
+      null,
+      [
+        "autospamignore/README.md"
+      ],
+      [
+        "autospamignore/README.md",
+        "autospamignore/__init__.py",
+        "tests/test_autospamignore.py"
+      ]
+    ],
+    "native_exit_by_phase": [
+      {
+        "exit_code": 0,
+        "external_timeout": false
+      },
+      {
+        "exit_code": 0,
+        "external_timeout": false
+      },
+      {
+        "exit_code": 0,
+        "external_timeout": false
+      }
+    ],
+    "publication_scope_by_phase": [
+      {
+        "issue": 1,
+        "pr": 2,
+        "branch": "wide-spam-q4fresh-enforcement-toggle",
+        "commits": 1
+      },
+      {
+        "issue": 1,
+        "pr": 2,
+        "branch": "wide-spam-q4fresh-enforcement-toggle",
+        "commits": 2
+      },
+      {
+        "issue": 1,
+        "pr": 2,
+        "branch": "wide-spam-q4fresh-enforcement-toggle",
+        "commits": 3
+      }
+    ],
+    "read_control_seconds_separate": 384.78932608501054,
+    "peak_gpu_MiB": 15456,
+    "manual_audit_sha256": {
+      "q4fresh-spam-initial-manual-audit.json": "9c5a311fd1ca17d311886db08e12a98b69dfd19c91f5289f6ec26aaa456063e4",
+      "q4fresh-spam-README-manual-audit.json": "49536775a8131db6b1bffb3110e972007c6834facbb87744c82cafc459176663",
+      "q4fresh-spam-feature-manual-audit.json": "bd30bd1b5e6d2ace95c0dd22177d6ce7093ccaa978acde847bd31172abf190bb"
+    },
+    "posthoc_control_sha256": {
+      "q4fresh-spam-read-control-audit.json": "153928b5908c72bca40c78db211b2ba07232498f76d6ab2340643f81682dc986",
+      "q4fresh-spam_enforcement-phase0-test-adequacy/result.json": "5e2a6f5343f557ad81eeb5c756a117ad851297117fd6e6939ac90647077aa7fe",
+      "q4fresh-spam_enforcement-phase2-test-adequacy/result.json": "ffe5fd50b4bf93e1c34e8531b7f507595f92fe1b578e0ab18bccb6e6ce5c6714",
+      "q4fresh-spam-documentation-control/result.json": "83f572b59436b0dcea86891f591c3d474ebf4c74ca91637f205bdaa298edfa57",
+      "q4fresh-spam-feature-control/result.json": "920d71208522c7611b413e03d6d628338eef776cc6beb9ae9862b131954f0a4d",
+      "q4fresh-spam-context-instruction-audit.json": "2616dba30d51ee7fc94251c87cc3f56927372d0644e220cfcb56c05035254aae",
+      "q4fresh-spam-publication-independent-readback.json": "eaa95b539b870eb2ba2a1ecb5ac192f73189546ea9e0ac96c48d13d5eb9e6d67"
+    },
+    "limits": [
+      "One fresh three-turn Spam lineage and a separate earlier fresh Announcer lineage do not establish unattended reliability.",
+      "Earlier Q4 Spam recovery remains conditional; this fresh trial closes that comparison gap without rewriting older evidence.",
+      "Q3/Q4 public imatrix metadata differs; sampler/template/layout/cache differences prevent precision-only causal claims.",
+      "First coding request reports zero prefix-cache tokens; some prior candidates had warm first prefixes, so latency is not a controlled cold-start ranking.",
+      "All tasks remain literally in real final user messages, but presence does not prove attention.",
+      "No compaction in this native lineage; GLM separate compression-guard confound is not silently amended or attributed solely to model quality.",
+      "Original and authored tests passing alone are insufficient; independent source/callback/remote audits are separate.",
+      "Six feature authored cases already pass prior source; bounds helper test does not alone prove setting integration, so actual callback-boundary controls are retained.",
+      "Callbacks use immutable fake peers; no full GUI/Soulseek network validation.",
+      "Sampled aggregate cgroups/PSS/cache/helpers do not prove continuous whole-host attribution; global swap changes are not attributed to this model.",
+      "Focused scoped Gitea wrappers and execution publication gate are part of this configuration, not an unmodified raw-MCP model-only comparison.",
+      "Private source/requests/profiles/tasks/graders/receipt keys remain local; public verification checks recorded evidence consistency, not complete private behavior reexecution."
+    ]
+  },
+  "measurements": {
+    "sample_count": 696,
+    "complete_aggregate_sample_count": 696,
+    "measurement_error_sample_count": 0,
+    "peak_observed_cgroup_bytes": 7563862016,
+    "peak_observed_all_process_PSS_bytes": 5343998976,
+    "peak_observed_experiment_swap_bytes": 0,
+    "resource_guard_samples": 0,
+    "global_pswpin_delta_pages": 129231,
+    "global_pswpout_delta_pages": 246516,
+    "global_swap_not_attributed_to_model": true,
+    "HTTP_records": 54,
+    "completed_HTTP_records_without_transport_error": 54,
+    "transport_error_record_count": 0,
+    "incomplete_backend_body_record_count": 0,
+    "maximum_completed_prompt_tokens": 77347,
+    "HTTP_latency_seconds": {
+      "min": 23.428571462631226,
+      "median": 80.62357723712921,
+      "max": 930.538106918335,
+      "sum": 7183.271034240723
+    },
+    "not_isolated_decode_throughput": true,
+    "sampling_not_continuous_peak_or_entire_host_attribution": true
+  },
+  "comparison_limits": [
+    "Fresh primary starts independently of the read-only control; all three coding turns share one native lineage.",
+    "Same predefined followups, no private grade feedback; final model sampling is not seed-pinned.",
+    "Focused scoped Gitea tools and publication execution gate are part of this configuration.",
+    "Private source snapshots, raw wire captures, profiles, tasks, graders and receipt keys remain local. Public evidence verification does not recreate the whole private workflow or prove all behavior correct."
+  ]
+}

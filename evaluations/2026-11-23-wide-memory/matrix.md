@@ -6,6 +6,7 @@ audited separately from resource fit, authored tests and actual publication.
 | Candidate / family | Initial fix | README followup | Feature followup | Claims / publication audit | Status |
 |---|---|---|---|---|---|
 | Adapted27B Q4, Spam, conditional recovery | Independent source/behavior pass | Independent docs/preservation pass | Independent source/behavior pass | Real configured Gitea issue/fork/PR and 3 commits; wrong final URL host, stale PR description | Completed, restored and audited; [evidence](native-q4-recovery.md) |
+| Adapted27B Q4, fresh Spam | Independent local/published repair and original preservation pass | Correct functional docs, matching published commit and updated PR; network scope qualified | Independent feature/original/callback controls pass; meaningful coverage with qualifications | Correct real issue/fork/3 commits/PR; current counts, URLs, title/body verified | Completed/restored/audited/retained; [evidence](native-q4fresh-spam.md) |
 | Adapted27B Q4, fresh Announcer | Independent source/behavior pass | README re-enable wording qualification | Independent source/behavior pass | Real issue/fork/PR; PR metadata updated; plugin/full-suite count confusion in final answers | Completed, restored and audited; [evidence](native-q4-fresh.md) |
 | Adapted27B Q3, fresh Spam | Incorrect next-message repair despite green tests | Documents unrequested behavior; wrong commit claim | Cooldown scoped pass; original failure persists | Correct real issue/fork/PR, stale PR body | Completed, restored and audited; [evidence](native-q3-spam.md) |
 | Adapted27B Q3, fresh Announcer | Independent source/behavior pass; authored replay caveat | Re-enable wording qualification | Independent source/behavior pass | Real issue/fork/PR; stale PR metadata, plugin/project count confusion | Completed, restored and audited; [evidence](native-q3-queue.md) |
@@ -24,7 +25,10 @@ it is not interchangeable with the fresh Announcer sample. Followups are
 dependent stages, not independent reliability trials. All candidates retain
 normal memory/approval/persistence policy and the same scoped forge interface;
 architecture-specific sampler/template/output/cache needs are recorded.
-No winner or autonomous-reliability claim follows from the current small sample.
+Q4 is the strongest observed supervised actor lead in this tested configuration;
+two task families with dependent followups do not establish unattended reliability.
+The [final comparison](comparison.md) excludes the old conditional Spam recovery
+from the matched fresh comparison.
 
 The [posthoc dispatcher/cleanup comparison](announcer-dispatch-cleanup-comparison.json)
 uses the same control on Q3, Q4 and Devstral final sources. Missing `parameters`

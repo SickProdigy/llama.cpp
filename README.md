@@ -6,54 +6,36 @@ This file tracks which local GGUF models can actually complete the Hermes Agent 
 
 Future options: [local quantization and spare-GPU testing](MODEL-OPTIONS.md).
 
-New active goal: [P100 plus 8 GiB host-RAM model evaluation](evaluations/2026-11-23-wide-memory/plan.md), prioritizing correctness over speed.
-The [initial resource baseline](evaluations/2026-11-23-wide-memory/resource-baseline.md)
-completes tool/16k/60k probes, but mapped loading briefly exceeds 8 GiB process
-PSS despite the container cap. The [matched non-mapped baseline](evaluations/2026-11-23-wide-memory/resource-baseline-v2.md)
-completes those probes with 1.87 GiB peak process PSS. [Q4 now completes the resource probes](evaluations/2026-11-23-wide-memory/resource-q4.md)
-at 98,304 context, with 15.09 GiB GPU and 4.50 GiB peak process PSS.
-The [first native Q4 attempt hits a host cgroup OOM](evaluations/2026-11-23-wide-memory/checkpoint-comparison.md)
-before completing its task. A matched captured-prefix replay succeeds with two
-context checkpoints instead of the default 32. The [conditional recovery](evaluations/2026-11-23-wide-memory/native-q4-recovery.md)
-now completes the fix, documentation and feature with independently checked
-published code. Its final URLs are wrong and PR description is stale; this is
-not a clean workflow pass. The [fresh second family](evaluations/2026-11-23-wide-memory/native-q4-fresh.md)
-also completes independently checked code and Gitea publication, with README
-re-enable wording and plugin/full-suite count qualifications. It reaches 67,720
-prompt tokens with zero observed experiment swap. The [remaining candidates](evaluations/2026-11-23-wide-memory/matrix.md)
-include [Q3 resource completion](evaluations/2026-11-23-wide-memory/resource-q3.md)
-at 98k context and 14,946 MiB GPU, with zero observed experiment swap. Fresh Q3
-Spam workflow now [fails the requested repair](evaluations/2026-11-23-wide-memory/native-q3-spam.md)
-despite green project tests and correct publication; its cooldown feature passes
-separately. Fresh [Q3 Announcer](evaluations/2026-11-23-wide-memory/native-q3-queue.md)
-passes source/behavior checks with documentation and reporting qualifications.
-Devstral now [completes resource probes](evaluations/2026-11-23-wide-memory/resource-devstral.md)
-at 98k context using 32 GPU layers and CPU spill: 14,880 MiB GPU, 6.56 GiB
-peak charged host memory and zero observed experiment swap. Its [fresh Spam workflow](evaluations/2026-11-23-wide-memory/native-devstral-spam.md)
-fixes the requested next-message behavior and adds cooldowns locally, but fails
-notification preservation, weakens an existing test, and performs no requested
-issue/fork/PR publication. Its [fresh Announcer workflow](evaluations/2026-11-23-wide-memory/native-devstral-queue.md)
-preserves the original behavior, but the new room cancellation leaves orphaned
-job reply state and nothing is published. A frozen metadata assertion is qualified
-against pinned upstream dispatchers; it does not prove argument rejection.
-The study-owned Devstral file is temporarily rotated after both audited stages;
-all29 original models remain. GLM's [full public download](evaluations/2026-11-23-wide-memory/glm-download-verification.json)
-passed its pinned SHA-256 check and [completes five resource probes](evaluations/2026-11-23-wide-memory/resource-glm.md)
-at 98k context: 15,336 MiB GPU, 6.56 GiB peak charged host memory and no
-experiment swap. The 60k response takes 23.5 minutes; whole-host swap activity
-is substantial and separately reported. A corrected cache-configuration failure
-is preserved. GLM's [fresh Spam workflow](evaluations/2026-11-23-wide-memory/native-glm-spam.md)
-creates the correct issue/fork but fails notification preservation, cooldown
-re-alert/reset behavior, test adequacy and PR publication. Its 85 minutes of coding
-stay within budget without experiment swap. Its [fresh Announcer workflow](evaluations/2026-11-23-wide-memory/native-glm-queue.md)
-partially repairs disabled sends, but loses completion replies, leaks room bookkeeping
-and publishes nothing. All three turns stop on repetition. A separate native
-compression guard interrupts slow auxiliary prefill; deterministic fallback retains
-literal tasks, with limitations documented. Coding peaks at 6.83 GiB charged host
-memory and 84,237 prompt tokens without study swap.
-A fresh Q4 Spam comparison will follow both GLM audits; its prior Spam result
-was resumed recovery. Capacity is not task quality.
-No model winner is claimed.
+Latest completed evaluation: [P100 plus 8 GiB host RAM](evaluations/2026-11-23-wide-memory/comparison.md), prioritizing correct task completion over speed.
+
+**The public Hermes-adapted 27B Q4_K_M is the strongest observed supervised actor
+lead in this tested configuration.** Its [new fresh Spam workflow](evaluations/2026-11-23-wide-memory/native-q4fresh-spam.md)
+passes independent repair, documentation, feature, original-preservation and actual
+Gitea issue/personal-fork/PR audits. All 83 original tests pass at every stage;
+project tests grow from 86 to 96. Coding takes 115.60 minutes. Its separate
+[fresh Announcer workflow](evaluations/2026-11-23-wide-memory/native-q4-fresh.md)
+passes source/behavior checks with documented reporting qualifications.
+The earlier Spam recovery remains conditional and is excluded from the fresh comparison.
+
+All four named public candidates complete [resource probes and native trials](evaluations/2026-11-23-wide-memory/matrix.md)
+at 98,304 context in measured layouts. Q3 misses the actual Spam repair despite
+green tests and real publication; Devstral and GLM fail preservation, feature or
+publication requirements. The [comparison](evaluations/2026-11-23-wide-memory/comparison.md)
+separates those quality findings from runtime compatibility and the GLM
+compression-timeout confound. Q3/Q4 calibration metadata differs, so this is not
+a precision-only causal experiment or an unattended-reliability result.
+
+Fresh Q4 reaches 77,347 actual prompt tokens at 15,456 MiB GPU, 7.044 GiB peak
+sampled aggregate study memory, and zero observed study swap. Its measured backend
+cap is 6656m/6.5 GiB with two context checkpoints; the earlier default32 OOM and
+[matched checkpoint control](evaluations/2026-11-23-wide-memory/checkpoint-comparison.md)
+remain preserved. Loading or file size alone is not used as fit/quality proof.
+
+The original Vibe runtime/settings and Hermes-Codex state are restored and verified.
+[All six study issues are closed](evaluations/2026-11-23-wide-memory/test-issue-cleanup.json).
+[All 29 original models plus Q4 are retained](evaluations/2026-11-23-wide-memory/retained-models.json),
+with over 111 GiB free. The [registered plan and historical milestones](evaluations/2026-11-23-wide-memory/plan.md)
+link the full sanitized evidence and limitations.
 
 ## November 22, 2026 compact-review follow-up — evaluation complete
 
@@ -520,7 +502,8 @@ for the fresh sample and untested candidates; these results do not prove autonom
 GLM's [scripted client-history control](evaluations/2026-11-23-wide-memory/glm-cli-history-control/README.md)
 passes reasoning retention through a terminal call and persisted user followup,
 with its thinking settings and 16,384-token output cap serialized. It uses no
-model inference; GLM runtime, fit and coding/Gitea results remain pending.
+model inference. Subsequent [wider-memory results](evaluations/2026-11-23-wide-memory/comparison.md)
+now cover GLM runtime, fit and coding/Gitea behavior; the preflight status above is historical.
 
 The [adapted Q3/Q4 header preflight](evaluations/2026-11-23-wide-memory/quant-header-preflight/README.md)
 also finds different importance-matrix metadata despite matching tokenizer and

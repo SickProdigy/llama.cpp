@@ -1,0 +1,97 @@
+{
+  "epoch": 1795538251.0690775,
+  "passed": true,
+  "read_only_connected_audit": true,
+  "all_five_upstream_main_branches_unchanged": true,
+  "test_PRs_unmerged": true,
+  "repositories": [
+    {
+      "candidate": "q4",
+      "upstream": "chatgpt-codex/hermes-wide-q4-20261123",
+      "main": "e940b2c6326bb037f2e8029f638db53cdbc77740",
+      "main_unchanged": true,
+      "PRs": [
+        {
+          "number": 4,
+          "state": "open",
+          "merged": false,
+          "head": "wide-queue-q4-announcer-disable-gate"
+        },
+        {
+          "number": 2,
+          "state": "open",
+          "merged": false,
+          "head": "wide-spam-q4-enforcement-switch"
+        }
+      ],
+      "readback_sha256": {
+        "branches": "f6fb85b6e5c3983e3a1da7b3c044db243460e639a7bc8aabb026c480a90bd9e0",
+        "PRs": "a0117794146f9736e385ff2ed86d1d114d8f81e4f99a672a64b5e167e401738e"
+      }
+    },
+    {
+      "candidate": "q3",
+      "upstream": "chatgpt-codex/hermes-wide-q3-20261123",
+      "main": "93f7d0429ce3acd9479e47fefd2563a76ffc5181",
+      "main_unchanged": true,
+      "PRs": [
+        {
+          "number": 4,
+          "state": "open",
+          "merged": false,
+          "head": "wide-queue-q3-announcer-queued-disable"
+        },
+        {
+          "number": 2,
+          "state": "open",
+          "merged": false,
+          "head": "wide-spam-q3-enforcement-switch"
+        }
+      ],
+      "readback_sha256": {
+        "branches": "7739752184c456a3fd9ab5b3cd6472c436bc3e1e9829b10180bed045c475bb11",
+        "PRs": "c63a2751990617ae1a17b451f8d510e7a4412a4434deb85cb6e50c24f448bcf4"
+      }
+    },
+    {
+      "candidate": "devstral",
+      "upstream": "chatgpt-codex/hermes-wide-devstral-20261123",
+      "main": "2fa2670df71b1c2f2629372f5a0c4dd6455e9d4e",
+      "main_unchanged": true,
+      "PRs": [],
+      "readback_sha256": {
+        "branches": "973b36ff8de1db76959f492f6fb90aabed52334194676fe277fb55f5115f9ed2",
+        "PRs": "43f381dd87c6ee3ba8ba22f68edb91a89c9ce12ca57f9105d058a64330aa2280"
+      }
+    },
+    {
+      "candidate": "glm",
+      "upstream": "chatgpt-codex/hermes-wide-glm-20261123",
+      "main": "e703b9e32748cbd930c47b523fa4225dbf70691b",
+      "main_unchanged": true,
+      "PRs": [],
+      "readback_sha256": {
+        "branches": "9c252edcac2cf894be0c693bc7cdd84fab9bd5e6cbb49b29f949772109531fd2",
+        "PRs": "a99c66b112724331d339d8f1e0d48989aa11520ba207c26ebdd3a69874cb362f"
+      }
+    },
+    {
+      "candidate": "q4fresh",
+      "upstream": "chatgpt-codex/hermes-wide-q4fresh-20261124",
+      "main": "4c88d7324eab6bc448d87badacd17a80016e4fa7",
+      "main_unchanged": true,
+      "PRs": [
+        {
+          "number": 2,
+          "state": "open",
+          "merged": false,
+          "head": "wide-spam-q4fresh-enforcement-toggle"
+        }
+      ],
+      "readback_sha256": {
+        "branches": "eb8a6b8e48d6219db83ad927faac8efaff44b70665cdf15d58ff0a8746b5bc52",
+        "PRs": "4cfb48aaeb1b5fa22dc4ea6f804b5c1d67414573437d5ba3e2dfab0eda8894fc"
+      }
+    }
+  ]
+}
