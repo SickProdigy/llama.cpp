@@ -17,8 +17,11 @@ before completing its task. A matched captured-prefix replay succeeds with two
 context checkpoints instead of the default 32. The [conditional recovery](evaluations/2026-11-23-wide-memory/native-q4-recovery.md)
 now completes the fix, documentation and feature with independently checked
 published code. Its final URLs are wrong and PR description is stale; this is
-not a clean workflow pass. The [fresh second family and remaining candidates](evaluations/2026-11-23-wide-memory/matrix.md)
-are still in progress or pending; no model winner is claimed.
+not a clean workflow pass. The [fresh second family](evaluations/2026-11-23-wide-memory/native-q4-fresh.md)
+also completes independently checked code and Gitea publication, with README
+re-enable wording and plugin/full-suite count qualifications. It reaches 67,720
+prompt tokens with zero observed experiment swap. The [remaining candidates](evaluations/2026-11-23-wide-memory/matrix.md)
+are pending; no model winner is claimed.
 
 ## November 22, 2026 compact-review follow-up — evaluation complete
 

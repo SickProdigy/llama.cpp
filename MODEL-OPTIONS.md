@@ -15,13 +15,15 @@ backend swap. That resolves the loading caveat for the measured layout, without
 establishing whole-host fit or agent correctness.
 The adapted Q4 public file now [completes resource probes](evaluations/2026-11-23-wide-memory/resource-q4.md)
 at 98,304 context with 56 GPU layers and non-mapped loading: 15.09 GiB GPU and
-4.50 GiB peak process PSS. Actor correctness remains unproven. The first native attempt hits a host cgroup
+4.50 GiB peak process PSS. The first native attempt hits a host cgroup
 OOM despite the short resource pass. A [checkpoint comparison](evaluations/2026-11-23-wide-memory/checkpoint-comparison.md)
 completes with `--ctx-checkpoints 2` while default32 reproduces the OOM.
 The [conditional native recovery](evaluations/2026-11-23-wide-memory/native-q4-recovery.md)
 completes independently checked code/docs/forge stages, with wrong final URLs
-and stale PR metadata. The [fresh sample and other candidates](evaluations/2026-11-23-wide-memory/matrix.md)
-remain in progress or pending. No winner or autonomous reliability is established.
+and stale PR metadata. The [fresh Announcer sample](evaluations/2026-11-23-wide-memory/native-q4-fresh.md)
+also completes independent code/behavior and publication checks, with README
+re-enable wording and plugin/full-suite count qualifications. The [other candidates](evaluations/2026-11-23-wide-memory/matrix.md)
+remain pending. No winner or autonomous reliability is established.
 The original runtime is restored and audited after each completed GPU stage.
 
 Public [format metadata](evaluations/2026-11-23-wide-memory/candidate-format-preflight.json)
@@ -40,7 +42,7 @@ The [pinned adapted Q3/Q4 header comparison](evaluations/2026-11-23-wide-memory/
 finds matching tensor names/shapes and tokenizer metadata, but differing
 importance-matrix metadata. Compare these public files as provided; a quality
 difference cannot be attributed solely to bit precision. Q3's full file and
-inference remain untested at this metadata stage.
+inference remain untested; its pinned full-weight download is underway.
 
 ## November 22: full P100 plus up to 8 GiB host spillover
 
