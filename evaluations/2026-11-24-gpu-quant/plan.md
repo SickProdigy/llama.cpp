@@ -1,11 +1,13 @@
 # GPU-resident quantization comparison — November 24, 2026
 
-Status: first Fable Q6 capacity stage complete and original runtime restored.
-The first fresh Fable Q6 nonthinking workflow is complete and independently
-audited: repair/docs/feature/publication fail. Original runtime and all retained
-models/owner settings are restored/verified; the Q4 capacity stage also completes/restores, and its fresh native coding
-stage also completes with no edits or publication. Both baseline Fable quants
-are audited/restored/cleaned; Vibe Q4 resource testing is active.
+Status: all four retained-file capacity stages complete. Fable Q4/Q6 nonthinking
+workflows fail independently audited task/publication checks. Vibe Q4's baseline
+is confounded by unattended code-tool approval policy; the original Q6 deny-policy
+coding cell is prospectively deferred. A fresh trusted-profile Vibe Q4 run is live
+and matching Q6 is frozen and pending. The separate publisher-mode Fable profiles
+pass SDK and pure-code preflights, with no reasoning inference started. Original
+settings and retained models are preserved; each GPU stage restores and verifies
+the original services before the next stage.
 See [current matrix](matrix.md) and [resource evidence](resource-fable-q6-summary.json).
 
 Compare retained FableVibes Q4/Q6 and VibeForged v2 Q4/Q6 first. Earlier native
@@ -46,8 +48,8 @@ reproducible evidence. Commit/push completed stages with README/options/matrix.
 
 Before assigning a practical Fable recommendation, compare a separately registered
 fresh Q4/Q6 pair with reasoning enabled and the author's generation sampling.
-The current quartet remains an unchanged thinking-disabled, temperature .2
-baseline; no actor receives a corrective hint or restart. The author's pinned
+The original registered quartet remains documented as a thinking-disabled, temperature .2
+baseline; its Q6 Vibe coding cell is deferred for the policy confound. no actor receives a corrective hint or restart. The author's pinned
 [source generation configuration](https://huggingface.co/tvall43/Qwen3.6-14B-A3B-FableVibes/blob/758757ae225247b95c28ad2897d89aafe3bd3d52/generation_config.json)
 sets temperature 1.0, top-p .95 and top-k20. The pinned GGUF card describes a
 reasoning-trained model and expects reasoning output. These are publisher
@@ -76,7 +78,13 @@ free space and ownership must be verified before download. No GPU purchase or
 local quantization is implied.
 
 
-The [VibeForged Q4 unattended baseline](native-vibe-q4-beets.md) completed without code changes: all 18 selected `execute_code` attempts were blocked by copied-profile one-shot approval policy. Repository read control succeeded; code-tool ability remains unmeasured. A separate isolated deny/approve pure-code control confirms this mechanism without model calls. Original deployed settings remain unchanged. The prospective comparison now uses a fresh explicitly trusted Vibe Q4/Q6 pair; Q6 deny-profile coding is deferred, with its capacity check proceeding independently. Fable Q4/Q6 baseline outcomes remain preserved. Higher precision has not yet demonstrated a quality gain.
+The [VibeForged Q4 unattended baseline](native-vibe-q4-beets.md) completed without code changes: all 18 selected `execute_code` attempts were blocked by copied-profile one-shot approval policy. Repository read control succeeded; code-tool ability remains unmeasured. A separate isolated deny/approve pure-code control confirms this mechanism without model calls. Original deployed settings remain unchanged. The prospective comparison now uses a fresh explicitly trusted Vibe Q4/Q6 pair; Q6 deny-profile coding is deferred, with its capacity check now completed independently. Fable Q4/Q6 baseline outcomes remain preserved. Higher precision has not yet demonstrated a quality gain.
 
 
 Vibe Q6 [capacity evidence](resource-vibe-q6-summary.json) now completes: 98,304-token allocation, requested full GPU offload, 11,566 MiB peak GPU, 6.561 GiB charged study cgroups, no study swap or guards, and a 59,937-token probe in 153.634 seconds. Original services/settings/models were independently verified restored afterwards. Capacity is not coding quality. Fresh trusted Vibe Q4 coding is launched; the trusted Q6 profile is frozen and pending, with identical task/source/sampler/seed/caps. Both copied profiles actually execute the no-model pure-code approval check successfully.
+
+
+A bounded HTTP range [inspection](adapted-iq4-header-inspection.json) of the pinned adapted27B IQ4_XS header now confirms 866 tensors and importance-matrix metadata (496 entries, 104 chunks, `calib-train.txt`). This differs from the Fable/Vibe files with no recorded imatrix fields; no isolated precision-only claim follows. It is still not a full download, full-file hash verification, GPU-fit result or coding test. A separately owned Docker staging volume has been measured to retain over 100 GiB after this artifact; bulk download is deferred during timed GPU stages.
+
+
+The separate [publisher-profile preflights](publisher-profile-preflights.json) pass for both fresh Fable profiles: actual SDK serialization checks reasoning-enabled main16k, auxiliary nonthinking8k and author sampling; actual pure-code checks execute in copied profiles already set to explicit experimental trust. No reasoning-model calls have started. These controls establish configuration/execution capability, not model quality.

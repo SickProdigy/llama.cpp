@@ -28,7 +28,7 @@ no study swap); its fresh native workflow also completes with no edits/publicati
 skill-request stops ([Q4 audit](evaluations/2026-11-24-gpu-quant/native-fable-q4-beets.md)).
 Neither nonthinking Fable variant qualifies; faster no-op is not a quality win.
 The Vibe Q4 capacity stage completes with post-original-stop page-cache accounting;
-its fresh native workflow is launched. Vibe Q6 remains pending. A separate prospective Fable Q4/Q6
+its completed baseline is confounded by unattended code-tool policy. Vibe Q6 capacity also completes. A fresh trusted Vibe Q4 workflow is live, with matched Q6 frozen and pending. A separate prospective Fable Q4/Q6
 publisher-sampling, reasoning-enabled pair is registered; this low-temperature
 nonthinking baseline is not a verdict on Fable's best practical configuration.
 
@@ -346,4 +346,4 @@ model output. Do not use synthetic acceptance to score repository-agent quality.
 This is a recorded future lead, not another cohort in the current investigation.
 
 
-The [VibeForged Q4 unattended baseline](evaluations/2026-11-24-gpu-quant/native-vibe-q4-beets.md) completed without code changes: all 18 selected `execute_code` attempts were blocked by copied-profile one-shot approval policy. Repository read control succeeded; code-tool ability remains unmeasured. A separate isolated deny/approve pure-code control confirms this mechanism without model calls. Original deployed settings remain unchanged. The prospective comparison now uses a fresh explicitly trusted Vibe Q4/Q6 pair; Q6 deny-profile coding is deferred, with its capacity check proceeding independently. Fable Q4/Q6 baseline outcomes remain preserved. Higher precision has not yet demonstrated a quality gain.
+The [VibeForged Q4 unattended baseline](evaluations/2026-11-24-gpu-quant/native-vibe-q4-beets.md) completed without code changes: all 18 selected `execute_code` attempts were blocked by copied-profile one-shot approval policy. Repository read control succeeded; code-tool ability remains unmeasured. A separate isolated deny/approve pure-code control confirms this mechanism without model calls. Original deployed settings remain unchanged. The prospective comparison now uses a fresh explicitly trusted Vibe Q4/Q6 pair; Q6 deny-profile coding is deferred, with its capacity check now completed independently. Fable Q4/Q6 baseline outcomes remain preserved. Higher precision has not yet demonstrated a quality gain.

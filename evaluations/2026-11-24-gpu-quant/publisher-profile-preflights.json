@@ -1,0 +1,169 @@
+{
+  "epoch": 1795552877.9563463,
+  "classification": "prospective publisher-reasoning trusted-profile preparation, not model inference or quality results",
+  "no_reasoning_model_calls_yet": true,
+  "owner_settings_unchanged": true,
+  "rows": [
+    {
+      "candidate": "fable-q4-thinking",
+      "upstream": "chatgpt-codex/hermes-gpuquant-fable-q4-thinking-20261124",
+      "base_revision": "f9980ddc8aa6809e2f98f3ee95436bdb368e7a3d",
+      "baseline_tree": "60e59671ae0973188ae90ac46f7cfec1c06bfd8f",
+      "all40_remote_blobs_verified": true,
+      "sdk_preflight": {
+        "profile": "fable-q4-thinking-beets_lifecycle",
+        "passed": true,
+        "native_timeout_getters_verified": true,
+        "model_inference": false,
+        "not_native_tool_or_persistence_proof": true,
+        "endpoint": "http://wide-llm:11431/v1",
+        "serialized_sampler": {
+          "temperature": 1.0,
+          "top_p": 0.95,
+          "top_k": 20,
+          "min_p": 0,
+          "repeat_penalty": 1,
+          "presence_penalty": 0,
+          "chat_template_kwargs": {
+            "enable_thinking": true
+          },
+          "seed": 20261124,
+          "max_tokens": 16384
+        },
+        "alias": "gpuquant-fable-q4-thinking"
+      },
+      "actual_pure_code_control": {
+        "mode": "approve",
+        "copied_original_mode": "approve",
+        "resolved_single_query_mode": "approve",
+        "seconds": 0.26761111395899206,
+        "model_calls": 0,
+        "forge_mutations": 0,
+        "source_files_SHA256": {
+          "tools/approval.py": "9863b02330ab42498bffb30ae4f175f5153385966378740c048378939f919f92",
+          "tools/approval_context.py": "e5faa7b788241f67b839b4a073752c6a5c2f8f3b83a442fb5e6d1a5c77cdf5da",
+          "hermes_cli/cli_single_query.py": "ee524db7ce7c6ff1e5e79a8ff47c3c0e8c6b72e37a55364231b9d6e29c6f9903"
+        },
+        "pure_code_result": {
+          "status": "success",
+          "output": "4\n",
+          "exit_code": 0,
+          "tool_calls_made": 0,
+          "duration_seconds": 0.08,
+          "kernel": {
+            "mode": "session",
+            "reused": false,
+            "execution_count": 1,
+            "state_reset": false
+          },
+          "stdout_truncated": false,
+          "stdout_bytes_captured": 2,
+          "stdout_bytes_total": 2,
+          "stdout_bytes_omitted": 0
+        },
+        "owner_profile_not_modified": true,
+        "passed": true
+      },
+      "main_output_cap": 16384,
+      "compression_output_cap": 8192,
+      "compression_sampler": {
+        "temperature": 0.2,
+        "top_p": 0.95,
+        "top_k": 40,
+        "min_p": 0,
+        "repeat_penalty": 1,
+        "presence_penalty": 0,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "seed": 20261124
+      },
+      "experimental_profile_config_SHA256": "cf3c70ba01150c577bd215705baca2849a6c326e80101e2ad0edcef5fd0f30e2",
+      "source_profile_archive_SHA256": "0c6125119995aac42c7a5ae3fe66b8cea93a0a9fd43044cfa660b5f501c77d5f"
+    },
+    {
+      "candidate": "fable-q6-thinking",
+      "upstream": "chatgpt-codex/hermes-gpuquant-fable-q6-thinking-20261124",
+      "base_revision": "f9980ddc8aa6809e2f98f3ee95436bdb368e7a3d",
+      "baseline_tree": "60e59671ae0973188ae90ac46f7cfec1c06bfd8f",
+      "all40_remote_blobs_verified": true,
+      "sdk_preflight": {
+        "profile": "fable-q6-thinking-beets_lifecycle",
+        "passed": true,
+        "native_timeout_getters_verified": true,
+        "model_inference": false,
+        "not_native_tool_or_persistence_proof": true,
+        "endpoint": "http://wide-llm:11431/v1",
+        "serialized_sampler": {
+          "temperature": 1.0,
+          "top_p": 0.95,
+          "top_k": 20,
+          "min_p": 0,
+          "repeat_penalty": 1,
+          "presence_penalty": 0,
+          "chat_template_kwargs": {
+            "enable_thinking": true
+          },
+          "seed": 20261124,
+          "max_tokens": 16384
+        },
+        "alias": "gpuquant-fable-q6-thinking"
+      },
+      "actual_pure_code_control": {
+        "mode": "approve",
+        "copied_original_mode": "approve",
+        "resolved_single_query_mode": "approve",
+        "seconds": 0.37166568299289793,
+        "model_calls": 0,
+        "forge_mutations": 0,
+        "source_files_SHA256": {
+          "tools/approval.py": "9863b02330ab42498bffb30ae4f175f5153385966378740c048378939f919f92",
+          "tools/approval_context.py": "e5faa7b788241f67b839b4a073752c6a5c2f8f3b83a442fb5e6d1a5c77cdf5da",
+          "hermes_cli/cli_single_query.py": "ee524db7ce7c6ff1e5e79a8ff47c3c0e8c6b72e37a55364231b9d6e29c6f9903"
+        },
+        "pure_code_result": {
+          "status": "success",
+          "output": "4\n",
+          "exit_code": 0,
+          "tool_calls_made": 0,
+          "duration_seconds": 0.12,
+          "kernel": {
+            "mode": "session",
+            "reused": false,
+            "execution_count": 1,
+            "state_reset": false
+          },
+          "stdout_truncated": false,
+          "stdout_bytes_captured": 2,
+          "stdout_bytes_total": 2,
+          "stdout_bytes_omitted": 0
+        },
+        "owner_profile_not_modified": true,
+        "passed": true
+      },
+      "main_output_cap": 16384,
+      "compression_output_cap": 8192,
+      "compression_sampler": {
+        "temperature": 0.2,
+        "top_p": 0.95,
+        "top_k": 40,
+        "min_p": 0,
+        "repeat_penalty": 1,
+        "presence_penalty": 0,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "seed": 20261124
+      },
+      "experimental_profile_config_SHA256": "94415f26aee4023158c43d78e1c91da2155fb61511d1728425642f83a07a98a5",
+      "source_profile_archive_SHA256": "0c6125119995aac42c7a5ae3fe66b8cea93a0a9fd43044cfa660b5f501c77d5f"
+    }
+  ],
+  "source_fingerprints": {
+    "prepare_trusted_reasoning_profile.py": "64219935a100a675bdeda0fe9ef9f7bbccd2602350bb7b03653f0bac3cd923f6",
+    "reasoning_sdk_wire_preflight.py": "adbc6ff78e4479548268bc78f8793e1c9b38137827a08eb9abf64d17f27df4ab",
+    "probe_trusted_profile_code.py": "71312c56a52d03f1666db0e68034b57dc66279ed666ef906e4d1aaf701610ea1",
+    "reasoning-resource-protocol.json": "80d741976a6c3631dece1a072c55cdf72d8235e98ae1bb2b0d7e505a7491915d"
+  },
+  "limitation": "Reasoning, sampler, output reservation and explicit experimental trust differ from original baseline. This is a combined practical profile comparison, not a precision-only causal experiment."
+}
