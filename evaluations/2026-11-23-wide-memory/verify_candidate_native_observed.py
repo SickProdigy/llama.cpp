@@ -45,10 +45,15 @@ for phase in range(3):
  if 'remote-grade'not in kinds:assert 'clone'not in forge
  if 'pr'in forge:assert not forge['pr']['merged']
  observed.append({kind:{k:expected[kind][k]for k in ['project_exit','preservation_exit','independent_exit']}for kind in sorted(kinds)})
+posthoc_dispatch_source_checked=False
+if 'controls/posthoc-dispatch-cleanup-result.json'in files:
+ control=j('controls/posthoc-dispatch-cleanup-result.json');assert control['not_actor_feedback']and control['pinned_upstream_dispatcher_method_executed_without_body_changes'];assert control['source_sha256']==j('phases/2/local-grade/source-sha256.json')['announcer/__init__.py'];assert control['control_sha256']==sha(files['source/announcer_dispatch_cleanup_control.py']);pins={p['commit']:p for p in j('controls/upstream-dispatch-pins.json')if 'commit'in p}
+ for row in control['results']:assert row['upstream_source_sha256']==pins[row['commit']]['sha256']and row['upstream_url']==pins[row['commit']]['url']
+ posthoc_dispatch_source_checked=True
 assert len(set(roots))==1 and roots[0]
 restoration=j('runtime/runtime-restoration.json');assert restoration['restored'];before=j('runtime/runtime-before.json');after=restoration['after']
 for service in before:
  for key in ['id','image','signature','running']:assert before[service][key]==after[service][key]
 assert before['hermes-codex']==after['hermes-codex'];assert j('audits/'+RESTORE+'-preservation.json')['codex_entire_snapshot_unchanged'];assert j('audits/'+RESTORE+'-owner-preservation.json')['passed'];assert j('audits/'+LABEL+'-cleanup.json')['passed']
 assert audit['publication_independently_audited']and audit['test_issue_cleanup_independently_verified']
-result={'passed':True,'manifest_files':len(manifest),'memory_samples':len(samples),'HTTP_records':len(records),'completed_HTTP_records':len(complete),'private_behavior_not_reexecuted':True,'observed_grades_by_phase':observed,'quality_classification':audit['classification'],'scope':'Saved bytes and observed outcome consistency only. Failed tests and absent publication remain failures/absence; not a coding-quality or autonomous-reliability certificate.'};(R/(LABEL+'-validation.json')).write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result))
+result={'passed':True,'manifest_files':len(manifest),'memory_samples':len(samples),'HTTP_records':len(records),'completed_HTTP_records':len(complete),'private_behavior_not_reexecuted':True,'observed_grades_by_phase':observed,'posthoc_dispatch_source_fingerprint_checked':posthoc_dispatch_source_checked,'quality_classification':audit['classification'],'scope':'Saved bytes and observed outcome consistency only. Failed tests and absent publication remain failures/absence; not a coding-quality or autonomous-reliability certificate.'};(R/(LABEL+'-validation.json')).write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result))

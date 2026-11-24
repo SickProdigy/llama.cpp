@@ -60,7 +60,12 @@ experiment swap. Its 61,640-token request takes 856.60 seconds with 16,039 cache
 tokens. The [fresh Spam workflow](evaluations/2026-11-23-wide-memory/native-devstral-spam.md)
 passes scoped next-message/cooldown checks locally, but fails original notification
 preservation, weakens a test and performs no requested Gitea issue/fork/PR actions.
-Fresh Announcer is underway. Resource fit is not quality proof.
+[Fresh Announcer](evaluations/2026-11-23-wide-memory/native-devstral-queue.md)
+preserves the original suite and initial fix, but its room-cancellation feature
+retains reply state for emptied jobs and no contribution is published. The raw
+metadata-check failure is qualified by actual pinned dispatcher behavior;
+[matched posthoc controls](evaluations/2026-11-23-wide-memory/announcer-dispatch-cleanup-comparison.json)
+show Q3/Q4 clear that state. GLM remains next. Resource fit is not quality proof.
 
 ## November 22: full P100 plus up to 8 GiB host spillover
 

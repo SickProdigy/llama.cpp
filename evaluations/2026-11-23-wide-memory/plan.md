@@ -13,7 +13,9 @@ below retain the original protocol and successive resource milestones.
   and [qualified fresh Announcer pass](native-q3-queue.md) are audited.
 - Devstral: [resource completion](resource-devstral.md) and [fresh Spam failure](native-devstral-spam.md)
   are audited. Spam passes scoped local checks but fails notification preservation
-  and required publication. Separate fresh Announcer is running.
+  and required publication. [Fresh Announcer](native-devstral-queue.md) preserves
+  original behavior but leaves empty-job reply state in its feature and publishes
+  nothing. Its frozen metadata failure is qualified against pinned dispatchers.
 - GLM: scripted client-history preparation is complete; full pinned download,
   measured P100/runtime compatibility and native task quality remain pending.
 

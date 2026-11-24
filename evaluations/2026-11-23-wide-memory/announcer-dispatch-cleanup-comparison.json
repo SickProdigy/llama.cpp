@@ -1,0 +1,263 @@
+{
+  "classification": "Supplementary posthoc dispatcher/empty-job cleanup comparison; not new actor trials or a reliability certificate",
+  "not_actor_feedback": true,
+  "frozen_grades_unchanged": true,
+  "frozen_Devstral_metadata_failure_is_not_argument_rejection_proof": true,
+  "same_control_source_sha256": "066490657c56bc0dede12026aeb5d6f91ea97c7b90241e25561793a4fe0cc39e",
+  "upstream_pins": [
+    {
+      "requested_ref": "master",
+      "commit": "2a1eb32037a52718bf1ebd72c64092307ffcc960",
+      "url": "https://raw.githubusercontent.com/nicotine-plus/nicotine-plus/2a1eb32037a52718bf1ebd72c64092307ffcc960/pynicotine/pluginsystem.py",
+      "file": "pluginsystem-2a1eb32037a52718bf1ebd72c64092307ffcc960.py",
+      "sha256": "ac16691f1771e0d2006ae50a14dab71f572b699a01aef179117e74bc31c6bf98",
+      "method_start_line": 1000,
+      "method_end_line": 1106,
+      "commit_date": "2026-11-23T22:29:43Z"
+    },
+    {
+      "requested_ref": "3.3.10",
+      "commit": "caf9e101a841ff2e0a96aebc8e07bbf7ff1b2026",
+      "url": "https://raw.githubusercontent.com/nicotine-plus/nicotine-plus/caf9e101a841ff2e0a96aebc8e07bbf7ff1b2026/pynicotine/pluginsystem.py",
+      "file": "pluginsystem-caf9e101a841ff2e0a96aebc8e07bbf7ff1b2026.py",
+      "sha256": "46e33a523fcc855597bd03645f566d928461eb6f51246c55816445fb0d4350c1",
+      "method_start_line": 840,
+      "method_end_line": 946,
+      "commit_date": "2025-03-10T13:28:44Z"
+    },
+    {
+      "requested_ref": "3.3.11",
+      "commit": "f6897dc860769203923a6943e8e9b5d0fae6ee7d",
+      "url": "https://raw.githubusercontent.com/nicotine-plus/nicotine-plus/f6897dc860769203923a6943e8e9b5d0fae6ee7d/pynicotine/pluginsystem.py",
+      "file": "pluginsystem-f6897dc860769203923a6943e8e9b5d0fae6ee7d.py",
+      "sha256": "008021e79243f65ddbe6b6b610941be7dcd1cbb07d0ed05ea04e81e75a00658c",
+      "method_start_line": 851,
+      "method_end_line": 957,
+      "commit_date": "2026-09-16T05:14:14Z"
+    }
+  ],
+  "candidates": [
+    {
+      "candidate": "q3",
+      "source_kind": "remote-grade",
+      "evidence_archive": "native-q3-queue-evidence.tar.gz",
+      "archive_sha256": "3cbfa4618f2fb2993387445ea71f311486a3dc7d023c7d12d808b06b871cdd55",
+      "not_actor_feedback": true,
+      "source_sha256": "f2a7d36fe2e05385c351dc9c129d53c3232c96a02f5909fdcd1bb4f4ebc6e6fc",
+      "pinned_upstream_dispatcher_method_executed_without_body_changes": true,
+      "scope": "Exact dispatcher method with immutable fake peers; not full GUI/network integration. Missing parameters may affect help but are not an argument rejection in these pins. Job cleanup reported separately.",
+      "results": [
+        {
+          "requested_ref": "master",
+          "commit": "2a1eb32037a52718bf1ebd72c64092307ffcc960",
+          "upstream_source_sha256": "ac16691f1771e0d2006ae50a14dab71f572b699a01aef179117e74bc31c6bf98",
+          "upstream_url": "https://raw.githubusercontent.com/nicotine-plus/nicotine-plus/2a1eb32037a52718bf1ebd72c64092307ffcc960/pynicotine/pluginsystem.py",
+          "method_AST_sha256": "db0e672ad9717d1c902f9ec073131579fef4b42424063dadaee3db7a55893bf0",
+          "selective_with_surviving_target": {
+            "declared_parameters": true,
+            "actual_upstream_dispatch_accepted_room_argument": true,
+            "cancelled_event_ids": [
+              2
+            ],
+            "rooms_sent": [
+              "Linux"
+            ],
+            "pending_entries_after_callbacks": 0,
+            "reply_entries_after_callbacks": 0,
+            "completion_reported": true
+          },
+          "cancelling_last_target_of_job": {
+            "actual_upstream_dispatch_accepted_room_argument": true,
+            "cancelled_event_ids": [
+              1
+            ],
+            "pending_entries_after_cancelling_only_target": 0,
+            "reply_entries_after_cancelling_only_target": 0,
+            "completion_reported_after_cancellation": true,
+            "job_cleanup_complete": true
+          }
+        },
+        {
+          "requested_ref": "3.3.11",
+          "commit": "f6897dc860769203923a6943e8e9b5d0fae6ee7d",
+          "upstream_source_sha256": "008021e79243f65ddbe6b6b610941be7dcd1cbb07d0ed05ea04e81e75a00658c",
+          "upstream_url": "https://raw.githubusercontent.com/nicotine-plus/nicotine-plus/f6897dc860769203923a6943e8e9b5d0fae6ee7d/pynicotine/pluginsystem.py",
+          "method_AST_sha256": "c3f80eb12bb8a36e051bb5d30757b106dbd1f300f361511ab2236770d990d20e",
+          "selective_with_surviving_target": {
+            "declared_parameters": true,
+            "actual_upstream_dispatch_accepted_room_argument": true,
+            "cancelled_event_ids": [
+              2
+            ],
+            "rooms_sent": [
+              "Linux"
+            ],
+            "pending_entries_after_callbacks": 0,
+            "reply_entries_after_callbacks": 0,
+            "completion_reported": true
+          },
+          "cancelling_last_target_of_job": {
+            "actual_upstream_dispatch_accepted_room_argument": true,
+            "cancelled_event_ids": [
+              1
+            ],
+            "pending_entries_after_cancelling_only_target": 0,
+            "reply_entries_after_cancelling_only_target": 0,
+            "completion_reported_after_cancellation": true,
+            "job_cleanup_complete": true
+          }
+        }
+      ],
+      "control_sha256": "066490657c56bc0dede12026aeb5d6f91ea97c7b90241e25561793a4fe0cc39e"
+    },
+    {
+      "candidate": "q4",
+      "source_kind": "remote-grade",
+      "evidence_archive": "native-q4-fresh-evidence.tar.gz",
+      "archive_sha256": "d1f370748f6e6a92fbba5ed4bf708c9356afa8f91d90af1a465e47b67210a2b7",
+      "not_actor_feedback": true,
+      "source_sha256": "a87cd45c7836bf5e2340a70535478311ba7aa0ccb6ee1256d8b387e20cd447d3",
+      "pinned_upstream_dispatcher_method_executed_without_body_changes": true,
+      "scope": "Exact dispatcher method with immutable fake peers; not full GUI/network integration. Missing parameters may affect help but are not an argument rejection in these pins. Job cleanup reported separately.",
+      "results": [
+        {
+          "requested_ref": "master",
+          "commit": "2a1eb32037a52718bf1ebd72c64092307ffcc960",
+          "upstream_source_sha256": "ac16691f1771e0d2006ae50a14dab71f572b699a01aef179117e74bc31c6bf98",
+          "upstream_url": "https://raw.githubusercontent.com/nicotine-plus/nicotine-plus/2a1eb32037a52718bf1ebd72c64092307ffcc960/pynicotine/pluginsystem.py",
+          "method_AST_sha256": "db0e672ad9717d1c902f9ec073131579fef4b42424063dadaee3db7a55893bf0",
+          "selective_with_surviving_target": {
+            "declared_parameters": true,
+            "actual_upstream_dispatch_accepted_room_argument": true,
+            "cancelled_event_ids": [
+              2
+            ],
+            "rooms_sent": [
+              "Linux"
+            ],
+            "pending_entries_after_callbacks": 0,
+            "reply_entries_after_callbacks": 0,
+            "completion_reported": true
+          },
+          "cancelling_last_target_of_job": {
+            "actual_upstream_dispatch_accepted_room_argument": true,
+            "cancelled_event_ids": [
+              1
+            ],
+            "pending_entries_after_cancelling_only_target": 0,
+            "reply_entries_after_cancelling_only_target": 0,
+            "completion_reported_after_cancellation": false,
+            "job_cleanup_complete": true
+          }
+        },
+        {
+          "requested_ref": "3.3.11",
+          "commit": "f6897dc860769203923a6943e8e9b5d0fae6ee7d",
+          "upstream_source_sha256": "008021e79243f65ddbe6b6b610941be7dcd1cbb07d0ed05ea04e81e75a00658c",
+          "upstream_url": "https://raw.githubusercontent.com/nicotine-plus/nicotine-plus/f6897dc860769203923a6943e8e9b5d0fae6ee7d/pynicotine/pluginsystem.py",
+          "method_AST_sha256": "c3f80eb12bb8a36e051bb5d30757b106dbd1f300f361511ab2236770d990d20e",
+          "selective_with_surviving_target": {
+            "declared_parameters": true,
+            "actual_upstream_dispatch_accepted_room_argument": true,
+            "cancelled_event_ids": [
+              2
+            ],
+            "rooms_sent": [
+              "Linux"
+            ],
+            "pending_entries_after_callbacks": 0,
+            "reply_entries_after_callbacks": 0,
+            "completion_reported": true
+          },
+          "cancelling_last_target_of_job": {
+            "actual_upstream_dispatch_accepted_room_argument": true,
+            "cancelled_event_ids": [
+              1
+            ],
+            "pending_entries_after_cancelling_only_target": 0,
+            "reply_entries_after_cancelling_only_target": 0,
+            "completion_reported_after_cancellation": false,
+            "job_cleanup_complete": true
+          }
+        }
+      ],
+      "control_sha256": "066490657c56bc0dede12026aeb5d6f91ea97c7b90241e25561793a4fe0cc39e"
+    },
+    {
+      "candidate": "devstral",
+      "source_kind": "local-grade",
+      "evidence_archive": "native-devstral-queue-evidence.tar.gz",
+      "archive_sha256": "efa5d34371fe58871eee78b2d5337b524ec0ce60a5e52ea7aaafb71d3080eb55",
+      "not_actor_feedback": true,
+      "source_sha256": "8286a9ecb37d1e4a5e74b64464368057d72f33a08f15ac88f656e23e4718ed05",
+      "pinned_upstream_dispatcher_method_executed_without_body_changes": true,
+      "scope": "Exact dispatcher method with immutable fake peers; not full GUI/network integration. Missing parameters may affect help but are not an argument rejection in these pins. Job cleanup reported separately.",
+      "results": [
+        {
+          "requested_ref": "master",
+          "commit": "2a1eb32037a52718bf1ebd72c64092307ffcc960",
+          "upstream_source_sha256": "ac16691f1771e0d2006ae50a14dab71f572b699a01aef179117e74bc31c6bf98",
+          "upstream_url": "https://raw.githubusercontent.com/nicotine-plus/nicotine-plus/2a1eb32037a52718bf1ebd72c64092307ffcc960/pynicotine/pluginsystem.py",
+          "method_AST_sha256": "db0e672ad9717d1c902f9ec073131579fef4b42424063dadaee3db7a55893bf0",
+          "selective_with_surviving_target": {
+            "declared_parameters": false,
+            "actual_upstream_dispatch_accepted_room_argument": true,
+            "cancelled_event_ids": [
+              2
+            ],
+            "rooms_sent": [
+              "Linux"
+            ],
+            "pending_entries_after_callbacks": 0,
+            "reply_entries_after_callbacks": 0,
+            "completion_reported": true
+          },
+          "cancelling_last_target_of_job": {
+            "actual_upstream_dispatch_accepted_room_argument": true,
+            "cancelled_event_ids": [
+              1
+            ],
+            "pending_entries_after_cancelling_only_target": 0,
+            "reply_entries_after_cancelling_only_target": 1,
+            "completion_reported_after_cancellation": false,
+            "job_cleanup_complete": false
+          }
+        },
+        {
+          "requested_ref": "3.3.11",
+          "commit": "f6897dc860769203923a6943e8e9b5d0fae6ee7d",
+          "upstream_source_sha256": "008021e79243f65ddbe6b6b610941be7dcd1cbb07d0ed05ea04e81e75a00658c",
+          "upstream_url": "https://raw.githubusercontent.com/nicotine-plus/nicotine-plus/f6897dc860769203923a6943e8e9b5d0fae6ee7d/pynicotine/pluginsystem.py",
+          "method_AST_sha256": "c3f80eb12bb8a36e051bb5d30757b106dbd1f300f361511ab2236770d990d20e",
+          "selective_with_surviving_target": {
+            "declared_parameters": false,
+            "actual_upstream_dispatch_accepted_room_argument": true,
+            "cancelled_event_ids": [
+              2
+            ],
+            "rooms_sent": [
+              "Linux"
+            ],
+            "pending_entries_after_callbacks": 0,
+            "reply_entries_after_callbacks": 0,
+            "completion_reported": true
+          },
+          "cancelling_last_target_of_job": {
+            "actual_upstream_dispatch_accepted_room_argument": true,
+            "cancelled_event_ids": [
+              1
+            ],
+            "pending_entries_after_cancelling_only_target": 0,
+            "reply_entries_after_cancelling_only_target": 1,
+            "completion_reported_after_cancellation": false,
+            "job_cleanup_complete": false
+          }
+        }
+      ],
+      "control_sha256": "066490657c56bc0dede12026aeb5d6f91ea97c7b90241e25561793a4fe0cc39e"
+    }
+  ],
+  "source_fingerprints_match_existing_evidence_archives": true,
+  "interpretation": "Room dispatch works for all three. Empty canceled job reply entries: Q3=0, Q4=0, Devstral=1. A specific finish-message string is observed but not required as the cleanup criterion.",
+  "scope": "Exact upstream dispatcher method executed with immutable fake peers; not a full GUI/network test. Raw primary grade and private source remain separate."
+}

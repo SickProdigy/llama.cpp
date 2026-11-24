@@ -1,0 +1,44 @@
+{
+  "passed": true,
+  "source_fingerprints_checked": true,
+  "dispatch_not_reexecuted": true,
+  "scope": "Recorded comparison consistency, not model quality or full GUI/network integration.",
+  "observations": [
+    {
+      "candidate": "q3",
+      "upstream_ref": "master",
+      "argument_accepted": true,
+      "orphaned_reply_entries": 0
+    },
+    {
+      "candidate": "q3",
+      "upstream_ref": "3.3.11",
+      "argument_accepted": true,
+      "orphaned_reply_entries": 0
+    },
+    {
+      "candidate": "q4",
+      "upstream_ref": "master",
+      "argument_accepted": true,
+      "orphaned_reply_entries": 0
+    },
+    {
+      "candidate": "q4",
+      "upstream_ref": "3.3.11",
+      "argument_accepted": true,
+      "orphaned_reply_entries": 0
+    },
+    {
+      "candidate": "devstral",
+      "upstream_ref": "master",
+      "argument_accepted": true,
+      "orphaned_reply_entries": 1
+    },
+    {
+      "candidate": "devstral",
+      "upstream_ref": "3.3.11",
+      "argument_accepted": true,
+      "orphaned_reply_entries": 1
+    }
+  ]
+}

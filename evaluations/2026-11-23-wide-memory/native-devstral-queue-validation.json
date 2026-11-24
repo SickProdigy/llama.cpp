@@ -1,0 +1,34 @@
+{
+  "passed": true,
+  "manifest_files": 126,
+  "memory_samples": 619,
+  "HTTP_records": 68,
+  "completed_HTTP_records": 68,
+  "private_behavior_not_reexecuted": true,
+  "observed_grades_by_phase": [
+    {
+      "local-grade": {
+        "project_exit": 0,
+        "preservation_exit": 0,
+        "independent_exit": 0
+      }
+    },
+    {
+      "local-grade": {
+        "project_exit": 0,
+        "preservation_exit": 0,
+        "independent_exit": 0
+      }
+    },
+    {
+      "local-grade": {
+        "project_exit": 0,
+        "preservation_exit": 0,
+        "independent_exit": 1
+      }
+    }
+  ],
+  "posthoc_dispatch_source_fingerprint_checked": true,
+  "quality_classification": "Fresh Announcer initial repair passes locally; feature leaves orphaned job reply state and required Gitea publication is absent; frozen metadata failure separately qualified",
+  "scope": "Saved bytes and observed outcome consistency only. Failed tests and absent publication remain failures/absence; not a coding-quality or autonomous-reliability certificate."
+}

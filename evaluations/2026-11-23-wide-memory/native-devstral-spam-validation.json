@@ -28,6 +28,7 @@
       }
     }
   ],
+  "posthoc_dispatch_source_fingerprint_checked": false,
   "quality_classification": "Fresh Spam workflow fails preservation and required Gitea publication; next-message repair and cooldown pass scoped local checks",
   "scope": "Saved bytes and observed outcome consistency only. Failed tests and absent publication remain failures/absence; not a coding-quality or autonomous-reliability certificate."
 }
