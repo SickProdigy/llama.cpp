@@ -36,7 +36,9 @@ issue/fork/PR publication. Its [fresh Announcer workflow](evaluations/2026-11-23
 preserves the original behavior, but the new room cancellation leaves orphaned
 job reply state and nothing is published. A frozen metadata assertion is qualified
 against pinned upstream dispatchers; it does not prove argument rejection.
-GLM remains next; capacity is not task quality.
+The study-owned Devstral file is temporarily rotated after both audited stages;
+all29 original models remain. GLM's pinned public download is underway; its
+runtime, fit and quality are untested. Capacity is not task quality.
 No model winner is claimed.
 
 ## November 22, 2026 compact-review follow-up — evaluation complete

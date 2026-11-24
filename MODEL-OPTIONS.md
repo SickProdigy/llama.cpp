@@ -26,7 +26,7 @@ re-enable wording and plugin/full-suite count qualifications. The [other candida
 remain pending. No winner or autonomous reliability is established.
 The original runtime is restored and audited after each completed GPU stage.
 [Study-owned weight rotation records](evaluations/2026-11-23-wide-memory/study-weight-rotations.json)
-track temporary Q4/Q3 removal to admit the next public file while preserving
+track temporary Q4/Q3/Devstral removal to admit the next public file while preserving
 the original29 and disk reserve. The selected model can be retained from its pin
 at the end; rotation is not a quality-failure verdict.
 
@@ -65,7 +65,9 @@ preserves the original suite and initial fix, but its room-cancellation feature
 retains reply state for emptied jobs and no contribution is published. The raw
 metadata-check failure is qualified by actual pinned dispatcher behavior;
 [matched posthoc controls](evaluations/2026-11-23-wide-memory/announcer-dispatch-cleanup-comparison.json)
-show Q3/Q4 clear that state. GLM remains next. Resource fit is not quality proof.
+show Q3/Q4 clear that state. The owned Devstral weight is temporarily rotated
+after both completed audits; the full pinned GLM download is underway. No GLM
+runtime/fit/quality result is claimed. Resource fit is not quality proof.
 
 ## November 22: full P100 plus up to 8 GiB host spillover
 

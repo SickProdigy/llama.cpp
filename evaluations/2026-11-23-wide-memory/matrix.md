@@ -11,7 +11,7 @@ audited separately from resource fit, authored tests and actual publication.
 | Adapted27B Q3, fresh Announcer | Independent source/behavior pass; authored replay caveat | Re-enable wording qualification | Independent source/behavior pass | Real issue/fork/PR; stale PR metadata, plugin/project count confusion | Completed, restored and audited; [evidence](native-q3-queue.md) |
 | Devstral Small 2 24B Q4_K_M, fresh Spam | Next-message checks pass locally; repeated notifications and weakened old test fail preservation | Local-only; wording qualification | Cooldown scoped pass; original preservation failure persists | No issue/fork/branch/commit/PR actions; generic completion claims | Completed, restored and audited; [evidence](native-devstral-spam.md) |
 | Devstral Small 2 24B Q4_K_M, fresh Announcer | Independent local behavior/original-suite pass; authored timing-case gap | Re-enable wording qualification | Partial cancellation works; emptied-job reply state leaks; metadata failure separately qualified | Wrong original-target fork rejected locally; no actual issue/fork/PR; test-count qualification | Completed, restored and audited; [evidence](native-devstral-queue.md) |
-| GLM-4.7-Flash public Q4_K | Not run | Not run | Not run | Not run | Scripted client history control passes; actual template/P100/fit/quality pending |
+| GLM-4.7-Flash public Q4_K | Not run | Not run | Not run | Not run | Full pinned public download underway after owned Devstral rotation; scripted client history control passes; actual template/P100/fit/quality pending |
 
 The retained IQ3 has [matched resource observations](resource-baseline-v2.md),
 not a new matched native quality score here. Older evaluation cohorts use

@@ -16,8 +16,9 @@ below retain the original protocol and successive resource milestones.
   and required publication. [Fresh Announcer](native-devstral-queue.md) preserves
   original behavior but leaves empty-job reply state in its feature and publishes
   nothing. Its frozen metadata failure is qualified against pinned dispatchers.
-- GLM: scripted client-history preparation is complete; full pinned download,
-  measured P100/runtime compatibility and native task quality remain pending.
+- GLM: scripted client-history preparation is complete; the full pinned download
+  is underway after verified temporary rotation of only the owned Devstral file.
+  Measured P100/runtime compatibility and native task quality remain pending.
 
 No winner or autonomous reliability is established. Remaining named stages,
 independent audits, restoration, fair comparison and retained-model disposition

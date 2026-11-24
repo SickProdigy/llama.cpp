@@ -30,6 +30,21 @@
       "required_completed_stages_restored_and_audited_before_rotation": true,
       "purpose": "Temporary rotation only of newly downloaded owned study weight to admit next candidate with100GiB reserve; not a claim that this model is useless. Original29 preserved; selected model can be restored from pin at end.",
       "private_record_sha256": "ca1ffe22cd326ec79463592ffe2cdfb74ddbf0e6cb2745e0c90ae6b886af6226"
+    },
+    {
+      "candidate": "devstral",
+      "epoch": 1795502563.7312815,
+      "file": "Devstral-Small-2-24B-Instruct-2512-Q4_K_M.gguf",
+      "bytes": 14334446752,
+      "sha256": "d14ba9edee1bb4c4996a726deb81e49ae81800a3216f0774634238c380aee496",
+      "public_url": "https://huggingface.co/unsloth/Devstral-Small-2-24B-Instruct-2512-GGUF/resolve/6e458b8add42681bfd023de5eab93637694aaf82/Devstral-Small-2-24B-Instruct-2512-Q4_K_M.gguf",
+      "free_before_bytes": 123935318016,
+      "free_after_bytes": 138269765632,
+      "original29_metadata_unchanged": true,
+      "full_hash_and_pinned_prefix_verified_before_rotation": true,
+      "required_completed_stages_restored_and_audited_before_rotation": true,
+      "purpose": "Temporary rotation only of newly downloaded owned study weight to admit next candidate with100GiB reserve; not a claim that this model is useless. Original29 preserved; selected model can be restored from pin at end.",
+      "private_record_sha256": "faed64cfa2dba22b84a1a56826bd9ec25f7246c67656f0a6b7855279b7b2956c"
     }
   ]
 }
