@@ -18,8 +18,10 @@ below retain the original protocol and successive resource milestones.
   nothing. Its frozen metadata failure is qualified against pinned dispatchers.
 - GLM: scripted client-history preparation is complete; the full pinned download
   [passes its hash check](glm-download-verification.json) after verified temporary
-  rotation of only the owned Devstral file. Resource preflight is underway.
-  Measured P100/runtime compatibility and native task quality remain pending.
+  rotation of only the owned Devstral file. [Five resource probes complete](resource-glm.md)
+  at98k with CPU expert spill; the initial cache-configuration failure is preserved.
+  Resource restoration is independently verified. Fresh native Spam is underway,
+  followed by Announcer; coding/Gitea quality remains pending.
 
 No winner or autonomous reliability is established. Remaining named stages,
 independent audits, restoration, fair comparison and retained-model disposition

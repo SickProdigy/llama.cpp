@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "kind": "evidence_format_negative_control_not_model_test",
+  "mutation": "Changed archived pinned context source, then recomputed manifest entry and archive sidecar correctly.",
+  "rejected_by_verifier": true,
+  "verifier_exit_code": 1,
+  "verifier_sha256": "8bc5bce65c69f51ae808036249b699be7ce8e934eb87aa90a29ad82ac5e69fd6",
+  "original_archive_unchanged": true
+}

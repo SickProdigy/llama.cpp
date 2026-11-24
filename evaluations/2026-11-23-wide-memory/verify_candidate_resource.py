@@ -9,6 +9,23 @@ for n,h in manifest.items():assert sha(files[n])==h,n
 assert not any(any(part in ['profiles','baseline','receipt-key','state.db','AGENTS.md']for part in PurePosixPath(n).parts)for n in files)
 reg=j('controls/remaining-resource-controller-registration.json');assert sha(files['source/candidate_resource_controller.py'])==reg['controller_sha256'];assert sha(files['controls/remaining-resource-protocol.json'])==reg['protocol_sha256'];protocol=j('controls/remaining-resource-protocol.json');model=protocol[key];identity=j('runtime/model-identity.json');assert identity['sha256']==model['sha256']and identity['bytes']==model['expected_bytes']and identity['file']==model['file'];assert j('runtime/runtime-restoration.json')['restored'];assert j('controls/remaining-resource-'+key+'-preservation.json')['all_29_original_model_metadata_unchanged'];assert j('controls/remaining-resource-'+key+'-owner-preservation.json')['passed']
 summary=j('summary.json');assert json.loads((E/(label+'-summary.json')).read_text())==summary
+if key=='glm'and 'controls/glm-cache-equality-preactor-amendment.json'in files:
+ amendment=j('controls/glm-cache-equality-preactor-amendment.json');old_protocol_bytes=files['controls/remaining-resource-protocol-before-glm-cache-equality-fix.json'];old_protocol=json.loads(old_protocol_bytes);old_reg=j('controls/remaining-resource-controller-registration-before-glm-cache-equality-fix.json')
+ assert sha(old_protocol_bytes)==old_reg['protocol_sha256']==amendment['old_protocol_sha256']
+ assert sha(files['controls/remaining-resource-protocol.json'])==amendment['new_protocol_sha256']
+ assert sha(files['controls/glm-cache-equality-preactor-amendment.json'])==reg['GLM_cache_equality_pre_actor_amendment_sha256']
+ assert old_reg['controller_sha256']==reg['controller_sha256']==amendment['controller_unchanged_sha256']
+ assert old_protocol['glm']==amendment['prior_glm_parameters']and model==amendment['new_glm_parameters']
+ expected=json.loads(json.dumps(old_protocol['glm']))
+ for layout in expected['layouts']:
+  assert layout['cache_k']=='q4_0'and layout['cache_v']=='f16';layout['cache_v']='q4_0'
+ assert expected==model
+ prior='prior-attempts/unequal-declared-cache-types/'
+ result=j(prior+'layout0/result.json');assert not result['resource_probes_completed']and result['backend_state']['ExitCode']==1 and not result['backend_state']['OOMKilled']and not result['GPU_OOM_log_marker']and not result['retry_next_GPU_layout']
+ assert b'model does not support different K (q4_0) and V (f16) cache types'in files[prior+'layout0/backend.log']
+ assert j(prior+'runtime-restoration.json')['restored']and j('controls/remaining-resource-glm-cache-types-attempt1-preservation.json')['all_29_original_model_metadata_unchanged']and j('controls/remaining-resource-glm-cache-types-attempt1-owner-preservation.json')['passed']
+ pins=j('controls/glm-cache-equality-source-pins.json');assert pins==amendment['source_pins']==j('source/glm-cache-equality/pins.json')
+ for pin in pins:assert sha(files['source/glm-cache-equality/'+PurePosixPath(pin['path']).name])==pin['sha256']
 count=0
 for row in summary['layouts']:
  prefix=row['layout'];assert j(prefix+'/result.json')==row['result'];launch=j(prefix+'/launch.json');assert launch['layout']in model['layouts'];assert '--ctx-checkpoints'in launch['argv']and launch['argv'][launch['argv'].index('--ctx-checkpoints')+1]=='2'

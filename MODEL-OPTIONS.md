@@ -34,12 +34,14 @@ Public [format metadata](evaluations/2026-11-23-wide-memory/candidate-format-pre
 was initially inspected from16MiB prefixes for Devstral and GLM. Devstral's full
 pinned file now completes the resource stage below; GLM's full public weight
 [passes its pinned hash check](evaluations/2026-11-23-wide-memory/glm-download-verification.json),
-while actual runtime compatibility and resource fit remain untested. GLM's embedded template
+and [completes the five-probe resource stage](evaluations/2026-11-23-wide-memory/resource-glm.md)
+at 98k with CPU expert spill. Native coding quality remains unproven. GLM's embedded template
 uses `clear_thinking: false` with `enable_thinking: true` to preserve reasoning
 across user turns. A [scripted native CLI control](evaluations/2026-11-23-wide-memory/glm-cli-history-control/README.md)
 now verifies client reasoning retention through a real terminal call and
-persisted followup, with the intended settings serialized. Actual GLM template,
-GPU compatibility, full-profile behavior and quality remain unverified.
+persisted followup, with the intended settings serialized. Resource probes now
+exercise the actual GLM template/history and P100 inference. Full-profile
+coding/Gitea behavior and quality remain unverified.
 Do not copy Qwen's thinking-off settings. Devstral declares `mistral3`,40layers,
 8KVheads; GLM declares `deepseek2` with MLA and47layers. These guide bounded
 layout trials; file size and metadata are not quality/fit proof.
@@ -68,7 +70,12 @@ metadata-check failure is qualified by actual pinned dispatcher behavior;
 [matched posthoc controls](evaluations/2026-11-23-wide-memory/announcer-dispatch-cleanup-comparison.json)
 show Q3/Q4 clear that state. The owned Devstral weight is temporarily rotated
 after both completed audits; the full pinned GLM download is verified and its
-resource preflight is underway. No GLM runtime/fit/quality result is claimed. Resource fit is not quality proof.
+five-probe resource stage completes at98k with 12 CPU expert layers,15336MiB
+GPU and6.564GiB peak charged host memory, zero experiment swap. Whole-host
+swap counters rise substantially; no attribution to the model is made. The60k
+request takes1410.74s. The initial unequal K/V configuration failure and
+correction are preserved. Fresh GLM coding trials are underway; no quality
+result is claimed. Resource fit is not quality proof.
 
 ## November 22: full P100 plus up to 8 GiB host spillover
 

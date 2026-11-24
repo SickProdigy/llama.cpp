@@ -38,8 +38,12 @@ job reply state and nothing is published. A frozen metadata assertion is qualifi
 against pinned upstream dispatchers; it does not prove argument rejection.
 The study-owned Devstral file is temporarily rotated after both audited stages;
 all29 original models remain. GLM's [full public download](evaluations/2026-11-23-wide-memory/glm-download-verification.json)
-passed its pinned SHA-256 check; resource preflight is underway. Its runtime,
-fit and quality are untested. Capacity is not task quality.
+passed its pinned SHA-256 check and [completes five resource probes](evaluations/2026-11-23-wide-memory/resource-glm.md)
+at 98k context: 15,336 MiB GPU, 6.56 GiB peak charged host memory and no
+experiment swap. The 60k response takes 23.5 minutes; whole-host swap activity
+is substantial and separately reported. A corrected cache-configuration failure
+is preserved. Fresh GLM coding/Gitea trials are underway; quality is unproven.
+Capacity is not task quality.
 No model winner is claimed.
 
 ## November 22, 2026 compact-review follow-up — evaluation complete

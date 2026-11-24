@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "manifest_files": 70,
+  "layouts": 1,
+  "complete_responses": 5,
+  "not_coding_or_Gitea_quality_proof": true,
+  "scope": "Checks retained bytes, pins, token/measurement consistency and restoration audits. Does not rerun inference or establish whole-host peak fit."
+}
