@@ -21,16 +21,24 @@ is not coding quality. The original runtime is restored after this resource
 stage. The subsequent [fresh native Q6 baseline](evaluations/2026-11-24-gpu-quant/native-fable-q6-beets.md)
 confirms 41/41 layers offloaded but fails repair, documentation, feature and
 publication checks in 21.05 coding minutes. It preserves originals but breaks
-manual import dispatch; 16 new tests fail collection. The original runtime and
-all 30 retained models/settings/owner edits/Codex are restored/verified afterward.
+manual import dispatch; 16 new tests fail collection. The original runtime is restored, and preservation of all 30 retained models,
+settings, owner edits and the Codex container is verified afterward.
 The Q4 capacity comparison also completes/restores (8,964 MiB sampled GPU peak,
-no study swap); its fresh native workflow is now launched. A separate prospective Fable Q4/Q6
+no study swap); its fresh native workflow also completes with no edits/publication and native
+skill-request stops ([Q4 audit](evaluations/2026-11-24-gpu-quant/native-fable-q4-beets.md)).
+Neither nonthinking Fable variant qualifies; faster no-op is not a quality win.
+The Vibe Q4 capacity stage completes with post-original-stop page-cache accounting;
+its fresh native workflow is launched. Vibe Q6 remains pending. A separate prospective Fable Q4/Q6
 publisher-sampling, reasoning-enabled pair is registered; this low-temperature
 nonthinking baseline is not a verdict on Fable's best practical configuration.
 
 The adapted 27B Q5/Q6 public files exceed the entire 16 GiB device before context
 and runtime overhead, so they are excluded from this GPU-resident shortlist.
 This does not change the earlier Q4 correctness result or its slow-work tradeoff.
+The same publisher also has a [smaller IQ4_XS variant](evaluations/2026-11-24-gpu-quant/prospective-adapted-iq4-xs.json),
+now pinned as an additional prospective fit check. Its 14.27 GiB file is not
+downloaded or proven to fit with context/runtime; actual storage reserve and
+measured GPU residency must gate that trial.
 No new everyday model/profile selection or autonomous-reliability claim is made.
 
 ## November 24: wider-memory evaluation complete
@@ -336,3 +344,6 @@ the actual configuration instead of promising unchanged output. The pinned
 documentation also says synthetic-acceptance benchmark output is not valid
 model output. Do not use synthetic acceptance to score repository-agent quality.
 This is a recorded future lead, not another cohort in the current investigation.
+
+
+The [VibeForged Q4 unattended baseline](evaluations/2026-11-24-gpu-quant/native-vibe-q4-beets.md) completed without code changes: all 18 selected `execute_code` attempts were blocked by copied-profile one-shot approval policy. Repository read control succeeded; code-tool ability remains unmeasured. A separate isolated deny/approve pure-code control confirms this mechanism without model calls. Original deployed settings remain unchanged. The prospective comparison now uses a fresh explicitly trusted Vibe Q4/Q6 pair; Q6 deny-profile coding is deferred, with its capacity check proceeding independently. Fable Q4/Q6 baseline outcomes remain preserved. Higher precision has not yet demonstrated a quality gain.

@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "kind": "artifact_consistency_controls_not_model_trials",
+  "actual_positive_accepted": true,
+  "negative_controls": [
+    {
+      "case": "manual_wrong_source",
+      "coherent_manifest_and_audit_references_updated": true,
+      "rejected": true,
+      "exit_code": 1
+    },
+    {
+      "case": "context_wrong_request",
+      "coherent_manifest_and_audit_references_updated": true,
+      "rejected": true,
+      "exit_code": 1
+    }
+  ],
+  "original_archive_unchanged_SHA256": "f3ffdaae276d504660bfc98647876dbef7ff7484a92de27711e8f8580500f680"
+}

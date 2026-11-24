@@ -1,0 +1,193 @@
+{
+  "classification": "fresh_primary_low_temperature_nonthinking_baseline",
+  "candidate_key": "fable-q4",
+  "family": "beets_lifecycle",
+  "model": {
+    "file": "Qwen3.6-14B-A3B-FableVibes-Q4_K_M.gguf",
+    "bytes": 8465553920,
+    "sha256": "21aa4b0b28090469e8a319c889451df2f1ea6aad27ac3818c8c8a86f86d5bc9e",
+    "after_full_SHA_advised_DONTNEED_for_only_selected_model_file": true,
+    "not_global_cache_flush_or_proof_of_cold_cache": true
+  },
+  "phases": [
+    {
+      "family": "beets_lifecycle",
+      "arm": "fable-q4",
+      "phase": 0,
+      "elapsed_seconds": 61.259771329001524,
+      "exit_code": 0,
+      "external_timeout": false,
+      "query_sha256": "beee14a6776b2978bc452d856b39e32ae9c10e2deba5b5ed5ffba2f5fc1460a3",
+      "native_session_fingerprints": {
+        "logical_root": "253692e4a84b2c2b20c597f41d909d2470857a9f78e50763e80ba13faacff4bc",
+        "incoming_sid": null,
+        "effective_sid": "253692e4a84b2c2b20c597f41d909d2470857a9f78e50763e80ba13faacff4bc"
+      },
+      "local_grade": {
+        "kind": "unpublished-local-draft",
+        "family": "beets_lifecycle",
+        "phase": 0,
+        "source_digest": "06d454e90056f73359a168f0d15ecedd3ee8e3d555797450257ed0bb2dcfa68e",
+        "project_exit": 0,
+        "preservation_exit": 0,
+        "independent_exit": 1,
+        "changed_paths": [],
+        "not_fed_to_models": true
+      },
+      "remote_grade": null,
+      "remote_grade_absent": true,
+      "forge": {
+        "scope_state": {
+          "issue": null,
+          "pr": null,
+          "branch": null,
+          "commits": 0
+        },
+        "phase": 0
+      }
+    },
+    {
+      "family": "beets_lifecycle",
+      "arm": "fable-q4",
+      "phase": 1,
+      "elapsed_seconds": 20.49959130899515,
+      "exit_code": 0,
+      "external_timeout": false,
+      "query_sha256": "260b662f2b7392663ab74c6926c6e00cc1e27488f1ad2d056eb7c1b187b08588",
+      "native_session_fingerprints": {
+        "logical_root": "253692e4a84b2c2b20c597f41d909d2470857a9f78e50763e80ba13faacff4bc",
+        "incoming_sid": "253692e4a84b2c2b20c597f41d909d2470857a9f78e50763e80ba13faacff4bc",
+        "effective_sid": "253692e4a84b2c2b20c597f41d909d2470857a9f78e50763e80ba13faacff4bc"
+      },
+      "local_grade": {
+        "kind": "unpublished-local-draft",
+        "family": "beets_lifecycle",
+        "phase": 1,
+        "source_digest": "06d454e90056f73359a168f0d15ecedd3ee8e3d555797450257ed0bb2dcfa68e",
+        "project_exit": 0,
+        "preservation_exit": 0,
+        "independent_exit": 1,
+        "changed_paths": [],
+        "not_fed_to_models": true
+      },
+      "remote_grade": null,
+      "remote_grade_absent": true,
+      "forge": {
+        "scope_state": {
+          "issue": null,
+          "pr": null,
+          "branch": null,
+          "commits": 0
+        },
+        "phase": 1
+      }
+    },
+    {
+      "family": "beets_lifecycle",
+      "arm": "fable-q4",
+      "phase": 2,
+      "elapsed_seconds": 20.48345627996605,
+      "exit_code": 0,
+      "external_timeout": false,
+      "query_sha256": "40914ef6af6210cffc2728f9e6811a52ed1b88e402397599ae4233c4692853eb",
+      "native_session_fingerprints": {
+        "logical_root": "253692e4a84b2c2b20c597f41d909d2470857a9f78e50763e80ba13faacff4bc",
+        "incoming_sid": "253692e4a84b2c2b20c597f41d909d2470857a9f78e50763e80ba13faacff4bc",
+        "effective_sid": "253692e4a84b2c2b20c597f41d909d2470857a9f78e50763e80ba13faacff4bc"
+      },
+      "local_grade": {
+        "kind": "unpublished-local-draft",
+        "family": "beets_lifecycle",
+        "phase": 2,
+        "source_digest": "06d454e90056f73359a168f0d15ecedd3ee8e3d555797450257ed0bb2dcfa68e",
+        "project_exit": 0,
+        "preservation_exit": 0,
+        "independent_exit": 1,
+        "changed_paths": [],
+        "not_fed_to_models": true
+      },
+      "remote_grade": null,
+      "remote_grade_absent": true,
+      "forge": {
+        "scope_state": {
+          "issue": null,
+          "pr": null,
+          "branch": null,
+          "commits": 0
+        },
+        "phase": 2
+      }
+    }
+  ],
+  "coding_elapsed_seconds": 102.24281891796272,
+  "whole_supervised_stage_seconds": 470.39839911460876,
+  "read_only_control_seconds": 143.392187820049,
+  "independent_final_audit": {
+    "epoch": 1795549690.2710984,
+    "audit_complete": true,
+    "not_actor_feedback": true,
+    "candidate": "fable-q4",
+    "family": "beets_lifecycle",
+    "overall_workflow_completed_correctly": false,
+    "initial_repair_completed": false,
+    "requested_README_update_completed": false,
+    "feature_completed": false,
+    "remote_publication_completed": false,
+    "no_candidate_edits_any_phase": true,
+    "authored_tests_any_phase": 0,
+    "counterfactual_and_additional_dispatch_tests_not_repeated_for_unchanged_source": true,
+    "original_runtime_restored_and_independently_verified": true,
+    "all30retained_models_unchanged": true,
+    "owner_pending_edits_and_Codex_preserved": true,
+    "all_owned_issues_closed_or_absent": true,
+    "owned_containers_network_removed": true,
+    "evidence_SHA256": {
+      "fable-q4-beets-initial-manual-audit.json": "5f750531cc289c14bd4b95eed83401f03a7554ac308f4fd9a7c13b2920410fa2",
+      "fable-q4-beets-README-manual-audit.json": "b8aa79c9345ea7a2e7e4e77bb56a96f32ac75ba0273c574a67181276f7318c75",
+      "fable-q4-beets-feature-manual-audit.json": "d78a5ebec359b6759d84c2495da6c08acc839408855fb99d12d65a6561fbf052",
+      "fable-q4-beets-read-control-audit.json": "04fd79eb84725cde8cefab08fa98f794affe0dae33f093101716f1fe34e28182",
+      "fable-q4-beets-context-instruction-audit.json": "966ee771fbbb652720fe32ccf3c278d938a932c0ba95739bf5947f9069b93df8",
+      "fable-q4-beets-publication-independent-readback.json": "560e159b1407dcd1304e160048525f204a6b3cff531a7db04daef866acfc6a63",
+      "fable-q4-beets-command-dispatch-control.json": "292993fb3a77c6dae87097e78462af0e3b6aff746554dfc2042d6fdf72f65168",
+      "native-fable-q4-beets-cleanup.json": "a50dc19e5bf3c5fa82b08030a6f62b3dcc6adaaf4836620340c1a8ef582ac122",
+      "native-fable-q4-beets_lifecycle-preservation.json": "a23071b66a0cc563d5b9d48de1b7658cc84fcd05c4e6a4cffdbaa6f106a40a1d",
+      "native-fable-q4-beets_lifecycle-owner-preservation.json": "495561fdf2a1591525cbf7baafa1d68ef99415de9e0179c55c64362b23a06204"
+    },
+    "limitation": "One fresh low-temperature nonthinking lineage; faster no-op is not a correctness gain or general checkpoint/quantization verdict."
+  },
+  "measurements": {
+    "sample_count": 37,
+    "complete_aggregate_sample_count": 37,
+    "measurement_error_sample_count": 0,
+    "peak_GPU_MiB": 8964,
+    "peak_observed_cgroup_bytes": 6991122432,
+    "peak_observed_all_process_PSS_bytes": 1960181760,
+    "peak_observed_experiment_swap_bytes": 0,
+    "resource_guard_samples": 0,
+    "minimum_model_disk_free_bytes": 118987649024,
+    "global_pswpin_delta_pages": 4153,
+    "global_pswpout_delta_pages": 688,
+    "global_swap_not_attributed_to_model": true,
+    "HTTP_records": 38,
+    "completed_HTTP_records_without_transport_error": 38,
+    "maximum_completed_prompt_tokens": 17979,
+    "HTTP_latency_seconds": {
+      "min": 0.8234682083129883,
+      "median": 1.555285096168518,
+      "max": 67.75154042243958,
+      "sum": 160.05887484550476
+    },
+    "sampling_not_continuous_whole_host_bound": true,
+    "not_isolated_decode_throughput": true
+  },
+  "comparison_limits": [
+    "One fresh native coding lineage with dependent followups; read control is separate.",
+    "Matched sampler/seed within checkpoint; seed does not isolate precision causally.",
+    "Current baseline disables thinking; publisher reasoning mode remains a separately registered comparison.",
+    "Internal actor network permits selected checkout and scoped configured MCP, but external terminal Git/DNS is blocked. Unrestricted-network performance is unmeasured.",
+    "Actual CLI includes normal skills and 33 tools, a larger schema than explicit-subset transport preflight.",
+    "Native budget-message presence is audited per candidate; no operator resend, continuation or private grader feedback.",
+    "Actual prompt size and context composition are audited per candidate; neither allocation nor literal retention proves useful whole-window reasoning.",
+    "Private source snapshots, raw requests/responses, profiles, session DBs, graders, references and signing keys stay local. Saved-evidence consistency verification does not rerun the private workflow or prove behavior correct."
+  ]
+}

@@ -12,7 +12,9 @@ def update_audit(files,name,value):
     final_name='audits/'+key+'-beets-final-audit.json';final=json.loads(files[final_name])
     final['evidence_SHA256'][name]=hashlib.sha256(files['audits/'+name]).hexdigest();write(files,final_name,final)
     s=json.loads(files['summary.json']);s['independent_final_audit']=final;write(files,'summary.json',s)
-for case,target in [('manual_wrong_source','audit[\'source_SHA256\']'),('context_wrong_request','private_saved_request_file_SHA256'),('authored_control_wrong_source','candidate/source-sha256.json')]:
+cases=[('manual_wrong_source','audit[\'source_SHA256\']'),('context_wrong_request','private_saved_request_file_SHA256')]
+if 'controls/'+key+'-beets_lifecycle-phase2-test-adequacy/candidate/source-sha256.json'in original:cases.append(('authored_control_wrong_source','candidate/source-sha256.json'))
+for case,target in cases:
     files=dict(original)
     if case=='manual_wrong_source':
         name=key+'-beets-initial-manual-audit.json';value=json.loads(files['audits/'+name]);value['source_SHA256']['beetsbridge/__init__.py']='0'*64;update_audit(files,name,value)

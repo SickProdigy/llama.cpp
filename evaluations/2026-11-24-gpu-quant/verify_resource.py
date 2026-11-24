@@ -18,6 +18,14 @@ read = lambda name: json.loads(files[name])
 summary, protocol = read('summary.json'), read('protocol.json')
 key = summary['candidate']
 pin = protocol[key]
+if 'extra-registration.json' in files:
+    registration=read('extra-registration.json')
+    assert hashlib.sha256(files['controller.py']).hexdigest()==registration['controller_sha256']
+    assert hashlib.sha256(files['protocol.json']).hexdigest()==registration['protocol_sha256']
+    assert hashlib.sha256(files['model_cache_probe.py']).hexdigest()==registration['cache_helper_sha256']
+    cache=read('observed/selected-file-cache-after-original-stop.json')
+    assert cache==summary['selected_file_cache_after_original_stop'] and cache['mincore_cached_page_bytes_after']==0
+
 identity = read('observed/model-identity.json')
 assert identity['sha256'] == pin['sha256']
 assert identity['bytes'] == pin['expected_bytes']

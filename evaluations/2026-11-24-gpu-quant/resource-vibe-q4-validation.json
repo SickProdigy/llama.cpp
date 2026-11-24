@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "candidate": "vibe-q4",
+  "manifest_files": 45,
+  "memory_samples": 60,
+  "completed_probes": 5,
+  "coding_quality_not_validated": true,
+  "archive_sha256": "e9bdaa7f4abfaae99e8c5b46d3f194f7e7430e41833f904e23a7df978a516b54"
+}

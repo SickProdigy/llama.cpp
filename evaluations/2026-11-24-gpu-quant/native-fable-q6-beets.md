@@ -118,7 +118,7 @@ No remote default branch changes or merges occur.
 
 Original service identities/images/configuration, alias/context, four profile
 files, all 30 retained model metadata entries, owner pending files/instructions
-and Hermes-Codex state are independently verified after restoration. Exact owned
+and Hermes-Codex container state are independently verified after restoration. Exact owned
 containers and network are removed. A later scoped mincore check observes
 3,796,992 cached bytes for the inactive Q6 file; advising only that file DONTNEED
 reduces the observed resident pages to zero. No model content is modified, and no global cache flush occurs. This poststage observation does not reconstruct historical residency.

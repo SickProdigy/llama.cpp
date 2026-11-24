@@ -1,0 +1,16 @@
+{
+  "recorded_epoch": 1795550534.1941059,
+  "repo": "netprojects/Qwen3.8-27B-hermes-adapted-GGUF",
+  "revision": "10fdf357f14825c61ad7eb42a932e1f1e4390e8f",
+  "file": "Qwen3.8-27B-hermes-IQ4_XS.gguf",
+  "expected_bytes": 15321491104,
+  "advertised_SHA256": "d25b50a2bfdfba157c2baf959f298d706d70083255bab95232ffcd40fbafcaba",
+  "weight_file_GiB": 14.26925054192543,
+  "downloaded": false,
+  "full_SHA_verified": false,
+  "GPU_fit_measured": false,
+  "reason": "Same adapted27B checkpoint has the strongest earlier slow supervised result; IQ4_XS is smaller than Q4_K_M and merits a measured mostly-GPU fit check. File size alone does not prove room for98k context/runtime.",
+  "planned_admission": "Inspect prior27B measured layouts and pinned header/runtime compatibility before choosing controls. Start with a measured all-GPU98k layout; only register justified smaller-batch/context or minimal CPU-residency alternatives before their trials, and report actual spillover/latency. No substantial CPU fallback by default.",
+  "storage": "Preserve original30 and >=100GiB reserve. Model disk currently lacks enough margin for this file. An owned Docker staging volume is an option only after its actual filesystem/free space and ownership are measured; overlay free-space observation alone is not volume proof.",
+  "not_a_quality_or_hardware_success": true
+}

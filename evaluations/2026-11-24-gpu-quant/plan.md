@@ -4,7 +4,8 @@ Status: first Fable Q6 capacity stage complete and original runtime restored.
 The first fresh Fable Q6 nonthinking workflow is complete and independently
 audited: repair/docs/feature/publication fail. Original runtime and all retained
 models/owner settings are restored/verified; the Q4 capacity stage also completes/restores, and its fresh native coding
-stage is launched.
+stage also completes with no edits or publication. Both baseline Fable quants
+are audited/restored/cleaned; Vibe Q4 resource testing is active.
 See [current matrix](matrix.md) and [resource evidence](resource-fable-q6-summary.json).
 
 Compare retained FableVibes Q4/Q6 and VibeForged v2 Q4/Q6 first. Earlier native
@@ -61,3 +62,18 @@ general file-type field differs. No importance-matrix metadata is recorded.
 That absence does not prove none was used or establish identical source weights
 and conversion/calibration history. Full file SHA256 verification is separate
 and occurs before each model's inference.
+
+## Prospective adapted27B IQ4_XS fit check
+
+The [pinned public IQ4_XS option](prospective-adapted-iq4-xs.json) is smaller
+than the earlier adapted27B Q4_K_M while retaining the same trained checkpoint
+family. It is not downloaded or measured here yet. Its weight file alone is
+14.27 GiB, so room for context/runtime must be measured; no full-GPU claim follows
+from that size. Inspect prior 27B controls before registering layouts. Preserve
+all 30 retained models and the 100 GiB reserve. An owned staging volume on another
+filesystem may avoid consuming the model drive's narrow reserve, but its actual
+free space and ownership must be verified before download. No GPU purchase or
+local quantization is implied.
+
+
+The [VibeForged Q4 unattended baseline](native-vibe-q4-beets.md) completed without code changes: all 18 selected `execute_code` attempts were blocked by copied-profile one-shot approval policy. Repository read control succeeded; code-tool ability remains unmeasured. A separate isolated deny/approve pure-code control confirms this mechanism without model calls. Original deployed settings remain unchanged. The prospective comparison now uses a fresh explicitly trusted Vibe Q4/Q6 pair; Q6 deny-profile coding is deferred, with its capacity check proceeding independently. Fable Q4/Q6 baseline outcomes remain preserved. Higher precision has not yet demonstrated a quality gain.

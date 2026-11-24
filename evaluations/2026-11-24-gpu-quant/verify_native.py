@@ -19,7 +19,13 @@ public_protocol=Path(__file__).with_name('resource-protocol.json').read_bytes()
 assert sha(public_protocol)==protocol['private_code_fingerprints']['gpu-quant-resource-protocol.json']
 pin=json.loads(public_protocol)[key];identity=read('runtime/model-identity.json')
 assert identity==s['model'] and identity['sha256']==pin['sha256'] and identity['bytes']==pin['expected_bytes'] and identity['file']==pin['file']
-assert sha(files['source/gpu_quant_native_controller.py'])==protocol['private_code_fingerprints']['gpu_quant_native_controller.py']
+controller=protocol.get('controller_source','gpu_quant_native_controller.py')
+assert sha(files['source/'+controller])==protocol['private_code_fingerprints'][controller]
+if 'runtime/selected-file-cache-after-original-stop.json'in files:
+    assert read('runtime/selected-file-cache-after-original-stop.json')['mincore_cached_page_bytes_after']==0
+    assert sha(files['source/model_cache_probe.py'])==protocol['private_code_fingerprints']['model_cache_probe.py']
+    admission=read('controls/fresh-coding-source-admission.json')
+    assert admission['source_unchanged_after_read_control']and admission['source_digest']==admission['baseline_digest']
 assert read('runtime/runtime-restoration.json')['restored']
 assert read('runtime/placement-check.json')['all_layers_offloaded']
 assert read('audits/cleanup.json')['passed']
@@ -44,7 +50,8 @@ for phase in range(3):
     audit=read('audits/'+key+'-beets-'+suffix+'-manual-audit.json')
     source=read(prefix+audit['source_kind']+'/source-sha256.json') if audit['source_kind']in ['local-grade','remote-grade'] else read(prefix+'local-grade/source-sha256.json')
     assert audit['source_SHA256']==source
-    assert audit['source_digest']==row['local_grade']['source_digest']
+    kind='remote_grade' if audit['source_kind']=='remote-grade' else 'local_grade'
+    assert audit['source_digest']==row[kind]['source_digest']
     assert audit['elapsed_seconds']==run['elapsed_seconds'] and audit['CLI_exit_code']==run['exit_code']
 assert s['coding_elapsed_seconds']==sum(p['elapsed_seconds']for p in s['phases'])
 metrics=[read(n)for n in sorted(files)if n.startswith('requests/')and n.endswith('.metrics.json')]
@@ -63,7 +70,7 @@ for phase in context['phases']:
     assert m['request_sha256']==phase['wire_request_SHA256']
 dispatch=read('audits/'+key+'-beets-command-dispatch-control.json')
 for result in dispatch['results']:
-    if result['source_kind']=='candidate':assert result['candidate_module_SHA256']==read('phases/2/local-grade/source-sha256.json')['beetsbridge/__init__.py']
+    if result['source_kind']=='candidate':assert result['candidate_module_SHA256']==read('phases/2/'+dispatch.get('candidate_source_kind','local-grade')+'/source-sha256.json')['beetsbridge/__init__.py']
 for phase in [0,2]:
     root='controls/'+key+'-'+family+'-phase'+str(phase)+'-test-adequacy/'
     if root+'result.json'not in files:continue

@@ -5,7 +5,8 @@ is active: retained Fable/Vibe Q4 and Q6 first, evaluating correctness and laten
 together at realistic context. Fable Q6 completes its first capacity stage at
 98,304 context (11,566 MiB sampled GPU peak; no study swap), but its first
 thinking-disabled coding workflow fails correctness/publication checks in 21.05
-coding minutes. Q4 and publisher reasoning-mode comparisons remain pending.
+coding minutes. Q4 also completes without edits or publication (1.70 coding minutes). Vibe and
+publisher reasoning-mode comparisons remain pending.
 See the protocol/results before treating fit as useful agent behavior.
 
 GGUF testing notes for Hermes Agent running through llama.cpp.
@@ -805,3 +806,6 @@ Outcome: current best local baseline. Minimal write test passes cleanly; advance
 - Lower quantization does not inherently change max context, but it can free enough VRAM for a larger KV cache.
 - The strongest local balance so far is still the Qwen3.6 VibeForged pair: Q4_K_M for efficiency, Q6_K for higher-context headroom.
 - Repeated `body is required` or similar write-tool loops are usually structured-argument failures, not proof that the MCP server itself is broken.
+
+
+The [VibeForged Q4 unattended baseline](evaluations/2026-11-24-gpu-quant/native-vibe-q4-beets.md) completed without code changes: all 18 selected `execute_code` attempts were blocked by copied-profile one-shot approval policy. Repository read control succeeded; code-tool ability remains unmeasured. A separate isolated deny/approve pure-code control confirms this mechanism without model calls. Original deployed settings remain unchanged. The prospective comparison now uses a fresh explicitly trusted Vibe Q4/Q6 pair; Q6 deny-profile coding is deferred, with its capacity check proceeding independently. Fable Q4/Q6 baseline outcomes remain preserved. Higher precision has not yet demonstrated a quality gain.

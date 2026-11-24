@@ -1,13 +1,13 @@
 # GPU-resident quantization comparison
 
 November 24, 2026. In progress. The first thinking-disabled Fable Q6 workflow
-fails independently audited correctness and publication checks; other cells remain pending.
+fails independently audited correctness and publication checks; Q4 also fails without any edits. Vibe cells and publisher-mode controls remain pending.
 
 | Checkpoint / public quant | Capacity at 98,304 context | Fresh Beets coding/Gitea workflow |
 |---|---|---|
 | FableVibes Q6_K, retained | Probes complete; capacity layout complete; native confirms 41/41 layers offloaded; 11,566 MiB peak sampled GPU | Repair not performed; README inaccurate; feature breaks manual imports, tests fail collection, no publication ([audit](native-fable-q6-beets.md)); 21.05 coding minutes |
-| Same FableVibes Q4_K_M, retained | Capacity probes complete; 8,964 MiB sampled GPU | Fresh native coding launched; unscored |
-| VibeForged v2 Q4_K_M, retained | New matched stage pending | Pending |
+| Same FableVibes Q4_K_M, retained | Capacity probes complete; 8,964 MiB sampled GPU | All three coding turns make no edits/tests/publication; skill-request stops; 1.70 coding minutes ([audit](native-fable-q4-beets.md)) |
+| VibeForged v2 Q4_K_M, retained | Capacity complete; 8,964 MiB sampled GPU; selected-file cache verified 0 after originals stop | Fresh native stage launched; unscored |
 | Same VibeForged v2 Q6_K, retained | New matched stage pending | Pending |
 | FableVibes Q5_K_M, public | Possible intermediate; not downloaded or measured in this study | Not started |
 | Adapted 27B Q5/Q6 | Weight files alone exceed 16 GiB; excluded from GPU-resident shortlist | Not run; no quality-failure claim |
@@ -73,5 +73,32 @@ GPU, 6.516 GiB charged cgroups, 1.445 GiB PSS, no study swap/guards/errors. Its
 output pages without attribution. These operational pilot timings include
 brief CPU-only evidence helpers when sampled; they do not isolate a quantization
 speed effect. [Q4 resource evidence](resource-fable-q4-summary.json) is validated
-with the same positive/coherent-negative checks. The fresh native coding stage
-is launched with an untouched profile and the same declared task/sampler/seed.
+with the same positive/coherent-negative checks. The fresh native coding stage used an untouched profile and the same declared task/sampler/seed; its completed no-edit result follows.
+
+Fable Q4's completed native baseline has no edits in any phase, 37 complete
+samples, 8,964 MiB GPU, 6.511 GiB charged cgroups, 1.826 GiB PSS and no study
+swap/guards/errors. Its 38 complete HTTP captures reach only 17,979 prompt tokens;
+this is failure before useful large-context code work, not a long-context success.
+Original runtime/profile/model/owner/Codex preservation and exact cleanup are
+verified; connected issue/PR lists are empty and upstream main unchanged.
+The [Q4 report](native-fable-q4-beets.md) and artifacts retain that outcome.
+
+Before either Vibe stage, repeat selected-file cache advice after the original
+backend stops and record kernel page residency. Vibe Q4 is also the production
+mapped model; advising it only before stop could leave shared mapped pages charged
+outside the experiment. This accounting amendment changes no task, prompt, weights,
+sampler or model settings. The same Vibe pair uses it; no global cache flush occurs.
+
+Vibe Q4's [capacity observations](resource-vibe-q4-summary.json) complete and the
+original runtime is restored before native launch. The selected production-model
+file has 285,806,592 cached bytes after original stop, reduced to 0 by advice of
+that inactive file only. The controller/helper registration is bound by the
+saved-evidence validator; no global cache flush occurs. This is an accounting
+control, not an accuracy improvement. The completed native stage is policy-confounded; see the appended finding below.
+
+The [adapted27B IQ4_XS option](prospective-adapted-iq4-xs.json) is additionally
+pinned for a future fit check; it is not downloaded or hardware/quality-tested in
+this study. It offers a smaller 4-bit format, not a newer trained checkpoint.
+
+
+The [VibeForged Q4 unattended baseline](native-vibe-q4-beets.md) completed without code changes: all 18 selected `execute_code` attempts were blocked by copied-profile one-shot approval policy. Repository read control succeeded; code-tool ability remains unmeasured. A separate isolated deny/approve pure-code control confirms this mechanism without model calls. Original deployed settings remain unchanged. The prospective comparison now uses a fresh explicitly trusted Vibe Q4/Q6 pair; Q6 deny-profile coding is deferred, with its capacity check proceeding independently. Fable Q4/Q6 baseline outcomes remain preserved. Higher precision has not yet demonstrated a quality gain.
