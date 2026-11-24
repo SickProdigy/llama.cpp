@@ -45,6 +45,21 @@
       "required_completed_stages_restored_and_audited_before_rotation": true,
       "purpose": "Temporary rotation only of newly downloaded owned study weight to admit next candidate with100GiB reserve; not a claim that this model is useless. Original29 preserved; selected model can be restored from pin at end.",
       "private_record_sha256": "faed64cfa2dba22b84a1a56826bd9ec25f7246c67656f0a6b7855279b7b2956c"
+    },
+    {
+      "candidate": "glm",
+      "epoch": 1795527844.2483964,
+      "file": "GLM-4.7-Flash-Q4_K.gguf",
+      "bytes": 18244193920,
+      "sha256": "b6019edc5fbe37d3660d2e994d16c839a7855a6f03362c5dcf8142ba479cd0d2",
+      "free_before_bytes": 119711707136,
+      "free_after_bytes": 137955905536,
+      "original29_metadata_unchanged": true,
+      "purpose": "Temporary rotation only of newly downloaded owned study weight to admit next candidate with100GiB reserve; not a claim that this model is useless. Original29 preserved; selected model can be restored from pin at end.",
+      "public_url": "https://huggingface.co/ggml-org/GLM-4.7-Flash-GGUF/resolve/7559e96b7e324ab405897dc2b91492b0f376ad4a/GLM-4.7-Flash-Q4_K.gguf",
+      "full_hash_and_pinned_prefix_verified_before_rotation": true,
+      "required_completed_stages_restored_and_audited_before_rotation": true,
+      "private_record_sha256": "bd5dc5786bfdaee47c66c343bfee3494b2444980a91f04c73c34914009782b49"
     }
   ]
 }

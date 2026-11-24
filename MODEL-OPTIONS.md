@@ -23,10 +23,10 @@ completes independently checked code/docs/forge stages, with wrong final URLs
 and stale PR metadata. The [fresh Announcer sample](evaluations/2026-11-23-wide-memory/native-q4-fresh.md)
 also completes independent code/behavior and publication checks, with README
 re-enable wording and plugin/full-suite count qualifications. The [other candidates](evaluations/2026-11-23-wide-memory/matrix.md)
-remain pending. No winner or autonomous reliability is established.
+now have completed resource and fresh workflow audits. No winner or autonomous reliability is established.
 The original runtime is restored and audited after each completed GPU stage.
 [Study-owned weight rotation records](evaluations/2026-11-23-wide-memory/study-weight-rotations.json)
-track temporary Q4/Q3/Devstral removal to admit the next public file while preserving
+track temporary Q4/Q3/Devstral/GLM removal to admit the next public file while preserving
 the original29 and disk reserve. The selected model can be retained from its pin
 at the end; rotation is not a quality-failure verdict.
 
@@ -35,13 +35,13 @@ was initially inspected from16MiB prefixes for Devstral and GLM. Devstral's full
 pinned file now completes the resource stage below; GLM's full public weight
 [passes its pinned hash check](evaluations/2026-11-23-wide-memory/glm-download-verification.json),
 and [completes the five-probe resource stage](evaluations/2026-11-23-wide-memory/resource-glm.md)
-at 98k with CPU expert spill. Native coding quality remains unproven. GLM's embedded template
+at 98k with CPU expert spill. Its two fresh coding workflows are audited below. GLM's embedded template
 uses `clear_thinking: false` with `enable_thinking: true` to preserve reasoning
 across user turns. A [scripted native CLI control](evaluations/2026-11-23-wide-memory/glm-cli-history-control/README.md)
 now verifies client reasoning retention through a real terminal call and
 persisted followup, with the intended settings serialized. Resource probes now
 exercise the actual GLM template/history and P100 inference. Full-profile
-coding/Gitea behavior and quality remain unverified.
+coding/Gitea behavior is separately audited in the two completed workflow reports.
 Do not copy Qwen's thinking-off settings. Devstral declares `mistral3`,40layers,
 8KVheads; GLM declares `deepseek2` with MLA and47layers. These guide bounded
 layout trials; file size and metadata are not quality/fit proof.
@@ -77,9 +77,16 @@ request takes1410.74s. The initial unequal K/V configuration failure and
 correction are preserved. GLM's [fresh Spam workflow](evaluations/2026-11-23-wide-memory/native-glm-spam.md)
 fails preservation and cooldown correctness, has unusable undiscovered authored
 tests and creates no commit/PR despite a correct issue/fork. Coding takes 85 minutes
-within budget, with no experiment swap. Fresh Announcer remains underway.
-A matched fresh Q4 Spam trial is registered after both GLM audits; the recovered
-Q4 Spam outcome remains conditional. Resource fit is not quality proof.
+within budget, with no experiment swap. [Fresh Announcer](evaluations/2026-11-23-wide-memory/native-glm-queue.md)
+partially repairs disabled sends but loses surviving-job completion replies, retains
+room bookkeeping and misdocuments cancellation. All three turns stop on repetition;
+no code/PR is published. Its separate compression guard limitation is recorded below.
+At 84,237 prompt tokens, the completed primary request is evidence of large-context
+execution, not correct task completion.
+Both GLM families are restored, audited and published. Only the study-owned GLM
+weight was rotated with full-hash/public-prefix/identity checks to admit the pinned
+Q4 download. The fresh Q4 Spam protocol is frozen and its download is running;
+the recovered Q4 Spam outcome remains conditional. Resource fit is not quality proof.
 
 ### Slow context compaction: separate timeout settings
 

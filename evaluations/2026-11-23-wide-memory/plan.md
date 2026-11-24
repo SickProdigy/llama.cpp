@@ -27,8 +27,9 @@ below retain the original protocol and successive resource milestones.
   defects, all turns repetition-stopped and no publication. Its separate compression
   guard confound and deterministic fallback are documented; original runtime and
   owner state restored, stage cleaned.
-- Registered comparison followup: run a fresh Q4 Spam lineage after both GLM
-  families complete their audits and cleanup. The earlier Q4 Spam recovery is
+- Registered comparison followup: both GLM families are audited, restored, cleaned
+  and published. The fresh Q4 Spam protocol is now frozen and the pinned download
+  is running after verified temporary rotation of the study-owned GLM file. The earlier Q4 Spam recovery is
   not matched fresh evidence. Reuse actual saved 6656m/6.5 GiB native launches,
   not an old 7 GiB narrative; retain the aggregate 8 GiB guard and disk/inventory rules.
 
