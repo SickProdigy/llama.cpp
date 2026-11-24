@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "manifest_files": 119,
+  "memory_samples": 237,
+  "HTTP_records": 57,
+  "completed_HTTP_records": 57,
+  "private_behavior_not_reexecuted": true,
+  "observed_independent_exits": [
+    1,
+    1,
+    1
+  ],
+  "quality_classification": "Fresh Spam workflow fails requested initial repair despite correct Gitea publication and scoped cooldown feature pass",
+  "scope": "Saved evidence consistency only; independent source/behavior audits and private inputs remain separate. No autonomous reliability claim."
+}

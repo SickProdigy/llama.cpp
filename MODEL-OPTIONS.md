@@ -44,7 +44,9 @@ importance-matrix metadata. Compare these public files as provided; a quality
 difference cannot be attributed solely to bit precision. The [full pinned Q3](evaluations/2026-11-23-wide-memory/resource-q3.md)
 now completes tool/history/16k/60k resource probes at 98k context, 14,946 MiB
 GPU and 2.19 GiB peak process PSS, with zero observed experiment swap. Fresh
-coding tests are in progress; resource completion is not task-quality proof.
+Spam coding [fails the requested repair](evaluations/2026-11-23-wide-memory/native-q3-spam.md)
+despite green project tests and correct Gitea publication; the cooldown feature
+passes separately. Fresh Announcer is running. Resource fit is not quality proof.
 
 ## November 22: full P100 plus up to 8 GiB host spillover
 
