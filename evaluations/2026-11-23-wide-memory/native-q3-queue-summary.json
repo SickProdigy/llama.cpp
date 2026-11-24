@@ -1,0 +1,350 @@
+{
+  "classification": "Fresh Announcer source/behavior and Gitea workflow pass with documentation test-scope and stale-PR qualifications",
+  "model": {
+    "file": "Qwen3.8-27B-hermes-Q3_K_M.gguf",
+    "bytes": 13752764064,
+    "sha256": "a0c809f93de2bcd813e1b6fbd5c2d1f692821814a4261a316f7c8bca9cf23248",
+    "after_full_SHA_advised_DONTNEED_for_only_this_study_owned_file": true,
+    "not_global_cache_flush_or_proof_of_cold_cache": true
+  },
+  "candidate_key": "q3",
+  "family": "queued_announcements",
+  "phases": [
+    {
+      "family": "queued_announcements",
+      "arm": "q3",
+      "phase": 0,
+      "elapsed_seconds": 593.9395498930244,
+      "exit_code": 0,
+      "external_timeout": false,
+      "query_sha256": "18c19bb0144c0fd9373d17dc15dde2977b79aa68c0de16897fa4c2aa0cd12a40",
+      "native_session_fingerprints": {
+        "logical_root": "d59704e095316dc9c031a60abeba939ff40b4886f165e4cc7c5e7b1e35680178",
+        "incoming_sid": null,
+        "effective_sid": "d59704e095316dc9c031a60abeba939ff40b4886f165e4cc7c5e7b1e35680178"
+      },
+      "private_original_run_sha256": "8c0a4864a82ee2348eaa269418cc94c867b73f05789f1c3285c59af8a95997f3",
+      "local_grade": {
+        "kind": "unpublished-local-draft",
+        "family": "queued_announcements",
+        "phase": 0,
+        "source_digest": "0e4ffcb05a7c49bfbf67972aed2e52e6d24f4f2efabfa5ca336d9efb988cc3e5",
+        "project_exit": 0,
+        "preservation_exit": 0,
+        "independent_exit": 0,
+        "changed_paths": [
+          "announcer/__init__.py",
+          "tests/test_announcer.py"
+        ],
+        "not_fed_to_models": true
+      },
+      "remote_grade": {
+        "kind": "actual-fork-commit",
+        "family": "queued_announcements",
+        "phase": 0,
+        "source_digest": "0e4ffcb05a7c49bfbf67972aed2e52e6d24f4f2efabfa5ca336d9efb988cc3e5",
+        "project_exit": 0,
+        "preservation_exit": 0,
+        "independent_exit": 0,
+        "changed_paths": [
+          "announcer/__init__.py",
+          "tests/test_announcer.py"
+        ],
+        "not_fed_to_models": true
+      },
+      "forge": {
+        "scope_state": {
+          "issue": 3,
+          "pr": 4,
+          "branch": "wide-queue-q3-announcer-queued-disable",
+          "commits": 1
+        },
+        "phase": 0,
+        "issue": {
+          "number": 3,
+          "state": "open",
+          "title": "Room Announcer posts queued announcements after sending is disabled",
+          "created_at": "2026-11-23T20:44:27-05:00",
+          "updated_at": "2026-11-23T20:45:47-05:00",
+          "closed_at": null
+        },
+        "pr": {
+          "number": 4,
+          "state": "open",
+          "merged": false,
+          "title": "Room Announcer: suppress queued sends while sending is disabled",
+          "created_at": "2026-11-23T20:45:47-05:00",
+          "updated_at": "2026-11-23T20:45:47-05:00",
+          "closed_at": null,
+          "head": {
+            "sha": "6c6404af6eb0373c7ceb4f636962f567213dde87",
+            "ref": "wide-queue-q3-announcer-queued-disable",
+            "repo": "hermes-agent/hermes-wide-q3-20261123"
+          },
+          "base": {
+            "sha": "93f7d0429ce3acd9479e47fefd2563a76ffc5181",
+            "ref": "main",
+            "repo": "chatgpt-codex/hermes-wide-q3-20261123"
+          }
+        },
+        "clone": {
+          "name": "q3-queued_announcements-remote-0",
+          "head": "6c6404af6eb0373c7ceb4f636962f567213dde87",
+          "tree": "ac467571cec9745923b7b95b3595bfd27419d730"
+        }
+      }
+    },
+    {
+      "family": "queued_announcements",
+      "arm": "q3",
+      "phase": 1,
+      "elapsed_seconds": 71.18109719397034,
+      "exit_code": 0,
+      "external_timeout": false,
+      "query_sha256": "98c262dbcebea2188aef2065d7debb169b791877b1f28708d5df358ef31ea726",
+      "native_session_fingerprints": {
+        "logical_root": "d59704e095316dc9c031a60abeba939ff40b4886f165e4cc7c5e7b1e35680178",
+        "incoming_sid": "d59704e095316dc9c031a60abeba939ff40b4886f165e4cc7c5e7b1e35680178",
+        "effective_sid": "d59704e095316dc9c031a60abeba939ff40b4886f165e4cc7c5e7b1e35680178"
+      },
+      "private_original_run_sha256": "a648de1a70126beefa9ad6ceb3566097b9c6914a145e784069109962a7f41cda",
+      "local_grade": {
+        "kind": "unpublished-local-draft",
+        "family": "queued_announcements",
+        "phase": 1,
+        "source_digest": "2341a7034770765c8b4f321f1cc565c09218fb5d583befbfdecc2fbca5e0a2e7",
+        "project_exit": 0,
+        "preservation_exit": 0,
+        "independent_exit": 0,
+        "changed_paths": [
+          "announcer/README.md",
+          "announcer/__init__.py",
+          "tests/test_announcer.py"
+        ],
+        "not_fed_to_models": true
+      },
+      "remote_grade": {
+        "kind": "actual-fork-commit",
+        "family": "queued_announcements",
+        "phase": 1,
+        "source_digest": "2341a7034770765c8b4f321f1cc565c09218fb5d583befbfdecc2fbca5e0a2e7",
+        "project_exit": 0,
+        "preservation_exit": 0,
+        "independent_exit": 0,
+        "changed_paths": [
+          "announcer/README.md",
+          "announcer/__init__.py",
+          "tests/test_announcer.py"
+        ],
+        "not_fed_to_models": true
+      },
+      "forge": {
+        "scope_state": {
+          "issue": 3,
+          "pr": 4,
+          "branch": "wide-queue-q3-announcer-queued-disable",
+          "commits": 2
+        },
+        "phase": 1,
+        "issue": {
+          "number": 3,
+          "state": "open",
+          "title": "Room Announcer posts queued announcements after sending is disabled",
+          "created_at": "2026-11-23T20:44:27-05:00",
+          "updated_at": "2026-11-23T20:45:47-05:00",
+          "closed_at": null
+        },
+        "pr": {
+          "number": 4,
+          "state": "open",
+          "merged": false,
+          "title": "Room Announcer: suppress queued sends while sending is disabled",
+          "created_at": "2026-11-23T20:45:47-05:00",
+          "updated_at": "2026-11-23T20:47:49-05:00",
+          "closed_at": null,
+          "head": {
+            "sha": "b50cf32c9dd9d1ca86d8df9f1e55a7512be034d4",
+            "ref": "wide-queue-q3-announcer-queued-disable",
+            "repo": "hermes-agent/hermes-wide-q3-20261123"
+          },
+          "base": {
+            "sha": "93f7d0429ce3acd9479e47fefd2563a76ffc5181",
+            "ref": "main",
+            "repo": "chatgpt-codex/hermes-wide-q3-20261123"
+          }
+        },
+        "clone": {
+          "name": "q3-queued_announcements-remote-1",
+          "head": "b50cf32c9dd9d1ca86d8df9f1e55a7512be034d4",
+          "tree": "cea03f1ce247acc0e3f6f8f2fff5cb563d904ff3"
+        }
+      }
+    },
+    {
+      "family": "queued_announcements",
+      "arm": "q3",
+      "phase": 2,
+      "elapsed_seconds": 573.7232848109561,
+      "exit_code": 0,
+      "external_timeout": false,
+      "query_sha256": "eb6c84a45efc508d47af96e23e780a0b6573a7433de9429154e369c10b7d7da8",
+      "native_session_fingerprints": {
+        "logical_root": "d59704e095316dc9c031a60abeba939ff40b4886f165e4cc7c5e7b1e35680178",
+        "incoming_sid": "d59704e095316dc9c031a60abeba939ff40b4886f165e4cc7c5e7b1e35680178",
+        "effective_sid": "d59704e095316dc9c031a60abeba939ff40b4886f165e4cc7c5e7b1e35680178"
+      },
+      "private_original_run_sha256": "393544253424681c623706432a4c7187fcdfaab66f4878d7d928d5d35ecc43ea",
+      "local_grade": {
+        "kind": "unpublished-local-draft",
+        "family": "queued_announcements",
+        "phase": 2,
+        "source_digest": "6f88f2e8fb8b1cd6537346298e6b4d3787e894d7e5b2627354f2808f1ef3c22f",
+        "project_exit": 0,
+        "preservation_exit": 0,
+        "independent_exit": 0,
+        "changed_paths": [
+          "announcer/README.md",
+          "announcer/__init__.py",
+          "tests/test_announcer.py"
+        ],
+        "not_fed_to_models": true
+      },
+      "remote_grade": {
+        "kind": "actual-fork-commit",
+        "family": "queued_announcements",
+        "phase": 2,
+        "source_digest": "6f88f2e8fb8b1cd6537346298e6b4d3787e894d7e5b2627354f2808f1ef3c22f",
+        "project_exit": 0,
+        "preservation_exit": 0,
+        "independent_exit": 0,
+        "changed_paths": [
+          "announcer/README.md",
+          "announcer/__init__.py",
+          "tests/test_announcer.py"
+        ],
+        "not_fed_to_models": true
+      },
+      "forge": {
+        "scope_state": {
+          "issue": 3,
+          "pr": 4,
+          "branch": "wide-queue-q3-announcer-queued-disable",
+          "commits": 3
+        },
+        "phase": 2,
+        "issue": {
+          "number": 3,
+          "state": "open",
+          "title": "Room Announcer posts queued announcements after sending is disabled",
+          "created_at": "2026-11-23T20:44:27-05:00",
+          "updated_at": "2026-11-23T20:45:47-05:00",
+          "closed_at": null
+        },
+        "pr": {
+          "number": 4,
+          "state": "open",
+          "merged": false,
+          "title": "Room Announcer: suppress queued sends while sending is disabled",
+          "created_at": "2026-11-23T20:45:47-05:00",
+          "updated_at": "2026-11-23T20:57:31-05:00",
+          "closed_at": null,
+          "head": {
+            "sha": "341f029c84d6d100de0c19794f620a6ea435cbfa",
+            "ref": "wide-queue-q3-announcer-queued-disable",
+            "repo": "hermes-agent/hermes-wide-q3-20261123"
+          },
+          "base": {
+            "sha": "93f7d0429ce3acd9479e47fefd2563a76ffc5181",
+            "ref": "main",
+            "repo": "chatgpt-codex/hermes-wide-q3-20261123"
+          }
+        },
+        "clone": {
+          "name": "q3-queued_announcements-remote-2",
+          "head": "341f029c84d6d100de0c19794f620a6ea435cbfa",
+          "tree": "b6e5787f29b0bbb88f9b236ff6f9c06da53ea2e9"
+        }
+      }
+    }
+  ],
+  "independent_final_audit": {
+    "audit_complete": true,
+    "not_actor_feedback": true,
+    "classification": "Fresh Announcer source/behavior and Gitea workflow pass with documentation test-scope and stale-PR qualifications",
+    "fresh_primary": true,
+    "all_three_independent_local_and_remote_checks_passed": true,
+    "source_and_behavior_preservation_passed": true,
+    "project_tests_by_phase": [
+      85,
+      85,
+      89
+    ],
+    "original_tests_each_phase": 83,
+    "independent_exit_by_phase": [
+      0,
+      0,
+      0
+    ],
+    "correct_Gitea_upstream_issue_personal_fork_branch_and_PR": true,
+    "verified_personal_fork_reused": true,
+    "final_published_commit": "341f029c84d6d100de0c19794f620a6ea435cbfa",
+    "README_pending_callback_reenable_qualification": true,
+    "initial_authored_between_room_test_replay_caveat": true,
+    "final_answers_plugin_vs_project_count_inaccurate": true,
+    "final_PR_description_stale_after_feature": true,
+    "test_issue_verified_closed": true,
+    "PR_preserved_open_unmerged": true,
+    "runtime_restoration_settings_models_owner_and_Codex_independently_verified": true,
+    "owned_stage_cleanup_independently_verified": true,
+    "phase_actor_seconds": [
+      593.9395498930244,
+      71.18109719397034,
+      573.7232848109561
+    ],
+    "read_control_seconds_separate": 228.68113937502494,
+    "limitations": [
+      "One fresh task family and dependent followups, not independent reliability trials.",
+      "Initial authored between-room test replays the first callback; independent callback checks and source audit cover proper dispatch.",
+      "Focused forge plugins and visible project-test publication gate are part of setup; no private grader/corrective feedback.",
+      "Fake-peer and unit/source checks do not replace live Nicotine+ GUI/network testing.",
+      "Sampled memory is not continuous entire-host peak attribution.",
+      "Q3 Spam fails its initial repair; do not treat this family pass as overall autonomous reliability. Devstral and GLM remain pending."
+    ],
+    "manual_audit_sha256": {
+      "q3-queue-initial-manual-audit.json": "db4a0a1aa5a61ad21a21deb5dc8673a42e5e4bfc5685322e81e1f1b72178e6e1",
+      "q3-queue-README-manual-audit.json": "5f867fbc68c7422cec770abdf17d3cb60912827e31c2da8ff244d28a6129bb5f",
+      "q3-queue-feature-manual-audit.json": "a1e1e0d0858094e54d6d9ba2c073b1938b763349cc43e853ff4c4aa58b3a6b72"
+    }
+  },
+  "measurements": {
+    "sample_count": 153,
+    "complete_aggregate_sample_count": 153,
+    "measurement_error_sample_count": 0,
+    "peak_observed_cgroup_bytes": 7084834816,
+    "peak_observed_all_process_PSS_bytes": 2552125440,
+    "peak_observed_experiment_swap_bytes": 0,
+    "resource_guard_samples": 0,
+    "global_pswpin_delta_pages": 14595,
+    "global_pswpout_delta_pages": 9953,
+    "global_swap_not_attributed_to_model": true,
+    "HTTP_records": 39,
+    "completed_HTTP_records_without_transport_error": 39,
+    "transport_error_record_count": 0,
+    "incomplete_backend_body_record_count": 0,
+    "maximum_completed_prompt_tokens": 39532,
+    "HTTP_latency_seconds": {
+      "min": 5.265990495681763,
+      "median": 23.79698419570923,
+      "max": 147.78242206573486,
+      "sum": 1381.3953638076782
+    },
+    "not_isolated_decode_throughput": true,
+    "sampling_not_continuous_peak_or_entire_host_attribution": true
+  },
+  "comparison_limits": [
+    "Fresh primary starts independently of the read-only control; all three coding turns share one native lineage.",
+    "Same predefined followups, no private grade feedback; final model sampling is not seed-pinned.",
+    "Focused scoped Gitea tools and publication execution gate are part of this configuration.",
+    "Private source snapshots, raw wire captures, profiles, tasks, graders and receipt keys remain local. Public evidence verification does not recreate the whole private workflow or prove all behavior correct."
+  ]
+}

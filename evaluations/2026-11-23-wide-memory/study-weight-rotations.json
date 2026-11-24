@@ -1,0 +1,35 @@
+{
+  "scope": "Temporary removal only of newly downloaded study-owned weights; preserve original29, one additional large candidate and100GiB reserve. Retain selected model from public pin after comparison.",
+  "rotations": [
+    {
+      "candidate": "q4",
+      "epoch": 1795477831.6099775,
+      "file": "Qwen3.8-27B-hermes-Q4_K_M.gguf",
+      "bytes": 16810714560,
+      "sha256": "6512bb1c2595575fc0aed39b7d72a6aaf71084b1164b5d3749f87a6c2a3d3bf3",
+      "public_url": "https://huggingface.co/netprojects/Qwen3.8-27B-hermes-adapted-GGUF/resolve/10fdf357f14825c61ad7eb42a932e1f1e4390e8f/Qwen3.8-27B-hermes-Q4_K_M.gguf",
+      "free_before_bytes": 115790589952,
+      "free_after_bytes": 132601307136,
+      "original29_metadata_unchanged": true,
+      "full_hash_and_pinned_prefix_verified_before_rotation": true,
+      "required_completed_stages_restored_and_audited_before_rotation": true,
+      "purpose": "Temporary rotation of newly downloaded study weight only; preserve original29, retain selected candidate after comparison. Not a claim that Q4 failed.",
+      "private_record_sha256": "c1db1fdab8135ad4c8eb1a46274afa4e60c98fcde49b4915aba98ef96ac39457"
+    },
+    {
+      "candidate": "q3",
+      "epoch": 1795485776.7743125,
+      "file": "Qwen3.8-27B-hermes-Q3_K_M.gguf",
+      "bytes": 13752764064,
+      "sha256": "a0c809f93de2bcd813e1b6fbd5c2d1f692821814a4261a316f7c8bca9cf23248",
+      "public_url": "https://huggingface.co/netprojects/Qwen3.8-27B-hermes-adapted-GGUF/resolve/10fdf357f14825c61ad7eb42a932e1f1e4390e8f/Qwen3.8-27B-hermes-Q3_K_M.gguf",
+      "free_before_bytes": 118799089664,
+      "free_after_bytes": 132551856128,
+      "original29_metadata_unchanged": true,
+      "full_hash_and_pinned_prefix_verified_before_rotation": true,
+      "required_completed_stages_restored_and_audited_before_rotation": true,
+      "purpose": "Temporary rotation only of newly downloaded owned study weight to admit next candidate with100GiB reserve; not a claim that this model is useless. Original29 preserved; selected model can be restored from pin at end.",
+      "private_record_sha256": "ca1ffe22cd326ec79463592ffe2cdfb74ddbf0e6cb2745e0c90ae6b886af6226"
+    }
+  ]
+}

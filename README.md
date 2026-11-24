@@ -25,7 +25,9 @@ include [Q3 resource completion](evaluations/2026-11-23-wide-memory/resource-q3.
 at 98k context and 14,946 MiB GPU, with zero observed experiment swap. Fresh Q3
 Spam workflow now [fails the requested repair](evaluations/2026-11-23-wide-memory/native-q3-spam.md)
 despite green project tests and correct publication; its cooldown feature passes
-separately. Fresh Q3 Announcer is running; no model winner is claimed.
+separately. Fresh [Q3 Announcer](evaluations/2026-11-23-wide-memory/native-q3-queue.md)
+passes source/behavior checks with documentation and reporting qualifications.
+Devstral is downloading next; no model winner is claimed.
 
 ## November 22, 2026 compact-review follow-up — evaluation complete
 

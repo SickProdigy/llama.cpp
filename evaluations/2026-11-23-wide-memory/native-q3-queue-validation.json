@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "manifest_files": 100,
+  "memory_samples": 153,
+  "HTTP_records": 39,
+  "completed_HTTP_records": 39,
+  "private_behavior_not_reexecuted": true,
+  "observed_independent_exits": [
+    0,
+    0,
+    0
+  ],
+  "quality_classification": "Fresh Announcer source/behavior and Gitea workflow pass with documentation test-scope and stale-PR qualifications",
+  "scope": "Saved evidence consistency only; independent source/behavior audits and private inputs remain separate. No autonomous reliability claim."
+}

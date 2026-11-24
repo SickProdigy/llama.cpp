@@ -25,6 +25,10 @@ also completes independent code/behavior and publication checks, with README
 re-enable wording and plugin/full-suite count qualifications. The [other candidates](evaluations/2026-11-23-wide-memory/matrix.md)
 remain pending. No winner or autonomous reliability is established.
 The original runtime is restored and audited after each completed GPU stage.
+[Study-owned weight rotation records](evaluations/2026-11-23-wide-memory/study-weight-rotations.json)
+track temporary Q4/Q3 removal to admit the next public file while preserving
+the original29 and disk reserve. The selected model can be retained from its pin
+at the end; rotation is not a quality-failure verdict.
 
 Public [format metadata](evaluations/2026-11-23-wide-memory/candidate-format-preflight.json)
 is inspected from16MiB prefixes for Devstral and GLM, without downloading their
@@ -46,7 +50,9 @@ now completes tool/history/16k/60k resource probes at 98k context, 14,946 MiB
 GPU and 2.19 GiB peak process PSS, with zero observed experiment swap. Fresh
 Spam coding [fails the requested repair](evaluations/2026-11-23-wide-memory/native-q3-spam.md)
 despite green project tests and correct Gitea publication; the cooldown feature
-passes separately. Fresh Announcer is running. Resource fit is not quality proof.
+passes separately. [Fresh Q3 Announcer](evaluations/2026-11-23-wide-memory/native-q3-queue.md)
+passes scoped source/behavior checks with documentation/reporting qualifications.
+Devstral is downloading next. Resource fit is not quality proof.
 
 ## November 22: full P100 plus up to 8 GiB host spillover
 

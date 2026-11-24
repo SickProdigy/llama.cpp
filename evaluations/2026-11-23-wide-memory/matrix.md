@@ -8,8 +8,8 @@ audited separately from resource fit, authored tests and actual publication.
 | Adapted27B Q4, Spam, conditional recovery | Independent source/behavior pass | Independent docs/preservation pass | Independent source/behavior pass | Real configured Gitea issue/fork/PR and 3 commits; wrong final URL host, stale PR description | Completed, restored and audited; [evidence](native-q4-recovery.md) |
 | Adapted27B Q4, fresh Announcer | Independent source/behavior pass | README re-enable wording qualification | Independent source/behavior pass | Real issue/fork/PR; PR metadata updated; plugin/full-suite count confusion in final answers | Completed, restored and audited; [evidence](native-q4-fresh.md) |
 | Adapted27B Q3, fresh Spam | Incorrect next-message repair despite green tests | Documents unrequested behavior; wrong commit claim | Cooldown scoped pass; original failure persists | Correct real issue/fork/PR, stale PR body | Completed, restored and audited; [evidence](native-q3-spam.md) |
-| Adapted27B Q3, fresh Announcer | Running | Pending | Pending | Pending | Fresh native workflow in progress |
-| Devstral Small 2 24B public Q4_K_M | Not run | Not run | Not run | Not run | Architecture/layout/profile preflight only |
+| Adapted27B Q3, fresh Announcer | Independent source/behavior pass; authored replay caveat | Re-enable wording qualification | Independent source/behavior pass | Real issue/fork/PR; stale PR metadata, plugin/project count confusion | Completed, restored and audited; [evidence](native-q3-queue.md) |
+| Devstral Small 2 24B public Q4_K_M | Not run | Not run | Not run | Not run | Pinned public download underway; architecture/layout/profile preflight complete |
 | GLM-4.7-Flash public Q4_K | Not run | Not run | Not run | Not run | Scripted client history control passes; actual template/P100/fit/quality pending |
 
 The retained IQ3 has [matched resource observations](resource-baseline-v2.md),
