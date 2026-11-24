@@ -41,8 +41,10 @@ layout trials; file size and metadata are not quality/fit proof.
 The [pinned adapted Q3/Q4 header comparison](evaluations/2026-11-23-wide-memory/quant-header-preflight/README.md)
 finds matching tensor names/shapes and tokenizer metadata, but differing
 importance-matrix metadata. Compare these public files as provided; a quality
-difference cannot be attributed solely to bit precision. Q3's full file and
-inference remain untested; its pinned full-weight download is underway.
+difference cannot be attributed solely to bit precision. The [full pinned Q3](evaluations/2026-11-23-wide-memory/resource-q3.md)
+now completes tool/history/16k/60k resource probes at 98k context, 14,946 MiB
+GPU and 2.19 GiB peak process PSS, with zero observed experiment swap. Fresh
+coding tests are in progress; resource completion is not task-quality proof.
 
 ## November 22: full P100 plus up to 8 GiB host spillover
 

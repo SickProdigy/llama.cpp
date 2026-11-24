@@ -7,7 +7,7 @@ audited separately from resource fit, authored tests and actual publication.
 |---|---|---|---|---|---|
 | Adapted27B Q4, Spam, conditional recovery | Independent source/behavior pass | Independent docs/preservation pass | Independent source/behavior pass | Real configured Gitea issue/fork/PR and 3 commits; wrong final URL host, stale PR description | Completed, restored and audited; [evidence](native-q4-recovery.md) |
 | Adapted27B Q4, fresh Announcer | Independent source/behavior pass | README re-enable wording qualification | Independent source/behavior pass | Real issue/fork/PR; PR metadata updated; plugin/full-suite count confusion in final answers | Completed, restored and audited; [evidence](native-q4-fresh.md) |
-| Adapted27B Q3_K_M | Not run | Not run | Not run | Not run | Header/profile preflight complete; pinned full-weight download underway; inference pending |
+| Adapted27B Q3_K_M | Fresh Spam workflow starting | Pending | Pending | Pending | [Resource probes pass](resource-q3.md); fresh native coding in progress |
 | Devstral Small 2 24B public Q4_K_M | Not run | Not run | Not run | Not run | Architecture/layout/profile preflight only |
 | GLM-4.7-Flash public Q4_K | Not run | Not run | Not run | Not run | Scripted client history control passes; actual template/P100/fit/quality pending |
 

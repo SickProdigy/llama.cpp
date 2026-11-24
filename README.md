@@ -21,7 +21,9 @@ not a clean workflow pass. The [fresh second family](evaluations/2026-11-23-wide
 also completes independently checked code and Gitea publication, with README
 re-enable wording and plugin/full-suite count qualifications. It reaches 67,720
 prompt tokens with zero observed experiment swap. The [remaining candidates](evaluations/2026-11-23-wide-memory/matrix.md)
-are pending; no model winner is claimed.
+include [Q3 resource completion](evaluations/2026-11-23-wide-memory/resource-q3.md)
+at 98k context and 14,946 MiB GPU, with zero observed experiment swap. Fresh Q3
+coding is in progress; no model winner is claimed.
 
 ## November 22, 2026 compact-review follow-up — evaluation complete
 
