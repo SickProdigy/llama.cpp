@@ -1,7 +1,10 @@
 # GPU-resident quantization comparison — November 24, 2026
 
 Status: first Fable Q6 capacity stage complete and original runtime restored.
-Fresh native coding workflow launched; no new coding-quality verdict yet.
+The first fresh Fable Q6 nonthinking workflow is complete and independently
+audited: repair/docs/feature/publication fail. Original runtime and all retained
+models/owner settings are restored/verified; the Q4 capacity stage also completes/restores, and its fresh native coding
+stage is launched.
 See [current matrix](matrix.md) and [resource evidence](resource-fable-q6-summary.json).
 
 Compare retained FableVibes Q4/Q6 and VibeForged v2 Q4/Q6 first. Earlier native
@@ -37,3 +40,24 @@ intervention and correctness together; no autonomous reliability claims.
 Experiments must restore original runtime/settings, preserve owner pending edits,
 credentials and Hermes-Codex, close owned test issues, and retain sanitized
 reproducible evidence. Commit/push completed stages with README/options/matrix.
+
+## Prospective reasoning-mode control
+
+Before assigning a practical Fable recommendation, compare a separately registered
+fresh Q4/Q6 pair with reasoning enabled and the author's generation sampling.
+The current quartet remains an unchanged thinking-disabled, temperature .2
+baseline; no actor receives a corrective hint or restart. The author's pinned
+[source generation configuration](https://huggingface.co/tvall43/Qwen3.6-14B-A3B-FableVibes/blob/758757ae225247b95c28ad2897d89aafe3bd3d52/generation_config.json)
+sets temperature 1.0, top-p .95 and top-k20. The pinned GGUF card describes a
+reasoning-trained model and expects reasoning output. These are publisher
+settings, not independent evidence of better local results. Register output,
+compression, time and memory budgets before the new pair; report it separately
+as a configuration comparison, never as a precision-only effect or rescued
+baseline pass. No new reasoning-enabled actor run has started yet.
+
+[Retained-file header comparison](quant-header-comparison.json) finds identical
+names/shapes and tokenizer/template metadata within each Q4/Q6 pair; only the
+general file-type field differs. No importance-matrix metadata is recorded.
+That absence does not prove none was used or establish identical source weights
+and conversion/calibration history. Full file SHA256 verification is separate
+and occurs before each model's inference.

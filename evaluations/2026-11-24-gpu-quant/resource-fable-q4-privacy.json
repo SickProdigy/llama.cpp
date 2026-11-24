@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "known_environment_credential_values_checked": 5,
+  "files_checked": 42,
+  "archive_sha256": "621a9bf642fc89f24fdf3420c1f773d3f95f9c28b36f1ebbcee14a107aa12dda",
+  "scope": "Exact known nonempty original Hermes/Codex and two configured MCP environment credential values; no values printed/persisted, not a general secret detector."
+}

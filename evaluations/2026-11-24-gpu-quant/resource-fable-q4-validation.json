@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "candidate": "fable-q4",
+  "manifest_files": 41,
+  "memory_samples": 62,
+  "completed_probes": 5,
+  "coding_quality_not_validated": true,
+  "archive_sha256": "621a9bf642fc89f24fdf3420c1f773d3f95f9c28b36f1ebbcee14a107aa12dda"
+}

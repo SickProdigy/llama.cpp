@@ -3,8 +3,10 @@
 The [November 24 GPU-resident quantization comparison](evaluations/2026-11-24-gpu-quant/matrix.md)
 is active: retained Fable/Vibe Q4 and Q6 first, evaluating correctness and latency
 together at realistic context. Fable Q6 completes its first capacity stage at
-98,304 context (11,566 MiB sampled GPU peak; no study swap); fresh coding remains
-unscored. See the protocol/results before treating fit as useful agent behavior.
+98,304 context (11,566 MiB sampled GPU peak; no study swap), but its first
+thinking-disabled coding workflow fails correctness/publication checks in 21.05
+coding minutes. Q4 and publisher reasoning-mode comparisons remain pending.
+See the protocol/results before treating fit as useful agent behavior.
 
 GGUF testing notes for Hermes Agent running through llama.cpp.
 

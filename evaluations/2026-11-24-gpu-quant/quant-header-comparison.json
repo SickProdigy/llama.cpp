@@ -1,0 +1,91 @@
+{
+  "epoch": 1795546602.3392282,
+  "pairs": {
+    "fable": {
+      "tensor_names_dimensions_match": true,
+      "tokenizer_and_chat_template_metadata_match": true,
+      "different_metadata_keys": [
+        "general.file_type"
+      ],
+      "imatrix_metadata_present": false,
+      "limitation": "Identical header structure is not proof that calibration/conversion/source weights were identical. No imatrix keys does not prove none was used. Full file pins are verified separately before inference."
+    },
+    "vibe": {
+      "tensor_names_dimensions_match": true,
+      "tokenizer_and_chat_template_metadata_match": true,
+      "different_metadata_keys": [
+        "general.file_type"
+      ],
+      "imatrix_metadata_present": false,
+      "limitation": "Identical header structure is not proof that calibration/conversion/source weights were identical. No imatrix keys does not prove none was used. Full file pins are verified separately before inference."
+    }
+  },
+  "headers": {
+    "fable-q4": {
+      "file": "Qwen3.6-14B-A3B-FableVibes-Q4_K_M.gguf",
+      "repo": "tvall43/Qwen3.6-14B-A3B-FableVibes-GGUF",
+      "revision": "9cf910a7ad68dfedcbdfc46ef0fe5003dec07c23",
+      "file_bytes": 8465553920,
+      "prefix_bytes": 16777216,
+      "prefix_SHA256": "c4aafe9f8667e3a1e3a918e815d8bbbb98dffe6dcea07739342cef9ba7219e15",
+      "full_file_SHA_not_checked_by_this_header_reader": true,
+      "GGUF_version": 3,
+      "tensor_count": 733,
+      "tensor_type_counts": {
+        "14": 61,
+        "0": 301,
+        "12": 371
+      },
+      "tensor_names_and_dimensions_SHA256": "eaec34077c4e45aee1e78c4fb92ae60aeed8a66a1b22488a72d0f1fc0747a89c"
+    },
+    "fable-q6": {
+      "file": "Qwen3.6-14B-A3B-FableVibes-Q6_K.gguf",
+      "repo": "tvall43/Qwen3.6-14B-A3B-FableVibes-GGUF",
+      "revision": "9cf910a7ad68dfedcbdfc46ef0fe5003dec07c23",
+      "file_bytes": 11325370880,
+      "prefix_bytes": 16777216,
+      "prefix_SHA256": "b0a7d96637625cb00c6f158cfd2d7af1e6321d98c1de0ba6bcaf8a9944766f13",
+      "full_file_SHA_not_checked_by_this_header_reader": true,
+      "GGUF_version": 3,
+      "tensor_count": 733,
+      "tensor_type_counts": {
+        "14": 432,
+        "0": 301
+      },
+      "tensor_names_and_dimensions_SHA256": "eaec34077c4e45aee1e78c4fb92ae60aeed8a66a1b22488a72d0f1fc0747a89c"
+    },
+    "vibe-q4": {
+      "file": "Qwen3.6-14B-A3B-VibeForged-v2-Q4_K_M.gguf",
+      "repo": "tvall43/Qwen3.6-14B-A3B-VibeForged-v2-GGUF",
+      "revision": "4f08fded2aee1e27fb0335104307ade516508d37",
+      "file_bytes": 8465553472,
+      "prefix_bytes": 16777216,
+      "prefix_SHA256": "919debc9c24aa1921b271032bed4faf45d9bef7467949c5821d2478184a7b83f",
+      "full_file_SHA_not_checked_by_this_header_reader": true,
+      "GGUF_version": 3,
+      "tensor_count": 733,
+      "tensor_type_counts": {
+        "14": 61,
+        "0": 301,
+        "12": 371
+      },
+      "tensor_names_and_dimensions_SHA256": "eaec34077c4e45aee1e78c4fb92ae60aeed8a66a1b22488a72d0f1fc0747a89c"
+    },
+    "vibe-q6": {
+      "file": "Qwen3.6-14B-A3B-VibeForged-v2-Q6_K.gguf",
+      "repo": "tvall43/Qwen3.6-14B-A3B-VibeForged-v2-GGUF",
+      "revision": "4f08fded2aee1e27fb0335104307ade516508d37",
+      "file_bytes": 11325370432,
+      "prefix_bytes": 16777216,
+      "prefix_SHA256": "64e2daa9ff5ca9c293cdac82053fb3a8db0edb673e4137dd764c710b553f721b",
+      "full_file_SHA_not_checked_by_this_header_reader": true,
+      "GGUF_version": 3,
+      "tensor_count": 733,
+      "tensor_type_counts": {
+        "14": 432,
+        "0": 301
+      },
+      "tensor_names_and_dimensions_SHA256": "eaec34077c4e45aee1e78c4fb92ae60aeed8a66a1b22488a72d0f1fc0747a89c"
+    }
+  }
+}

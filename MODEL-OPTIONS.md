@@ -18,7 +18,15 @@ cache; process PSS peaks at 1.617 GiB. Whole-host swap counters move and are not
 attributed to the study. The all-GPU layout is requested with automatic fit off;
 explicit tensor-placement logging is registered for the native stage. Capacity
 is not coding quality. The original runtime is restored after this resource
-stage; a separate isolated fresh native workflow is now launched.
+stage. The subsequent [fresh native Q6 baseline](evaluations/2026-11-24-gpu-quant/native-fable-q6-beets.md)
+confirms 41/41 layers offloaded but fails repair, documentation, feature and
+publication checks in 21.05 coding minutes. It preserves originals but breaks
+manual import dispatch; 16 new tests fail collection. The original runtime and
+all 30 retained models/settings/owner edits/Codex are restored/verified afterward.
+The Q4 capacity comparison also completes/restores (8,964 MiB sampled GPU peak,
+no study swap); its fresh native workflow is now launched. A separate prospective Fable Q4/Q6
+publisher-sampling, reasoning-enabled pair is registered; this low-temperature
+nonthinking baseline is not a verdict on Fable's best practical configuration.
 
 The adapted 27B Q5/Q6 public files exceed the entire 16 GiB device before context
 and runtime overhead, so they are excluded from this GPU-resident shortlist.
