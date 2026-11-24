@@ -1,0 +1,42 @@
+{
+  "not_actor_feedback": true,
+  "classification": "Retained request inspection, not a new model trial or model-quality certificate",
+  "original_natural_task_explicitly_requests_issue_personal_fork_and_upstream_PR": true,
+  "selected_repository_Git_facts_present_in_first_coding_request": true,
+  "original_instruction_not_dropped_before_completion_in_observed_requests": true,
+  "phases": [
+    {
+      "phase": 0,
+      "last_HTTP_id": 44,
+      "prompt_tokens": 43280,
+      "request_sha256": "7ecc39147b2264931ea9df3b81a7e891e3f85600aa32f4841f43ce944449c421",
+      "all_expected_task_and_dependent_followup_texts_present": true,
+      "original_issue_fork_PR_instruction_still_present": true,
+      "user_message_count": 1
+    },
+    {
+      "phase": 1,
+      "last_HTTP_id": 47,
+      "prompt_tokens": 44900,
+      "request_sha256": "91f982886c4ad7a20c31b33346a0420fc0c24c20bba758b10c1c1b1398624c5d",
+      "all_expected_task_and_dependent_followup_texts_present": true,
+      "original_issue_fork_PR_instruction_still_present": true,
+      "user_message_count": 2
+    },
+    {
+      "phase": 2,
+      "last_HTTP_id": 58,
+      "prompt_tokens": 55723,
+      "request_sha256": "9ead6d695933178c031ddf106e8e32160aba99e7b3283800faa24d601091de3c",
+      "all_expected_task_and_dependent_followup_texts_present": true,
+      "original_issue_fork_PR_instruction_still_present": true,
+      "user_message_count": 3
+    }
+  ],
+  "limits": [
+    "Presence of text does not prove attention or reasoning about it.",
+    "No corrective prompt or policy change was supplied."
+  ],
+  "fingerprints_match_existing_published_bundle": true,
+  "raw_request_text_remains_private": true
+}

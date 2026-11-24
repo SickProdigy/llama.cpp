@@ -69,6 +69,14 @@ omits the failed preservation and required publication. There is no remote
 source grade because nothing is published. The export records that absence
 explicitly rather than inventing remote checks. No test issues require closure.
 
+A [retained-context audit](native-devstral-spam-context.json) confirms that the
+original explicit issue/fork/PR instruction remains in the final request of
+every turn, alongside all dependent followups. The final inputs are43,280,
+44,900 and55,723 tokens; their request fingerprints match the existing bundle.
+The instruction was not omitted from those recorded requests. Its presence does
+not prove attention or reasoning about it, but additional context capacity alone
+does not establish that the missing actions will be completed.
+
 The read control correctly fetches selected-repository metadata through the
 configured Gitea service and gives a summary consistent with the operator context;
 it does not fetch source or establish coding competence. The fresh coding turn
