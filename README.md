@@ -45,7 +45,12 @@ is substantial and separately reported. A corrected cache-configuration failure
 is preserved. GLM's [fresh Spam workflow](evaluations/2026-11-23-wide-memory/native-glm-spam.md)
 creates the correct issue/fork but fails notification preservation, cooldown
 re-alert/reset behavior, test adequacy and PR publication. Its 85 minutes of coding
-stay within budget without experiment swap. Fresh Announcer is underway.
+stay within budget without experiment swap. Its [fresh Announcer workflow](evaluations/2026-11-23-wide-memory/native-glm-queue.md)
+partially repairs disabled sends, but loses completion replies, leaks room bookkeeping
+and publishes nothing. All three turns stop on repetition. A separate native
+compression guard interrupts slow auxiliary prefill; deterministic fallback retains
+literal tasks, with limitations documented. Coding peaks at 6.83 GiB charged host
+memory and 84,237 prompt tokens without study swap.
 A fresh Q4 Spam comparison will follow both GLM audits; its prior Spam result
 was resumed recovery. Capacity is not task quality.
 No model winner is claimed.

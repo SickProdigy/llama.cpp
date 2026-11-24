@@ -73,6 +73,35 @@ if 'controls/glm-spam-feature-supplementary/result.json'in files:
  assert control['authored_explicit_pytest']['exit_code']==feature['test_adequacy']['explicit_collection_exit']
  assert control['authored_method_counts']['TestEnforcementSwitch']==feature['test_adequacy']['actual_initial_methods']and control['authored_method_counts']['TestRuleAlertCooldown']==feature['test_adequacy']['actual_feature_methods']
  posthoc_glm_feature_source_checked=True
+if KEY=='glm'and FAMILY=='queued_announcements':
+ comparison=j('controls/announcer-initial-completion-control-comparison.json')
+ assert comparison['not_actor_feedback']and comparison['same_control_all_initial_sources']
+ assert comparison['control_sha256']==sha(files['source/glm_queue_initial_supplementary_control.py'])
+ initial=j('audits/glm-queue-initial-manual-audit.json');feature=j('audits/glm-queue-feature-manual-audit.json')
+ for key in ['q3','q4','devstral','glm']:
+  prefix='controls/announcer-initial-completion/'+key+'/'
+  control=j(prefix+'result.json');run=j(prefix+'run.json')
+  for name,digest in comparison['captured_sources_and_results_sha256'][key].items():assert sha(files[prefix+name])==digest
+  assert run['returncode']==0 and control['not_actor_feedback']
+  row=comparison['GLM']if key=='glm'else next(r for r in comparison['prior_candidates']if r['candidate']==key)
+  assert row['source_sha256']==control['source_sha256']
+  assert row['off_then_on_finished_replies']==control['results']['off_then_on_between_callbacks']['finished_reply_count']
+  assert row['normal_finished_replies']==control['results']['normal_all_enabled']['finished_reply_count']
+  if key=='glm':assert control['source_sha256']==j('phases/0/local-grade/source-sha256.json')['announcer/__init__.py']
+  else:
+   link=comparison['existing_public_archive_source_crosschecks'][key];prior=R/link['public_archive'];assert sha(prior.read_bytes())==link['archive_sha256']
+   with tarfile.open(prior)as archive:
+    candidates=[m for m in archive.getmembers()if m.name.endswith('source-sha256.json')and ('phases/0/'in m.name or 'turn0/'in m.name)]
+    assert any(json.loads(archive.extractfile(m).read()).get('announcer/__init__.py')==control['source_sha256']for m in candidates)
+ control=j('controls/glm-queue-feature-supplementary/result.json');run=j('controls/glm-queue-feature-supplementary/run.json')
+ assert run['returncode']==0 and run['control_source_sha256']==sha(files['source/glm_queue_feature_supplementary_control.py'])==feature['posthoc_feature_control_source_sha256']
+ assert control['source_sha256']==j('phases/2/local-grade/source-sha256.json')['announcer/__init__.py']
+ assert control['immutable_fixture_sha256']==feature['immutable_fixture_sha256']
+ assert sha(files['controls/glm-queue-feature-supplementary/result.json'])==feature['posthoc_feature_control_result_sha256']
+ assert control['results']['four_completed_jobs']['room_entries']==8
+ for name,digest in audit['posthoc_control_sha256'].items():
+  mapped=('controls/announcer-initial-completion/glm/result.json'if name=='glm-queue-initial-supplementary-control/result.json'else 'controls/glm-queue-feature-supplementary/result.json'if name=='glm-queue-feature-supplementary-control/result.json'else 'controls/'+name if name=='announcer-initial-completion-control-comparison.json'else'audits/'+name)
+  assert sha(files[mapped])==digest
 context_audit_name='audits/'+KEY+'-'+SHORT+'-context-instruction-audit.json'
 if context_audit_name in files:
  context=j(context_audit_name);assert context['not_actor_feedback']and not context['final_feature_phase_still_pending']and len(context['phases'])==3
@@ -81,6 +110,14 @@ if context_audit_name in files:
   metric=by_id[row['last_complete_HTTP_id']];assert row['completed_phase']and metric['capture_complete_without_transport_error']
   assert row['saved_request_JSON_sha256']==metric['private_saved_request_file_sha256']and row['wire_request_sha256_from_proxy_metrics']==metric['request_sha256']
   assert row['prompt_tokens']==metric['usage']['prompt_tokens']
+  if 'last_observed_primary_HTTP_id'in row:
+   interrupted=by_id[row['last_observed_primary_HTTP_id']];assert row['last_observed_primary_incomplete']and not interrupted['capture_complete_without_transport_error']
+   assert row['primary_tool_count']==33 and all(row['expected_task_text_presence'])and row['all_expected_task_texts_present']
+ if KEY=='glm'and FAMILY=='queued_announcements':
+  assert context['compression']['deterministic_fallback_committed']and not context['compression']['successful_model_generated_summary']
+  for id in context['compression']['auxiliary_HTTP_ids']:
+   assert not by_id[id]['capture_complete_without_transport_error']and not by_id[id]['usage']and not by_id[id]['finish_reasons']
+
 assert len(set(roots))==1 and roots[0]
 restoration=j('runtime/runtime-restoration.json');assert restoration['restored'];before=j('runtime/runtime-before.json');after=restoration['after']
 for service in before:

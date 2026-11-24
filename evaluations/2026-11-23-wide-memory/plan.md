@@ -23,7 +23,10 @@ below retain the original protocol and successive resource milestones.
   Resource restoration is independently verified. [Fresh Spam](native-glm-spam.md)
   fails preservation/cooldown/test adequacy and PR publication, despite a correct
   issue/fork; restoration and issue closure are independently verified. Fresh
-  Announcer is underway.
+  [Announcer](native-glm-queue.md) is complete: partial repair, reply/bookkeeping/README
+  defects, all turns repetition-stopped and no publication. Its separate compression
+  guard confound and deterministic fallback are documented; original runtime and
+  owner state restored, stage cleaned.
 - Registered comparison followup: run a fresh Q4 Spam lineage after both GLM
   families complete their audits and cleanup. The earlier Q4 Spam recovery is
   not matched fresh evidence. Reuse actual saved 6656m/6.5 GiB native launches,

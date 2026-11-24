@@ -81,6 +81,31 @@ within budget, with no experiment swap. Fresh Announcer remains underway.
 A matched fresh Q4 Spam trial is registered after both GLM audits; the recovered
 Q4 Spam outcome remains conditional. Resource fit is not quality proof.
 
+### Slow context compaction: separate timeout settings
+
+The GLM Announcer run exposed a native Hermes limitation: context compression
+was abandoned after 300 seconds without summary output while the P100 was still
+processing its prompt. The next primary request retained all three full tasks.
+The extended provider/request timeouts did not cover the separate compression
+budgets; this is an experiment configuration limitation, not evidence of model
+or GPU incompatibility.
+
+Pinned runtime source supports this **untested followup configuration**:
+
+```yaml
+auxiliary:
+  compression:
+    timeout: 5400
+compression:
+  context_timeout_seconds: 5400
+  context_total_ceiling_seconds: 5400
+```
+
+These values have not been applied or validated end to end. Register any such
+budget amendment before a separate trial, and measure its actual compaction,
+memory and task outcomes. Longer compression patience does not resolve the
+independently observed code, test, documentation or publication failures.
+
 ## November 22: full P100 plus up to 8 GiB host spillover
 
 The owner widened the candidate budget to the P100's 16 GiB VRAM plus up to

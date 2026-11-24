@@ -1,0 +1,390 @@
+{
+  "classification": "Fresh Announcer partially repairs disabled sends but loses completion replies, leaks new room bookkeeping and misdocuments cancellation; all turns repetition-stopped, no Gitea publication",
+  "model": {
+    "file": "GLM-4.7-Flash-Q4_K.gguf",
+    "bytes": 18244193920,
+    "sha256": "b6019edc5fbe37d3660d2e994d16c839a7855a6f03362c5dcf8142ba479cd0d2",
+    "after_full_SHA_advised_DONTNEED_for_only_this_study_owned_file": true,
+    "not_global_cache_flush_or_proof_of_cold_cache": true
+  },
+  "candidate_key": "glm",
+  "family": "queued_announcements",
+  "phases": [
+    {
+      "family": "queued_announcements",
+      "arm": "glm",
+      "phase": 0,
+      "elapsed_seconds": 3244.0477638560114,
+      "exit_code": 1,
+      "external_timeout": false,
+      "query_sha256": "18c19bb0144c0fd9373d17dc15dde2977b79aa68c0de16897fa4c2aa0cd12a40",
+      "native_session_fingerprints": {
+        "logical_root": "d37d942f9510159727a36cacf5029b501829847fe660dd024e73f2abb989d289",
+        "incoming_sid": null,
+        "effective_sid": "d37d942f9510159727a36cacf5029b501829847fe660dd024e73f2abb989d289"
+      },
+      "private_original_run_sha256": "1250f8bc2ef64489a1089f1c844643b2c2a16fad1e837d86ad2ac653b2725baf",
+      "local_grade": {
+        "kind": "unpublished-local-draft",
+        "family": "queued_announcements",
+        "phase": 0,
+        "source_digest": "0ada10e0b81316d0bb33387982dc561242ddc8d35e43590171b784b493ac9fc0",
+        "project_exit": 1,
+        "preservation_exit": 0,
+        "independent_exit": 0,
+        "changed_paths": [
+          "announcer/__init__.py",
+          "tests/test_announcer.py"
+        ],
+        "not_fed_to_models": true
+      },
+      "remote_grade": null,
+      "remote_grade_absent": true,
+      "forge": {
+        "scope_state": {
+          "issue": null,
+          "pr": null,
+          "branch": null,
+          "commits": 0
+        },
+        "phase": 0
+      }
+    },
+    {
+      "family": "queued_announcements",
+      "arm": "glm",
+      "phase": 1,
+      "elapsed_seconds": 848.8355782729923,
+      "exit_code": 1,
+      "external_timeout": false,
+      "query_sha256": "98c262dbcebea2188aef2065d7debb169b791877b1f28708d5df358ef31ea726",
+      "native_session_fingerprints": {
+        "logical_root": "d37d942f9510159727a36cacf5029b501829847fe660dd024e73f2abb989d289",
+        "incoming_sid": "d37d942f9510159727a36cacf5029b501829847fe660dd024e73f2abb989d289",
+        "effective_sid": "d37d942f9510159727a36cacf5029b501829847fe660dd024e73f2abb989d289"
+      },
+      "private_original_run_sha256": "5243effef10ba5bd5a6b216056e35e852898f27f7ddb4c1bc0f8450d58db485c",
+      "local_grade": {
+        "kind": "unpublished-local-draft",
+        "family": "queued_announcements",
+        "phase": 1,
+        "source_digest": "27018136c4632f97d0b9fed6abb322ed3b9b1bda552b47dc94c6869166b1548d",
+        "project_exit": 1,
+        "preservation_exit": 0,
+        "independent_exit": 0,
+        "changed_paths": [
+          "announcer/README.md",
+          "announcer/__init__.py",
+          "tests/test_announcer.py"
+        ],
+        "not_fed_to_models": true
+      },
+      "remote_grade": null,
+      "remote_grade_absent": true,
+      "forge": {
+        "scope_state": {
+          "issue": null,
+          "pr": null,
+          "branch": null,
+          "commits": 0
+        },
+        "phase": 1
+      }
+    },
+    {
+      "family": "queued_announcements",
+      "arm": "glm",
+      "phase": 2,
+      "elapsed_seconds": 8824.507774878002,
+      "exit_code": 1,
+      "external_timeout": false,
+      "query_sha256": "eb6c84a45efc508d47af96e23e780a0b6573a7433de9429154e369c10b7d7da8",
+      "native_session_fingerprints": {
+        "logical_root": "d37d942f9510159727a36cacf5029b501829847fe660dd024e73f2abb989d289",
+        "incoming_sid": "d37d942f9510159727a36cacf5029b501829847fe660dd024e73f2abb989d289",
+        "effective_sid": "d37d942f9510159727a36cacf5029b501829847fe660dd024e73f2abb989d289"
+      },
+      "private_original_run_sha256": "47a6b88b93b6f82b3265064a3be2d33ab37ca61878e544e3a892dc9eb9995d09",
+      "local_grade": {
+        "kind": "unpublished-local-draft",
+        "family": "queued_announcements",
+        "phase": 2,
+        "source_digest": "b0481c8b7181a40ff6e2207a1fec018f706bc3d053737a7643c5d1d2e61d9400",
+        "project_exit": 1,
+        "preservation_exit": 0,
+        "independent_exit": 1,
+        "changed_paths": [
+          "announcer/README.md",
+          "announcer/__init__.py",
+          "tests/test_announcer.py"
+        ],
+        "not_fed_to_models": true
+      },
+      "remote_grade": null,
+      "remote_grade_absent": true,
+      "forge": {
+        "scope_state": {
+          "issue": null,
+          "pr": null,
+          "branch": null,
+          "commits": 0
+        },
+        "phase": 2
+      }
+    }
+  ],
+  "independent_final_audit": {
+    "audit_complete": true,
+    "not_actor_feedback": true,
+    "fresh_primary": true,
+    "classification": "Fresh Announcer partially repairs disabled sends but loses completion replies, leaks new room bookkeeping and misdocuments cancellation; all turns repetition-stopped, no Gitea publication",
+    "requested_initial_no_send_while_disabled_local_passed": true,
+    "all_requested_initial_behavior_preserved": false,
+    "all_requested_feature_behavior_correct": false,
+    "original_behavior_preservation_passed": true,
+    "original_tests_each_phase": 83,
+    "original_suite_passed_by_phase": [
+      83,
+      83,
+      83
+    ],
+    "original_suite_failed_by_phase": [
+      0,
+      0,
+      0
+    ],
+    "project_tests_by_phase": [
+      85,
+      85,
+      91
+    ],
+    "project_suite_failed_by_phase": [
+      1,
+      1,
+      1
+    ],
+    "independent_exit_by_phase": [
+      0,
+      0,
+      1
+    ],
+    "original_test_AST_preserved": true,
+    "initial_authored_tests": 3,
+    "feature_authored_tests": 6,
+    "total_authored_tests": 9,
+    "authored_reenable_test_replays_immutable_fake_callbacks_not_real_scheduler_evidence": true,
+    "feature_authored_test_codifies_missing_completion_reply": true,
+    "DEBUG_print_remains": true,
+    "README_immediate_cancel_all_claim_false": true,
+    "new_room_argument_undocumented": true,
+    "initial_off_then_on_pending_survivor_missing_completion_notification": true,
+    "feature_selective_cancel_survivor_missing_completion_notification": true,
+    "feature_room_mapping_unbounded_completed_job_retention": true,
+    "feature_last_target_cancellation_cleans_target_and_reply": true,
+    "same_initial_control_Q3_Q4_Devstral_preserves_completion_notification": true,
+    "frozen_feature_metadata_failure_not_argument_rejection": true,
+    "exact_pinned_dispatch_accepts_room_argument": true,
+    "CLI_repetition_detector_stopped_all_three_turns": true,
+    "CLI_discarded_partial_response_all_three_turns": true,
+    "not_external_timeout_or_native_total_turn_budget_expiry": true,
+    "separate_compression_no_output_guard_interrupted_two_auxiliary_calls": true,
+    "deterministic_fallback_not_model_generated_summary": true,
+    "operator_main_timeout_extension_missed_separate_compression_guard": true,
+    "required_Gitea_upstream_issue_personal_fork_branch_and_PR_completed": false,
+    "actual_Announcer_forge_mutations": 0,
+    "native_wrong_target_issue_and_fork_attempts_rejected_before_proxy": 2,
+    "prior_Spam_fork_not_Announcer_publication": true,
+    "specific_success_PR_commit_or_test_count_final_claims": false,
+    "final_published_commit": null,
+    "upstream_main_unchanged": "e703b9e32748cbd930c47b523fa4225dbf70691b",
+    "publication_independently_audited": true,
+    "test_issue_cleanup_independently_verified": true,
+    "test_issues_opened": 0,
+    "test_issues_remaining_open": 0,
+    "test_PRs_opened": 0,
+    "runtime_restoration_settings_models_owner_and_Codex_independently_verified": true,
+    "owned_stage_cleanup_independently_verified": true,
+    "phase_actor_seconds": [
+      3244.0477638560114,
+      848.8355782729923,
+      8824.507774878002
+    ],
+    "observed_grades_by_phase": [
+      {
+        "local-grade": {
+          "kind": "unpublished-local-draft",
+          "family": "queued_announcements",
+          "phase": 0,
+          "source_digest": "0ada10e0b81316d0bb33387982dc561242ddc8d35e43590171b784b493ac9fc0",
+          "project_exit": 1,
+          "preservation_exit": 0,
+          "independent_exit": 0,
+          "changed_paths": [
+            "announcer/__init__.py",
+            "tests/test_announcer.py"
+          ],
+          "not_fed_to_models": true
+        }
+      },
+      {
+        "local-grade": {
+          "kind": "unpublished-local-draft",
+          "family": "queued_announcements",
+          "phase": 1,
+          "source_digest": "27018136c4632f97d0b9fed6abb322ed3b9b1bda552b47dc94c6869166b1548d",
+          "project_exit": 1,
+          "preservation_exit": 0,
+          "independent_exit": 0,
+          "changed_paths": [
+            "announcer/README.md",
+            "announcer/__init__.py",
+            "tests/test_announcer.py"
+          ],
+          "not_fed_to_models": true
+        }
+      },
+      {
+        "local-grade": {
+          "kind": "unpublished-local-draft",
+          "family": "queued_announcements",
+          "phase": 2,
+          "source_digest": "b0481c8b7181a40ff6e2207a1fec018f706bc3d053737a7643c5d1d2e61d9400",
+          "project_exit": 1,
+          "preservation_exit": 0,
+          "independent_exit": 1,
+          "changed_paths": [
+            "announcer/README.md",
+            "announcer/__init__.py",
+            "tests/test_announcer.py"
+          ],
+          "not_fed_to_models": true
+        }
+      }
+    ],
+    "test_log_sha256_by_phase": [
+      {
+        "local-grade": {
+          "project.log": "1f20f1828c7f08bff7d779c564115e3591490175ce9dcdc90446d6c097692892",
+          "preservation.log": "a5e29061e581aca38f8a81eaeeb170044d5e9391d510ff4d157b08fb905526f8"
+        }
+      },
+      {
+        "local-grade": {
+          "project.log": "cacc286a1b4ad6ed5e778acba8e3a60dc15e78dc6991a47cedc337407f5112db",
+          "preservation.log": "c98a8245044ed5da526853bf5fe51a745d89f162bb850140b714ec480bd4647b"
+        }
+      },
+      {
+        "local-grade": {
+          "project.log": "c56e4278c7d13fa000fffeec0881a85feba25dda895d95f7ed2ea9c9b059c3cb",
+          "preservation.log": "2e169133748a1ad2307dca2d26d24bb60604cb2dd3eca6e01c88b762e38ba256"
+        }
+      }
+    ],
+    "source_changes_from_previous_phase": [
+      null,
+      [
+        "announcer/README.md",
+        "announcer/__init__.py"
+      ],
+      [
+        "announcer/__init__.py",
+        "tests/test_announcer.py"
+      ]
+    ],
+    "native_exit_by_phase": [
+      {
+        "exit_code": 1,
+        "external_timeout": false
+      },
+      {
+        "exit_code": 1,
+        "external_timeout": false
+      },
+      {
+        "exit_code": 1,
+        "external_timeout": false
+      }
+    ],
+    "publication_scope_by_phase": [
+      {
+        "issue": null,
+        "pr": null,
+        "branch": null,
+        "commits": 0
+      },
+      {
+        "issue": null,
+        "pr": null,
+        "branch": null,
+        "commits": 0
+      },
+      {
+        "issue": null,
+        "pr": null,
+        "branch": null,
+        "commits": 0
+      }
+    ],
+    "manual_audit_sha256": {
+      "glm-queue-initial-manual-audit.json": "294220efb9085ed1a2d0ce04a8e1477feb2f4d7a70671cc4e823538cf819200d",
+      "glm-queue-README-manual-audit.json": "180662353f35afa5ddcc3b358e8836596e63fe567077fab37d1f9c8c653791c5",
+      "glm-queue-feature-manual-audit.json": "6bf61a6cfa0eb533708b9a375c6217f1744a3514aef0c66e0f4de31a7642a6d5"
+    },
+    "posthoc_control_sha256": {
+      "glm-queue-initial-supplementary-control/result.json": "4f458f76444d8618c62b0bdbb0100d7c07d5fa4f48d433810982434fdd11729f",
+      "announcer-initial-completion-control-comparison.json": "073522231e327d43894a765f2177ad1abd3047e8734a68ca0ec99f6839c4906d",
+      "glm-queue-feature-supplementary-control/result.json": "5eaac16654379524c8fe64e8f24ae0004a55478755afffb1dd55273caf07754a",
+      "glm-queue-context-instruction-audit.json": "7f60dea839bf99fe78425dbd8569b53166f80eacdef07f9143aec5289ea3ec21",
+      "glm-queue-publication-independent-readback.json": "e3102efb5e78af3d7afa7c2ccd71ccd2b2923dfc812b902ab5f8eaf48f0ac4d7",
+      "glm-queue-runtime-limitation.json": "5f6c3fa702cb99846fd497c2d045f1d5ef805cb58ecf45e20bc97ee41ed1f546"
+    },
+    "peak_gpu_MiB": 15336,
+    "GPU_sample_count": 1267,
+    "limits": [
+      "One fresh family with dependent followups does not establish autonomous reliability.",
+      "Original 83 tests pass while independently established completion and bookkeeping defects remain.",
+      "Frozen feature assertion stops at absent command metadata; exact pinned dispatch accepts arguments.",
+      "Original fixture retains event callbacks for manual invocation; model-authored replay failure is not real scheduler duplication.",
+      "Primary95 completes at84237 prompt tokens; slow prefill also triggers separate 300-second native compression guard on auxiliary94/96.",
+      "Compression fallback preserves literal task text with README inside an assistant checkpoint; presence is not attention proof.",
+      "Earlier initial/README defects and repetition precede compression; this confound does not explain every task failure.",
+      "No private grade feedback, actor correction or neutral continuation supplied.",
+      "Focused forge allowlists are part of setup; wrong selected target rejected locally, not an outage.",
+      "No remote code publication; no remote correctness claim.",
+      "Sampled aggregate cgroups/PSS/cache/helpers are not continuous whole-host attribution; global swap is unattributed.",
+      "Fresh Q4 Spam comparison remains required; prior Q4 Spam is conditional recovery."
+    ]
+  },
+  "measurements": {
+    "sample_count": 1267,
+    "complete_aggregate_sample_count": 1267,
+    "measurement_error_sample_count": 0,
+    "peak_observed_cgroup_bytes": 7337336832,
+    "peak_observed_all_process_PSS_bytes": 6344407040,
+    "peak_observed_experiment_swap_bytes": 0,
+    "resource_guard_samples": 0,
+    "global_pswpin_delta_pages": 438426,
+    "global_pswpout_delta_pages": 23372,
+    "global_swap_not_attributed_to_model": true,
+    "HTTP_records": 121,
+    "completed_HTTP_records_without_transport_error": 116,
+    "transport_error_record_count": 5,
+    "incomplete_backend_body_record_count": 5,
+    "maximum_completed_prompt_tokens": 84237,
+    "HTTP_latency_seconds": {
+      "min": 4.865350246429443,
+      "median": 37.657734870910645,
+      "max": 3011.6431863307953,
+      "sum": 9646.380709409714
+    },
+    "not_isolated_decode_throughput": true,
+    "sampling_not_continuous_peak_or_entire_host_attribution": true
+  },
+  "comparison_limits": [
+    "Fresh primary starts independently of the read-only control; all three coding turns share one native lineage.",
+    "Same predefined followups, no private grade feedback; final model sampling is not seed-pinned.",
+    "Focused scoped Gitea tools and publication execution gate are part of this configuration.",
+    "Private source snapshots, raw wire captures, profiles, tasks, graders and receipt keys remain local. Public evidence verification does not recreate the whole private workflow or prove all behavior correct."
+  ]
+}

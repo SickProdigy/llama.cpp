@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "manifest_files": 203,
+  "memory_samples": 1267,
+  "HTTP_records": 121,
+  "completed_HTTP_records": 116,
+  "private_behavior_not_reexecuted": true,
+  "observed_grades_by_phase": [
+    {
+      "local-grade": {
+        "project_exit": 1,
+        "preservation_exit": 0,
+        "independent_exit": 0
+      }
+    },
+    {
+      "local-grade": {
+        "project_exit": 1,
+        "preservation_exit": 0,
+        "independent_exit": 0
+      }
+    },
+    {
+      "local-grade": {
+        "project_exit": 1,
+        "preservation_exit": 0,
+        "independent_exit": 1
+      }
+    }
+  ],
+  "posthoc_dispatch_source_fingerprint_checked": true,
+  "posthoc_glm_initial_source_fingerprint_checked": false,
+  "posthoc_glm_feature_source_fingerprint_checked": false,
+  "quality_classification": "Fresh Announcer partially repairs disabled sends but loses completion replies, leaks new room bookkeeping and misdocuments cancellation; all turns repetition-stopped, no Gitea publication",
+  "scope": "Saved bytes and observed outcome consistency only. Failed tests and absent publication remain failures/absence; not a coding-quality or autonomous-reliability certificate."
+}
