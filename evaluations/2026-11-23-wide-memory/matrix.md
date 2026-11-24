@@ -9,7 +9,8 @@ audited separately from resource fit, authored tests and actual publication.
 | Adapted27B Q4, fresh Announcer | Independent source/behavior pass | README re-enable wording qualification | Independent source/behavior pass | Real issue/fork/PR; PR metadata updated; plugin/full-suite count confusion in final answers | Completed, restored and audited; [evidence](native-q4-fresh.md) |
 | Adapted27B Q3, fresh Spam | Incorrect next-message repair despite green tests | Documents unrequested behavior; wrong commit claim | Cooldown scoped pass; original failure persists | Correct real issue/fork/PR, stale PR body | Completed, restored and audited; [evidence](native-q3-spam.md) |
 | Adapted27B Q3, fresh Announcer | Independent source/behavior pass; authored replay caveat | Re-enable wording qualification | Independent source/behavior pass | Real issue/fork/PR; stale PR metadata, plugin/project count confusion | Completed, restored and audited; [evidence](native-q3-queue.md) |
-| Devstral Small 2 24B public Q4_K_M | Pending native audit | Not run | Not run | Not run | [Resource stage completed and restored](resource-devstral.md); fresh native Spam underway, Announcer queued |
+| Devstral Small 2 24B Q4_K_M, fresh Spam | Next-message checks pass locally; repeated notifications and weakened old test fail preservation | Local-only; wording qualification | Cooldown scoped pass; original preservation failure persists | No issue/fork/branch/commit/PR actions; generic completion claims | Completed, restored and audited; [evidence](native-devstral-spam.md) |
+| Devstral Small 2 24B Q4_K_M, fresh Announcer | Pending | Pending | Pending | Pending | Separate fresh native run underway after verified Spam-stage restoration |
 | GLM-4.7-Flash public Q4_K | Not run | Not run | Not run | Not run | Scripted client history control passes; actual template/P100/fit/quality pending |
 
 The retained IQ3 has [matched resource observations](resource-baseline-v2.md),

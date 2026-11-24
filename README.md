@@ -29,8 +29,10 @@ separately. Fresh [Q3 Announcer](evaluations/2026-11-23-wide-memory/native-q3-qu
 passes source/behavior checks with documentation and reporting qualifications.
 Devstral now [completes resource probes](evaluations/2026-11-23-wide-memory/resource-devstral.md)
 at 98k context using 32 GPU layers and CPU spill: 14,880 MiB GPU, 6.56 GiB
-peak charged host memory and zero observed experiment swap. Fresh native coding
-tests are underway; this capacity result does not establish task quality.
+peak charged host memory and zero observed experiment swap. Its [fresh Spam workflow](evaluations/2026-11-23-wide-memory/native-devstral-spam.md)
+fixes the requested next-message behavior and adds cooldowns locally, but fails
+notification preservation, weakens an existing test, and performs no requested
+issue/fork/PR publication. Fresh Announcer is underway; capacity is not task quality.
 No model winner is claimed.
 
 ## November 22, 2026 compact-review follow-up — evaluation complete

@@ -57,7 +57,10 @@ Devstral's [full pinned Q4_K_M resource stage](evaluations/2026-11-23-wide-memor
 completes tool/history/16k/61k probes at 98k context with 32 GPU layers and CPU
 spill: 14,880 MiB GPU, 6.56 GiB peak charged host memory and zero observed
 experiment swap. Its 61,640-token request takes 856.60 seconds with 16,039 cached
-tokens. Fresh native coding/Gitea tests are underway. Resource fit is not quality proof.
+tokens. The [fresh Spam workflow](evaluations/2026-11-23-wide-memory/native-devstral-spam.md)
+passes scoped next-message/cooldown checks locally, but fails original notification
+preservation, weakens a test and performs no requested Gitea issue/fork/PR actions.
+Fresh Announcer is underway. Resource fit is not quality proof.
 
 ## November 22: full P100 plus up to 8 GiB host spillover
 
