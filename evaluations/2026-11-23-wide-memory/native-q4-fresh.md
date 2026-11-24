@@ -54,7 +54,9 @@ all-process PSS **5.034 GiB**, GPU **15,456 MiB**, and zero observed experiment
 swap or resource-guard events. All 60 HTTP bodies complete without transport
 errors; largest completed prompt is **67,720 tokens**. HTTP median is **73.22 s**,
 maximum **662.80 s**; this includes prompt processing and generation, not isolated
-decode speed. The coding stages total **116.53 minutes**; the separate read-only
+decode speed. The first coding HTTP call takes **175.73 s** for 13,734 prompt tokens; the
+separate read-control first call takes **194.27 s** ([control audit](native-q4-fresh-read-control-audit.json)).
+The coding stages total **116.53 minutes**; the separate read-only
 control is excluded. Global swap counters increase (29,189 pages in, 239,216 out),
 which cannot be attributed to this no-swap experiment. Samples do not prove
 continuous whole-host peaks. Disk reserve stays above 100 GiB.

@@ -1,0 +1,10 @@
+{
+  "not_actor_feedback": true,
+  "first_read_control_HTTP_seconds": 194.2732548713684,
+  "first_coding_HTTP_seconds": 175.7325668334961,
+  "first_coding_prompt_tokens": 13734,
+  "first_coding_request_id": 4,
+  "read_control_seconds": 326.5655378840165,
+  "read_control_audit": "Correct configured host and operator-seeded private repository, baseline plugin-directory inventory, clean working tree and no repository mutations. It references owner instructions for some API feature descriptions rather than directly verifying each feature. Separate from scored coding lineage.",
+  "not_isolated_decode_or_cold_cache_proof": true
+}
