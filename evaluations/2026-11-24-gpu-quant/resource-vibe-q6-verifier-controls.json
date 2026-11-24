@@ -1,0 +1,1 @@
+{"passed": true, "kind": "artifact_consistency_controls_not_model_trials", "actual_positive_accepted": true, "coherent_wrong_GPU_summary_rejected": true, "manifest_hash_updated_in_negative_control": true, "archive_unchanged_SHA256": "d536292ed81b956779bd4feb6f34ec0f9d398c4f337a6619bc62393411f1991c"}

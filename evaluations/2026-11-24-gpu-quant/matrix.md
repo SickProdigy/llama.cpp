@@ -102,3 +102,6 @@ this study. It offers a smaller 4-bit format, not a newer trained checkpoint.
 
 
 The [VibeForged Q4 unattended baseline](native-vibe-q4-beets.md) completed without code changes: all 18 selected `execute_code` attempts were blocked by copied-profile one-shot approval policy. Repository read control succeeded; code-tool ability remains unmeasured. A separate isolated deny/approve pure-code control confirms this mechanism without model calls. Original deployed settings remain unchanged. The prospective comparison now uses a fresh explicitly trusted Vibe Q4/Q6 pair; Q6 deny-profile coding is deferred, with its capacity check proceeding independently. Fable Q4/Q6 baseline outcomes remain preserved. Higher precision has not yet demonstrated a quality gain.
+
+
+Vibe Q6 [capacity evidence](resource-vibe-q6-summary.json) now completes: 98,304-token allocation, requested full GPU offload, 11,566 MiB peak GPU, 6.561 GiB charged study cgroups, no study swap or guards, and a 59,937-token probe in 153.634 seconds. Original services/settings/models were independently verified restored afterwards. Capacity is not coding quality. Fresh trusted Vibe Q4 coding is launched; the trusted Q6 profile is frozen and pending, with identical task/source/sampler/seed/caps. Both copied profiles actually execute the no-model pure-code approval check successfully.

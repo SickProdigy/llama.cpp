@@ -1,0 +1,195 @@
+{
+  "candidate": "vibe-q6",
+  "passed_capacity_stage": true,
+  "not_coding_quality": true,
+  "model_identity": {
+    "file": "Qwen3.6-14B-A3B-VibeForged-v2-Q6_K.gguf",
+    "bytes": 11325370432,
+    "sha256": "56695b1ce0fa47b7d2d94bbb57bd71e5c24decfcd4af76b6a9c3073ee464fe9c",
+    "specific_study_file_advised_DONTNEED_after_hash": true,
+    "not_global_cache_flush_or_cold_cache_proof": true
+  },
+  "public_pin": {
+    "repo": "tvall43/Qwen3.6-14B-A3B-VibeForged-v2-GGUF",
+    "revision": "4f08fded2aee1e27fb0335104307ade516508d37",
+    "file": "Qwen3.6-14B-A3B-VibeForged-v2-Q6_K.gguf",
+    "expected_bytes": 11325370432,
+    "sha256": "56695b1ce0fa47b7d2d94bbb57bd71e5c24decfcd4af76b6a9c3073ee464fe9c",
+    "layouts": [
+      {
+        "context": 98304,
+        "gpu_layers": 99
+      }
+    ],
+    "sampler": {
+      "temperature": 0.2,
+      "top_p": 0.95,
+      "top_k": 40,
+      "min_p": 0,
+      "repeat_penalty": 1,
+      "presence_penalty": 0,
+      "chat_template_kwargs": {
+        "enable_thinking": false
+      }
+    },
+    "probe_output_cap": 8192,
+    "retained_file_requires_full_hash_verification": true
+  },
+  "context": 98304,
+  "requested_gpu_layers": 99,
+  "fit_auto_off": true,
+  "placement_limitation": "Capacity log does not enumerate tensor buffers; explicit native placement check is separate. Requested all-GPU layout, observed VRAM/PSS and no OOM are recorded.",
+  "samples": 62,
+  "peak_gpu_MiB": 11566,
+  "peak_aggregate_cgroup_bytes": 7045206016,
+  "peak_process_PSS_bytes": 1686459392,
+  "peak_study_swap_bytes": 0,
+  "guard_count": 0,
+  "measurement_errors": 0,
+  "minimum_model_disk_free_bytes": 118848425984,
+  "global_swap_in_pages_delta": 1712,
+  "global_swap_out_pages_delta": 685,
+  "global_swap_attribution": "Whole-host deltas are not attributed to study.",
+  "probes": {
+    "tool-followup": {
+      "body_complete": true,
+      "seconds": 0.37360875599551946,
+      "usage": {
+        "completion_tokens": 6,
+        "prompt_tokens": 405,
+        "total_tokens": 411,
+        "prompt_tokens_details": {
+          "cached_tokens": 378
+        }
+      },
+      "finish_reason": "stop",
+      "response_sha256": "5b40b4d0bd91743224259edfd3749ae84bbbf0523e7c90b71ac197e85345a57b",
+      "timings": {
+        "cache_n": 378,
+        "prompt_n": 27,
+        "prompt_ms": 257.625,
+        "prompt_per_token_ms": 9.541666666666666,
+        "prompt_per_second": 104.80349344978166,
+        "predicted_n": 6,
+        "predicted_ms": 111.242,
+        "predicted_per_token_ms": 22.2484,
+        "predicted_per_second": 44.94705237230542
+      }
+    },
+    "tool-result": {
+      "body_complete": true,
+      "seconds": 0.689850977039896,
+      "usage": {
+        "completion_tokens": 23,
+        "prompt_tokens": 356,
+        "total_tokens": 379,
+        "prompt_tokens_details": {
+          "cached_tokens": 320
+        }
+      },
+      "finish_reason": "stop",
+      "response_sha256": "41fd004980eac6ff8c1396bc5377a3dd42bef2a933d73f86f48935f103b5a160",
+      "timings": {
+        "cache_n": 320,
+        "prompt_n": 36,
+        "prompt_ms": 213.299,
+        "prompt_per_token_ms": 5.924972222222222,
+        "prompt_per_second": 168.77716257460185,
+        "predicted_n": 23,
+        "predicted_ms": 471.984,
+        "predicted_per_token_ms": 21.453818181818182,
+        "predicted_per_second": 46.61174955083223
+      }
+    },
+    "prompt60000": {
+      "body_complete": true,
+      "seconds": 153.63447759789415,
+      "usage": {
+        "completion_tokens": 9,
+        "prompt_tokens": 59937,
+        "total_tokens": 59946,
+        "prompt_tokens_details": {
+          "cached_tokens": 16020
+        }
+      },
+      "finish_reason": "stop",
+      "response_sha256": "6bdc550e83302c719ba0fde640dc5202b6e900862015695917585e4816a1d9a3",
+      "timings": {
+        "cache_n": 16020,
+        "prompt_n": 43917,
+        "prompt_ms": 153235.66,
+        "prompt_per_token_ms": 3.4892105562766127,
+        "prompt_per_second": 286.59778017727723,
+        "predicted_n": 9,
+        "predicted_ms": 260.718,
+        "predicted_per_token_ms": 32.58975,
+        "predicted_per_second": 30.6844943578886
+      }
+    },
+    "prompt16000": {
+      "body_complete": true,
+      "seconds": 38.45581620791927,
+      "usage": {
+        "completion_tokens": 9,
+        "prompt_tokens": 16152,
+        "total_tokens": 16161,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "finish_reason": "stop",
+      "response_sha256": "4913fd0bc6ad97d505395654c92507a0fab91fcda92694a6d550bb1f4dffa527",
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 16152,
+        "prompt_ms": 38150.306,
+        "prompt_per_token_ms": 2.3619555473006435,
+        "prompt_per_second": 423.37799335082667,
+        "predicted_n": 9,
+        "predicted_ms": 205.946,
+        "predicted_per_token_ms": 25.74325,
+        "predicted_per_second": 38.84513416138211
+      }
+    },
+    "tool": {
+      "body_complete": true,
+      "seconds": 33.79970851994585,
+      "usage": {
+        "completion_tokens": 28,
+        "prompt_tokens": 293,
+        "total_tokens": 321,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "finish_reason": "tool_calls",
+      "response_sha256": "05802504b3f405933a1b3ea15484eaafac91f258ec31a900f1dbff8ea3851de7",
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 293,
+        "prompt_ms": 28757.719,
+        "prompt_per_token_ms": 98.14921160409557,
+        "prompt_per_second": 10.188568849984243,
+        "predicted_n": 28,
+        "predicted_ms": 5037.429,
+        "predicted_per_token_ms": 186.57144444444444,
+        "predicted_per_second": 5.359877032510036
+      }
+    }
+  },
+  "original_runtime_restored": true,
+  "probe_timing_scope": "Operational capacity timings, not controlled isolated throughput. Brief labelled CPU-only evidence/privacy helpers may overlap and are included when sampled.",
+  "resource_controller_variant": "Vibe-specific after-original-stop selected-file cache advice",
+  "selected_file_cache_after_original_stop": {
+    "epoch": 1795551784.6159692,
+    "file": "Qwen3.6-14B-A3B-VibeForged-v2-Q6_K.gguf",
+    "bytes": 11325370432,
+    "mincore_cached_page_bytes_before": 0,
+    "mincore_cached_page_bytes_after": 0,
+    "only_specific_inactive_file_advised": true,
+    "no_global_cache_flush": true,
+    "not_cold_storage_cache_proof": true,
+    "content_not_modified": true,
+    "scope": "After original backend exits, before measured replacement starts. Page residency rounded to page boundaries; no claim about storage-device caches."
+  }
+}
