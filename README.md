@@ -10,6 +10,9 @@ See the protocol/results before treating fit as useful agent behavior.
 The [fresh trusted Vibe Q4 run](evaluations/2026-11-24-gpu-quant/native-vibe-q4-trusted-beets.md)
 executes Python successfully but fails wrong-path recovery without code or publication.
 Matching Q6 also fails the full workflow after partial cancellation/docs; reasoning-mode controls for both families remain pending.
+The [reasoning-enabled Fable Q4 capacity stage](evaluations/2026-11-24-gpu-quant/resource-fable-q4-thinking.md)
+now passes all five probes at98,304 context and8,964MiB sampled GPU peak, with no
+study swap. The fresh reasoning-mode coding workflow is still pending.
 
 The [public27B IQ4_XS capacity check](evaluations/2026-11-24-gpu-quant/resource-adapted-iq4.md)
 passes at64k context after98k CUDA allocation failures; the52k-input request takes

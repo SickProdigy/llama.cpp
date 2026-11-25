@@ -54,6 +54,11 @@ prospectively in unused experimental profiles before revised trials; the control
 does not change prior coding scores or prove summary semantics/session persistence.
 [Public calibration/tensor differences](evaluations/2026-11-24-gpu-quant/adapted-quant-production.md)
 also prevent precision-only attribution.
+The [reasoning-enabled Fable Q4 capacity stage](evaluations/2026-11-24-gpu-quant/resource-fable-q4-thinking.md)
+now passes98k-context synthetic/tool-history probes at8,964MiB GPU and zero
+study swap. Its59,935-input probe takes153.38s with16,033 tokens cached; native
+coding/publication quality remains pending. All four unused reasoning profiles
+pass expanded timeout/context/SDK and actual code-tool preflights.
 No new everyday model/profile selection or autonomous-reliability claim is made.
 
 ## November 24: wider-memory evaluation complete

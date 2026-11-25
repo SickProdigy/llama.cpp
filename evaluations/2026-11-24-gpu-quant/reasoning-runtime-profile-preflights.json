@@ -1,0 +1,179 @@
+{
+  "classification": "prospective unused experimental-profile runtime preflights, not coding quality",
+  "rows": [
+    {
+      "candidate": "fable-q4-thinking",
+      "configuration_and_serialization": {
+        "profile": "fable-q4-thinking-beets_lifecycle",
+        "passed": true,
+        "native_timeout_getters_verified": true,
+        "actual_auxiliary_timeout_seconds": 5400,
+        "actual_compression_host_budgets": [
+          5400,
+          5400
+        ],
+        "actual_native_compressor_context": 98304,
+        "main_progress_serialized": true,
+        "auxiliary_progress_configured": true,
+        "auxiliary_progress_live_support_proven_separately": true,
+        "not_live_auxiliary_serialization_proof_for_this_profile": true,
+        "model_inference": false,
+        "not_native_tool_or_persistence_proof": true,
+        "endpoint": "http://wide-llm:11431/v1",
+        "serialized_sampler": {
+          "temperature": 1.0,
+          "top_p": 0.95,
+          "top_k": 20,
+          "min_p": 0,
+          "repeat_penalty": 1,
+          "presence_penalty": 0,
+          "chat_template_kwargs": {
+            "enable_thinking": true
+          },
+          "seed": 20261124,
+          "max_tokens": 16384,
+          "return_progress": true
+        },
+        "alias": "gpuquant-fable-q4-thinking",
+        "profile_config_SHA256": "6507045760f3a7597d065be3dcf1779df76796f1181a3b99d27f1256d955e771",
+        "preflight_source_SHA256": "1ce45a400bea3c02d68072e1daefe97342118cdff58aa89ee699561c3e327024"
+      },
+      "pure_code_smoke_passed": true,
+      "pure_code_output": "4\n",
+      "pure_code_model_calls": 0,
+      "pure_code_forge_mutations": 0
+    },
+    {
+      "candidate": "fable-q6-thinking",
+      "configuration_and_serialization": {
+        "profile": "fable-q6-thinking-beets_lifecycle",
+        "passed": true,
+        "native_timeout_getters_verified": true,
+        "actual_auxiliary_timeout_seconds": 5400,
+        "actual_compression_host_budgets": [
+          5400,
+          5400
+        ],
+        "actual_native_compressor_context": 98304,
+        "main_progress_serialized": true,
+        "auxiliary_progress_configured": true,
+        "auxiliary_progress_live_support_proven_separately": true,
+        "not_live_auxiliary_serialization_proof_for_this_profile": true,
+        "model_inference": false,
+        "not_native_tool_or_persistence_proof": true,
+        "endpoint": "http://wide-llm:11431/v1",
+        "serialized_sampler": {
+          "temperature": 1.0,
+          "top_p": 0.95,
+          "top_k": 20,
+          "min_p": 0,
+          "repeat_penalty": 1,
+          "presence_penalty": 0,
+          "chat_template_kwargs": {
+            "enable_thinking": true
+          },
+          "seed": 20261124,
+          "max_tokens": 16384,
+          "return_progress": true
+        },
+        "alias": "gpuquant-fable-q6-thinking",
+        "profile_config_SHA256": "f54ed61f90881fcfc548844b13abc98277699687ab6c1f20aa10587d4564607d",
+        "preflight_source_SHA256": "1ce45a400bea3c02d68072e1daefe97342118cdff58aa89ee699561c3e327024"
+      },
+      "pure_code_smoke_passed": true,
+      "pure_code_output": "4\n",
+      "pure_code_model_calls": 0,
+      "pure_code_forge_mutations": 0
+    },
+    {
+      "candidate": "vibe-q4-thinking",
+      "configuration_and_serialization": {
+        "profile": "vibe-q4-thinking-beets_lifecycle",
+        "passed": true,
+        "native_timeout_getters_verified": true,
+        "actual_auxiliary_timeout_seconds": 5400,
+        "actual_compression_host_budgets": [
+          5400,
+          5400
+        ],
+        "actual_native_compressor_context": 98304,
+        "main_progress_serialized": true,
+        "auxiliary_progress_configured": true,
+        "auxiliary_progress_live_support_proven_separately": true,
+        "not_live_auxiliary_serialization_proof_for_this_profile": true,
+        "model_inference": false,
+        "not_native_tool_or_persistence_proof": true,
+        "endpoint": "http://wide-llm:11431/v1",
+        "serialized_sampler": {
+          "temperature": 1.0,
+          "top_p": 0.95,
+          "top_k": 20,
+          "min_p": 0,
+          "repeat_penalty": 1,
+          "presence_penalty": 0,
+          "chat_template_kwargs": {
+            "enable_thinking": true
+          },
+          "seed": 20261124,
+          "max_tokens": 16384,
+          "return_progress": true
+        },
+        "alias": "gpuquant-vibe-q4-thinking",
+        "profile_config_SHA256": "470d6f8febbc24e9389c065e0e56a3bc31cc71351c552583426f20088700bf2a",
+        "preflight_source_SHA256": "1ce45a400bea3c02d68072e1daefe97342118cdff58aa89ee699561c3e327024"
+      },
+      "pure_code_smoke_passed": true,
+      "pure_code_output": "4\n",
+      "pure_code_model_calls": 0,
+      "pure_code_forge_mutations": 0
+    },
+    {
+      "candidate": "vibe-q6-thinking",
+      "configuration_and_serialization": {
+        "profile": "vibe-q6-thinking-beets_lifecycle",
+        "passed": true,
+        "native_timeout_getters_verified": true,
+        "actual_auxiliary_timeout_seconds": 5400,
+        "actual_compression_host_budgets": [
+          5400,
+          5400
+        ],
+        "actual_native_compressor_context": 98304,
+        "main_progress_serialized": true,
+        "auxiliary_progress_configured": true,
+        "auxiliary_progress_live_support_proven_separately": true,
+        "not_live_auxiliary_serialization_proof_for_this_profile": true,
+        "model_inference": false,
+        "not_native_tool_or_persistence_proof": true,
+        "endpoint": "http://wide-llm:11431/v1",
+        "serialized_sampler": {
+          "temperature": 1.0,
+          "top_p": 0.95,
+          "top_k": 20,
+          "min_p": 0,
+          "repeat_penalty": 1,
+          "presence_penalty": 0,
+          "chat_template_kwargs": {
+            "enable_thinking": true
+          },
+          "seed": 20261124,
+          "max_tokens": 16384,
+          "return_progress": true
+        },
+        "alias": "gpuquant-vibe-q6-thinking",
+        "profile_config_SHA256": "26737d1a5f42fd5557951e96562439e54a3f9fb0897730d862ea4d0ef0452bc0",
+        "preflight_source_SHA256": "1ce45a400bea3c02d68072e1daefe97342118cdff58aa89ee699561c3e327024"
+      },
+      "pure_code_smoke_passed": true,
+      "pure_code_output": "4\n",
+      "pure_code_model_calls": 0,
+      "pure_code_forge_mutations": 0
+    }
+  ],
+  "control_audit_SHA256": "f9585aa36bf777ecb41472ef9d5a9d1a61af3ad5cfb01eaf23dd56cc9086a8f9",
+  "amendment_receipt_SHA256": "40a1cde012701d45a405810d204ba53b9b3301a3b5d09f9300936a0c8c9600f5",
+  "owner_settings_changed": false,
+  "prior_profiles_and_preflights_preserved_privately": true,
+  "auxiliary_progress_live_support": "Separate actual guarded IQ4 compression control; auxiliary serialization not replayed live for each of these four profiles",
+  "scored_reasoning_workflows_started_at_receipt_creation": false
+}

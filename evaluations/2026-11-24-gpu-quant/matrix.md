@@ -148,3 +148,13 @@ This combined runtime control uses saved history, not a full CLI/session or codi
 quality test; it leaves all prior scores unchanged. New request messages differ
 slightly from the old failed request. Future unused reasoning profiles need the
 prospective amendment and actual main/auxiliary/host preflights before freezing.
+
+## Fable Q4 reasoning capacity — November25
+
+[Five probes pass](resource-fable-q4-thinking.md) at98,304 context, T1/p0.95/k20,
+reasoning enabled and16,384 output cap. Sampled GPU8,964MiB, charged study
+cgroups6.545GiB/PSS1.462GiB, zero study swap/guards/errors;54 complete samples.
+The16,165-input probe takes41.77s;59,935-input takes153.38s including16,033 cached
+tokens. Original runtime/models/settings/owner edits/Codex are preserved and owned
+resource containers/network removed. Native coding, followups and publication
+remain pending; no reasoning-mode quality win follows from capacity.

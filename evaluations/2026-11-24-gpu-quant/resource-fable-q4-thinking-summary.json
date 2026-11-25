@@ -1,0 +1,208 @@
+{
+  "candidate": "fable-q4-thinking",
+  "classification": "prospective reasoning-enabled synthetic capacity control; not coding or forge quality",
+  "passed_capacity_stage": true,
+  "not_coding_quality": true,
+  "model_identity": {
+    "file": "Qwen3.6-14B-A3B-FableVibes-Q4_K_M.gguf",
+    "bytes": 8465553920,
+    "sha256": "21aa4b0b28090469e8a319c889451df2f1ea6aad27ac3818c8c8a86f86d5bc9e",
+    "specific_study_file_advised_DONTNEED_after_hash": true,
+    "not_global_cache_flush_or_cold_cache_proof": true
+  },
+  "public_pin": {
+    "repo": "tvall43/Qwen3.6-14B-A3B-FableVibes-GGUF",
+    "revision": "9cf910a7ad68dfedcbdfc46ef0fe5003dec07c23",
+    "file": "Qwen3.6-14B-A3B-FableVibes-Q4_K_M.gguf",
+    "expected_bytes": 8465553920,
+    "sha256": "21aa4b0b28090469e8a319c889451df2f1ea6aad27ac3818c8c8a86f86d5bc9e",
+    "layouts": [
+      {
+        "context": 98304,
+        "gpu_layers": 99
+      }
+    ],
+    "sampler": {
+      "temperature": 1.0,
+      "top_p": 0.95,
+      "top_k": 20,
+      "min_p": 0,
+      "repeat_penalty": 1,
+      "presence_penalty": 0,
+      "chat_template_kwargs": {
+        "enable_thinking": true
+      }
+    },
+    "probe_output_cap": 16384,
+    "retained_file_requires_full_hash_verification": true
+  },
+  "context": 98304,
+  "requested_gpu_layers": 99,
+  "fit_auto_off": true,
+  "placement_limitation": "Requested all-GPU layout; explicit native tensor-placement verification remains required before actor quality claims.",
+  "selected_file_cache_after_original_stop": {
+    "epoch": 1795567526.3808188,
+    "file": "Qwen3.6-14B-A3B-FableVibes-Q4_K_M.gguf",
+    "bytes": 8465553920,
+    "mincore_cached_page_bytes_before": 0,
+    "mincore_cached_page_bytes_after": 0,
+    "only_specific_inactive_file_advised": true,
+    "no_global_cache_flush": true,
+    "not_cold_storage_cache_proof": true,
+    "content_not_modified": true,
+    "scope": "After original backend exits, before measured replacement starts. Page residency rounded to page boundaries; no claim about storage-device caches."
+  },
+  "samples": 54,
+  "measurement_errors": 0,
+  "peak_gpu_MiB": 8964,
+  "peak_aggregate_cgroup_bytes": 7027884032,
+  "peak_process_PSS_bytes": 1570054144,
+  "peak_study_swap_bytes": 0,
+  "guard_count": 0,
+  "minimum_model_disk_free_bytes": 118456541184,
+  "global_swap_in_pages_delta": 512,
+  "global_swap_out_pages_delta": 588,
+  "global_swap_not_attributed_to_study": true,
+  "probes": {
+    "tool-followup": {
+      "body_complete": true,
+      "seconds": 1.482849697000347,
+      "usage": {
+        "completion_tokens": 64,
+        "prompt_tokens": 519,
+        "total_tokens": 583,
+        "prompt_tokens_details": {
+          "cached_tokens": 494
+        }
+      },
+      "finish_reason": "stop",
+      "response_sha256": "a8a6b4a9248f7f8fc705b7fe0c3a8fe0df8f8d2760c1e464441e894aca4465f7",
+      "timings": {
+        "cache_n": 494,
+        "prompt_n": 25,
+        "prompt_ms": 237.383,
+        "prompt_per_token_ms": 9.49532,
+        "prompt_per_second": 105.31503940888773,
+        "predicted_n": 64,
+        "predicted_ms": 1242.129,
+        "predicted_per_token_ms": 19.71633333333333,
+        "predicted_per_second": 50.719369727298854
+      }
+    },
+    "tool-result": {
+      "body_complete": true,
+      "seconds": 2.097873219056055,
+      "usage": {
+        "completion_tokens": 97,
+        "prompt_tokens": 398,
+        "total_tokens": 495,
+        "prompt_tokens_details": {
+          "cached_tokens": 364
+        }
+      },
+      "finish_reason": "stop",
+      "response_sha256": "cbb6d3c6de66467e9f5ba266917f39eb2e50497ffc205d872ed6bf2d8f8c9db9",
+      "timings": {
+        "cache_n": 364,
+        "prompt_n": 34,
+        "prompt_ms": 204.341,
+        "prompt_per_token_ms": 6.010029411764706,
+        "prompt_per_second": 166.38853680857,
+        "predicted_n": 97,
+        "predicted_ms": 1890.263,
+        "predicted_per_token_ms": 19.690239583333334,
+        "predicted_per_second": 50.786583665870836
+      }
+    },
+    "prompt60000": {
+      "body_complete": true,
+      "seconds": 153.3770290070679,
+      "usage": {
+        "completion_tokens": 85,
+        "prompt_tokens": 59935,
+        "total_tokens": 60020,
+        "prompt_tokens_details": {
+          "cached_tokens": 16033
+        }
+      },
+      "finish_reason": "stop",
+      "response_sha256": "e867a1210c72d6f0f202f3c4e2c273bff803c16442d246c115b2730810a4b231",
+      "timings": {
+        "cache_n": 16033,
+        "prompt_n": 43902,
+        "prompt_ms": 150684.241,
+        "prompt_per_token_ms": 3.432286478975901,
+        "prompt_per_second": 291.35097146621985,
+        "predicted_n": 85,
+        "predicted_ms": 2565.554,
+        "predicted_per_token_ms": 30.542309523809525,
+        "predicted_per_second": 32.741466365549115
+      }
+    },
+    "prompt16000": {
+      "body_complete": true,
+      "seconds": 41.77419758005999,
+      "usage": {
+        "completion_tokens": 178,
+        "prompt_tokens": 16165,
+        "total_tokens": 16343,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "finish_reason": "stop",
+      "response_sha256": "7566b2292a3ea7ab83a866c39eb9bc190bf874766ecb6e5b037d9b797564ecab",
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 16165,
+        "prompt_ms": 37620.499,
+        "prompt_per_token_ms": 2.327281101144448,
+        "prompt_per_second": 429.6859539263421,
+        "predicted_n": 178,
+        "predicted_ms": 4099.856,
+        "predicted_per_token_ms": 23.16302824858757,
+        "predicted_per_second": 43.1722480009054
+      }
+    },
+    "tool": {
+      "body_complete": true,
+      "seconds": 24.585092835943215,
+      "usage": {
+        "completion_tokens": 74,
+        "prompt_tokens": 291,
+        "total_tokens": 365,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "finish_reason": "tool_calls",
+      "response_sha256": "6924c2873a3e406bc69edb1c64a770195591aea8ca6069a82a8194b758f405b1",
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 291,
+        "prompt_ms": 21444.051,
+        "prompt_per_token_ms": 73.6908969072165,
+        "prompt_per_second": 13.570197160974855,
+        "predicted_n": 74,
+        "predicted_ms": 3135.847,
+        "predicted_per_token_ms": 42.956808219178086,
+        "predicted_per_second": 23.27919697612798
+      }
+    }
+  },
+  "original_runtime_restored": true,
+  "original_preservation": {
+    "original_ids_images_configuration_running_preserved": true,
+    "codex_entire_snapshot_unchanged": true,
+    "four_profile_hashes_unchanged": true,
+    "all_30_retained_model_metadata_unchanged": true,
+    "active_study_candidate": "fable-q4-thinking",
+    "retained_model_full_hash_verified_before_resource_probes": true,
+    "original_alias_context_restored": true,
+    "at_least_100_GiB_free": true,
+    "free_GiB": 110.32019805908203
+  },
+  "owner_pending_edits_preserved": true,
+  "sampling_limit": "Five-second snapshots can miss transient peaks; host cgroups include charged file cache; not a continuous whole-host memory guarantee.",
+  "latency_limit": "Operational synthetic timings, not an isolated decode benchmark or useful whole-window reasoning proof."
+}
