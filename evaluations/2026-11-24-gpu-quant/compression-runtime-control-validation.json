@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "archive_SHA256": "5555b63a326286408ba5538650be9d6e7fefc2acfa0255980d05398b82adfe98",
+  "files_checked": 16,
+  "coherently_rehashed_negative_controls_rejected": {
+    "fallback_claim_hidden": true,
+    "missing_actual_native_progress": true
+  },
+  "scope": "Saved integrity and consistency only; private input/model inference not replayed"
+}

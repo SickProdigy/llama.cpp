@@ -1,0 +1,286 @@
+{
+  "classification": "runtime control only, not coding or forge quality",
+  "finished": {
+    "results": [
+      {
+        "layout": {
+          "context": 65536,
+          "gpu_layers": 99,
+          "ubatch": 64
+        },
+        "resource_probes_completed": true,
+        "progress_supported": true,
+        "native_guarded_compression_completed": true,
+        "model_summary_used": true,
+        "no_agent_quality_claim": true
+      }
+    ],
+    "model": "adapted-iq4-compression",
+    "not_agent_qualification": true
+  },
+  "runtime_restoration": {
+    "restored": true,
+    "after": {
+      "hermes": {
+        "id": "3da6a8d2cf9c0421383d0cc6470afff1daa54faebd130c3027374ae897706cc6",
+        "image": "sha256:10dc4e18cee7bf1340ca5cd081c8af3535ef1fd6c22c42e65c080d71904e3cb4",
+        "config_sha256": "d6c5e1834cd583b34eb2794931316a2523253b037637d3cb10d6e7f2271e80d3",
+        "running": true,
+        "started": "2026-11-25T00:40:02.482731106Z",
+        "restarts": 0
+      },
+      "llama-cpp": {
+        "id": "ae0b5d8d58663c691217963b426bf09ab4255b7a38c52939657e33a5b43438bf",
+        "image": "sha256:7561b4761f849925a728c5ac2bd1f4a649b6a76f24544e7f992b047ad016cec3",
+        "config_sha256": "3700df2b0b321b9db00fdc2ea9a04c9fef401a5349a40ea0e635d609fb7de7ec",
+        "running": true,
+        "started": "2026-11-25T00:39:40.994619374Z",
+        "restarts": 0
+      },
+      "hermes-codex": {
+        "id": "1a4fa1607072407d9abc69c6403d4e340837ae9bde0b468f2fba29cd5d6be864",
+        "image": "sha256:10dc4e18cee7bf1340ca5cd081c8af3535ef1fd6c22c42e65c080d71904e3cb4",
+        "config_sha256": "6446fe6ddc4248925706d3ab6619bdadb973b0d3efc3849f5ae03d5d34c649b7",
+        "running": true,
+        "started": "2026-11-20T06:03:39.306237305Z",
+        "restarts": 0
+      }
+    },
+    "cleanup_errors": [],
+    "host_after": {
+      "MemAvailable": 38812291072,
+      "SwapFree": 12698226688,
+      "pswpin_pages": 6621729,
+      "pswpout_pages": 12865441
+    }
+  },
+  "native": {
+    "native_context": 65536,
+    "native_aux_budget": 5400.0,
+    "native_host_budgets": [
+      5400.0,
+      5400.0
+    ],
+    "prompt_progress_configured": true,
+    "native_guarded_facade_used": true,
+    "no_tools_or_forge_enabled": true,
+    "control_not_coding_quality": true,
+    "full_native_CLI_or_GUI_not_exercised": true,
+    "elapsed_seconds": 633.8378114670049,
+    "input_history_SHA256": "62fadbb7cf286f77584b8e3f93175ece6ef2079cec3bf204cac1a58454db60e4",
+    "messages_before": 100,
+    "messages_after": 30,
+    "made_progress": true,
+    "used_fallback": false,
+    "output_messages_SHA256": "5bc898b278d8e490912f18b924ef5a010c1760c006a7b5deaebee0ce0f59b931",
+    "passed": true
+  },
+  "stream_probe": {
+    "seconds": 294.63853840192314,
+    "input_tokens": 19912,
+    "HTTP_complete": true,
+    "progress_frame_count": 42,
+    "usage": null,
+    "error": null,
+    "progress_supported": true,
+    "not_coding_quality": true,
+    "first_progress_seconds": 0.030409247963689268,
+    "last_progress_seconds": 292.70851606398355
+  },
+  "recorded_calls": [
+    {
+      "request_id": "00001",
+      "request_SHA256": "511ba4048ffb2293628fa768310badd2ca07bbf1f9014530190a9ae575f50add",
+      "wire_progress_requested": true,
+      "stream": true,
+      "output_cap": 8192,
+      "sampler": {
+        "temperature": 0.8,
+        "top_p": 1,
+        "top_k": 0,
+        "seed": 20261123,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "metrics": {
+        "id": 1,
+        "purpose": "native-main-or-auxiliary",
+        "received_epoch": 1795566543.5978901,
+        "request_sha256": "36d3c996889f1b4622f418559baa865c2de9bbe30a8c202aaa5872ac64434b9e",
+        "backend_start_epoch": 1795566543.5981429,
+        "end_epoch": 1795567176.3631814,
+        "usage": {
+          "completion_tokens": 2650,
+          "prompt_tokens": 26148,
+          "total_tokens": 28798,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "finish_reasons": [
+          "stop"
+        ]
+      },
+      "actual_progress_frames": 56,
+      "response_SHA256": "af682fc19c5b306943494c45962839a52bb7a1e28b009f449401bd26e072287f"
+    }
+  ],
+  "source_hashes_verified": true,
+  "samples": 189,
+  "complete_samples": 189,
+  "measurement_errors": 0,
+  "peak_GPU_MiB": 15788,
+  "peak_study_cgroup_bytes": 7033323520,
+  "peak_study_PSS_bytes": 2161589248,
+  "peak_study_swap_bytes": 0,
+  "guard_samples": 0,
+  "minimum_original_disk_free_bytes": 118458580992,
+  "minimum_staging_disk_free_bytes": 136649609216,
+  "limits": [
+    "5 second samples can miss transient peaks",
+    "Saved prior conversation; no live CLI, session database, coding, or Gitea actions",
+    "Longer timeouts and prompt progress are combined runtime changes, not quantization evidence"
+  ],
+  "model_identity": {
+    "file": "Qwen3.8-27B-hermes-IQ4_XS.gguf",
+    "bytes": 15321491104,
+    "sha256": "d25b50a2bfdfba157c2baf959f298d706d70083255bab95232ffcd40fbafcaba",
+    "specific_study_file_advised_DONTNEED_after_hash": true,
+    "not_global_cache_flush_or_cold_cache_proof": true
+  },
+  "request_comparison": {
+    "old_request_SHA256": "42719fc9633eefed20abb1c6b82a4b8c060e80d12d0bd5c8a3f785ff741de07c",
+    "new_request_SHA256": "511ba4048ffb2293628fa768310badd2ca07bbf1f9014530190a9ae575f50add",
+    "top_level_differences": [
+      "messages",
+      "return_progress"
+    ],
+    "messages_identical": false,
+    "not_pure_runtime_causal_comparison_if_messages_differ": true,
+    "differing_messages": [
+      {
+        "index": 0,
+        "old_role": "system",
+        "new_role": "system",
+        "differing_fields": [
+          "content"
+        ],
+        "old_content_chars": 8376,
+        "new_content_chars": 8376,
+        "common_content_ratio": 0.9980897803247374
+      },
+      {
+        "index": 6,
+        "old_role": "assistant",
+        "new_role": "assistant",
+        "differing_fields": [
+          "tool_calls"
+        ],
+        "old_content_chars": 737,
+        "new_content_chars": 737,
+        "common_content_ratio": 1.0
+      },
+      {
+        "index": 16,
+        "old_role": "assistant",
+        "new_role": "assistant",
+        "differing_fields": [
+          "tool_calls"
+        ],
+        "old_content_chars": 107,
+        "new_content_chars": 107,
+        "common_content_ratio": 1.0
+      },
+      {
+        "index": 20,
+        "old_role": "assistant",
+        "new_role": "assistant",
+        "differing_fields": [
+          "tool_calls"
+        ],
+        "old_content_chars": 106,
+        "new_content_chars": 106,
+        "common_content_ratio": 1.0
+      },
+      {
+        "index": 43,
+        "old_role": "assistant",
+        "new_role": "assistant",
+        "differing_fields": [
+          "tool_calls"
+        ],
+        "old_content_chars": 223,
+        "new_content_chars": 223,
+        "common_content_ratio": 1.0
+      },
+      {
+        "index": 58,
+        "old_role": "user",
+        "new_role": "user",
+        "differing_fields": [
+          "content"
+        ],
+        "old_content_chars": 253,
+        "new_content_chars": 511,
+        "common_content_ratio": 0.662303664921466
+      },
+      {
+        "index": 59,
+        "old_role": "assistant",
+        "new_role": "assistant",
+        "differing_fields": [
+          "tool_calls"
+        ],
+        "old_content_chars": 73,
+        "new_content_chars": 73,
+        "common_content_ratio": 1.0
+      },
+      {
+        "index": 64,
+        "old_role": "assistant",
+        "new_role": "assistant",
+        "differing_fields": [
+          "tool_calls"
+        ],
+        "old_content_chars": 229,
+        "new_content_chars": 229,
+        "common_content_ratio": 1.0
+      },
+      {
+        "index": 71,
+        "old_role": "user",
+        "new_role": "user",
+        "differing_fields": [
+          "content"
+        ],
+        "old_content_chars": 495,
+        "new_content_chars": 753,
+        "common_content_ratio": 0.7932692307692307
+      },
+      {
+        "index": 72,
+        "old_role": "assistant",
+        "new_role": "assistant",
+        "differing_fields": [
+          "tool_calls"
+        ],
+        "old_content_chars": 103,
+        "new_content_chars": 103,
+        "common_content_ratio": 1.0
+      }
+    ]
+  },
+  "preservation": {
+    "original_ids_images_configuration_running_preserved": true,
+    "codex_entire_snapshot_unchanged": true,
+    "four_profile_hashes_unchanged": true,
+    "all_30_retained_model_metadata_unchanged": true,
+    "active_study_candidate": "adapted-iq4-compression",
+    "owned_volume_model_full_hash_verified_before_control": true,
+    "original_alias_context_restored": true,
+    "at_least_100_GiB_free": true,
+    "free_GiB": 110.32061386108398
+  },
+  "owner_pending_edits_preserved": true
+}

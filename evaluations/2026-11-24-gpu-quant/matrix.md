@@ -135,3 +135,16 @@ counterexamples. Its300s auxiliary inactivity guard is distinct from main5400s
 settings. Native fallback and logical/physical handles are audited, without
 operator rescue. [Production metadata](adapted-quant-production.md) preserves
 Q3/Q4/IQ4 calibration/tensor differences.
+
+## Native compression runtime control — November25
+
+[The saved-history control](compression-runtime-control.md) succeeds with explicit
+auxiliary5,400s/host5,400s+5,400s budgets and actual prompt-progress streaming.
+The real guarded Hermes facade produces a2,650-token model summary from26,148
+input tokens in633.84s,100→30 messages, no fallback. Peak sampled GPU15,788MiB,
+study cgroups6.550GiB/PSS2.013GiB, zero study swap/guards; original runtime,
+models/settings/owner edits/Codex are independently verified and owned helpers removed.
+This combined runtime control uses saved history, not a full CLI/session or coding
+quality test; it leaves all prior scores unchanged. New request messages differ
+slightly from the old failed request. Future unused reasoning profiles need the
+prospective amendment and actual main/auxiliary/host preflights before freezing.

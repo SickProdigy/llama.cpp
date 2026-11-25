@@ -47,7 +47,11 @@ probes at15,788MiB sampled GPU peak and zero study swap. The52k request takes
 [its fresh workflow](evaluations/2026-11-24-gpu-quant/native-adapted-iq4-beets.md)
 passes the local repair but fails docs, cancellation and publication in85.75
 coding minutes. Two300s compression stalls recover through native deterministic
-fallback; auxiliary/progress runtime controls are required before revised trials.
+fallback. A separate [native guarded compression control](evaluations/2026-11-24-gpu-quant/compression-runtime-control.md)
+now completes in10.56minutes with a model summary and no fallback after explicit
+auxiliary/host budgets and prompt progress. Apply and preflight those settings
+prospectively in unused experimental profiles before revised trials; the control
+does not change prior coding scores or prove summary semantics/session persistence.
 [Public calibration/tensor differences](evaluations/2026-11-24-gpu-quant/adapted-quant-production.md)
 also prevent precision-only attribution.
 No new everyday model/profile selection or autonomous-reliability claim is made.

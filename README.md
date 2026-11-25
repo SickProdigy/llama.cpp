@@ -20,6 +20,10 @@ audits in85.75 coding minutes, including two300s compression stalls and native
 deterministic fallback. The full workflow does not qualify.
 [Calibration and tensor differences](evaluations/2026-11-24-gpu-quant/adapted-quant-production.md)
 prevent treating this as a precision-only comparison.
+A separate [native compression control](evaluations/2026-11-24-gpu-quant/compression-runtime-control.md)
+now completes with explicit auxiliary/host timeout budgets and prompt progress:
+10.56minutes for a model summary, no fallback. It supports a prospective experimental
+runtime amendment; the completed coding scores and owner settings are unchanged.
 
 GGUF testing notes for Hermes Agent running through llama.cpp.
 
