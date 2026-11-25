@@ -1,0 +1,229 @@
+{
+  "classification": "fresh_explicitly_trusted_nonthinking_comparison",
+  "candidate_key": "adapted-iq4",
+  "family": "beets_lifecycle",
+  "model": {
+    "file": "Qwen3.8-27B-hermes-IQ4_XS.gguf",
+    "bytes": 15321491104,
+    "sha256": "d25b50a2bfdfba157c2baf959f298d706d70083255bab95232ffcd40fbafcaba",
+    "after_full_SHA_advised_DONTNEED_for_only_selected_model_file": true,
+    "not_global_cache_flush_or_proof_of_cold_cache": true
+  },
+  "phases": [
+    {
+      "family": "beets_lifecycle",
+      "arm": "adapted-iq4",
+      "phase": 0,
+      "elapsed_seconds": 1052.5496449819766,
+      "exit_code": 0,
+      "external_timeout": false,
+      "query_sha256": "beee14a6776b2978bc452d856b39e32ae9c10e2deba5b5ed5ffba2f5fc1460a3",
+      "native_session_fingerprints": {
+        "logical_root": "a0fb409f48cafd0b85ae362ee3312da2d90d23f24c56ba2fdc334a941542ccec",
+        "incoming_sid": null,
+        "effective_sid": "a0fb409f48cafd0b85ae362ee3312da2d90d23f24c56ba2fdc334a941542ccec",
+        "cli_resume_handle": "a0fb409f48cafd0b85ae362ee3312da2d90d23f24c56ba2fdc334a941542ccec"
+      },
+      "local_grade": {
+        "kind": "unpublished-local-draft",
+        "family": "beets_lifecycle",
+        "phase": 0,
+        "source_digest": "84dbff7dc9aec6df3ed38c57e2e18711910bd08c67a986f30f90fc1c25d2af37",
+        "project_exit": 0,
+        "preservation_exit": 0,
+        "independent_exit": 0,
+        "changed_paths": [
+          "beetsbridge/__init__.py",
+          "tests/test_beetsbridge.py"
+        ],
+        "not_fed_to_models": true
+      },
+      "remote_grade": null,
+      "remote_grade_absent": true,
+      "forge": {
+        "scope_state": {
+          "issue": null,
+          "pr": null,
+          "branch": null,
+          "commits": 0
+        },
+        "phase": 0
+      }
+    },
+    {
+      "family": "beets_lifecycle",
+      "arm": "adapted-iq4",
+      "phase": 1,
+      "elapsed_seconds": 192.98457158205565,
+      "exit_code": 0,
+      "external_timeout": false,
+      "query_sha256": "260b662f2b7392663ab74c6926c6e00cc1e27488f1ad2d056eb7c1b187b08588",
+      "native_session_fingerprints": {
+        "logical_root": "a0fb409f48cafd0b85ae362ee3312da2d90d23f24c56ba2fdc334a941542ccec",
+        "incoming_sid": "a0fb409f48cafd0b85ae362ee3312da2d90d23f24c56ba2fdc334a941542ccec",
+        "effective_sid": "a0fb409f48cafd0b85ae362ee3312da2d90d23f24c56ba2fdc334a941542ccec",
+        "cli_resume_handle": "a0fb409f48cafd0b85ae362ee3312da2d90d23f24c56ba2fdc334a941542ccec"
+      },
+      "local_grade": {
+        "kind": "unpublished-local-draft",
+        "family": "beets_lifecycle",
+        "phase": 1,
+        "source_digest": "563612e2d6cd940382595a706ae41c38047b2d3a5450bce2241abef0ee0ff45d",
+        "project_exit": 0,
+        "preservation_exit": 0,
+        "independent_exit": 0,
+        "changed_paths": [
+          "beetsbridge/README.md",
+          "beetsbridge/__init__.py",
+          "tests/test_beetsbridge.py"
+        ],
+        "not_fed_to_models": true
+      },
+      "remote_grade": null,
+      "remote_grade_absent": true,
+      "forge": {
+        "scope_state": {
+          "issue": null,
+          "pr": null,
+          "branch": null,
+          "commits": 0
+        },
+        "phase": 1
+      }
+    },
+    {
+      "family": "beets_lifecycle",
+      "arm": "adapted-iq4",
+      "phase": 2,
+      "elapsed_seconds": 3899.7285416340455,
+      "exit_code": 0,
+      "external_timeout": false,
+      "query_sha256": "40914ef6af6210cffc2728f9e6811a52ed1b88e402397599ae4233c4692853eb",
+      "native_session_fingerprints": {
+        "logical_root": "a0fb409f48cafd0b85ae362ee3312da2d90d23f24c56ba2fdc334a941542ccec",
+        "incoming_sid": "a0fb409f48cafd0b85ae362ee3312da2d90d23f24c56ba2fdc334a941542ccec",
+        "effective_sid": "31cb97e7259fdf57a8939fc7545a4c13f5beacdd28e6de6c755ad3ed970ed32e",
+        "cli_resume_handle": "a0fb409f48cafd0b85ae362ee3312da2d90d23f24c56ba2fdc334a941542ccec"
+      },
+      "local_grade": {
+        "kind": "unpublished-local-draft",
+        "family": "beets_lifecycle",
+        "phase": 2,
+        "source_digest": "384e7f152cbcfbeb0825a78617a45b6aa996a28fd0f30006145dfddde58c85fe",
+        "project_exit": 0,
+        "preservation_exit": 0,
+        "independent_exit": 1,
+        "changed_paths": [
+          "beetsbridge/README.md",
+          "beetsbridge/__init__.py",
+          "tests/test_beetsbridge.py"
+        ],
+        "not_fed_to_models": true
+      },
+      "remote_grade": null,
+      "remote_grade_absent": true,
+      "forge": {
+        "scope_state": {
+          "issue": null,
+          "pr": null,
+          "branch": null,
+          "commits": 0
+        },
+        "phase": 2
+      }
+    }
+  ],
+  "coding_elapsed_seconds": 5145.262758198078,
+  "whole_supervised_stage_seconds": 5647.677906990051,
+  "read_only_control_seconds": 284.8188047920121,
+  "independent_final_audit": {
+    "epoch": 1795564765.0915155,
+    "audit_complete": true,
+    "not_actor_feedback": true,
+    "candidate": "adapted-iq4",
+    "family": "beets_lifecycle",
+    "overall_workflow_completed_correctly": false,
+    "initial_repair_completed": true,
+    "initial_repair_preserved_through_final_feature": true,
+    "requested_README_update_completed": false,
+    "feature_completed": false,
+    "remote_publication_completed": false,
+    "authored_tests_total_added": 9,
+    "all83_original_tests_preserved": true,
+    "92_project_tests_green_not_sufficient": true,
+    "original_runtime_restored_and_independently_verified": true,
+    "all30retained_models_unchanged": true,
+    "owner_pending_edits_and_Codex_preserved": true,
+    "all_owned_issues_closed_or_absent": true,
+    "owned_containers_network_removed": true,
+    "actual_private_feature_controls_fail_count": 1,
+    "additional_validated_posthoc_controls_fail_count": 2,
+    "native_summary_requests_failed": 2,
+    "native_deterministic_fallback_committed": true,
+    "operator_continuations_or_corrective_hints": 0,
+    "operator_stop_count": 0,
+    "evidence_SHA256": {
+      "adapted-iq4-beets-initial-manual-audit.json": "9e9fbf9fed86ff0863524f35927fad10b70726fddc203353be3e8a9e75630bdd",
+      "adapted-iq4-beets-README-manual-audit.json": "8e31a4d0d10abb505aae7d6521f57a7298f276ed31e951e60b8dffe16d26acf8",
+      "adapted-iq4-beets-feature-manual-audit.json": "f75e5ef2f07f54719158412f0939e44cffdecdc100c2814292765a543e496b4b",
+      "adapted-iq4-beets-read-control-audit.json": "8a10b56f80811dd6e10192f727f426edbfb0dbddb462e899cba4f09a8b67df32",
+      "adapted-iq4-beets-context-instruction-audit.json": "792f8883f490d0238eaaa2be696f1c955f93cab6362cc9cfc990ccddce031bf9",
+      "adapted-iq4-beets-publication-independent-readback.json": "35f253424d93e12355b0d69e25987ff9e80cba786f35947e099b780b9d53c900",
+      "adapted-iq4-beets-fork-independent-readback.json": "e2387eb342d6ebae296319077304fb61cd742ef7e12f8fd983fc51b173a02fc9",
+      "adapted-iq4-beets-command-dispatch-control.json": "494a593acd0cb59ce1fb064bb0d7766d1e82c672eb250a86f2ad4afb0d030d01",
+      "adapted-iq4-beets-approval-policy-control.json": "b6d1f79a79cbd2b479ef559d431827249def76ea5e7735c2fe324e07ba6bfbf1",
+      "adapted-iq4-beets-diagnostic-overlap.json": "0bad68b3900dc86a308c5688c2f59d31f1386a43edd978232012ef2e7c8789da",
+      "adapted-iq4-beets-report-visibility-control.json": "6df5babc7d91eb31642cd6ad2a63b767cb9b38a907cae2524dbb050edba2f9d2",
+      "adapted-iq4-beets-repeated-folder-control.json": "e644c3a7bfa475756de556d107a05fbb8dcf4a09da1017735fc3969152cd1f45",
+      "native-adapted-iq4-beets-cleanup.json": "8498db5ad7d687de4290d390ed0e125c060fec3e9f7209322c7af549d3d78802",
+      "native-adapted-iq4-beets_lifecycle-preservation.json": "529e9fe7e69a6073c86bd0238b62610be559a86005e62af8f66b7477e72ca4d2",
+      "native-adapted-iq4-beets_lifecycle-owner-preservation.json": "495561fdf2a1591525cbf7baafa1d68ef99415de9e0179c55c64362b23a06204",
+      "iq4-context-semantic-audit.json": "207ce5c7d6351dafc92529920fb6345e6fd258f1f43d77b9cf9adfb12cba3fc7",
+      "iq4-compression-runtime-diagnosis.json": "9f7a041d980eb2e11a91b42694a34c7f4d07bc7e8f998621a006180a6672e596",
+      "iq4-buffer-placement-breakdown.json": "a2f1af33d315368f3f4857d18f344f045a124b0e8349f4a4859d3ecc2643cd67",
+      "iq4-test-helper-accounting-audit.json": "5362ecea27b093d9509e8113e14a1cc71efce27078db832e3b5539b35d57d3df",
+      "aux-budget-getter-controls.json": "e6194d73e4b8523d6ce1d756940f1b2914271a6832543695a76845e56deb8165",
+      "adapted-iq4-beets_lifecycle-phase0-test-adequacy/result.json": "4224936a239da40fbe5aa2c572c77540416820c824a7540e85680067de427821",
+      "adapted-iq4-beets_lifecycle-phase2-test-adequacy/result.json": "aeed44604212bed3b8f6257c7b53e87273060e4c72c3987f0a840eb3f261308e"
+    },
+    "limitation": "One fresh natural lineage. Local repair succeeds, documentation reporting/cancellation counts and callback identity/publication fail. Two independent300second summary stalls and native deterministic fallback inflate latency; not a pure checkpoint-quality/precision comparison. The first wrong target and README error predate compression. Original controls, source correctness, test adequacy, actual dispatch, native logical/physical handles and final connected publication were independently audited. No everyday selection, GPT5 equivalence or autonomous reliability claim."
+  },
+  "measurements": {
+    "sample_count": 530,
+    "complete_aggregate_sample_count": 530,
+    "measurement_error_sample_count": 0,
+    "peak_GPU_MiB": 15788,
+    "peak_observed_cgroup_bytes": 7390494720,
+    "peak_observed_all_process_PSS_bytes": 2620269568,
+    "peak_observed_experiment_swap_bytes": 0,
+    "resource_guard_samples": 0,
+    "minimum_model_disk_free_bytes": 118532919296,
+    "minimum_staging_disk_free_bytes": 132865597440,
+    "global_pswpin_delta_pages": 96911,
+    "global_pswpout_delta_pages": 23342,
+    "global_swap_not_attributed_to_model": true,
+    "HTTP_records": 66,
+    "completed_HTTP_records_without_transport_error": 64,
+    "incomplete_HTTP_records": 2,
+    "incomplete_backend_seconds": 762.596076965332,
+    "maximum_completed_prompt_tokens": 57002,
+    "HTTP_latency_seconds": {
+      "min": 6.59656834602356,
+      "median": 31.730669498443604,
+      "max": 979.0371160507202,
+      "sum": 4589.761522769928
+    },
+    "sampling_not_continuous_whole_host_bound": true,
+    "not_isolated_decode_throughput": true
+  },
+  "comparison_limits": [
+    "One fresh native coding lineage with dependent followups; read control is separate.",
+    "Matched sampler/seed within checkpoint; seed does not isolate precision causally.",
+    "IQ4 native uses the earlier adapted27B sampler; changed tasks/context/calibration/production prevent precision-only causality.",
+    "Internal actor network permits selected checkout and scoped configured MCP, but external terminal Git/DNS is blocked. Unrestricted-network performance is unmeasured.",
+    "Actual CLI includes normal skills and 33 tools, a larger schema than explicit-subset transport preflight.",
+    "Native budget-message presence is audited per candidate; no operator resend, continuation or private grader feedback.",
+    "Actual prompt size and context composition are audited per candidate; neither allocation nor literal retention proves useful whole-window reasoning.",
+    "Private source snapshots, raw requests/responses, profiles, session DBs, graders, references and signing keys stay local. Saved-evidence consistency verification does not rerun the private workflow or prove behavior correct."
+  ]
+}

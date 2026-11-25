@@ -13,7 +13,13 @@ Matching Q6 also fails the full workflow after partial cancellation/docs; reason
 
 The [public27B IQ4_XS capacity check](evaluations/2026-11-24-gpu-quant/resource-adapted-iq4.md)
 passes at64k context after98k CUDA allocation failures; the52k-input request takes
-598.86seconds, with15,788MiB sampled GPU peak and no study swap. Real coding quality is next.
+598.86seconds, with15,788MiB sampled GPU peak and no study swap. Its
+[fresh native workflow](evaluations/2026-11-24-gpu-quant/native-adapted-iq4-beets.md)
+passes the local repair but fails documentation, cancellation and publication
+audits in85.75 coding minutes, including two300s compression stalls and native
+deterministic fallback. The full workflow does not qualify.
+[Calibration and tensor differences](evaluations/2026-11-24-gpu-quant/adapted-quant-production.md)
+prevent treating this as a precision-only comparison.
 
 GGUF testing notes for Hermes Agent running through llama.cpp.
 

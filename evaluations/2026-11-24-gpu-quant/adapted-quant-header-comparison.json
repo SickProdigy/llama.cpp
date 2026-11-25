@@ -1,0 +1,329 @@
+{
+  "headers": {
+    "q3": {
+      "prefix_sha256": "43db2d76e5ea955e040650783b849ac9e5d616122490693a670e973a64394759",
+      "metadata_count": 46,
+      "tensor_count": 866,
+      "tensor_table_end": 10995339,
+      "tensor_type_counts": {
+        "14": 1,
+        "0": 360,
+        "11": 353,
+        "13": 6,
+        "12": 138,
+        "8": 8
+      },
+      "embedding_and_output": [
+        {
+          "name": "output.weight",
+          "dimensions": [
+            5120,
+            248320
+          ],
+          "type": 14
+        },
+        {
+          "name": "token_embd.weight",
+          "dimensions": [
+            5120,
+            248320
+          ],
+          "type": 11
+        }
+      ],
+      "metadata_value_sha256": {
+        "general.architecture": "0eec5afe652b51a6f219feb6fd8f3975d782abde075ba8c55cd875280dd21355",
+        "general.type": "13c8ffd38b74145f75bcf038533b34a029cbf4e68a5028469cf14aeb4ebe9c85",
+        "general.sampling.top_k": "7d38f274241daf1b70d4382e3b74f09bed4666f7317b8db6a6d6bcd796695a45",
+        "general.sampling.top_p": "5854a0883d0539bd88fecd91cb3ce0dbd2686d32408905fda63e8c8af71f887f",
+        "general.sampling.temp": "a7f7a83fdaaf9643c71dfe899f7b13ff4e700b2eecdaff9b10fd68f53011e0a3",
+        "general.name": "bef69d692d0c02089928c3fea298456a5cd839ba8fccecf927faab8bdc78381e",
+        "general.size_label": "3ca6b482cd87a459480b0163ff81419c96d6cd58f798e9ac2fd14a2b62bcf066",
+        "qwen35.block_count": "ff0fbbcd9f3f1b45f7fd3c86b69e5d9bc06c5308e5328f8edda229ec2aade55e",
+        "qwen35.context_length": "67c83a183c4da1911df609fe6d48ecd272bf410bc40abad92e46527249e84c13",
+        "qwen35.embedding_length": "ab936c81feb830fd7531194401f79e94a9851d41cfc72f4549c9e523da3baa7f",
+        "qwen35.feed_forward_length": "de8157d66b1c7cf28c5a024c89ad07525d9c2cb459ad1c3ef0b30481ab7be9ea",
+        "qwen35.attention.head_count": "bf1c89be8f5993c5cb511c0a23d469a4b763cfdbd9f2e93c8f813cde1c6c8cd2",
+        "qwen35.attention.head_count_kv": "267833806a8e9c01c5355ae70125042abfa3e90ca6708f00e944a4e6e5addd9f",
+        "qwen35.rope.dimension_sections": "6a95f6515e3f37e9e4557664b07fc9afe88c6198852f2fa22027d7294df84449",
+        "qwen35.rope.freq_base": "443b04a0c7b3b63ddf4710f7f8d4649ae827b4d1ff541704d4d08bbc2750b5af",
+        "qwen35.attention.layer_norm_rms_epsilon": "e9654c3bdd99748acfda68eac5aedc405ccf3505378e71ad19b6756f9850d04b",
+        "qwen35.attention.key_length": "6d3d43f89c6cf11c0c6f65bed0bb979e32732d391c04cc41a599c89610b10399",
+        "qwen35.attention.value_length": "6d3d43f89c6cf11c0c6f65bed0bb979e32732d391c04cc41a599c89610b10399",
+        "qwen35.nextn_predict_layers": "8ad041705ad57138eb90bb9b7dab49557cd5bd9fcb3bb4086dcf3db05fd87cb6",
+        "qwen35.ssm.conv_kernel": "267833806a8e9c01c5355ae70125042abfa3e90ca6708f00e944a4e6e5addd9f",
+        "qwen35.ssm.state_size": "9b57cdc783491f69ddff1d18912aba1fdce698187cf44006c4b4fe78cff8098f",
+        "qwen35.ssm.group_count": "ec527c13558e581a393fb094c981b8fb6c316a44214d54cccb7eb4e39634c8e0",
+        "qwen35.ssm.time_step_rank": "4b42c70c93a2dd263a3906d486b58e14971beb4fadbf13bf8e6c517856322639",
+        "qwen35.ssm.inner_size": "29d5578f260fa5f8e6daf92b0432e3ec39dabdaca0b974785365c6d97bba0f58",
+        "qwen35.attention.recurrent_layers": "673b34dd802965892a6977b0f3cb8c5266cb6ae4e2126bb473b834c5403705af",
+        "qwen35.full_attention_interval": "267833806a8e9c01c5355ae70125042abfa3e90ca6708f00e944a4e6e5addd9f",
+        "qwen35.rope.dimension_count": "22df2f46a9c1dd0eee82f9ccee089bba549adfdeeff095f0215728f4f870ab84",
+        "tokenizer.ggml.model": "35b5fa96b5f7fc8c0addda0366ee9029c0e3f4c0fb1b604032bc88054dc127a6",
+        "tokenizer.ggml.pre": "0eec5afe652b51a6f219feb6fd8f3975d782abde075ba8c55cd875280dd21355",
+        "tokenizer.ggml.tokens": "869290532de410966a10d91ac7ae4732e0b2cd4e922526eb80721e2cb9c12e63",
+        "tokenizer.ggml.token_type": "4bddc4d296effefebabd3a691aae0da83cfda957a7609e395a20ee1e6b5dc018",
+        "tokenizer.ggml.merges": "7f25b97883a9768c07745d8c6c2ea8bcf732391d28db490ea3308472e5906e01",
+        "tokenizer.ggml.eos_token_id": "2b0547c6fd6bc4dd9d5f3566dc0921aba18beb176bd8a830ed548053ff846530",
+        "tokenizer.ggml.padding_token_id": "f099a39272b432c161b735a5509b9bec426cc05f9057cb03faa5c83904ff1bb7",
+        "tokenizer.ggml.bos_token_id": "f099a39272b432c161b735a5509b9bec426cc05f9057cb03faa5c83904ff1bb7",
+        "tokenizer.ggml.add_bos_token": "e16ab60aa1eeb7074ca590e8a95bc4ce6264aa74f4f79359e580ede60b892bbe",
+        "tokenizer.ggml.add_eos_token": "e16ab60aa1eeb7074ca590e8a95bc4ce6264aa74f4f79359e580ede60b892bbe",
+        "tokenizer.chat_template": "4f3f90c69646bb45af8b0430ac619b8a6dcdc185a41ccf76a37fba0049968dda",
+        "tokenizer.ggml.normalizer.nfc": "0dbc8b6d87c4c741a7ada41a96fad8ee7e477cbd168acf57fb3a33fac26cb7c6",
+        "tokenizer.ggml.clean_spaces": "e16ab60aa1eeb7074ca590e8a95bc4ce6264aa74f4f79359e580ede60b892bbe",
+        "general.quantization_version": "4f9fe0685bdf4ceba1148f85eec2f482d24fe4d3ef625e4b8f21512a790f35c5",
+        "general.file_type": "0c5b0569ea01aa161d63b835a2773f6d6aa4ffe50b8e30964d38bf84e1f27b08",
+        "quantize.imatrix.file": "83c1d1a4b2d16c56c43d773b849957aa8c46a9560fdec3385dc2d96437603041",
+        "quantize.imatrix.dataset": "1edf3b070d381a56e157f64cb26cfacfd01e267ddc2b3cbcce7a37a5af7b6f2f",
+        "quantize.imatrix.entries_count": "a33f6395dc80361716c2fbeaa842f40f78e81fdbb7c0351dab37a1ae31e2df09",
+        "quantize.imatrix.chunks_count": "cc4a0ef075477a5c2577bd810fe2f6272a2befb79adf610384fda8bcc3d2fc5c"
+      },
+      "tensor_names_and_shapes_sha256": "b4c26cd1d99a0230e85615f816160b216589896541217dfa2f46fc7feee1c660"
+    },
+    "q4": {
+      "prefix_sha256": "10a5c21496e0c7ff29082a76c75a846d61191da5379592d76429f0af45673463",
+      "metadata_count": 42,
+      "tensor_count": 866,
+      "tensor_table_end": 10995134,
+      "tensor_type_counts": {
+        "14": 67,
+        "0": 360,
+        "12": 439
+      },
+      "embedding_and_output": [
+        {
+          "name": "output.weight",
+          "dimensions": [
+            5120,
+            248320
+          ],
+          "type": 14
+        },
+        {
+          "name": "token_embd.weight",
+          "dimensions": [
+            5120,
+            248320
+          ],
+          "type": 12
+        }
+      ],
+      "metadata_value_sha256": {
+        "general.architecture": "0eec5afe652b51a6f219feb6fd8f3975d782abde075ba8c55cd875280dd21355",
+        "general.type": "13c8ffd38b74145f75bcf038533b34a029cbf4e68a5028469cf14aeb4ebe9c85",
+        "general.sampling.top_k": "7d38f274241daf1b70d4382e3b74f09bed4666f7317b8db6a6d6bcd796695a45",
+        "general.sampling.top_p": "5854a0883d0539bd88fecd91cb3ce0dbd2686d32408905fda63e8c8af71f887f",
+        "general.sampling.temp": "a7f7a83fdaaf9643c71dfe899f7b13ff4e700b2eecdaff9b10fd68f53011e0a3",
+        "general.name": "bef69d692d0c02089928c3fea298456a5cd839ba8fccecf927faab8bdc78381e",
+        "general.size_label": "3ca6b482cd87a459480b0163ff81419c96d6cd58f798e9ac2fd14a2b62bcf066",
+        "qwen35.block_count": "ff0fbbcd9f3f1b45f7fd3c86b69e5d9bc06c5308e5328f8edda229ec2aade55e",
+        "qwen35.context_length": "67c83a183c4da1911df609fe6d48ecd272bf410bc40abad92e46527249e84c13",
+        "qwen35.embedding_length": "ab936c81feb830fd7531194401f79e94a9851d41cfc72f4549c9e523da3baa7f",
+        "qwen35.feed_forward_length": "de8157d66b1c7cf28c5a024c89ad07525d9c2cb459ad1c3ef0b30481ab7be9ea",
+        "qwen35.attention.head_count": "bf1c89be8f5993c5cb511c0a23d469a4b763cfdbd9f2e93c8f813cde1c6c8cd2",
+        "qwen35.attention.head_count_kv": "267833806a8e9c01c5355ae70125042abfa3e90ca6708f00e944a4e6e5addd9f",
+        "qwen35.rope.dimension_sections": "6a95f6515e3f37e9e4557664b07fc9afe88c6198852f2fa22027d7294df84449",
+        "qwen35.rope.freq_base": "443b04a0c7b3b63ddf4710f7f8d4649ae827b4d1ff541704d4d08bbc2750b5af",
+        "qwen35.attention.layer_norm_rms_epsilon": "e9654c3bdd99748acfda68eac5aedc405ccf3505378e71ad19b6756f9850d04b",
+        "qwen35.attention.key_length": "6d3d43f89c6cf11c0c6f65bed0bb979e32732d391c04cc41a599c89610b10399",
+        "qwen35.attention.value_length": "6d3d43f89c6cf11c0c6f65bed0bb979e32732d391c04cc41a599c89610b10399",
+        "qwen35.nextn_predict_layers": "8ad041705ad57138eb90bb9b7dab49557cd5bd9fcb3bb4086dcf3db05fd87cb6",
+        "qwen35.ssm.conv_kernel": "267833806a8e9c01c5355ae70125042abfa3e90ca6708f00e944a4e6e5addd9f",
+        "qwen35.ssm.state_size": "9b57cdc783491f69ddff1d18912aba1fdce698187cf44006c4b4fe78cff8098f",
+        "qwen35.ssm.group_count": "ec527c13558e581a393fb094c981b8fb6c316a44214d54cccb7eb4e39634c8e0",
+        "qwen35.ssm.time_step_rank": "4b42c70c93a2dd263a3906d486b58e14971beb4fadbf13bf8e6c517856322639",
+        "qwen35.ssm.inner_size": "29d5578f260fa5f8e6daf92b0432e3ec39dabdaca0b974785365c6d97bba0f58",
+        "qwen35.attention.recurrent_layers": "673b34dd802965892a6977b0f3cb8c5266cb6ae4e2126bb473b834c5403705af",
+        "qwen35.full_attention_interval": "267833806a8e9c01c5355ae70125042abfa3e90ca6708f00e944a4e6e5addd9f",
+        "qwen35.rope.dimension_count": "22df2f46a9c1dd0eee82f9ccee089bba549adfdeeff095f0215728f4f870ab84",
+        "tokenizer.ggml.model": "35b5fa96b5f7fc8c0addda0366ee9029c0e3f4c0fb1b604032bc88054dc127a6",
+        "tokenizer.ggml.pre": "0eec5afe652b51a6f219feb6fd8f3975d782abde075ba8c55cd875280dd21355",
+        "tokenizer.ggml.tokens": "869290532de410966a10d91ac7ae4732e0b2cd4e922526eb80721e2cb9c12e63",
+        "tokenizer.ggml.token_type": "4bddc4d296effefebabd3a691aae0da83cfda957a7609e395a20ee1e6b5dc018",
+        "tokenizer.ggml.merges": "7f25b97883a9768c07745d8c6c2ea8bcf732391d28db490ea3308472e5906e01",
+        "tokenizer.ggml.eos_token_id": "2b0547c6fd6bc4dd9d5f3566dc0921aba18beb176bd8a830ed548053ff846530",
+        "tokenizer.ggml.padding_token_id": "f099a39272b432c161b735a5509b9bec426cc05f9057cb03faa5c83904ff1bb7",
+        "tokenizer.ggml.bos_token_id": "f099a39272b432c161b735a5509b9bec426cc05f9057cb03faa5c83904ff1bb7",
+        "tokenizer.ggml.add_bos_token": "e16ab60aa1eeb7074ca590e8a95bc4ce6264aa74f4f79359e580ede60b892bbe",
+        "tokenizer.ggml.add_eos_token": "e16ab60aa1eeb7074ca590e8a95bc4ce6264aa74f4f79359e580ede60b892bbe",
+        "tokenizer.chat_template": "4f3f90c69646bb45af8b0430ac619b8a6dcdc185a41ccf76a37fba0049968dda",
+        "tokenizer.ggml.normalizer.nfc": "0dbc8b6d87c4c741a7ada41a96fad8ee7e477cbd168acf57fb3a33fac26cb7c6",
+        "tokenizer.ggml.clean_spaces": "e16ab60aa1eeb7074ca590e8a95bc4ce6264aa74f4f79359e580ede60b892bbe",
+        "general.quantization_version": "4f9fe0685bdf4ceba1148f85eec2f482d24fe4d3ef625e4b8f21512a790f35c5",
+        "general.file_type": "6e742e1f6ba7bb016f75587b4c2664ba75acb1b0a7e53a1bf9a39897e0aae586"
+      },
+      "tensor_names_and_shapes_sha256": "b4c26cd1d99a0230e85615f816160b216589896541217dfa2f46fc7feee1c660"
+    },
+    "iq4": {
+      "prefix_sha256": "e469297876ab45580ab0cd292ca44587c191f689f18d37c31625c06283a687a8",
+      "metadata_count": 46,
+      "tensor_count": 866,
+      "tensor_table_end": 10995337,
+      "tensor_type_counts": {
+        "14": 1,
+        "0": 360,
+        "23": 433,
+        "13": 64,
+        "12": 8
+      },
+      "embedding_and_output": [
+        {
+          "name": "output.weight",
+          "dimensions": [
+            5120,
+            248320
+          ],
+          "type": 14
+        },
+        {
+          "name": "token_embd.weight",
+          "dimensions": [
+            5120,
+            248320
+          ],
+          "type": 23
+        }
+      ],
+      "metadata_value_sha256": {
+        "general.architecture": "0eec5afe652b51a6f219feb6fd8f3975d782abde075ba8c55cd875280dd21355",
+        "general.type": "13c8ffd38b74145f75bcf038533b34a029cbf4e68a5028469cf14aeb4ebe9c85",
+        "general.sampling.top_k": "7d38f274241daf1b70d4382e3b74f09bed4666f7317b8db6a6d6bcd796695a45",
+        "general.sampling.top_p": "5854a0883d0539bd88fecd91cb3ce0dbd2686d32408905fda63e8c8af71f887f",
+        "general.sampling.temp": "a7f7a83fdaaf9643c71dfe899f7b13ff4e700b2eecdaff9b10fd68f53011e0a3",
+        "general.name": "bef69d692d0c02089928c3fea298456a5cd839ba8fccecf927faab8bdc78381e",
+        "general.size_label": "3ca6b482cd87a459480b0163ff81419c96d6cd58f798e9ac2fd14a2b62bcf066",
+        "qwen35.block_count": "ff0fbbcd9f3f1b45f7fd3c86b69e5d9bc06c5308e5328f8edda229ec2aade55e",
+        "qwen35.context_length": "67c83a183c4da1911df609fe6d48ecd272bf410bc40abad92e46527249e84c13",
+        "qwen35.embedding_length": "ab936c81feb830fd7531194401f79e94a9851d41cfc72f4549c9e523da3baa7f",
+        "qwen35.feed_forward_length": "de8157d66b1c7cf28c5a024c89ad07525d9c2cb459ad1c3ef0b30481ab7be9ea",
+        "qwen35.attention.head_count": "bf1c89be8f5993c5cb511c0a23d469a4b763cfdbd9f2e93c8f813cde1c6c8cd2",
+        "qwen35.attention.head_count_kv": "267833806a8e9c01c5355ae70125042abfa3e90ca6708f00e944a4e6e5addd9f",
+        "qwen35.rope.dimension_sections": "6a95f6515e3f37e9e4557664b07fc9afe88c6198852f2fa22027d7294df84449",
+        "qwen35.rope.freq_base": "443b04a0c7b3b63ddf4710f7f8d4649ae827b4d1ff541704d4d08bbc2750b5af",
+        "qwen35.attention.layer_norm_rms_epsilon": "e9654c3bdd99748acfda68eac5aedc405ccf3505378e71ad19b6756f9850d04b",
+        "qwen35.attention.key_length": "6d3d43f89c6cf11c0c6f65bed0bb979e32732d391c04cc41a599c89610b10399",
+        "qwen35.attention.value_length": "6d3d43f89c6cf11c0c6f65bed0bb979e32732d391c04cc41a599c89610b10399",
+        "qwen35.nextn_predict_layers": "8ad041705ad57138eb90bb9b7dab49557cd5bd9fcb3bb4086dcf3db05fd87cb6",
+        "qwen35.ssm.conv_kernel": "267833806a8e9c01c5355ae70125042abfa3e90ca6708f00e944a4e6e5addd9f",
+        "qwen35.ssm.state_size": "9b57cdc783491f69ddff1d18912aba1fdce698187cf44006c4b4fe78cff8098f",
+        "qwen35.ssm.group_count": "ec527c13558e581a393fb094c981b8fb6c316a44214d54cccb7eb4e39634c8e0",
+        "qwen35.ssm.time_step_rank": "4b42c70c93a2dd263a3906d486b58e14971beb4fadbf13bf8e6c517856322639",
+        "qwen35.ssm.inner_size": "29d5578f260fa5f8e6daf92b0432e3ec39dabdaca0b974785365c6d97bba0f58",
+        "qwen35.attention.recurrent_layers": "673b34dd802965892a6977b0f3cb8c5266cb6ae4e2126bb473b834c5403705af",
+        "qwen35.full_attention_interval": "267833806a8e9c01c5355ae70125042abfa3e90ca6708f00e944a4e6e5addd9f",
+        "qwen35.rope.dimension_count": "22df2f46a9c1dd0eee82f9ccee089bba549adfdeeff095f0215728f4f870ab84",
+        "tokenizer.ggml.model": "35b5fa96b5f7fc8c0addda0366ee9029c0e3f4c0fb1b604032bc88054dc127a6",
+        "tokenizer.ggml.pre": "0eec5afe652b51a6f219feb6fd8f3975d782abde075ba8c55cd875280dd21355",
+        "tokenizer.ggml.tokens": "869290532de410966a10d91ac7ae4732e0b2cd4e922526eb80721e2cb9c12e63",
+        "tokenizer.ggml.token_type": "4bddc4d296effefebabd3a691aae0da83cfda957a7609e395a20ee1e6b5dc018",
+        "tokenizer.ggml.merges": "7f25b97883a9768c07745d8c6c2ea8bcf732391d28db490ea3308472e5906e01",
+        "tokenizer.ggml.eos_token_id": "2b0547c6fd6bc4dd9d5f3566dc0921aba18beb176bd8a830ed548053ff846530",
+        "tokenizer.ggml.padding_token_id": "f099a39272b432c161b735a5509b9bec426cc05f9057cb03faa5c83904ff1bb7",
+        "tokenizer.ggml.bos_token_id": "f099a39272b432c161b735a5509b9bec426cc05f9057cb03faa5c83904ff1bb7",
+        "tokenizer.ggml.add_bos_token": "e16ab60aa1eeb7074ca590e8a95bc4ce6264aa74f4f79359e580ede60b892bbe",
+        "tokenizer.ggml.add_eos_token": "e16ab60aa1eeb7074ca590e8a95bc4ce6264aa74f4f79359e580ede60b892bbe",
+        "tokenizer.chat_template": "4f3f90c69646bb45af8b0430ac619b8a6dcdc185a41ccf76a37fba0049968dda",
+        "tokenizer.ggml.normalizer.nfc": "0dbc8b6d87c4c741a7ada41a96fad8ee7e477cbd168acf57fb3a33fac26cb7c6",
+        "tokenizer.ggml.clean_spaces": "e16ab60aa1eeb7074ca590e8a95bc4ce6264aa74f4f79359e580ede60b892bbe",
+        "general.quantization_version": "4f9fe0685bdf4ceba1148f85eec2f482d24fe4d3ef625e4b8f21512a790f35c5",
+        "general.file_type": "630f4e946e38c53132f3c520e97471832576c97606f4c2bfdade264106d8bbd7",
+        "quantize.imatrix.file": "83c1d1a4b2d16c56c43d773b849957aa8c46a9560fdec3385dc2d96437603041",
+        "quantize.imatrix.dataset": "8140d2f5b3252c365d4b4a1c2b69cf90384e2ca3946e24ece4491d73a14cdcce",
+        "quantize.imatrix.entries_count": "a33f6395dc80361716c2fbeaa842f40f78e81fdbb7c0351dab37a1ae31e2df09",
+        "quantize.imatrix.chunks_count": "cbe0930147369f6a00408c4ca035d752d4683531ad2926555e61a0059038dcc7"
+      },
+      "tensor_names_and_shapes_sha256": "b4c26cd1d99a0230e85615f816160b216589896541217dfa2f46fc7feee1c660"
+    }
+  },
+  "comparisons": {
+    "q3_vs_q4": {
+      "metadata_fields_differing": [
+        "general.file_type",
+        "quantize.imatrix.chunks_count",
+        "quantize.imatrix.dataset",
+        "quantize.imatrix.entries_count",
+        "quantize.imatrix.file"
+      ],
+      "tensor_names_and_shapes_identical": true,
+      "tokenizer_metadata_bytes_including_arrays_identical": true,
+      "core_non_quantization_metadata_bytes_identical": true
+    },
+    "q3_vs_iq4": {
+      "metadata_fields_differing": [
+        "general.file_type",
+        "quantize.imatrix.chunks_count",
+        "quantize.imatrix.dataset"
+      ],
+      "tensor_names_and_shapes_identical": true,
+      "tokenizer_metadata_bytes_including_arrays_identical": true,
+      "core_non_quantization_metadata_bytes_identical": true
+    },
+    "q4_vs_iq4": {
+      "metadata_fields_differing": [
+        "general.file_type",
+        "quantize.imatrix.chunks_count",
+        "quantize.imatrix.dataset",
+        "quantize.imatrix.entries_count",
+        "quantize.imatrix.file"
+      ],
+      "tensor_names_and_shapes_identical": true,
+      "tokenizer_metadata_bytes_including_arrays_identical": true,
+      "core_non_quantization_metadata_bytes_identical": true
+    }
+  },
+  "calibration_metadata": {
+    "q3": {
+      "quantize.imatrix.file": "imatrix.gguf",
+      "quantize.imatrix.dataset": "imatrix-calib.txt",
+      "quantize.imatrix.entries_count": 496,
+      "quantize.imatrix.chunks_count": 150
+    },
+    "q4": {},
+    "iq4": {
+      "quantize.imatrix.file": "imatrix.gguf",
+      "quantize.imatrix.dataset": "calib-train.txt",
+      "quantize.imatrix.entries_count": 496,
+      "quantize.imatrix.chunks_count": 104
+    }
+  },
+  "limits": [
+    "Header fingerprints and shapes do not prove identical unquantized source weights.",
+    "Public calibration filenames/counts are metadata, not recovered calibration contents or audited production commands.",
+    "Different calibration, tensor mixes, runtime placement, contexts and tasks prevent precision-only attribution.",
+    "This standalone reader does not verify full model hashes, runtime fit or behavior."
+  ],
+  "artifact_pins": {
+    "q3": {
+      "repo": "netprojects/Qwen3.8-27B-hermes-adapted-GGUF",
+      "revision": "10fdf357f14825c61ad7eb42a932e1f1e4390e8f",
+      "name": "Qwen3.8-27B-hermes-Q3_K_M.gguf",
+      "bytes": 13752764064,
+      "sha256": "a0c809f93de2bcd813e1b6fbd5c2d1f692821814a4261a316f7c8bca9cf23248"
+    },
+    "q4": {
+      "repo": "netprojects/Qwen3.8-27B-hermes-adapted-GGUF",
+      "revision": "10fdf357f14825c61ad7eb42a932e1f1e4390e8f",
+      "name": "Qwen3.8-27B-hermes-Q4_K_M.gguf",
+      "bytes": 16810714560,
+      "sha256": "6512bb1c2595575fc0aed39b7d72a6aaf71084b1164b5d3749f87a6c2a3d3bf3"
+    },
+    "iq4": {
+      "repo": "netprojects/Qwen3.8-27B-hermes-adapted-GGUF",
+      "revision": "10fdf357f14825c61ad7eb42a932e1f1e4390e8f",
+      "name": "Qwen3.8-27B-hermes-IQ4_XS.gguf",
+      "bytes": 15321491104,
+      "sha256": "d25b50a2bfdfba157c2baf959f298d706d70083255bab95232ffcd40fbafcaba"
+    }
+  },
+  "reader_sha256": "3df09ea46e921c76d97096fec0f760e00cfbf7a29022ce0a90bd15abae270d95",
+  "independent_reader_crosschecks": {
+    "passed": true,
+    "q3_q4_prior_metadata_field_fingerprints_match": true,
+    "iq4_prior_prefix_and_tensor_type_counts_match": true,
+    "q3_q4_expected_evidence": "../2026-11-23-wide-memory/quant-header-preflight/expected.json",
+    "q3_q4_expected_SHA256": "60b06141376e1f9e9e976c7d03a6e923c74236e439deacb6f20dcd5225f6c84e",
+    "iq4_expected_evidence": "adapted-iq4-header-inspection.json",
+    "iq4_expected_SHA256": "ac6529f05bc3d3aa8a70d13f560df8da82caca0fdcd4c3bc4409f187cd8c11b8"
+  }
+}

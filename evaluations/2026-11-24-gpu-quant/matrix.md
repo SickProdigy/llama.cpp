@@ -10,9 +10,9 @@ fails independently audited correctness and publication checks; Q4 also fails wi
 | VibeForged v2 Q4_K_M, retained | Capacity complete; 8,964 MiB sampled GPU; selected-file cache verified 0 after originals stop | Unchanged source; all18 code-tool calls blocked by unattended policy ([audit](native-vibe-q4-beets.md)); fresh trusted run also fails path recovery ([audit](native-vibe-q4-trusted-beets.md)) |
 | VibeForged v2 Q4_K_M, explicitly trusted profile | Same measured GPU layout; native41/41;8,964MiB peak |17 Python executions succeed but repeat wrong `~/beetsbridge`; no edits/tests/forge writes;2.217 coding minutes plus15.327-minute inefficient read ([audit](native-vibe-q4-trusted-beets.md)) |
 | Same VibeForged v2 Q6_K, explicitly trusted | Capacity complete; native41/41;11,566MiB sampled GPU | Grounded read and partial cancellation/docs; lifecycle unfixed,19 authored tests fail collection, no publication;9.564 coding minutes ([audit](native-vibe-q6-trusted-beets.md)) |
-| Adapted27B IQ4_XS, public |98k CUDA OOM at ub128/64;64k passes all probes,15,788MiB peak GPU/no study swap;51,942-input request598.86s ([evidence](resource-adapted-iq4.md)); native confirms66/66 GPU layers | Fresh workflow next; no quality score |
+| Adapted27B IQ4_XS, public |98k CUDA OOM at ub128/64;64k passes all probes,15,788MiB peak GPU/no study swap;51,942-input request598.86s ([evidence](resource-adapted-iq4.md)); native confirms66/66 GPU layers | Local repair passes; docs reporting and cancellation counts/callback identity fail; no publication;85.75 coding minutes including2 failed summaries/native fallback ([audit](native-adapted-iq4-beets.md)) |
 | FableVibes Q5_K_M, public | Possible intermediate; not downloaded or measured in this study | Not started |
-| Adapted 27B Q5/Q6 | Weight files alone exceed 16 GiB; excluded from GPU-resident shortlist | Not run; no quality-failure claim |
+| Adapted 27B Q5/Q6 | Weight files exceed16GiB, ruling out entirely GPU-resident layouts; limited CPU-offload fit unmeasured | Not run; no quality-failure claim |
 
 Fable Q6's five completed resource requests include a real tool-call/result/
 dependent-history exchange, a 16,152-token input and a 59,937-token input. The
@@ -100,13 +100,14 @@ control, not an accuracy improvement. The completed native stage is policy-confo
 
 The [adapted27B IQ4_XS option](prospective-adapted-iq4-xs.json) is additionally
 pinned as a smaller4-bit format, not a newer trained checkpoint. Its download and
-full hash now complete; hardware fit is running and coding quality remains untested.
+full hash and measured64k capacity now complete. The fresh native trial passes
+the local repair but fails docs, cancellation and publication; see its audit.
 
 
 The [VibeForged Q4 unattended baseline](native-vibe-q4-beets.md) completed without code changes: all 18 selected `execute_code` attempts were blocked by copied-profile one-shot approval policy. Repository read control succeeded; code-tool ability remains unmeasured. A separate isolated deny/approve pure-code control confirms this mechanism without model calls. Original deployed settings remain unchanged. The prospective comparison now uses a fresh explicitly trusted Vibe Q4/Q6 pair; Q6 deny-profile coding is deferred, with its capacity check now completed independently. Fable Q4/Q6 baseline outcomes remain preserved. Higher precision has not yet demonstrated a quality gain.
 
 
-Vibe Q6 [capacity evidence](resource-vibe-q6-summary.json) now completes: 98,304-token allocation, requested full GPU offload, 11,566 MiB peak GPU, 6.561 GiB charged study cgroups, no study swap or guards, and a 59,937-token probe in 153.634 seconds. Original services/settings/models were independently verified restored afterwards. Capacity is not coding quality. Fresh trusted Vibe Q4 coding is launched; the trusted Q6 profile is frozen and pending, with identical task/source/sampler/seed/caps. Both copied profiles actually execute the no-model pure-code approval check successfully.
+Vibe Q6 [capacity evidence](resource-vibe-q6-summary.json) now completes: 98,304-token allocation, requested full GPU offload, 11,566 MiB peak GPU, 6.561 GiB charged study cgroups, no study swap or guards, and a 59,937-token probe in 153.634 seconds. Original services/settings/models were independently verified restored afterwards. Capacity is not coding quality. The fresh trusted [Q4](native-vibe-q4-trusted-beets.md) and [Q6](native-vibe-q6-trusted-beets.md) workflows now complete and fail the full task, with identical task/source/sampler/seed/caps. Both copied profiles actually execute the no-model pure-code approval check successfully.
 
 
 A bounded HTTP range [inspection](adapted-iq4-header-inspection.json) of the pinned adapted27B IQ4_XS header now confirms 866 tensors and importance-matrix metadata (496 entries, 104 chunks, `calib-train.txt`). This differs from the Fable/Vibe files with no recorded imatrix fields; no isolated precision-only claim follows. The prefix inspection itself does not verify the full file, GPU fit or coding quality; the separate full download receipt now verifies integrity. A separately owned Docker staging volume has been measured to retain over 100 GiB after this artifact; bulk download is deferred during timed GPU stages.
@@ -122,7 +123,15 @@ The [trusted Q6 audit](native-vibe-q6-trusted-beets.md) confirms a partial featu
 
 Both model families' publisher descriptions motivate fresh reasoning-enabled controls. The newly pinned [Vibe generation configuration](vibe-publisher-mode-followup-proposal.json) matches Fable sampling1.0/.95/top-k20. Its [fresh profiles](vibe-thinking-profile-preflights.json) pass actual SDK16k-main/8k-aux and isolated code-approval checks. Enabling thinking is our experiment based on the reasoning-training description; the vendor JSON does not itself set that template flag. No reasoning inference is claimed yet.
 
-The pinned adapted27B IQ4_XS artifact completed its full-file SHA256 check in the separately owned volume; both actual filesystem reserves stayed above100GiB. Capacity testing is launched, without a fit or quality claim yet. Original30 retained files remain preserved.
+The pinned adapted27B IQ4_XS artifact completed its full-file SHA256 check in the separately owned volume; both actual filesystem reserves stayed above100GiB. Capacity completes at64k after98k CUDA failures; the native workflow also completes with an initial repair pass but docs/feature/publication failures. Original30 retained files remain preserved.
 
 
 [Download receipt](adapted-iq4-download-receipt.json):15,321,491,104 bytes match the pinned full hash. Transfer took1,491.731 seconds; minimum observed staging free space126,470,311,936 bytes, final134,768,402,432 bytes, original model drive118,607,450,112 bytes. Original30 files are not written. This is download/integrity evidence, not model inference latency or fit.
+
+The [IQ4 native trial](native-adapted-iq4-beets.md) confirms66/66 GPU layers
+with644MiB host model buffer. All83 originals remain green;92 project tests do
+not catch the independent feature failure or2 additional posthoc callback/count
+counterexamples. Its300s auxiliary inactivity guard is distinct from main5400s
+settings. Native fallback and logical/physical handles are audited, without
+operator rescue. [Production metadata](adapted-quant-production.md) preserves
+Q3/Q4/IQ4 calibration/tensor differences.

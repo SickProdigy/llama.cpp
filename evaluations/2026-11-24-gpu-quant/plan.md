@@ -13,8 +13,11 @@ Original runtime/settings and retained models are independently verified restore
 after each completed GPU stage. The first new artifact, adapted27B IQ4_XS, is downloaded to a separately owned
 volume and its full SHA256 matches the pin. [Capacity testing](resource-adapted-iq4.md)
 completes at64k after98k CUDA OOMs. Native verbose logging confirms66/66 layers
-offloaded with fit disabled; the fresh coding/Gitea workflow is running, without
-a coding-quality verdict.
+offloaded with fit disabled. The [completed native workflow](native-adapted-iq4-beets.md)
+passes the local repair but fails docs, cancellation and publication in85.75
+coding minutes. The failed300s auxiliary summary calls and deterministic native
+fallback are retained; main-provider timeout preflight did not cover auxiliary
+and host-compression budgets.
 
 ## Registered comparison and controls
 
@@ -96,8 +99,11 @@ confirms66/66 layers on GPU before the fresh actor runs.
 Fable Q5 is publicly available and can provide an intermediate comparison after
 existing files/configurations. The pinned Vibe v2 repository has no Q5_K_M; do not
 invent one. Adapted27B Q5/Q6 files alone exceed the entire16GiB device before
-context/runtime and are excluded from this GPU-resident shortlist as capacity
-screens, not observed quality failures. Additional retained pairs remain options
+context/runtime, excluding entirely GPU-resident layouts, not every possible
+mostly-GPU layout with CPU spillover. Limited-offload Q5/Q6 layouts have not been
+measured in this stage; any such follow-up needs preregistered GPU/host/context
+measurements and sequential storage admission. These are not observed quality
+failures. Additional retained pairs remain options
 if the leading practical profiles do not meet the workflow.
 
 ## Preservation and delivery
@@ -118,3 +124,18 @@ private behavior graders or turn a small sample into autonomous reliability.
 
 
 [Download receipt](adapted-iq4-download-receipt.json):15,321,491,104 bytes match the pinned full hash. Transfer took1,491.731 seconds; minimum observed staging free space126,470,311,936 bytes, final134,768,402,432 bytes, original model drive118,607,450,112 bytes. Original30 files are not written. This is download/integrity evidence, not model inference latency or fit.
+
+## Runtime gate discovered in the IQ4 trial
+
+Actual source, copied-profile getters and native logs distinguish main5400s from
+auxiliary compression120s (effective300), host idle300/ceiling600, and absent
+prompt-progress reporting on the custom recorder endpoint. Scratch-copy extended
+auxiliary/host getters pass5400s without changing production, but do not prove
+backend progress support or successful slow native compression. Validate those
+in isolation and prospectively register any profile amendment before remaining
+reasoning-mode or revised model trials. Preserve the original failed-summary
+observations and the unchanged natural tasks; no retroactive model-quality win.
+
+The [public quant production comparison](adapted-quant-production.md) records
+identical core/tokenizer/shape headers but different calibration and tensor-type
+mixes; it does not prove unquantized-weight identity or precision causality.

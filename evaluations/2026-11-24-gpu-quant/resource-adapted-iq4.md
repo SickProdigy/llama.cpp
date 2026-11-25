@@ -6,7 +6,8 @@ are fit exclusions, not coding-quality failures. No CPU-layer fallback was tried
 The selected layout requests99 GPU layers, microbatch64, q4_0 KV and fit off.
 Resource logs do not enumerate every tensor. The subsequent native verbose
 [placement gate](native-adapted-iq4-placement.json) confirms66/66 layers offloaded
-before the actor starts. Native coding/Gitea quality remains in progress.
+before the actor starts. Its [completed native workflow](native-adapted-iq4-beets.md)
+passes the local repair but fails the complete coding/Gitea requirements.
 
 The 16,152-token input takes226.314 seconds. The 51,942-token input takes598.859
 seconds and returns `capacity-check-52000`;16,084 input tokens were cached from
@@ -33,5 +34,6 @@ The [summary](resource-adapted-iq4-summary.json), [protocol](iq4-resource-protoc
 include both failed layouts and the selected layout. Run `python3 verify_iq4_resource.py
 resource-adapted-iq4-evidence.tar.gz`; the saved positive and three coherently
 modified negative controls pass. Public quantization/imatrix pins remain in the
-[candidate record](prospective-adapted-iq4-xs.json). A fresh dependent coding/Gitea
-trial at the measured64k layout is next; no everyday winner is selected.
+[candidate record](prospective-adapted-iq4-xs.json). The [fresh dependent coding/Gitea
+trial](native-adapted-iq4-beets.md) at64k now completes and does not qualify;
+no everyday winner is selected.

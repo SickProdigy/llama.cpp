@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "actual_positive_accepted": true,
+  "not_model_trials": true,
+  "negative_controls": [
+    {
+      "case": "hidden_auxiliary_failure",
+      "summary_audit_bindings_and_manifest_updated": true,
+      "rejected": true
+    },
+    {
+      "case": "false_feature_success",
+      "summary_audit_bindings_and_manifest_updated": true,
+      "rejected": true
+    },
+    {
+      "case": "wrong_native_resume_handle",
+      "summary_audit_bindings_and_manifest_updated": true,
+      "rejected": true
+    },
+    {
+      "case": "false_zero_host_model_memory",
+      "summary_audit_bindings_and_manifest_updated": true,
+      "rejected": true
+    }
+  ],
+  "original_archive_unchanged_SHA256": "1dc0fe80a2c3424576c83134ea23efd16f54b041311ce255bcabfb19c3b9b062"
+}

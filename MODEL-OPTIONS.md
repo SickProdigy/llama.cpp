@@ -33,13 +33,23 @@ publisher-sampling, reasoning-enabled pair is registered; this low-temperature
 nonthinking baseline is not a verdict on Fable's best practical configuration.
 
 The adapted 27B Q5/Q6 public files exceed the entire 16 GiB device before context
-and runtime overhead, so they are excluded from this GPU-resident shortlist.
-This does not change the earlier Q4 correctness result or its slow-work tradeoff.
+and runtime overhead, so they cannot be entirely GPU resident. Limited CPU-offload
+layouts for those higher quants have not been measured in this stage; file size
+does not rule out every mostly-GPU layout under the8GiB host budget. Prioritize
+measured GPU-fitting candidates first, and register any mixed layout before
+testing it. This does not change the earlier Q4 correctness result or its
+measured slow-work tradeoff.
 The same publisher also has a [smaller IQ4_XS variant](evaluations/2026-11-24-gpu-quant/prospective-adapted-iq4-xs.json),
 now fully downloaded/hash-verified and [capacity-tested](evaluations/2026-11-24-gpu-quant/resource-adapted-iq4.md).
 Its 98k layouts fail CUDA allocation;64k completes the tool/history and52k-input
 probes at15,788MiB sampled GPU peak and zero study swap. The52k request takes
-598.86seconds. Native confirms66/66 GPU layers; real coding/Gitea quality remains pending.
+598.86seconds. Native confirms66/66 GPU layers (plus644MiB host model buffer);
+[its fresh workflow](evaluations/2026-11-24-gpu-quant/native-adapted-iq4-beets.md)
+passes the local repair but fails docs, cancellation and publication in85.75
+coding minutes. Two300s compression stalls recover through native deterministic
+fallback; auxiliary/progress runtime controls are required before revised trials.
+[Public calibration/tensor differences](evaluations/2026-11-24-gpu-quant/adapted-quant-production.md)
+also prevent precision-only attribution.
 No new everyday model/profile selection or autonomous-reliability claim is made.
 
 ## November 24: wider-memory evaluation complete
@@ -350,4 +360,6 @@ This is a recorded future lead, not another cohort in the current investigation.
 The [VibeForged Q4 unattended baseline](evaluations/2026-11-24-gpu-quant/native-vibe-q4-beets.md) completed without code changes: all 18 selected `execute_code` attempts were blocked by copied-profile one-shot approval policy. Repository read control succeeded; code-tool ability remains unmeasured. A separate isolated deny/approve pure-code control confirms this mechanism without model calls. Original deployed settings remain unchanged. The prospective comparison now uses a fresh explicitly trusted Vibe Q4/Q6 pair; Q6 deny-profile coding is deferred, with its capacity check now completed independently. Fable Q4/Q6 baseline outcomes remain preserved. Higher precision has not yet demonstrated a quality gain.
 
 
-The [trusted Q6 result](evaluations/2026-11-24-gpu-quant/native-vibe-q6-trusted-beets.md) does more source work but does not repair the initial lifecycle defect, provide collecting regression tests or publish. Reasoning-enabled controls are now prepared for both Fable and Vibe; the current nonthinking results do not establish their best practical settings. Adapted27B IQ4_XS now has a verified full hash in its separately owned volume with100GiB reserves; capacity passes at64k after98k CUDA failures; real coding/Gitea quality remains pending.
+The [trusted Q6 result](evaluations/2026-11-24-gpu-quant/native-vibe-q6-trusted-beets.md) does more source work but does not repair the initial lifecycle defect, provide collecting regression tests or publish. Reasoning-enabled controls are now prepared for both Fable and Vibe; the current nonthinking results do not establish their best practical settings. Adapted27B IQ4_XS now has a verified full hash in its separately owned volume with100GiB reserves; capacity passes at64k after98k CUDA failures; its completed native workflow passes
+the local repair but fails docs, cancellation and forge publication, with measured
+compression/fallback overhead. No everyday winner is selected.
