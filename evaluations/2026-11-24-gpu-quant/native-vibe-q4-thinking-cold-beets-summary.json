@@ -1,0 +1,259 @@
+{
+  "whole_workflow_pass": false,
+  "scope": "Three dependent natural coding turns with cold profile/process/gateway, no preliminary read control or private grade feedback; current-owner-derived qualified Hermes evaluator image.",
+  "phases": [
+    {
+      "phase": 0,
+      "coding_seconds": 1242.6805772669904,
+      "exit_code": 1,
+      "external_timeout": false,
+      "source_digest": "1305c25018cc73451ad434b05694d29286e725289b7c67eefca58c09d572c4f0",
+      "changed_paths": [
+        "beetsbridge/__init__.py",
+        "beetsbridge/conpytest.py",
+        "beetsbridge/pytest.ini",
+        "beetsbridge/tests/test_core.py"
+      ],
+      "project_exit": 2,
+      "preservation_exit": 0,
+      "independent_exit": 1,
+      "project_summary": [
+        "ERROR beetsbridge/tests/test_core.py",
+        "!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!",
+        "1 error in 0.30s"
+      ],
+      "preservation_summary": [
+        "83 passed, 2 subtests passed in 3.18s"
+      ],
+      "candidate_module_syntax": {
+        "valid": true
+      },
+      "private_grader_output_sha256": "ed75c6c923e90211842dcd8a1adda47f1e18b6502d640500ea422dcaf442a99e",
+      "private_console_sha256": "2b97dd93d395f8060aec6b69e9ba66d4159338e070473ed0af3d2bf15d1694ee",
+      "private_grade_feedback_to_actor": false
+    },
+    {
+      "phase": 1,
+      "coding_seconds": 356.34238163799455,
+      "exit_code": 0,
+      "external_timeout": false,
+      "source_digest": "44cad35eabd17a94f02f107ad94a42f9471865106dc338fa7168a8136c0cd162",
+      "changed_paths": [
+        "beetsbridge/README.md",
+        "beetsbridge/__init__.py",
+        "beetsbridge/conpytest.py",
+        "beetsbridge/pytest.ini",
+        "beetsbridge/tests/test_core.py"
+      ],
+      "project_exit": 2,
+      "preservation_exit": 0,
+      "independent_exit": 1,
+      "project_summary": [
+        "ERROR beetsbridge/tests/test_core.py",
+        "!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!",
+        "1 error in 0.21s"
+      ],
+      "preservation_summary": [
+        "83 passed, 2 subtests passed in 3.18s"
+      ],
+      "candidate_module_syntax": {
+        "valid": true
+      },
+      "private_grader_output_sha256": "783ad0384457eda135a7ca170804032bceecba32f2f39310f90d2cd4374a33f5",
+      "private_console_sha256": "e26d37f5b6ef4d2df00a5b5428e28e9d53565fa4f8ada5b47dc5addb60a2dbe5",
+      "private_grade_feedback_to_actor": false
+    },
+    {
+      "phase": 2,
+      "coding_seconds": 1533.247141608008,
+      "exit_code": 1,
+      "external_timeout": false,
+      "source_digest": "e17d3210e1559c9c63703be4a3c42f932a58554946f5dfbb5f10d3b7bbee7777",
+      "changed_paths": [
+        "beetsbridge/README.md",
+        "beetsbridge/__init__.py",
+        "beetsbridge/conpytest.py",
+        "beetsbridge/pytest.ini",
+        "beetsbridge/tests/test_core.py"
+      ],
+      "project_exit": 2,
+      "preservation_exit": 1,
+      "independent_exit": 1,
+      "project_summary": [
+        "ERROR beetsbridge/tests/test_core.py",
+        "!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!",
+        "1 error in 0.21s"
+      ],
+      "preservation_summary": [
+        "tests/test_beetsbridge.py:169: TypeError",
+        "FAILED tests/test_beetsbridge.py::BeetsBridgeTests::test_worker_reports_result_on_main_thread",
+        "1 failed, 82 passed, 2 subtests passed in 3.17s"
+      ],
+      "candidate_module_syntax": {
+        "valid": true
+      },
+      "private_grader_output_sha256": "0770e650f73fad9ba8094aa918f91e872eed689e43ef23a68d54edf1d59827e4",
+      "private_console_sha256": "d53935efe9ba84d7c4d1ce72ee842e0e9b752a111db68ddd1f36dab801d059eb",
+      "private_grade_feedback_to_actor": false
+    }
+  ],
+  "coding_minutes": 52.20450167521655,
+  "source_audit": {
+    "original_Beets_test_methods_unchanged": 8,
+    "original_tests_file_bytes_unchanged": true,
+    "new_authored_test_module": "beetsbridge/tests/test_core.py",
+    "project_collection_fails_missing_pynicotine": true,
+    "final_original_suite_preservation_fails": true,
+    "independent_final_registered_tests": 6,
+    "independent_final_failures": 7,
+    "independent_final_errors": 1,
+    "final_answer_claims_PR_but_leaves_push_to_user": true,
+    "observed_final_defects": [
+      "New tests mock misspelled pynicinite instead of pynicotine; collection fails",
+      "Existing worker-result test fails after required import_event argument added",
+      "No-argument cancel calls cancel on stored generation/timer tuple",
+      "Workers waiting for serial import still run after stop",
+      "Claimed PRs are absent in independent authenticated readback"
+    ]
+  },
+  "runtime_audit": {
+    "completed_requests": 135,
+    "largest_completed_prompt": 83425,
+    "any_length_finish": false,
+    "auxiliary": [
+      {
+        "request": "00067.request.json",
+        "usage": {
+          "completion_tokens": 314,
+          "prompt_tokens": 24925,
+          "total_tokens": 25239,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 77.10707354545593,
+        "finish_reasons": [
+          "stop"
+        ],
+        "content_chars": 1372,
+        "reasoning_chars": 0,
+        "summary_headings": [],
+        "literal_tool_markup": true,
+        "content_sha256": "1c47e59f9cba854229d7722a24d2f70fd3283b4df1a737981661f850af97b65f",
+        "not_a_faithful_structured_checkpoint": true
+      },
+      {
+        "request": "00098.request.json",
+        "usage": {
+          "completion_tokens": 32,
+          "prompt_tokens": 29082,
+          "total_tokens": 29114,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 83.80057430267334,
+        "finish_reasons": [
+          "stop"
+        ],
+        "content_chars": 129,
+        "reasoning_chars": 0,
+        "summary_headings": [],
+        "literal_tool_markup": true,
+        "content_sha256": "0e0dc3e968b34f1f34da09139c40497f5c31a1576ac13b48c88dd3fd2a7ff5fb",
+        "not_a_faithful_structured_checkpoint": true
+      }
+    ],
+    "all_user_tasks_literal_in_final_main_request": [
+      true,
+      true,
+      true
+    ],
+    "frozen_code_files_verified": 118,
+    "initial_Gitea_git_facts_supplied": true
+  },
+  "forge": {
+    "epoch": 1795712227.3939512,
+    "authenticated_actor": "hermes-agent",
+    "repo": "hermes-gpuquant-vibe-q4-thinking-20261124",
+    "main_revision": "0275bf382d8f5c5a1af605b90c7b375de5b75a96",
+    "upstream_baseline_blobs_verified": 40,
+    "issues": [],
+    "pull_requests": [],
+    "read_only": true,
+    "model_calls": 0,
+    "forge_mutations": 0,
+    "actor_fork_GET_status": 404
+  },
+  "proxy_observations": {
+    "calls": 7,
+    "outside_repo_denials": 7,
+    "final_scope_state": {
+      "issue": null,
+      "pr": null,
+      "branch": null,
+      "commits": 0
+    }
+  },
+  "resource": {
+    "samples": 307,
+    "sampling_pause_seconds": 10,
+    "measurement_errors": 0,
+    "guards": 0,
+    "peak_GPU_MiB": 8964,
+    "peak_aggregate_cgroup_bytes": 7706632192,
+    "peak_process_PSS_bytes": 2558636032,
+    "peak_study_swap_bytes": 0,
+    "minimum_disk_free_bytes": 112399613952,
+    "placement_lines": [
+      "0.00.588.026 I load_tensors: offloaded 41/41 layers to GPU",
+      "0.00.588.033 I load_tensors:        CUDA0 model buffer size =  7790.09 MiB",
+      "0.00.588.034 I load_tensors:    CUDA_Host model buffer size =   272.81 MiB",
+      "0.22.116.890 I llama_kv_cache:      CUDA0 KV buffer size =   540.00 MiB",
+      "0.22.149.439 I sched_reserve:      CUDA0 compute buffer size =   229.01 MiB",
+      "0.22.149.443 I sched_reserve:  CUDA_Host compute buffer size =    28.01 MiB"
+    ]
+  },
+  "model": {
+    "file": "Qwen3.6-14B-A3B-VibeForged-v2-Q4_K_M.gguf",
+    "bytes": 8465553472,
+    "sha256": "273777783847f3a9eba912abc35407d651a575064a478ed9fbd7ad90b962b6b6",
+    "after_full_SHA_advised_DONTNEED_for_only_selected_model_file": true,
+    "not_global_cache_flush_or_proof_of_cold_cache": true
+  },
+  "preservation": {
+    "original_ids_images_configuration_running_preserved": true,
+    "codex_entire_snapshot_unchanged": true,
+    "four_profile_hashes_unchanged": true,
+    "all_30_retained_model_metadata_unchanged": true,
+    "active_study_candidate": "vibe-q4-thinking-cold-20261126",
+    "retained_model_full_hash_verified_before_auxiliary_replays": true,
+    "original_alias_context_restored": true,
+    "at_least_100_GiB_free": true,
+    "free_GiB": 104.62823104858398
+  },
+  "owner_preservation": {
+    "passed": true,
+    "head_status_all_tracked_and_ignored_instructions_unchanged": true,
+    "tracked_files_checked": 40
+  },
+  "cleanup": {
+    "passed": true,
+    "terminal_supervisor_removed": "3d2daaa22ef62cb0f51369165e4854ee48c94210e7f9686952193558ac9ee520",
+    "owned_containers_absent": [
+      "gpuquant-vibe-q4-thinking-cold-20261126-beets-main",
+      "gpuquant-vibe-q4-thinking-cold-20261126-beets-agent",
+      "gpuquant-vibe-q4-thinking-cold-20261126-beets-llm",
+      "gpuquant-vibe-q4-thinking-cold-20261126-beets-gitea",
+      "hermes-gpuquant-vibe-q4-thinking-cold-20261126-beets-supervisor"
+    ],
+    "owned_network_absent": true,
+    "epoch": 1795712211.3816116
+  },
+  "protocol_sha256": "ae8ac3c1813a01e4d965409a36b7c00609b768a5fbe7caa56d6e5a093c586a52",
+  "source_fingerprints": {
+    "audit_cold_vibe_q4_completed.py": "27d0f1a9136712e725d8a8835d1e5dcdaf3c106c6eafff9951d09f9eba7a5a75",
+    "cold-vibe-q4-independent-final-remote.json": "fb37335e448280a4d724f94fe6623b5be8f0979d3dfe2eed5a60c027998623d6",
+    "native-vibe-q4-thinking-cold-20261126/beets_lifecycle/runtime-restoration.json": "8630d7b7e3b02f80f87136154a5fc3399335ad3e27b5fec5ad8340e95874f1e1"
+  }
+}

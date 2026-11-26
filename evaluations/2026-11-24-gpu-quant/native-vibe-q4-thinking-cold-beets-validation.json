@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "summary_sha256": "87eb82991b7754ed30b9c35573850431a07040cd3179dffc6260ead485d367f2",
+  "source_bindings_verified": 118,
+  "phases": 3,
+  "actual_final_authenticated_remote_readback": true,
+  "all_candidate_modules_compile": true,
+  "all_project_collection_and_independent_checks_fail": true,
+  "preservation_exits": [
+    0,
+    0,
+    1
+  ],
+  "scope": "Saved source/numeric consistency and actual authenticated remote audit; not public behavioral replay."
+}

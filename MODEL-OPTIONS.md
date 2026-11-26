@@ -1,5 +1,8 @@
 # Model follow-up options
 
+Current-runtime [Vibe Q4 reasoning](evaluations/2026-11-24-gpu-quant/native-vibe-q4-thinking-cold-beets.md) also fails:52.20 coding minutes, broken test collection, a preservation regression and no actual publication. Q6 remains to be measured on the same runtime.
+
+
 Recorded November 19, 2026. This is a reminder of possible next steps, not a
 record of tests on the spare PCs or a change to the deployed model.
 

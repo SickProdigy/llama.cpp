@@ -1,9 +1,12 @@
 # GPU-resident quantization comparison
 
+The [current-runtime Vibe Q4 reasoning cell](native-vibe-q4-thinking-cold-beets.md) fails in52.20 coding minutes: project collection fails, final original suite regresses, independent behavior fails, no issue/fork/PR. All41 GPU layers fit at8,964MiB peak. Q6 is next; the older Fable cells are not runtime-matched to these cells.
+
+
 Updated November26. In progress. Nonthinking and trusted baselines remain
 below; the matched cold Fable reasoning pair also fails. Those two cells share
 an older experimental Hermes runtime. The [current-runtime preflight](current-runtime-preflight.md)
-now passes without model calls or forge writes; Vibe reasoning cells will bind
+passes without model calls or forge writes; Vibe reasoning cells bind
 that newer owner-source evaluator. Capacity alone is not coding/publication quality.
 
 | Checkpoint / public quant | Measured capacity (98,304 unless stated) | Fresh Beets coding/Gitea workflow |

@@ -1,5 +1,8 @@
 # Llama.cpp and Hermes-Agent Model Notes
 
+The [current-runtime Vibe Q4 reasoning run](evaluations/2026-11-24-gpu-quant/native-vibe-q4-thinking-cold-beets.md) fails after52.20 coding minutes: authored tests cannot collect, one original test regresses, lifecycle/cancellation checks fail and no actual issue/fork/PR exists despite claims. Original settings/models are preserved. The matching current-runtime Q6 cell is next.
+
+
 The [GPU-resident quantization comparison](evaluations/2026-11-24-gpu-quant/matrix.md)
 is in progress (updated November26). Q4/Q6 capacity is measured separately from
 real coding/Gitea success. Neither [cold Fable Q4](evaluations/2026-11-24-gpu-quant/native-fable-q4-thinking-cold-beets.md)
@@ -10,7 +13,7 @@ Both use the same older experimental Hermes image and current llama.cpp.
 
 The owner rebuilt Hermes in the meantime. A [current-runtime evaluator](evaluations/2026-11-24-gpu-quant/current-runtime-preflight.md)
 now passes original-suite, SDK/code and native Gitea compatibility controls without
-inference or forge writes; future cells use fresh state on that pinned runtime.
+inference or forge writes; the Vibe cells use fresh state on that pinned runtime.
 Production settings and all30 retained models remain unchanged.
 
 [Auxiliary/history/cache controls](evaluations/2026-11-24-gpu-quant/auxiliary-precision-controls.md)
