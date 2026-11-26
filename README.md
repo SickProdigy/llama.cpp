@@ -1,6 +1,6 @@
 # Llama.cpp and Hermes-Agent Model Notes
 
-The [current-runtime Vibe Q4 reasoning run](evaluations/2026-11-24-gpu-quant/native-vibe-q4-thinking-cold-beets.md) fails after52.20 coding minutes: authored tests cannot collect, one original test regresses, lifecycle/cancellation checks fail and no actual issue/fork/PR exists despite claims. Original settings/models are preserved. The matching current-runtime Q6 cell is next.
+The [current-runtime Vibe Q4 reasoning run](evaluations/2026-11-24-gpu-quant/native-vibe-q4-thinking-cold-beets.md) fails after52.20 coding minutes: authored tests cannot collect, one original test regresses, lifecycle/cancellation checks fail and no actual issue/fork/PR exists despite claims. Original settings/models are preserved. The matching [Q6 cell](evaluations/2026-11-24-gpu-quant/native-vibe-q6-thinking-cold-beets.md) also fails in64.03 coding minutes: partial lifecycle defects precede a final context overflow. Neither quant establishes a practical quality advantage.
 
 
 The [GPU-resident quantization comparison](evaluations/2026-11-24-gpu-quant/matrix.md)

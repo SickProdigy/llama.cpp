@@ -1,10 +1,28 @@
 # Model follow-up options
 
-Current-runtime [Vibe Q4 reasoning](evaluations/2026-11-24-gpu-quant/native-vibe-q4-thinking-cold-beets.md) also fails:52.20 coding minutes, broken test collection, a preservation regression and no actual publication. Q6 remains to be measured on the same runtime.
+Current-runtime [Vibe Q4 reasoning](evaluations/2026-11-24-gpu-quant/native-vibe-q4-thinking-cold-beets.md) also fails:52.20 coding minutes, broken test collection, a preservation regression and no actual publication. [Q6](evaluations/2026-11-24-gpu-quant/native-vibe-q6-thinking-cold-beets.md) also fails in64.03 coding minutes: code/preservation defects plus a later context overflow. Public Fable Q8 is selected for a capacity-first precision check; fit/quality remain unproven.
 
 
 Recorded November 19, 2026. This is a reminder of possible next steps, not a
 record of tests on the spare PCs or a change to the deployed model.
+
+## November26: public Q8 capacity follow-up
+
+[Public Fable Q8 selection and pins](evaluations/2026-11-24-gpu-quant/prospective-fable-q8.json)
+records a14,655,633,920-byte artifact on the existing pinned publisher revision.
+The separate staging volume has room above the100GiB reserve, preserving both
+the prior staged IQ4 and all30 original models. Sequential download/full-hash
+verification precedes [registered capacity probes](evaluations/2026-11-24-gpu-quant/prospective-fable-q8-capacity.json):
+98,304 context, all41 GPU layers, q4_0 KV, short actual tool history and16k/60k/80k
+input probes with16,384 output headroom. No implicit CPU layer fallback.
+
+Its bounded header matches the retained Fable Q4/Q6 tensor names/dimensions and
+chat template. None records imatrix metadata; that absence does not prove the
+same calibration. Q8 tensor production differs from the K quants. The advertised
+262,144 model context is not a measured GPU fit. Q5 remains a public intermediate;
+Q8 is chosen first to test a larger precision step, without assuming improvement.
+The Vibe Q6 overflow also requires a separate prospective context-handling control
+before another long actor run; existing lifecycle defects precede that overflow.
 
 ## November26: runtime and reasoning comparison update
 

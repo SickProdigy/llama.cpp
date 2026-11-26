@@ -1,0 +1,316 @@
+{
+  "whole_workflow_pass": false,
+  "scope": "Three dependent natural coding turns with cold profile/process/gateway, no preliminary read control or private grade feedback; current-owner-derived qualified Hermes evaluator image.",
+  "phases": [
+    {
+      "phase": 0,
+      "coding_seconds": 988.6816279610066,
+      "exit_code": 1,
+      "external_timeout": false,
+      "source_digest": "4b3dc711dbea3e7e91950de6d25d27db46d38d1bc96a96fcc79e8573c611e831",
+      "changed_paths": [
+        "beetsbridge/__init__.py",
+        "tests/test_beetsbridge.py"
+      ],
+      "project_exit": 1,
+      "preservation_exit": 1,
+      "independent_exit": 1,
+      "project_summary": [
+        "tests/test_beetsbridge.py:106: AssertionError",
+        "FAILED tests/test_beetsbridge.py::BeetsBridgeTests::test_worker_respects_stop_token",
+        "1 failed, 84 passed, 2 subtests passed in 3.21s"
+      ],
+      "preservation_summary": [
+        "tests/test_beetsbridge.py:169: TypeError",
+        "FAILED tests/test_beetsbridge.py::BeetsBridgeTests::test_worker_reports_result_on_main_thread",
+        "1 failed, 82 passed, 2 subtests passed in 3.20s"
+      ],
+      "candidate_module_syntax": {
+        "valid": true
+      },
+      "private_grader_output_sha256": "f8a0097e5835b40da3dadbbec6f7cbf02c500a0ab2a2295976b99f30a756b099",
+      "private_console_sha256": "ebed421aaf0413247ce46e0ab4707c1487d1575a0d75c1360fa89a23098c3330",
+      "private_grade_feedback_to_actor": false
+    },
+    {
+      "phase": 1,
+      "coding_seconds": 2558.0578264549986,
+      "exit_code": 1,
+      "external_timeout": false,
+      "source_digest": "0c6fa16b69bd9091d91bd667b251fe1a0af0b870fe376bcec748a65aa4320590",
+      "changed_paths": [
+        "beetsbridge/README.md",
+        "beetsbridge/__init__.py",
+        "tests/test_beetsbridge.py"
+      ],
+      "project_exit": 1,
+      "preservation_exit": 1,
+      "independent_exit": 1,
+      "project_summary": [
+        "tests/test_beetsbridge.py:106: AssertionError",
+        "FAILED tests/test_beetsbridge.py::BeetsBridgeTests::test_worker_respects_stop_token",
+        "1 failed, 84 passed, 2 subtests passed in 3.37s"
+      ],
+      "preservation_summary": [
+        "tests/test_beetsbridge.py:169: TypeError",
+        "FAILED tests/test_beetsbridge.py::BeetsBridgeTests::test_worker_reports_result_on_main_thread",
+        "1 failed, 82 passed, 2 subtests passed in 3.18s"
+      ],
+      "candidate_module_syntax": {
+        "valid": true
+      },
+      "private_grader_output_sha256": "ed883bbb95419b55cf4811984e14e7e1703eba1b3186a1770e3451fd3efff40a",
+      "private_console_sha256": "804964cd0979f1115a4c1290fadf1c5faf37d3b32f7f26d200931647a175023b",
+      "private_grade_feedback_to_actor": false
+    },
+    {
+      "phase": 2,
+      "coding_seconds": 295.30691174199455,
+      "exit_code": 1,
+      "external_timeout": false,
+      "source_digest": "0c6fa16b69bd9091d91bd667b251fe1a0af0b870fe376bcec748a65aa4320590",
+      "changed_paths": [
+        "beetsbridge/README.md",
+        "beetsbridge/__init__.py",
+        "tests/test_beetsbridge.py"
+      ],
+      "project_exit": 1,
+      "preservation_exit": 1,
+      "independent_exit": 1,
+      "project_summary": [
+        "tests/test_beetsbridge.py:106: AssertionError",
+        "FAILED tests/test_beetsbridge.py::BeetsBridgeTests::test_worker_respects_stop_token",
+        "1 failed, 84 passed, 2 subtests passed in 3.27s"
+      ],
+      "preservation_summary": [
+        "tests/test_beetsbridge.py:169: TypeError",
+        "FAILED tests/test_beetsbridge.py::BeetsBridgeTests::test_worker_reports_result_on_main_thread",
+        "1 failed, 82 passed, 2 subtests passed in 3.23s"
+      ],
+      "candidate_module_syntax": {
+        "valid": true
+      },
+      "private_grader_output_sha256": "8260f84e4f650bf02fd28535137761907b72d458bfe5f0c87b8ff41fa4b8a6a5",
+      "private_console_sha256": "d96396054a52c6b586e8f5833840c5a5637233396bfac8d17e7c3990526b3798",
+      "private_grade_feedback_to_actor": false
+    }
+  ],
+  "coding_minutes": 64.03410610263333,
+  "source_audit": {
+    "original_Beets_test_methods_total": 8,
+    "original_Beets_test_methods_unchanged": 7,
+    "original_tests_file_bytes_unchanged": false,
+    "shared_stop_event_cleared_on_reload": true,
+    "waiting_work_survives_reload": true,
+    "new_worker_argument_breaks_original_preservation_test": true,
+    "authored_tests_added": 2,
+    "authored_worker_test_thread_mock_exits_before_timer_callback": true,
+    "cancellation_feature_not_implemented": true,
+    "README_removes_existing_commands_section": true,
+    "README_claims_stopped_work_will_not_resume_but_independent_check_fails": true,
+    "independent_final_registered_tests": 6,
+    "independent_final_failure_records": 6,
+    "phase2_failed_before_new_feature_inference": true
+  },
+  "runtime_audit": {
+    "completed_requests": 107,
+    "failed_backend_requests": 23,
+    "backend_failure_classes": [
+      "HTTPError: HTTP Error 400: Bad Request"
+    ],
+    "largest_completed_prompt": 98069,
+    "any_length_finish": true,
+    "auxiliary": [
+      {
+        "request": "00088.request.json",
+        "usage": {
+          "completion_tokens": 8192,
+          "prompt_tokens": 32754,
+          "total_tokens": 40946,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 336.9004557132721,
+        "finish_reasons": [
+          "length"
+        ],
+        "content_chars": 37641,
+        "reasoning_chars": 0,
+        "summary_headings": [
+          "## Historical Task Snapshot",
+          "## Goal",
+          "## Constraints & Preferences",
+          "## Completed Actions",
+          "## Active State",
+          "## Blocked",
+          "## Key Decisions",
+          "## Errors & Fixes",
+          "## Resolved Questions",
+          "## Relevant Files",
+          "## Critical Context",
+          "## Unverified / Working Hypotheses",
+          "## Detailed Session Log (oldest first)"
+        ],
+        "literal_tool_markup": false,
+        "content_sha256": "ff96b3882b261b75ce8261ac91535b615cb555081fcfe4b61e9a89a506ff2fd6",
+        "not_a_faithful_structured_checkpoint": true,
+        "observed_repetition_and_output_exhaustion": true
+      },
+      {
+        "request": "00090.request.json",
+        "usage": {
+          "completion_tokens": 8192,
+          "prompt_tokens": 31530,
+          "total_tokens": 39722,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 331.6603515148163,
+        "finish_reasons": [
+          "length"
+        ],
+        "content_chars": 29412,
+        "reasoning_chars": 0,
+        "summary_headings": [
+          "## Historical Task Snapshot",
+          "## Goal",
+          "## Constraints & Preferences",
+          "## Completed Actions"
+        ],
+        "literal_tool_markup": false,
+        "content_sha256": "41721b4048dde229738b0884a97a60225d0e3bdcb7b576295da0b2b132ac5b32",
+        "not_a_faithful_structured_checkpoint": true,
+        "observed_repetition_and_output_exhaustion": true
+      },
+      {
+        "request": "00092.request.json",
+        "usage": {
+          "completion_tokens": 8192,
+          "prompt_tokens": 32193,
+          "total_tokens": 40385,
+          "prompt_tokens_details": {
+            "cached_tokens": 31458
+          }
+        },
+        "seconds": 240.7255985736847,
+        "finish_reasons": [
+          "length"
+        ],
+        "content_chars": 29399,
+        "reasoning_chars": 0,
+        "summary_headings": [
+          "## Historical Task Snapshot",
+          "## Goal",
+          "## Constraints & Preferences",
+          "## Completed Actions"
+        ],
+        "literal_tool_markup": false,
+        "content_sha256": "c767db41496fc9be8c79d764783b7ef979af1dec84747ec0ff6e39e09aa5bbc9",
+        "not_a_faithful_structured_checkpoint": true,
+        "observed_repetition_and_output_exhaustion": true
+      }
+    ],
+    "all_user_tasks_literal_in_final_main_request": [
+      true,
+      true,
+      true
+    ],
+    "frozen_code_files_verified": 118,
+    "initial_Gitea_git_facts_supplied": true,
+    "backend_context_overflow": {
+      "failed_requests": 23,
+      "rendered_prompt_tokens": 98346,
+      "available_context_tokens": 98304,
+      "observed_backend_HTTP_status": 400,
+      "gateway_HTTP_status_seen_by_Hermes": 502,
+      "not_OOM_or_GPU_fit_failure": true,
+      "phase2_capability_not_established_due_to_context_failure": true
+    }
+  },
+  "forge": {
+    "epoch": 1795720590.7482548,
+    "authenticated_actor": "hermes-agent",
+    "repo": "hermes-gpuquant-vibe-q6-thinking-20261124",
+    "main_revision": "b3cec4f8e7e490a8477ae06a27a3fab6e2ef5e31",
+    "upstream_baseline_blobs_verified": 40,
+    "issues": [],
+    "pull_requests": [],
+    "read_only": true,
+    "model_calls": 0,
+    "forge_mutations": 0,
+    "actor_fork_GET_status": 404
+  },
+  "proxy_observations": {
+    "calls": 12,
+    "outside_repo_denials": 3,
+    "final_scope_state": {
+      "issue": null,
+      "pr": null,
+      "branch": null,
+      "commits": 0
+    }
+  },
+  "resource": {
+    "samples": 375,
+    "sampling_pause_seconds": 10,
+    "measurement_errors": 0,
+    "guards": 0,
+    "peak_GPU_MiB": 11566,
+    "peak_aggregate_cgroup_bytes": 7032295424,
+    "peak_process_PSS_bytes": 2670272512,
+    "peak_study_swap_bytes": 0,
+    "minimum_disk_free_bytes": 112258260992,
+    "placement_lines": [
+      "0.00.698.269 I load_tensors: offloaded 41/41 layers to GPU",
+      "0.00.698.277 I load_tensors:        CUDA0 model buffer size = 10392.38 MiB",
+      "0.00.698.278 I load_tensors:    CUDA_Host model buffer size =   397.85 MiB",
+      "0.23.486.078 I llama_kv_cache:      CUDA0 KV buffer size =   540.00 MiB",
+      "0.23.517.356 I sched_reserve:      CUDA0 compute buffer size =   229.01 MiB",
+      "0.23.517.359 I sched_reserve:  CUDA_Host compute buffer size =    28.01 MiB"
+    ]
+  },
+  "model": {
+    "file": "Qwen3.6-14B-A3B-VibeForged-v2-Q6_K.gguf",
+    "bytes": 11325370432,
+    "sha256": "56695b1ce0fa47b7d2d94bbb57bd71e5c24decfcd4af76b6a9c3073ee464fe9c",
+    "after_full_SHA_advised_DONTNEED_for_only_selected_model_file": true,
+    "not_global_cache_flush_or_proof_of_cold_cache": true
+  },
+  "preservation": {
+    "original_ids_images_configuration_running_preserved": true,
+    "codex_entire_snapshot_unchanged": true,
+    "four_profile_hashes_unchanged": true,
+    "all_30_retained_model_metadata_unchanged": true,
+    "active_study_candidate": "vibe-q6-thinking-cold-20261126",
+    "retained_model_full_hash_verified_before_auxiliary_replays": true,
+    "original_alias_context_restored": true,
+    "at_least_100_GiB_free": true,
+    "free_GiB": 104.48065567016602
+  },
+  "owner_preservation": {
+    "passed": true,
+    "head_status_all_tracked_and_ignored_instructions_unchanged": true,
+    "tracked_files_checked": 40
+  },
+  "cleanup": {
+    "passed": true,
+    "terminal_supervisor_removed": "dfbfdb87eae3d2f0a1b24414f0178aca4f28a2b33eec8624d0d5a1b1c7130af4",
+    "owned_containers_absent": [
+      "gpuquant-vibe-q6-thinking-cold-20261126-beets-main",
+      "gpuquant-vibe-q6-thinking-cold-20261126-beets-agent",
+      "gpuquant-vibe-q6-thinking-cold-20261126-beets-llm",
+      "gpuquant-vibe-q6-thinking-cold-20261126-beets-gitea",
+      "hermes-gpuquant-vibe-q6-thinking-cold-20261126-beets-supervisor"
+    ],
+    "owned_network_absent": true,
+    "epoch": 1795720569.9188883
+  },
+  "protocol_sha256": "a88c177e76b56df5aaf3384073a46c806d0bf52fc4fad11db5da855f50caf0a6",
+  "source_fingerprints": {
+    "audit_cold_vibe_q6_completed.py": "08a5a10ae1df0b291319f43e3ddfce634a729aa4f072f7e9bba98d2f5cfca5e3",
+    "cold-vibe-q6-independent-final-remote.json": "3d5bd412bf720b375ca56712c4201820f7345b91586df2b7f3c035562c0c2510",
+    "native-vibe-q6-thinking-cold-20261126/beets_lifecycle/runtime-restoration.json": "9c94dba9f273f3a29b24ed6e43ad1c811f5e47751c85d7104fa3a19a4f8c098c"
+  }
+}

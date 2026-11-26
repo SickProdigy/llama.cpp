@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "summary_sha256": "cab9b06705f4c2d1e2561ab87489d17780313dcbc103698843d2071df3fe980e",
+  "source_bindings_verified": 118,
+  "phases": 3,
+  "actual_final_authenticated_remote_readback": true,
+  "all_candidate_modules_compile": true,
+  "all_project_preservation_independent_exits": 1,
+  "scope": "Saved source/numeric consistency and actual authenticated remote audit; phase2 context failure is not an independent feature-capability verdict."
+}

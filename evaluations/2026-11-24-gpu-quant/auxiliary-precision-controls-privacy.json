@@ -1,9 +1,9 @@
 {
   "passed": true,
   "known_credential_values_checked": 5,
-  "private_receipt_keys_checked": 50,
-  "patterns_checked": 49,
-  "payloads_checked": 1576,
+  "private_receipt_keys_checked": 54,
+  "patterns_checked": 52,
+  "payloads_checked": 1588,
   "matching_paths": [],
   "archive_sha256": "3310d556265fd4693f7360393a813f9ce2bff18d227344f7f606f17a950800de",
   "archives_checked": {

@@ -1,0 +1,47 @@
+{
+  "registered_epoch": 1795720792.1437058,
+  "classification": "Prospective public Q8 current-backend capacity; no coding score or presumed quality gain",
+  "backend_image": "sha256:fee4289628e7ba09f6fbf62d6ce4325aebb2531ffde2154d41276fe4acc58da3",
+  "load_mode": "none",
+  "per_probe_deadline_seconds": 5400,
+  "load_deadline_seconds": 1200,
+  "per_model_stage_guard_seconds": 21600,
+  "synthetic_prompt_targets": [
+    16000,
+    60000,
+    80000
+  ],
+  "host_aggregate_limit_bytes": 8589934592,
+  "backend_cap_bytes": 6979321856,
+  "all_container_swap_disallowed": true,
+  "minimum_disk_reserve_bytes": 107374182400,
+  "layout_selection": "All41 GPU layers at98304 context/q4_0 KV; no CPU layer fallback. Record failure before another protocol.",
+  "reasoning_profile_scope": "Capacity only. Current-runtime fresh actor profiles and context controls must be registered before code calls.",
+  "fable-q8-thinking": {
+    "repo": "tvall43/Qwen3.6-14B-A3B-FableVibes-GGUF",
+    "revision": "9cf910a7ad68dfedcbdfc46ef0fe5003dec07c23",
+    "file": "Qwen3.6-14B-A3B-FableVibes-Q8_0.gguf",
+    "expected_bytes": 14655633920,
+    "sha256": "ddea86093b863215fa75969d81df494fafdb0e6c4a65af557ed3a710e2238e58",
+    "layouts": [
+      {
+        "context": 98304,
+        "gpu_layers": 99
+      }
+    ],
+    "sampler": {
+      "temperature": 1.0,
+      "top_p": 0.95,
+      "top_k": 20,
+      "min_p": 0,
+      "repeat_penalty": 1,
+      "presence_penalty": 0,
+      "chat_template_kwargs": {
+        "enable_thinking": true
+      }
+    },
+    "probe_output_cap": 16384,
+    "retained_file_requires_full_hash_verification": false,
+    "owned_staged_artifact_requires_full_hash_verification": true
+  }
+}

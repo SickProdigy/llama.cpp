@@ -1,0 +1,79 @@
+{
+  "selected": {
+    "repo": "tvall43/Qwen3.6-14B-A3B-FableVibes-GGUF",
+    "revision": "9cf910a7ad68dfedcbdfc46ef0fe5003dec07c23",
+    "file": "Qwen3.6-14B-A3B-FableVibes-Q8_0.gguf",
+    "bytes": 14655633920,
+    "sha256": "ddea86093b863215fa75969d81df494fafdb0e6c4a65af557ed3a710e2238e58"
+  },
+  "other_public_files": [
+    {
+      "repo": "tvall43/Qwen3.6-14B-A3B-FableVibes-GGUF",
+      "revision": "9cf910a7ad68dfedcbdfc46ef0fe5003dec07c23",
+      "files": [
+        {
+          "file": "Qwen3.6-14B-A3B-FableVibes-Q5_K_M.gguf",
+          "bytes": 9852131840,
+          "sha256": "d8fe99004cefb2cf26a1750851acf3cabd53247958e144f88e08beeb36ffbcab"
+        },
+        {
+          "file": "Qwen3.6-14B-A3B-FableVibes-Q8_0.gguf",
+          "bytes": 14655633920,
+          "sha256": "ddea86093b863215fa75969d81df494fafdb0e6c4a65af557ed3a710e2238e58"
+        }
+      ]
+    },
+    {
+      "repo": "tvall43/Qwen3.6-14B-A3B-VibeForged-v2-GGUF",
+      "revision": "4f08fded2aee1e27fb0335104307ade516508d37",
+      "files": [
+        {
+          "file": "Qwen3.6-14B-A3B-VibeForged-v2-Q8_0.gguf",
+          "bytes": 14655633472,
+          "sha256": "418330af087e25676ede78e507c6e26e713603fb05fdf8f2cfb713e516043fcc"
+        }
+      ]
+    }
+  ],
+  "metadata_only_projector_files_excluded": true,
+  "reason": "Q4/Q6 already tested; Q8 offers a larger public precision step than Q5. Fable Q6 kept valid imports and green project tests on the older evaluator while still failing behavior/publication. Q8 is a candidate, not a presumed improvement.",
+  "runtime_requirement": "Use current-owner-derived evaluator and current backend. Older Fable cells are historical; use fresh profiles for any new cell.",
+  "storage_before_download": {
+    "staging_free_bytes": 127331557376,
+    "original_model_drive_free_bytes": 112184958976,
+    "staging_projected_free_after_file_bytes": 112675923456,
+    "required_reserve_bytes": 107374182400,
+    "prior_owned_IQ4_preserved": true,
+    "original_models_read_only": true
+  },
+  "download_started": true,
+  "download_full_hash_verification_pending": true,
+  "GPU_fit_pending": true,
+  "large_context_fit_pending": true,
+  "importance_matrix_and_tensor_production_comparison_pending": false,
+  "public_source": "https://huggingface.co/tvall43/Qwen3.6-14B-A3B-FableVibes-GGUF/tree/9cf910a7ad68dfedcbdfc46ef0fe5003dec07c23",
+  "CPU_offload_not_implicitly_authorized_as_fit_proof": true,
+  "candidate_selection_not_model_recommendation": true,
+  "header_comparison": {
+    "prefix_bytes_read": 16777216,
+    "prefix_sha256": "d0be23301bb74ea2c62dded77155572d6e150eac7be9edd097a25e228be93446",
+    "source": "Initial header of growing owned partial; full pinned file SHA remains pending. Header is not fit proof.",
+    "GGUF_version": 3,
+    "tensor_count": 733,
+    "tensor_type_counts": {
+      "8": 432,
+      "0": 301
+    },
+    "tensor_names_and_dimensions_SHA256": "eaec34077c4e45aee1e78c4fb92ae60aeed8a66a1b22488a72d0f1fc0747a89c",
+    "tensor_names_dimensions_match_retained_Fable_Q4_Q6": true,
+    "chat_template": {
+      "SHA256": "55d4931433fe502b794226ee7f4d206a6bdd436ac9f80eb7d8ebb4c639f9ea0c",
+      "bytes": 8057
+    },
+    "chat_template_matches_retained_Fable_Q4_Q6": true,
+    "advertised_context": 262144,
+    "all_three_files_have_no_imatrix_metadata": true,
+    "missing_imatrix_metadata_does_not_establish_identical_calibration": true,
+    "Q8_vs_K_quant_tensor_production_differs": true
+  }
+}
