@@ -45,7 +45,9 @@ All109 frozen source fingerprints verify. There are81 completed backend requests
 no auxiliary compression requests or length finishes, and maximum completed input
 64,066tokens. Context exhaustion/compaction does not explain these failures.
 The earlier Q4 reasoning run used an older backend and shared preliminary read
-state; a same-method cold Q4 cell is needed before comparing weight precision.
+state; the [same-method cold Q4 cell](native-fable-q4-thinking-cold-beets.md) also fails.
+Both use an older experimental Hermes runtime, distinct from the rebuilt owner
+image; future current-runtime cells require separate qualification.
 
 Full file SHA256 and actual41/41 GPU placement are verified. Peak sampled GPU is
 11,566MiB; GPU model buffer10,392.38MiB, host model buffer397.85MiB and GPU KV540MiB.

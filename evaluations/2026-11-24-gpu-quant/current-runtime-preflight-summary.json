@@ -1,0 +1,119 @@
+{
+  "owner_image": "sha256:585c221367f9479d3962bc66c8c6f11d1ca571c9e5d7b3aa565ed02d9651b124",
+  "prior_experimental_image": "sha256:97b08c5ce375113809299fc8c5dd86ae60600f618158d15fe4ad5fc9d7f4b7ae",
+  "new_experimental_image": "sha256:c9b40eb8dea441cba7ded2e6589e5c011545ffc1ec76a0dc736f8e399d8f947b",
+  "owner_base_layers_exact_prefix": true,
+  "selected_source_differences": {
+    "agent/prompt_builder.py": {
+      "experimental": "83da83a13043d016fda65b25e15cb53300677e06370e1386b97927279bcbc676",
+      "owner": "3ef07d0ccb6b55ac8d712641772a240397e3010356f7961a0e168251f00a816c"
+    },
+    "agent/tool_executor.py": {
+      "experimental": "30cc23d71e47aa5c913cdebb887b0c06183c88811de7f6c8e14bce015376260b",
+      "owner": "70d085fb1c2e164a4713fc68088c02811f5a5cd36c65ac32c1ec963508433fdd"
+    },
+    "hermes_cli/_parser.py": {
+      "experimental": "e9f0fbb367a32cbfc8f144b28c3f4ff6d0956003fbb1a0c09f3c487f4bf19311",
+      "owner": "24d205e1195986cbd5fab616a13b09871231de227f059cf123baa29868d476f3"
+    },
+    "tools/mcp_tool_handlers.py": {
+      "experimental": "35054a28d7ed29b9955f9e36845b1e1b6ebd5a49d45b3afc4f6d7593fb455c61",
+      "owner": "38ea1f8d84b4bdae1a085476445f73432a5bc5e272a0b0e4cad042959c984116"
+    }
+  },
+  "test_packages_added": {
+    "pytest": "9.1.1",
+    "iniconfig": "2.3.0",
+    "pluggy": "1.6.0"
+  },
+  "matching_existing_dependencies_unchanged": {
+    "packaging": "26.3",
+    "Pygments": "2.21.0"
+  },
+  "offline_pinned_COPY_only_build": true,
+  "base_project_tests": "83 passed, 2 subtests passed",
+  "sdk_code_and_timeout_controls": {
+    "passed": true,
+    "epoch": 1795708236.015357,
+    "image": "sha256:c9b40eb8dea441cba7ded2e6589e5c011545ffc1ec76a0dc736f8e399d8f947b",
+    "model_calls": 0,
+    "forge_mutations": 0,
+    "results": [
+      {
+        "name": "baseline project",
+        "passed": true,
+        "log_sha256": "d901734c0de034b513063e40f9ff7aa9aaa7568efed1752cf49525bece1262b2"
+      },
+      {
+        "name": "vibe-q4-thinking",
+        "sdk_actual_wire_and_timeouts_passed": true,
+        "actual_native_code_tool_passed": true,
+        "owner_and_prepared_profile_unchanged": true
+      },
+      {
+        "name": "vibe-q6-thinking",
+        "sdk_actual_wire_and_timeouts_passed": true,
+        "actual_native_code_tool_passed": true,
+        "owner_and_prepared_profile_unchanged": true
+      }
+    ]
+  },
+  "native_forge_transport": {
+    "passed": true,
+    "model_calls": 0,
+    "forge_mutations": 0,
+    "native_tool_names": [
+      "gitea_commit_workspace",
+      "gitea_create_branch",
+      "gitea_create_issue",
+      "gitea_create_pull_request",
+      "gitea_edit_file",
+      "gitea_fork_repository",
+      "gitea_identity",
+      "gitea_list_branches",
+      "gitea_list_directory",
+      "gitea_list_issues",
+      "gitea_list_pull_requests",
+      "gitea_read_file",
+      "gitea_read_issue",
+      "gitea_read_pull_request",
+      "gitea_repository_info",
+      "gitea_search_repositories",
+      "gitea_update_issue",
+      "gitea_update_pull_request",
+      "memory",
+      "patch",
+      "process_manage",
+      "read_file",
+      "search_files",
+      "terminal",
+      "write_file"
+    ],
+    "identity": "hermes-agent",
+    "actual_repository_read": true,
+    "readonly_write_blocked": true,
+    "context": 98304,
+    "not_model_quality": true
+  },
+  "readonly_write_rejected_by_scope_proxy": true,
+  "model_inference_calls": 0,
+  "forge_mutations": 0,
+  "scope": "Current owner source base plus isolated pinned test dependencies; no owner image/container/profile replacement. Full source/dependency equivalence to the older runtime is not claimed.",
+  "cli_flags": {
+    "passed": true,
+    "image": "sha256:c9b40eb8dea441cba7ded2e6589e5c011545ffc1ec76a0dc736f8e399d8f947b",
+    "run_as_actual_actor_uid": 1000,
+    "shown_flags": {
+      "--cli": true,
+      "--oneshot": true,
+      "--query-file": true,
+      "--accept-hooks": true,
+      "--max-turns": true,
+      "--run-budget": true,
+      "--resume": true,
+      "--in": true
+    },
+    "log_sha256": "0247278486ebedc16c98ad0c13c85c32b540d48d6c53e8ea9a3d0010c78432fa",
+    "model_calls": 0
+  }
+}

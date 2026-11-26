@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "summary_sha256": "a08b4b4e59049008fb73cec9f2763c24c72a856876fc5879333000129fb2bb62",
+  "source_bindings_verified": 107,
+  "phases": 3,
+  "all_three_actual_project_preservation_and_independent_checks_fail": true,
+  "actual_final_authenticated_remote_readback": true,
+  "scope": "Saved numeric/source consistency, local compile and independent remote audit; not public behavioral replay."
+}

@@ -1,7 +1,10 @@
 # GPU-resident quantization comparison
 
-November 24, 2026. In progress. The first thinking-disabled Fable Q6 workflow
-fails independently audited correctness and publication checks; Q4 also fails without any edits. Vibe Q4 is policy-confounded; fresh trusted-profile runs also fail the full workflow; reasoning-mode controls remain pending.
+Updated November26. In progress. Nonthinking and trusted baselines remain
+below; the matched cold Fable reasoning pair also fails. Those two cells share
+an older experimental Hermes runtime. The [current-runtime preflight](current-runtime-preflight.md)
+now passes without model calls or forge writes; Vibe reasoning cells will bind
+that newer owner-source evaluator. Capacity alone is not coding/publication quality.
 
 | Checkpoint / public quant | Measured capacity (98,304 unless stated) | Fresh Beets coding/Gitea workflow |
 |---|---|---|
@@ -11,6 +14,8 @@ fails independently audited correctness and publication checks; Q4 also fails wi
 | VibeForged v2 Q4_K_M, explicitly trusted profile | Same measured GPU layout; native41/41;8,964MiB peak |17 Python executions succeed but repeat wrong `~/beetsbridge`; no edits/tests/forge writes;2.217 coding minutes plus15.327-minute inefficient read ([audit](native-vibe-q4-trusted-beets.md)) |
 | Same VibeForged v2 Q6_K, explicitly trusted | Capacity complete; native41/41;11,566MiB sampled GPU | Grounded read and partial cancellation/docs; lifecycle unfixed,19 authored tests fail collection, no publication;9.564 coding minutes ([audit](native-vibe-q6-trusted-beets.md)) |
 | Adapted27B IQ4_XS, public |98k CUDA OOM at ub128/64;64k passes all probes,15,788MiB peak GPU/no study swap;51,942-input request598.86s ([evidence](resource-adapted-iq4.md)); native confirms66/66 GPU layers | Local repair passes; docs reporting and cancellation counts/callback identity fail; no publication;85.75 coding minutes including2 failed summaries/native fallback ([audit](native-adapted-iq4-beets.md)) |
+| FableVibes Q4_K_M, cold reasoning / older evaluator |41/41 GPU;8,964MiB sampled peak;98k q4 KV |Plugin unloadable after all3 turns; collection/preservation fail; no publication;22.24 coding minutes ([audit](native-fable-q4-thinking-cold-beets.md)) |
+| FableVibes Q6_K, cold reasoning / same older evaluator |41/41 GPU;11,566MiB sampled peak;98k q4 KV |Final91 tests/2 subtests pass but lifecycle/cancellation/docs fail; no publication;13.16 coding minutes ([audit](native-fable-q6-thinking-cold-beets.md)) |
 | FableVibes Q5_K_M, public | Possible intermediate; not downloaded or measured in this study | Not started |
 | Adapted 27B Q5/Q6 | Weight files exceed16GiB, ruling out entirely GPU-resident layouts; limited CPU-offload fit unmeasured | Not run; no quality-failure claim |
 

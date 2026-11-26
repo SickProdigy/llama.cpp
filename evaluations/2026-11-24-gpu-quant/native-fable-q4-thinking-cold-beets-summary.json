@@ -1,0 +1,242 @@
+{
+  "whole_workflow_pass": false,
+  "scope": "Three dependent natural coding turns with cold profile/process/gateway, no preliminary read control or private grade feedback; recorded pinned experimental Hermes image, not current rebuilt production Hermes.",
+  "phases": [
+    {
+      "phase": 0,
+      "coding_seconds": 499.04696479300037,
+      "exit_code": 0,
+      "external_timeout": false,
+      "source_digest": "cd04f12e12fa902cf016006c6b8ae026de4d9d4e751637240929d49cf9b02515",
+      "changed_paths": [
+        "beetsbridge/__init__.py",
+        "beetsbridge/test_disable_imports.py"
+      ],
+      "project_exit": 2,
+      "preservation_exit": 1,
+      "independent_exit": 1,
+      "project_summary": [
+        "ERROR beetsbridge/test_disable_imports.py",
+        "!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!",
+        "1 error in 0.28s"
+      ],
+      "preservation_summary": [
+        "ERROR tests/test_beetsbridge.py::BeetsBridgeTests::test_validation_requires_folder_below_allowed_root",
+        "ERROR tests/test_beetsbridge.py::BeetsBridgeTests::test_worker_reports_result_on_main_thread",
+        "75 passed, 8 errors, 2 subtests passed in 3.26s"
+      ],
+      "candidate_module_syntax": {
+        "valid": false,
+        "kind": "SyntaxError",
+        "message": "from __future__ imports must occur at the beginning of the file",
+        "line": 152
+      },
+      "private_grader_output_sha256": "58b524d835bf51ff634cdfa4d8ce871444d9524172eff50c6b8df11a9c00456c",
+      "private_console_sha256": "e160fa7310fdb40c8ea35146ab1b55375b3358d7c36b4389d7c26f127fc966d4",
+      "private_grade_feedback_to_actor": false
+    },
+    {
+      "phase": 1,
+      "coding_seconds": 91.70199191800202,
+      "exit_code": 0,
+      "external_timeout": false,
+      "source_digest": "ee4699b737f5dc8a3610027bbf9e7e94e62d749b298db1a11fe95281b4418b01",
+      "changed_paths": [
+        "beetsbridge/README.md",
+        "beetsbridge/__init__.py",
+        "beetsbridge/test_disable_imports.py"
+      ],
+      "project_exit": 2,
+      "preservation_exit": 1,
+      "independent_exit": 1,
+      "project_summary": [
+        "ERROR beetsbridge/test_disable_imports.py",
+        "!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!",
+        "1 error in 0.23s"
+      ],
+      "preservation_summary": [
+        "ERROR tests/test_beetsbridge.py::BeetsBridgeTests::test_validation_requires_folder_below_allowed_root",
+        "ERROR tests/test_beetsbridge.py::BeetsBridgeTests::test_worker_reports_result_on_main_thread",
+        "75 passed, 8 errors, 2 subtests passed in 3.26s"
+      ],
+      "candidate_module_syntax": {
+        "valid": false,
+        "kind": "SyntaxError",
+        "message": "from __future__ imports must occur at the beginning of the file",
+        "line": 152
+      },
+      "private_grader_output_sha256": "1ad2e28792a66a7b28fd8e4e12630af0241ecf98bb9917274e239bd3a34886d3",
+      "private_console_sha256": "5ac60a7462733ddb628b121fb42be443d133f41836520fdc2346651b66151cf8",
+      "private_grade_feedback_to_actor": false
+    },
+    {
+      "phase": 2,
+      "coding_seconds": 743.831677552007,
+      "exit_code": 0,
+      "external_timeout": false,
+      "source_digest": "aa0baae92fc0994c74949f77e06480acaf4638f38464c98aa0a3d886c295ac20",
+      "changed_paths": [
+        "beetsbridge/README.md",
+        "beetsbridge/__init__.py",
+        "beetsbridge/test_disable_imports.py"
+      ],
+      "project_exit": 2,
+      "preservation_exit": 1,
+      "independent_exit": 1,
+      "project_summary": [
+        "ERROR beetsbridge/test_disable_imports.py",
+        "!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!",
+        "1 error in 0.22s"
+      ],
+      "preservation_summary": [
+        "ERROR tests/test_beetsbridge.py::BeetsBridgeTests::test_validation_requires_folder_below_allowed_root",
+        "ERROR tests/test_beetsbridge.py::BeetsBridgeTests::test_worker_reports_result_on_main_thread",
+        "75 passed, 8 errors, 2 subtests passed in 3.26s"
+      ],
+      "candidate_module_syntax": {
+        "valid": false,
+        "kind": "SyntaxError",
+        "message": "from __future__ imports must occur at the beginning of the file",
+        "line": 271
+      },
+      "private_grader_output_sha256": "3727787c9f4a39ab41f160cbdd70cf85b8e3f2966bfa782f1e5ce1b1408395ba",
+      "private_console_sha256": "9111724835b67a2f3ba8a658861ebb109f4c273569467f3882207a13b5436f5a",
+      "private_grade_feedback_to_actor": false
+    }
+  ],
+  "coding_minutes": 22.243010571050156,
+  "source_audit": {
+    "all_three_candidate_snapshots_unloadable": true,
+    "original_Beets_test_methods_unchanged": 8,
+    "original_tests_file_bytes_unchanged": true,
+    "new_authored_test_module": "beetsbridge/test_disable_imports.py",
+    "behavioral_quality_not_established_due_to_syntax_failure": true,
+    "final_answer_leaves_upstream_issue_and_push_PR_to_user": true
+  },
+  "runtime_audit": {
+    "completed_requests": 92,
+    "largest_completed_prompt": 77940,
+    "any_length_finish": false,
+    "auxiliary": [
+      {
+        "request": "00078.request.json",
+        "usage": {
+          "completion_tokens": 107,
+          "prompt_tokens": 29932,
+          "total_tokens": 30039,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 88.71150708198547,
+        "finish_reasons": [
+          "stop"
+        ],
+        "content_chars": 384,
+        "reasoning_chars": 0,
+        "summary_headings": [],
+        "literal_tool_markup": true,
+        "content_sha256": "29ad1819ff462735badc436fa282c2865404bb2eb781a586475b46bf4e73681a",
+        "not_a_faithful_structured_checkpoint": true
+      }
+    ],
+    "all_user_tasks_literal_in_final_main_request": [
+      true,
+      true,
+      true
+    ],
+    "frozen_code_files_verified": 107,
+    "initial_Gitea_git_facts_supplied": true
+  },
+  "forge": {
+    "epoch": 1795708003.9601521,
+    "authenticated_actor": "hermes-agent",
+    "repo": "hermes-gpuquant-fable-q4-thinking-20261124",
+    "main_revision": "f9980ddc8aa6809e2f98f3ee95436bdb368e7a3d",
+    "upstream_baseline_blobs_verified": 40,
+    "issues": [],
+    "pull_requests": [],
+    "read_only": true,
+    "model_calls": 0,
+    "forge_mutations": 0,
+    "actor_fork_GET_status": 404
+  },
+  "proxy_observations": {
+    "calls": 8,
+    "outside_repo_denials": 7,
+    "final_scope_state": {
+      "issue": null,
+      "pr": null,
+      "branch": null,
+      "commits": 0
+    }
+  },
+  "resource": {
+    "samples": 136,
+    "sampling_pause_seconds": 10,
+    "measurement_errors": 0,
+    "guards": 0,
+    "peak_GPU_MiB": 8964,
+    "peak_aggregate_cgroup_bytes": 7314804736,
+    "peak_process_PSS_bytes": 2439166976,
+    "peak_study_swap_bytes": 0,
+    "minimum_disk_free_bytes": 114495762432,
+    "placement_lines": [
+      "0.00.597.389 I load_tensors: offloaded 41/41 layers to GPU",
+      "0.00.597.397 I load_tensors:        CUDA0 model buffer size =  7790.09 MiB",
+      "0.00.597.398 I load_tensors:    CUDA_Host model buffer size =   272.81 MiB",
+      "0.23.524.766 I llama_kv_cache:      CUDA0 KV buffer size =   540.00 MiB",
+      "0.23.554.059 I sched_reserve:      CUDA0 compute buffer size =   229.01 MiB",
+      "0.23.554.063 I sched_reserve:  CUDA_Host compute buffer size =    28.01 MiB"
+    ]
+  },
+  "model": {
+    "file": "Qwen3.6-14B-A3B-FableVibes-Q4_K_M.gguf",
+    "bytes": 8465553920,
+    "sha256": "21aa4b0b28090469e8a319c889451df2f1ea6aad27ac3818c8c8a86f86d5bc9e",
+    "after_full_SHA_advised_DONTNEED_for_only_selected_model_file": true,
+    "not_global_cache_flush_or_proof_of_cold_cache": true
+  },
+  "preservation": {
+    "original_ids_images_configuration_running_preserved": true,
+    "codex_entire_snapshot_unchanged": true,
+    "four_profile_hashes_unchanged": true,
+    "all_30_retained_model_metadata_unchanged": true,
+    "active_study_candidate": "fable-q4-thinking-cold-20261126",
+    "retained_model_full_hash_verified_before_auxiliary_replays": true,
+    "original_alias_context_restored": true,
+    "at_least_100_GiB_free": true,
+    "free_GiB": 106.58148574829102
+  },
+  "owner_preservation": {
+    "passed": true,
+    "head_status_all_tracked_and_ignored_instructions_unchanged": true,
+    "tracked_files_checked": 40
+  },
+  "cleanup": {
+    "passed": true,
+    "exact_terminal_supervisor_removed": true,
+    "all_owned_backends_helpers_network_absent": true
+  },
+  "protocol_sha256": "c2339c79022cb15e7f134516c13579cb1dc28782839b92a8401fce1acd98df31",
+  "source_fingerprints": {
+    "audit_cold_q4_completed.py": "695696680a63a8625b3cbcceda21852538f2e392d58ba8b68378483da8a793c8",
+    "cold-q4-independent-final-remote.json": "6664c973e2b6cea5f42fa64f0a22792a1dbecd9268b770186a337642e78b343f",
+    "native-fable-q4-thinking-cold-20261126/beets_lifecycle/runtime-restoration.json": "b64908c3bf68e3cce0d6b605312933a140ab378201ae5bb2df03a7714bb7f51e"
+  },
+  "hermes_runtime_image": "sha256:97b08c5ce375113809299fc8c5dd86ae60600f618158d15fe4ad5fc9d7f4b7ae",
+  "backend_image": "sha256:fee4289628e7ba09f6fbf62d6ce4325aebb2531ffde2154d41276fe4acc58da3",
+  "backend_build": "b12723-abca69200",
+  "sampler": {
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "seed": 20261124,
+    "thinking": true,
+    "main_output_cap": 16384,
+    "context": 98304,
+    "KV": "q4_0"
+  },
+  "comparison_limit": "Matched cold Fable Q4/Q6 cells share this pinned experimental Hermes runtime, which differs from current rebuilt owner Hermes. No production-current, precision-only causal or autonomous reliability claim.",
+  "privacy_boundary": "Numeric observations, source hashes and curated audits only; no raw histories, full private source, credentials or private grader output."
+}

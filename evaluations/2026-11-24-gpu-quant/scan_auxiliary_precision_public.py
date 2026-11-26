@@ -37,7 +37,7 @@ for source_archive in archives:
    assert entry.isfile();scan(t.extractfile(entry).read(),'archive:'+source_archive.name+':'+entry.name)
 for root in [Path('/public'),Path('/code')]:
  for f in root.rglob('*'):
-  if f.is_file() and f.suffix in {'.py','.md','.json','.csv','.sha256','.log'}:scan(f.read_bytes(),str(f))
+  if f.is_file() and f.suffix in {'.py','.md','.json','.csv','.sha256','.log','.Dockerfile'}:scan(f.read_bytes(),str(f))
 scan(Path('/root-readme').read_bytes(),'README.md')
 scan(Path('/model-options').read_bytes(),'MODEL-OPTIONS.md')
 result={'passed':not matches,'known_credential_values_checked':len(values),'private_receipt_keys_checked':len(keys),'patterns_checked':len(patterns),'payloads_checked':checked,'matching_paths':matches,'archive_sha256':hashlib.sha256(archive.read_bytes()).hexdigest(),'archives_checked':{p.name:hashlib.sha256(p.read_bytes()).hexdigest()for p in archives},'scanner_worker_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'scope':'Known credential values plus actual private signing keys and common encodings; not general secret detection. No values persisted or printed.'}

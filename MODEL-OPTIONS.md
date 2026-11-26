@@ -3,6 +3,16 @@
 Recorded November 19, 2026. This is a reminder of possible next steps, not a
 record of tests on the spare PCs or a change to the deployed model.
 
+## November26: runtime and reasoning comparison update
+
+The [matched cold Fable pair](evaluations/2026-11-24-gpu-quant/native-fable-q4-thinking-cold-beets.md)
+fails the complete workflow: Q4 breaks plugin loading; Q6 preserves imports and
+green project tests but misses behavior/publication. Both use the same older
+evaluation runtime. A [new owner-source evaluator](evaluations/2026-11-24-gpu-quant/current-runtime-preflight.md)
+passes compatibility controls for the next fresh cells; production is unchanged.
+The11 auxiliary/cache outputs also fail faithful-checkpoint checks. FP16 KV
+fits Q4 at98k/10,162MiB, but no complete-workflow precision gain is established.
+
 ## November 24: GPU-resident quantization goal active
 
 The next [registered comparison](evaluations/2026-11-24-gpu-quant/plan.md) prioritizes

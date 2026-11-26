@@ -1,21 +1,23 @@
 # Llama.cpp and Hermes-Agent Model Notes
 
-The [November 24 GPU-resident quantization comparison](evaluations/2026-11-24-gpu-quant/matrix.md)
-is active: retained Fable/Vibe Q4 and Q6 first, evaluating correctness and latency
-together at realistic context. Fable Q6 completes its first capacity stage at
-98,304 context (11,566 MiB sampled GPU peak; no study swap), but its first
-thinking-disabled coding workflow fails correctness/publication checks in 21.05
-coding minutes. Q4 also completes without edits or publication (1.70 coding minutes). The matched Vibe comparison and publisher reasoning-mode controls continue.
-See the protocol/results before treating fit as useful agent behavior.
-The [fresh trusted Vibe Q4 run](evaluations/2026-11-24-gpu-quant/native-vibe-q4-trusted-beets.md)
-executes Python successfully but fails wrong-path recovery without code or publication.
-Matching Q6 also fails the full workflow after partial cancellation/docs; reasoning-mode controls for both families remain pending.
-The [reasoning-enabled Fable Q4 capacity stage](evaluations/2026-11-24-gpu-quant/resource-fable-q4-thinking.md)
-now passes all five probes at98,304 context and8,964MiB sampled GPU peak, with no
-study swap. Its [completed reasoning workflow](evaluations/2026-11-24-gpu-quant/native-fable-q4-thinking-beets.md)
-fails repair/docs/cancellation/publication in37.13 coding minutes. The audit also
-finds read-control MCP cooldown coupling and a malformed auxiliary checkpoint;
-those limitations must be addressed before further independent comparisons.
+The [GPU-resident quantization comparison](evaluations/2026-11-24-gpu-quant/matrix.md)
+is in progress (updated November26). Q4/Q6 capacity is measured separately from
+real coding/Gitea success. Neither [cold Fable Q4](evaluations/2026-11-24-gpu-quant/native-fable-q4-thinking-cold-beets.md)
+nor [cold Q6](evaluations/2026-11-24-gpu-quant/native-fable-q6-thinking-cold-beets.md)
+reasoning completes the workflow: Q4 leaves an unloadable plugin in22.24 coding
+minutes; Q6 passes91 tests/2 subtests but fails behavior and publication in13.16.
+Both use the same older experimental Hermes image and current llama.cpp.
+
+The owner rebuilt Hermes in the meantime. A [current-runtime evaluator](evaluations/2026-11-24-gpu-quant/current-runtime-preflight.md)
+now passes original-suite, SDK/code and native Gitea compatibility controls without
+inference or forge writes; future cells use fresh state on that pinned runtime.
+Production settings and all30 retained models remain unchanged.
+
+[Auxiliary/history/cache controls](evaluations/2026-11-24-gpu-quant/auxiliary-precision-controls.md)
+and the [matched Q6 replays](evaluations/2026-11-24-gpu-quant/auxiliary-q6-quant-control.md)
+produce no trustworthy checkpoint across11 outputs. FP16 KV fits Q4 at98,304
+context/10,162MiB sampled GPU but does not fix those checkpoint failures. Higher
+weight/cache precision alone has not produced a complete workflow pass.
 
 The [public27B IQ4_XS capacity check](evaluations/2026-11-24-gpu-quant/resource-adapted-iq4.md)
 passes at64k context after98k CUDA allocation failures; the52k-input request takes
