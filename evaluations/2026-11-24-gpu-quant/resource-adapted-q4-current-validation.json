@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "archive_sha256": "6a1ce4c14a36ce950421b2adff6aa31509d6c7c0d0420b0b4a286085ff50c017",
+  "manifest_files": 58,
+  "layouts_observed": 2,
+  "selected_layout": {
+    "context": 98304,
+    "gpu_layers": 56
+  },
+  "completed_probes": 6,
+  "not_coding_or_forge_qualification": true,
+  "scope": "Saved source, placement, response, headroom and memory consistency; not rerun inference or coding/forge qualification."
+}

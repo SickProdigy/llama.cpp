@@ -1,5 +1,7 @@
 # GPU-resident quantization comparison
 
+[Current adapted 27B Q4 capacity](resource-adapted-q4-current.md) completes all six probes at 98k with 56/66 GPU layers and explicit CPU spillover: 15,456 MiB GPU, about 2.9 GiB host model buffers, no study swap. All-GPU allocation fails; 60k input takes 11.06 minutes. A fresh current-runtime coding/Gitea run remains next.
+
 [Current Fable Q6 coding/Gitea](native-fable-q6-current-thinking-cold-beets.md) fails in 36.67 coding minutes: initial repair absent, cancellation incomplete, project collection blocked, docs inaccurate, no remote issue/fork/PR. It fits 98k/all 41 GPU layers at 11,566 MiB. Matched current Q8 also fails (38.68 minutes/14,624 MiB); no precision winner is established.
 
 
@@ -31,6 +33,7 @@ that newer owner-source evaluator. Capacity alone is not coding/publication qual
 | FableVibes Q6_K, cold reasoning / current evaluator and transparent recorder | 41/41 GPU at98k;11,566MiB; all six current capacity probes complete | No initial repair; incomplete cancel; project collection fails; docs inaccurate, no remote issue/fork/PR;36.67 coding min ([audit](native-fable-q6-current-thinking-cold-beets.md)) |
 | FableVibes Q8_0, public |Full file/hash verified;41/41 GPU at98k,14,624MiB peak;80k-input probe completes with59.8k cached ([capacity](resource-fable-q8-thinking.md)) | Manual-import/cancellation regressions, test collection failure, incomplete docs, zero Gitea actions;38.68 coding minutes ([audit](native-fable-q8-thinking-cold-beets.md)) |
 | FableVibes Q5_K_M, public | Possible intermediate; not downloaded or measured in this study | Not started |
+| Adapted 27B Q4_K_M, retained / current capacity | All-GPU98k CUDA OOM;56/66GPU passes all six probes;15,456MiB GPU;CPU model2,982.90MiB/CPU KV216MiB;60k663.77s ([capacity](resource-adapted-q4-current.md)) | Fresh current-runtime Beets coding/Gitea not started; older correct Spam result remains qualified separately |
 | Adapted 27B Q5/Q6 | Weight files exceed16GiB, ruling out entirely GPU-resident layouts; limited CPU-offload fit unmeasured | Not run; no quality-failure claim |
 
 Fable Q6's five completed resource requests include a real tool-call/result/
