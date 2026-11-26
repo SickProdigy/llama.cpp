@@ -1,0 +1,433 @@
+{
+  "whole_workflow_verdict": "FAIL",
+  "scope": "Three dependent natural coding turns with cold profile/process/gateway, no preliminary read control or private grade feedback; current-owner-derived qualified Hermes evaluator image.",
+  "phases": [
+    {
+      "phase": 0,
+      "coding_seconds": 484.16861897199124,
+      "exit_code": 1,
+      "external_timeout": false,
+      "source_digest": "06d454e90056f73359a168f0d15ecedd3ee8e3d555797450257ed0bb2dcfa68e",
+      "changed_paths": [],
+      "project_exit": 0,
+      "preservation_exit": 0,
+      "independent_exit": 1,
+      "project_summary": [
+        "83 passed, 2 subtests passed in 3.17s"
+      ],
+      "preservation_summary": [
+        "83 passed, 2 subtests passed in 3.22s"
+      ],
+      "candidate_module_observer_syntax": {
+        "valid": true
+      },
+      "private_grader_output_sha256": "aa383b09ada8923f342cb292162447f6fdc8f47165334b032481e5135b944da2",
+      "private_console_sha256": "b29498099ff6826aabd29689c9648d87174433adab9ff3eff3844a0746798722",
+      "private_grade_feedback_to_actor": false
+    },
+    {
+      "phase": 1,
+      "coding_seconds": 254.68927100600558,
+      "exit_code": 0,
+      "external_timeout": false,
+      "source_digest": "02094d46ad482916c84a8e49cf11c966a19eed57b69f3db338c87cfeced0b7fb",
+      "changed_paths": [
+        "beetsbridge/README.md"
+      ],
+      "project_exit": 0,
+      "preservation_exit": 0,
+      "independent_exit": 1,
+      "project_summary": [
+        "83 passed, 2 subtests passed in 3.18s"
+      ],
+      "preservation_summary": [
+        "83 passed, 2 subtests passed in 3.19s"
+      ],
+      "candidate_module_observer_syntax": {
+        "valid": true
+      },
+      "private_grader_output_sha256": "afec4b966c8e85025eeaee2a75202eaf669bd1c82ace81e77d263e4f6f65d68e",
+      "private_console_sha256": "8d858e5866dce3ecbb4b2baaec153eae290f1cabaa6944b2c38f9afbf5cce3f4",
+      "private_grade_feedback_to_actor": false
+    },
+    {
+      "phase": 2,
+      "coding_seconds": 1461.507712917999,
+      "exit_code": 1,
+      "external_timeout": false,
+      "source_digest": "8c2b90a426a83d4201652a30580062e69f8e93c10f49c021029c419814fca4d0",
+      "changed_paths": [
+        "beetsbridge/README.md",
+        "beetsbridge/__init__.py",
+        "parse_test.py",
+        "tests/debug_cancel.py",
+        "tests/test_beetsbridge.py"
+      ],
+      "project_exit": 2,
+      "preservation_exit": 0,
+      "independent_exit": 1,
+      "project_summary": [
+        "ERROR parse_test.py",
+        "!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!",
+        "1 error in 0.24s"
+      ],
+      "preservation_summary": [
+        "83 passed, 2 subtests passed in 3.23s"
+      ],
+      "candidate_module_observer_syntax": {
+        "valid": true
+      },
+      "private_grader_output_sha256": "8bef872843c10231d92aa95c6f8dff02c171429627b3a5ec7d8be46d742eeed8",
+      "private_console_sha256": "51a2db9097031da2307f64b7630c11d52402263c888a627f1ea07db296e9da56",
+      "private_grade_feedback_to_actor": false
+    }
+  ],
+  "coding_minutes": 36.672760048266596,
+  "source_audit": {
+    "original_Beets_test_methods_total": 8,
+    "original_Beets_test_methods_unchanged": 5,
+    "original_tests_file_bytes_unchanged": false,
+    "actual_source_review_pending": false,
+    "syntax_check_scope": "Observer host compile only; runtime compatibility is measured separately by project/preservation suites in the pinned evaluator",
+    "manual_auto_off_dispatch_preserved": true,
+    "initial_lifecycle_path_unchanged": true,
+    "worker_cancellation_or_activation_guard_added": false,
+    "named_folder_validation_failure_cancels_unrelated_pending": true,
+    "already_dispatched_work_can_start_after_cancel_or_disable_reload": true,
+    "basic_cancel_all_and_later_new_work_observed": true,
+    "original_test_names_retained": 8,
+    "original_test_methods_AST_unchanged": 5,
+    "original_test_fixture_changed_to_global_unrestored_Timer_patch": true,
+    "new_test_started_work_case_does_not_start_a_worker": true,
+    "authored_test_file_supplementary_result": {
+      "passed": 15,
+      "failed": 1,
+      "failure": "Named missing folder falls through to cancel-all; unrelated pending timer cancelled.",
+      "not_score_replacement": true
+    },
+    "root_collection_error": "SyntaxError at parse_test.py:101; copied 01| line prefix is invalid Python.",
+    "final_docs_same_as_docs_turn": true,
+    "final_docs_omit_cancel_command": true,
+    "docs_disable_safety_claims_not_established": true
+  },
+  "runtime_audit": {
+    "usage_completed_requests": 148,
+    "requested_calls": 148,
+    "unmatched_request_files": [],
+    "backend_HTTP_error_statuses": [],
+    "failed_backend_requests": 0,
+    "backend_failure_classes": [],
+    "largest_completed_prompt": 83555,
+    "any_length_finish": false,
+    "auxiliary": [
+      {
+        "request": "00112.request.json",
+        "usage": {
+          "completion_tokens": 31,
+          "prompt_tokens": 27798,
+          "total_tokens": 27829,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 81.85140132904053,
+        "finish_reasons": [
+          "stop"
+        ],
+        "content_chars": 120,
+        "reasoning_chars": 0,
+        "summary_headings": [],
+        "literal_tool_markup": true,
+        "content_sha256": "c267673cfdfef999f6556626ae9f4b9cc334a481eea03052c8e40f3dd63e8102",
+        "requires_manual_semantic_audit": true
+      }
+    ],
+    "all_user_tasks_literal_in_final_main_request": [
+      true,
+      true,
+      true
+    ],
+    "frozen_code_files_verified": 129,
+    "initial_Gitea_git_facts_supplied": true,
+    "auxiliary_semantic_review": {
+      "request": "00112.request.json",
+      "classification": "Not a faithful checkpoint; literal read_file tool markup for README only, no tool executed in summary response",
+      "characters": 120,
+      "summarizer_tools_supplied": false,
+      "prior_failures_before_auxiliary": [
+        "No initial code repair",
+        "Wrong Gitea targets and gh advice",
+        "Unsupported README claims"
+      ],
+      "cannot_attribute_all_failures_to_summary": true,
+      "native_ancestry_one_rotation_verified": true,
+      "literal_all_three_tasks_retained_in_final_main_request": true,
+      "actual_context_overflow_recovery_exercised": false
+    }
+  },
+  "forge": {
+    "epoch": 1795730351.6204667,
+    "authenticated_actor": "hermes-agent",
+    "repo": "hermes-gpuquant-fable-q6-current-thinking-20261126",
+    "main_revision": "f9980ddc8aa6809e2f98f3ee95436bdb368e7a3d",
+    "upstream_baseline_blobs_verified": 40,
+    "issues": [],
+    "pull_requests": [],
+    "read_only": true,
+    "model_calls": 0,
+    "forge_mutations": 0,
+    "actor_fork_GET_status": 404,
+    "read_only_retries": []
+  },
+  "proxy_observations": {
+    "calls": 19,
+    "outside_repo_denials": 10,
+    "final_scope_state": {
+      "issue": null,
+      "pr": null,
+      "branch": null,
+      "commits": 0
+    }
+  },
+  "resource": {
+    "samples": 220,
+    "sampling_pause_seconds": 10,
+    "measurement_errors": 0,
+    "guards": 0,
+    "peak_GPU_MiB": 11566,
+    "peak_aggregate_cgroup_bytes": 7460638720,
+    "peak_process_PSS_bytes": 2618326016,
+    "peak_study_swap_bytes": 0,
+    "minimum_disk_free_bytes": 111873650688,
+    "minimum_staging_free_bytes": 111887237120,
+    "placement_lines": [
+      "0.00.720.133 I load_tensors: offloaded 41/41 layers to GPU",
+      "0.00.720.156 I load_tensors:        CUDA0 model buffer size = 10392.38 MiB",
+      "0.00.720.159 I load_tensors:    CUDA_Host model buffer size =   397.85 MiB",
+      "0.29.024.239 I llama_kv_cache:      CUDA0 KV buffer size =   540.00 MiB",
+      "0.29.059.205 I sched_reserve:      CUDA0 compute buffer size =   229.01 MiB",
+      "0.29.059.209 I sched_reserve:  CUDA_Host compute buffer size =    28.01 MiB"
+    ]
+  },
+  "model": {
+    "file": "Qwen3.6-14B-A3B-FableVibes-Q6_K.gguf",
+    "bytes": 11325370880,
+    "sha256": "7ae56e5003365c568635c14158381df134577877c90ae15f34dbc6de2ca7ffb1",
+    "after_full_SHA_advised_DONTNEED_for_only_selected_model_file": true,
+    "not_global_cache_flush_or_proof_of_cold_cache": true
+  },
+  "preservation": {
+    "passed": true,
+    "both_original_and_staging_reserves_verified": true,
+    "stage_free_GiB": 104.32752990722656,
+    "original_ids_images_configuration_running_preserved": true,
+    "codex_entire_snapshot_unchanged": true,
+    "four_profile_hashes_unchanged": true,
+    "all_30_retained_model_metadata_unchanged": true,
+    "active_study_candidate": "fable-q6-current-thinking-cold-20261126",
+    "selected_retained_Q6_full_SHA_verified_before_model_calls": true,
+    "original_alias_context_restored": true,
+    "at_least_100_GiB_free": true,
+    "free_GiB": 104.14543914794922
+  },
+  "owner_preservation": {
+    "passed": true,
+    "head_status_all_tracked_and_ignored_instructions_unchanged": true,
+    "tracked_files_checked": 40
+  },
+  "cleanup": {
+    "passed": true,
+    "terminal_supervisor_removed": "722aa4312db634a31d7ca32ee9ffecd27dc89394d906bc9160507015411873ec",
+    "owned_backend_agent_proxies_and_network_absent": true,
+    "epoch": 1795730350.18265
+  },
+  "protocol_sha256": "59d8a34cef11c5f9b603f86df866c3294748f43a4314ac4300eb09924e766563",
+  "source_fingerprints": {
+    "audit_cold_current_q6_completed.py": "9c8e3c65bfc9f21a0a4c000269fa07ead75a88a0b3b66ff2fcdb0b8f594f582e",
+    "read_current_q6_final_forge.py": "4ed86c42c7b3c34a9aced358c02b06a03005789adcab335d8271b6e5a9f9461d",
+    "audit_cold_current_fable_q6_originals.py": "84d34dc7349e1be77bb0f4e6304d3d93f9f110a0a68be65b77cc96667757d9dd",
+    "cold-current-q6-independent-final-remote.json": "7f63f66100589fb30ee23583caea4ce886636862d51434fb57a56979048ac36c",
+    "native-fable-q6-current-thinking-cold-20261126/beets_lifecycle/runtime-restoration.json": "55b2eed66b4ca8bd18a8fc89a5ca71f6ccb19c3981a0a51fd0e82cdec4bd4c08"
+  },
+  "whole_workflow_pass": false,
+  "supervisor_total_wall_minutes": 40.38589507341385,
+  "review_status": "Source, tests, docs, claims and actual publication independently reviewed after all turns; no grader feedback to actor",
+  "supplementary_behavior_observations": {
+    "completed": true,
+    "scope": "Supplementary frozen-snapshot mocked import-boundary observations, not score replacement or actor feedback",
+    "model_calls": 0,
+    "forge_mutations": 0,
+    "candidate_plugin_SHA256": "ec644a032ee4c01facf4a7a7a7d3e9c0c2c234a39d94d32adffe77cb4808850c",
+    "observations": {
+      "manual_work_dispatches_with_automation_off": true,
+      "no_argument_cancel": {
+        "pending_after": 0,
+        "timers_marked_cancelled": 2,
+        "reported_output": "Cancelled 2 queued imports."
+      },
+      "newly_queued_work_after_cancel_dispatches": true,
+      "old_dispatched_work_imports_after_disable_reload": 1,
+      "dispatched_work_imports_after_cancel": 1,
+      "invalid_named_target": {
+        "other_pending_after": 0,
+        "timers_marked_cancelled": 2,
+        "reported_output": "Cancelled 2 queued imports."
+      }
+    },
+    "observer_source_SHA256": "145ef99cfad4c9ce6b9352ce2b94e91e9f310a11850254bf880948707a4e428f"
+  },
+  "lineage_and_headroom": {
+    "lineage": [
+      {
+        "phase": 0,
+        "actual_lineage_equals_recorded": true,
+        "cli_handle_in_ancestry": true,
+        "query_matches_exact_frozen_task": true,
+        "nodes": 1
+      },
+      {
+        "phase": 1,
+        "actual_lineage_equals_recorded": true,
+        "cli_handle_in_ancestry": true,
+        "query_matches_exact_frozen_task": true,
+        "nodes": 1
+      },
+      {
+        "phase": 2,
+        "actual_lineage_equals_recorded": true,
+        "cli_handle_in_ancestry": true,
+        "query_matches_exact_frozen_task": true,
+        "nodes": 2
+      }
+    ],
+    "rotations": 1,
+    "not_semantic_summary_faithfulness_proof": true,
+    "complete_requests": 148,
+    "all_actual_usage_fits_context": true,
+    "requested_output_headroom_shortfalls": [
+      {
+        "request": "00108.request.json",
+        "input": 82138,
+        "requested_output": 16384,
+        "requested_headroom_shortfall": 218,
+        "actual_total": 82541
+      },
+      {
+        "request": "00109.request.json",
+        "input": 82826,
+        "requested_output": 16384,
+        "requested_headroom_shortfall": 906,
+        "actual_total": 83114
+      },
+      {
+        "request": "00110.request.json",
+        "input": 83283,
+        "requested_output": 16384,
+        "requested_headroom_shortfall": 1363,
+        "actual_total": 83441
+      },
+      {
+        "request": "00111.request.json",
+        "input": 83555,
+        "requested_output": 16384,
+        "requested_headroom_shortfall": 1635,
+        "actual_total": 83631
+      }
+    ],
+    "sum_serial_recorded_backend_request_seconds": 2119.6556963920593,
+    "supervisor_wall_minutes": 40.38589507341385,
+    "forge_calls": 19,
+    "forge_operation_counts": {
+      "search_repos": 7,
+      "get_me": 2,
+      "branch_read": 2,
+      "repo_read": 4,
+      "get_dir_contents": 2,
+      "get_repository_tree": 1,
+      "get_file_contents": 1
+    },
+    "outside_scope_denials": [
+      {
+        "operation": "branch_read",
+        "owner": "hermes-agent",
+        "repo": "nicotineplugins"
+      },
+      {
+        "operation": "repo_read",
+        "owner": "hermes-agent",
+        "repo": "nicotineplugins"
+      },
+      {
+        "operation": "repo_read",
+        "owner": "hermes-agent",
+        "repo": "gpuquant-fable-q6-current-thinking-20261126"
+      },
+      {
+        "operation": "get_dir_contents",
+        "owner": "hermes-agent",
+        "repo": "gpuquant-fable-q6-current-thinking-20261126"
+      },
+      {
+        "operation": "get_repository_tree",
+        "owner": "hermes-agent",
+        "repo": "gpuquant-fable-q6-current-thinking-20261126"
+      },
+      {
+        "operation": "get_dir_contents",
+        "owner": "hermes-agent",
+        "repo": "nicotineplus"
+      },
+      {
+        "operation": "branch_read",
+        "owner": "hermes-agent",
+        "repo": "gpuquant-fable-q6-current-thinking-20261126"
+      },
+      {
+        "operation": "repo_read",
+        "owner": "hermes-agent",
+        "repo": "gpuquant-fable-q6-current-thinking-20261126"
+      },
+      {
+        "operation": "get_file_contents",
+        "owner": "sickprodigy",
+        "repo": "nicotineplus-plugins"
+      },
+      {
+        "operation": "repo_read",
+        "owner": "sickprodigy",
+        "repo": "nicotineplus-plugins"
+      }
+    ],
+    "observer_source_SHA256": "236d3dd94d389fbd0f2e4be0cd50eb614fee2e97dec5d293f1473243ecaf9dcd"
+  },
+  "final_disposable_local_git_state": {
+    "head": "2e3feadaaee299c93eb180f002e18e152627a28f",
+    "equals_seed_baseline": false,
+    "status": " M beetsbridge/__init__.py\n M tests/test_beetsbridge.py\n?? parse_test.py\n?? tests/debug_cancel.py\n",
+    "scope": "Actual final disposable local git state; not upstream remote publication",
+    "commits_after_baseline": "1",
+    "committed_paths": [
+      "beetsbridge/README.md"
+    ]
+  },
+  "claims_review": {
+    "initial_final_answer_says_will_apply_fix_but_no_edit": true,
+    "documentation_commit_claim_confirmed_locally": true,
+    "only_README_committed": true,
+    "unpublished_feature_patch_and_debug_files_remain": true,
+    "documentation_final_answer_wrong_repository_targets_and_requests_gh": true,
+    "documentation_final_answer_claimed_write_tool_lease_failures_but_all_19_recorded_proxy_calls_are_reads_searches_or_identity": true,
+    "not_claiming_all_focused_tool_attempts_reach_proxy": true,
+    "final_feature_answer_reports_iteration_limit_no_summary": true
+  },
+  "comparability": {
+    "same_current_Hermes_C9_cpp_fee_transparent_recorder_tasks_sampler_context_and_budgets_as_Q8": true,
+    "single_sample_not_general_precision_causality_or_reliability": true,
+    "Q6_coding_minutes": 36.672760048266596,
+    "Q8_coding_minutes": 38.68240428308321,
+    "Q6_GPU_MiB": 11566,
+    "Q8_GPU_MiB": 14624,
+    "both_full_workflows_fail": true,
+    "precision_winner_established": false
+  }
+}

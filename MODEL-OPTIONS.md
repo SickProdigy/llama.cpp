@@ -1,12 +1,13 @@
 # Model follow-up options
 
-[Current Fable Q6 capacity reference](evaluations/2026-11-24-gpu-quant/resource-fable-q6-current-thinking.md) completes all six probes at 98k with all 41 layers on GPU, 11,566 MiB peak and no study swap. All three marker checks are exact; this is capacity evidence. A fresh current-runtime Q6 coding/Gitea run remains next for comparison with the failed Q8 workflow.
+[Current Fable Q6 coding/Gitea](evaluations/2026-11-24-gpu-quant/native-fable-q6-current-thinking-cold-beets.md) fails in 36.67 coding minutes: initial repair absent, cancellation incomplete, project collection blocked, docs inaccurate, no remote issue/fork/PR. It fits 98k/all 41 GPU layers at 11,566 MiB. Matched current Q8 also fails (38.68 minutes/14,624 MiB); no precision winner is established.
+
 
 [Current-runtime Fable Q8](evaluations/2026-11-24-gpu-quant/native-fable-q8-thinking-cold-beets.md) fails the coding/Gitea workflow in38.68 coding minutes despite fitting all41 layers at98k/14,624MiB GPU. Manual imports regress, cancellation and authored tests fail, command docs are missing, and no issue/fork/PR exists. The original runtime/models/settings are restored and verified.
 
 The [recorder correction](evaluations/2026-11-24-gpu-quant/transparent-recorder.md) now preserves backend errors in synthetic native-SDK controls. Vibe Q6’s final turn was confounded by the old recorder masking context400 as502; earlier code failures remain. Real model recovery is untested.
 
-Current-runtime [Vibe Q4 reasoning](evaluations/2026-11-24-gpu-quant/native-vibe-q4-thinking-cold-beets.md) also fails:52.20 coding minutes, broken test collection, a preservation regression and no actual publication. [Q6](evaluations/2026-11-24-gpu-quant/native-vibe-q6-thinking-cold-beets.md) also fails in64.03 coding minutes: code/preservation defects plus a later context overflow. Public Fable Q8 passes the capacity check but fails the subsequent current-runtime coding/Gitea workflow. A current matched Q6 reference remains necessary before attributing differences to precision.
+Current-runtime [Vibe Q4 reasoning](evaluations/2026-11-24-gpu-quant/native-vibe-q4-thinking-cold-beets.md) also fails:52.20 coding minutes, broken test collection, a preservation regression and no actual publication. [Q6](evaluations/2026-11-24-gpu-quant/native-vibe-q6-thinking-cold-beets.md) also fails in64.03 coding minutes: code/preservation defects plus a later context overflow. Public Fable Q8 passes the capacity check but fails the subsequent current-runtime coding/Gitea workflow. The matched current Q6 run also fails; neither quantization establishes a successful full workflow.
 
 
 Recorded November 19, 2026. This is a reminder of possible next steps, not a

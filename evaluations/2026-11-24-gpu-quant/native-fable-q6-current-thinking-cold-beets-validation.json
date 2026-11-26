@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "summary_sha256": "97c9d51b40a9c0307eca5e411c6aaec7c5a97fee42bbb49710855044af2209cc",
+  "source_bindings_verified": 129,
+  "phases": 3,
+  "actual_authenticated_final_remote_readback": true,
+  "actual_original_preservation_suites_pass": true,
+  "actual_independent_behavior_suites_fail": true,
+  "supplementary_targeted_authored_tests_executed": true,
+  "supplementary_frozen_snapshot_behavior_executed": true,
+  "native_lineage_and_exact_task_hashes_verified": true,
+  "observer_validation_is_not_model_workflow_pass": true
+}

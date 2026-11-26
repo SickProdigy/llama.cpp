@@ -53,9 +53,8 @@ backend/network and terminal supervisor are removed; no study job remains.
 
 Q6 uses 3,058 MiB less sampled GPU memory than Q8 under this layout. This is
 capacity evidence, not a current Hermes coding/Gitea pass: the older Q6 workflow
-used a different Hermes image and recorder. A fresh matched current-runtime Q6
-coding/issue/fork/PR run is the next comparison. The completed current Q8 run
-fails that workflow; increasing precision alone has not established a winner.
+used a different Hermes image and recorder. The subsequent [matched current-runtime Q6 coding/Gitea run](native-fable-q6-current-thinking-cold-beets.md)
+also fails the workflow. Increasing precision alone has not established a winner.
 
 [Observations](resource-fable-q6-current-thinking-summary.json),
 [evidence archive](resource-fable-q6-current-thinking-evidence.tar.gz),
