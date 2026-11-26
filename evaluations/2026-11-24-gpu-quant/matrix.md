@@ -191,3 +191,12 @@ also fail all three checkpoint requests: nonthinking and low-temperature
 reasoning emit tool markup; publisher reasoning answers the old task. Q6 peaks
 at11,566MiB GPU with41/41 layers and zero study swap. Higher weight precision
 alone does not resolve this saved-history failure; fresh coding remains separate.
+
+
+The [cold-gateway Fable Q6 reasoning workflow](native-fable-q6-thinking-cold-beets.md)
+finishes in13.16 coding minutes: first repair/docs turns make no edits; the final
+feature patch passes91 tests/2 subtests but fails independent cancellation checks.
+No upstream issue, actor fork or PR exists on final authenticated readback.
+All81 requests stay below64,067 input tokens with no compression or length finish;
+the exact Gitea remote was supplied. This clean-start failure is independent of
+the older read-control cooldown coupling. Same-method cold Q4 remains pending.

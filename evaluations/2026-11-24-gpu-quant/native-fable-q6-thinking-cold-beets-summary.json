@@ -1,0 +1,174 @@
+{
+  "whole_workflow_pass": false,
+  "phases": [
+    {
+      "phase": 0,
+      "coding_seconds": 274.97664306199295,
+      "exit_code": 0,
+      "external_timeout": false,
+      "source_digest": "06d454e90056f73359a168f0d15ecedd3ee8e3d555797450257ed0bb2dcfa68e",
+      "changed_paths": [],
+      "project_exit": 0,
+      "preservation_exit": 0,
+      "independent_exit": 1,
+      "project_test_summary": "83 passed, 2 subtests passed in 3.22s",
+      "private_console_sha256": "5557f63f8c5d40fa41366af86e50ef96a875cbb88d7d7c3ae98ef429068f698d",
+      "asks_for_GitHub_manual_publication": true,
+      "all_checks_fed_back_to_actor": false,
+      "original_suite_summary": "83 passed, 2 subtests passed in 3.23s"
+    },
+    {
+      "phase": 1,
+      "coding_seconds": 81.4617165469972,
+      "exit_code": 0,
+      "external_timeout": false,
+      "source_digest": "06d454e90056f73359a168f0d15ecedd3ee8e3d555797450257ed0bb2dcfa68e",
+      "changed_paths": [],
+      "project_exit": 0,
+      "preservation_exit": 0,
+      "independent_exit": 1,
+      "project_test_summary": "83 passed, 2 subtests passed in 3.24s",
+      "private_console_sha256": "a43c4023b10678dcdb3daa34c3c378e85c1cf3711ce4640d0e8fec681d9f73da",
+      "asks_for_GitHub_manual_publication": true,
+      "all_checks_fed_back_to_actor": false,
+      "original_suite_summary": "83 passed, 2 subtests passed in 3.21s"
+    },
+    {
+      "phase": 2,
+      "coding_seconds": 433.1374724769994,
+      "exit_code": 0,
+      "external_timeout": false,
+      "source_digest": "65d250b0cc9d8e50792ce35aeb62774dc9ba36169a6cc91a586bfaff7c72611d",
+      "changed_paths": [
+        "beetsbridge/README.md",
+        "beetsbridge/__init__.py",
+        "tests/test_beetsbridge.py"
+      ],
+      "project_exit": 0,
+      "preservation_exit": 0,
+      "independent_exit": 1,
+      "project_test_summary": "91 passed, 2 subtests passed in 3.21s",
+      "private_console_sha256": "9d28fc98c320752833f456e2324f9e11dd6d4bcc8a44963cba39bd2d4133a115",
+      "asks_for_GitHub_manual_publication": true,
+      "all_checks_fed_back_to_actor": false,
+      "original_suite_summary": "83 passed, 2 subtests passed in 3.22s"
+    }
+  ],
+  "coding_minutes": 13.15959720143316,
+  "source_audit": {
+    "initial_lifecycle_functions_unchanged": true,
+    "empty_cancel_argument_returns_usage_instead_of_cancel_all": true,
+    "only_pending_timers_tracked_not_dispatched_or_waiting_workers": true,
+    "named_cancel_revalidates_existing_filesystem_folder": true,
+    "README_false_no_argument_cancel_all_claim": true,
+    "original_Beets_test_methods_unchanged": 8,
+    "added_Beets_test_methods": 8,
+    "independent_feature_registered_methods": 6,
+    "independent_feature_failure_records_including_subcases": 8,
+    "original_other_files_preserved": true
+  },
+  "runtime_audit": {
+    "backend_build": "b12723-abca69200",
+    "completed_requests": 81,
+    "zero_tool_auxiliary_requests": 0,
+    "largest_completed_prompt": 64066,
+    "any_length_finish": false,
+    "first_request_contains_exact_selected_git_remote": true,
+    "no_preliminary_read_control_in_coding_process_or_gateway": true,
+    "frozen_code_files_verified": 109
+  },
+  "forge_audit": {
+    "actual_remote_verified": true,
+    "upstream_40_baseline_blobs_unchanged": true,
+    "upstream_issues": 0,
+    "upstream_PRs": 0,
+    "actor_fork_GET_status": 404,
+    "scoped_calls": 11,
+    "outside_repository_denials": 8,
+    "scope_final_state": {
+      "issue": null,
+      "pr": null,
+      "branch": null,
+      "commits": 0
+    }
+  },
+  "resource": {
+    "samples": 86,
+    "measurement_errors": 0,
+    "guards": 0,
+    "peak_GPU_MiB": 11566,
+    "peak_aggregate_cgroup_bytes": 7445458944,
+    "peak_process_PSS_bytes": 2243700736,
+    "peak_study_swap_bytes": 0,
+    "minimum_disk_free_bytes": 114605445120,
+    "placement_lines": [
+      "0.00.582.395 I print_info: n_ctx_train           = 262144",
+      "0.00.736.670 I load_tensors: offloaded 41/41 layers to GPU",
+      "0.00.736.679 I load_tensors:        CUDA0 model buffer size = 10392.38 MiB",
+      "0.00.736.680 I load_tensors:    CUDA_Host model buffer size =   397.85 MiB",
+      "0.22.851.509 I llama_context: n_ctx_seq (98304) < n_ctx_train (262144) -- the full capacity of the model will not be utilized",
+      "0.22.855.959 I llama_kv_cache:      CUDA0 KV buffer size =   540.00 MiB",
+      "0.22.895.437 I sched_reserve:      CUDA0 compute buffer size =   229.01 MiB",
+      "0.22.895.440 I sched_reserve:  CUDA_Host compute buffer size =    28.01 MiB"
+    ],
+    "sampling_pause_seconds": 10,
+    "sampling_limit": "Periodic observations can miss transient peaks; whole-host swap is not attributed to this study."
+  },
+  "preservation": {
+    "original_ids_images_configuration_running_preserved": true,
+    "codex_entire_snapshot_unchanged": true,
+    "four_profile_hashes_unchanged": true,
+    "all_30_retained_model_metadata_unchanged": true,
+    "active_study_candidate": "fable-q6-thinking-cold-20261126",
+    "retained_model_full_hash_verified_before_auxiliary_replays": true,
+    "original_alias_context_restored": true,
+    "at_least_100_GiB_free": true,
+    "free_GiB": 106.69384384155273
+  },
+  "owner_preservation": {
+    "passed": true,
+    "head_status_all_tracked_and_ignored_instructions_unchanged": true,
+    "tracked_files_checked": 40
+  },
+  "cleanup": {
+    "passed": true,
+    "exact_terminal_supervisor_removed": true,
+    "all_owned_backends_helpers_network_absent": true
+  },
+  "protocol_sha256": "044cd98cb31190f482751a3f7d86790d8c1ace64fae29a41d3fcff48540879e4",
+  "source_fingerprints": {
+    "audit_cold_q6_completed.py": "7a440648e188798391a163d3dfcfda6ec0bb704c3e5dedf97a5e4ff8153e7e19",
+    "cold-q6-independent-final-remote.json": "09a13a00a137bba51c4213f64d5f7edf7203231ebf200c50b6c77d48e162a90d",
+    "native-fable-q6-thinking-cold-20261126/beets_lifecycle/model-identity.json": "6a6e0a86afdaaf783635d0bae483f1f9894cf629b40e7c35ae84408c939d9c53",
+    "native-fable-q6-thinking-cold-20261126/beets_lifecycle/runtime-restoration.json": "5f0e98ad195367e44cea7c29124443274db1902d7c95ad94dffed5d1e634ca9f",
+    "native-fable-q6-thinking-cold-20261126/beets_lifecycle/fable-q6-thinking/turn2/local-grade/grade.json": "48112a8f72d1eebce0b16040394f2d327ef2128c0fd07cab813165d7e64a8739"
+  },
+  "scope": "Three fresh natural dependent coding turns, publisher reasoning sampler, trusted isolated tools, cold native profile/process/gateway; no preliminary read control or private grader feedback.",
+  "model": {
+    "file": "Qwen3.6-14B-A3B-FableVibes-Q6_K.gguf",
+    "bytes": 11325370880,
+    "sha256": "7ae56e5003365c568635c14158381df134577877c90ae15f34dbc6de2ca7ffb1",
+    "after_full_SHA_advised_DONTNEED_for_only_selected_model_file": true,
+    "not_global_cache_flush_or_proof_of_cold_cache": true
+  },
+  "backend_image": "sha256:fee4289628e7ba09f6fbf62d6ce4325aebb2531ffde2154d41276fe4acc58da3",
+  "hermes_runtime_image": "sha256:97b08c5ce375113809299fc8c5dd86ae60600f618158d15fe4ad5fc9d7f4b7ae",
+  "sampler": {
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0,
+    "repeat_penalty": 1,
+    "presence_penalty": 0,
+    "seed": 20261124,
+    "chat_template_kwargs": {
+      "enable_thinking": true
+    },
+    "main_output_cap": 16384,
+    "context": 98304,
+    "cache_k": "q4_0",
+    "cache_v": "q4_0"
+  },
+  "comparison_limit": "Earlier Q4 reasoning cell used old llama.cpp and a shared preliminary read control. A same-method cold Q4 cell is needed; no precision-only causality or reliability claim.",
+  "privacy_boundary": "No raw model messages, consoles, credentials, full profiles, full private source or private grader outputs exported. Numeric observations, selected placement lines and curated manual findings only."
+}
