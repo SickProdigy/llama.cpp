@@ -1,0 +1,188 @@
+{
+  "scope": "One saved native auxiliary history, three samplers, one seed; no actor or forge operations; not main coding-quality scores.",
+  "model": {
+    "repo": "tvall43/Qwen3.6-14B-A3B-FableVibes-GGUF",
+    "revision": "9cf910a7ad68dfedcbdfc46ef0fe5003dec07c23",
+    "file": "Qwen3.6-14B-A3B-FableVibes-Q6_K.gguf",
+    "expected_bytes": 11325370880,
+    "sha256": "7ae56e5003365c568635c14158381df134577877c90ae15f34dbc6de2ca7ffb1"
+  },
+  "backend_image": "sha256:fee4289628e7ba09f6fbf62d6ce4325aebb2531ffde2154d41276fe4acc58da3",
+  "backend_build": "b12723-abca69200",
+  "context": 98304,
+  "cache_k": "q4_0",
+  "cache_v": "q4_0",
+  "all_41_layers_GPU": true,
+  "resource": {
+    "samples": 85,
+    "measurement_errors": 0,
+    "guards": 0,
+    "peak_GPU_MiB": 11566,
+    "peak_aggregate_cgroup_bytes": 7041839104,
+    "peak_aggregate_process_pss_bytes": 1546645504,
+    "peak_study_swap_bytes": 0,
+    "minimum_disk_free_bytes": 114668924928,
+    "placement_lines": [
+      "0.00.768.033 I load_tensors: offloaded 41/41 layers to GPU",
+      "0.00.768.043 I load_tensors:        CUDA0 model buffer size = 10392.38 MiB",
+      "0.00.768.044 I load_tensors:    CUDA_Host model buffer size =   397.85 MiB",
+      "0.26.170.348 I llama_kv_cache:      CUDA0 KV buffer size =   540.00 MiB",
+      "0.26.214.979 I sched_reserve:      CUDA0 compute buffer size =   229.01 MiB",
+      "0.26.214.984 I sched_reserve:  CUDA_Host compute buffer size =    28.01 MiB"
+    ]
+  },
+  "variants": [
+    {
+      "variant": "observed_nonthinking",
+      "capture": {
+        "variant": "observed_nonthinking",
+        "transport_complete": true,
+        "seconds": 116.25560683000367,
+        "first_data_seconds": 0.07906644800095819,
+        "first_content_seconds": 112.71850226800598,
+        "usage": {
+          "completion_tokens": 58,
+          "prompt_tokens": 34759,
+          "total_tokens": 34817,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "finish_reasons": [
+          "stop"
+        ],
+        "actual_progress_events": 73,
+        "cache_prompt_requested_false": true,
+        "actual_cached_tokens": 0,
+        "uncached_prefill_confirmed": true,
+        "sampler": {
+          "temperature": 0.2,
+          "top_p": 0.95,
+          "top_k": 40,
+          "seed": 20261124,
+          "chat_template_kwargs": {
+            "enable_thinking": false
+          },
+          "max_tokens": 8192
+        },
+        "semantic_audit_pending": true,
+        "private_request_SHA256": "a3c22b1432034d68018975e0b95fbe1d59c8fa0360591d7b625decf203e43519",
+        "private_response_SHA256": "271169074156695f4fadd7a9d62cbe7d18545243ce5c5d80b205b3e30fadcf17",
+        "model_tools_or_forge_actions_enabled": false
+      },
+      "content_chars": 194,
+      "reasoning_chars": 0,
+      "headings": [],
+      "semantic_audit": {
+        "usable_checkpoint": false,
+        "basis": "Literal read_file tool markup, no checkpoint."
+      },
+      "private_content_sha256": "741897483f431e515fa87cfc8a898ecb8b890a4da520f69f90bedae50465c573"
+    },
+    {
+      "variant": "same_sampler_reasoning",
+      "capture": {
+        "variant": "same_sampler_reasoning",
+        "transport_complete": true,
+        "seconds": 106.89897284300241,
+        "first_data_seconds": 0.0788383250037441,
+        "first_content_seconds": 105.32490321599471,
+        "usage": {
+          "completion_tokens": 191,
+          "prompt_tokens": 34757,
+          "total_tokens": 34948,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "finish_reasons": [
+          "stop"
+        ],
+        "actual_progress_events": 73,
+        "cache_prompt_requested_false": true,
+        "actual_cached_tokens": 0,
+        "uncached_prefill_confirmed": true,
+        "sampler": {
+          "temperature": 0.2,
+          "top_p": 0.95,
+          "top_k": 40,
+          "seed": 20261124,
+          "chat_template_kwargs": {
+            "enable_thinking": true
+          },
+          "max_tokens": 8192
+        },
+        "semantic_audit_pending": true,
+        "private_request_SHA256": "36d9c47c7e2eed73c0d1cc80a945acbd51dace1f88a6976a7b5488c42f000db7",
+        "private_response_SHA256": "762b7dc4798c879f7e907bb98dc27ee749cb9e68f6dc5100b110f18d4a5b2d02",
+        "model_tools_or_forge_actions_enabled": false
+      },
+      "content_chars": 194,
+      "reasoning_chars": 553,
+      "headings": [],
+      "semantic_audit": {
+        "usable_checkpoint": false,
+        "basis": "Historical task continuation in reasoning followed by literal read_file markup, no checkpoint."
+      },
+      "private_content_sha256": "741897483f431e515fa87cfc8a898ecb8b890a4da520f69f90bedae50465c573"
+    },
+    {
+      "variant": "publisher_reasoning",
+      "capture": {
+        "variant": "publisher_reasoning",
+        "transport_complete": true,
+        "seconds": 146.65491651999764,
+        "first_data_seconds": 0.08765028900234029,
+        "first_content_seconds": 132.84275828499813,
+        "usage": {
+          "completion_tokens": 1473,
+          "prompt_tokens": 34757,
+          "total_tokens": 36230,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "finish_reasons": [
+          "stop"
+        ],
+        "actual_progress_events": 73,
+        "cache_prompt_requested_false": true,
+        "actual_cached_tokens": 0,
+        "uncached_prefill_confirmed": true,
+        "sampler": {
+          "temperature": 1.0,
+          "top_p": 0.95,
+          "top_k": 20,
+          "seed": 20261124,
+          "chat_template_kwargs": {
+            "enable_thinking": true
+          },
+          "max_tokens": 8192
+        },
+        "semantic_audit_pending": true,
+        "private_request_SHA256": "34dca672ae920f53fb1b601a3dd113b26c62c2827135aa578c131448c883a470",
+        "private_response_SHA256": "5668e7fc65971fc99bf88a7fb8c0bca867a4e98f6a4c17f7c7c49c9df0928ba4",
+        "model_tools_or_forge_actions_enabled": false
+      },
+      "content_chars": 1925,
+      "reasoning_chars": 4486,
+      "headings": [],
+      "semantic_audit": {
+        "usable_checkpoint": false,
+        "basis": "Answers the historical feature task instead of producing the required structured checkpoint."
+      },
+      "private_content_sha256": "dc4b561b47738b5321fc244506a7297b467a85821ebdcf7eacdbc4216e9f3d28"
+    }
+  ],
+  "all_originals_owner_work_and_codex_preserved": true,
+  "all_study_resources_removed": true,
+  "source_sha256": {
+    "aux_q6_controller.py": "d4847744bea43c4e33b602cfdd0e18ec0c1f722af928bc2cc7887d9569d6dcfe",
+    "aux-q6-protocol.json": "977afcfc25bf2823acb479b5934420d975c93246dca79d4a6247488ab3410380",
+    "aux-q6-controller-registration.json": "c0c5d06a1bf33548ec84e317ed2782f550819aa2401b7673bde4a25a11c57219",
+    "aux-q6-semantic-audit.json": "cd48b9965d53476e6f7669720bac1c169a184ce66bbdb4d51ba594e2e24d5e73"
+  },
+  "q4_reference_archive_sha256": "3310d556265fd4693f7360393a813f9ce2bff18d227344f7f606f17a950800de",
+  "q4_public_reference": "auxiliary-precision-controls.md",
+  "causal_limit": "Public quantization production/calibration differences can affect results; single-history outcomes do not establish precision-only causality or unattended reliability."
+}

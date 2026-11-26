@@ -184,3 +184,10 @@ checkpoint. FP16 fits at98,304 context with41/41 GPU layers and10,162MiB sampled
 GPU, versus8,964MiB withq4_0 KV. One reasoning output gains section coverage
 but loses failing-test status and repeats its final log. These are auxiliary
 controls, not new coding/Gitea passes; production settings remain unchanged.
+
+
+The [matched Fable Q6 auxiliary replays](auxiliary-q6-quant-control.md)
+also fail all three checkpoint requests: nonthinking and low-temperature
+reasoning emit tool markup; publisher reasoning answers the old task. Q6 peaks
+at11,566MiB GPU with41/41 layers and zero study swap. Higher weight precision
+alone does not resolve this saved-history failure; fresh coding remains separate.

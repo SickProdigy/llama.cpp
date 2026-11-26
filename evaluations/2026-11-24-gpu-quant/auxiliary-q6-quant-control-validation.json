@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "captures": 3,
+  "all_compared_samplers_and_input_counts_match_q4": true,
+  "q4_reference_archive_hash_verified": true,
+  "summary_sha256": "519454556c7f3537fb427001e7858bbd0381a0fb6c49d28fefcb9ff9fdbd1902",
+  "scope": "Saved numeric consistency and source bindings; manual semantics not independently replayed."
+}
