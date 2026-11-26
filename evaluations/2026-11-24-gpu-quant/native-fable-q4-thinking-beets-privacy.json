@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "known_credential_values_checked": 5,
+  "private_receipt_keys_checked": 37,
+  "patterns_checked": 37,
+  "payloads_checked": 1418,
+  "matching_paths": [],
+  "archive_sha256": "eed31a8ab441312ee6d26b3eed69aa9bfe9385de003aec4e68578d5a25c443af",
+  "archives_checked": {
+    "compression-runtime-control-evidence.tar.gz": "5555b63a326286408ba5538650be9d6e7fefc2acfa0255980d05398b82adfe98",
+    "native-adapted-iq4-beets-evidence.tar.gz": "1dc0fe80a2c3424576c83134ea23efd16f54b041311ce255bcabfb19c3b9b062",
+    "native-fable-q4-beets-evidence.tar.gz": "f3ffdaae276d504660bfc98647876dbef7ff7484a92de27711e8f8580500f680",
+    "native-fable-q4-thinking-beets-evidence.tar.gz": "eed31a8ab441312ee6d26b3eed69aa9bfe9385de003aec4e68578d5a25c443af",
+    "native-fable-q6-beets-evidence.tar.gz": "56dff62e711907c8ece6f202045c35ebdf568f8cf4a11f69cee0eba2cd32e51a",
+    "native-vibe-q4-beets-evidence.tar.gz": "13ad966ea649199df871d985600b7a8aad872c23002b69aec419daab2084e7c8",
+    "native-vibe-q4-trusted-beets-evidence.tar.gz": "dece119917e266da231d6f32d45869936f3d217bb20647fce496d24cab312652",
+    "native-vibe-q6-trusted-beets-evidence.tar.gz": "c3328e63c7a772d1019898b2b9743df2b66b938b3787e3010987268c33faac38",
+    "resource-adapted-iq4-evidence.tar.gz": "23f2d008c4383531a4d7ec0b45124a9c120b7c12f509ce832dd2a911f6b4b754",
+    "resource-fable-q4-evidence.tar.gz": "621a9bf642fc89f24fdf3420c1f773d3f95f9c28b36f1ebbcee14a107aa12dda",
+    "resource-fable-q4-thinking-evidence.tar.gz": "8cfad091b4ca1e51f2e88708818030e7e04cafeb8421b53a757bd9f8b9da95c9",
+    "resource-fable-q6-evidence.tar.gz": "0ce120c27a0ff024765ba52c69a72d4e69187d6cfa9c152bc700f94ff612c88c",
+    "resource-vibe-q4-evidence.tar.gz": "e9bdaa7f4abfaae99e8c5b46d3f194f7e7430e41833f904e23a7df978a516b54",
+    "resource-vibe-q6-evidence.tar.gz": "d536292ed81b956779bd4feb6f34ec0f9d398c4f337a6619bc62393411f1991c"
+  },
+  "scanner_worker_sha256": "a69d84866897baa2870602c26fba3b81d7f770e3d7167d7a39c0fac13e39df18",
+  "scope": "Known credential values plus actual private signing keys and common encodings; not general secret detection. No values persisted or printed."
+}

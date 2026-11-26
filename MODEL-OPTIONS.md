@@ -57,7 +57,12 @@ also prevent precision-only attribution.
 The [reasoning-enabled Fable Q4 capacity stage](evaluations/2026-11-24-gpu-quant/resource-fable-q4-thinking.md)
 now passes98k-context synthetic/tool-history probes at8,964MiB GPU and zero
 study swap. Its59,935-input probe takes153.38s with16,033 tokens cached; native
-coding/publication quality remains pending. All four unused reasoning profiles
+[the completed coding workflow](evaluations/2026-11-24-gpu-quant/native-fable-q4-thinking-beets.md)
+fails repair/docs/feature/publication in37.13 coding minutes. Read-control gateway
+cooldown coupling limits independent forge qualification, and the nonthinking
+auxiliary emits a tool-call fragment instead of a summary. Isolate read-control
+state and test auxiliary reasoning on saved history before more matched trials.
+All four originally prepared reasoning profiles
 pass expanded timeout/context/SDK and actual code-tool preflights.
 No new everyday model/profile selection or autonomous-reliability claim is made.
 

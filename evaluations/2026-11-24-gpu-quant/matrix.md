@@ -158,3 +158,20 @@ The16,165-input probe takes41.77s;59,935-input takes153.38s including16,033 cach
 tokens. Original runtime/models/settings/owner edits/Codex are preserved and owned
 resource containers/network removed. Native coding, followups and publication
 remain pending; no reasoning-mode quality win follows from capacity.
+
+## Fable Q4 reasoning workflow — observed November25, audited November26
+
+[Repair/docs/feature/publication fail](native-fable-q4-thinking-beets.md) in37.13
+coding minutes,42.02minutes launch→restore. Initial86pass/2fail, final90pass/4fail;
+all83originals+2subtests pass. Final claimed fork/PR do not exist in independent
+completion-time readbacks.41/41GPU layers; peak8,964MiB/CG6.769GiB/PSS2.277GiB,
+zero study swap/guards;134complete HTTP records and81,965maximum input tokens.
+
+This run shares read-control gateway rejection state with the fresh logical coding
+conversation, and its nonthinking auxiliary commits an85-token tool-call fragment
+as reference context. All3user requests remain literal; checkpoint semantics fail.
+These findings require prospective read-control isolation and auxiliary-mode tests;
+the run cannot stand for an independent cold-health quantization comparison.
+Original runtime/models/settings/owner edits/Codex were verified and owned resources
+removed before the pause. Current production was rebuilt afterward; preserve its
+new state for future tests. No everyday winner or autonomous-reliability claim.

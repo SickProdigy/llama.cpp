@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "archive_SHA256": "eed31a8ab441312ee6d26b3eed69aa9bfe9385de003aec4e68578d5a25c443af",
+  "files_checked": 211,
+  "coherently_rehashed_negative_controls_rejected": {
+    "false_workflow_pass": true,
+    "hidden_summary_failure": true,
+    "hidden_read_control_coupling": true
+  },
+  "scope": "Saved consistency/source bindings only; private model/grader behavior not replayed"
+}
