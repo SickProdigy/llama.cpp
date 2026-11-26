@@ -102,6 +102,10 @@
   "measured_peak_GPU_MiB": 14624,
   "all_41_transformer_layers_on_GPU": true,
   "host_model_buffer_MiB": 515.31,
-  "full_coding_Gitea_workflow_pending": true,
-  "larger_than_98304_context_unmeasured": true
+  "full_coding_Gitea_workflow_pending": false,
+  "larger_than_98304_context_unmeasured": true,
+  "completed_coding_evidence": "native-fable-q8-thinking-cold-beets-summary.json",
+  "whole_workflow_pass": false,
+  "coding_minutes": 38.68240428308321,
+  "not_recommended_as_new_everyday_model_from_this_cell": true
 }

@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "summary_sha256": "02559f871de5750b849c899bc361dd8562a15714f5f766d8e351c1913c62baa8",
+  "source_bindings_verified": 122,
+  "phases": 3,
+  "actual_authenticated_final_remote_readback": true,
+  "supplementary_post_run_snapshot_behavior_checked": true,
+  "native_lineage_and_exact_query_hashes_verified": [
+    true,
+    true,
+    true
+  ],
+  "all_actual_original_preservation_suites_pass": true,
+  "all_actual_project_and_independent_suites_fail": true,
+  "observer_validation_does_not_mean_model_workflow_pass": true,
+  "scope": "Observed numeric/source/runtime consistency plus actual tests/remote readback, not a public private-grader replay."
+}

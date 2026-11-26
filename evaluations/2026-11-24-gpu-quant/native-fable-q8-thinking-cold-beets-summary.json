@@ -1,0 +1,379 @@
+{
+  "whole_workflow_verdict": "Failed: final repair/feature/test/documentation/publication requirements remain unmet.",
+  "scope": "Three dependent natural coding turns with cold profile/process/gateway, no preliminary read control or private grade feedback; current-owner-derived qualified Hermes evaluator image.",
+  "phases": [
+    {
+      "phase": 0,
+      "coding_seconds": 1279.976923573995,
+      "exit_code": 1,
+      "external_timeout": false,
+      "source_digest": "416f4574d8273de9da0144ee1b1665bd37db09c56fc1d3e67ebfab2b483fdeb4",
+      "changed_paths": [
+        "beetsbridge/__init__.py",
+        "tests/test_beetsbridge.py"
+      ],
+      "project_exit": 1,
+      "preservation_exit": 0,
+      "independent_exit": 1,
+      "project_summary": [
+        "tests/test_beetsbridge.py:215: AttributeError",
+        "FAILED tests/test_beetsbridge.py::BeetsBridgeTests::test_timer_starting_checks_auto_import_is_enabled",
+        "1 failed, 95 passed, 2 subtests passed in 3.26s"
+      ],
+      "preservation_summary": [
+        "83 passed, 2 subtests passed in 3.22s"
+      ],
+      "candidate_module_observer_syntax": {
+        "valid": true
+      },
+      "private_grader_output_sha256": "b2b40ff65fd810d75d551563a809f2ca2ad872987bf16603d9fa13b035f0d28c",
+      "private_console_sha256": "a50fdc1e4b81a29361ab0a72cf2c22aacf0f355e6d251f33477754952944bdd9",
+      "private_grade_feedback_to_actor": false
+    },
+    {
+      "phase": 1,
+      "coding_seconds": 127.44689736700093,
+      "exit_code": 0,
+      "external_timeout": false,
+      "source_digest": "cbe0bfab39e55d01d3e32531f0ddda6d21cbb0cb4c78a700fdc0223cdb44efc6",
+      "changed_paths": [
+        "beetsbridge/README.md",
+        "beetsbridge/__init__.py",
+        "tests/test_beetsbridge.py"
+      ],
+      "project_exit": 1,
+      "preservation_exit": 0,
+      "independent_exit": 1,
+      "project_summary": [
+        "tests/test_beetsbridge.py:215: AttributeError",
+        "FAILED tests/test_beetsbridge.py::BeetsBridgeTests::test_timer_starting_checks_auto_import_is_enabled",
+        "1 failed, 95 passed, 2 subtests passed in 3.31s"
+      ],
+      "preservation_summary": [
+        "83 passed, 2 subtests passed in 3.17s"
+      ],
+      "candidate_module_observer_syntax": {
+        "valid": true
+      },
+      "private_grader_output_sha256": "bb3d05f84c5f8b5f22c1f94a1d9eafeeb291dc9febfd8a0fad2d9ddd2c7a16cd",
+      "private_console_sha256": "c864c576e91ff59a18bd01c9f18482a9a1359801c8ffbc87a01fc28af405aa79",
+      "private_grade_feedback_to_actor": false
+    },
+    {
+      "phase": 2,
+      "coding_seconds": 913.5204360439966,
+      "exit_code": 1,
+      "external_timeout": false,
+      "source_digest": "62eaf310d9bf19f70c33ae262fc02201dcb7fff930be89abc933320498ba1746",
+      "changed_paths": [
+        "beetsbridge/README.md",
+        "beetsbridge/__init__.py",
+        "beetsbridge/setup.py",
+        "beetsbridge/tests/conftest.py",
+        "beetsbridge/tests/test_beetsbridge.py",
+        "beetsbridge/tests/test_cancel.py",
+        "tests/test_beetsbridge.py"
+      ],
+      "project_exit": 2,
+      "preservation_exit": 0,
+      "independent_exit": 1,
+      "project_summary": [
+        "ERROR beetsbridge/tests - TypeError: module() got an unexpected keyword argum...",
+        "!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!",
+        "1 error in 0.28s"
+      ],
+      "preservation_summary": [
+        "83 passed, 2 subtests passed in 3.22s"
+      ],
+      "candidate_module_observer_syntax": {
+        "valid": true
+      },
+      "private_grader_output_sha256": "8b88d1e5692316c17d2de7757cc31edfba6d7ab327037a01d416966c9c2e7c80",
+      "private_console_sha256": "09304e94ef8f27defdc479dbacf2ac9bc6aa254250c19d7fd70cfa76b39adefe",
+      "private_grade_feedback_to_actor": false
+    }
+  ],
+  "coding_minutes": 38.68240428308321,
+  "source_audit": {
+    "original_Beets_test_methods_total": 8,
+    "original_Beets_test_methods_unchanged": 8,
+    "original_tests_file_bytes_unchanged": false,
+    "syntax_check_scope": "Observer host compile only; runtime compatibility is measured separately by project/preservation suites in the pinned evaluator",
+    "new_root_Beets_test_methods": 13,
+    "root_test_file_unchanged_since_first_turn": true,
+    "final_README_unchanged_since_documentation_turn": true,
+    "cancellation_command_documented": false,
+    "final_collection_error": "types.ModuleType was called with unsupported __path__ keyword in authored conftest",
+    "dependency_only_explanation_in_final_answer_inaccurate": true,
+    "first_two_project_results": {
+      "passed": 95,
+      "failed": 1,
+      "passing_subtests": 2
+    },
+    "frozen_original_suite_each_phase": {
+      "passed": 83,
+      "passing_subtests": 2
+    },
+    "independent_registered_tests_by_phase": [
+      3,
+      3,
+      6
+    ],
+    "independent_failure_records_by_phase": [
+      6,
+      6,
+      9
+    ],
+    "independent_failure_interpretation": "Many assertions fail at the same initial worker-dispatch precondition because the new automation flag gate blocks manual scheduling; not 9 distinct measured bugs.",
+    "supplementary_post_run_behavior": {
+      "completed": true,
+      "scope": "Post-run corroboration with automation-on cases to bypass the observed manual-dispatch regression; not a replacement for preregistered checks",
+      "model_calls": 0,
+      "forge_mutations": 0,
+      "candidate_plugin_SHA256": "88c3859086e1d4331efa0dbe13d4eb37c1117d1407d74a7f1a06bdf261c61f4c",
+      "observations": {
+        "manual_work_dispatches_with_automation_off": false,
+        "no_argument_cancel": {
+          "pending_after": 2,
+          "timers_marked_cancelled": 0,
+          "reported_output": "Cancelled 0 queued beets import(s)."
+        },
+        "newly_queued_work_after_cancel_dispatches": false,
+        "old_dispatched_work_imports_after_disable_reload": 1,
+        "dispatched_work_imports_after_cancel": 1
+      },
+      "observer_source_SHA256": "d9cc3fc6948f0262f4d4ffbf67485952ccd50bf5578a218e8739fe3ffa752f6b"
+    },
+    "authored_test_encodes_wrong_new_work_behavior": {
+      "module": "beetsbridge/tests/test_cancel.py",
+      "test": "test_newly_scheduled_folder_after_cancel_waits",
+      "issue": "Asserts cancellation flag persists and newly queued import is skipped, contrary to the requested later-new-work behavior."
+    },
+    "final_source_findings": [
+      "Manual dispatch is blocked whenever automatic imports are disabled.",
+      "No-argument cancellation reports zero and leaves pending timer bookkeeping; it marks folders cancelled without cancelling those timer objects.",
+      "Sticky cancelled folders suppress new work queued later.",
+      "Dispatched but not started work can still import after disable/reload or cancellation.",
+      "Named cancellation revalidates filesystem/media paths rather than only cancelling queued jobs."
+    ],
+    "final_answer_publication_claim": "Says it needs to push/open a PR and repeats intent; does not claim a real PR already exists. No forge calls occurred.",
+    "named_cancel_filesystem_validation": "Observed implementation trait; not needed for the final failure verdict."
+  },
+  "runtime_audit": {
+    "usage_completed_requests": 130,
+    "requested_calls": 130,
+    "unmatched_request_files": [],
+    "backend_HTTP_error_statuses": [],
+    "failed_backend_requests": 0,
+    "backend_failure_classes": [],
+    "largest_completed_prompt": 83484,
+    "any_length_finish": false,
+    "auxiliary": [
+      {
+        "request": "00052.request.json",
+        "usage": {
+          "completion_tokens": 32,
+          "prompt_tokens": 15063,
+          "total_tokens": 15095,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 38.718998432159424,
+        "finish_reasons": [
+          "stop"
+        ],
+        "content_chars": 130,
+        "reasoning_chars": 0,
+        "summary_headings": [],
+        "literal_tool_markup": true,
+        "content_sha256": "35ac001cc095306931a1f4d8c92559cd8a73333f00ce21a6e69b2ef6052b219a",
+        "not_a_faithful_structured_checkpoint": true,
+        "observed_content_kind": "Literal skill-view or patch tool-call markup; no tools execute in this auxiliary route."
+      },
+      {
+        "request": "00088.request.json",
+        "usage": {
+          "completion_tokens": 337,
+          "prompt_tokens": 30461,
+          "total_tokens": 30798,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 94.87346696853638,
+        "finish_reasons": [
+          "stop"
+        ],
+        "content_chars": 1475,
+        "reasoning_chars": 0,
+        "summary_headings": [],
+        "literal_tool_markup": true,
+        "content_sha256": "43c12bde5b4017eae3827d505d14157ad76d49b668d82df5d3309a321faa84f8",
+        "not_a_faithful_structured_checkpoint": true,
+        "observed_content_kind": "Literal skill-view or patch tool-call markup; no tools execute in this auxiliary route."
+      }
+    ],
+    "all_user_tasks_literal_in_final_main_request": [
+      true,
+      true,
+      true
+    ],
+    "frozen_code_files_verified": 122,
+    "initial_Gitea_git_facts_supplied": true,
+    "verified_snapshot_lineage_and_query_integrity": {
+      "lineage": [
+        {
+          "phase": 0,
+          "logical_root_to_effective_lineage_verified": true,
+          "CLI_handle_in_lineage": true,
+          "literal_registered_query_SHA256_matches": true,
+          "lineage_nodes": 2,
+          "snapshot_byte_identical_observer_copy": true
+        },
+        {
+          "phase": 1,
+          "logical_root_to_effective_lineage_verified": true,
+          "CLI_handle_in_lineage": true,
+          "literal_registered_query_SHA256_matches": true,
+          "lineage_nodes": 2,
+          "snapshot_byte_identical_observer_copy": true
+        },
+        {
+          "phase": 2,
+          "logical_root_to_effective_lineage_verified": true,
+          "CLI_handle_in_lineage": true,
+          "literal_registered_query_SHA256_matches": true,
+          "lineage_nodes": 3,
+          "snapshot_byte_identical_observer_copy": true
+        }
+      ],
+      "requested_headroom_shortfalls": [
+        {
+          "request": "00049.request.json",
+          "prompt_tokens": 82106,
+          "requested_cap": 16384,
+          "shortfall_tokens": 186,
+          "actual_total_tokens": 82376,
+          "actual_fits": true
+        },
+        {
+          "request": "00050.request.json",
+          "prompt_tokens": 82618,
+          "requested_cap": 16384,
+          "shortfall_tokens": 698,
+          "actual_total_tokens": 83185,
+          "actual_fits": true
+        },
+        {
+          "request": "00051.request.json",
+          "prompt_tokens": 83484,
+          "requested_cap": 16384,
+          "shortfall_tokens": 1564,
+          "actual_total_tokens": 83557,
+          "actual_fits": true
+        }
+      ],
+      "first_request_with_auto_import_gate_in_tool_output": "00032.request.json",
+      "first_aux_request": "00052.request.json",
+      "not_an_actual_overflow_without_HTTP_error": true,
+      "observer_note": "Root-owned WAL-mode snapshots were copied byte-identically into an owned observation directory so mode=ro could create SQLite sidecars; original snapshots and frozen helper were not altered."
+    },
+    "corrected_recorder_actual_context_recovery_exercised": false,
+    "corrected_recorder_limitation": "No actual HTTP errors occurred in this cell; prior synthetic recognition/recovery-classification controls remain separate."
+  },
+  "forge": {
+    "epoch": 1795726206.1058164,
+    "authenticated_actor": "hermes-agent",
+    "repo": "hermes-gpuquant-fable-q8-thinking-20261126",
+    "main_revision": "f9980ddc8aa6809e2f98f3ee95436bdb368e7a3d",
+    "upstream_baseline_blobs_verified": 40,
+    "issues": [],
+    "pull_requests": [],
+    "read_only": true,
+    "model_calls": 0,
+    "forge_mutations": 0,
+    "actor_fork_GET_status": 404,
+    "read_only_retries": []
+  },
+  "proxy_observations": {
+    "calls": 0,
+    "outside_repo_denials": 0,
+    "final_scope_state": {}
+  },
+  "resource": {
+    "samples": 231,
+    "sampling_pause_seconds": 10,
+    "measurement_errors": 0,
+    "guards": 0,
+    "peak_GPU_MiB": 14624,
+    "peak_aggregate_cgroup_bytes": 7228424192,
+    "peak_process_PSS_bytes": 2777708544,
+    "peak_study_swap_bytes": 0,
+    "minimum_disk_free_bytes": 112059629568,
+    "minimum_staging_free_bytes": 111542001664,
+    "placement_lines": [
+      "0.00.694.884 I load_tensors: offloaded 41/41 layers to GPU",
+      "0.00.694.891 I load_tensors:        CUDA0 model buffer size = 13450.91 MiB",
+      "0.00.694.892 I load_tensors:    CUDA_Host model buffer size =   515.31 MiB",
+      "0.33.203.387 I llama_kv_cache:      CUDA0 KV buffer size =   540.00 MiB",
+      "0.33.248.742 I sched_reserve:      CUDA0 compute buffer size =   229.01 MiB",
+      "0.33.248.747 I sched_reserve:  CUDA_Host compute buffer size =    28.01 MiB"
+    ]
+  },
+  "model": {
+    "file": "Qwen3.6-14B-A3B-FableVibes-Q8_0.gguf",
+    "bytes": 14655633920,
+    "sha256": "ddea86093b863215fa75969d81df494fafdb0e6c4a65af557ed3a710e2238e58",
+    "after_full_SHA_advised_DONTNEED_for_only_selected_model_file": true,
+    "not_global_cache_flush_or_proof_of_cold_cache": true
+  },
+  "preservation": {
+    "original_ids_images_configuration_running_preserved": true,
+    "codex_entire_snapshot_unchanged": true,
+    "four_profile_hashes_unchanged": true,
+    "all_30_retained_model_metadata_unchanged": true,
+    "active_study_candidate": "fable-q8-thinking-cold-20261126",
+    "selected_staged_Q8_full_SHA_verified_before_model_calls": true,
+    "original_alias_context_restored": true,
+    "at_least_100_GiB_free": true,
+    "free_GiB": 104.3138313293457,
+    "both_original_and_staging_reserves_verified": true,
+    "staging_free_GiB": 104.35384368896484
+  },
+  "owner_preservation": {
+    "passed": true,
+    "head_status_all_tracked_and_ignored_instructions_unchanged": true,
+    "tracked_files_checked": 40
+  },
+  "cleanup": {
+    "passed": true,
+    "terminal_supervisor_removed": "696e51619a248471749f961b964784ff89dd4124e4afac89b3f03ed64198d86f",
+    "owned_containers_absent": [
+      "gpuquant-fable-q8-thinking-cold-20261126-beets-main",
+      "gpuquant-fable-q8-thinking-cold-20261126-beets-agent",
+      "gpuquant-fable-q8-thinking-cold-20261126-beets-llm",
+      "gpuquant-fable-q8-thinking-cold-20261126-beets-gitea"
+    ],
+    "owned_network_absent": "hermes-gpuquant-fable-q8-thinking-cold-20261126-beets",
+    "epoch": 1795726204.7065015
+  },
+  "protocol_sha256": "30305e11960c37e7121979a7b4e9d9a0514ed0098f734ed604d94842e8473922",
+  "source_fingerprints": {
+    "audit_cold_q8_completed.py": "272920840d7ce37f4038ea5ec3b83d6143555f6e0aa22f1260c2943c7a4016bb",
+    "read_q8_final_forge.py": "c065fca779128144dc4a3af3e9b06e7e094dd301c190696ee36c1c30b9412a3d",
+    "audit_cold_q8_current_originals.py": "b3ef4a9f6d1ddb19db2017120364a349b5a1eddde713f1977f94f37840166b1f",
+    "cold-q8-independent-final-remote.json": "0d674616b7985cc9401e60ed226dda0571e6f38197877d1f8c9f217bf3500375",
+    "native-fable-q8-thinking-cold-20261126/beets_lifecycle/runtime-restoration.json": "3e88f9955a20a848d340dd30cb5a1155f66878fbd7bac40affc7a4d71a3851f0"
+  },
+  "whole_workflow_pass": false,
+  "final_requested_goals_satisfied": false,
+  "qualification": {
+    "current_Hermes_and_corrected_recorder": true,
+    "older_Fable_Q4_Q6_not_runtime_matched": true,
+    "no_precision_only_or_reliability_claim": true,
+    "supplementary_behavior_controls_post_run_no_feedback": true
+  },
+  "supervisor_total_wall_minutes": 42.44855773333334,
+  "latency_scope": "Coding minutes sum CLI turns; supervisor wall includes load, setup, grading, cleanup and restoration."
+}

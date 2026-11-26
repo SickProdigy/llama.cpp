@@ -1,6 +1,8 @@
 # Llama.cpp and Hermes-Agent Model Notes
 
-[Public Fable Q8 capacity](evaluations/2026-11-24-gpu-quant/resource-fable-q8-thinking.md) now fits98k context with all41 layers on GPU at14,624MiB peak and no study swap. The80k-input request completes with cached input;60k retrieval loses a prefix. Fresh coding/Gitea quality is not yet established.
+[Current-runtime Fable Q8](evaluations/2026-11-24-gpu-quant/native-fable-q8-thinking-cold-beets.md) fails the coding/Gitea workflow in38.68 coding minutes despite fitting all41 layers at98k/14,624MiB GPU. Manual imports regress, cancellation and authored tests fail, command docs are missing, and no issue/fork/PR exists. The original runtime/models/settings are restored and verified.
+
+[Public Fable Q8 capacity](evaluations/2026-11-24-gpu-quant/resource-fable-q8-thinking.md) now fits98k context with all41 layers on GPU at14,624MiB peak and no study swap. The80k-input request completes with cached input;60k retrieval loses a prefix. The completed coding/Gitea run fails; capacity alone was insufficient.
 
 The [recorder correction](evaluations/2026-11-24-gpu-quant/transparent-recorder.md) now preserves backend errors in synthetic native-SDK controls. Vibe Q6’s final turn was confounded by the old recorder masking context400 as502; earlier code failures remain. Real model recovery is untested.
 

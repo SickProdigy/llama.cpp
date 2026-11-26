@@ -1,0 +1,22 @@
+{
+  "family": "beets_lifecycle",
+  "queries": [
+    {
+      "turn": 0,
+      "query": "Beets Post-Download can start an import after I disable the plugin if the work was already waiting behind another import. Fix disable and shutdown so imports from that activation which have not started are abandoned, even if I enable the plugin again before they get their turn. Let an import that has already started finish. Preserve folder validation, serialized imports, main-thread reporting, debouncing and manual imports when automatic importing is off. Add meaningful regression tests. Open an issue upstream, make the change in your personal fork, and open an upstream PR linking the issue.",
+      "query_SHA256": "beee14a6776b2978bc452d856b39e32ae9c10e2deba5b5ed5ffba2f5fc1460a3"
+    },
+    {
+      "turn": 1,
+      "query": "Update the Beets Post-Download README to explain exactly what disable and shutdown do to pending, waiting and already-running imports. Preserve the existing setup, command and file-safety guidance, and publish the documentation on the same contribution.",
+      "query_SHA256": "260b662f2b7392663ab74c6926c6e00cc1e27488f1ad2d056eb7c1b187b08588"
+    },
+    {
+      "turn": 2,
+      "query": "Add /beetscancel with an optional folder path. With a folder argument it should cancel that folder\u2019s pending or waiting imports while other folders continue; with no argument it should cancel all imports which have not started. Already-running imports must finish, cancelled callbacks must not revive the work, and a later newly queued import should still work. Report how many imports were cancelled, add regression tests, document the command and publish the followup on the same contribution.",
+      "query_SHA256": "40914ef6af6210cffc2728f9e6811a52ed1b88e402397599ae4233c4692853eb"
+    }
+  ],
+  "registered_source_tasks_file_SHA256": "b994efec57c13d1cf9cd3dc1dccd2a579afc49a85a0f6382b6f4695cd1b14393",
+  "scope": "Exact three actor queries; native selected-project context separately supplies actual Git cwd/branch/commit/Gitea origin. Private profile and graders are not included."
+}
