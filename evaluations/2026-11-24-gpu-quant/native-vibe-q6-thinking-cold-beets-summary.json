@@ -226,7 +226,8 @@
       "observed_backend_HTTP_status": 400,
       "gateway_HTTP_status_seen_by_Hermes": 502,
       "not_OOM_or_GPU_fit_failure": true,
-      "phase2_capability_not_established_due_to_context_failure": true
+      "phase2_capability_not_established_due_to_context_failure": true,
+      "recorder_confounds_native_overflow_recovery": true
     }
   },
   "forge": {
@@ -312,5 +313,12 @@
     "audit_cold_vibe_q6_completed.py": "08a5a10ae1df0b291319f43e3ddfce634a729aa4f072f7e9bba98d2f5cfca5e3",
     "cold-vibe-q6-independent-final-remote.json": "3d5bd412bf720b375ca56712c4201820f7345b91586df2b7f3c035562c0c2510",
     "native-vibe-q6-thinking-cold-20261126/beets_lifecycle/runtime-restoration.json": "9c94dba9f273f3a29b24ed6e43ad1c811f5e47751c85d7104fa3a19a4f8c098c"
+  },
+  "qualification": {
+    "late_discovered_recorder_HTTP_status_body_masking": true,
+    "final_feature_turn_not_unconfounded_model_quality_score": true,
+    "earlier_independent_code_failures_remain": true,
+    "synthetic_current_native_SDK_classifier_control": "transparent-recorder/preflight.json",
+    "actual_native_recovery_or_model_quality_improvement_not_yet_tested": true
   }
 }

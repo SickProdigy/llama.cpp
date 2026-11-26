@@ -1,0 +1,91 @@
+{
+  "epoch": 1795721203.6058297,
+  "scope": "Listed native GPU-quant and wide-memory stage metrics only; excludes other experiments/auxiliary controls. Recorded error classification does not reconstruct missing response bodies.",
+  "stages": {
+    "native-adapted-iq4": {
+      "request_metrics": 66,
+      "recorded_errors": {
+        "BrokenPipeError: [Errno 32] Broken pipe": 2
+      }
+    },
+    "native-fable-q4": {
+      "request_metrics": 38,
+      "recorded_errors": {}
+    },
+    "native-fable-q4-thinking": {
+      "request_metrics": 134,
+      "recorded_errors": {}
+    },
+    "native-fable-q4-thinking-cold-20261126": {
+      "request_metrics": 92,
+      "recorded_errors": {}
+    },
+    "native-fable-q6": {
+      "request_metrics": 93,
+      "recorded_errors": {}
+    },
+    "native-fable-q6-thinking-cold-20261126": {
+      "request_metrics": 81,
+      "recorded_errors": {}
+    },
+    "native-vibe-q4": {
+      "request_metrics": 32,
+      "recorded_errors": {}
+    },
+    "native-vibe-q4-thinking-cold-20261126": {
+      "request_metrics": 135,
+      "recorded_errors": {}
+    },
+    "native-vibe-q4-trusted": {
+      "request_metrics": 86,
+      "recorded_errors": {}
+    },
+    "native-vibe-q6-thinking-cold-20261126": {
+      "request_metrics": 130,
+      "recorded_errors": {
+        "HTTPError: HTTP Error 400: Bad Request": 23
+      }
+    },
+    "native-vibe-q6-trusted": {
+      "request_metrics": 52,
+      "recorded_errors": {}
+    }
+  },
+  "unreadable_count": 0,
+  "does_not_infer_backend_error_bodies_from_empty_captures": true,
+  "older_wide_memory_native_stages": {
+    "native-q4-fresh-cp2": {
+      "request_metrics": 60,
+      "recorded_errors": {}
+    },
+    "native-q4-recovery-cp2": {
+      "request_metrics": 64,
+      "recorded_errors": {}
+    },
+    "native-devstral-fresh-cp2": {
+      "request_metrics": 126,
+      "recorded_errors": {}
+    },
+    "native-glm-fresh-cp2": {
+      "request_metrics": 179,
+      "recorded_errors": {
+        "BrokenPipeError: [Errno 32] Broken pipe": 5
+      }
+    },
+    "native-q3-fresh-cp2": {
+      "request_metrics": 96,
+      "recorded_errors": {}
+    },
+    "native-q4-interrupted-cp32": {
+      "request_metrics": 12,
+      "recorded_errors": {
+        "IncompleteRead: IncompleteRead(0 bytes read)": 1,
+        "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>": 1
+      }
+    },
+    "native-q4-matched-fresh-cp2": {
+      "request_metrics": 54,
+      "recorded_errors": {}
+    }
+  }
+}

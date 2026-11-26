@@ -1,5 +1,7 @@
 # Model follow-up options
 
+The [recorder correction](evaluations/2026-11-24-gpu-quant/transparent-recorder.md) now preserves backend errors in synthetic native-SDK controls. Vibe Q6’s final turn was confounded by the old recorder masking context400 as502; earlier code failures remain. Real model recovery is untested.
+
 Current-runtime [Vibe Q4 reasoning](evaluations/2026-11-24-gpu-quant/native-vibe-q4-thinking-cold-beets.md) also fails:52.20 coding minutes, broken test collection, a preservation regression and no actual publication. [Q6](evaluations/2026-11-24-gpu-quant/native-vibe-q6-thinking-cold-beets.md) also fails in64.03 coding minutes: code/preservation defects plus a later context overflow. Public Fable Q8 is selected for a capacity-first precision check; fit/quality remain unproven.
 
 

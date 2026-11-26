@@ -1,5 +1,7 @@
 # GPU-resident quantization comparison
 
+The [recorder correction](transparent-recorder.md) now preserves backend errors in synthetic native-SDK controls. Vibe Q6’s final turn was confounded by the old recorder masking context400 as502; earlier code failures remain. Real model recovery is untested.
+
 The [current-runtime Vibe Q4 reasoning cell](native-vibe-q4-thinking-cold-beets.md) fails in52.20 coding minutes: project collection fails, final original suite regresses, independent behavior fails, no issue/fork/PR. All41 GPU layers fit at8,964MiB peak. [Matched Q6](native-vibe-q6-thinking-cold-beets.md) fails in64.03 coding minutes, with code/test defects followed by context overflow;11,566MiB peak GPU. The older Fable cells are not runtime-matched to these cells.
 
 

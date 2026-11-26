@@ -1,0 +1,126 @@
+{
+  "passed": true,
+  "actual_current_Hermes_SDK_and_error_classifier": true,
+  "model_calls": 0,
+  "forge_mutations": 0,
+  "synthetic_loopback_only": true,
+  "results": [
+    {
+      "recorder": "llm_proxy.py",
+      "source_sha256": "adcce82aa2754af464c066ac41a8243e95e1ec22e195da612f9c33e7e68a2178",
+      "successful_JSON_response_preserved": true,
+      "successful_SSE_content_and_usage_preserved": true,
+      "GET_error_verified": true,
+      "cases": [
+        {
+          "backend_status": 400,
+          "SDK_status": 502,
+          "SDK_exception": "InternalServerError",
+          "stream": false,
+          "native_reason": "server_error",
+          "native_should_compress": false
+        },
+        {
+          "backend_status": 400,
+          "SDK_status": 502,
+          "SDK_exception": "InternalServerError",
+          "stream": true,
+          "native_reason": "server_error",
+          "native_should_compress": false
+        },
+        {
+          "backend_status": 429,
+          "SDK_status": 502,
+          "SDK_exception": "InternalServerError",
+          "stream": false,
+          "native_reason": "server_error",
+          "native_should_compress": false
+        },
+        {
+          "backend_status": 429,
+          "SDK_status": 502,
+          "SDK_exception": "InternalServerError",
+          "stream": true,
+          "native_reason": "server_error",
+          "native_should_compress": false
+        },
+        {
+          "backend_status": 503,
+          "SDK_status": 502,
+          "SDK_exception": "InternalServerError",
+          "stream": false,
+          "native_reason": "server_error",
+          "native_should_compress": false
+        },
+        {
+          "backend_status": 503,
+          "SDK_status": 502,
+          "SDK_exception": "InternalServerError",
+          "stream": true,
+          "native_reason": "server_error",
+          "native_should_compress": false
+        }
+      ]
+    },
+    {
+      "recorder": "llm_proxy_transparent.py",
+      "source_sha256": "59a285250b6322f1ec450e82f7aed108ead9676476f7eb4ec5cd4cbb5371f003",
+      "successful_JSON_response_preserved": true,
+      "successful_SSE_content_and_usage_preserved": true,
+      "GET_error_verified": true,
+      "cases": [
+        {
+          "backend_status": 400,
+          "SDK_status": 400,
+          "SDK_exception": "BadRequestError",
+          "stream": false,
+          "native_reason": "context_overflow",
+          "native_should_compress": true
+        },
+        {
+          "backend_status": 400,
+          "SDK_status": 400,
+          "SDK_exception": "BadRequestError",
+          "stream": true,
+          "native_reason": "context_overflow",
+          "native_should_compress": true
+        },
+        {
+          "backend_status": 429,
+          "SDK_status": 429,
+          "SDK_exception": "RateLimitError",
+          "stream": false,
+          "native_reason": "rate_limit",
+          "native_should_compress": false
+        },
+        {
+          "backend_status": 429,
+          "SDK_status": 429,
+          "SDK_exception": "RateLimitError",
+          "stream": true,
+          "native_reason": "rate_limit",
+          "native_should_compress": false
+        },
+        {
+          "backend_status": 503,
+          "SDK_status": 503,
+          "SDK_exception": "InternalServerError",
+          "stream": false,
+          "native_reason": "overloaded",
+          "native_should_compress": false
+        },
+        {
+          "backend_status": 503,
+          "SDK_status": 503,
+          "SDK_exception": "InternalServerError",
+          "stream": true,
+          "native_reason": "overloaded",
+          "native_should_compress": false
+        }
+      ]
+    }
+  ],
+  "image": "sha256:c9b40eb8dea441cba7ded2e6589e5c011545ffc1ec76a0dc736f8e399d8f947b",
+  "control_source_sha256": "e59afb99758abc262e709046c267af86b36a297dce98b8f4adc0aba6371a9bac",
+  "retry_after_preserved": true
+}

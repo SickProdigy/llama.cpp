@@ -28,8 +28,12 @@ of the model's ability to implement the feature. The README removes the existing
 Commands section and falsely says stopped waiting work cannot resume.
 
 The backend completes107 requests;23 further requests fail HTTP400 because the
-rendered prompt is98,346 tokens against98,304 available. The gateway exposes
-these as502 to Hermes, whose retries cannot fix the oversized request. This is
+rendered prompt is98,346 tokens against98,304 available. The old recorder exposes
+these as502 to Hermes, whose retries cannot fix the oversized request. The
+[verified recorder correction](transparent-recorder.md) shows that preserving
+the original400/body changes native classification to context overflow and
+enables its compression recommendation. This final turn is recorder-confounded;
+real recovery with the corrected recorder remains untested. This is
 context handling, not GPU allocation or an OOM. Largest successful input is
 98,069 tokens. Three auxiliary requests each consume the full8,192 output cap
 (336.90s/331.66s/240.73s), producing repetitive histories rather than faithful

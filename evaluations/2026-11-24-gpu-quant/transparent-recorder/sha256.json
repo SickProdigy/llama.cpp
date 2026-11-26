@@ -1,0 +1,7 @@
+{
+  "error-impact.json": "47ad036ef321e98f6ae6ebc77a790a6b4ff4c6d725332ef9e6c2232bd4ee0cd2",
+  "preflight.json": "0d54447786a8f5580b28616890d223732571ae44435853ee3b4550e9e8d9ca4b",
+  "preflight_transparent_llm_recorder.py": "e59afb99758abc262e709046c267af86b36a297dce98b8f4adc0aba6371a9bac",
+  "harness/llm_proxy.py": "adcce82aa2754af464c066ac41a8243e95e1ec22e195da612f9c33e7e68a2178",
+  "harness/llm_proxy_transparent.py": "59a285250b6322f1ec450e82f7aed108ead9676476f7eb4ec5cd4cbb5371f003"
+}
