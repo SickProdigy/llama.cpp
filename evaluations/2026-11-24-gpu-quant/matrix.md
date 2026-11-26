@@ -175,3 +175,12 @@ the run cannot stand for an independent cold-health quantization comparison.
 Original runtime/models/settings/owner edits/Codex were verified and owned resources
 removed before the pause. Current production was rebuilt afterward; preserve its
 new state for future tests. No everyday winner or autonomous-reliability claim.
+
+
+The [November 26 auxiliary/cache controls](auxiliary-precision-controls.md)
+replay one saved native checkpoint request at three sampler modes, with quoted
+history and FP16 KV controls. None of eight outputs qualifies as a trustworthy
+checkpoint. FP16 fits at98,304 context with41/41 GPU layers and10,162MiB sampled
+GPU, versus8,964MiB withq4_0 KV. One reasoning output gains section coverage
+but loses failing-test status and repeats its final log. These are auxiliary
+controls, not new coding/Gitea passes; production settings remain unchanged.

@@ -831,3 +831,12 @@ Outcome: current best local baseline. Minimal write test passes cleanly; advance
 
 
 The [VibeForged Q4 unattended baseline](evaluations/2026-11-24-gpu-quant/native-vibe-q4-beets.md) completed without code changes: all 18 selected `execute_code` attempts were blocked by copied-profile one-shot approval policy. Repository read control succeeded; code-tool ability remains unmeasured. A separate isolated deny/approve pure-code control confirms this mechanism without model calls. Original deployed settings remain unchanged. The prospective comparison now uses a fresh explicitly trusted Vibe Q4/Q6 pair; Q6 deny-profile coding is deferred, with its capacity check now completed independently. Fable Q4/Q6 baseline outcomes remain preserved. Higher precision has not yet demonstrated a quality gain.
+
+
+The [November 26 auxiliary/cache controls](evaluations/2026-11-24-gpu-quant/auxiliary-precision-controls.md)
+replay one saved native checkpoint request at three sampler modes, with quoted
+history and FP16 KV controls. None of eight outputs qualifies as a trustworthy
+checkpoint. FP16 fits at98,304 context with41/41 GPU layers and10,162MiB sampled
+GPU, versus8,964MiB withq4_0 KV. One reasoning output gains section coverage
+but loses failing-test status and repeats its final log. These are auxiliary
+controls, not new coding/Gitea passes; production settings remain unchanged.

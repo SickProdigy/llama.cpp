@@ -377,3 +377,12 @@ The [VibeForged Q4 unattended baseline](evaluations/2026-11-24-gpu-quant/native-
 The [trusted Q6 result](evaluations/2026-11-24-gpu-quant/native-vibe-q6-trusted-beets.md) does more source work but does not repair the initial lifecycle defect, provide collecting regression tests or publish. Reasoning-enabled controls are now prepared for both Fable and Vibe; the current nonthinking results do not establish their best practical settings. Adapted27B IQ4_XS now has a verified full hash in its separately owned volume with100GiB reserves; capacity passes at64k after98k CUDA failures; its completed native workflow passes
 the local repair but fails docs, cancellation and forge publication, with measured
 compression/fallback overhead. No everyday winner is selected.
+
+
+The [November 26 auxiliary/cache controls](evaluations/2026-11-24-gpu-quant/auxiliary-precision-controls.md)
+replay one saved native checkpoint request at three sampler modes, with quoted
+history and FP16 KV controls. None of eight outputs qualifies as a trustworthy
+checkpoint. FP16 fits at98,304 context with41/41 GPU layers and10,162MiB sampled
+GPU, versus8,964MiB withq4_0 KV. One reasoning output gains section coverage
+but loses failing-test status and repeats its final log. These are auxiliary
+controls, not new coding/Gitea passes; production settings remain unchanged.

@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "stages": 3,
+  "variant_captures": 8,
+  "verification_scope": "Archive integrity and saved observation consistency; manual semantic judgments are documented, not independently replayed.",
+  "negative_controls": [
+    {
+      "mutation": "manifest_corruption",
+      "rejected": true
+    },
+    {
+      "mutation": "coherent_nonzero_cached_tokens",
+      "rejected": true
+    },
+    {
+      "mutation": "coherent_weight_mismatch",
+      "rejected": true
+    }
+  ]
+}
