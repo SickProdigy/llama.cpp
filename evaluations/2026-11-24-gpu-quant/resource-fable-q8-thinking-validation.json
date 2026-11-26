@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "archive_sha256": "371143fe245ec4f7111979286c4bbf728f8a5d300eb863f4ef23df853cd64bc5",
+  "verifier_sha256": "fea505b365844019c79d56b8fc8dabf6455ff1fc6a26aa740ceed775f927172b",
+  "positive": {
+    "passed": true,
+    "candidate": "fable-q8-thinking",
+    "manifest_files": 54,
+    "memory_samples": 81,
+    "completed_probes": 6,
+    "coding_quality_not_validated": true,
+    "archive_sha256": "371143fe245ec4f7111979286c4bbf728f8a5d300eb863f4ef23df853cd64bc5"
+  },
+  "coherent_negative_controls": [
+    {
+      "case": "placement",
+      "all_manifest_hashes_recomputed": true,
+      "rejected": true
+    },
+    {
+      "case": "requested-headroom",
+      "all_manifest_hashes_recomputed": true,
+      "rejected": true
+    },
+    {
+      "case": "staging-reserve",
+      "all_manifest_hashes_recomputed": true,
+      "rejected": true
+    },
+    {
+      "case": "source-binding",
+      "all_manifest_hashes_recomputed": true,
+      "rejected": true
+    }
+  ],
+  "scope": "Saved resource consistency/placement/requested headroom/both reserve/source bindings; not model coding or private behavior replay."
+}

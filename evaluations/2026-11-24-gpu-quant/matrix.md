@@ -23,7 +23,7 @@ that newer owner-source evaluator. Capacity alone is not coding/publication qual
 | FableVibes Q6_K, cold reasoning / same older evaluator |41/41 GPU;11,566MiB sampled peak;98k q4 KV |Final91 tests/2 subtests pass but lifecycle/cancellation/docs fail; no publication;13.16 coding minutes ([audit](native-fable-q6-thinking-cold-beets.md)) |
 | VibeForged v2 Q4_K_M, cold reasoning / current evaluator |41/41 GPU;8,964MiB peak;98k |Collection and lifecycle/cancel fail; final preservation regression; no publication;52.20 min ([audit](native-vibe-q4-thinking-cold-beets.md)) |
 | Same VibeForged v2 Q6_K, cold reasoning / same current evaluator |41/41 GPU;11,566MiB peak;98k |Partial repair fails; final context overflow; no publication;64.03 min ([audit](native-vibe-q6-thinking-cold-beets.md)) |
-| FableVibes Q8_0, public |[Pinned selection](prospective-fable-q8.json); sequential staged download started; GPU/context fit unmeasured | Not started; no inferred precision benefit |
+| FableVibes Q8_0, public |Full file/hash verified;41/41 GPU at98k,14,624MiB peak;80k-input probe completes with59.8k cached ([capacity](resource-fable-q8-thinking.md)) | Fresh coding/Gitea result pending;60k marker loses prefix despite completed request; no inferred precision benefit |
 | FableVibes Q5_K_M, public | Possible intermediate; not downloaded or measured in this study | Not started |
 | Adapted 27B Q5/Q6 | Weight files exceed16GiB, ruling out entirely GPU-resident layouts; limited CPU-offload fit unmeasured | Not run; no quality-failure claim |
 

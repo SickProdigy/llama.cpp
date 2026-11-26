@@ -13,8 +13,12 @@ record of tests on the spare PCs or a change to the deployed model.
 [Public Fable Q8 selection and pins](evaluations/2026-11-24-gpu-quant/prospective-fable-q8.json)
 records a14,655,633,920-byte artifact on the existing pinned publisher revision.
 The separate staging volume has room above the100GiB reserve, preserving both
-the prior staged IQ4 and all30 original models. Sequential download/full-hash
-verification precedes [registered capacity probes](evaluations/2026-11-24-gpu-quant/prospective-fable-q8-capacity.json):
+the prior staged IQ4 and all30 original models. Full-file length/SHA verification has completed. An initial logging-only
+setup failure is preserved (no inference probes); the [corrected capacity stage](evaluations/2026-11-24-gpu-quant/resource-fable-q8-thinking.md)
+completes all six requests at98k/all41 GPU layers/14,624MiB peak, with no study
+swap. The60k marker answer loses its required prefix; capacity is not correctness. The [new unused profile controls](evaluations/2026-11-24-gpu-quant/q8-preactor-preflight-summary.json)
+pass actual SDK/config and native code-tool checks, with no model/forge writes.
+The [registered capacity probes](evaluations/2026-11-24-gpu-quant/prospective-fable-q8-capacity.json) use
 98,304 context, all41 GPU layers, q4_0 KV, short actual tool history and16k/60k/80k
 input probes with16,384 output headroom. No implicit CPU layer fallback.
 

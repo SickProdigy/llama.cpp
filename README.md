@@ -1,5 +1,7 @@
 # Llama.cpp and Hermes-Agent Model Notes
 
+[Public Fable Q8 capacity](evaluations/2026-11-24-gpu-quant/resource-fable-q8-thinking.md) now fits98k context with all41 layers on GPU at14,624MiB peak and no study swap. The80k-input request completes with cached input;60k retrieval loses a prefix. Fresh coding/Gitea quality is not yet established.
+
 The [recorder correction](evaluations/2026-11-24-gpu-quant/transparent-recorder.md) now preserves backend errors in synthetic native-SDK controls. Vibe Q6’s final turn was confounded by the old recorder masking context400 as502; earlier code failures remain. Real model recovery is untested.
 
 The [current-runtime Vibe Q4 reasoning run](evaluations/2026-11-24-gpu-quant/native-vibe-q4-thinking-cold-beets.md) fails after52.20 coding minutes: authored tests cannot collect, one original test regresses, lifecycle/cancellation checks fail and no actual issue/fork/PR exists despite claims. Original settings/models are preserved. The matching [Q6 cell](evaluations/2026-11-24-gpu-quant/native-vibe-q6-thinking-cold-beets.md) also fails in64.03 coding minutes: partial lifecycle defects precede a final context overflow. Neither quant establishes a practical quality advantage.

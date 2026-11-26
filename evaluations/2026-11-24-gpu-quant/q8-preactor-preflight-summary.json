@@ -1,0 +1,53 @@
+{
+  "passed": true,
+  "image": "sha256:c9b40eb8dea441cba7ded2e6589e5c011545ffc1ec76a0dc736f8e399d8f947b",
+  "actual_current_SDK_serialized_sampler": {
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0,
+    "repeat_penalty": 1,
+    "presence_penalty": 0,
+    "chat_template_kwargs": {
+      "enable_thinking": true
+    },
+    "seed": 20261124,
+    "max_tokens": 16384,
+    "return_progress": true
+  },
+  "actual_context": 98304,
+  "actual_compression_host_budgets": [
+    5400,
+    5400
+  ],
+  "actual_auxiliary_timeout_seconds": 5400,
+  "main_progress_serialized": true,
+  "auxiliary_progress_configured": true,
+  "actual_native_execute_code_succeeded": true,
+  "pure_code_output": "4\n",
+  "single_query_mode": "approve",
+  "profile_remains_unused_without_state_DB": true,
+  "owner_settings_touched": false,
+  "model_inference_calls": 0,
+  "new_Gitea_fixture_not_yet_created": false,
+  "fresh_native_Gitea_admission_still_required": false,
+  "operator_only_profile_preparation_failure": {
+    "capability": "CHOWN omitted from helper after settings written",
+    "recovery": "Already written settings validated; ownership metadata and receipt completed without recreating profile",
+    "excluded_from_model_scores": true
+  },
+  "private_control_payloads_SHA256": {
+    "fable-q8-thinking-current-runtime-wire-preflight.json": "7d193c1954b03b18c9723d3df383d6879d208312d59b5574f3b41d7d958bbc39",
+    "fable-q8-thinking-current-actual-code-preflight.json": "25a1d7dff1e87cb6954c145e5b56248ccca43e62d9e9542a169ce107729840aa",
+    "q8-profile-runtime-settings.json": "d41665d48e4d0f6442fca9cb8b371028c97997e007df9196513e341f2344963a"
+  },
+  "not_a_coding_or_model_quality_score": true,
+  "control_forge_mutations": 0,
+  "operator_fixture_setup_mutations_performed": true,
+  "operator_setup_not_model_contribution": true,
+  "actual_native_Gitea_identity_read": "hermes-agent",
+  "actual_native_repository_read": true,
+  "actual_readonly_control_write_denied": true,
+  "fresh_two_identity_blob_admission_still_required": true,
+  "native_transport_payload_SHA256": "d32a30120dcab13cae4036b352bd8f9248dd5271e576f4bded21bd1e58d05322"
+}

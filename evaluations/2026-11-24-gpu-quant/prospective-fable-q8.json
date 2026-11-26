@@ -47,9 +47,9 @@
     "original_models_read_only": true
   },
   "download_started": true,
-  "download_full_hash_verification_pending": true,
-  "GPU_fit_pending": true,
-  "large_context_fit_pending": true,
+  "download_full_hash_verification_pending": false,
+  "GPU_fit_pending": false,
+  "large_context_fit_pending": false,
   "importance_matrix_and_tensor_production_comparison_pending": false,
   "public_source": "https://huggingface.co/tvall43/Qwen3.6-14B-A3B-FableVibes-GGUF/tree/9cf910a7ad68dfedcbdfc46ef0fe5003dec07c23",
   "CPU_offload_not_implicitly_authorized_as_fit_proof": true,
@@ -57,7 +57,7 @@
   "header_comparison": {
     "prefix_bytes_read": 16777216,
     "prefix_sha256": "d0be23301bb74ea2c62dded77155572d6e150eac7be9edd097a25e228be93446",
-    "source": "Initial header of growing owned partial; full pinned file SHA remains pending. Header is not fit proof.",
+    "source": "Header read from owned growing partial; completed same-file pinned full SHA subsequently verified. Not fit proof.",
     "GGUF_version": 3,
     "tensor_count": 733,
     "tensor_type_counts": {
@@ -75,5 +75,33 @@
     "all_three_files_have_no_imatrix_metadata": true,
     "missing_imatrix_metadata_does_not_establish_identical_calibration": true,
     "Q8_vs_K_quant_tensor_production_differs": true
-  }
+  },
+  "download_verified": true,
+  "verified_download": {
+    "seconds": 1319.180249452591,
+    "bytes": 14655633920,
+    "sha256": "ddea86093b863215fa75969d81df494fafdb0e6c4a65af557ed3a710e2238e58",
+    "both_reserves_at_least_100GiB": true,
+    "staging_free_bytes_after_download": 112212996096,
+    "original_model_drive_free_bytes_after_download": 112158121984
+  },
+  "first_capacity_attempt": {
+    "classification": "Operator logging setup failure, excluded from model fit/quality scoring.",
+    "backend_reached_ready": true,
+    "inference_probes": 0,
+    "reason": "Verbosity3 omitted the required offloaded-layer evidence; retry explicitly sets verbosity5.",
+    "originals_restored_and_postflight_verified": true,
+    "both_disk_reserves_after_first_attempt_GiB": {
+      "/models": 104.45458602905273,
+      "/stage": 104.48553466796875
+    }
+  },
+  "corrected_capacity_attempt_running": false,
+  "capacity_evidence": "resource-fable-q8-thinking-summary.json",
+  "measured_context": 98304,
+  "measured_peak_GPU_MiB": 14624,
+  "all_41_transformer_layers_on_GPU": true,
+  "host_model_buffer_MiB": 515.31,
+  "full_coding_Gitea_workflow_pending": true,
+  "larger_than_98304_context_unmeasured": true
 }

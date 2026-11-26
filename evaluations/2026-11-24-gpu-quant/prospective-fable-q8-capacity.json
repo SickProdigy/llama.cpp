@@ -1,5 +1,5 @@
 {
-  "registered_epoch": 1795720792.1437058,
+  "registered_epoch": 1795722383.9735756,
   "classification": "Prospective public Q8 current-backend capacity; no coding score or presumed quality gain",
   "backend_image": "sha256:fee4289628e7ba09f6fbf62d6ce4325aebb2531ffde2154d41276fe4acc58da3",
   "load_mode": "none",
@@ -43,5 +43,12 @@
     "probe_output_cap": 16384,
     "retained_file_requires_full_hash_verification": false,
     "owned_staged_artifact_requires_full_hash_verification": true
+  },
+  "backend_log_verbosity": 5,
+  "operator_logging_amendment": {
+    "prior_attempt": "q8-capacity-placement-log-preparation-failure-1",
+    "change": "Add explicit verbosity5 so offloaded-layer placement can be audited before probes.",
+    "zero_previous_inference_probes": true,
+    "model_file_sampler_context_memory_and_tasks_unchanged": true
   }
 }
