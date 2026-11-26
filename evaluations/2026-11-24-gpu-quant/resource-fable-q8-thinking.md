@@ -47,9 +47,10 @@ terminal supervisors are removed. Final reserves are104.46GiB original drive and
 
 A [fresh unused profile preflight](q8-preactor-preflight-summary.json) passes the
 actual current SDK/config and native code tool with zero model/forge mutations.
-A fresh coding/Gitea workflow using the [corrected recorder](transparent-recorder.md)
-is still required. Historical Fable cells use an older Hermes image and recorder;
-this capacity result is not evidence of a precision-only quality improvement.
+The subsequent [current Q8 coding/Gitea workflow](native-fable-q8-thinking-cold-beets.md)
+uses the [corrected recorder](transparent-recorder.md) and fails the requested
+workflow. Historical Fable cells use an older Hermes image and recorder; neither
+result establishes a precision-only quality improvement.
 
 [Observations](resource-fable-q8-thinking-summary.json),
 [evidence archive](resource-fable-q8-thinking-evidence.tar.gz),

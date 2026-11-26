@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "candidate": "fable-q6-current-thinking",
+  "manifest_files": 54,
+  "memory_samples": 77,
+  "completed_probes": 6,
+  "coding_quality_not_validated": true,
+  "archive_sha256": "1def20982d8d2a7cc1aff6d22557171e98162b27714b7f105a28231344db2d69",
+  "scope": "Saved observed resource/source/placement/headroom consistency, not rerun inference or coding/forge qualification."
+}

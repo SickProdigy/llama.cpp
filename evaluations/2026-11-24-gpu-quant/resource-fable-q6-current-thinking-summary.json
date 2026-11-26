@@ -1,0 +1,301 @@
+{
+  "candidate": "fable-q6-current-thinking",
+  "classification": "prospective reasoning-enabled synthetic capacity control; not coding or forge quality",
+  "passed_capacity_stage": true,
+  "not_coding_quality": true,
+  "model_identity": {
+    "file": "Qwen3.6-14B-A3B-FableVibes-Q6_K.gguf",
+    "bytes": 11325370880,
+    "sha256": "7ae56e5003365c568635c14158381df134577877c90ae15f34dbc6de2ca7ffb1",
+    "specific_study_file_advised_DONTNEED_after_hash": true,
+    "not_global_cache_flush_or_cold_cache_proof": true
+  },
+  "public_pin": {
+    "repo": "tvall43/Qwen3.6-14B-A3B-FableVibes-GGUF",
+    "revision": "9cf910a7ad68dfedcbdfc46ef0fe5003dec07c23",
+    "file": "Qwen3.6-14B-A3B-FableVibes-Q6_K.gguf",
+    "expected_bytes": 11325370880,
+    "sha256": "7ae56e5003365c568635c14158381df134577877c90ae15f34dbc6de2ca7ffb1",
+    "layouts": [
+      {
+        "context": 98304,
+        "gpu_layers": 99
+      }
+    ],
+    "sampler": {
+      "temperature": 1.0,
+      "top_p": 0.95,
+      "top_k": 20,
+      "min_p": 0,
+      "repeat_penalty": 1,
+      "presence_penalty": 0,
+      "chat_template_kwargs": {
+        "enable_thinking": true
+      }
+    },
+    "probe_output_cap": 16384,
+    "retained_file_requires_full_hash_verification": true
+  },
+  "context": 98304,
+  "requested_gpu_layers": 99,
+  "fit_auto_off": true,
+  "placement_limitation": "All41 GPU layers explicitly verified before probes; host embedding buffer is reported separately, not CPU transformer layer offload.",
+  "selected_file_cache_after_original_stop": {
+    "epoch": 1795727127.6316693,
+    "file": "Qwen3.6-14B-A3B-FableVibes-Q6_K.gguf",
+    "bytes": 11325370880,
+    "mincore_cached_page_bytes_before": 0,
+    "mincore_cached_page_bytes_after": 0,
+    "only_specific_inactive_file_advised": true,
+    "no_global_cache_flush": true,
+    "not_cold_storage_cache_proof": true,
+    "content_not_modified": true,
+    "scope": "After original backend exits, before measured replacement starts. Page residency rounded to page boundaries; no claim about storage-device caches."
+  },
+  "samples": 77,
+  "measurement_errors": 0,
+  "peak_gpu_MiB": 11566,
+  "peak_aggregate_cgroup_bytes": 7020474368,
+  "peak_process_PSS_bytes": 1796613120,
+  "peak_study_swap_bytes": 0,
+  "guard_count": 0,
+  "minimum_model_disk_free_bytes": 111991971840,
+  "minimum_staging_disk_free_bytes": 112017707008,
+  "global_swap_in_pages_delta": 1140,
+  "global_swap_out_pages_delta": 4081,
+  "global_swap_not_attributed_to_study": true,
+  "probes": {
+    "tool-followup": {
+      "body_complete": true,
+      "seconds": 1.873608473004424,
+      "usage": {
+        "completion_tokens": 78,
+        "prompt_tokens": 519,
+        "total_tokens": 597,
+        "prompt_tokens_details": {
+          "cached_tokens": 494
+        }
+      },
+      "finish_reason": "stop",
+      "response_sha256": "b847804aa717e8ee873b825cf9e9af3796e37f49127d6ad19ddd2d92ec218da2",
+      "timings": {
+        "cache_n": 494,
+        "prompt_n": 25,
+        "prompt_ms": 239.567,
+        "prompt_per_token_ms": 9.58268,
+        "prompt_per_second": 104.35494037158708,
+        "predicted_n": 78,
+        "predicted_ms": 1631.033,
+        "predicted_per_token_ms": 21.18224675324675,
+        "predicted_per_second": 47.20934524316799
+      }
+    },
+    "tool-result": {
+      "body_complete": true,
+      "seconds": 2.5349036249972414,
+      "usage": {
+        "completion_tokens": 106,
+        "prompt_tokens": 389,
+        "total_tokens": 495,
+        "prompt_tokens_details": {
+          "cached_tokens": 355
+        }
+      },
+      "finish_reason": "stop",
+      "response_sha256": "9352e9d818b86749614db76a34673d76f0a2847083570e68c71ac3e230b7fe11",
+      "timings": {
+        "cache_n": 355,
+        "prompt_n": 34,
+        "prompt_ms": 206.565,
+        "prompt_per_token_ms": 6.075441176470588,
+        "prompt_per_second": 164.597100186382,
+        "predicted_n": 106,
+        "predicted_ms": 2324.352,
+        "predicted_per_token_ms": 22.13668571428571,
+        "predicted_per_second": 45.173880720303984
+      }
+    },
+    "prompt60000": {
+      "body_complete": true,
+      "seconds": 165.2397621019918,
+      "usage": {
+        "completion_tokens": 297,
+        "prompt_tokens": 59935,
+        "total_tokens": 60232,
+        "prompt_tokens_details": {
+          "cached_tokens": 16033
+        }
+      },
+      "finish_reason": "stop",
+      "response_sha256": "984de8012b58f1062c3d59b785b387761f3ee0f6a985ce868f4454ba2da43e36",
+      "timings": {
+        "cache_n": 16033,
+        "prompt_n": 43902,
+        "prompt_ms": 155299.912,
+        "prompt_per_token_ms": 3.537422258667031,
+        "prompt_per_second": 282.6917248993676,
+        "predicted_n": 297,
+        "predicted_ms": 9881.257,
+        "predicted_per_token_ms": 33.382625,
+        "predicted_per_second": 29.955703004182567
+      }
+    },
+    "prompt16000": {
+      "body_complete": true,
+      "seconds": 40.49412764099543,
+      "usage": {
+        "completion_tokens": 96,
+        "prompt_tokens": 16165,
+        "total_tokens": 16261,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "finish_reason": "stop",
+      "response_sha256": "cfd78ac7ac65c70dc1648d998bd8fe304675c46b46cafdb56ec67cef0c8c4815",
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 16165,
+        "prompt_ms": 38011.768,
+        "prompt_per_token_ms": 2.351485802660068,
+        "prompt_per_second": 425.2630395934228,
+        "predicted_n": 96,
+        "predicted_ms": 2445.417,
+        "predicted_per_token_ms": 25.741231578947367,
+        "predicted_per_second": 38.848180085441456
+      }
+    },
+    "prompt80000": {
+      "body_complete": true,
+      "seconds": 106.64327073200548,
+      "usage": {
+        "completion_tokens": 145,
+        "prompt_tokens": 79930,
+        "total_tokens": 80075,
+        "prompt_tokens_details": {
+          "cached_tokens": 59803
+        }
+      },
+      "finish_reason": "stop",
+      "response_sha256": "bb30c0f27b9945e238d503fa01a0490574e301e0205d30109a1d8532865b834e",
+      "timings": {
+        "cache_n": 59803,
+        "prompt_n": 20127,
+        "prompt_ms": 101136.792,
+        "prompt_per_token_ms": 5.024931286331793,
+        "prompt_per_second": 199.00769642762646,
+        "predicted_n": 145,
+        "predicted_ms": 5408.776,
+        "predicted_per_token_ms": 37.560944444444445,
+        "predicted_per_second": 26.623398713498215
+      }
+    },
+    "tool": {
+      "body_complete": true,
+      "seconds": 20.73358284099959,
+      "usage": {
+        "completion_tokens": 65,
+        "prompt_tokens": 291,
+        "total_tokens": 356,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "finish_reason": "tool_calls",
+      "response_sha256": "76a890e83cbd5c03376e280bf1cc2783f0e6fa2cf30999e001f02c18604a06bf",
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 291,
+        "prompt_ms": 17234.486,
+        "prompt_per_token_ms": 59.22503780068729,
+        "prompt_per_second": 16.884750725957247,
+        "predicted_n": 65,
+        "predicted_ms": 3495.936,
+        "predicted_per_token_ms": 54.624,
+        "predicted_per_second": 18.306971294669008
+      }
+    }
+  },
+  "original_runtime_restored": true,
+  "original_preservation": {
+    "epoch": 1795727608.427116,
+    "passed": true,
+    "original_ids_images_config_running_preserved": true,
+    "Codex_full_recorded_state_unchanged": true,
+    "four_owner_profile_hashes_unchanged": true,
+    "all_30_original_model_metadata_unchanged": true,
+    "owner_pending_and_40_source_files_unchanged": true,
+    "original_alias_and_context_restored": true,
+    "both_disk_reserves_at_least_100GiB": true,
+    "free_GiB": {
+      "/models": 104.30455780029297,
+      "/stage": 104.41275405883789
+    },
+    "profile_baseline_timing": "Fresh before current Fable Q6 resource stage, after Q8 restoration and exact cleanup.",
+    "original_model_inventory_interval": "Fresh original retained model metadata at admission.",
+    "containers": {
+      "hermes": {
+        "id": "5f8aedd58283a34f7736b73864bbeac4b9be195a88737c4cf3373f0e343ccd4d",
+        "image": "sha256:585c221367f9479d3962bc66c8c6f11d1ca571c9e5d7b3aa565ed02d9651b124",
+        "config_sha256": "b850d3f3890bda5a31a639f9ac99f7b1f487890a4ff246c3526edcb13c04581b",
+        "running": true,
+        "started": "2026-11-26T21:12:32.83830311Z",
+        "restarts": 0
+      },
+      "llama-cpp": {
+        "id": "763fb7daa3ef5535dd6553bad40df0106f3a656c70cd9632535640ee4ba15939",
+        "image": "sha256:fee4289628e7ba09f6fbf62d6ce4325aebb2531ffde2154d41276fe4acc58da3",
+        "config_sha256": "59702b4f3abf79b53dc9bb981ad7dd2eea1286166cef0c74d70755761a94a4aa",
+        "running": true,
+        "started": "2026-11-26T21:12:15.819815912Z",
+        "restarts": 0
+      },
+      "hermes-codex": {
+        "id": "153f58615740083f19640d8d02ca3623a0979e50342ba991a42d88ec28b622bd",
+        "image": "sha256:585c221367f9479d3962bc66c8c6f11d1ca571c9e5d7b3aa565ed02d9651b124",
+        "config_sha256": "421525e2020ca874438b919ef0a7989a8771c350100441f1e9a213111d76cbc6",
+        "running": true,
+        "started": "2026-11-25T20:39:16.88175365Z",
+        "restarts": 0
+      }
+    }
+  },
+  "owner_pending_edits_preserved": true,
+  "sampling_limit": "Five-second snapshots can miss transient peaks; host cgroups include charged file cache; not a continuous whole-host memory guarantee.",
+  "latency_limit": "Operational synthetic timings, not an isolated decode benchmark or useful whole-window reasoning proof.",
+  "placement_lines": [
+    "0.00.748.390 I load_tensors: offloaded 41/41 layers to GPU",
+    "0.00.748.399 I load_tensors:        CUDA0 model buffer size = 10392.38 MiB",
+    "0.00.748.400 I load_tensors:    CUDA_Host model buffer size =   397.85 MiB",
+    "0.22.991.533 I llama_kv_cache:      CUDA0 KV buffer size =   540.00 MiB",
+    "0.23.025.059 I sched_reserve:      CUDA0 compute buffer size =   229.01 MiB",
+    "0.23.025.062 I sched_reserve:  CUDA_Host compute buffer size =    28.01 MiB"
+  ],
+  "direct_tool_call_correct": true,
+  "dependent_tool_history_check": {
+    "expected": "tool-history-capacity-ok",
+    "content": "tool-history-capacity-ok",
+    "not_actual_MCP_or_coding_quality": true
+  },
+  "synthetic_marker_checks": {
+    "16000": {
+      "expected": "capacity-check-16000",
+      "content": "capacity-check-16000",
+      "not_agent_quality": true,
+      "exact_match": true
+    },
+    "60000": {
+      "expected": "capacity-check-60000",
+      "content": "capacity-check-60000",
+      "not_agent_quality": true,
+      "exact_match": true
+    },
+    "80000": {
+      "expected": "capacity-check-80000",
+      "content": "capacity-check-80000",
+      "not_agent_quality": true,
+      "exact_match": true
+    }
+  },
+  "capacity_completion_not_equivalent_to_exact_marker_or_coding_success": true
+}

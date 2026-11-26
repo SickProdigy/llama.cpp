@@ -1,5 +1,7 @@
 # GPU-resident quantization comparison
 
+[Current Fable Q6 capacity reference](resource-fable-q6-current-thinking.md) completes all six probes at 98k with all 41 layers on GPU, 11,566 MiB peak and no study swap. All three marker checks are exact; this is capacity evidence. A fresh current-runtime Q6 coding/Gitea run remains next for comparison with the failed Q8 workflow.
+
 [Current-runtime Fable Q8](native-fable-q8-thinking-cold-beets.md) fails the coding/Gitea workflow in38.68 coding minutes despite fitting all41 layers at98k/14,624MiB GPU. Manual imports regress, cancellation and authored tests fail, command docs are missing, and no issue/fork/PR exists. The original runtime/models/settings are restored and verified.
 
 The [recorder correction](transparent-recorder.md) now preserves backend errors in synthetic native-SDK controls. Vibe Q6’s final turn was confounded by the old recorder masking context400 as502; earlier code failures remain. Real model recovery is untested.

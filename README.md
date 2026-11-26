@@ -1,5 +1,7 @@
 # Llama.cpp and Hermes-Agent Model Notes
 
+[Current Fable Q6 capacity reference](evaluations/2026-11-24-gpu-quant/resource-fable-q6-current-thinking.md) completes all six probes at 98k with all 41 layers on GPU, 11,566 MiB peak and no study swap. All three marker checks are exact; this is capacity evidence. A fresh current-runtime Q6 coding/Gitea run remains next for comparison with the failed Q8 workflow.
+
 [Current-runtime Fable Q8](evaluations/2026-11-24-gpu-quant/native-fable-q8-thinking-cold-beets.md) fails the coding/Gitea workflow in38.68 coding minutes despite fitting all41 layers at98k/14,624MiB GPU. Manual imports regress, cancellation and authored tests fail, command docs are missing, and no issue/fork/PR exists. The original runtime/models/settings are restored and verified.
 
 [Public Fable Q8 capacity](evaluations/2026-11-24-gpu-quant/resource-fable-q8-thinking.md) now fits98k context with all41 layers on GPU at14,624MiB peak and no study swap. The80k-input request completes with cached input;60k retrieval loses a prefix. The completed coding/Gitea run fails; capacity alone was insufficient.

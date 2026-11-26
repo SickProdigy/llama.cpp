@@ -3,7 +3,7 @@
   "known_credential_values_checked": 5,
   "private_receipt_keys_checked": 59,
   "patterns_checked": 58,
-  "payloads_checked": 1679,
+  "payloads_checked": 1744,
   "matching_paths": [],
   "archive_sha256": "3310d556265fd4693f7360393a813f9ce2bff18d227344f7f606f17a950800de",
   "archives_checked": {
@@ -19,6 +19,7 @@
     "resource-adapted-iq4-evidence.tar.gz": "23f2d008c4383531a4d7ec0b45124a9c120b7c12f509ce832dd2a911f6b4b754",
     "resource-fable-q4-evidence.tar.gz": "621a9bf642fc89f24fdf3420c1f773d3f95f9c28b36f1ebbcee14a107aa12dda",
     "resource-fable-q4-thinking-evidence.tar.gz": "8cfad091b4ca1e51f2e88708818030e7e04cafeb8421b53a757bd9f8b9da95c9",
+    "resource-fable-q6-current-thinking-evidence.tar.gz": "1def20982d8d2a7cc1aff6d22557171e98162b27714b7f105a28231344db2d69",
     "resource-fable-q6-evidence.tar.gz": "0ce120c27a0ff024765ba52c69a72d4e69187d6cfa9c152bc700f94ff612c88c",
     "resource-fable-q8-thinking-evidence.tar.gz": "371143fe245ec4f7111979286c4bbf728f8a5d300eb863f4ef23df853cd64bc5",
     "resource-vibe-q4-evidence.tar.gz": "e9bdaa7f4abfaae99e8c5b46d3f194f7e7430e41833f904e23a7df978a516b54",
