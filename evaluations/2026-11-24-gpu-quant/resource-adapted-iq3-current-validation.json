@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "archive_sha256": "0b83bb8c9994d769a33652babcbfc4217a87c57c02effaf4abe0aa1eb9811c9d",
+  "manifest_files": 59,
+  "layouts_observed": 1,
+  "selected_layout": {
+    "context": 98304,
+    "gpu_layers": 99,
+    "ubatch": 64
+  },
+  "completed_probes": 6,
+  "not_coding_or_forge_qualification": true,
+  "summary_SHA256": "8dbb5bc31d997559b7c34ca55fbbfc3c3c7bffede1deb3df7495b9acc2a3e992",
+  "scope": "Saved resource consistency and actual response/history checks, not inference or coding/Gitea qualification",
+  "negative_controls": [
+    {
+      "case": "actual_tool_arguments",
+      "manifest_and_related_capture_fields_recomputed": true,
+      "rejected": true
+    },
+    {
+      "case": "actual_assistant_lineage",
+      "manifest_and_related_capture_fields_recomputed": true,
+      "rejected": true
+    },
+    {
+      "case": "aggregate_host_limit",
+      "manifest_and_related_capture_fields_recomputed": true,
+      "rejected": true
+    }
+  ]
+}

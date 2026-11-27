@@ -148,7 +148,8 @@ python3 evaluations/2026-11-24-gpu-quant/verify_current_iq4_r2_native.py evaluat
 IQ4 does not become a practical workflow recommendation from this sample.
 Earlier correct slower Q4 workflows remain measured overnight-use tradeoffs;
 this slower failed workflow supplies no equivalent correctness benefit. The
-next retained IQ3 current-runtime reference is registered but not launched.
+[retained IQ3 current-runtime reference](resource-adapted-iq3-current.md) now passes
+capacity admission; coding remains untested.
 No new weight download, local quantization, GPU purchase or production model
 replacement is part of this stage. No GPT-5 equivalence or autonomous reliability
 is established.
