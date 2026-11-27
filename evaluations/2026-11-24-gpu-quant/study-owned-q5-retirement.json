@@ -1,0 +1,64 @@
+{
+  "retirement": {
+    "epoch": 1795767728.1688077,
+    "passed": true,
+    "removed_file": "Qwen3.6-14B-A3B-FableVibes-Q5_K_M.gguf",
+    "removed_file_bytes": 9852131840,
+    "full_SHA256_verified_before_removal": "d8fe99004cefb2cf26a1750851acf3cabd53247958e144f88e08beeb36ffbcab",
+    "exact_inode_mtime_size_device_regular_single_link_rechecked": true,
+    "no_other_stage_consumers_at_admission": true,
+    "original30_metadata_unchanged": true,
+    "retained_same_checkpoint_Q4_Q6_preserved": true,
+    "useful_IQ4_metadata_unchanged": true,
+    "remaining_GGUF_files": [
+      "Qwen3.8-27B-hermes-IQ4_XS.gguf"
+    ],
+    "stage_free_before_bytes": 113464889344,
+    "stage_free_after_bytes": 123317211136,
+    "original_free_bytes": 110938615808,
+    "no_generic_prune_or_owner_setting_change": true
+  },
+  "preservation": {
+    "epoch": 1795767795.601881,
+    "passed": true,
+    "all_three_original_runtime_records_unchanged": true,
+    "full_recorded_Codex_state_unchanged": true,
+    "four_owner_profile_hashes_unchanged": true,
+    "original30_metadata_unchanged": true,
+    "useful_staged_IQ4_metadata_unchanged": true,
+    "owner_pending_head_all_tracked_and_ignored_instructions_unchanged": true,
+    "original_alias_context_unchanged": true,
+    "both_reserves_above100GiB": true,
+    "free_GiB": {
+      "/models": 103.31961059570312,
+      "/stage": 114.86771392822266
+    },
+    "no_live_study_job_or_stage_volume_consumer": true
+  },
+  "fresh_identity_audit": {
+    "epoch": 1795767695.5644658,
+    "target": "Qwen3.6-14B-A3B-FableVibes-Q5_K_M.gguf",
+    "volume": "hermes-gpuquant-20261124-model-stage",
+    "bytes": 9852131840,
+    "full_SHA256": "d8fe99004cefb2cf26a1750851acf3cabd53247958e144f88e08beeb36ffbcab",
+    "fingerprint": {
+      "inode": 3982602,
+      "device": 2258,
+      "mode": 33188,
+      "nlink": 1,
+      "bytes": 9852131840,
+      "mtime_ns": 1795759027702252604
+    },
+    "seconds": 39.15280818939209,
+    "read_only_no_file_removed": true
+  },
+  "retention_rationale": "Completed Q5 workflow fails all required phases/publication; no demonstrated correct-workflow advantage over retained same-checkpoint alternatives. This is not a universal Q5 usefulness claim.",
+  "ownership_and_scope": "Task-added pinned Q5 download worker and receipt; not original30. Original retained Q4/Q6 and useful staged IQ4 remain.",
+  "source_SHA256": {
+    "audit_owned_fable_q5_retirement_hash.py": "8bdc8d81fc17711bc0d7ea257aaeb67edaa68073f0f0e05772f458ec41d2285b",
+    "retire_owned_fable_q5_after_hash.py": "26e16e86e1da6241e435c67e6eae28f2c2207970dc4576f5292d7a4864d1ac07",
+    "verify_owned_fable_q5_retirement_preservation.py": "10af198784d3bfc1a2ecc76687b599e7f9d85cc4a079e07616c8a3d22795c861",
+    "download_owned_fable_q5.py": "29dc179831c9eab22a5830f87c0752672a3962bfb8ecb661a0c8e85c31cc0270"
+  },
+  "setup_qualification": "First read-only hash helper matched the file but exited1 on PermissionError saving its own audit receipt. No file removed. A second read-only attempt with DAC_OVERRIDE generated the successful fresh hash receipt before exact unlink. No model/actor/GPU calls."
+}

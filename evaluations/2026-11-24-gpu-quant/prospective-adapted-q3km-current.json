@@ -1,0 +1,33 @@
+{
+  "epoch": 1795767871.2282772,
+  "classification": "Prospective public alternate Q3-family transfer after complete nine-cell audit; not a GPU fit/quality admission",
+  "candidate": {
+    "repo": "netprojects/Qwen3.8-27B-hermes-adapted-GGUF",
+    "revision": "10fdf357f14825c61ad7eb42a932e1f1e4390e8f",
+    "file": "Qwen3.8-27B-hermes-Q3_K_M.gguf",
+    "bytes": 13752764064,
+    "advertised_SHA256": "a0c809f93de2bcd813e1b6fbd5c2d1f692821814a4261a316f7c8bca9cf23248",
+    "file_git_blob_id": "41dea4be62b59d1c3bdde40e5b8424609aabcc18",
+    "source_API": "https://huggingface.co/api/models/netprojects/Qwen3.8-27B-hermes-adapted-GGUF/revision/10fdf357f14825c61ad7eb42a932e1f1e4390e8f?blobs=true"
+  },
+  "retention_dependency": "Exact task-added failed Q5 retired; original30/same-checkpoint retained Q4,Q6/useful staged IQ4 preserved; independent full original runtime/Codex/settings/owner audit passed.",
+  "download_policy": {
+    "global_requested_minimum_free_bytes": 107374182400,
+    "original_minimum_start_free_bytes": 109521666048,
+    "stage_minimum_start_free_after_expected_file_bytes": 109521666048,
+    "original_and_stage_transfer_stop_bytes": 108447924224,
+    "one_transfer_only": true,
+    "no_overwrite_or_silent_resume": true,
+    "original_models_read_only": true
+  },
+  "margin_qualification": "New prospective stage uses2GiB post-file admission/1GiB stop margin above user100GiB floor, rather than the earlier smaller-model5GiB/2GiB margins. Historical protocols/results unchanged. No future GPU/resource admission is implied; shared host growth may abort transfer before completion.",
+  "fresh_free_GiB": {
+    "/models": 103.31961059570312,
+    "/stage": 114.86771392822266
+  },
+  "projected_stage_free_after_expected_file_GiB": 102.05945429205894,
+  "original30_and_useful_IQ4_protected": true,
+  "not_launched": true,
+  "GPU_fit_header_calibration_and_quality_unmeasured": true,
+  "candidate_reason": "Public conventionalQ3_K_M lies between retainedIQ3_XXS andIQ4_XS file sizes. Earlier IQ3, Q4 andIQ4 current workflows failed differently; a public middle variant may differ in quality/runtime, not assumed better or GPU fitting."
+}
