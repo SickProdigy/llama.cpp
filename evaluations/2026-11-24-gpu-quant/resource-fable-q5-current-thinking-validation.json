@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "positive": {
+    "passed": true,
+    "candidate": "fable-q5-current-thinking",
+    "manifest_files": 60,
+    "memory_samples": 76,
+    "completed_probes": 6,
+    "coding_quality_not_validated": true,
+    "archive_sha256": "a6e1ae15826a04283173d0d52d74661abb48619278b3fcaa271b657277e43006"
+  },
+  "negative_controls": [
+    {
+      "case": "wrong_actual_tool_arguments",
+      "manifest_recomputed": true,
+      "rejected": true
+    },
+    {
+      "case": "fabricated_retained_assistant",
+      "manifest_recomputed": true,
+      "rejected": true
+    },
+    {
+      "case": "host_over_8GiB",
+      "manifest_recomputed": true,
+      "rejected": true
+    },
+    {
+      "case": "false_exact_60k_marker_claim",
+      "manifest_recomputed": true,
+      "rejected": true
+    }
+  ],
+  "verifier_SHA256": "9258ad89b18f52468a7f5f4ddd18dc7281181b94276e559030be54da7568d508",
+  "scope": "Saved consistency and actual synthetic assistant/tool lineage only; no inference replay, actual MCP or coding score."
+}

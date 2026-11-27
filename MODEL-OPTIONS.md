@@ -1,5 +1,7 @@
 # Model follow-up options
 
+[Public Fable Q5 capacity](evaluations/2026-11-24-gpu-quant/resource-fable-q5-current-thinking.md) completes all six requests at **98k / 41 of 41 GPU layers / 10,224 MiB peak**, with **333.44 MiB host model buffers** and no study swap. First tool call: **27.07 seconds**. The 60k answer omits its required prefix; the 16k/80k markers are exact. The full downloaded hash, strict original-runtime/settings/models/Codex preservation and exact cleanup pass. Actual coding/Gitea quality remains untested.
+
 [Current retained IQ3 coding/Gitea](evaluations/2026-11-24-gpu-quant/native-adapted-iq3-current-cold-beets.md) fails in **32.50 coding / 36.50 wall minutes** at **98k / 66 of 66 GPU layers / 12,904 MiB peak**, with **521 MiB host model buffers**. A two-assignment rename breaks ordinary timer dispatch; cancellation, new tests, README changes and a PR are absent. All 36 backend calls succeed; the first takes **229.62 seconds**. All three turns end at native repeated-edit safeguards. Existing tests pass while independent source and real Nicotine controls expose the regression. Strict fresh-baseline restoration, owner settings/models and Hermes-Codex preservation pass; the issue is closed. This is a failed workflow duration, not a correct-task speedup.
 
 [Current retained IQ3 capacity](evaluations/2026-11-24-gpu-quant/resource-adapted-iq3-current.md) completes all six probes at **98k / 66 of 66 reported GPU layers / 12,904 MiB peak**, with **521 MiB host model buffers** and no study swap. Exact 16k/60k/80k markers pass; 60k takes **14.51 minutes** with cached input. Original services and this stage's full Codex baseline are restored and verified. The separately completed fresh coding/Gitea workflow fails; capacity is not a quality verdict.
@@ -41,8 +43,8 @@ the same advertised file hash appears at the current `10fdf357` revision.
 A fresh full hash and [current-runtime capacity admission](evaluations/2026-11-24-gpu-quant/resource-adapted-iq3-current.md)
 now pass; its [fresh coding workflow](evaluations/2026-11-24-gpu-quant/native-adapted-iq3-current-cold-beets.md) fails. Its calibration metadata differs from IQ4 (150 chunks /
 `imatrix-calib.txt`, rather than 104 / `calib-train.txt`), so any gain is not
-precision-only evidence. The prospective public Fable Q5 remains undownloaded;
-new transfers require fresh disk admission. No useful retained weight was removed
+precision-only evidence. The public Fable Q5 now passes [current capacity admission](evaluations/2026-11-24-gpu-quant/resource-fable-q5-current-thinking.md), with one exact-marker failure; coding remains pending.
+New transfers require fresh disk admission. No useful retained weight was removed
 for this completed retry, and no local quantization or GPU purchase occurred.
 
 ## November26: public Q8 capacity follow-up
@@ -62,8 +64,8 @@ input probes with16,384 output headroom. No implicit CPU layer fallback.
 Its bounded header matches the retained Fable Q4/Q6 tensor names/dimensions and
 chat template. None records imatrix metadata; that absence does not prove the
 same calibration. Q8 tensor production differs from the K quants. The advertised
-262,144 model context is not a measured GPU fit. Q5 remains a public intermediate;
-Q8 is chosen first to test a larger precision step, without assuming improvement.
+262,144 model context is not a measured GPU fit. Q5 now completes the [current capacity stage](evaluations/2026-11-24-gpu-quant/resource-fable-q5-current-thinking.md), with coding pending;
+Q8 was chosen first to test a larger precision step, without assuming improvement.
 The Vibe Q6 overflow also requires a separate prospective context-handling control
 before another long actor run; existing lifecycle defects precede that overflow.
 
@@ -79,10 +81,10 @@ fits Q4 at98k/10,162MiB, but no complete-workflow precision gain is established.
 
 ## November 24: GPU-resident quantization goal active
 
-The next [registered comparison](evaluations/2026-11-24-gpu-quant/plan.md) prioritizes
+The [registered comparison](evaluations/2026-11-24-gpu-quant/plan.md) prioritizes
 practical GPU residency at 98,304 context, with correctness and turn/total latency
-reported together. Start with retained FableVibes Q4/Q6 and VibeForged v2 Q4/Q6;
-public Fable Q5 is a possible intermediate after these files. Public pins and
+reported together. It started with retained FableVibes Q4/Q6 and VibeForged v2 Q4/Q6;
+public Fable Q5 now completes capacity admission; its fresh coding trial remains pending. Public pins and
 capacity exclusions are recorded before new scored runs.
 
 Fable Q6 completes the first short/tool-history, 16k and 60k-input capacity
