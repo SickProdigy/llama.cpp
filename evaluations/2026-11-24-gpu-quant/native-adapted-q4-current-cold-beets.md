@@ -121,4 +121,4 @@ reference. Same-object `loaded_notification()` reactivation is supplementary API
 stress, not direct proof of normal GUI behavior. Registered grader results remain
 unchanged; report their cases separately. Q4's missing command registration and
 unguarded dispatched/waiting workers do not depend on the generation-collision
-case. Additional isolated real-handler controls are prepared, not yet executed.
+case. The [later isolated real-handler controls](native-adapted-iq4-current-r2-cold-beets.md) are now executed against this same actual published source: the fresh-instance timer case passes, while old dispatched/waiting imports still run after disable and the cancel command is absent. Baseline behavior matches expectations and the reference passes all four cases. This uses the real Nicotine+3.3.11 PluginHandler with fake worker/import boundaries, without GUI/media or new model calls; original grades remain unchanged.

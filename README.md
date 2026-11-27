@@ -1,14 +1,16 @@
 # Llama.cpp and Hermes-Agent Model Notes
 
-[Owned Q8 retirement](evaluations/2026-11-24-gpu-quant/study-owned-q8-retirement.md) recovers staging headroom to **117.45 GiB free**. Only the failed task-added Q8 file was removed after a fresh full-hash/ownership check; original30 models and useful IQ4 are preserved. A new IQ4 attempt still requires fresh admission and state.
+[Fresh current IQ4 retry](evaluations/2026-11-24-gpu-quant/native-adapted-iq4-current-r2-cold-beets.md) fits 98k with explicit host spillover but fails the published workflow in **110.58 coding / 114.69 wall minutes**. All 67 backend requests complete; actual issue/fork/PR succeed, but ordinary import dispatch breaks, cancel is absent and no new tests are published. Compression plus the first resumed request costs **30.83 minutes**. Original model settings and owner edits are verified. Hermes-Codex's start timestamp changed for an unknown reason, so its full-state preservation check failed. Retained IQ3 is the next registered reference, not yet run.
 
-[Current IQ4 native attempt](evaluations/2026-11-24-gpu-quant/native-adapted-iq4-current-interrupted.md) was interrupted by the 100 GiB staging-disk safeguard after 14 successful requests. Memory remained within budget; no coding turn finished and **no quality verdict is assigned**. Actual upstream issue/personal fork/three commits are verified, but no PR. Original runtime/models/settings are restored, the issue is closed, and exact owned cleanup passes. A fresh trial needs more disk headroom.
+[Owned Q8 retirement](evaluations/2026-11-24-gpu-quant/study-owned-q8-retirement.md) recovered staging headroom to **117.45 GiB free**. Only the failed task-added Q8 file was removed after a fresh full-hash/ownership check; original30 models and useful IQ4 are preserved. That historical retirement funded the fresh retry; see its report for the later reserve.
+
+[First current IQ4 native attempt](evaluations/2026-11-24-gpu-quant/native-adapted-iq4-current-interrupted.md) was interrupted by the 100 GiB staging-disk safeguard after 14 successful requests. Memory remained within budget; no coding turn finished and **no quality verdict is assigned**. Actual upstream issue/personal fork/three commits are verified, but no PR. Original runtime/models/settings are restored, the issue is closed, and exact owned cleanup passes. That first attempt remains unscored; the separately admitted fresh retry is now complete.
 
 
-[Current adapted 27B IQ4_XS capacity](evaluations/2026-11-24-gpu-quant/resource-adapted-iq4-current.md) passes all six probes at 98k with 63/66 GPU layers and explicit CPU spillover: **15,926 MiB GPU / 1,250.63 MiB host model buffers**, no observed study swap. All-GPU and 65-layer layouts hit CUDA allocation errors. Exact 60k/80k markers return in 13.40/7.13 minutes with cached input. Original runtime/models/settings are restored and exact owned cleanup verified. The first coding attempt was interrupted by the disk reserve guard; quality remains unjudged.
+[Current adapted 27B IQ4_XS capacity](evaluations/2026-11-24-gpu-quant/resource-adapted-iq4-current.md) passes all six probes at 98k with 63/66 GPU layers and explicit CPU spillover: **15,926 MiB GPU / 1,250.63 MiB host model buffers**, no observed study swap. All-GPU and 65-layer layouts hit CUDA allocation errors. Exact 60k/80k markers return in 13.40/7.13 minutes with cached input. Original runtime/models/settings are restored and exact owned cleanup verified. The first coding attempt was interrupted without a quality score; the separately admitted fresh retry fails the published workflow.
 
 
-[Current adapted 27B Q4 coding/Gitea](evaluations/2026-11-24-gpu-quant/native-adapted-q4-current-cold-beets.md) completes actual issue/fork/PR publication but fails lifecycle, command registration, cancellation and documentation correctness in **84.12 coding minutes / 88.46 wall minutes**. All 37 requests complete without backend errors; 15,456 MiB GPU plus explicit CPU spillover. Original runtime/models/settings are restored. Current-runtime retained IQ4_XS capacity passes; its first coding attempt was interrupted by the disk reserve guard, without a quality verdict.
+[Current adapted 27B Q4 coding/Gitea](evaluations/2026-11-24-gpu-quant/native-adapted-q4-current-cold-beets.md) completes actual issue/fork/PR publication but fails lifecycle, command registration, cancellation and documentation correctness in **84.12 coding minutes / 88.46 wall minutes**. All 37 requests complete without backend errors; 15,456 MiB GPU plus explicit CPU spillover. Original runtime/models/settings are restored. Current-runtime IQ4_XS capacity passes, but its fresh coding retry also fails; the earlier disk interruption remains unscored.
 
 
 [Current adapted 27B Q4 capacity](evaluations/2026-11-24-gpu-quant/resource-adapted-q4-current.md) completes all six probes at 98k with 56/66 GPU layers and explicit CPU spillover: 15,456 MiB GPU, about 2.9 GiB host model buffers, no study swap. All-GPU allocation fails; 60k input takes 11.06 minutes. The completed current-runtime coding/Gitea run publishes but fails behavior; see the result above.
@@ -26,7 +28,7 @@ The [current-runtime Vibe Q4 reasoning run](evaluations/2026-11-24-gpu-quant/nat
 
 
 The [GPU-resident quantization comparison](evaluations/2026-11-24-gpu-quant/matrix.md)
-is in progress (updated November26). Q4/Q6 capacity is measured separately from
+is in progress (updated November27). Q4/Q6 capacity is measured separately from
 real coding/Gitea success. Neither [cold Fable Q4](evaluations/2026-11-24-gpu-quant/native-fable-q4-thinking-cold-beets.md)
 nor [cold Q6](evaluations/2026-11-24-gpu-quant/native-fable-q6-thinking-cold-beets.md)
 reasoning completes the workflow: Q4 leaves an unloadable plugin in22.24 coding

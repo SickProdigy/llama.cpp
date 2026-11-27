@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "archive_SHA256": "616c8702ac213aad109601c532a3834779e9e7de993df5781c4c8f281385abcb",
+  "manifest_files": 42,
+  "whole_workflow_pass": false,
+  "scope": "Saved measurement/hash/source consistency plus tamper-rejection controls; no model/behavior replay or quality pass.",
+  "summary_SHA256": "5a54bedddfbe3e14cfc07ef18944c9ed9d3f829447508ca3f9f4a4801b0d430e",
+  "negative_controls": [
+    {
+      "case": "host_budget",
+      "manifest_recomputed": true,
+      "rejected": true
+    },
+    {
+      "case": "strict_preservation",
+      "manifest_recomputed": true,
+      "rejected": true
+    },
+    {
+      "case": "published_source_index",
+      "manifest_recomputed": true,
+      "rejected": true
+    }
+  ]
+}

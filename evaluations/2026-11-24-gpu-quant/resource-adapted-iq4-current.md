@@ -1,6 +1,6 @@
 # Current adapted 27B IQ4_XS: 98k capacity passes with limited CPU spillover
 
-The subsequent [native attempt](native-adapted-iq4-current-interrupted.md) was interrupted by the shared staging-disk reserve guard. Capacity remains measured; current coding quality has no verdict.
+The first [native attempt](native-adapted-iq4-current-interrupted.md) was interrupted by the staging-disk reserve guard without a quality verdict. The separate [fresh retry](native-adapted-iq4-current-r2-cold-beets.md) now completes and fails the published workflow. Capacity remains measured independently of coding correctness.
 
 November 27: the retained public IQ4_XS completes all six current-runtime probes
 at **98,304 context / 63 of 66 reported layers on GPU / ubatch 64**. All-GPU
