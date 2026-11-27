@@ -1,13 +1,13 @@
 """Normalize delivered results without upgrading checks into behavior verdicts.
 
 This reads completed public reports only; it neither reads nor modifies a live
-actor. All included IQ3 and Q5 stages are independently audited and delivered.
+actor. All included cells are independently audited; the Q3_K_M delivery is finalized with this update.
 """
 from pathlib import Path
 import hashlib,json,math,time,datetime
 E=Path(__file__).resolve().parent
 R=E.parent.parent
-candidates=['adapted-q4-current','adapted-iq4-current-r2','adapted-iq3-current','fable-q4-current-thinking','fable-q5-current-thinking','fable-q6-current-thinking','fable-q8-thinking','vibe-q4-thinking','vibe-q6-thinking']
+candidates=['adapted-q4-current','adapted-iq4-current-r2','adapted-iq3-current','adapted-q3km-current','fable-q4-current-thinking','fable-q5-current-thinking','fable-q6-current-thinking','fable-q8-thinking','vibe-q4-thinking','vibe-q6-thinking']
 rows=[]
 for candidate in candidates:
  p=E/('native-'+candidate+'-cold-beets-summary.json')
@@ -57,10 +57,10 @@ for observed in timing_data['observations']:
  row['supervisor_wall_minutes']=minutes
  row['wall_observation_source']=str(timing_source.relative_to(R))
  row['wall_observation_source_SHA256']=hashlib.sha256(timing_source.read_bytes()).hexdigest()
-out={'scope':'Only already delivered completed current-runtime Beets workflows; IQ3 and Q5 included after independent audit/delivery. Three dependent turns constitute one workflow per cell, not three independent trials.','rows':rows,'paired_comparison_qualifications':{
+out={'scope':'Only already delivered completed current-runtime Beets workflows; IQ3, Q5 and Q3_K_M included after independent source/behavior/publication audits. Three dependent turns constitute one workflow per cell, not three independent trials.','rows':rows,'paired_comparison_qualifications':{
  'Fable Q4/Q5/Q6/Q8':'Same current evaluator/backend/transparent recorder, reasoning sampler and context; none of these four full workflows passes. Single observations, not precision-only causality or reliability.',
  'Vibe Q4/Q6':'Both use the earlier recorder; Q6 final context400 was masked as502. Earlier independent code failures remain; final feature score is confounded.',
- 'Adapted IQ3/Q4/IQ4':'Same current evaluator/backend/transparent recorder and nonthinking sampler/caps. Quant production/calibration, measured layer placement/host spillover and ubatch differ. IQ4 full Codex-state check failed on a start timestamp change of unknown cause; its qualified restoration is retained.',
+ 'Adapted IQ3/Q3_K_M/Q4/IQ4':'Same current evaluator/backend/transparent recorder and nonthinking sampler/caps. Q3_K_M actual initial33schemas/seed/caps match IQ3/IQ4; its published worker is unchanged and rejected proposals also fail preserved normal-import behavior. Quant production/calibration, measured layer placement/host spillover and ubatch differ. IQ4 full Codex-state check failed on a start timestamp change of unknown cause; its qualified restoration is retained.',
  },'missing_values':'null means not present in the supplied public summary, never an assumed zero or successful check.','interpretation':'No runtime, test, publication or capacity check alone is a correctness verdict. Manual source/behavior/docs/claims findings remain in each linked delivered report. No GPT5 equivalence or autonomous reliability claim.','source_code_SHA256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest()}
 (E/'completed-current-quant-comparison.json').write_text(json.dumps(out,indent=2)+'\n')
 print(json.dumps({'completed_cells_normalized':len(rows),'turn_sums_verified':True,'pending_cells_not_scored':True,'results':[{'candidate':r['candidate'],'workflow_pass':r['whole_workflow_pass'],'turn_minutes':[round(n,2)for n in r['turn_minutes']],'coding_minutes':round(r['total_coding_minutes'],2)}for r in rows]}))

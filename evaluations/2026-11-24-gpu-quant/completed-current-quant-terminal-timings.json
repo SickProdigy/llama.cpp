@@ -92,6 +92,31 @@
       "supervisor_wall_minutes": 67.35376241666667,
       "coding_minutes": 64.03410610263333,
       "scope": "Captured terminal Docker StartedAt-to-FinishedAt; not live reinspection of removed container or an isolated inference benchmark."
+    },
+    {
+      "candidate": "adapted-q3km-current",
+      "container_id": "7b1980a900f313865ae8c34875b48ac3adff28cca4c09e3c1ef2db35474c0a8e",
+      "terminal_source_file": "cold-current-adapted-q3km-terminal-supervisor.json",
+      "terminal_source_SHA256": "2a2aff96e1b85f841e075f6a04d5fecd118322618c7d0e14bd3c076b220e3d21",
+      "matching_recorded_launch_receipts": [
+        {
+          "file": "native-adapted-q3km-current-cold-20261127-supervisor.json",
+          "SHA256": "47613139a95b4aaa15f9f8a9df285aec21c6d36aa0feccd5ec76669c54166e10",
+          "id": "7b1980a900f313865ae8c34875b48ac3adff28cca4c09e3c1ef2db35474c0a8e",
+          "name": "hermes-gpuquant-adapted-q3km-current-cold-20261127-beets-supervisor"
+        }
+      ],
+      "terminal_state": {
+        "Status": "exited",
+        "Running": false,
+        "ExitCode": 0,
+        "OOMKilled": false,
+        "StartedAt": "2026-11-27T09:30:16.574216819Z",
+        "FinishedAt": "2026-11-27T10:22:25.943894707Z"
+      },
+      "supervisor_wall_minutes": 52.1561613,
+      "coding_minutes": 48.00786698414983,
+      "scope": "Captured terminal Docker StartedAt-to-FinishedAt; not live reinspection of removed container or an isolated inference benchmark."
     }
   ],
   "scope": "Curated numeric/identity terminal observations; credentials/config/mounts/actor content excluded. IDs match recorded launch receipts. Historical behavior/transport/restoration qualifications remain."

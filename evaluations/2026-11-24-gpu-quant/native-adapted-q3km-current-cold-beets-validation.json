@@ -1,0 +1,54 @@
+{
+  "passed": true,
+  "positive": {
+    "passed": true,
+    "archive_SHA256": "e7a61cce549bf683cde3d1e78780a9702761dedf76525c99b51d56d196f4140a",
+    "manifest_files": 186,
+    "whole_workflow_pass": false,
+    "scope": "Saved measurements, source consistency and qualified observations only; not inference, live remote authentication, private signature verification, full behavior-grader replay or autonomous reliability."
+  },
+  "negative_controls": [
+    {
+      "case": "fabricated_workflow_pass",
+      "manifest_recomputed": true,
+      "rejected": true
+    },
+    {
+      "case": "consistent_host_over8GiB",
+      "manifest_recomputed": true,
+      "rejected": true
+    },
+    {
+      "case": "altered_published_worker",
+      "manifest_recomputed": true,
+      "rejected": true
+    },
+    {
+      "case": "false_issue_closure",
+      "manifest_recomputed": true,
+      "rejected": true
+    },
+    {
+      "case": "false_Codex_preservation",
+      "manifest_recomputed": true,
+      "rejected": true
+    },
+    {
+      "case": "fabricated_proposal_success",
+      "manifest_recomputed": true,
+      "rejected": true
+    },
+    {
+      "case": "generated_closing_claim",
+      "manifest_recomputed": true,
+      "rejected": true
+    },
+    {
+      "case": "altered_literal_user_task",
+      "manifest_recomputed": true,
+      "rejected": true
+    }
+  ],
+  "verifier_SHA256": "faa28c2da915628e2ba82bb4901b4a40ac679c8f08649f52e942dbd1f9253e03",
+  "scope": "Saved source/measurement consistency; not new inference, behavior-grader replay or independent remote authentication."
+}

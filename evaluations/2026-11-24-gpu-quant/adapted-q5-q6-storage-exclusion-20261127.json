@@ -1,0 +1,46 @@
+{
+  "epoch": 1795772752.0751274,
+  "classification": "Measured storage admission exclusion for new public adapted Q5/Q6 transfers, not a GPU fit or model quality failure",
+  "source_API": "https://huggingface.co/api/models/netprojects/Qwen3.8-27B-hermes-adapted-GGUF/revision/10fdf357f14825c61ad7eb42a932e1f1e4390e8f?blobs=true",
+  "API_body_SHA256": "c126e98423b7349fe9b84691628e00c02a4317e804b8755bb2ddb1c1d7930133",
+  "actual_sample_epoch": 1795772750.8998566,
+  "original_free_bytes": 110859739136,
+  "stage_free_bytes": 109522882560,
+  "actual_sample_count": 83,
+  "sampled_study_swap_bytes": 0,
+  "user_floor_bytes": 107374182400,
+  "protected": "All original30/useful stagedIQ4/current in-use Q3 weights and owner services/settings; no deletion performed or authorized by this audit",
+  "Q3_hypothetical_reclaim_bytes": 13752764064,
+  "candidates": [
+    {
+      "repo": "netprojects/Qwen3.8-27B-hermes-adapted-GGUF",
+      "revision": "10fdf357f14825c61ad7eb42a932e1f1e4390e8f",
+      "file": "Qwen3.8-27B-hermes-Q5_K_M.gguf",
+      "bytes": 19535701664,
+      "sha256": "5a1f384eeb456d90fcc4c8dae9be80b883ed16fbf36eb15ebdc1d861b2b68bba",
+      "blobId": "4e947ffcaae6b7c51703543e028d62ce97879f64",
+      "projected_stage_free_if_downloaded_now_bytes": 89987180896,
+      "projected_original_free_if_downloaded_now_bytes": 91324037472,
+      "hypothetical_stage_free_after_retiring_only_Q3_then_download_bytes": 103739944960,
+      "fails_100GiB_transfer_reserve_even_after_hypothetical_Q3_only_retirement": true
+    },
+    {
+      "repo": "netprojects/Qwen3.8-27B-hermes-adapted-GGUF",
+      "revision": "10fdf357f14825c61ad7eb42a932e1f1e4390e8f",
+      "file": "Qwen3.8-27B-hermes-Q6_K.gguf",
+      "bytes": 22431000000,
+      "sha256": "ffe8ac1a889f27ad99f4b6075f3b9a5fa37c2257d51bebb1b342f08dd61ee5c7",
+      "blobId": "4f8440742a61fbd5bc574988d8d08b46757e1606",
+      "projected_stage_free_if_downloaded_now_bytes": 87091882560,
+      "projected_original_free_if_downloaded_now_bytes": 88428739136,
+      "hypothetical_stage_free_after_retiring_only_Q3_then_download_bytes": 100844646624,
+      "fails_100GiB_transfer_reserve_even_after_hypothetical_Q3_only_retirement": true
+    }
+  ],
+  "limitations": [
+    "Disk free observations are time-specific and can drift.",
+    "Hypothetical Q3 reclaim is arithmetic only: current Q3 quality is unscored and it is actively in use; no retirement decision made.",
+    "Do not infer all-GPU impossibility or viable CPU-offload capacity from model-file size. GPU/context/host-memory placement is unmeasured for these higher adapted quants.",
+    "Restoring adequate storage would remove this transfer exclusion but still require preregistered capacity and quality tests."
+  ]
+}

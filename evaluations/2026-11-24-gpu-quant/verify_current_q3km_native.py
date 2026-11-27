@@ -1,0 +1,48 @@
+"""Verify saved Q3_K_M observations/source consistency; no inference or grader replay."""
+from pathlib import Path,PurePosixPath
+import ast,datetime,hashlib,json,sys,tarfile
+p=Path(sys.argv[1]);files={};sha=lambda b:hashlib.sha256(b).hexdigest()
+with tarfile.open(p)as t:
+ for m in t:
+  n=PurePosixPath(m.name);assert m.isfile()and not n.is_absolute()and'..'not in n.parts and m.name not in files and m.size<2*1024**2
+  files[m.name]=t.extractfile(m).read()
+assert sum(map(len,files.values()))<12*1024**2
+read=lambda n:json.loads(files[n]);manifest=read('manifest.json');assert set(files)==set(manifest)|{'manifest.json'}
+for n,h in manifest.items():assert sha(files[n])==h,n
+s=read('summary.json');assert s['candidate']=='adapted-q3km-current';pin=s['public_pin'];assert pin['revision']=='10fdf357f14825c61ad7eb42a932e1f1e4390e8f'and pin['repo']=='netprojects/Qwen3.8-27B-hermes-adapted-GGUF';assert s['model']['file']==pin['file']=='Qwen3.8-27B-hermes-Q3_K_M.gguf'and s['model']['sha256']==pin['sha256']=='a0c809f93de2bcd813e1b6fbd5c2d1f692821814a4261a316f7c8bca9cf23248'and s['model']['bytes']==pin['expected_bytes']==13752764064
+assert s['runtime_images']=={'Hermes':'sha256:c9b40eb8dea441cba7ded2e6589e5c011545ffc1ec76a0dc736f8e399d8f947b','llama.cpp':'sha256:fee4289628e7ba09f6fbf62d6ce4325aebb2531ffde2154d41276fe4acc58da3'}
+phases=read('observations/phases.json');rows=read('observations/memory.json');metrics=read('observations/request-metrics.json');assert not s['whole_workflow_pass']and phases==s['phases']and len(phases)==3;assert abs(sum(x['coding_seconds']for x in phases)/60-s['coding_minutes'])<1e-9
+assert all(x['CLI_exit']==0 and not x['external_timeout']and x['project_exit']==x['original_exit']==0 and x['independent_exit']==1 for x in phases)
+tasks=read('observations/literal-user-tasks.json');assert len(tasks)==3 and all(sha(q.encode())==phase['query_sha256']for q,phase in zip(tasks,phases))
+assert len(rows)==s['resource']['samples']==287 and not any(r.get('budget_guard_triggered')or'measurement_error'in r for r in rows)
+for field,target in [('total_cgroup_bytes','peak_aggregate_cgroup_bytes'),('total_process_pss_bytes','peak_process_PSS_bytes')]:assert max(r[field]for r in rows)==s['resource'][target]<=8*1024**3
+assert max(r['total_cgroup_swap_bytes']for r in rows)==s['resource']['peak_study_swap_bytes']==0
+for field,target in [('model_disk_free_bytes','minimum_disk_free_bytes'),('staging_disk_free_bytes','minimum_staging_free_bytes')]:assert min(r[field]for r in rows)==s['resource'][target]>=101*1024**3
+assert max(int(r['gpu_csv'].split(',')[0])for r in rows if r.get('gpu_csv','').split(',')[0].isdigit())==s['resource']['peak_GPU_MiB']==14920
+assert len(metrics)==len({m['id']for m in metrics})==54;assert all(m.get('usage')and m['tools_exposed']and not m.get('transport_error')and not m.get('backend_http_status')and'length'not in m['finish_reasons']and m['usage']['total_tokens']<=98304 and m['usage']['prompt_tokens']+8192<98304 for m in metrics)
+assert max(m['usage']['prompt_tokens']for m in metrics)==s['runtime_audit']['largest_completed_prompt']==59788;assert not s['runtime_audit']['auxiliary']and all(s['runtime_audit']['all_user_tasks_literal_in_final_main_request'])
+assert s['settings']['context']==98304 and s['settings']['layout']=={'context':98304,'gpu_layers':99,'ubatch':64}and s['settings']['main_output_cap']==s['settings']['auxiliary_output_cap']==8192
+state=read('observations/terminal-state.json');dt=lambda v:datetime.datetime.fromisoformat(v.replace('Z','+00:00'));assert state['Status']=='exited'and not state['Running']and not state['OOMKilled']and state['ExitCode']==0;assert abs((dt(state['FinishedAt'])-dt(state['StartedAt'])).total_seconds()/60-s['supervisor_wall_minutes'])<1e-9
+encoded=lambda x:json.dumps(x,sort_keys=True,ensure_ascii=False,separators=(',',':'),allow_nan=False).encode();digest=lambda x:sha(encoded(x));indices={}
+for label in ['baseline','phase0','phase1','phase2']:
+ index=read('published/'+label+'/index.json');indices[label]=index;assert len(index)==40;prefix='published/'+label+'/';assert set(n[len(prefix):]for n in files if n.startswith(prefix))==set(index)|{'index.json'}
+ for n,h in index.items():assert sha(files[prefix+n])==h
+base=files['published/baseline/beetsbridge/__init__.py'];expected=base.replace(b'self._generation = 0\n',b'self._generation = 0\n        self._activation_generation = 0\n').replace(b'self._stopping = False\n        state =',b'self._stopping = False\n        with self._lock:\n            self._activation_generation = self._generation\n        state =');assert expected!=base
+for i in range(3):
+ label='phase'+str(i);index=indices[label];assert digest(index)==phases[i]['source_digest'];assert files['published/'+label+'/beetsbridge/__init__.py']==expected
+ assert files['published/'+label+'/tests/test_beetsbridge.py']==files['published/baseline/tests/test_beetsbridge.py'];assert phases[i]['local_changed_paths']==[]and phases[i]['local_source_digest']==digest(indices['baseline'])
+ changed=sorted(n for n,h in index.items()if indices['baseline'].get(n)!=h);assert changed==phases[i]['changed_paths'];assert changed==(['beetsbridge/__init__.py']if i==0 else['beetsbridge/README.md','beetsbridge/__init__.py'])
+assert indices['phase1']==indices['phase2']and len({x['captured_remote_head']for x in phases})==3
+methods=lambda text:{n.name:ast.dump(n,include_attributes=False)for c in ast.parse(text).body if isinstance(c,ast.ClassDef)and c.name=='Plugin'for n in c.body if isinstance(n,ast.FunctionDef)};old=methods(base);new=methods(expected);unchanged=[n for n in old if old[n]==new.get(n)];assert len(unchanged)==13 and set(old)-set(unchanged)=={'__init__','loaded_notification'};assert s['findings']['actual_module_delta']['unchanged_original_methods']==unchanged;assert b'beetscancel'not in expected
+assert len(read('observations/frozen-source-bindings.json'))==s['frozen_code_files_verified']==137
+forge=read('observations/independent-final-forge.json');proof=forge['final_private_fork_source_proof'];pub=s['publication'];assert forge['actor_fork_GET_status']==200 and forge['actor_fork_is_fork']and forge['actor_fork_parent_id']==34358;assert forge['upstream_baseline_blobs_verified']==proof['all_actual_remote_blobs_verified']==40;assert proof['actual_blob_SHA256']==indices['phase2']and proof['head']==pub['head_SHA']==phases[2]['captured_remote_head'];assert not forge['pull_requests']and pub['PR']is None and pub['published_authored_tests']==0 and pub['README_changed']and pub['phase1_phase2_source_identical'];assert forge['explicit_observed_issues']==[{'number':1,'state':'closed','creator':'hermes-agent','explicit_single_issue_GET':True}]
+connected=read('observations/connected-final-forge.json');assert connected['upstream_issue_single_GET']['state']=='closed'and connected['upstream_issue_single_GET']['creator']=='hermes-agent';assert connected['personal_fork_branch_list']['not_fork_absence_proof']and connected['forge_mutations']==0
+assert pub['issue_closed_single_get_verified']and s['strict_runtime_restored']and s['preservation']['codex_entire_snapshot_unchanged']and s['preservation']['both_staged_models_metadata_unchanged']and s['owner_preservation']['passed']and s['cleanup']['passed']
+controls=read('audits/real-nicotine-controls.json')['results'];assert [x['passed']for x in controls[0]['results']]==[True,False,False,False];assert all(x['passed']for x in controls[1]['results']);assert [x['passed']for x in controls[-1]['results']]==[True,False,False,False]and controls[-1]['plugin_source_SHA256']==sha(expected)
+end=read('audits/native-endings-and-claims.json');assert [x['reported_failure_count']for x in end['phases']]==[8,8,8];assert end['phases']==s['native_endings'];assert all(x['native_end_reason']=='repeated edit failure guard'and not x['generated_final_model_answer']for x in end['phases']);assert end['gateway_edit_records']['attempted']==38 and end['gateway_edit_records']['rejected']==30 and end['gateway_edit_records']['accepted']==8;assert not end['ordinary_gate_qualification']['private_heldout_grade_or_corrective_hint_fed_to_actor']and end['ordinary_gate_qualification']['test_paths_permitted'];assert sha(end['issue_claim']['body'].encode())==end['issue_claim']['body_SHA256']
+proposal=read('audits/rejected-proposal-controls.json');assert proposal['registration']['posthoc']and proposal['no_model_rerun_no_source_patch_no_actor_feedback'];prows=proposal['results'];assert len(prows)==2
+for r in prows:assert sha(files['curated-unpublished-proposals/'+r['label']+'/beetsbridge/__init__.py'])==r['source_module_SHA256']==r['plugin_source_SHA256']
+assert [x['passed']for x in prows[0]['results']]==[False,False,True,False]and '"new_import_count": 0'in prows[0]['results'][1]['error'];assert 'missing 2 required positional arguments'in prows[1]['results'][0]['error'];assert not any(x['passed']for x in prows[1]['results'])
+initial=read('audits/initial-request-controls.json');assert initial['passed']and initial['all_initial_tool_schemas_identical']and initial['all_selected_request_controls_identical'];assert len({r['tool_schema_SHA256']for r in initial['rows']})==1
+for r in initial['rows']:assert r['controls']['max_tokens']==8192 and r['controls']['temperature']==.8 and r['controls']['seed']==20261124 and r['tool_schema_count']==33
+print(json.dumps({'passed':True,'archive_SHA256':sha(p.read_bytes()),'manifest_files':len(manifest),'whole_workflow_pass':False,'scope':'Saved measurements, source consistency and qualified observations only; not inference, live remote authentication, private signature verification, full behavior-grader replay or autonomous reliability.'}))

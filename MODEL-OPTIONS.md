@@ -1,14 +1,16 @@
 # Model follow-up options
 
-[Current public adapted27B Q3_K_M capacity](evaluations/2026-11-24-gpu-quant/resource-adapted-q3km-current.md) completes the registered probes at **98,304 context / 66 of66 reported GPU layers / 14,920MiB sampled peak**. Synthetic markers: 16000 exact, 60000 exact, 80000 exact. No study swap or guard events; strict original runtime/settings/model/pending-work/full Codex preservation and exact cleanup pass. **Fresh native coding/Gitea quality remains untested**; the nine completed current workflows still have no full pass. Production is unchanged.
+[Current public adapted 27B Q3_K_M coding/Gitea](evaluations/2026-11-24-gpu-quant/native-adapted-q3km-current-cold-beets.md) **fails in 48.01 coding / 52.16 wall minutes**, despite 98k context, 66/66 reported GPU layers and 54 successful backend calls. It opens an issue and personal fork, but leaves worker behavior unchanged, adds inaccurate documentation and no cancellation/tests/PR. All three turns stop at native edit safeguards. Strict original runtime/settings/models/pending-work/full Codex preservation and exact cleanup pass; the issue is confirmed closed.
 
-[Study-added failed Fable Q5 retired](evaluations/2026-11-24-gpu-quant/study-owned-q5-retirement.md) after fresh full-hash/ownership/reference checks. Original30, retained Fable Q4/Q6, useful staged IQ4, owner settings/pending work and full Codex state are unchanged. Staging114.87GiB/original103.32GiB observed. [Public adapted Q3_K_M](evaluations/2026-11-24-gpu-quant/prospective-adapted-q3km-current.json) is prospectively selected with102GiB post-file admission/101GiB transfer-stop floors, above the user100GiB reserve; At that earlier selection point, GPU fit/quality were untested; the current capacity result is linked above.
+[Q3_K_M capacity](evaluations/2026-11-24-gpu-quant/resource-adapted-q3km-current.md) completes all six probes at 98,304 context / 66 of 66 reported GPU layers / 14,920 MiB sampled peak, plus 521 MiB host model buffers. Tool history and exact 16k/60k/80k markers pass. The separately completed coding workflow fails; capacity is not a quality verdict.
+
+[Study-added failed Fable Q5 retired](evaluations/2026-11-24-gpu-quant/study-owned-q5-retirement.md) after fresh full-hash/ownership/reference checks. Original30, retained Fable Q4/Q6, useful staged IQ4, owner settings/pending work and full Codex state are unchanged. Staging114.87GiB/original103.32GiB observed. [Public adapted Q3_K_M](evaluations/2026-11-24-gpu-quant/prospective-adapted-q3km-current.json) is prospectively selected with102GiB post-file admission/101GiB transfer-stop floors, above the user100GiB reserve. At that earlier selection point, GPU fit/quality were untested; the current capacity result is linked above.
 
 [Matched current Fable Q4 coding/Gitea](evaluations/2026-11-24-gpu-quant/native-fable-q4-current-thinking-cold-beets.md) **fails in34.37 coding /37.77 wall minutes** at98k/41 of41GPU/**8,964MiB peak**. First backend call67.35s; all115 requests complete. Project/original tests pass, but waiting-work lifecycle/cancellation remain wrong, no issue/fork/PR exists and the final turn reaches the native iteration cap. Full strict restoration/Codex preservation and exact cleanup pass. All four current Fable quants now have completed workflow failures.
 
 [Current retained Fable Q4 capacity](evaluations/2026-11-24-gpu-quant/resource-fable-q4-current-thinking.md) completes six requests at98k/41 of41 GPU layers/**8,964MiB peak**, with272.81MiB host model buffers and no study swap. First tool call27.34s; actual short tool history is correct.16k exact marker fails,60k/80k pass. Strict original runtime/settings/models/full Codex preservation and exact cleanup pass. The separately completed matched current coding/Gitea workflow fails; older Q4 coding used an older evaluator.
 
-[Consolidated current quant comparison](evaluations/2026-11-24-gpu-quant/completed-current-quant-comparison.md): nine completed workflows, no full pass. Current Fable Q4/Q5/Q6/Q8 establish no successful precision upgrade; older-evaluator evidence remains separate. Original default remains VibeForged Q4.
+[Consolidated current quant comparison](evaluations/2026-11-24-gpu-quant/completed-current-quant-comparison.md): **ten completed workflows, no full pass**. No tested precision upgrade qualifies for the requested unattended workflow. The original VibeForged Q4 configuration is retained as a hold decision, not a reliability claim. Earlier correct slow workflows remain measured overnight tradeoffs. [Storage exclusions and untested alternatives](evaluations/2026-11-24-gpu-quant/adapted-q5-q6-storage-exclusion-20261127.md) distinguish measured transfer limits from unmeasured GPU fit.
 
 [Current Fable Q5 coding/Gitea](evaluations/2026-11-24-gpu-quant/native-fable-q5-current-thinking-cold-beets.md) **fails in31.85 coding /34.71 wall minutes**, despite98k/41 of41 GPU layers/10,224MiB peak and139 successful backend requests. Waiting-work lifecycle/cancellation defects remain, README/final claims overstate behavior, and no issue/fork/PR is published. Project/original tests pass while independent real Nicotine controls expose failures. Strict restoration and full Hermes-Codex preservation pass. Q5/Q6/Q8 establish no successful precision upgrade.
 
@@ -77,10 +79,20 @@ input probes with16,384 output headroom. No implicit CPU layer fallback.
 Its bounded header matches the retained Fable Q4/Q6 tensor names/dimensions and
 chat template. None records imatrix metadata; that absence does not prove the
 same calibration. Q8 tensor production differs from the K quants. The advertised
-262,144 model context is not a measured GPU fit. Q5 now completes the [current capacity stage](evaluations/2026-11-24-gpu-quant/resource-fable-q5-current-thinking.md), with coding pending;
+262,144 model context is not a measured GPU fit. Q5 now completes the [current capacity stage](evaluations/2026-11-24-gpu-quant/resource-fable-q5-current-thinking.md), and its completed current coding workflow fails;
 Q8 was chosen first to test a larger precision step, without assuming improvement.
 The Vibe Q6 overflow also requires a separate prospective context-handling control
 before another long actor run; existing lifecycle defects precede that overflow.
+
+## Current practical interpretation
+
+No tested quantization passes the complete current Beets workflow. Keep the production VibeForged Q4 configuration unchanged; this is a hold decision, not an autonomous-reliability claim.
+
+The adapted 27B family is the strongest observed configured-Gitea lead: all four current variants create an issue/fork, but their source work fails this case. Q3_K_M fits all 66 reported GPU layers at 98k/14,920 MiB and is retained because the [same exact artifact has older qualified Announcer behavior/publication success in 20.65 minutes](evaluations/2026-11-24-gpu-quant/same-artifact-q3km-history-and-retention.json). Its current Beets workflow still fails. IQ3_XXS offers more GPU headroom, but its current published code regresses ordinary dispatch. Neither is qualified as a reliable unattended replacement.
+
+The retained adapted Q4 has the strongest older complete Spam outcome at 115.60 minutes and qualified Announcer outcome at 116.53 minutes, with CPU spillover. Those are valid patient/overnight tradeoffs on different tasks/runtime. They are not discarded for being slow or relabeled as current-runtime precision-only wins. Retained Fable Q4/Q6 are lighter options, but current Q4/Q5/Q6/Q8 failures justify no higher-precision promotion.
+
+Further public variants and cache precision remain explicitly untested; their existence is not a pending deployment, assumed quality improvement or authorization to break the disk reserve. A future broader task comparison should keep public behavior separate from direct private-helper test compatibility. No deployment, GPU purchase or custom quantization was performed; model behavior remains a separate limit from GPU capacity.
 
 ## November26: runtime and reasoning comparison update
 
@@ -97,7 +109,7 @@ fits Q4 at98k/10,162MiB, but no complete-workflow precision gain is established.
 The [registered comparison](evaluations/2026-11-24-gpu-quant/plan.md) prioritizes
 practical GPU residency at 98,304 context, with correctness and turn/total latency
 reported together. It started with retained FableVibes Q4/Q6 and VibeForged v2 Q4/Q6;
-public Fable Q5 now completes capacity admission; its fresh coding trial remains pending. Public pins and
+public Fable Q5 now completes capacity and its current coding workflow also fails. Public pins and
 capacity exclusions are recorded before new scored runs.
 
 Fable Q6 completes the first short/tool-history, 16k and 60k-input capacity
@@ -121,13 +133,7 @@ its completed baseline is confounded by unattended code-tool policy. Vibe Q6 cap
 publisher-sampling, reasoning-enabled pair is registered; this low-temperature
 nonthinking baseline is not a verdict on Fable's best practical configuration.
 
-The adapted 27B Q5/Q6 public files exceed the entire 16 GiB device before context
-and runtime overhead, so they cannot be entirely GPU resident. Limited CPU-offload
-layouts for those higher quants have not been measured in this stage; file size
-does not rule out every mostly-GPU layout under the8GiB host budget. Prioritize
-measured GPU-fitting candidates first, and register any mixed layout before
-testing it. This does not change the earlier Q4 correctness result or its
-measured slow-work tradeoff.
+The adapted 27B Q5/Q6 transfers are excluded by the [measured storage reserve](evaluations/2026-11-24-gpu-quant/adapted-q5-q6-storage-exclusion-20261127.md) under the current retention constraints. Even hypothetically reclaiming only the new Q3_K_M file before downloading Q5/Q6 would leave 96.62/93.92 GiB free at the recorded observation, below the user's 100 GiB floor. GPU/context/host-memory placement, including partly CPU layouts, remains unmeasured for those files. File size alone does not establish actual allocation. Additional space would remove this transfer exclusion but would not prove fit or correct answers. Earlier Q4 slow-work findings remain valid measured tradeoffs.
 The same publisher also has a [smaller IQ4_XS variant](evaluations/2026-11-24-gpu-quant/prospective-adapted-iq4-xs.json),
 now fully downloaded/hash-verified and [capacity-tested](evaluations/2026-11-24-gpu-quant/resource-adapted-iq4.md).
 Its 98k layouts fail CUDA allocation;64k completes the tool/history and52k-input
@@ -243,7 +249,7 @@ in a separate stage. The separate Hermes-Codex stack stays unchanged.
 
 | Candidate | Why consider it | What still needs measurement |
 |---|---|---|
-| Same Hermes-adapted 27B Q3_K_M, 13.75 GB published file | Intermediate precision; may fit mostly or entirely on GPU | Actual 98k context memory, speed and task correctness |
+| Same Hermes-adapted 27B Q3_K_M, 13.75 GB published file | Measured 98k / 66 of 66 GPU / 14,920 MiB peak, plus 521 MiB host model | Current workflow FAIL in 48.01 coding minutes; no cancellation/tests/PR; see the audited result above |
 | Same Hermes-adapted 27B Q4_K_M, 16.81 GB published file | Compare higher precision within the same adapted checkpoint using limited CPU offload | CPU-resident weights/runtime overhead within 8 GiB, GPU buffers/KV, latency and independent quality |
 | Devstral Small 2 24B public GGUF | Its historical local failure was GPU OOM at 64k, not a demonstrated coding-quality failure; the new budget changes that blocker | Current pinned backend/template support, 64k+ actual fit and useful task performance |
 | GLM-4.7-Flash 30B MoE, public Q4 file about 18.2 GB | Different coding/tool-use checkpoint newly plausible with a small CPU share | Pinned-runtime architecture/template, expert offload, 98k cache and actual quality; no P100 fit claim yet |

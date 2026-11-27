@@ -1,6 +1,6 @@
 # Public adapted 27B Q3_K_M: measured current capacity
 
-The pinned public Q3_K_M completes the registered capacity probes at **98,304 context**, with **66/66 layers reported offloaded to GPU** (`-ngl 99`) and ubatch **64**. Actual buffers are recorded below. Sampled GPU peak is **14,920 MiB**. This is capacity evidence; **a fresh native coding/Gitea workflow is still required** before assigning a workflow-quality verdict or choosing a model.
+The pinned public Q3_K_M completes the registered capacity probes at **98,304 context**, with **66/66 layers reported offloaded to GPU** (`-ngl 99`) and ubatch **64**. Actual buffers are recorded below. Sampled GPU peak is **14,920 MiB**. This is capacity evidence; the separately completed [fresh native coding/Gitea workflow](native-adapted-q3km-current-cold-beets.md) fails. Capacity does not establish coding quality.
 
 | Probe | Input tokens | Cached input | Output tokens | Seconds |
 |---|---:|---:|---:|---:|
@@ -48,6 +48,6 @@ python3 evaluations/2026-11-24-gpu-quant/verify_current_adapted_q3km_resource.py
 | adapted-iq3-current | 66/66 | 64 | 12,904 | 271.56 | 870.56 | 463.15 |
 | adapted-q3km-current | 66/66 | 64 | 14,920 | 238.70 | 787.79 | 425.28 |
 
-These layouts use the current backend, but placement, tensor family, calibration, production and microbatch differ. Cached-input timing is measured practical behavior, not a precision-only or uncached-throughput comparison. The three previously completed adapted coding cells fail; Q3_K_M coding remains pending.
+These layouts use the current backend, but placement, tensor family, calibration, production and microbatch differ. Cached-input timing is measured practical behavior, not a precision-only or uncached-throughput comparison. All four completed adapted coding cells fail; see the current native Q3_K_M audit.
 
-The [nine completed current workflows](completed-current-quant-comparison.md) still provide no full pass. This resource stage adds no coding-quality sample, no autonomous reliability estimate and no GPT-5 equivalence claim. Production remains unchanged.
+The [ten completed current workflows](completed-current-quant-comparison.md) provide no full pass. This resource stage adds no coding-quality sample, no autonomous reliability estimate and no GPT-5 equivalence claim. Production remains unchanged.

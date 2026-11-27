@@ -1,0 +1,58 @@
+{
+  "epoch": 1795772063.5373924,
+  "classification": "Prospective remaining public-quant horizon, not a transfer/GPU registration and not a quality ranking",
+  "metadata_receipt": "additional-public-quant-metadata-20261127.json",
+  "candidates": [
+    {
+      "repo": "tvall43/Qwen3.6-14B-A3B-VibeForged-v2-GGUF",
+      "revision": "4f08fded2aee1e27fb0335104307ade516508d37",
+      "file": "Qwen3.6-14B-A3B-VibeForged-v2-Q3_K_M.gguf",
+      "bytes": 6766985280,
+      "full_public_SHA256": "805f33a94f0d3234be310e68fde5b802ac977867940e39ef9b790805fc70134d",
+      "git_blob_id": "073bef4d4919f3d4d5cbe9bebb58a0705813ff90",
+      "source": "https://huggingface.co/api/models/tvall43/Qwen3.6-14B-A3B-VibeForged-v2-GGUF/revision/4f08fded2aee1e27fb0335104307ade516508d37?blobs=true",
+      "downloaded_for_this_followup": false,
+      "GPU_context_fit_unmeasured": true,
+      "coding_quality_unmeasured": true
+    },
+    {
+      "repo": "tvall43/Qwen3.6-14B-A3B-VibeForged-v2-GGUF",
+      "revision": "4f08fded2aee1e27fb0335104307ade516508d37",
+      "file": "Qwen3.6-14B-A3B-VibeForged-v2-Q8_0.gguf",
+      "bytes": 14655633472,
+      "full_public_SHA256": "418330af087e25676ede78e507c6e26e713603fb05fdf8f2cfb713e516043fcc",
+      "git_blob_id": "71c15bd51803a8be20585a1baf3e64101033aa88",
+      "source": "https://huggingface.co/api/models/tvall43/Qwen3.6-14B-A3B-VibeForged-v2-GGUF/revision/4f08fded2aee1e27fb0335104307ade516508d37?blobs=true",
+      "downloaded_for_this_followup": false,
+      "GPU_context_fit_unmeasured": true,
+      "coding_quality_unmeasured": true
+    },
+    {
+      "repo": "tvall43/Qwen3.6-14B-A3B-FableVibes-GGUF",
+      "revision": "9cf910a7ad68dfedcbdfc46ef0fe5003dec07c23",
+      "file": "Qwen3.6-14B-A3B-FableVibes-Q3_K_M.gguf",
+      "bytes": 6766985728,
+      "full_public_SHA256": "41beaee055acc2c3ea38ac09abeea6e880f7fa33dcb187af0ea1643288f12d93",
+      "git_blob_id": "f2b08c1ce0ca0c3eed44916b4aa788ffd16b3d44",
+      "source": "https://huggingface.co/api/models/tvall43/Qwen3.6-14B-A3B-FableVibes-GGUF/revision/9cf910a7ad68dfedcbdfc46ef0fe5003dec07c23?blobs=true",
+      "downloaded_for_this_followup": false,
+      "GPU_context_fit_unmeasured": true,
+      "coding_quality_unmeasured": true
+    }
+  ],
+  "Vibe_Q5_at_pinned_revision": {
+    "all_GGUF_siblings_checked": true,
+    "matching_files": [],
+    "unavailable_at_this_revision_only": true
+  },
+  "selection_limits": [
+    "The current adapted Q3_K_M workflow is now independently audited FAIL; any later transfer/GPU stage still needs separate fresh admission and registration.",
+    "All original30, useful stagedIQ4, original runtime/Codex/settings remain protected.",
+    "The capacity/native stage completed above the100GiB floor, with staging near102GiB; no further weight transfer admitted by this metadata record.",
+    "Do not discard a useful candidate or infer lower/higher-precision quality from file size or these metadata.",
+    "Fable Q8 already completed current workflow FAIL and was retired with evidence; no reason established to redownload the same artifact.",
+    "Q3_Fable/Q3_Vibe are smaller alternate quantizations, not measured improvements or proved fit. Vibe Q8 is distinct from Fable Q8 and remains untested.",
+    "Other public tensor families exist; no need to custom-quantize to test them. Actual architecture/kernel/header/calibration/capacity controls are prerequisites."
+  ],
+  "excluded_projection_files": "mmproj files are vision projectors, not alternate text-model quantizations."
+}

@@ -1,0 +1,44 @@
+{
+  "classification": "Cross-study identity/retention review; not a matched-runtime score or unqualified success claim",
+  "same_exact_public_artifact": true,
+  "public_pin": {
+    "repo": "netprojects/Qwen3.8-27B-hermes-adapted-GGUF",
+    "revision": "10fdf357f14825c61ad7eb42a932e1f1e4390e8f",
+    "file": "Qwen3.8-27B-hermes-Q3_K_M.gguf",
+    "expected_bytes": 13752764064,
+    "sha256": "a0c809f93de2bcd813e1b6fbd5c2d1f692821814a4261a316f7c8bca9cf23248"
+  },
+  "historical_cohorts": [
+    {
+      "family": "Spam",
+      "source_summary": "evaluations/2026-11-23-wide-memory/native-q3-spam-summary.json",
+      "source_summary_SHA256": "30bfa5d57c8c59b5c58e0689084eaf11e29b6357a17e038c5befa07b8cdbc429",
+      "evidence_archive": "evaluations/2026-11-23-wide-memory/native-q3-spam-evidence.tar.gz",
+      "archive_SHA256": "be998d0a13b27d5daeffb781f4cfffb21283ba80238bcbc0091bca11f6ee6203",
+      "coding_minutes": 35.408743082150856,
+      "quality_classification": "Fresh Spam workflow fails requested initial repair despite correct Gitea publication and scoped cooldown feature pass"
+    },
+    {
+      "family": "Announcer",
+      "source_summary": "evaluations/2026-11-23-wide-memory/native-q3-queue-summary.json",
+      "source_summary_SHA256": "70937f6ce606c6874515b9a439482c66c11228e284bd654d2ff280e6aab2f020",
+      "evidence_archive": "evaluations/2026-11-23-wide-memory/native-q3-queue-evidence.tar.gz",
+      "archive_SHA256": "3cbfa4618f2fb2993387445ea71f311486a3dc7d023c7d12d808b06b871cdd55",
+      "coding_minutes": 20.647398864965847,
+      "quality_classification": "Fresh Announcer source/behavior and Gitea workflow pass with documentation test-scope and stale-PR qualifications"
+    }
+  ],
+  "current_Beets": {
+    "source_summary": "evaluations/2026-11-24-gpu-quant/native-adapted-q3km-current-cold-beets-summary.json",
+    "source_summary_SHA256": "3d9d58eb6c802a935ccb906da59658f8551423a5737f62962b4e2b03d0e9ad7e",
+    "workflow_pass": false,
+    "coding_minutes": 48.00786698414983,
+    "wall_minutes": 52.1561613
+  },
+  "retention_interpretation": "Retain the useful staged Q3_K_M artifact: older Announcer code/behavior/publication evidence is positive with documentation/reporting qualifications, despite older Spam repair failure and current Beets failure. No default change, universal-uselessness claim, autonomous reliability or precision-only effect follows.",
+  "limits": [
+    "Different task families and older evaluator/runtime cannot establish performance on the current owner stack.",
+    "Announcer positive behavior/publication is not an unqualified whole-workflow pass.",
+    "A failed current Beets workflow does not erase older positive scoped findings; a positive older task does not rescue this failed workflow."
+  ]
+}

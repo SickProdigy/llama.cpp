@@ -1,5 +1,5 @@
 {
-  "scope": "Only already delivered completed current-runtime Beets workflows; IQ3 and Q5 included after independent audit/delivery. Three dependent turns constitute one workflow per cell, not three independent trials.",
+  "scope": "Only already delivered completed current-runtime Beets workflows; IQ3, Q5 and Q3_K_M included after independent source/behavior/publication audits. Three dependent turns constitute one workflow per cell, not three independent trials.",
   "rows": [
     {
       "candidate": "adapted-q4-current",
@@ -103,7 +103,7 @@
       "quant_or_runtime_qualification": null,
       "source_report_for_manual_findings": "evaluations/2026-11-24-gpu-quant/native-adapted-q4-current-cold-beets.md",
       "wall_observation_source": "evaluations/2026-11-24-gpu-quant/completed-current-quant-terminal-timings.json",
-      "wall_observation_source_SHA256": "866d47970e03cb75f38b976910e82256d5f419ead70fc72b28207ff3074d3e42"
+      "wall_observation_source_SHA256": "0d5c3ef2253be93a69a46aae3e03d4b0a9111ecaa81ccc3bfe6fdadfe998aad4"
     },
     {
       "candidate": "adapted-iq4-current-r2",
@@ -337,6 +337,115 @@
       },
       "quant_or_runtime_qualification": null,
       "source_report_for_manual_findings": "evaluations/2026-11-24-gpu-quant/native-adapted-iq3-current-cold-beets.md"
+    },
+    {
+      "candidate": "adapted-q3km-current",
+      "source": "evaluations/2026-11-24-gpu-quant/native-adapted-q3km-current-cold-beets-summary.json",
+      "source_SHA256": "3d9d58eb6c802a935ccb906da59658f8551423a5737f62962b4e2b03d0e9ad7e",
+      "whole_workflow_pass": false,
+      "model": {
+        "file": "Qwen3.8-27B-hermes-Q3_K_M.gguf",
+        "bytes": 13752764064,
+        "sha256": "a0c809f93de2bcd813e1b6fbd5c2d1f692821814a4261a316f7c8bca9cf23248",
+        "after_full_SHA_advised_DONTNEED_for_only_selected_model_file": true,
+        "not_global_cache_flush_or_proof_of_cold_cache": true
+      },
+      "model_repository": "netprojects/Qwen3.8-27B-hermes-adapted-GGUF",
+      "model_revision": "10fdf357f14825c61ad7eb42a932e1f1e4390e8f",
+      "runtime_images": {
+        "Hermes": "sha256:c9b40eb8dea441cba7ded2e6589e5c011545ffc1ec76a0dc736f8e399d8f947b",
+        "llama.cpp": "sha256:fee4289628e7ba09f6fbf62d6ce4325aebb2531ffde2154d41276fe4acc58da3"
+      },
+      "preservation": {
+        "passed": true,
+        "both_original_and_staging_reserves_verified": true,
+        "stage_free_GiB": 101.84989547729492,
+        "original_ids_images_configuration_running_preserved": true,
+        "codex_entire_snapshot_unchanged": true,
+        "both_staged_models_metadata_unchanged": true,
+        "four_profile_hashes_unchanged": true,
+        "all_30_retained_model_metadata_unchanged": true,
+        "active_study_candidate": "adapted-q3km-current-cold-20261127",
+        "selected_staged_Q3KM_full_SHA_verified_before_model_calls": true,
+        "original_alias_context_restored": true,
+        "at_least_100_GiB_free": true,
+        "free_GiB": 103.1640739440918
+      },
+      "intervention": {
+        "assessor_corrective_hints_patches_resends_or_policy_changes": false,
+        "ordinary_project_gate_feedback_visible": true,
+        "original_workflow_requests_only": 3
+      },
+      "turn_minutes": [
+        18.200992636333105,
+        9.177125848000287,
+        20.62974849981644
+      ],
+      "total_coding_minutes": 48.00786698414983,
+      "supervisor_wall_minutes": 52.1561613,
+      "turn_checks": [
+        {
+          "phase": 0,
+          "project_exit": 0,
+          "original_exit": 0,
+          "registered_independent_exit": 1,
+          "source_authority": "actual personal-fork commit; no PR created",
+          "not_a_manual_behavior_verdict": true
+        },
+        {
+          "phase": 1,
+          "project_exit": 0,
+          "original_exit": 0,
+          "registered_independent_exit": 1,
+          "source_authority": "actual personal-fork commit; no PR created",
+          "not_a_manual_behavior_verdict": true
+        },
+        {
+          "phase": 2,
+          "project_exit": 0,
+          "original_exit": 0,
+          "registered_independent_exit": 1,
+          "source_authority": "actual personal-fork commit; no PR created",
+          "not_a_manual_behavior_verdict": true
+        }
+      ],
+      "resource": {
+        "samples": 287,
+        "peak_GPU_MiB": 14920,
+        "peak_aggregate_cgroup_bytes": 7051419648,
+        "peak_process_PSS_bytes": 2522446848,
+        "peak_study_swap_bytes": 0,
+        "guards": 0,
+        "measurement_errors": 0,
+        "minimum_disk_free_bytes": 110815395840,
+        "minimum_staging_free_bytes": 109119885312
+      },
+      "actual_buffer_placement_lines": [
+        "0.01.134.031 I load_tensors: offloaded 66/66 layers to GPU",
+        "0.01.134.040 I load_tensors:        CUDA0 model buffer size = 12153.77 MiB",
+        "0.01.134.042 I load_tensors:    CUDA_Host model buffer size =   521.00 MiB",
+        "0.42.040.296 I llama_kv_cache:      CUDA0 KV buffer size =  1728.00 MiB",
+        "0.42.075.619 I sched_reserve:      CUDA0 compute buffer size =   408.50 MiB",
+        "0.42.075.623 I sched_reserve:  CUDA_Host compute buffer size =    17.00 MiB"
+      ],
+      "backend": {
+        "completed_requests": 54,
+        "requested_calls": 54,
+        "failed_requests": 0,
+        "largest_completed_prompt": 59788,
+        "any_length_finish": false
+      },
+      "publication": {
+        "upstream_issue_observed": true,
+        "personal_fork_parent_verified": true,
+        "PR_observed": false,
+        "PR_open_unmerged": false,
+        "issue_closed_single_GET_verified": true
+      },
+      "quant_or_runtime_qualification": null,
+      "source_report_for_manual_findings": "evaluations/2026-11-24-gpu-quant/native-adapted-q3km-current-cold-beets.md",
+      "wall_observation_source": "evaluations/2026-11-24-gpu-quant/completed-current-quant-terminal-timings.json",
+      "wall_observation_source_SHA256": "0d5c3ef2253be93a69a46aae3e03d4b0a9111ecaa81ccc3bfe6fdadfe998aad4"
     },
     {
       "candidate": "fable-q4-current-thinking",
@@ -934,7 +1043,7 @@
       "quant_or_runtime_qualification": null,
       "source_report_for_manual_findings": "evaluations/2026-11-24-gpu-quant/native-vibe-q4-thinking-cold-beets.md",
       "wall_observation_source": "evaluations/2026-11-24-gpu-quant/completed-current-quant-terminal-timings.json",
-      "wall_observation_source_SHA256": "866d47970e03cb75f38b976910e82256d5f419ead70fc72b28207ff3074d3e42"
+      "wall_observation_source_SHA256": "0d5c3ef2253be93a69a46aae3e03d4b0a9111ecaa81ccc3bfe6fdadfe998aad4"
     },
     {
       "candidate": "vibe-q6-thinking",
@@ -1037,15 +1146,15 @@
       },
       "source_report_for_manual_findings": "evaluations/2026-11-24-gpu-quant/native-vibe-q6-thinking-cold-beets.md",
       "wall_observation_source": "evaluations/2026-11-24-gpu-quant/completed-current-quant-terminal-timings.json",
-      "wall_observation_source_SHA256": "866d47970e03cb75f38b976910e82256d5f419ead70fc72b28207ff3074d3e42"
+      "wall_observation_source_SHA256": "0d5c3ef2253be93a69a46aae3e03d4b0a9111ecaa81ccc3bfe6fdadfe998aad4"
     }
   ],
   "paired_comparison_qualifications": {
     "Fable Q4/Q5/Q6/Q8": "Same current evaluator/backend/transparent recorder, reasoning sampler and context; none of these four full workflows passes. Single observations, not precision-only causality or reliability.",
     "Vibe Q4/Q6": "Both use the earlier recorder; Q6 final context400 was masked as502. Earlier independent code failures remain; final feature score is confounded.",
-    "Adapted IQ3/Q4/IQ4": "Same current evaluator/backend/transparent recorder and nonthinking sampler/caps. Quant production/calibration, measured layer placement/host spillover and ubatch differ. IQ4 full Codex-state check failed on a start timestamp change of unknown cause; its qualified restoration is retained."
+    "Adapted IQ3/Q3_K_M/Q4/IQ4": "Same current evaluator/backend/transparent recorder and nonthinking sampler/caps. Q3_K_M actual initial33schemas/seed/caps match IQ3/IQ4; its published worker is unchanged and rejected proposals also fail preserved normal-import behavior. Quant production/calibration, measured layer placement/host spillover and ubatch differ. IQ4 full Codex-state check failed on a start timestamp change of unknown cause; its qualified restoration is retained."
   },
   "missing_values": "null means not present in the supplied public summary, never an assumed zero or successful check.",
   "interpretation": "No runtime, test, publication or capacity check alone is a correctness verdict. Manual source/behavior/docs/claims findings remain in each linked delivered report. No GPT5 equivalence or autonomous reliability claim.",
-  "source_code_SHA256": "120a61f21bb85f4186037fe4c6a527aa6c1fcd1d04bb720212047c0cac261da0"
+  "source_code_SHA256": "e6fc24569baae0bc8ac4f26b604d2e4c561ef25f4294560db98e4a5e8ca1c2c3"
 }

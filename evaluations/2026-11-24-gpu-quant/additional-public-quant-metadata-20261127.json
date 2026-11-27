@@ -1,0 +1,202 @@
+{
+  "epoch": 1795771955.6464994,
+  "classification": "Public metadata-only followup horizon; no transfer, no GPU/actor calls, no fit or quality exclusion inferred",
+  "records": [
+    {
+      "repo": "tvall43/Qwen3.6-14B-A3B-VibeForged-v2-GGUF",
+      "revision": "4f08fded2aee1e27fb0335104307ade516508d37",
+      "source": "https://huggingface.co/api/models/tvall43/Qwen3.6-14B-A3B-VibeForged-v2-GGUF/revision/4f08fded2aee1e27fb0335104307ade516508d37?blobs=true",
+      "files": [
+        {
+          "file": "Qwen3.6-14B-A3B-VibeForged-v2-MXFP4_MOE.gguf",
+          "bytes": 8639428672,
+          "lfs": {
+            "sha256": "b28a38f8505017ddbd5618850719c07c89dd723dd9bf9cea97c18545630fadfa",
+            "size": 8639428672,
+            "pointerSize": 135
+          },
+          "blobId": "f4ffed07da1806df7069f2e82c32e7fa11bd3109"
+        },
+        {
+          "file": "Qwen3.6-14B-A3B-VibeForged-v2-Q2_K.gguf",
+          "bytes": 5324310592,
+          "lfs": {
+            "sha256": "5f7d56a6204fd64fe4b778586a39a41d31b9b241b42212f88763ee6cd610fda3",
+            "size": 5324310592,
+            "pointerSize": 135
+          },
+          "blobId": "687a5f7145c4ef956c02203799f56c332a65bd51"
+        },
+        {
+          "file": "Qwen3.6-14B-A3B-VibeForged-v2-Q3_K_M.gguf",
+          "bytes": 6766985280,
+          "lfs": {
+            "sha256": "805f33a94f0d3234be310e68fde5b802ac977867940e39ef9b790805fc70134d",
+            "size": 6766985280,
+            "pointerSize": 135
+          },
+          "blobId": "073bef4d4919f3d4d5cbe9bebb58a0705813ff90"
+        },
+        {
+          "file": "Qwen3.6-14B-A3B-VibeForged-v2-Q4_K_M.gguf",
+          "bytes": 8465553472,
+          "lfs": {
+            "sha256": "273777783847f3a9eba912abc35407d651a575064a478ed9fbd7ad90b962b6b6",
+            "size": 8465553472,
+            "pointerSize": 135
+          },
+          "blobId": "fc1cceea0c193579d2fd3b5ff4bcf43c0b4c12f3"
+        },
+        {
+          "file": "Qwen3.6-14B-A3B-VibeForged-v2-Q6_K.gguf",
+          "bytes": 11325370432,
+          "lfs": {
+            "sha256": "56695b1ce0fa47b7d2d94bbb57bd71e5c24decfcd4af76b6a9c3073ee464fe9c",
+            "size": 11325370432,
+            "pointerSize": 136
+          },
+          "blobId": "22ac1ad6f09884a4f1bc697860b1fb88d12cf053"
+        },
+        {
+          "file": "Qwen3.6-14B-A3B-VibeForged-v2-Q8_0.gguf",
+          "bytes": 14655633472,
+          "lfs": {
+            "sha256": "418330af087e25676ede78e507c6e26e713603fb05fdf8f2cfb713e516043fcc",
+            "size": 14655633472,
+            "pointerSize": 136
+          },
+          "blobId": "71c15bd51803a8be20585a1baf3e64101033aa88"
+        },
+        {
+          "file": "Qwen3.6-14B-A3B-VibeForged-v2-mmproj-F16.gguf",
+          "bytes": 899283680,
+          "lfs": {
+            "sha256": "8971ee4f331ff0a4c609374f32984b3d4e6dc086c0aa35f1d637fad1829e887f",
+            "size": 899283680,
+            "pointerSize": 134
+          },
+          "blobId": "feb88525672670439196d09a7cf5ea07f350d7de"
+        },
+        {
+          "file": "Qwen3.6-14B-A3B-VibeForged-v2-mmproj-Q8_0.gguf",
+          "bytes": 614194592,
+          "lfs": {
+            "sha256": "ca27dbf0c65a7232e9458bfdda8bc45efc09ab60e4cc6f58ea0c7b7cc2253257",
+            "size": 614194592,
+            "pointerSize": 134
+          },
+          "blobId": "9b9380d0a6187ee234d21285eef46dd369fb8154"
+        }
+      ],
+      "all_GGUF_siblings_preserved": true
+    },
+    {
+      "repo": "tvall43/Qwen3.6-14B-A3B-FableVibes-GGUF",
+      "revision": "9cf910a7ad68dfedcbdfc46ef0fe5003dec07c23",
+      "source": "https://huggingface.co/api/models/tvall43/Qwen3.6-14B-A3B-FableVibes-GGUF/revision/9cf910a7ad68dfedcbdfc46ef0fe5003dec07c23?blobs=true",
+      "files": [
+        {
+          "file": "Qwen3.6-14B-A3B-FableVibes-BPW4.75.gguf",
+          "bytes": 8485812736,
+          "lfs": {
+            "sha256": "29ae3377f234baaedea7a9852fb3b2f7e4cfae525c29b266fb507134d48c6f19",
+            "size": 8485812736,
+            "pointerSize": 135
+          },
+          "blobId": "6234fd61802615aec60c60392b539af3d069b078"
+        },
+        {
+          "file": "Qwen3.6-14B-A3B-FableVibes-MXFP4_MOE.gguf",
+          "bytes": 8639429120,
+          "lfs": {
+            "sha256": "76c134858856cb51f346c2e45c83367914d097745c5f27b4a069c4787b7b3101",
+            "size": 8639429120,
+            "pointerSize": 135
+          },
+          "blobId": "70871f90e1281cfd96374c47ec6781d8bdb038de"
+        },
+        {
+          "file": "Qwen3.6-14B-A3B-FableVibes-Q2_K.gguf",
+          "bytes": 5324311040,
+          "lfs": {
+            "sha256": "2fdbc7a2125a4b0688e9943a182f69ba30c63b3642f21a6cbe5bad44318ca787",
+            "size": 5324311040,
+            "pointerSize": 135
+          },
+          "blobId": "9ec9f094fbc11abb55be9c2bbb34ed8e4eab167f"
+        },
+        {
+          "file": "Qwen3.6-14B-A3B-FableVibes-Q3_K_M.gguf",
+          "bytes": 6766985728,
+          "lfs": {
+            "sha256": "41beaee055acc2c3ea38ac09abeea6e880f7fa33dcb187af0ea1643288f12d93",
+            "size": 6766985728,
+            "pointerSize": 135
+          },
+          "blobId": "f2b08c1ce0ca0c3eed44916b4aa788ffd16b3d44"
+        },
+        {
+          "file": "Qwen3.6-14B-A3B-FableVibes-Q4_K_M.gguf",
+          "bytes": 8465553920,
+          "lfs": {
+            "sha256": "21aa4b0b28090469e8a319c889451df2f1ea6aad27ac3818c8c8a86f86d5bc9e",
+            "size": 8465553920,
+            "pointerSize": 135
+          },
+          "blobId": "f0a44dd4a75fe07197d4cc40503c0bb473aed42f"
+        },
+        {
+          "file": "Qwen3.6-14B-A3B-FableVibes-Q5_K_M.gguf",
+          "bytes": 9852131840,
+          "lfs": {
+            "sha256": "d8fe99004cefb2cf26a1750851acf3cabd53247958e144f88e08beeb36ffbcab",
+            "size": 9852131840,
+            "pointerSize": 135
+          },
+          "blobId": "4ea871cf5f0fbbf8b93f7f383efed41e6b2d30d0"
+        },
+        {
+          "file": "Qwen3.6-14B-A3B-FableVibes-Q6_K.gguf",
+          "bytes": 11325370880,
+          "lfs": {
+            "sha256": "7ae56e5003365c568635c14158381df134577877c90ae15f34dbc6de2ca7ffb1",
+            "size": 11325370880,
+            "pointerSize": 136
+          },
+          "blobId": "744b4afd04345da0a91390645e0afeed8acb7be6"
+        },
+        {
+          "file": "Qwen3.6-14B-A3B-FableVibes-Q8_0.gguf",
+          "bytes": 14655633920,
+          "lfs": {
+            "sha256": "ddea86093b863215fa75969d81df494fafdb0e6c4a65af557ed3a710e2238e58",
+            "size": 14655633920,
+            "pointerSize": 136
+          },
+          "blobId": "890882cbacebf96f00b0ebe4ae2a12ab83b06ae1"
+        },
+        {
+          "file": "Qwen3.6-14B-A3B-FableVibes-mmproj-F16.gguf",
+          "bytes": 899283680,
+          "lfs": {
+            "sha256": "8971ee4f331ff0a4c609374f32984b3d4e6dc086c0aa35f1d637fad1829e887f",
+            "size": 899283680,
+            "pointerSize": 134
+          },
+          "blobId": "feb88525672670439196d09a7cf5ea07f350d7de"
+        },
+        {
+          "file": "Qwen3.6-14B-A3B-FableVibes-mmproj-Q8_0.gguf",
+          "bytes": 614194592,
+          "lfs": {
+            "sha256": "ca27dbf0c65a7232e9458bfdda8bc45efc09ab60e4cc6f58ea0c7b7cc2253257",
+            "size": 614194592,
+            "pointerSize": 134
+          },
+          "blobId": "9b9380d0a6187ee234d21285eef46dd369fb8154"
+        }
+      ],
+      "all_GGUF_siblings_preserved": true
+    }
+  ]
+}

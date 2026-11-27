@@ -1,6 +1,8 @@
 # GPU-resident quantization comparison — November 24, 2026
 
-The goal remains in progress. All four original retained-file capacity stages
+The selected current comparison now has [ten completed audited workflows](completed-current-quant-comparison.md), with no complete pass or justified precision upgrade. The newer Q3_K_M audit, measured transfer exclusions and current matrix supersede historical progress statements below. Production configuration remains unchanged. The following dated registrations/progress notes are retained for experimental chronology.
+
+At the earlier registration point, the study remained in progress. All four original retained-file capacity stages
 complete at98,304 context. Fable Q4/Q6 nonthinking workflows fail the audited
 coding/publication requirements. Vibe Q4's original baseline is blocked by copied
 unattended execution policy; the original Vibe Q6 deny-policy coding cell is
@@ -71,7 +73,7 @@ EOS/backend detail or isolate precision causally across these profile changes.
 [Fable preflights](publisher-profile-preflights.json), [Vibe generation pins](vibe-publisher-mode-followup-proposal.json)
 and [Vibe preflights](vibe-thinking-profile-preflights.json) retain actual SDK and
 pure-code execution checks on fresh isolated profiles. These are not reasoning
-inference or quality results. No reasoning inference has started yet. Original
+inference or quality results. At that original registration point, no reasoning inference had started; completed current results are now linked above. Original
 deployed approval settings remain unchanged.
 
 The [actual native compression-handle control](native-compression-handle-control.json)
