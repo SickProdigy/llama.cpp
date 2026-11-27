@@ -1,5 +1,7 @@
 # GPU-resident quantization comparison
 
+[Public adapted27B Q3_K_M downloaded and verified](public-adapted-q3km-download.md):13.75GB/fullSHA matched in20.44minutes;866-tensor shapes/template match the prior adapted variants, with different tensor mixes. Original30/IQ4/settings/pending work/full Codex state are unchanged and exact download-helper cleanup passes. **GPU fit and coding quality remain untested**; fresh102GiB GPU admission is still required.
+
 [Study-added failed Fable Q5 retired](study-owned-q5-retirement.md) after fresh full-hash/ownership/reference checks. Original30, retained Fable Q4/Q6, useful staged IQ4, owner settings/pending work and full Codex state are unchanged. Staging114.87GiB/original103.32GiB observed. [Public adapted Q3_K_M](prospective-adapted-q3km-current.json) is prospectively selected with102GiB post-file admission/101GiB transfer-stop floors, above the user100GiB reserve; no GPU fit/quality result yet.
 
 [Matched current Fable Q4 coding/Gitea](native-fable-q4-current-thinking-cold-beets.md) **fails in34.37 coding /37.77 wall minutes** at98k/41 of41GPU/**8,964MiB peak**. First backend call67.35s; all115 requests complete. Project/original tests pass, but waiting-work lifecycle/cancellation remain wrong, no issue/fork/PR exists and the final turn reaches the native iteration cap. Full strict restoration/Codex preservation and exact cleanup pass. All four current Fable quants now have completed workflow failures.

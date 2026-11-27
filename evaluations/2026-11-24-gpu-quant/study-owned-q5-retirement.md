@@ -1,5 +1,7 @@
 # Study-added Fable Q5 retired for the remaining public Q3 comparison
 
+Subsequent update: the [Q3_K_M transfer and full hash](public-adapted-q3km-download.md) are complete; its GPU admission and quality tests remain pending.
+
 Removed only `Qwen3.6-14B-A3B-FableVibes-Q5_K_M.gguf` from the isolated study staging volume:9,852,131,840 bytes. Fresh full SHA256 `d8fe99004cefb2cf26a1750851acf3cabd53247958e144f88e08beeb36ffbcab` matches its owned download receipt. Exact inode/device/mtime/size, regular-file type and single link are rechecked immediately before unlink; no other container consumes the staging volume.
 
 The [completed Q5 workflow](native-fable-q5-current-thinking-cold-beets.md) fails required behavior/publication and establishes no correct-workflow advantage over retained same-checkpoint Q4/Q6. Those original alternatives, all30 original models and useful staged IQ4 are preserved. This is a retention decision for tested requirements, not a claim that Q5 is never useful. Pins and evidence remain; a future Q5 rerun requires redownloading its exact public artifact.

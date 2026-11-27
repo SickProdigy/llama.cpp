@@ -1,0 +1,64 @@
+{
+  "candidate": "adapted-q3km-current",
+  "classification": "Completed pinned public transfer and actual header audit only",
+  "not_GPU_fit_or_quality_result": true,
+  "receipt": {
+    "passed": true,
+    "repo": "netprojects/Qwen3.8-27B-hermes-adapted-GGUF",
+    "revision": "10fdf357f14825c61ad7eb42a932e1f1e4390e8f",
+    "file": "Qwen3.8-27B-hermes-Q3_K_M.gguf",
+    "bytes": 13752764064,
+    "sha256": "a0c809f93de2bcd813e1b6fbd5c2d1f692821814a4261a316f7c8bca9cf23248",
+    "full_file_SHA256_verified": true,
+    "seconds": 1226.4381911754608,
+    "volume": "hermes-gpuquant-20261124-model-stage",
+    "minimum_observed_staging_free_bytes": 109547290624,
+    "final_staging_free_bytes": 109543452672,
+    "original_model_drive_free_bytes": 110929821696,
+    "both_reserves_at_least_100GiB": true,
+    "original_model_files_not_written": true,
+    "download_not_a_GPU_fit_or_quality_test": true,
+    "only_new_owned_file_advised_DONTNEED_after_fsync": true,
+    "transfer_stage_stop_threshold_bytes": 108447924224,
+    "transfer_original_stop_threshold_bytes": 108447924224,
+    "global_requested_reserve_bytes": 107374182400,
+    "source_selection_SHA256": "fbd0b43f8fbc0eac382a7474e6d040c8a58d90dcc6dce570ada701b49b25025c",
+    "download_worker_SHA256": "ffe76a18125d603b83c7ada4e736c8864bf26a13f87423b70d78f56ac64d378f",
+    "start_stage_free_after_file_minimum_bytes": 109521666048
+  },
+  "completion": {
+    "epoch": 1795769366.1665769,
+    "passed": true,
+    "download_stream_fullSHA_verified": true,
+    "owned_target_bytes_metadata_verified": true,
+    "original30_and_staged_IQ4_metadata_unchanged": true,
+    "stage_models_preserved": [
+      {
+        "name": "Qwen3.8-27B-hermes-IQ4_XS.gguf",
+        "bytes": 15321491104,
+        "mtime_ns": 1795556814369305688
+      },
+      {
+        "name": "Qwen3.8-27B-hermes-Q3_K_M.gguf",
+        "bytes": 13752764064,
+        "mtime_ns": 1795769327550153180
+      }
+    ],
+    "both_100GiB_reserves_passed": true,
+    "stage_free_bytes": 109544738816,
+    "original_free_bytes": 110929817600,
+    "exact_terminal_supervisor_and_exclusive_anonymous_volume_removed": true,
+    "no_unowned_cleanup": true,
+    "not_a_fit_or_quality_result": true,
+    "all_three_original_runtime_records_including_full_Codex_unchanged": true,
+    "four_owner_settings_hashes_unchanged": true,
+    "owner_pending_tracked_and_ignored_instructions_unchanged": true,
+    "original_alias_context_unchanged": true
+  },
+  "limitations": [
+    "Stream receipt pins full file bytes/SHA; verifier checks saved consistency without a weight file, inference or live owner/remote replay.",
+    "Header shapes/templates/calibration names/counts do not prove identical source weights or actual calibration content.",
+    "Fresh GPU/memory/context/latency admission and full native coding/Gitea tests are still required.",
+    "New102GiB post-file admission/101GiB transfer-stop margins are prospective; old105/102 protocols unchanged. Shared-root growth remains capable of stopping a future stage."
+  ]
+}

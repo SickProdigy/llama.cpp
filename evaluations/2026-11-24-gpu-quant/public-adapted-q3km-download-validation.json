@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "positive": {
+    "passed": true,
+    "archive_SHA256": "5737e492d6b7be272d370c229a5e5dff32505c3eac199cc81b261ba843959c55",
+    "manifest_files": 18,
+    "full_stream_SHA_recorded": true,
+    "actual_header_shapes_templates_consistent": true,
+    "GPU_fit_or_quality_not_tested": true,
+    "scope": "Verify saved transfer/header consistency; no inference or live owner-state replay."
+  },
+  "negative_controls": [
+    {
+      "case": "wrong_full_SHA",
+      "manifest_recomputed": true,
+      "rejected": true
+    },
+    {
+      "case": "false_Codex_preservation",
+      "manifest_recomputed": true,
+      "rejected": true
+    },
+    {
+      "case": "stale_IQ3_header",
+      "manifest_recomputed": true,
+      "rejected": true
+    },
+    {
+      "case": "violated_transfer_stop_floor",
+      "manifest_recomputed": true,
+      "rejected": true
+    }
+  ],
+  "scope": "Saved transfer/header/preservation consistency only; no inference/live replay."
+}
