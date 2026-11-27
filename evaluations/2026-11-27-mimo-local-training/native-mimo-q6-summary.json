@@ -1,0 +1,240 @@
+{
+  "candidate": "MiMo-V2.6-Distill-Qwen-9B Q6_K",
+  "classification": "FAIL: completed forge workflow with incorrect published code; one development workflow, three dependent tasks",
+  "whole_workflow_pass": false,
+  "tasks_independent": false,
+  "context": 98304,
+  "GPU_layers": "33/33",
+  "GPU_peak_MiB": 8350,
+  "backend": "b12723-abca69200",
+  "main_aux_output_cap": 8192,
+  "sampler": {
+    "temperature": 0.6,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0,
+    "thinking": true,
+    "seed": 20261127
+  },
+  "template_sha256": "d2365d1a768f61a6e46156c7dc5a7e08fe95f6bd0a9ce5cf606e908b3489a840",
+  "model_sha256": "ef96d05a2ddf2cbb450d1af1ac3860ec769d3575bafa70692ee5609bda3fad7d",
+  "requests_completed": 82,
+  "first_request_seconds": 65.80470561981201,
+  "max_actual_prompt_tokens": 82605,
+  "coding_seconds": 2369.303723169025,
+  "study_cgroup_peak_bytes": 7049404416,
+  "study_swap_peak_bytes": 0,
+  "minimum_Docker_root_free_bytes": 120780115968,
+  "phases": [
+    {
+      "phase": 0,
+      "seconds": 1156.9244804359914,
+      "native_exit_code": 0,
+      "original_tests_and_authored_suite_pass": true,
+      "immutable_original_suite_pass": true,
+      "local_remote_source_digest": "51897d1a2e68b002ca220808fe09af3f9047ac73e7440142237ec61444443764",
+      "changed_paths": [
+        "autobuddy/__init__.py",
+        "tests/test_autobuddy.py"
+      ],
+      "authored_tests_fail_on_baseline": true,
+      "real_core": {
+        "passed": false,
+        "phase": 0,
+        "cases": [
+          {
+            "case": "ordinary_new_buddy",
+            "passed": false,
+            "error": "AttributeError: 'Buddies' object has no attribute 'is_buddy'"
+          },
+          {
+            "case": "repeat_request_is_silent",
+            "passed": false,
+            "error": "AttributeError: 'Buddies' object has no attribute 'is_buddy'"
+          },
+          {
+            "case": "existing_buddy_casefold_is_silent",
+            "passed": false,
+            "error": "AttributeError: 'Buddies' object has no attribute 'is_buddy'"
+          },
+          {
+            "case": "room_self_nontrigger_exclusions",
+            "passed": true
+          },
+          {
+            "case": "default_connect_room",
+            "passed": true
+          }
+        ],
+        "actual_core_version": "3.3.11",
+        "real_handler_and_buddy_add_used": true,
+        "network_watch_and_GUI_delivery_stubbed": true,
+        "source_sha256": "d36bd58d0739783d13aa64aa902cc424ccbcbd16118a20f0432be26115da8554"
+      },
+      "compression_lineage_sessions": 1
+    },
+    {
+      "phase": 1,
+      "seconds": 157.88126051300787,
+      "native_exit_code": 0,
+      "original_tests_and_authored_suite_pass": true,
+      "immutable_original_suite_pass": true,
+      "local_remote_source_digest": "0236d5ee33888c74a0f0ad1abc2f3bb5cd3c33520aea3b0de3735780ff6d8793",
+      "changed_paths": [
+        "README.md",
+        "autobuddy/__init__.py",
+        "tests/test_autobuddy.py"
+      ],
+      "authored_tests_fail_on_baseline": true,
+      "real_core": {
+        "passed": false,
+        "phase": 1,
+        "cases": [
+          {
+            "case": "ordinary_new_buddy",
+            "passed": false,
+            "error": "AttributeError: 'Buddies' object has no attribute 'is_buddy'"
+          },
+          {
+            "case": "repeat_request_is_silent",
+            "passed": false,
+            "error": "AttributeError: 'Buddies' object has no attribute 'is_buddy'"
+          },
+          {
+            "case": "existing_buddy_casefold_is_silent",
+            "passed": false,
+            "error": "AttributeError: 'Buddies' object has no attribute 'is_buddy'"
+          },
+          {
+            "case": "room_self_nontrigger_exclusions",
+            "passed": true
+          },
+          {
+            "case": "default_connect_room",
+            "passed": true
+          }
+        ],
+        "actual_core_version": "3.3.11",
+        "real_handler_and_buddy_add_used": true,
+        "network_watch_and_GUI_delivery_stubbed": true,
+        "source_sha256": "d36bd58d0739783d13aa64aa902cc424ccbcbd16118a20f0432be26115da8554"
+      },
+      "compression_lineage_sessions": 1
+    },
+    {
+      "phase": 2,
+      "seconds": 1054.4979822200257,
+      "native_exit_code": 0,
+      "original_tests_and_authored_suite_pass": true,
+      "immutable_original_suite_pass": true,
+      "local_remote_source_digest": "8b43982598332a22fac86a6fedfea369ce5d48bcc42b7d6d15a5f78214f59f58",
+      "changed_paths": [
+        "README.md",
+        "autobuddy/__init__.py",
+        "tests/test_autobuddy.py"
+      ],
+      "authored_tests_fail_on_baseline": true,
+      "real_core": {
+        "passed": false,
+        "phase": 2,
+        "cases": [
+          {
+            "case": "ordinary_new_buddy",
+            "passed": false,
+            "error": "AttributeError: 'Buddies' object has no attribute 'is_buddy'"
+          },
+          {
+            "case": "repeat_request_is_silent",
+            "passed": false,
+            "error": "AttributeError: 'Buddies' object has no attribute 'is_buddy'"
+          },
+          {
+            "case": "existing_buddy_casefold_is_silent",
+            "passed": false,
+            "error": "AttributeError: 'Buddies' object has no attribute 'is_buddy'"
+          },
+          {
+            "case": "room_self_nontrigger_exclusions",
+            "passed": true
+          },
+          {
+            "case": "default_connect_room",
+            "passed": true
+          },
+          {
+            "case": "preferences_trimmed_values",
+            "passed": false,
+            "error": "AssertionError: "
+          },
+          {
+            "case": "settings_take_effect_without_restart",
+            "passed": false,
+            "error": "AttributeError: 'Buddies' object has no attribute 'is_buddy'"
+          },
+          {
+            "case": "blank_settings_fall_back",
+            "passed": false,
+            "error": "AttributeError: 'Buddies' object has no attribute 'is_buddy'"
+          }
+        ],
+        "actual_core_version": "3.3.11",
+        "real_handler_and_buddy_add_used": true,
+        "network_watch_and_GUI_delivery_stubbed": true,
+        "source_sha256": "f2736966042a23fdb6382c32696b3e3b1ec4c295c873b5c2712a547f6448d00f"
+      },
+      "compression_lineage_sessions": 2
+    }
+  ],
+  "forge_final_readback": {
+    "verified_via": "configured Gitea MCP read tools",
+    "issue": {
+      "number": 1,
+      "state": "closed"
+    },
+    "pr": {
+      "number": 2,
+      "state": "open",
+      "merged": false,
+      "head_sha": "0185f3550e0d9571039d774576baf896865ebd41",
+      "head_repository": "hermes-agent/hermes-local-autobuddy-mimo-20261127",
+      "base_repository": "chatgpt-codex/hermes-local-autobuddy-mimo-20261127"
+    }
+  },
+  "preservation": {
+    "passed": true,
+    "epoch": 1795823454.5134304,
+    "original20_models_unchanged": true,
+    "owner_profile_hashes_unchanged": true,
+    "owner_source_and_pending_work_unchanged": true,
+    "runtime_ids_images_config_running_unchanged": true,
+    "full_Codex_state_unchanged": true,
+    "original_alias_context_restored": true,
+    "three_turns_complete_not_quality_verdict": true,
+    "source_baselines": [
+      "baseline-before-mimo-native",
+      "baseline-after-mimo-native"
+    ]
+  },
+  "cleanup": {
+    "passed": true,
+    "epoch": 1795823468.5039923,
+    "removed_exact_supervisor_id": "da4eb81df78673915473004706ce7f6ba90c0da421442aef62dd6f9746d63159",
+    "removed_only_task_anonymous_volumes": [
+      "395c6cf46fec2edd0c27b45fb94b5eb4d8cabb192b0fd2798420e41e30d681e6"
+    ],
+    "named_stage_volume_preserved": true,
+    "no_live_study_containers": true
+  },
+  "findings": [
+    "Invented core.buddies.is_buddy method remains in all published phases; real Nicotine3.3.11 raises AttributeError on ordinary triggered requests.",
+    "Authored tests invent that API. The repeated-new-user test sends a second nontrigger message, so it does not exercise duplicate-trigger suppression.",
+    "Final configurable trigger is not lowercased before comparison with line.lower(); a mixed-case configured phrase fails independently.",
+    "Final answer asserts case-insensitive matching and safeguards preserved; passing self-authored tests does not substantiate those claims."
+  ],
+  "source_sibling_example": "Committed autospamignore already demonstrates casefolded membership over core.buddies.users.",
+  "operator_interventions": 0,
+  "private_grader_feedback_to_actor": false,
+  "training_positive_eligible": false,
+  "production_model_changed": false,
+  "no_general_reliability_or_precision_only_claim": true
+}
