@@ -1,5 +1,7 @@
 # Llama.cpp and Hermes-Agent Model Notes
 
+[MiMo 9B Q6 capacity and training project](evaluations/2026-11-27-mimo-local-training/README.md):98k/33 of33GPU/8,350MiB peak; genuine short tool history and reference-template16k/60k/80k markers pass. Strict owner/Codex restoration and exact cleanup pass. Native coding/Gitea quality is still untested; production Vibe stays unchanged.
+
 User-authorized storage cleanup (November 27): retired 11 slow, failed or redundant files across two batches, freeing 94.41 GiB total. All four VibeForged/FableVibes variants and useful alternatives remain (19 main-folder GGUFs); 197.56 GiB free observed. Production services/configurations are unchanged. [Decisions and checksums](evaluations/2026-11-27-model-cleanup/README.md).
 
 [Current public adapted 27B Q3_K_M coding/Gitea](evaluations/2026-11-24-gpu-quant/native-adapted-q3km-current-cold-beets.md) **fails in 48.01 coding / 52.16 wall minutes**, despite 98k context, 66/66 reported GPU layers and 54 successful backend calls. It opens an issue and personal fork, but leaves worker behavior unchanged, adds inaccurate documentation and no cancellation/tests/PR. All three turns stop at native edit safeguards. Strict original runtime/settings/models/pending-work/full Codex preservation and exact cleanup pass; the issue is confirmed closed.

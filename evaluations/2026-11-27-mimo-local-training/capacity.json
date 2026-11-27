@@ -1,0 +1,253 @@
+{
+  "date": "2026-11-27",
+  "candidate": {
+    "repo": "bartowski/MiMo-V2.6-Distill-Qwen-9B-GGUF",
+    "revision": "4371da10c84fb26da3592d4cf312d24aa82b7b65",
+    "file": "MiMo-V2.6-Distill-Qwen-9B-Q6_K.gguf",
+    "public_bytes": 7793710624,
+    "public_full_SHA256": "ef96d05a2ddf2cbb450d1af1ac3860ec769d3575bafa70692ee5609bda3fad7d"
+  },
+  "download_full_hash_verified": true,
+  "backend_image": "sha256:fee4289628e7ba09f6fbf62d6ce4325aebb2531ffde2154d41276fe4acc58da3",
+  "sampler": {
+    "temperature": 0.6,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0,
+    "repeat_penalty": 1,
+    "presence_penalty": 0,
+    "chat_template_kwargs": {
+      "enable_thinking": true
+    }
+  },
+  "main_probe_output_cap": 8192,
+  "results": [
+    {
+      "layout": {
+        "context": 98304,
+        "gpu_layers": 99,
+        "ubatch": 64,
+        "template": "public_q6_builtin",
+        "synthetic_targets": []
+      },
+      "reported_gpu_layers": "33/33",
+      "gpu_peak_MiB": 8350,
+      "aggregate_study_cgroup_peak_bytes": 7047094272,
+      "study_swap_peak_bytes": 0,
+      "tool_call_correct": true,
+      "tool_history": {
+        "actual_reasoning_nonempty": false,
+        "actual_reasoning_retained_in_rendered_template": null,
+        "not_replaced_with_operator_reasoning": true
+      },
+      "dependent_followup": {
+        "expected": "tool-history-capacity-ok",
+        "content": "tool-history-capacity-ok",
+        "not_actual_MCP_or_coding_quality": true
+      },
+      "retrieval": {},
+      "probes": [
+        {
+          "probe": "tool",
+          "seconds": 10.154563262010925,
+          "usage": {
+            "completion_tokens": 22,
+            "prompt_tokens": 107,
+            "total_tokens": 129,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          },
+          "finish_reason": "tool_calls",
+          "response_sha256": "499fa5de52deffe84ac2a7e4b24ba34d3da3bfe6349ae34ca1315b2de7d45e38"
+        },
+        {
+          "probe": "tool-followup",
+          "seconds": 0.5457806869817432,
+          "usage": {
+            "completion_tokens": 8,
+            "prompt_tokens": 239,
+            "total_tokens": 247,
+            "prompt_tokens_details": {
+              "cached_tokens": 218
+            }
+          },
+          "finish_reason": "stop",
+          "response_sha256": "ed13b7aa2362e343607813ea08f74209605a6a44499fb765c4165a61792f92a2"
+        },
+        {
+          "probe": "tool-result",
+          "seconds": 2.2751626489916816,
+          "usage": {
+            "completion_tokens": 65,
+            "prompt_tokens": 154,
+            "total_tokens": 219,
+            "prompt_tokens_details": {
+              "cached_tokens": 128
+            }
+          },
+          "finish_reason": "stop",
+          "response_sha256": "7274e416e8ae74b7b03c35818d3b05f93d287e0136cf4dcdf7cb0b028176f849"
+        }
+      ],
+      "backend_log_SHA256": "4a2eb028bb42997683802575c35ced33c209e2433529de7bb45b9f0549c88c60"
+    },
+    {
+      "layout": {
+        "context": 98304,
+        "gpu_layers": 99,
+        "ubatch": 64,
+        "template": "official_ggml_q8_reference",
+        "template_file": true,
+        "synthetic_targets": [
+          16000,
+          60000,
+          80000
+        ]
+      },
+      "reported_gpu_layers": "33/33",
+      "gpu_peak_MiB": 8350,
+      "aggregate_study_cgroup_peak_bytes": 4728016896,
+      "study_swap_peak_bytes": 0,
+      "tool_call_correct": true,
+      "tool_history": {
+        "actual_reasoning_nonempty": true,
+        "actual_reasoning_retained_in_rendered_template": true,
+        "not_replaced_with_operator_reasoning": true
+      },
+      "dependent_followup": {
+        "expected": "tool-history-capacity-ok",
+        "content": "tool-history-capacity-ok",
+        "not_actual_MCP_or_coding_quality": true
+      },
+      "retrieval": {
+        "prompt60000": {
+          "expected": "capacity-check-60000",
+          "content": "capacity-check-60000",
+          "not_agent_quality": true
+        },
+        "prompt16000": {
+          "expected": "capacity-check-16000",
+          "content": "capacity-check-16000",
+          "not_agent_quality": true
+        },
+        "prompt80000": {
+          "expected": "capacity-check-80000",
+          "content": "capacity-check-80000",
+          "not_agent_quality": true
+        }
+      },
+      "probes": [
+        {
+          "probe": "prompt16000",
+          "seconds": 60.88630505700712,
+          "usage": {
+            "completion_tokens": 10,
+            "prompt_tokens": 16164,
+            "total_tokens": 16174,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          },
+          "finish_reason": "stop",
+          "response_sha256": "0890c218c12734b8c23e02d46a0a422b87fc926852bb10eeb87449fd8e9076f5"
+        },
+        {
+          "probe": "prompt60000",
+          "seconds": 215.82453118698322,
+          "usage": {
+            "completion_tokens": 10,
+            "prompt_tokens": 59934,
+            "total_tokens": 59944,
+            "prompt_tokens_details": {
+              "cached_tokens": 16096
+            }
+          },
+          "finish_reason": "stop",
+          "response_sha256": "3f1827a86387df21bb3fdfc60317698d58ec80887c6e397ea800fb6317c2c65b"
+        },
+        {
+          "probe": "prompt80000",
+          "seconds": 134.61600132100284,
+          "usage": {
+            "completion_tokens": 174,
+            "prompt_tokens": 79929,
+            "total_tokens": 80103,
+            "prompt_tokens_details": {
+              "cached_tokens": 59866
+            }
+          },
+          "finish_reason": "stop",
+          "response_sha256": "cd19025ffcc92f40fa82fa3bc51093b9a91a2865234080485088b3e5b87cdf1f"
+        },
+        {
+          "probe": "tool",
+          "seconds": 12.350538841012167,
+          "usage": {
+            "completion_tokens": 60,
+            "prompt_tokens": 109,
+            "total_tokens": 169,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          },
+          "finish_reason": "tool_calls",
+          "response_sha256": "eee30cfe6dfef873b641d864b3675af74c5de6175a2b16c099dee07981864806"
+        },
+        {
+          "probe": "tool-followup",
+          "seconds": 1.3409828770090826,
+          "usage": {
+            "completion_tokens": 32,
+            "prompt_tokens": 350,
+            "total_tokens": 382,
+            "prompt_tokens_details": {
+              "cached_tokens": 327
+            }
+          },
+          "finish_reason": "stop",
+          "response_sha256": "019c3cde5f431ffb4fd958aee22c76c619746e040df98fccd2003f5983e221ad"
+        },
+        {
+          "probe": "tool-result",
+          "seconds": 6.425311608007178,
+          "usage": {
+            "completion_tokens": 132,
+            "prompt_tokens": 196,
+            "total_tokens": 328,
+            "prompt_tokens_details": {
+              "cached_tokens": 168
+            }
+          },
+          "finish_reason": "stop",
+          "response_sha256": "33ae45f8d47867c6809891e99b3fe69edc2cffb800f2df69090869ffcfa48586"
+        }
+      ],
+      "backend_log_SHA256": "fa2e20b6ff0c5a3648cbe61adc9856452ee1c4fd4ac864be6ff63acfaf0f77e6"
+    }
+  ],
+  "preservation": {
+    "passed": true,
+    "epoch": 1795818801.6913195,
+    "original20_models_unchanged": true,
+    "owner_profile_hashes_unchanged": true,
+    "owner_source_and_pending_work_unchanged": true,
+    "runtime_ids_images_config_running_unchanged": true,
+    "full_Codex_state_unchanged": true,
+    "original_alias_context_restored": true,
+    "both_template_stages_complete": true,
+    "source_baselines": [
+      "baseline-before-mimo-resource",
+      "baseline-after-mimo-resource"
+    ]
+  },
+  "cleanup": {
+    "passed": true,
+    "removed_supervisor": "8316c8c4e539c4d82756e8ea4d4722b89dea8b63d6df160e0b506945752aa4e5",
+    "owned_backend_and_network_removed_by_controller": true,
+    "unowned_resources_not_removed": true
+  },
+  "not_native_Hermes_coding_or_Gitea_result": true,
+  "scope": "Same Q6 file, separate built-in versus official-reference template configurations. Three short genuine tool-history probes per configuration.16k/60k/80k retrieval probes only for reference template. Prefix cache can be reused; timings are not cold-start comparisons.",
+  "next": "Fresh native selected-checkout coding/Gitea evaluation; separate training repository. No production promotion."
+}
