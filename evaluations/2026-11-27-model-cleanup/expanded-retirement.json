@@ -1,0 +1,421 @@
+{
+  "started_epoch": 1795815205.2534435,
+  "authorization": "Owner explicitly requests removal of hard-failing and unnecessary test models; working Vibes and useful alternatives retained.",
+  "planned_bytes": 79006747968,
+  "before_count": 29,
+  "kept": {
+    "FlashModel-Qwen3.5-9B-Q5_K_M.gguf": {
+      "st_dev": 2160,
+      "st_ino": 2104276,
+      "st_size": 6467969664,
+      "st_mtime_ns": 1795101892711398971,
+      "st_mode": 33188,
+      "st_uid": 0,
+      "st_gid": 0,
+      "st_nlink": 1
+    },
+    "Qwen3.6-14B-A3B-FableVibes-Q4_K_M.gguf": {
+      "st_dev": 2160,
+      "st_ino": 2119340,
+      "st_size": 8465553920,
+      "st_mtime_ns": 1794609184339370967,
+      "st_mode": 33212,
+      "st_uid": 1000,
+      "st_gid": 1000,
+      "st_nlink": 1
+    },
+    "Ministral-3-8B-Reasoning-2512-Q5_K_M.gguf": {
+      "st_dev": 2160,
+      "st_ino": 2104321,
+      "st_size": 6059266976,
+      "st_mtime_ns": 1795142692510491980,
+      "st_mode": 33188,
+      "st_uid": 0,
+      "st_gid": 0,
+      "st_nlink": 1
+    },
+    "Ornith-1.5-9B-uncensored.Q5_K_M.gguf": {
+      "st_dev": 2160,
+      "st_ino": 2104236,
+      "st_size": 6467970208,
+      "st_mtime_ns": 1795099873817739341,
+      "st_mode": 33188,
+      "st_uid": 1000,
+      "st_gid": 1006,
+      "st_nlink": 1
+    },
+    "Qwen3.6-14B-A3B-VibeForged-v2-Q6_K.gguf": {
+      "st_dev": 2160,
+      "st_ino": 2097175,
+      "st_size": 11325370432,
+      "st_mtime_ns": 1782745041891059312,
+      "st_mode": 33276,
+      "st_uid": 1000,
+      "st_gid": 1000,
+      "st_nlink": 1
+    },
+    "Ministral-3-8B-Instruct-2512-Q5_K_M.gguf": {
+      "st_dev": 2160,
+      "st_ino": 2104274,
+      "st_size": 6059268512,
+      "st_mtime_ns": 1795100477288623910,
+      "st_mode": 33188,
+      "st_uid": 1000,
+      "st_gid": 1006,
+      "st_nlink": 1
+    },
+    "Qwen3.8-27B-hermes-Q4_K_M.gguf": {
+      "st_dev": 2160,
+      "st_ino": 2104680,
+      "st_size": 16810714560,
+      "st_mtime_ns": 1795529354616376849,
+      "st_mode": 33188,
+      "st_uid": 1000,
+      "st_gid": 1000,
+      "st_nlink": 1
+    },
+    "gemma-4-E4B-it-Q5_K_M.gguf": {
+      "st_dev": 2160,
+      "st_ino": 2104320,
+      "st_size": 5481798784,
+      "st_mtime_ns": 1795142132407769304,
+      "st_mode": 33188,
+      "st_uid": 0,
+      "st_gid": 0,
+      "st_nlink": 1
+    },
+    "Qwen3.5-9B-9b-v5s1-imat-Q4_K_M.gguf": {
+      "st_dev": 2160,
+      "st_ino": 2104230,
+      "st_size": 5629108960,
+      "st_mtime_ns": 1795040396201122587,
+      "st_mode": 33188,
+      "st_uid": 1000,
+      "st_gid": 1006,
+      "st_nlink": 1
+    },
+    "Qwen3.5-9B-Agent.q5_k_m.gguf": {
+      "st_dev": 2160,
+      "st_ino": 2104275,
+      "st_size": 6467971392,
+      "st_mtime_ns": 1795101170647942133,
+      "st_mode": 33188,
+      "st_uid": 0,
+      "st_gid": 0,
+      "st_nlink": 1
+    },
+    "Ministral-3-14B-Instruct-2512-Q4_K_M.gguf": {
+      "st_dev": 2160,
+      "st_ino": 2104281,
+      "st_size": 8239593024,
+      "st_mtime_ns": 1795106703542781954,
+      "st_mode": 33188,
+      "st_uid": 0,
+      "st_gid": 0,
+      "st_nlink": 1
+    },
+    "Qwen3.8-9B-Q5_K_M.gguf": {
+      "st_dev": 2160,
+      "st_ino": 2097162,
+      "st_size": 6642543936,
+      "st_mtime_ns": 1795141076770625632,
+      "st_mode": 33188,
+      "st_uid": 0,
+      "st_gid": 0,
+      "st_nlink": 1
+    },
+    "gpt-oss-20b-MXFP4.gguf": {
+      "st_dev": 2160,
+      "st_ino": 2104277,
+      "st_size": 12109566624,
+      "st_mtime_ns": 1795103169289874203,
+      "st_mode": 33188,
+      "st_uid": 0,
+      "st_gid": 0,
+      "st_nlink": 1
+    },
+    "Qwen3.8-27B-hermes-IQ3_XXS.gguf": {
+      "st_dev": 2160,
+      "st_ino": 2119359,
+      "st_size": 11637692064,
+      "st_mtime_ns": 1795274201418171093,
+      "st_mode": 33188,
+      "st_uid": 1000,
+      "st_gid": 1006,
+      "st_nlink": 1
+    },
+    "gemma-4-12b-it-Q6_K.gguf": {
+      "st_dev": 2160,
+      "st_ino": 2097182,
+      "st_size": 9786021280,
+      "st_mtime_ns": 1782962794422542605,
+      "st_mode": 33188,
+      "st_uid": 1000,
+      "st_gid": 1000,
+      "st_nlink": 1
+    },
+    "Qwen3.6-14B-A3B-VibeForged-v2-Q4_K_M.gguf": {
+      "st_dev": 2160,
+      "st_ino": 2097176,
+      "st_size": 8465553472,
+      "st_mtime_ns": 1782923446406317195,
+      "st_mode": 33276,
+      "st_uid": 1000,
+      "st_gid": 1000,
+      "st_nlink": 1
+    },
+    "Qwen3.5-9B-Q5_K_M.gguf": {
+      "st_dev": 2160,
+      "st_ino": 2097277,
+      "st_size": 6577841376,
+      "st_mtime_ns": 1794856509950642505,
+      "st_mode": 33188,
+      "st_uid": 0,
+      "st_gid": 0,
+      "st_nlink": 1
+    },
+    "Qwen3.6-14B-A3B-FableVibes-Q6_K.gguf": {
+      "st_dev": 2160,
+      "st_ino": 2104581,
+      "st_size": 11325370880,
+      "st_mtime_ns": 1795226686921902869,
+      "st_mode": 33188,
+      "st_uid": 0,
+      "st_gid": 0,
+      "st_nlink": 1
+    },
+    "Qwopus3.5-4B-Coder-Fable5-v1-Q5_K_M.gguf": {
+      "st_dev": 2160,
+      "st_ino": 2104602,
+      "st_size": 3161425312,
+      "st_mtime_ns": 1795209225246037858,
+      "st_mode": 33188,
+      "st_uid": 0,
+      "st_gid": 0,
+      "st_nlink": 1
+    }
+  },
+  "service_baseline": {
+    "/llama-cpp": {
+      "id": "763fb7daa3ef5535dd6553bad40df0106f3a656c70cd9632535640ee4ba15939",
+      "started": "2026-11-27T10:21:56.025671507Z",
+      "restarts": 0,
+      "running": true,
+      "config_sha256": "b55e52c00437fb85d3e4ffe22c3c3c012f208db23a0900d3138bb7ebbf563228"
+    },
+    "/hermes": {
+      "id": "5f8aedd58283a34f7736b73864bbeac4b9be195a88737c4cf3373f0e343ccd4d",
+      "started": "2026-11-27T10:22:25.171373358Z",
+      "restarts": 0,
+      "running": true,
+      "config_sha256": "3ab7fdf4ac4d951b672e4ef6fb354f9db2b0702c077a92a80318cf6a32083258"
+    },
+    "/hermes-codex": {
+      "id": "153f58615740083f19640d8d02ca3623a0979e50342ba991a42d88ec28b622bd",
+      "started": "2026-11-27T03:12:18.35261825Z",
+      "restarts": 0,
+      "running": true,
+      "config_sha256": "ce1e7ff4745cfc7bd1dcc9d16e74940ac908980d8e5339fa0f0d5ffa810f00d1"
+    }
+  },
+  "free_bytes_before": 133109288960,
+  "removed": [
+    {
+      "filename": "DeepHermes-3-Llama-3-8B-q8.gguf",
+      "bytes": 8540771328,
+      "sha256_before_removal": "a6c4731e885a210264cec629900751cf3a8096186909d3b05f09eb0c6d5d310b",
+      "public_pin_matched": null,
+      "identity_before": {
+        "st_dev": 2160,
+        "st_ino": 2097170,
+        "st_size": 8540771328,
+        "st_mtime_ns": 1782572693857975864,
+        "st_mode": 33276,
+        "st_uid": 1000,
+        "st_gid": 1000,
+        "st_nlink": 1
+      },
+      "category": "historical_tool_failure",
+      "reason": "No exposed tool-call path in recorded Hermes run.",
+      "evidence": "README.md historical workflow matrix"
+    },
+    {
+      "filename": "Hermes-3-Llama-3.1-8B.Q8_0.gguf",
+      "bytes": 8540770432,
+      "sha256_before_removal": "c77c263f78b2f56fbaddd3ef2af750fda6ebb4344a546aaa0bfdd546b1ca8d84",
+      "public_pin_matched": null,
+      "identity_before": {
+        "st_dev": 2160,
+        "st_ino": 2097161,
+        "st_size": 8540770432,
+        "st_mtime_ns": 1781915362943515138,
+        "st_mode": 33276,
+        "st_uid": 1000,
+        "st_gid": 1000,
+        "st_nlink": 1
+      },
+      "category": "historical_tool_failure",
+      "reason": "Recorded unreliable forge/tool routing; no current advantage or planned comparison.",
+      "evidence": "README.md historical workflow matrix"
+    },
+    {
+      "filename": "Meta-Llama-3.1-8B-Instruct-Q5_K_M.gguf",
+      "bytes": 5732987072,
+      "sha256_before_removal": "4e5b2ffb8608d250f222d149771fb2575ed53e218438771ca3afc65cd531b9d6",
+      "public_pin_matched": null,
+      "identity_before": {
+        "st_dev": 2160,
+        "st_ino": 2097158,
+        "st_size": 5732987072,
+        "st_mtime_ns": 1781191542101645581,
+        "st_mode": 33276,
+        "st_uid": 1000,
+        "st_gid": 1000,
+        "st_nlink": 1
+      },
+      "category": "historical_tool_failure",
+      "reason": "Recorded text-only response instead of tool use.",
+      "evidence": "README.md historical workflow matrix"
+    },
+    {
+      "filename": "meta-llama-3.1-8b-instruct-q4_k_m.gguf",
+      "bytes": 4920734368,
+      "sha256_before_removal": "5b3f826b3d31ee0548eebb17c766871341a6ab40cbcec69d7c484d382b889d99",
+      "public_pin_matched": null,
+      "identity_before": {
+        "st_dev": 2160,
+        "st_ino": 2097160,
+        "st_size": 4920734368,
+        "st_mtime_ns": 1781191471371719810,
+        "st_mode": 33276,
+        "st_uid": 1000,
+        "st_gid": 1000,
+        "st_nlink": 1
+      },
+      "category": "historical_tool_failure",
+      "reason": "Recorded no tool-call path; retain newer compact helpers instead.",
+      "evidence": "README.md historical workflow matrix"
+    },
+    {
+      "filename": "qwen2.5-coder-14b-instruct-q4_k_m.gguf",
+      "bytes": 8988110272,
+      "sha256_before_removal": "c1e659736d89ac1065fb495330fb824d94001974a4bfa78e7270e43476a8d940",
+      "public_pin_matched": null,
+      "identity_before": {
+        "st_dev": 2160,
+        "st_ino": 2097157,
+        "st_size": 8988110272,
+        "st_mtime_ns": 1781189073410634742,
+        "st_mode": 33276,
+        "st_uid": 1000,
+        "st_gid": 1000,
+        "st_nlink": 1
+      },
+      "category": "historical_tool_failure",
+      "reason": "Did not call tools for the explicit issue-create task.",
+      "evidence": "README.md historical workflow matrix"
+    },
+    {
+      "filename": "qwen2.5-coder-7b-instruct-q8_0.gguf",
+      "bytes": 8098525184,
+      "sha256_before_removal": "b36a4e1c3ddf2ba6fd5501b926128e5fc6430881caaff07e9629bd18f06f685f",
+      "public_pin_matched": null,
+      "identity_before": {
+        "st_dev": 2160,
+        "st_ino": 2097159,
+        "st_size": 8098525184,
+        "st_mtime_ns": 1781900899530316003,
+        "st_mode": 33276,
+        "st_uid": 1000,
+        "st_gid": 1000,
+        "st_nlink": 1
+      },
+      "category": "historical_tool_failure",
+      "reason": "No confirmed MCP completion after three long model calls.",
+      "evidence": "README.md historical workflow matrix"
+    },
+    {
+      "filename": "LFM2.5-8B-A1B-Q5_K_M.gguf",
+      "bytes": 6030339296,
+      "sha256_before_removal": "eb8bd10148ea21e195502d6d6a205983ba40815302068ce72eb160684df92b3e",
+      "public_pin_matched": true,
+      "identity_before": {
+        "st_dev": 2160,
+        "st_ino": 2104317,
+        "st_size": 6030339296,
+        "st_mtime_ns": 1795141631765333351,
+        "st_mode": 33188,
+        "st_uid": 0,
+        "st_gid": 0,
+        "st_nlink": 1
+      },
+      "category": "unsuitable_main_agent",
+      "reason": "Failed primary grounded reads and contribution; narrow publisher-profile metadata success does not justify retaining another helper. Not an all-tests-fail claim.",
+      "evidence": "evaluations/2026-11-19-newer-models/model-retention.json"
+    },
+    {
+      "filename": "Qwen3.8-9B-Q8_0.gguf",
+      "bytes": 9786060096,
+      "sha256_before_removal": "79ca5d342a07922f2bbf38c8d892a79a3c8620c65feaf4b1c66b7830ae724db8",
+      "public_pin_matched": true,
+      "identity_before": {
+        "st_dev": 2160,
+        "st_ino": 2104322,
+        "st_size": 9786060096,
+        "st_mtime_ns": 1795143576975380825,
+        "st_mode": 33188,
+        "st_uid": 0,
+        "st_gid": 0,
+        "st_nlink": 1
+      },
+      "category": "redundant_precision",
+      "reason": "Retain same-checkpoint Q5; Q8 showed no demonstrated primary workflow advantage. Successful contribution evidence remains valid.",
+      "evidence": "evaluations/2026-11-19-newer-models/model-retention.json"
+    },
+    {
+      "filename": "Qwen3.5-9B-Q8_0.gguf",
+      "bytes": 9527502048,
+      "sha256_before_removal": "809626574d0cb43d4becfa56169980da2bb448f2299270f7be443cb89d0a6ae4",
+      "public_pin_matched": null,
+      "identity_before": {
+        "st_dev": 2160,
+        "st_ino": 2097179,
+        "st_size": 9527502048,
+        "st_mtime_ns": 1782924624397286989,
+        "st_mode": 33276,
+        "st_uid": 1000,
+        "st_gid": 1000,
+        "st_nlink": 1
+      },
+      "category": "redundant_precision",
+      "reason": "Retain stock Q5 as baseline; historical Q8 tool successes and later 3/9 combined results do not justify a second large stock precision reference.",
+      "evidence": "evaluations/2026-11-12/investigation.md"
+    },
+    {
+      "filename": "Qwen3.5-14B-A3B-Claude-Opus-Reasoning-Distilled-4.6-MXFP4_MOE.gguf",
+      "bytes": 8840947872,
+      "sha256_before_removal": "2b6b9a8aa361acb68ab5faca2f5ab1b8443d2869ebe08ddb714185d5626c1f31",
+      "public_pin_matched": null,
+      "identity_before": {
+        "st_dev": 2160,
+        "st_ino": 2097177,
+        "st_size": 8840947872,
+        "st_mtime_ns": 1782743267414076605,
+        "st_mode": 33276,
+        "st_uid": 1000,
+        "st_gid": 1000,
+        "st_nlink": 1
+      },
+      "category": "superseded_mixed_candidate",
+      "reason": "Weak issue-write reliability and repeated tool errors; older eventual success is preserved in reports. Retain the working Vibes family instead.",
+      "evidence": "README.md historical workflow matrix"
+    }
+  ],
+  "complete": true,
+  "finished_epoch": 1795815541.565516,
+  "removed_bytes": 79006747968,
+  "remaining_count": 19,
+  "remaining_metadata_unchanged": true,
+  "services_unchanged": true,
+  "free_bytes_after": 212124332032
+}

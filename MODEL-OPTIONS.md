@@ -1,5 +1,7 @@
 # Model follow-up options
 
+[November 27 owner-authorized model cleanup](evaluations/2026-11-27-model-cleanup/README.md) is the current retention inventory: 19 main-folder GGUFs, all four Vibes variants preserved. Removed files are historical results, not installed choices; hard failures and redundant/mixed candidates are distinguished in the receipt.
+
 [Current public adapted 27B Q3_K_M coding/Gitea](evaluations/2026-11-24-gpu-quant/native-adapted-q3km-current-cold-beets.md) **fails in 48.01 coding / 52.16 wall minutes**, despite 98k context, 66/66 reported GPU layers and 54 successful backend calls. It opens an issue and personal fork, but leaves worker behavior unchanged, adds inaccurate documentation and no cancellation/tests/PR. All three turns stop at native edit safeguards. Strict original runtime/settings/models/pending-work/full Codex preservation and exact cleanup pass; the issue is confirmed closed.
 
 [Q3_K_M capacity](evaluations/2026-11-24-gpu-quant/resource-adapted-q3km-current.md) completes all six probes at 98,304 context / 66 of 66 reported GPU layers / 14,920 MiB sampled peak, plus 521 MiB host model buffers. Tool history and exact 16k/60k/80k markers pass. The separately completed coding workflow fails; capacity is not a quality verdict.
