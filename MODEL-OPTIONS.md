@@ -1,8 +1,10 @@
 # Model follow-up options
 
-[Current retained IQ3 capacity](evaluations/2026-11-24-gpu-quant/resource-adapted-iq3-current.md) completes all six probes at **98k / 66 of 66 reported GPU layers / 12,904 MiB peak**, with **521 MiB host model buffers** and no study swap. Exact 16k/60k/80k markers pass; 60k takes **14.51 minutes** with cached input. Original services and this stage's full Codex baseline are restored and verified. A fresh coding/Gitea trial is next; capacity is not a quality verdict.
+[Current retained IQ3 coding/Gitea](evaluations/2026-11-24-gpu-quant/native-adapted-iq3-current-cold-beets.md) fails in **32.50 coding / 36.50 wall minutes** at **98k / 66 of 66 GPU layers / 12,904 MiB peak**, with **521 MiB host model buffers**. A two-assignment rename breaks ordinary timer dispatch; cancellation, new tests, README changes and a PR are absent. All 36 backend calls succeed; the first takes **229.62 seconds**. All three turns end at native repeated-edit safeguards. Existing tests pass while independent source and real Nicotine controls expose the regression. Strict fresh-baseline restoration, owner settings/models and Hermes-Codex preservation pass; the issue is closed. This is a failed workflow duration, not a correct-task speedup.
 
-[Fresh current IQ4 retry](evaluations/2026-11-24-gpu-quant/native-adapted-iq4-current-r2-cold-beets.md) fits 98k with explicit host spillover but fails the published workflow in **110.58 coding / 114.69 wall minutes**. All 67 backend requests complete; actual issue/fork/PR succeed, but ordinary import dispatch breaks, cancel is absent and no new tests are published. Compression plus the first resumed request costs **30.83 minutes**. Original model settings and owner edits are verified. Hermes-Codex's start timestamp changed for an unknown reason, so its full-state preservation check failed. Retained IQ3 capacity now passes; fresh coding is still pending.
+[Current retained IQ3 capacity](evaluations/2026-11-24-gpu-quant/resource-adapted-iq3-current.md) completes all six probes at **98k / 66 of 66 reported GPU layers / 12,904 MiB peak**, with **521 MiB host model buffers** and no study swap. Exact 16k/60k/80k markers pass; 60k takes **14.51 minutes** with cached input. Original services and this stage's full Codex baseline are restored and verified. The separately completed fresh coding/Gitea workflow fails; capacity is not a quality verdict.
+
+[Fresh current IQ4 retry](evaluations/2026-11-24-gpu-quant/native-adapted-iq4-current-r2-cold-beets.md) fits 98k with explicit host spillover but fails the published workflow in **110.58 coding / 114.69 wall minutes**. All 67 backend requests complete; actual issue/fork/PR succeed, but ordinary import dispatch breaks, cancel is absent and no new tests are published. Compression plus the first resumed request costs **30.83 minutes**. Original model settings and owner edits are verified. Hermes-Codex's start timestamp changed for an unknown reason, so its full-state preservation check failed. Retained IQ3 capacity passes, but its fresh coding workflow also fails.
 
 [Owned Q8 retirement](evaluations/2026-11-24-gpu-quant/study-owned-q8-retirement.md) recovered staging headroom to **117.45 GiB free**. Only the failed task-added Q8 file was removed after a fresh full-hash/ownership check; original30 models and useful IQ4 are preserved. That historical retirement funded the fresh retry; see its report for the later reserve.
 
@@ -30,14 +32,14 @@ Current-runtime [Vibe Q4 reasoning](evaluations/2026-11-24-gpu-quant/native-vibe
 Recorded November 19, 2026. This is a reminder of possible next steps, not a
 record of tests on the spare PCs or a change to the deployed model.
 
-## Next retained reference
+## Retained IQ3 reference
 
 The original `Qwen3.8-27B-hermes-IQ3_XXS.gguf` is 11,637,692,064 bytes, SHA256
 `390a54c26ed8fc42a558f073e5745b7c0c1922086bbcc07e2e6357a7b527c345`.
 It was downloaded at netprojects revision `6a786a26437f9210d5da0954208c7335ee0a55e1`;
 the same advertised file hash appears at the current `10fdf357` revision.
 A fresh full hash and [current-runtime capacity admission](evaluations/2026-11-24-gpu-quant/resource-adapted-iq3-current.md)
-now pass; a fresh coding trial is still required. Its calibration metadata differs from IQ4 (150 chunks /
+now pass; its [fresh coding workflow](evaluations/2026-11-24-gpu-quant/native-adapted-iq3-current-cold-beets.md) fails. Its calibration metadata differs from IQ4 (150 chunks /
 `imatrix-calib.txt`, rather than 104 / `calib-train.txt`), so any gain is not
 precision-only evidence. The prospective public Fable Q5 remains undownloaded;
 new transfers require fresh disk admission. No useful retained weight was removed
@@ -298,7 +300,7 @@ available before spending time making custom quants or buying hardware.
 |---|---|---|
 | RTX 2070, 8 GB | Gemma 4 E4B Instruct Q5_K_M first; consider Q4 only if needed | Backup for smaller jobs. Gemma peaked at 4,804 MiB on the P100; fit, context and speed on the 2070 remain untested. Reserve memory for desktop use. |
 | RTX 5080, 16 GB, if available | Adapted27B IQ3XXS after native runtime compatibility checks; existing small files for lighter tasks | Reuse the measured P100 candidate as a starting point. The same nominal 16 GB capacity does not establish fit or speed on the 5080; those measurements remain pending. |
-| Current P100, 16 GiB | Existing VibeForged production default; adapted 27B Q4 has the strongest historical supervised contribution result | Production default is preserved. Q4 requires documented CPU spillover; no current Beets cell has qualified for unattended work. Earlier IQ3 findings are dated November 21, not a new matched-runtime score. |
+| Current P100, 16 GiB | Existing VibeForged production default; adapted 27B Q4 has the strongest historical supervised contribution result | Production default is preserved. Q4 requires documented CPU spillover; no current Beets cell has qualified for unattended work. Earlier IQ3 findings are dated November 21; the new matched-runtime IQ3 workflow also fails. |
 
 Use a llama.cpp build and driver appropriate for each GPU. Do not copy the
 P100 CUDA image onto the 5080 and assume compatibility. A GGUF can move between

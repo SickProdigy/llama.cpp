@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "positive": {
+    "passed": true,
+    "archive_SHA256": "94294ee11bbf43cbe17a9bcaecd6d9cc3bfe8683c02e936faf95cc233221b107",
+    "manifest_files": 32,
+    "whole_workflow_pass": false,
+    "scope": "Saved observations and static published-source consistency only; not inference, full behavior replay, remote authentication replay, independent signature verification or autonomous reliability."
+  },
+  "negative_controls": [
+    {
+      "case": "host_over_8GiB",
+      "manifest_recomputed": true,
+      "rejected": true
+    },
+    {
+      "case": "published_source_index_lie",
+      "manifest_recomputed": true,
+      "rejected": true
+    },
+    {
+      "case": "false_strict_Codex_preservation",
+      "manifest_recomputed": true,
+      "rejected": true
+    }
+  ],
+  "verifier_SHA256": "7e15df8f7b80278c826981f8ddfa0c6daaa37b8cd660039e6054ab20d9f94a0a",
+  "scope": "Saved consistency/static source checks; not model or full behavior replay."
+}

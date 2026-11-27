@@ -1,4 +1,4 @@
-# Current retained IQ3_XXS: 98k capacity admitted, coding quality pending
+# Current retained IQ3_XXS: 98k capacity admitted
 
 November 27: the retained Hermes-adapted 27B IQ3_XXS completes all six current
 resource probes at **98,304 context**, without a fallback. The backend reports
@@ -103,8 +103,5 @@ python3 evaluations/2026-11-24-gpu-quant/verify_current_adapted_iq3_resource.py 
 (cd evaluations/2026-11-24-gpu-quant && sha256sum -c resource-adapted-iq3-current-evidence.sha256)
 ```
 
-This validates saved evidence, not new inference or code correctness. The next
-step is a fresh native coding/documentation/cancellation conversation with actual
-configured Gitea issue, fork and PR actions, isolated from prior graders and
-results. No autonomous-reliability or GPT-5-equivalence claim follows from these
+This validates saved capacity evidence, not new inference or code correctness. The separately completed [fresh native coding/Gitea workflow](native-adapted-iq3-current-cold-beets.md) fails: actual issue/fork writes occur, but ordinary import dispatch regresses and cancellation/docs/tests/PR are absent. No autonomous-reliability or GPT-5-equivalence claim follows from these
 six probes.

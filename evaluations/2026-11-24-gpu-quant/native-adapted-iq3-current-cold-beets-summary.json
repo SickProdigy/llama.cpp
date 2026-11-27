@@ -1,0 +1,293 @@
+{
+  "candidate": "adapted-iq3-current",
+  "whole_workflow_pass": false,
+  "review_date_UTC": "2026-11-27",
+  "model": {
+    "file": "Qwen3.8-27B-hermes-IQ3_XXS.gguf",
+    "bytes": 11637692064,
+    "sha256": "390a54c26ed8fc42a558f073e5745b7c0c1922086bbcc07e2e6357a7b527c345",
+    "after_full_SHA_advised_DONTNEED_for_only_selected_model_file": true,
+    "not_global_cache_flush_or_proof_of_cold_cache": true
+  },
+  "model_repository": "netprojects/Qwen3.8-27B-hermes-adapted-GGUF",
+  "model_revision": "10fdf357f14825c61ad7eb42a932e1f1e4390e8f",
+  "original_download_revision": "6a786a26437f9210d5da0954208c7335ee0a55e1",
+  "runtime_images": {
+    "Hermes": "sha256:c9b40eb8dea441cba7ded2e6589e5c011545ffc1ec76a0dc736f8e399d8f947b",
+    "llama.cpp": "sha256:fee4289628e7ba09f6fbf62d6ce4325aebb2531ffde2154d41276fe4acc58da3"
+  },
+  "settings": {
+    "context": 98304,
+    "layout": {
+      "context": 98304,
+      "gpu_layers": 99,
+      "ubatch": 64
+    },
+    "sampler": {
+      "temperature": 0.8,
+      "top_p": 1,
+      "top_k": 0,
+      "min_p": 0,
+      "repeat_penalty": 1,
+      "presence_penalty": 0,
+      "chat_template_kwargs": {
+        "enable_thinking": false
+      },
+      "seed": 20261124
+    },
+    "main_output_cap": 8192,
+    "auxiliary_output_cap": 8192,
+    "cache_K_V": "q4_0",
+    "cache_checkpoints": 2,
+    "cache_RAM_MiB": 512,
+    "fit": "off",
+    "load_mode": "none",
+    "single_slot": true,
+    "CPU_threads": 8
+  },
+  "phases": [
+    {
+      "phase": 0,
+      "coding_seconds": 1185.6920315339958,
+      "CLI_exit": 0,
+      "external_timeout": false,
+      "query_sha256": "beee14a6776b2978bc452d856b39e32ae9c10e2deba5b5ed5ffba2f5fc1460a3",
+      "source_authority": "actual personal-fork commit; no PR created",
+      "source_digest": "01366b61ff05e7e718b04a5920febee0134b68e1d313043082916ef1b534ef84",
+      "changed_paths": [
+        "beetsbridge/__init__.py"
+      ],
+      "project_exit": 0,
+      "original_exit": 0,
+      "independent_exit": 1,
+      "project_summary": [
+        "83 passed, 2 subtests passed in 3.22s"
+      ],
+      "original_summary": [
+        "83 passed, 2 subtests passed in 3.19s"
+      ],
+      "local_source_digest": "06d454e90056f73359a168f0d15ecedd3ee8e3d555797450257ed0bb2dcfa68e",
+      "local_changed_paths": [],
+      "captured_remote_head": "534eba6262395a384803e35d37d4e8adffe4d1d2",
+      "native_end_reason": "repeated edit failure guard",
+      "guard_failure_count": 8
+    },
+    {
+      "phase": 1,
+      "coding_seconds": 453.7484353179898,
+      "CLI_exit": 0,
+      "external_timeout": false,
+      "query_sha256": "260b662f2b7392663ab74c6926c6e00cc1e27488f1ad2d056eb7c1b187b08588",
+      "source_authority": "actual personal-fork commit; no PR created",
+      "source_digest": "01366b61ff05e7e718b04a5920febee0134b68e1d313043082916ef1b534ef84",
+      "changed_paths": [
+        "beetsbridge/__init__.py"
+      ],
+      "project_exit": 0,
+      "original_exit": 0,
+      "independent_exit": 1,
+      "project_summary": [
+        "83 passed, 2 subtests passed in 3.18s"
+      ],
+      "original_summary": [
+        "83 passed, 2 subtests passed in 3.21s"
+      ],
+      "local_source_digest": "06d454e90056f73359a168f0d15ecedd3ee8e3d555797450257ed0bb2dcfa68e",
+      "local_changed_paths": [],
+      "captured_remote_head": "534eba6262395a384803e35d37d4e8adffe4d1d2",
+      "native_end_reason": "repeated edit failure guard",
+      "guard_failure_count": 5
+    },
+    {
+      "phase": 2,
+      "coding_seconds": 310.6724883190036,
+      "CLI_exit": 0,
+      "external_timeout": false,
+      "query_sha256": "40914ef6af6210cffc2728f9e6811a52ed1b88e402397599ae4233c4692853eb",
+      "source_authority": "actual personal-fork commit; no PR created",
+      "source_digest": "01366b61ff05e7e718b04a5920febee0134b68e1d313043082916ef1b534ef84",
+      "changed_paths": [
+        "beetsbridge/__init__.py"
+      ],
+      "project_exit": 0,
+      "original_exit": 0,
+      "independent_exit": 1,
+      "project_summary": [
+        "83 passed, 2 subtests passed in 3.22s"
+      ],
+      "original_summary": [
+        "83 passed, 2 subtests passed in 3.21s"
+      ],
+      "local_source_digest": "06d454e90056f73359a168f0d15ecedd3ee8e3d555797450257ed0bb2dcfa68e",
+      "local_changed_paths": [],
+      "captured_remote_head": "534eba6262395a384803e35d37d4e8adffe4d1d2",
+      "native_end_reason": "repeated edit failure guard",
+      "guard_failure_count": 5
+    }
+  ],
+  "coding_minutes": 32.50188258618315,
+  "supervisor_wall_minutes": 36.50407031666667,
+  "runtime_audit": {
+    "usage_completed_requests": 36,
+    "requested_calls": 36,
+    "unmatched_request_files": [],
+    "backend_HTTP_error_statuses": [],
+    "failed_backend_requests": 0,
+    "backend_failure_classes": [],
+    "largest_completed_prompt": 47855,
+    "any_length_finish": false,
+    "auxiliary": [],
+    "all_user_tasks_literal_in_final_main_request": [
+      true,
+      true,
+      true
+    ],
+    "frozen_code_files_verified": 134,
+    "initial_Gitea_git_facts_supplied": true
+  },
+  "resource": {
+    "samples": 198,
+    "sampling_pause_seconds": 10,
+    "measurement_errors": 0,
+    "guards": 0,
+    "peak_GPU_MiB": 12904,
+    "peak_aggregate_cgroup_bytes": 7324512256,
+    "peak_process_PSS_bytes": 2498571264,
+    "peak_study_swap_bytes": 0,
+    "minimum_disk_free_bytes": 111304413184,
+    "minimum_staging_free_bytes": 118333435904,
+    "placement_lines": [
+      "0.01.217.053 I load_tensors: offloaded 66/66 layers to GPU",
+      "0.01.217.066 I load_tensors:        CUDA0 model buffer size = 10136.68 MiB",
+      "0.01.217.069 I load_tensors:    CUDA_Host model buffer size =   521.00 MiB",
+      "0.27.248.392 I llama_kv_cache:      CUDA0 KV buffer size =  1728.00 MiB",
+      "0.27.297.657 I sched_reserve:      CUDA0 compute buffer size =   408.50 MiB",
+      "0.27.297.662 I sched_reserve:  CUDA_Host compute buffer size =    17.00 MiB"
+    ]
+  },
+  "publication": {
+    "upstream_issue": 1,
+    "issue_closed_single_get_verified": true,
+    "personal_fork_parent_verified": true,
+    "upstream_baseline_blobs_verified": 40,
+    "actual_fork_blobs_verified": 40,
+    "PR": null,
+    "PR_open_unmerged": false,
+    "head_SHA": "534eba6262395a384803e35d37d4e8adffe4d1d2",
+    "base_SHA": "f9980ddc8aa6809e2f98f3ee95436bdb368e7a3d",
+    "head_unchanged_after_initial_turn": true,
+    "published_authored_tests": 0,
+    "README_changed": false,
+    "operator_connected_private_fork_read": "404 access limitation; authenticated isolated actor read verified actual fork, head and all40 blobs. Not a fork-absence inference."
+  },
+  "preservation": {
+    "passed": true,
+    "both_original_and_staging_reserves_verified": true,
+    "stage_free_GiB": 115.06938171386719,
+    "original_ids_images_configuration_running_preserved": true,
+    "codex_entire_snapshot_unchanged": true,
+    "four_profile_hashes_unchanged": true,
+    "all_30_retained_model_metadata_unchanged": true,
+    "active_study_candidate": "adapted-iq3-current-cold-20261127",
+    "selected_retained_IQ3_full_SHA_verified_before_model_calls": true,
+    "original_alias_context_restored": true,
+    "at_least_100_GiB_free": true,
+    "free_GiB": 103.64714431762695
+  },
+  "owner_preservation": {
+    "passed": true,
+    "head_status_all_tracked_and_ignored_instructions_unchanged": true,
+    "tracked_files_checked": 40
+  },
+  "cleanup": {
+    "passed": true,
+    "terminal_supervisor_removed": "667bc94d269bce1d253d6d90fee7216f3d1164ecff2c3a2b2442cb164656d60e",
+    "owned_backend_agent_proxies_network_absent": true,
+    "exclusive_anonymous_optdata_volume_removed_with_supervisor": true,
+    "model_stage_volume_preserved": true,
+    "original_preservation_audits_passed_before_cleanup": true,
+    "preservation_scope": "Strict fresh-baseline configuration/models/profiles/owner invariants and entire Codex snapshot unchanged",
+    "strict_Codex_full_snapshot_unchanged": true,
+    "no_unrelated_containers_volumes_or_networks_changed": true,
+    "epoch": 1795756930.3493812
+  },
+  "strict_runtime_restored": true,
+  "intervention": {
+    "assessor_corrective_hints_patches_resends_or_policy_changes": false,
+    "ordinary_project_gate_feedback_visible": true,
+    "original_workflow_requests_only": 3
+  },
+  "native_endings": [
+    {
+      "phase": 0,
+      "CLI_exit": 0,
+      "coding_seconds": 1185.6920315339958,
+      "native_end_reason": "repeated edit failure guard",
+      "tool": "gitea_edit_file",
+      "reported_failure_count": 8,
+      "generated_final_model_answer": false,
+      "last_DB_assistant_scope": "Native runtime guard message, not a generated completion claim",
+      "runtime_guard_content_SHA256": "b712d00759eb7b98542804338116fbdb1038d21e2657e416b25cdf896df39285",
+      "last_visible_tool_result_SHA256": "7431194fd67453b753ff42f7293eea1424de2a91e90ec281cfc74b4e71187ae6",
+      "frozen_DB_SHA256": "0934a187b894c2a1860fcf4d6f18d4cedd830f351c9c9ced98d69680e596ba6d",
+      "last_visible_tool_result_class": "Ordinary project test fails because disable() still calls removed _stop_timers;1failed82passed2subtests"
+    },
+    {
+      "phase": 1,
+      "CLI_exit": 0,
+      "coding_seconds": 453.7484353179898,
+      "native_end_reason": "repeated edit failure guard",
+      "tool": "gitea_edit_file",
+      "reported_failure_count": 5,
+      "generated_final_model_answer": false,
+      "last_DB_assistant_scope": "Native runtime guard message, not a generated completion claim",
+      "runtime_guard_content_SHA256": "a08d775cf0b3afe724c0c765e4fb42066787aabb1848a411b9bacd5a96087656",
+      "last_visible_tool_result_SHA256": "fa32d735a12714c642bca425bde137e285ad838252eb42b8f416d95f65ec95d5",
+      "frozen_DB_SHA256": "75ecd4587f023a3bd09ddfd0e842cebbdde2f65ee4221785c10d65c1f28a2a45",
+      "last_visible_tool_result_class": "Repeated identical edit arguments blocked by native guard"
+    },
+    {
+      "phase": 2,
+      "CLI_exit": 0,
+      "coding_seconds": 310.6724883190036,
+      "native_end_reason": "repeated edit failure guard",
+      "tool": "gitea_edit_file",
+      "reported_failure_count": 5,
+      "generated_final_model_answer": false,
+      "last_DB_assistant_scope": "Native runtime guard message, not a generated completion claim",
+      "runtime_guard_content_SHA256": "a08d775cf0b3afe724c0c765e4fb42066787aabb1848a411b9bacd5a96087656",
+      "last_visible_tool_result_SHA256": "fa32d735a12714c642bca425bde137e285ad838252eb42b8f416d95f65ec95d5",
+      "frozen_DB_SHA256": "27af16d831ef44181ca1e5ac82f769c82c06dd5408ef68e36236688c7a4fb069",
+      "last_visible_tool_result_class": "Repeated identical edit arguments blocked by native guard"
+    }
+  ],
+  "findings": {
+    "actual_module_delta": "Only two assignments rename _stopping to _abandoned in __init__ and loaded_notification; _timer_elapsed still reads self._stopping. No repair of waiting workers, command, cancellation or shutdown guard.",
+    "primary_behavior_failure": "On ordinary fresh-plugin timer dispatch self._stopping is absent, causing AttributeError before worker launch. Static source binding and isolated real Nicotine3.3.11 observer agree; not dependent on same-object reload stress or a private-method signature convention.",
+    "requirements_missing": [
+      "Working initial lifecycle repair",
+      "Registered /beetscancel with correct pending/waiting counts and callback identity",
+      "Authored regression tests",
+      "Requested README update",
+      "Actual upstream PR"
+    ],
+    "project_test_adequacy": "All83 original project tests plus2subtests pass. Tests file unchanged; existing Beets tests exercise direct worker invocation and schedule/cancel without firing an ordinary newly scheduled timer. Green suite does not detect this public-path regression. No claim that fixture monkeypatch initializes the missing field.",
+    "issue_claim_audit": {
+      "claim": "Regression tests added in tests/test_beetsbridge.py",
+      "finding": "Contradicted by unchanged actual fork tests file and no test changes across all3 snapshots",
+      "claim_source": "Explicit connected MCP issue1 GET plus perturn captured issue bodies"
+    }
+  },
+  "frozen_code_files_verified": 134,
+  "limitations": [
+    "One three-turn workflow, not three independent trials, autonomous reliability or GPT5 equivalence.",
+    "All3 turns ended at native repeated-edit safeguards; shorter failed-run duration is not a correct-task speedup.",
+    "No auxiliary call occurred; compression quality untested. All three literal tasks remain in final main request.",
+    "66/66 layers reported GPU, with521MiB host model buffers: not zero host allocation or proof all tensors are GPU resident.",
+    "Shared host,10-second sampling,cache reuse and finite samples limit timing/memory comparisons.",
+    "Public calibration/tensor production differs from IQ4/Q4; placement/ubatch also differ. No precision-only causality.",
+    "Ordinary gate rejected a helper rename whose unchanged disable() still called the removed method. This is a public behavior defect, not a demand to retain a private helper name. Test paths were permitted.",
+    "Real Nicotine handler controls use isolated fake timers/deferred threads/import boundary; no live GUI, media or beets process. Three failure manifestations share one missing-field bug.",
+    "Saved evidence consistency/static source facts reproducible; no inference, live remote authentication or full behavioral replay. Raw actor conversations/profiles/private graders/reference code/signing keys excluded."
+  ]
+}
