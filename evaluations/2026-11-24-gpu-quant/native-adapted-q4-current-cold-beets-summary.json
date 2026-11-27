@@ -1,0 +1,235 @@
+{
+  "whole_workflow_pass": false,
+  "review_date_UTC": "2026-11-27",
+  "phases": [
+    {
+      "phase": 0,
+      "coding_seconds": 2773.457713806012,
+      "CLI_exit": 0,
+      "external_timeout": false,
+      "source_authority": "actual published fork commit; local checkout remained baseline",
+      "source_digest": "386a439ed178ad28593866e5db641243a2d6f73d0ea4c7e3a4d3fdb72ab1527d",
+      "changed_paths": [
+        "beetsbridge/__init__.py",
+        "tests/test_beetsbridge.py"
+      ],
+      "project_exit": 0,
+      "preservation_exit": 0,
+      "independent_exit": 1,
+      "project_summary": "87 passed, 2 subtests passed in 3.31s",
+      "original_summary": "83 passed, 2 subtests passed in 3.20s",
+      "source_grade_sha256": "089e972569337ac5ff7d9da77a65514691b187d1de691e551005a2b4e800c979"
+    },
+    {
+      "phase": 1,
+      "coding_seconds": 478.3426849649986,
+      "CLI_exit": 0,
+      "external_timeout": false,
+      "source_authority": "actual published fork commit; local checkout remained baseline",
+      "source_digest": "e99507ccfe60df3d06cde5e1f3f52127f3f244f7b230a1e3259b940498e27cd2",
+      "changed_paths": [
+        "beetsbridge/README.md",
+        "beetsbridge/__init__.py",
+        "tests/test_beetsbridge.py"
+      ],
+      "project_exit": 0,
+      "preservation_exit": 0,
+      "independent_exit": 1,
+      "project_summary": "87 passed, 2 subtests passed in 3.18s",
+      "original_summary": "83 passed, 2 subtests passed in 3.17s",
+      "source_grade_sha256": "d990bcd7f4c183708382bc2e64a2ce0f2a85040dc4fdcfadb86fa73a7bf5f913"
+    },
+    {
+      "phase": 2,
+      "coding_seconds": 1795.320078942008,
+      "CLI_exit": 0,
+      "external_timeout": false,
+      "source_authority": "actual published fork commit; local checkout remained baseline",
+      "source_digest": "e8862ffdd4ee3e4148637a5166e9b725ed10b3234db0d43fc07a18806acac2b2",
+      "changed_paths": [
+        "beetsbridge/README.md",
+        "beetsbridge/__init__.py",
+        "tests/test_beetsbridge.py"
+      ],
+      "project_exit": 0,
+      "preservation_exit": 0,
+      "independent_exit": 1,
+      "project_summary": "92 passed, 2 subtests passed in 3.21s",
+      "original_summary": "83 passed, 2 subtests passed in 3.26s",
+      "source_grade_sha256": "b0bcb8f797dd359b69f0c34bc0ccf4609d1f3c20c0e6b8fc0d4862adc670710c"
+    }
+  ],
+  "coding_minutes": 84.11867462855031,
+  "lineage_and_headroom": {
+    "lineage": [
+      {
+        "phase": 0,
+        "actual_lineage_equals_recorded": true,
+        "cli_handle_in_ancestry": true,
+        "query_matches_exact_frozen_task": true,
+        "nodes": 1
+      },
+      {
+        "phase": 1,
+        "actual_lineage_equals_recorded": true,
+        "cli_handle_in_ancestry": true,
+        "query_matches_exact_frozen_task": true,
+        "nodes": 1
+      },
+      {
+        "phase": 2,
+        "actual_lineage_equals_recorded": true,
+        "cli_handle_in_ancestry": true,
+        "query_matches_exact_frozen_task": true,
+        "nodes": 1
+      }
+    ],
+    "rotations": 0,
+    "not_semantic_summary_faithfulness_proof": true,
+    "complete_requests": 37,
+    "all_actual_usage_fits_context": true,
+    "requested_output_headroom_shortfalls": [],
+    "sum_serial_recorded_backend_request_seconds": 4839.427443027496,
+    "supervisor_wall_minutes": 88.45831757386526,
+    "forge_calls": 69,
+    "forge_operation_counts": {
+      "get_me": 20,
+      "repo_read": 20,
+      "search_repos": 4,
+      "issue_write": 1,
+      "repo_write": 1,
+      "branch_write": 1,
+      "create_or_update_file": 17,
+      "get_file_contents": 2,
+      "get_repository_tree": 1,
+      "pull_request_write": 2
+    },
+    "outside_scope_denials": [],
+    "observer_source_SHA256": "d7d2dd4023299d308d898f0c81792f0ee0eb451a154410ca69487555231f5b73"
+  },
+  "runtime_audit": {
+    "usage_completed_requests": 37,
+    "requested_calls": 37,
+    "unmatched_request_files": [],
+    "backend_HTTP_error_statuses": [],
+    "failed_backend_requests": 0,
+    "backend_failure_classes": [],
+    "largest_completed_prompt": 48859,
+    "any_length_finish": false,
+    "auxiliary": [],
+    "all_user_tasks_literal_in_final_main_request": [
+      true,
+      true,
+      true
+    ],
+    "frozen_code_files_verified": 130,
+    "initial_Gitea_git_facts_supplied": true
+  },
+  "resource": {
+    "samples": 474,
+    "sampling_pause_seconds": 10,
+    "measurement_errors": 0,
+    "guards": 0,
+    "peak_GPU_MiB": 15456,
+    "peak_aggregate_cgroup_bytes": 7626006528,
+    "peak_process_PSS_bytes": 5376007168,
+    "peak_study_swap_bytes": 0,
+    "minimum_disk_free_bytes": 111718924288,
+    "minimum_staging_free_bytes": 110908231680,
+    "placement_lines": [
+      "0.01.913.326 I load_tensors:        CUDA0 model buffer size = 12787.45 MiB",
+      "0.01.913.327 I load_tensors:    CUDA_Host model buffer size =  2982.90 MiB",
+      "0.34.668.624 I llama_kv_cache:        CPU KV buffer size =   216.00 MiB",
+      "0.34.671.703 I llama_kv_cache:      CUDA0 KV buffer size =  1512.00 MiB",
+      "0.34.719.417 I sched_reserve:      CUDA0 compute buffer size =   544.75 MiB",
+      "0.34.719.420 I sched_reserve:  CUDA_Host compute buffer size =    34.12 MiB"
+    ]
+  },
+  "model": {
+    "file": "Qwen3.8-27B-hermes-Q4_K_M.gguf",
+    "bytes": 16810714560,
+    "sha256": "6512bb1c2595575fc0aed39b7d72a6aaf71084b1164b5d3749f87a6c2a3d3bf3",
+    "after_full_SHA_advised_DONTNEED_for_only_selected_model_file": true,
+    "not_global_cache_flush_or_proof_of_cold_cache": true
+  },
+  "model_repository": "netprojects/Qwen3.8-27B-hermes-adapted-GGUF",
+  "model_revision": "10fdf357f14825c61ad7eb42a932e1f1e4390e8f",
+  "runtime_images": {
+    "Hermes": "sha256:c9b40eb8dea441cba7ded2e6589e5c011545ffc1ec76a0dc736f8e399d8f947b",
+    "llama.cpp": "sha256:fee4289628e7ba09f6fbf62d6ce4325aebb2531ffde2154d41276fe4acc58da3"
+  },
+  "settings": {
+    "context": 98304,
+    "GPU_layers_reported": "56/66",
+    "ubatch": 128,
+    "cache_K_V": "q4_0",
+    "cache_checkpoints": 2,
+    "cache_RAM_MiB": 512,
+    "fit": "off",
+    "temperature": 0.8,
+    "top_p": 1,
+    "top_k": 0,
+    "thinking": false,
+    "main_and_aux_output_cap": 8192,
+    "seed": 20261124
+  },
+  "publication": {
+    "actual_issue_created": true,
+    "actual_personal_fork_parent_verified": true,
+    "actual_PR_created_updated": true,
+    "issue_closed_after_test": true,
+    "PR_preserved_unmerged": true,
+    "head_SHA": "4abd98fb5252d0ab87ab11cecb4024be64fd4d22",
+    "base_SHA": "f9980ddc8aa6809e2f98f3ee95436bdb368e7a3d",
+    "unchanged_upstream_blobs_verified": 40,
+    "independent_connected_MCP_final_readback": true
+  },
+  "findings": [
+    "Initial worker has no stopped-activation guard before/after serialization lock; dispatched/waiting work still imports after disable/reload.",
+    "Resetting generation to zero allows an old timer to dispatch a fresh same-folder job after reload (posthoc boundary control).",
+    "Cancellation handler exists but is absent from registered commands. Direct calls touch timers only, not dispatched/waiting work.",
+    "README explicitly allows waiting workers to import, violating the initial task. It incorrectly promises reporting after disable and stale callback isolation.",
+    "Initial issue and final PR incorrectly claim baseline never cancelled timers/set stopping; baseline already did.",
+    "Four initial and five feature tests are green but insufficient: they miss command registration, waiting workers and overlapping same-folder callbacks. One initial test requires generation zero, rejecting a correct reference on implementation detail.",
+    "Ordinary project/original tests gated proposed MCP edits; private graders were never actor feedback. No operator repairs."
+  ],
+  "preservation": {
+    "passed": true,
+    "both_original_and_staging_reserves_verified": true,
+    "stage_free_GiB": 103.36019897460938,
+    "original_ids_images_configuration_running_preserved": true,
+    "codex_entire_snapshot_unchanged": true,
+    "four_profile_hashes_unchanged": true,
+    "all_30_retained_model_metadata_unchanged": true,
+    "active_study_candidate": "adapted-q4-current-cold-20261126",
+    "selected_retained_Q4_full_SHA_verified_before_model_calls": true,
+    "original_alias_context_restored": true,
+    "at_least_100_GiB_free": true,
+    "free_GiB": 104.01414489746094
+  },
+  "owner_preservation": {
+    "passed": true,
+    "head_status_all_tracked_and_ignored_instructions_unchanged": true,
+    "tracked_files_checked": 40
+  },
+  "cleanup": {
+    "passed": true,
+    "terminal_supervisor_removed": "039cc90d476a4f72ced104384046c2c89d1a614a0bfa5facd9bdedcd915644af",
+    "owned_backend_agent_proxies_network_absent": true,
+    "epoch": 1795737949.1361809
+  },
+  "frozen_code_files_verified": 130,
+  "private_grader_feedback_to_actor": false,
+  "limitations": [
+    "One task family and one fresh three-turn lineage; no autonomous reliability or GPT-5 equivalence claim.",
+    "Mostly GPU with explicit CPU model/KV spillover; allocation context is 98k but largest observed coding input is 48,859 tokens.",
+    "10-second resource sampling may miss transient peaks; shared host timings are not isolated benchmarks.",
+    "Earlier positive Q4 tasks and older IQ4 runs differ in runtime/task history; no precision-only causal claim.",
+    "Curated sanitized evidence; private source, model messages, profiles, credentials and receipt signing keys excluded."
+  ],
+  "private_evidence_fingerprints": {
+    "cold-current-adapted-q4-completed-audit.json": "997a7c518c5c11dbabf737602c89356a8f1e0313886d13887f8c09bbfa83f9e6",
+    "adapted-q4-current-cold-20261126-published-turn-observations.json": "5969ac33d5da165f9e82701b83f19f9f04be57f63f249a571ceed56857496e28",
+    "current-q4-folder-boundary-observations.json": "0b9818ae23abf52cdd672e2d90004505e28182f1030058f552bfc1eb8915319c"
+  }
+}

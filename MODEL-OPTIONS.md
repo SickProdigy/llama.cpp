@@ -1,6 +1,9 @@
 # Model follow-up options
 
-[Current adapted 27B Q4 capacity](evaluations/2026-11-24-gpu-quant/resource-adapted-q4-current.md) completes all six probes at 98k with 56/66 GPU layers and explicit CPU spillover: 15,456 MiB GPU, about 2.9 GiB host model buffers, no study swap. All-GPU allocation fails; 60k input takes 11.06 minutes. A fresh current-runtime coding/Gitea run remains next.
+[Current adapted 27B Q4 coding/Gitea](evaluations/2026-11-24-gpu-quant/native-adapted-q4-current-cold-beets.md) completes actual issue/fork/PR publication but fails lifecycle, command registration, cancellation and documentation correctness in **84.12 coding minutes / 88.46 wall minutes**. All 37 requests complete without backend errors; 15,456 MiB GPU plus explicit CPU spillover. Original runtime/models/settings are restored. Current-runtime retained IQ4_XS capacity and coding comparison is next; no new model download is needed.
+
+
+[Current adapted 27B Q4 capacity](evaluations/2026-11-24-gpu-quant/resource-adapted-q4-current.md) completes all six probes at 98k with 56/66 GPU layers and explicit CPU spillover: 15,456 MiB GPU, about 2.9 GiB host model buffers, no study swap. All-GPU allocation fails; 60k input takes 11.06 minutes. The completed current-runtime coding/Gitea run publishes but fails behavior; see the result above.
 
 [Current Fable Q6 coding/Gitea](evaluations/2026-11-24-gpu-quant/native-fable-q6-current-thinking-cold-beets.md) fails in 36.67 coding minutes: initial repair absent, cancellation incomplete, project collection blocked, docs inaccurate, no remote issue/fork/PR. It fits 98k/all 41 GPU layers at 11,566 MiB. Matched current Q8 also fails (38.68 minutes/14,624 MiB); no precision winner is established.
 

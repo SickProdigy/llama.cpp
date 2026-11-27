@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "summary_SHA256": "e3ba6ed3ac049b41f288ad9f50ae0fee35300e9317ede99b2237779af74dd8c0",
+  "scope": "Evidence consistency and independent published-source review; not a public behavior replay or model pass",
+  "phases": 3,
+  "actual_published_source_authority": true,
+  "independent_connected_MCP_readback": true,
+  "source_bindings_verified": 130,
+  "whole_workflow_pass": false
+}
