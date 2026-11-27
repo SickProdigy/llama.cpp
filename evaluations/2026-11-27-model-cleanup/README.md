@@ -52,3 +52,9 @@ Exact expanded decisions, per-file checksums, identities, services and space obs
 The unnecessary HDD copy job was stopped and its sole incomplete copy removed; the old staged source weights were never deleted. Additional downloads can use the usual `llama.cpp/models` directory, subject to fresh admission and the 100 GiB free-space floor.
 
 This explicit authorization supersedes earlier preserve-original30 guidance for these 11 named files only. Historical preservation attestations stay true for their recorded epochs; future studies must capture a fresh current inventory rather than reuse the old baseline. Original benchmark evidence and download pins remain available.
+
+## Later retirement from Docker staging
+
+Before the fresh native MiMo trial, its admission guard found the separate Docker staging filesystem below the 100 GiB reserve and refused to start inference. The owner-authorized cleanup was extended to the task-added adapted IQ4_XS copy there: 15,321,491,104 bytes (14.27 GiB), full hash checked before removal. Its completed coding attempts had no qualified correct result; the main-folder adapted IQ3/Q4 and staged Q3 retain the useful family options. All 20 current main-folder models (including the newly downloaded MiMo) and the staged Q3 file are unchanged. Staging free space afterward is about112.76 GiB.
+
+[Exact staged-retirement receipt](staged-iq4-retirement.json). The earlier statements about leaving staged sources intact describe the earlier copy-cancellation epoch; this later explicit retirement changes only IQ4. No original main-folder model or unowned Docker resource was removed in this step.

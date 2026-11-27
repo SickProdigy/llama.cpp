@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "epoch": 1795820768.1544502,
+  "removed_file": "Qwen3.8-27B-hermes-IQ4_XS.gguf",
+  "removed_bytes": 15321491104,
+  "sha256_before_removal": "d25b50a2bfdfba157c2baf959f298d706d70083255bab95232ffcd40fbafcaba",
+  "identity_before": {
+    "st_dev": 2258,
+    "st_ino": 3970322,
+    "st_size": 15321491104,
+    "st_mtime_ns": 1795556814369305688,
+    "st_uid": 0,
+    "st_gid": 0,
+    "st_mode": 33188,
+    "st_nlink": 1
+  },
+  "all20_main_models_unchanged": true,
+  "retained_staged_Q3_unchanged": true,
+  "staging_free_bytes_before": 105734217728,
+  "staging_free_bytes_after": 121080045568,
+  "reason": "Owner authorized cleanup of failed/unnecessary model candidates. IQ4 has no qualified correct coding result in this study and duplicates retained adapted-family options. Current MiMo/Vibe training workflow does not require it. Native launch stopped before inference when this separate filesystem reached its reserve.",
+  "evidence": [
+    "evaluations/2026-11-24-gpu-quant/native-adapted-iq4-current-interrupted.md",
+    "evaluations/2026-11-24-gpu-quant/native-adapted-iq4-current-r2-cold-beets.md"
+  ],
+  "not_a_universal_model_quality_claim": true
+}
