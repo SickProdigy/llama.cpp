@@ -1,0 +1,24 @@
+{
+  "file": "Qwen3.6-35B-A3B-UD-Q4_K_XL.gguf",
+  "before": {
+    "st_dev": 2160,
+    "st_ino": 2104279,
+    "st_size": 22360456160,
+    "st_mtime_ns": 1795105669525300729
+  },
+  "active_container_references": [],
+  "reason": "User authorized retiring slower models; 35B CPU-expert offload offers no demonstrated advantage over compact candidates and fails later full coding controls. Preserve all Vibes and small helpers.",
+  "evidence": [
+    "evaluations/2026-11-19-public-models/investigation.md",
+    "evaluations/2026-11-21-goal-investigation/development-notes.md"
+  ],
+  "removed": true,
+  "sha256_before_removal": "707a55a8a4397ecde44de0c499d3e68c1ad1d240d1da65826b4949d1043f4450",
+  "removed_bytes": 22360456160,
+  "other_models_unchanged": 29,
+  "free_bytes_before": 110748958720,
+  "free_bytes_after": 133109383168,
+  "epoch": 1795814952.6672075,
+  "production_restarted": false,
+  "user_authorized_inventory_change": true
+}
