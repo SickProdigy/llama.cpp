@@ -1,0 +1,114 @@
+{
+  "classification": "Incomplete native workflow: operational staging-disk reserve guard, not a model-quality failure",
+  "quality_verdict": null,
+  "completed_coding_turns": 0,
+  "candidate": "adapted-iq4-current",
+  "model": {
+    "file": "Qwen3.8-27B-hermes-IQ4_XS.gguf",
+    "bytes": 15321491104,
+    "sha256": "d25b50a2bfdfba157c2baf959f298d706d70083255bab95232ffcd40fbafcaba",
+    "after_full_SHA_advised_DONTNEED_for_only_selected_model_file": true,
+    "not_global_cache_flush_or_proof_of_cold_cache": true
+  },
+  "sampler": {
+    "temperature": 0.8,
+    "top_p": 1,
+    "top_k": 0,
+    "min_p": 0,
+    "repeat_penalty": 1,
+    "presence_penalty": 0,
+    "chat_template_kwargs": {
+      "enable_thinking": false
+    },
+    "seed": 20261124
+  },
+  "context": 98304,
+  "layout": {
+    "context": 98304,
+    "gpu_layers": 63,
+    "ubatch": 64
+  },
+  "runtime_images": {
+    "Hermes": "sha256:c9b40eb8dea441cba7ded2e6589e5c011545ffc1ec76a0dc736f8e399d8f947b",
+    "llama.cpp": "sha256:fee4289628e7ba09f6fbf62d6ce4325aebb2531ffde2154d41276fe4acc58da3"
+  },
+  "guard": {
+    "epoch": 1795741825.3527613,
+    "model_disk_free_bytes": 111601598464,
+    "staging_disk_free_bytes": 107254538240,
+    "total_cgroup_bytes": 5085474816,
+    "total_process_pss_bytes": 3249741824,
+    "total_cgroup_swap_bytes": 0,
+    "gpu_csv": "15926, 349, 0",
+    "budget_guard_triggered": true,
+    "disk_reserve_guard_triggered": true,
+    "host_available_bytes": 37663199232
+  },
+  "reserve_bytes": 107374182400,
+  "host_limit_bytes": 8589934592,
+  "samples": 127,
+  "peak_aggregate_cgroup_bytes": 7644172288,
+  "peak_PSS_bytes": 3297518592,
+  "peak_study_swap_bytes": 0,
+  "measurement_errors": 0,
+  "usage_completed_requests": 14,
+  "failed_requests_after_guard": 5,
+  "supervisor_wall_minutes": 24.272575033333332,
+  "first_turn_minutes_until_guard": 21.121835680802665,
+  "publication": {
+    "actual_issue_created": true,
+    "actual_personal_fork_parent_verified": true,
+    "actual_commits_since_baseline": 3,
+    "actual_fork_head": "4b6aa92fee6642d3fdb88eb87eb27735cf86183b",
+    "upstream_baseline_blobs_verified": 40,
+    "PR_found": false,
+    "issue_closed_independently_verified": true
+  },
+  "preservation": {
+    "passed": true,
+    "both_original_and_staging_reserves_verified": true,
+    "stage_free_GiB": 101.86830520629883,
+    "original_ids_images_configuration_running_preserved": true,
+    "codex_entire_snapshot_unchanged": true,
+    "four_profile_hashes_unchanged": true,
+    "all_30_retained_model_metadata_unchanged": true,
+    "active_study_candidate": "adapted-iq4-current-cold-20261127",
+    "selected_staged_IQ4_full_SHA_verified_before_model_calls": true,
+    "original_alias_context_restored": true,
+    "at_least_100_GiB_free": true,
+    "free_GiB": 103.9366569519043
+  },
+  "owner_preservation": {
+    "passed": true,
+    "head_status_all_tracked_and_ignored_instructions_unchanged": true,
+    "tracked_files_checked": 40
+  },
+  "cleanup": {
+    "epoch": 1795742166.9505255,
+    "passed": true,
+    "terminal_supervisor_removed": "b6905c7a4cd33780d8b26b818cdb8b3753f9d22189d85e3e7fd517da9ddd3b03",
+    "owned_anonymous_volume_removed": "c604c8e7c789fc4829231768345828671558d67ac16eaec7035868be09a36480",
+    "exclusive_reference_verified_before_removal": true,
+    "original_preservation_audits_passed": true,
+    "backend_agent_proxies_and_network_absent": true,
+    "named_model_stage_volume_preserved": true,
+    "no_active_study_jobs": true,
+    "interruption_class": "disk-reserve safeguard, not model-quality failure"
+  },
+  "frozen_source_bindings_verified": 130,
+  "protocol_SHA256": "ce3daa1cfa896118c1c2f9a169459b92eed52808025c14811cf3c6857e1a9849",
+  "limitations": [
+    "No completed CLI turn or three-turn quality result; partial fork commits are not a successful workflow.",
+    "Reserve sampled every10seconds; final sample undershoots100GiB before safeguard stops the run.",
+    "Memory remains in budget. Backend transport failures follow intentional guard stop.",
+    "Shared Docker-root consumption is not attributed to a model or particular owner workload.",
+    "A future fresh operational retry must remain separately labeled, without resuming interrupted conversation or grader feedback.",
+    "No raw actor messages/code, private graders, profiles, credentials or signing keys exported."
+  ],
+  "private_evidence_fingerprints": {
+    "controller-error.json": "2041e1a861cf4ef783988f4b6afbf8686b7344b1186e47bf288afeeb37c5886a",
+    "memory-samples.jsonl": "10e48b5d4143f424ba108a958aaeaa7a5d26adfaf9dd2fef7d8d24c49b211ac7",
+    "runtime-restoration.json": "53f00ea16eeabc5909807032a99191e55b094e3fb4804273ea0c0af84fc8bb5d",
+    "interrupted-current-iq4-independent-forge-readback.json": "ad1bdf71f979de79d1477e744ff1fd1007e7c1585cdd4a2edc7f19b886f98a3c"
+  }
+}

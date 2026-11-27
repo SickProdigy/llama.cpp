@@ -1,9 +1,12 @@
 # Model follow-up options
 
-[Current adapted 27B IQ4_XS capacity](evaluations/2026-11-24-gpu-quant/resource-adapted-iq4-current.md) passes all six probes at 98k with 63/66 GPU layers and explicit CPU spillover: **15,926 MiB GPU / 1,250.63 MiB host model buffers**, no observed study swap. All-GPU and 65-layer layouts hit CUDA allocation errors. Exact 60k/80k markers return in 13.40/7.13 minutes with cached input. Original runtime/models/settings are restored and exact owned cleanup verified. Fresh current-runtime coding/Gitea quality is next.
+[Current IQ4 native attempt](evaluations/2026-11-24-gpu-quant/native-adapted-iq4-current-interrupted.md) was interrupted by the 100 GiB staging-disk safeguard after 14 successful requests. Memory remained within budget; no coding turn finished and **no quality verdict is assigned**. Actual upstream issue/personal fork/three commits are verified, but no PR. Original runtime/models/settings are restored, the issue is closed, and exact owned cleanup passes. A fresh trial needs more disk headroom.
 
 
-[Current adapted 27B Q4 coding/Gitea](evaluations/2026-11-24-gpu-quant/native-adapted-q4-current-cold-beets.md) completes actual issue/fork/PR publication but fails lifecycle, command registration, cancellation and documentation correctness in **84.12 coding minutes / 88.46 wall minutes**. All 37 requests complete without backend errors; 15,456 MiB GPU plus explicit CPU spillover. Original runtime/models/settings are restored. Current-runtime retained IQ4_XS capacity now passes; its fresh coding comparison is next, with no new download.
+[Current adapted 27B IQ4_XS capacity](evaluations/2026-11-24-gpu-quant/resource-adapted-iq4-current.md) passes all six probes at 98k with 63/66 GPU layers and explicit CPU spillover: **15,926 MiB GPU / 1,250.63 MiB host model buffers**, no observed study swap. All-GPU and 65-layer layouts hit CUDA allocation errors. Exact 60k/80k markers return in 13.40/7.13 minutes with cached input. Original runtime/models/settings are restored and exact owned cleanup verified. The first coding attempt was interrupted by the disk reserve guard; quality remains unjudged.
+
+
+[Current adapted 27B Q4 coding/Gitea](evaluations/2026-11-24-gpu-quant/native-adapted-q4-current-cold-beets.md) completes actual issue/fork/PR publication but fails lifecycle, command registration, cancellation and documentation correctness in **84.12 coding minutes / 88.46 wall minutes**. All 37 requests complete without backend errors; 15,456 MiB GPU plus explicit CPU spillover. Original runtime/models/settings are restored. Current-runtime retained IQ4_XS capacity passes; its first coding attempt was interrupted by the disk reserve guard, without a quality verdict.
 
 
 [Current adapted 27B Q4 capacity](evaluations/2026-11-24-gpu-quant/resource-adapted-q4-current.md) completes all six probes at 98k with 56/66 GPU layers and explicit CPU spillover: 15,456 MiB GPU, about 2.9 GiB host model buffers, no study swap. All-GPU allocation fails; 60k input takes 11.06 minutes. The completed current-runtime coding/Gitea run publishes but fails behavior; see the result above.
@@ -276,7 +279,7 @@ available before spending time making custom quants or buying hardware.
 |---|---|---|
 | RTX 2070, 8 GB | Gemma 4 E4B Instruct Q5_K_M first; consider Q4 only if needed | Backup for smaller jobs. Gemma peaked at 4,804 MiB on the P100; fit, context and speed on the 2070 remain untested. Reserve memory for desktop use. |
 | RTX 5080, 16 GB, if available | Adapted27B IQ3XXS after native runtime compatibility checks; existing small files for lighter tasks | Reuse the measured P100 candidate as a starting point. The same nominal 16 GB capacity does not establish fit or speed on the 5080; those measurements remain pending. |
-| Current P100, 16 GiB | Existing VibeForged production default; adapted 27B IQ3XXS is the current supervised evaluation lead | Production default is preserved. No tested model has qualified for unattended repository work; see November 21 matrices. |
+| Current P100, 16 GiB | Existing VibeForged production default; adapted 27B Q4 has the strongest historical supervised contribution result | Production default is preserved. Q4 requires documented CPU spillover; no current Beets cell has qualified for unattended work. Earlier IQ3 findings are dated November 21, not a new matched-runtime score. |
 
 Use a llama.cpp build and driver appropriate for each GPU. Do not copy the
 P100 CUDA image onto the 5080 and assume compatibility. A GGUF can move between

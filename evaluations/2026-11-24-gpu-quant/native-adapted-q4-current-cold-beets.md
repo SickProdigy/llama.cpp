@@ -29,8 +29,9 @@ corrective hint was supplied.
 
 The initial worker remains unchanged: dispatched jobs and workers waiting for
 the serialization lock can still start imports after disable/shutdown/reload.
-Resetting the generation counter to zero introduces a stale callback collision
-when a fresh same-folder job is queued after reload. The final cancellation
+In a same-object API stress case, resetting the generation counter to zero
+introduces a stale callback collision when a fresh same-folder job is queued
+after reactivation. This is distinct from ordinary GUI reload behavior. The final cancellation
 handler is never registered in `commands`, so the documented `/beetscancel`
 cannot be invoked through the plugin. Direct handler calls only cancel pending
 timers and cannot cancel already-dispatched waiting work or count those jobs.
@@ -54,7 +55,8 @@ That is an implementation-detail assertion, not evidence the reference is wrong.
 
 Posthoc boundary observations independently validate a positive correct reference
 and baseline negative controls. The candidate misses command registration and
-lets the old activation's timer dispatch new same-folder work. These observations
+lets the old activation's timer dispatch new same-folder work in that same-object
+stress case. These observations
 were never actor feedback and do not replace the originally registered grader.
 No real music, beets subprocess or GUI was used in these mocked boundary tests.
 
@@ -111,3 +113,12 @@ No new download is needed. Higher quantization is not yet a demonstrated winner.
 contain curated observations and private-evidence fingerprints. They exclude raw
 messages, private repository source, profiles, credentials and signing keys;
 consistency validation is not a public behavioral replay or a model pass.
+
+Methodology qualification, November 27: static inspection of deployed Nicotine+
+3.3.11 and the [pinned upstream plugin handler](https://raw.githubusercontent.com/nicotine-plus/nicotine-plus/067f2eeb2666049d06d40b2cd0feb6246dda7d19/pynicotine/pluginsystem.py)
+shows enable constructs a fresh plugin object and disable removes its enabled
+reference. Same-object `loaded_notification()` reactivation is supplementary API
+stress, not direct proof of normal GUI behavior. Registered grader results remain
+unchanged; report their cases separately. Q4's missing command registration and
+unguarded dispatched/waiting workers do not depend on the generation-collision
+case. Additional isolated real-handler controls are prepared, not yet executed.

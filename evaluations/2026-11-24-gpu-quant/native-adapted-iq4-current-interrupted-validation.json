@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "archive_SHA256": "85daf254069701735ffaf7ebcb9efcb196ee5f9f7b241465f2d7dd244608c1d4",
+  "manifest_files": 7,
+  "classification": "Incomplete native workflow: operational staging-disk reserve guard, not a model-quality failure",
+  "quality_verdict": null,
+  "not_a_model_pass_or_fail": true
+}

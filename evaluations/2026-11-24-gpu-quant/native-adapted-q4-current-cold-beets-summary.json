@@ -186,7 +186,7 @@
   },
   "findings": [
     "Initial worker has no stopped-activation guard before/after serialization lock; dispatched/waiting work still imports after disable/reload.",
-    "Resetting generation to zero allows an old timer to dispatch a fresh same-folder job after reload (posthoc boundary control).",
+    "Resetting generation to zero allows stale timer collision under same-object API reactivation stress; not direct normal-GUI reload proof.",
     "Cancellation handler exists but is absent from registered commands. Direct calls touch timers only, not dispatched/waiting work.",
     "README explicitly allows waiting workers to import, violating the initial task. It incorrectly promises reporting after disable and stale callback isolation.",
     "Initial issue and final PR incorrectly claim baseline never cancelled timers/set stopping; baseline already did.",
@@ -225,7 +225,8 @@
     "Mostly GPU with explicit CPU model/KV spillover; allocation context is 98k but largest observed coding input is 48,859 tokens.",
     "10-second resource sampling may miss transient peaks; shared host timings are not isolated benchmarks.",
     "Earlier positive Q4 tasks and older IQ4 runs differ in runtime/task history; no precision-only causal claim.",
-    "Curated sanitized evidence; private source, model messages, profiles, credentials and receipt signing keys excluded."
+    "Curated sanitized evidence; private source, model messages, profiles, credentials and receipt signing keys excluded.",
+    "November27 methodology qualification: deployed Nicotine+3.3.11 and pinned upstream create fresh plugin objects on re-enable. Same-object reload cases are supplementary API stress, not normal-GUI failure proof. Historical grader results unchanged; other Q4 failures remain."
   ],
   "private_evidence_fingerprints": {
     "cold-current-adapted-q4-completed-audit.json": "997a7c518c5c11dbabf737602c89356a8f1e0313886d13887f8c09bbfa83f9e6",
