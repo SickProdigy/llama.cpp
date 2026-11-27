@@ -1,0 +1,559 @@
+{
+  "candidate": "adapted-q3km-current",
+  "classification": "Current public Q3_K_M 27B allocation/context reference; not coding/Gitea qualification",
+  "capacity_probes_complete": true,
+  "model_identity": {
+    "file": "Qwen3.8-27B-hermes-Q3_K_M.gguf",
+    "bytes": 13752764064,
+    "sha256": "a0c809f93de2bcd813e1b6fbd5c2d1f692821814a4261a316f7c8bca9cf23248",
+    "specific_study_file_advised_DONTNEED_after_hash": true,
+    "not_global_cache_flush_or_cold_cache_proof": true
+  },
+  "public_pin": {
+    "repo": "netprojects/Qwen3.8-27B-hermes-adapted-GGUF",
+    "revision": "10fdf357f14825c61ad7eb42a932e1f1e4390e8f",
+    "file": "Qwen3.8-27B-hermes-Q3_K_M.gguf",
+    "expected_bytes": 13752764064,
+    "sha256": "a0c809f93de2bcd813e1b6fbd5c2d1f692821814a4261a316f7c8bca9cf23248",
+    "layouts": [
+      {
+        "context": 98304,
+        "gpu_layers": 99,
+        "ubatch": 64
+      },
+      {
+        "context": 98304,
+        "gpu_layers": 65,
+        "ubatch": 64
+      },
+      {
+        "context": 98304,
+        "gpu_layers": 64,
+        "ubatch": 64
+      },
+      {
+        "context": 65536,
+        "gpu_layers": 99,
+        "ubatch": 64
+      }
+    ],
+    "sampler": {
+      "temperature": 0.8,
+      "top_p": 1,
+      "top_k": 0,
+      "min_p": 0,
+      "repeat_penalty": 1,
+      "presence_penalty": 0,
+      "chat_template_kwargs": {
+        "enable_thinking": false
+      }
+    },
+    "probe_output_cap": 8192,
+    "retained_file_requires_full_hash_verification": false,
+    "architecture_expected_total_layers": 66,
+    "staged_file_requires_fresh_full_hash_verification": true
+  },
+  "selected_layout_index": 0,
+  "selected_layout": {
+    "context": 98304,
+    "gpu_layers": 99,
+    "ubatch": 64
+  },
+  "all_layout_results": [
+    {
+      "layout": {
+        "context": 98304,
+        "gpu_layers": 99,
+        "ubatch": 64
+      },
+      "resource_probes_completed": true,
+      "tool_call_correct": true,
+      "no_agent_quality_claim": true
+    }
+  ],
+  "selected_placement_lines": [
+    "0.01.435.102 I load_tensors: offloaded 66/66 layers to GPU",
+    "0.01.435.112 I load_tensors:        CUDA0 model buffer size = 12153.77 MiB",
+    "0.01.435.113 I load_tensors:    CUDA_Host model buffer size =   521.00 MiB",
+    "0.33.372.229 I llama_kv_cache:      CUDA0 KV buffer size =  1728.00 MiB",
+    "0.33.410.659 I sched_reserve:      CUDA0 compute buffer size =   408.50 MiB",
+    "0.33.410.680 I sched_reserve:  CUDA_Host compute buffer size =    17.00 MiB"
+  ],
+  "selected_memory": {
+    "samples": 290,
+    "sampling_pause_seconds": 5,
+    "peak_GPU_MiB": 14920,
+    "peak_aggregate_cgroup_bytes": 7049977856,
+    "peak_process_PSS_bytes": 2415563776,
+    "peak_study_swap_bytes": 0,
+    "minimum_original_free_bytes": 110928830464,
+    "minimum_staging_free_bytes": 109034803200,
+    "measurement_errors": 0,
+    "guard_count": 0,
+    "global_swap_in_pages_delta": 45518,
+    "global_swap_out_pages_delta": 64667,
+    "global_swap_not_attributed_to_study": true,
+    "charged_file_cache_included_and_samples_may_miss_peaks": true
+  },
+  "probes": {
+    "tool-followup": {
+      "body_complete": true,
+      "seconds": 1.8418042940029409,
+      "usage": {
+        "completion_tokens": 6,
+        "prompt_tokens": 404,
+        "total_tokens": 410,
+        "prompt_tokens_details": {
+          "cached_tokens": 377
+        }
+      },
+      "finish_reason": "stop",
+      "response_sha256": "dfc196d93e3aff83fef46758e61418884ee22edb0a935cecb3775d3f2f1078cf",
+      "timings": {
+        "cache_n": 377,
+        "prompt_n": 27,
+        "prompt_ms": 1382.544,
+        "prompt_per_token_ms": 51.205333333333336,
+        "prompt_per_second": 19.52921570669722,
+        "predicted_n": 6,
+        "predicted_ms": 438.199,
+        "predicted_per_token_ms": 87.63980000000001,
+        "predicted_per_second": 11.41034096380868
+      }
+    },
+    "tool-result": {
+      "body_complete": true,
+      "seconds": 2.8111184730078094,
+      "usage": {
+        "completion_tokens": 22,
+        "prompt_tokens": 356,
+        "total_tokens": 378,
+        "prompt_tokens_details": {
+          "cached_tokens": 320
+        }
+      },
+      "finish_reason": "stop",
+      "response_sha256": "39bb7f7acbbb4a1627b349cab370a425eda5f0f0b3e3d96361d01267b7ff5cde",
+      "timings": {
+        "cache_n": 320,
+        "prompt_n": 36,
+        "prompt_ms": 1131.742,
+        "prompt_per_token_ms": 31.437277777777776,
+        "prompt_per_second": 31.8093699800838,
+        "predicted_n": 22,
+        "predicted_ms": 1673.199,
+        "predicted_per_token_ms": 79.67614285714286,
+        "predicted_per_second": 12.550808361707125
+      }
+    },
+    "prompt60000": {
+      "body_complete": true,
+      "seconds": 787.790992727998,
+      "usage": {
+        "completion_tokens": 9,
+        "prompt_tokens": 59937,
+        "total_tokens": 59946,
+        "prompt_tokens_details": {
+          "cached_tokens": 16084
+        }
+      },
+      "finish_reason": "stop",
+      "response_sha256": "b406dd0b637a483a0204a74dfd5e9e9ddd3b4eba4deaa6eff7ca965bbf32cfcd",
+      "timings": {
+        "cache_n": 16084,
+        "prompt_n": 43853,
+        "prompt_ms": 786797.784,
+        "prompt_per_token_ms": 17.941709438350852,
+        "prompt_per_second": 55.736049200667296,
+        "predicted_n": 9,
+        "predicted_ms": 922.395,
+        "predicted_per_token_ms": 115.299375,
+        "predicted_per_second": 8.6730739000103
+      }
+    },
+    "prompt16000": {
+      "body_complete": true,
+      "seconds": 238.69901437699446,
+      "usage": {
+        "completion_tokens": 9,
+        "prompt_tokens": 16152,
+        "total_tokens": 16161,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "finish_reason": "stop",
+      "response_sha256": "b2e0978d209b0614d7cd9c00e9733d4c5cdb919f639be04f5be74d47488d19ea",
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 16152,
+        "prompt_ms": 237616.4,
+        "prompt_per_token_ms": 14.711267954432888,
+        "prompt_per_second": 67.97510609537052,
+        "predicted_n": 9,
+        "predicted_ms": 728.388,
+        "predicted_per_token_ms": 91.0485,
+        "predicted_per_second": 10.983157328237148
+      }
+    },
+    "prompt80000": {
+      "body_complete": true,
+      "seconds": 425.2765376579773,
+      "usage": {
+        "completion_tokens": 9,
+        "prompt_tokens": 79932,
+        "total_tokens": 79941,
+        "prompt_tokens_details": {
+          "cached_tokens": 59869
+        }
+      },
+      "finish_reason": "stop",
+      "response_sha256": "ce33c3216b2b36840045df136553eb804a2162d49923c7bfae289b121106a5e2",
+      "timings": {
+        "cache_n": 59869,
+        "prompt_n": 20063,
+        "prompt_ms": 423855.554,
+        "prompt_per_token_ms": 21.12623007526292,
+        "prompt_per_second": 47.33452189233316,
+        "predicted_n": 9,
+        "predicted_ms": 1054.917,
+        "predicted_per_token_ms": 131.864625,
+        "predicted_per_second": 7.583535007967452
+      }
+    },
+    "tool": {
+      "body_complete": true,
+      "seconds": 23.98398618301144,
+      "usage": {
+        "completion_tokens": 28,
+        "prompt_tokens": 293,
+        "total_tokens": 321,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "finish_reason": "tool_calls",
+      "response_sha256": "b6b818a7581c29e2cb90e2f1f1c61ef0409ab54cadbdc2bcf39eb55066085ca3",
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 293,
+        "prompt_ms": 18917.065,
+        "prompt_per_token_ms": 64.56336177474402,
+        "prompt_per_second": 15.488660635251822,
+        "predicted_n": 28,
+        "predicted_ms": 5062.108,
+        "predicted_per_token_ms": 187.4854814814815,
+        "predicted_per_second": 5.333746336506452
+      }
+    }
+  },
+  "tool_check": {
+    "valid_tool_call": true,
+    "not_actual_MCP_routing": true
+  },
+  "synthetic_marker_checks": {
+    "16000": {
+      "expected": "capacity-check-16000",
+      "content": "capacity-check-16000",
+      "not_agent_quality": true,
+      "exact_match": true
+    },
+    "60000": {
+      "expected": "capacity-check-60000",
+      "content": "capacity-check-60000",
+      "not_agent_quality": true,
+      "exact_match": true
+    },
+    "80000": {
+      "expected": "capacity-check-80000",
+      "content": "capacity-check-80000",
+      "not_agent_quality": true,
+      "exact_match": true
+    }
+  },
+  "selected_file_cache_after_original_stop": {
+    "epoch": 1795770048.6711915,
+    "file": "Qwen3.8-27B-hermes-Q3_K_M.gguf",
+    "bytes": 13752764064,
+    "mincore_cached_page_bytes_before": 0,
+    "mincore_cached_page_bytes_after": 0,
+    "only_specific_inactive_file_advised": true,
+    "no_global_cache_flush": true,
+    "not_cold_storage_cache_proof": true,
+    "content_not_modified": true,
+    "scope": "After original backend exits, before measured replacement starts. Page residency rounded to page boundaries; no claim about storage-device caches."
+  },
+  "preservation": {
+    "epoch": 1795771667.1123338,
+    "passed": true,
+    "original_ids_images_config_running_preserved": true,
+    "Codex_full_recorded_state_unchanged": true,
+    "four_owner_profile_hashes_unchanged": true,
+    "all_30_original_model_metadata_unchanged": true,
+    "both_staged_model_metadata_unchanged": true,
+    "owner_pending_and_40_source_files_unchanged": true,
+    "original_alias_and_context_restored": true,
+    "both_disk_reserves_at_least_100GiB": true,
+    "free_GiB": {
+      "/models": 103.30953216552734,
+      "/stage": 102.04510116577148
+    },
+    "containers": {
+      "hermes": {
+        "id": "5f8aedd58283a34f7736b73864bbeac4b9be195a88737c4cf3373f0e343ccd4d",
+        "image": "sha256:585c221367f9479d3962bc66c8c6f11d1ca571c9e5d7b3aa565ed02d9651b124",
+        "configuration_signature": "b850d3f3890bda5a31a639f9ac99f7b1f487890a4ff246c3526edcb13c04581b",
+        "running": true,
+        "started": "2026-11-27T09:27:16.041480114Z",
+        "restarts": 0,
+        "health": null
+      },
+      "llama-cpp": {
+        "id": "763fb7daa3ef5535dd6553bad40df0106f3a656c70cd9632535640ee4ba15939",
+        "image": "sha256:fee4289628e7ba09f6fbf62d6ce4325aebb2531ffde2154d41276fe4acc58da3",
+        "configuration_signature": "59702b4f3abf79b53dc9bb981ad7dd2eea1286166cef0c74d70755761a94a4aa",
+        "running": true,
+        "started": "2026-11-27T09:26:46.77219946Z",
+        "restarts": 0,
+        "health": "healthy"
+      },
+      "hermes-codex": {
+        "id": "153f58615740083f19640d8d02ca3623a0979e50342ba991a42d88ec28b622bd",
+        "image": "sha256:585c221367f9479d3962bc66c8c6f11d1ca571c9e5d7b3aa565ed02d9651b124",
+        "configuration_signature": "421525e2020ca874438b919ef0a7989a8771c350100441f1e9a213111d76cbc6",
+        "running": true,
+        "started": "2026-11-27T03:12:18.35261825Z",
+        "restarts": 0,
+        "health": null
+      }
+    },
+    "model_identity": {
+      "file": "Qwen3.8-27B-hermes-Q3_K_M.gguf",
+      "bytes": 13752764064,
+      "sha256": "a0c809f93de2bcd813e1b6fbd5c2d1f692821814a4261a316f7c8bca9cf23248",
+      "specific_study_file_advised_DONTNEED_after_hash": true,
+      "not_global_cache_flush_or_cold_cache_proof": true
+    },
+    "scope": "Fresh staged-Q3KM baseline; no waiver of prior IQ4 Codex timestamp failure."
+  },
+  "cleanup": {
+    "epoch": 1795771670.6699128,
+    "passed": true,
+    "exact_terminal_supervisor_and_exclusive_anonymous_volume_removed": true,
+    "owned_backend_and_network_absent": true,
+    "strict_fresh_originals_owner_Codex_and_both_staged_weights_preserved": true,
+    "model_stage_preserved": true,
+    "no_unowned_cleanup": true
+  },
+  "header": {
+    "epoch": 1795769976.6064405,
+    "models": {
+      "adapted-q3km-current": {
+        "file": "Qwen3.8-27B-hermes-Q3_K_M.gguf",
+        "repo": "netprojects/Qwen3.8-27B-hermes-adapted-GGUF",
+        "revision": "10fdf357f14825c61ad7eb42a932e1f1e4390e8f",
+        "file_bytes": 13752764064,
+        "prefix_bytes": 16777216,
+        "prefix_SHA256": "43db2d76e5ea955e040650783b849ac9e5d616122490693a670e973a64394759",
+        "full_file_SHA_not_checked_by_this_header_reader": true,
+        "GGUF_version": 3,
+        "tensor_count": 866,
+        "metadata": {
+          "general.architecture": "qwen35",
+          "general.type": "model",
+          "general.sampling.top_k": 20,
+          "general.sampling.top_p": 0.949999988079071,
+          "general.sampling.temp": 1.0,
+          "general.name": "Hf Merged",
+          "general.size_label": "27B",
+          "qwen35.block_count": 65,
+          "qwen35.context_length": 262144,
+          "qwen35.embedding_length": 5120,
+          "qwen35.feed_forward_length": 17408,
+          "qwen35.attention.head_count": 24,
+          "qwen35.attention.head_count_kv": 4,
+          "qwen35.rope.dimension_sections": {
+            "items": 4,
+            "type": 5,
+            "encoded_SHA256": "df74bd2dd954d1f1271e4adfc1067c5bd3058a1b25ca62b49977e2280c5a128e"
+          },
+          "qwen35.rope.freq_base": 10000000.0,
+          "qwen35.attention.layer_norm_rms_epsilon": 9.999999974752427e-07,
+          "qwen35.attention.key_length": 256,
+          "qwen35.attention.value_length": 256,
+          "qwen35.nextn_predict_layers": 1,
+          "qwen35.ssm.conv_kernel": 4,
+          "qwen35.ssm.state_size": 128,
+          "qwen35.ssm.group_count": 16,
+          "qwen35.ssm.time_step_rank": 48,
+          "qwen35.ssm.inner_size": 6144,
+          "qwen35.attention.recurrent_layers": {
+            "items": 65,
+            "type": 7,
+            "encoded_SHA256": "3d329074eadd0115ace156b8db8800b589e41826b6b820a9949c15b512addaf4"
+          },
+          "qwen35.full_attention_interval": 4,
+          "qwen35.rope.dimension_count": 64,
+          "tokenizer.ggml.model": "gpt2",
+          "tokenizer.ggml.pre": "qwen35",
+          "tokenizer.ggml.tokens": {
+            "items": 248320,
+            "type": 8,
+            "encoded_SHA256": "8602a5aeb57ffeab205af479d8d776f6d26a87ea71908599b5beef21a9e10001"
+          },
+          "tokenizer.ggml.token_type": {
+            "items": 248320,
+            "type": 5,
+            "encoded_SHA256": "76adce07e4c8d6808a375cf050fc14ac9028c821be794047709bae160387353a"
+          },
+          "tokenizer.ggml.merges": {
+            "items": 247587,
+            "type": 8,
+            "encoded_SHA256": "a284225c6b7eb3356459a6594322984eeb28a45ca0e5c7621459743f55fefa2b"
+          },
+          "tokenizer.ggml.eos_token_id": 248046,
+          "tokenizer.ggml.padding_token_id": 248044,
+          "tokenizer.ggml.bos_token_id": 248044,
+          "tokenizer.ggml.add_bos_token": false,
+          "tokenizer.ggml.add_eos_token": false,
+          "tokenizer.chat_template": {
+            "SHA256": "af16f654968d47d09a6c604e00370b12dbc21f76456f59c9e98b82e84d9f6375",
+            "bytes": 9004
+          },
+          "tokenizer.ggml.normalizer.nfc": true,
+          "tokenizer.ggml.clean_spaces": false,
+          "general.quantization_version": 2,
+          "general.file_type": 12,
+          "quantize.imatrix.file": "imatrix.gguf",
+          "quantize.imatrix.dataset": "imatrix-calib.txt",
+          "quantize.imatrix.entries_count": 496,
+          "quantize.imatrix.chunks_count": 150
+        },
+        "descriptor_end": 10995339,
+        "tensor_type_counts": {
+          "14": 1,
+          "0": 360,
+          "11": 353,
+          "13": 6,
+          "12": 138,
+          "8": 8
+        },
+        "tensor_names_and_dimensions_SHA256": "b8961074a077bba5dd694344d10ac0e79e668d5052ff624c94f74d691b8abdb8"
+      }
+    },
+    "not_quality_or_fit_proof": true
+  },
+  "header_comparison_to_Q4_IQ4_IQ3": {
+    "classification": "Bounded header/calibration comparison, separate full-file hash identity and actual capacity evidence",
+    "same_tensor_count": true,
+    "same_tensor_names_and_dimensions": true,
+    "same_chat_template": true,
+    "tensor_type_counts": {
+      "Q3_K_M": {
+        "14": 1,
+        "0": 360,
+        "11": 353,
+        "13": 6,
+        "12": 138,
+        "8": 8
+      },
+      "Q4_K_M": {
+        "14": 67,
+        "0": 360,
+        "12": 439
+      },
+      "IQ4_XS": {
+        "14": 1,
+        "0": 360,
+        "23": 433,
+        "13": 64,
+        "12": 8
+      },
+      "IQ3_XXS": {
+        "13": 1,
+        "0": 360,
+        "21": 17,
+        "18": 384,
+        "12": 64,
+        "22": 32,
+        "8": 8
+      }
+    },
+    "calibration": {
+      "Q3_K_M": {
+        "quantize.imatrix.file": "imatrix.gguf",
+        "quantize.imatrix.dataset": "imatrix-calib.txt",
+        "quantize.imatrix.entries_count": 496,
+        "quantize.imatrix.chunks_count": 150
+      },
+      "Q4_K_M": {},
+      "IQ4_XS": {
+        "quantize.imatrix.file": "imatrix.gguf",
+        "quantize.imatrix.dataset": "calib-train.txt",
+        "quantize.imatrix.entries_count": 496,
+        "quantize.imatrix.chunks_count": 104
+      },
+      "IQ3_XXS": {
+        "quantize.imatrix.file": "imatrix.gguf",
+        "quantize.imatrix.dataset": "imatrix-calib.txt",
+        "quantize.imatrix.entries_count": 496,
+        "quantize.imatrix.chunks_count": 150
+      }
+    },
+    "Q3KM_full_file_SHA256": "a0c809f93de2bcd813e1b6fbd5c2d1f692821814a4261a316f7c8bca9cf23248",
+    "Q3KM_public_revision": "10fdf357f14825c61ad7eb42a932e1f1e4390e8f",
+    "Q3KM_actual_download_receipt_SHA256": "3dd5f90116d7122e751781ac4719b5fcb2d646e3a543302e9bbe0940851e73bf",
+    "IQ3_original_download_revision": "6a786a26437f9210d5da0954208c7335ee0a55e1",
+    "IQ3_current_advertised_revision": "10fdf357f14825c61ad7eb42a932e1f1e4390e8f",
+    "IQ3_current_full_file_SHA256": "390a54c26ed8fc42a558f073e5745b7c0c1922086bbcc07e2e6357a7b527c345",
+    "header_file_SHA256": {
+      "current-adapted-q3km-header-audit.json": "131a5986193657afecaf41fa7109f6761da0e1e02b3f866e798a7d7ccd69ae55",
+      "current-adapted-q4-header-audit.json": "db904e13750628dc17ddd172f165ce66ae0050618b084e58866bf5a88d30694c",
+      "current-adapted-iq4-header-audit.json": "260804f6f895f25909155a96c03f03617759a9a2fef3ee048f4d5e6abc6d4eab",
+      "current-adapted-iq3-header-audit.json": "55cb38eae4d4deb2d809d74d75f6511f8c117b7d3e483f2a4490e6d3ec2f0ac2"
+    },
+    "limitations": [
+      "Names/shapes/templates do not prove identical unquantized source weights.",
+      "Metadata calibration names/counts do not recover datasets or production commands.",
+      "Different tensor types/calibration/runtime placement and shared-host timings prevent precision-only attribution.",
+      "Actual retained IQ3_XXS header read here; do not substitute an older ambiguously labeled q3 header from a different quantization."
+    ]
+  },
+  "limitations": [
+    "Synthetic task completion is not code/forge quality.",
+    "Cached prompt tokens make long-probe timings unlike uncached benchmarks.",
+    "GPU layer counts do not establish equal tensor/compute shares.",
+    "Older successful workflow is not a current runtime or quantization-only score."
+  ],
+  "selected_load_seconds": 75.82811503799167,
+  "layout_observation_counts": {
+    "0": {
+      "samples": 290,
+      "measurement_errors": 0,
+      "guard_count": 0,
+      "not_a_quality_score": true
+    }
+  },
+  "inactive_file_cache_timing": "Selected file pages verified zero before first all-GPU attempt; not a global cache flush. Any fallback may reuse pages warmed by failed allocation.",
+  "protocol_admission_bindings_verified": true,
+  "resource_abort_threshold_bytes": {
+    "original": 108447924224,
+    "stage": 108447924224
+  },
+  "tool-history-template": {
+    "actual_reasoning_nonempty": false,
+    "actual_reasoning_retained_in_rendered_template": null,
+    "not_replaced_with_operator_reasoning": true
+  },
+  "tool-result-completion-check": {
+    "further_tool_calls": false,
+    "actual_assistant_answer_retained": true,
+    "no_fabricated_assistant_answer": true,
+    "not_agent_quality": true
+  },
+  "tool-followup-check": {
+    "expected": "tool-history-capacity-ok",
+    "content": "tool-history-capacity-ok",
+    "not_actual_MCP_or_coding_quality": true
+  }
+}

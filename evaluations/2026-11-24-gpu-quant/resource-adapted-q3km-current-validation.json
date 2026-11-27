@@ -1,0 +1,50 @@
+{
+  "passed": true,
+  "positive": {
+    "passed": true,
+    "archive_sha256": "d56e77cb76f6d4d06279d5660e3c2d192debb1d04804db302fecd7b3c7793544",
+    "manifest_files": 74,
+    "layouts_observed": 1,
+    "selected_layout": {
+      "context": 98304,
+      "gpu_layers": 99,
+      "ubatch": 64
+    },
+    "completed_probes": 6,
+    "not_coding_or_forge_qualification": true
+  },
+  "negative_controls": [
+    {
+      "case": "wrong_actual_tool_arguments",
+      "manifest_recomputed": true,
+      "rejected": true
+    },
+    {
+      "case": "fabricated_retained_assistant",
+      "manifest_recomputed": true,
+      "rejected": true
+    },
+    {
+      "case": "host_over_8GiB",
+      "manifest_recomputed": true,
+      "rejected": true
+    },
+    {
+      "case": "false_marker_claim",
+      "manifest_recomputed": true,
+      "rejected": true
+    },
+    {
+      "case": "false_Codex_preservation",
+      "manifest_recomputed": true,
+      "rejected": true
+    },
+    {
+      "case": "altered_frozen_header",
+      "manifest_recomputed": true,
+      "rejected": true
+    }
+  ],
+  "verifier_SHA256": "6acc4302d83c58fc8e27995871b3415b629bd2c571194085308d379359e17efc",
+  "scope": "Saved consistency and actual synthetic assistant/tool lineage only; no inference replay, actual MCP or coding score."
+}
