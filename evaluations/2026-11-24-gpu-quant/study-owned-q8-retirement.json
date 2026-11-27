@@ -1,0 +1,40 @@
+{
+  "classification": "Exact retirement of an unselected task-added model, not an original retained weight",
+  "date_UTC": "2026-11-27",
+  "source": {
+    "repo": "tvall43/Qwen3.6-14B-A3B-FableVibes-GGUF",
+    "revision": "9cf910a7ad68dfedcbdfc46ef0fe5003dec07c23",
+    "file": "Qwen3.6-14B-A3B-FableVibes-Q8_0.gguf",
+    "bytes": 14655633920,
+    "SHA256": "ddea86093b863215fa75969d81df494fafdb0e6c4a65af557ed3a710e2238e58"
+  },
+  "rationale": "Current matched Q8 workflow fails; retained Q6 is lighter and Q8 shows no measured whole-workflow gain. Recover staging headroom after operational reserve interruption, without claiming Q8 fails every possible task.",
+  "removed_only_this_owned_file": true,
+  "fresh_full_hash_seconds": 57.388213872909546,
+  "original30_exclusion_and_owned_download_receipt_verified": true,
+  "prior_failed_workflow_summary_SHA256": "02559f871de5750b849c899bc361dd8562a15714f5f766d8e351c1913c62baa8",
+  "receipt": {
+    "epoch": 1795742797.4876978,
+    "passed": true,
+    "removed_file": "Qwen3.6-14B-A3B-FableVibes-Q8_0.gguf",
+    "removed_file_bytes": 14655633920,
+    "full_SHA256_verified_before_removal": "ddea86093b863215fa75969d81df494fafdb0e6c4a65af557ed3a710e2238e58",
+    "exact_inode_mtime_size_device_rechecked": true,
+    "no_other_stage_volume_consumers_at_admission": true,
+    "original30_metadata_unchanged": true,
+    "useful_IQ4_metadata_unchanged": true,
+    "remaining_GGUF_files": [
+      "Qwen3.8-27B-hermes-IQ4_XS.gguf"
+    ],
+    "stage_free_before_bytes": 111452393472,
+    "stage_free_after_bytes": 126108229632,
+    "at_least110GiB_staging_free_after": true,
+    "original_free_bytes": 111599624192,
+    "no_generic_prune_or_owner_setting_change": true
+  },
+  "limits": [
+    "All original30 metadata and useful stagedIQ4 metadata unchanged; only this exact owned file was unlinked.",
+    "Current free-space observation is not a future download admission or proof that shared host use will remain constant.",
+    "Historical Q8 capacity/quality evidence and pinned download metadata remain; full artifact would need downloading again for a new Q8 run."
+  ]
+}

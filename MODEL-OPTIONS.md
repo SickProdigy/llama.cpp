@@ -1,5 +1,7 @@
 # Model follow-up options
 
+[Owned Q8 retirement](evaluations/2026-11-24-gpu-quant/study-owned-q8-retirement.md) recovers staging headroom to **117.45 GiB free**. Only the failed task-added Q8 file was removed after a fresh full-hash/ownership check; original30 models and useful IQ4 are preserved. A new IQ4 attempt still requires fresh admission and state.
+
 [Current IQ4 native attempt](evaluations/2026-11-24-gpu-quant/native-adapted-iq4-current-interrupted.md) was interrupted by the 100 GiB staging-disk safeguard after 14 successful requests. Memory remained within budget; no coding turn finished and **no quality verdict is assigned**. Actual upstream issue/personal fork/three commits are verified, but no PR. Original runtime/models/settings are restored, the issue is closed, and exact owned cleanup passes. A fresh trial needs more disk headroom.
 
 
