@@ -1,0 +1,615 @@
+{
+  "candidate": "adapted-iq4-current",
+  "classification": "Current retained 27B allocation/context reference; not coding/Gitea qualification",
+  "capacity_probes_complete": true,
+  "model_identity": {
+    "file": "Qwen3.8-27B-hermes-IQ4_XS.gguf",
+    "bytes": 15321491104,
+    "sha256": "d25b50a2bfdfba157c2baf959f298d706d70083255bab95232ffcd40fbafcaba",
+    "specific_study_file_advised_DONTNEED_after_hash": true,
+    "not_global_cache_flush_or_cold_cache_proof": true
+  },
+  "public_pin": {
+    "repo": "netprojects/Qwen3.8-27B-hermes-adapted-GGUF",
+    "revision": "10fdf357f14825c61ad7eb42a932e1f1e4390e8f",
+    "file": "Qwen3.8-27B-hermes-IQ4_XS.gguf",
+    "expected_bytes": 15321491104,
+    "sha256": "d25b50a2bfdfba157c2baf959f298d706d70083255bab95232ffcd40fbafcaba",
+    "layouts": [
+      {
+        "context": 98304,
+        "gpu_layers": 99,
+        "ubatch": 64
+      },
+      {
+        "context": 98304,
+        "gpu_layers": 65,
+        "ubatch": 64
+      },
+      {
+        "context": 98304,
+        "gpu_layers": 63,
+        "ubatch": 64
+      },
+      {
+        "context": 98304,
+        "gpu_layers": 61,
+        "ubatch": 64
+      },
+      {
+        "context": 65536,
+        "gpu_layers": 99,
+        "ubatch": 64
+      }
+    ],
+    "sampler": {
+      "temperature": 0.8,
+      "top_p": 1,
+      "top_k": 0,
+      "min_p": 0,
+      "repeat_penalty": 1,
+      "presence_penalty": 0,
+      "chat_template_kwargs": {
+        "enable_thinking": false
+      }
+    },
+    "probe_output_cap": 8192,
+    "existing_owned_stage_weight_requires_fresh_full_SHA": true,
+    "architecture_expected_total_layers": 66,
+    "selection_evidence": {
+      "prior_98k_allGPU_CUDA_failures": [
+        128,
+        64
+      ],
+      "prior_64k_allGPU_peak_MiB": 15788,
+      "prior_64k_GPU_model_MiB": 13729.18,
+      "prior_64k_GPU_KV_MiB": 1152,
+      "output_embedding_tensors": [
+        {
+          "name": "output.weight",
+          "dimensions": [
+            5120,
+            248320
+          ],
+          "type": 14
+        },
+        {
+          "name": "token_embd.weight",
+          "dimensions": [
+            5120,
+            248320
+          ],
+          "type": 23
+        }
+      ],
+      "interpretation": "Large output tensor makes explicit minimal CPU placement worth measuring; no layer count assumed to fit.",
+      "imatrix": {
+        "file": "imatrix.gguf",
+        "dataset": "calib-train.txt",
+        "entries_count": 496,
+        "chunks_count": 104
+      },
+      "not_precision_only_comparison_to_Q4": true
+    }
+  },
+  "selected_layout_index": 2,
+  "selected_layout": {
+    "context": 98304,
+    "gpu_layers": 63,
+    "ubatch": 64
+  },
+  "all_layout_results": [
+    {
+      "layout": {
+        "context": 98304,
+        "gpu_layers": 99,
+        "ubatch": 64
+      },
+      "resource_probes_completed": false,
+      "error": "RuntimeError: Backend exited before ready",
+      "no_model_quality_score": true,
+      "backend_state": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 0,
+        "ExitCode": 1,
+        "Error": "",
+        "StartedAt": "2026-11-27T00:13:38.914073523Z",
+        "FinishedAt": "2026-11-27T00:14:15.830414883Z"
+      },
+      "GPU_OOM_log_marker": true,
+      "retry_next_GPU_layout": true
+    },
+    {
+      "layout": {
+        "context": 98304,
+        "gpu_layers": 65,
+        "ubatch": 64
+      },
+      "resource_probes_completed": false,
+      "error": "RemoteDisconnected: Remote end closed connection without response",
+      "no_model_quality_score": true,
+      "backend_state": {
+        "Status": "running",
+        "Running": true,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 112649,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-11-27T00:14:16.302867999Z",
+        "FinishedAt": "0001-01-01T00:00:00Z"
+      },
+      "GPU_OOM_log_marker": true,
+      "retry_next_GPU_layout": true
+    },
+    {
+      "layout": {
+        "context": 98304,
+        "gpu_layers": 63,
+        "ubatch": 64
+      },
+      "resource_probes_completed": true,
+      "tool_call_correct": true,
+      "no_agent_quality_claim": true
+    }
+  ],
+  "selected_placement_lines": [
+    "0.02.297.898 I load_tensors: offloaded 63/66 layers to GPU",
+    "0.02.297.909 I load_tensors:        CUDA0 model buffer size = 13122.69 MiB",
+    "0.02.297.911 I load_tensors:    CUDA_Host model buffer size =  1250.63 MiB",
+    "0.29.531.286 I llama_kv_cache:      CUDA0 KV buffer size =  1728.00 MiB",
+    "0.29.572.643 I sched_reserve:      CUDA0 compute buffer size =   451.91 MiB",
+    "0.29.572.647 I sched_reserve:  CUDA_Host compute buffer size =    17.50 MiB"
+  ],
+  "selected_memory": {
+    "samples": 299,
+    "sampling_pause_seconds": 5,
+    "peak_GPU_MiB": 15926,
+    "peak_aggregate_cgroup_bytes": 7028965376,
+    "peak_process_PSS_bytes": 3209647104,
+    "peak_study_swap_bytes": 0,
+    "minimum_original_free_bytes": 111675060224,
+    "minimum_staging_free_bytes": 110408265728,
+    "measurement_errors": 0,
+    "guard_count": 0,
+    "global_swap_in_pages_delta": 8019,
+    "global_swap_out_pages_delta": 7666,
+    "global_swap_not_attributed_to_study": true,
+    "charged_file_cache_included_and_samples_may_miss_peaks": true
+  },
+  "probes": {
+    "tool-followup": {
+      "body_complete": true,
+      "seconds": 2.1875848270137794,
+      "usage": {
+        "completion_tokens": 6,
+        "prompt_tokens": 419,
+        "total_tokens": 425,
+        "prompt_tokens_details": {
+          "cached_tokens": 392
+        }
+      },
+      "finish_reason": "stop",
+      "response_sha256": "b9d017f433cad6075d2d6ddb5045c6c54b354f9a4192ca378309338c52ba4fd1",
+      "timings": {
+        "cache_n": 392,
+        "prompt_n": 27,
+        "prompt_ms": 1702.111,
+        "prompt_per_token_ms": 63.04114814814815,
+        "prompt_per_second": 15.862655255738314,
+        "predicted_n": 6,
+        "predicted_ms": 474.308,
+        "predicted_per_token_ms": 94.8616,
+        "predicted_per_second": 10.541673343059783
+      }
+    },
+    "tool-result": {
+      "body_complete": true,
+      "seconds": 6.671745439001825,
+      "usage": {
+        "completion_tokens": 37,
+        "prompt_tokens": 356,
+        "total_tokens": 393,
+        "prompt_tokens_details": {
+          "cached_tokens": 320
+        }
+      },
+      "finish_reason": "stop",
+      "response_sha256": "25435ef940a69695523892a3c76d2e8a158d22df741a4b2806623c1393d9c9e2",
+      "timings": {
+        "cache_n": 320,
+        "prompt_n": 36,
+        "prompt_ms": 1337.644,
+        "prompt_per_token_ms": 37.156777777777776,
+        "prompt_per_second": 26.912990302352494,
+        "predicted_n": 37,
+        "predicted_ms": 5324.412,
+        "predicted_per_token_ms": 147.90033333333335,
+        "predicted_per_second": 6.761309981271171
+      }
+    },
+    "prompt60000": {
+      "body_complete": true,
+      "seconds": 804.1599800900003,
+      "usage": {
+        "completion_tokens": 9,
+        "prompt_tokens": 59937,
+        "total_tokens": 59946,
+        "prompt_tokens_details": {
+          "cached_tokens": 16084
+        }
+      },
+      "finish_reason": "stop",
+      "response_sha256": "52b39f6444faf3326af3fa0fee0370244890f9a6e8d41ed96906f35e300c793c",
+      "timings": {
+        "cache_n": 16084,
+        "prompt_n": 43853,
+        "prompt_ms": 802838.524,
+        "prompt_per_token_ms": 18.30749376325451,
+        "prompt_per_second": 54.62244111245464,
+        "predicted_n": 9,
+        "predicted_ms": 1275.634,
+        "predicted_per_token_ms": 159.45425,
+        "predicted_per_second": 6.271391323843673
+      }
+    },
+    "prompt16000": {
+      "body_complete": true,
+      "seconds": 247.09294210499502,
+      "usage": {
+        "completion_tokens": 9,
+        "prompt_tokens": 16152,
+        "total_tokens": 16161,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "finish_reason": "stop",
+      "response_sha256": "826cf841845aed4c4bd073c7fd061c2b75265951b02116fb468f20e8d016f8a3",
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 16152,
+        "prompt_ms": 246124.624,
+        "prompt_per_token_ms": 15.23802773650322,
+        "prompt_per_second": 65.62529070638621,
+        "predicted_n": 9,
+        "predicted_ms": 887.599,
+        "predicted_per_token_ms": 110.949875,
+        "predicted_per_second": 9.013079104415395
+      }
+    },
+    "prompt80000": {
+      "body_complete": true,
+      "seconds": 428.05170676400303,
+      "usage": {
+        "completion_tokens": 9,
+        "prompt_tokens": 79932,
+        "total_tokens": 79941,
+        "prompt_tokens_details": {
+          "cached_tokens": 59869
+        }
+      },
+      "finish_reason": "stop",
+      "response_sha256": "d0fbebcbb47a06a6f045d992005a644556e9aa6e49e267a5c7f1621117b2f3f1",
+      "timings": {
+        "cache_n": 59869,
+        "prompt_n": 20063,
+        "prompt_ms": 426645.68,
+        "prompt_per_token_ms": 21.265298310322486,
+        "prompt_per_second": 47.02496929067699,
+        "predicted_n": 9,
+        "predicted_ms": 1331.242,
+        "predicted_per_token_ms": 166.40525,
+        "predicted_per_second": 6.009425784342742
+      }
+    },
+    "tool": {
+      "body_complete": true,
+      "seconds": 23.67792873700091,
+      "usage": {
+        "completion_tokens": 28,
+        "prompt_tokens": 293,
+        "total_tokens": 321,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "finish_reason": "tool_calls",
+      "response_sha256": "63a67f9023b47f3a07f2ca97e765a7e748186e0d43931bee81b4550d0a81eb7b",
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 293,
+        "prompt_ms": 19026.672,
+        "prompt_per_token_ms": 64.93744709897611,
+        "prompt_per_second": 15.399435066731588,
+        "predicted_n": 28,
+        "predicted_ms": 4646.557,
+        "predicted_per_token_ms": 172.0947037037037,
+        "predicted_per_second": 5.81075407016421
+      }
+    }
+  },
+  "tool_check": {
+    "valid_tool_call": true,
+    "not_actual_MCP_routing": true
+  },
+  "synthetic_marker_checks": {
+    "16000": {
+      "expected": "capacity-check-16000",
+      "content": "capacity-check-16000",
+      "not_agent_quality": true,
+      "exact_match": true
+    },
+    "60000": {
+      "expected": "capacity-check-60000",
+      "content": "capacity-check-60000",
+      "not_agent_quality": true,
+      "exact_match": true
+    },
+    "80000": {
+      "expected": "capacity-check-80000",
+      "content": "capacity-check-80000",
+      "not_agent_quality": true,
+      "exact_match": true
+    }
+  },
+  "selected_file_cache_after_original_stop": {
+    "epoch": 1795738418.8369,
+    "file": "Qwen3.8-27B-hermes-IQ4_XS.gguf",
+    "bytes": 15321491104,
+    "mincore_cached_page_bytes_before": 0,
+    "mincore_cached_page_bytes_after": 0,
+    "only_specific_inactive_file_advised": true,
+    "no_global_cache_flush": true,
+    "not_cold_storage_cache_proof": true,
+    "content_not_modified": true,
+    "scope": "After original backend exits, before measured replacement starts. Page residency rounded to page boundaries; no claim about storage-device caches."
+  },
+  "preservation": {
+    "epoch": 1795740165.611559,
+    "passed": true,
+    "original_ids_images_config_running_preserved": true,
+    "Codex_full_recorded_state_unchanged": true,
+    "four_owner_profile_hashes_unchanged": true,
+    "all_30_original_model_metadata_unchanged": true,
+    "owner_pending_and_40_source_files_unchanged": true,
+    "original_alias_and_context_restored": true,
+    "both_disk_reserves_at_least_100GiB": true,
+    "free_GiB": {
+      "/models": 104.00430679321289,
+      "/stage": 102.98286437988281
+    },
+    "profile_baseline_timing": "Fresh current originals after current Q4 restoration, publication and cleanup, before current27B capacity",
+    "original_model_inventory_interval": "All original retained model metadata at admission",
+    "containers": {
+      "hermes": {
+        "id": "5f8aedd58283a34f7736b73864bbeac4b9be195a88737c4cf3373f0e343ccd4d",
+        "image": "sha256:585c221367f9479d3962bc66c8c6f11d1ca571c9e5d7b3aa565ed02d9651b124",
+        "config_sha256": "b850d3f3890bda5a31a639f9ac99f7b1f487890a4ff246c3526edcb13c04581b",
+        "running": true,
+        "started": "2026-11-27T00:42:12.776360545Z",
+        "restarts": 0
+      },
+      "llama-cpp": {
+        "id": "763fb7daa3ef5535dd6553bad40df0106f3a656c70cd9632535640ee4ba15939",
+        "image": "sha256:fee4289628e7ba09f6fbf62d6ce4325aebb2531ffde2154d41276fe4acc58da3",
+        "config_sha256": "59702b4f3abf79b53dc9bb981ad7dd2eea1286166cef0c74d70755761a94a4aa",
+        "running": true,
+        "started": "2026-11-27T00:41:49.521409346Z",
+        "restarts": 0
+      },
+      "hermes-codex": {
+        "id": "153f58615740083f19640d8d02ca3623a0979e50342ba991a42d88ec28b622bd",
+        "image": "sha256:585c221367f9479d3962bc66c8c6f11d1ca571c9e5d7b3aa565ed02d9651b124",
+        "config_sha256": "421525e2020ca874438b919ef0a7989a8771c350100441f1e9a213111d76cbc6",
+        "running": true,
+        "started": "2026-11-25T20:39:16.88175365Z",
+        "restarts": 0
+      }
+    }
+  },
+  "cleanup": {
+    "epoch": 1795740166.1152968,
+    "passed": true,
+    "terminal_supervisor_removed": "3aba4dfaaa8ee5b9b724eddfb2441840102d11e864ba65827bddb39e575fa5b8",
+    "exact_ownership_verified": true,
+    "owned_backend_and_network_absent": true,
+    "original_preservation_audit_passed": true,
+    "other_active_study_jobs_absent": true,
+    "not_model_quality_claim": true
+  },
+  "header": {
+    "epoch": 1795738466.39022,
+    "models": {
+      "adapted-iq4-current": {
+        "file": "Qwen3.8-27B-hermes-IQ4_XS.gguf",
+        "repo": "netprojects/Qwen3.8-27B-hermes-adapted-GGUF",
+        "revision": "10fdf357f14825c61ad7eb42a932e1f1e4390e8f",
+        "file_bytes": 15321491104,
+        "prefix_bytes": 16777216,
+        "prefix_SHA256": "e469297876ab45580ab0cd292ca44587c191f689f18d37c31625c06283a687a8",
+        "full_file_SHA_not_checked_by_this_header_reader": true,
+        "GGUF_version": 3,
+        "tensor_count": 866,
+        "metadata": {
+          "general.architecture": "qwen35",
+          "general.type": "model",
+          "general.sampling.top_k": 20,
+          "general.sampling.top_p": 0.949999988079071,
+          "general.sampling.temp": 1.0,
+          "general.name": "Hf Merged",
+          "general.size_label": "27B",
+          "qwen35.block_count": 65,
+          "qwen35.context_length": 262144,
+          "qwen35.embedding_length": 5120,
+          "qwen35.feed_forward_length": 17408,
+          "qwen35.attention.head_count": 24,
+          "qwen35.attention.head_count_kv": 4,
+          "qwen35.rope.dimension_sections": {
+            "items": 4,
+            "type": 5,
+            "encoded_SHA256": "df74bd2dd954d1f1271e4adfc1067c5bd3058a1b25ca62b49977e2280c5a128e"
+          },
+          "qwen35.rope.freq_base": 10000000.0,
+          "qwen35.attention.layer_norm_rms_epsilon": 9.999999974752427e-07,
+          "qwen35.attention.key_length": 256,
+          "qwen35.attention.value_length": 256,
+          "qwen35.nextn_predict_layers": 1,
+          "qwen35.ssm.conv_kernel": 4,
+          "qwen35.ssm.state_size": 128,
+          "qwen35.ssm.group_count": 16,
+          "qwen35.ssm.time_step_rank": 48,
+          "qwen35.ssm.inner_size": 6144,
+          "qwen35.attention.recurrent_layers": {
+            "items": 65,
+            "type": 7,
+            "encoded_SHA256": "3d329074eadd0115ace156b8db8800b589e41826b6b820a9949c15b512addaf4"
+          },
+          "qwen35.full_attention_interval": 4,
+          "qwen35.rope.dimension_count": 64,
+          "tokenizer.ggml.model": "gpt2",
+          "tokenizer.ggml.pre": "qwen35",
+          "tokenizer.ggml.tokens": {
+            "items": 248320,
+            "type": 8,
+            "encoded_SHA256": "8602a5aeb57ffeab205af479d8d776f6d26a87ea71908599b5beef21a9e10001"
+          },
+          "tokenizer.ggml.token_type": {
+            "items": 248320,
+            "type": 5,
+            "encoded_SHA256": "76adce07e4c8d6808a375cf050fc14ac9028c821be794047709bae160387353a"
+          },
+          "tokenizer.ggml.merges": {
+            "items": 247587,
+            "type": 8,
+            "encoded_SHA256": "a284225c6b7eb3356459a6594322984eeb28a45ca0e5c7621459743f55fefa2b"
+          },
+          "tokenizer.ggml.eos_token_id": 248046,
+          "tokenizer.ggml.padding_token_id": 248044,
+          "tokenizer.ggml.bos_token_id": 248044,
+          "tokenizer.ggml.add_bos_token": false,
+          "tokenizer.ggml.add_eos_token": false,
+          "tokenizer.chat_template": {
+            "SHA256": "af16f654968d47d09a6c604e00370b12dbc21f76456f59c9e98b82e84d9f6375",
+            "bytes": 9004
+          },
+          "tokenizer.ggml.normalizer.nfc": true,
+          "tokenizer.ggml.clean_spaces": false,
+          "general.quantization_version": 2,
+          "general.file_type": 30,
+          "quantize.imatrix.file": "imatrix.gguf",
+          "quantize.imatrix.dataset": "calib-train.txt",
+          "quantize.imatrix.entries_count": 496,
+          "quantize.imatrix.chunks_count": 104
+        },
+        "descriptor_end": 10995337,
+        "tensor_type_counts": {
+          "14": 1,
+          "0": 360,
+          "23": 433,
+          "13": 64,
+          "12": 8
+        },
+        "tensor_names_and_dimensions_SHA256": "b8961074a077bba5dd694344d10ac0e79e668d5052ff624c94f74d691b8abdb8"
+      }
+    },
+    "not_quality_or_fit_proof": true
+  },
+  "header_comparison_to_Q4": {
+    "classification": "Header metadata comparison, not quality or fit proof",
+    "same_repository_revision": true,
+    "same_tensor_count": true,
+    "same_tensor_names_and_dimensions": true,
+    "same_chat_template": true,
+    "Q4_tensor_type_counts": {
+      "14": 67,
+      "0": 360,
+      "12": 439
+    },
+    "IQ4_tensor_type_counts": {
+      "14": 1,
+      "0": 360,
+      "23": 433,
+      "13": 64,
+      "12": 8
+    },
+    "Q4_calibration": {},
+    "IQ4_calibration": {
+      "quantize.imatrix.file": "imatrix.gguf",
+      "quantize.imatrix.dataset": "calib-train.txt",
+      "quantize.imatrix.entries_count": 496,
+      "quantize.imatrix.chunks_count": 104
+    },
+    "limitations": [
+      "Equal names/shapes/template do not establish identical unquantized weights or numeric equivalence.",
+      "IQ4 calibration metadata present while Q4 lacks it; no precision-only claim."
+    ],
+    "header_file_SHA256": {
+      "current-adapted-q4-header-audit.json": "db904e13750628dc17ddd172f165ce66ae0050618b084e58866bf5a88d30694c",
+      "current-adapted-iq4-header-audit.json": "260804f6f895f25909155a96c03f03617759a9a2fef3ee048f4d5e6abc6d4eab"
+    }
+  },
+  "limitations": [
+    "Synthetic task completion is not code/forge quality.",
+    "Cached prompt tokens make long-probe timings unlike uncached benchmarks.",
+    "GPU layer counts do not establish equal tensor/compute shares.",
+    "Older successful workflow is not a current runtime or quantization-only score."
+  ],
+  "selected_load_seconds": 73.47984119100147,
+  "layout_observation_counts": {
+    "0": {
+      "samples": 7,
+      "measurement_errors": 0,
+      "guard_count": 0,
+      "not_a_quality_score": true
+    },
+    "1": {
+      "samples": 13,
+      "measurement_errors": 0,
+      "guard_count": 0,
+      "not_a_quality_score": true
+    },
+    "2": {
+      "samples": 299,
+      "measurement_errors": 0,
+      "guard_count": 0,
+      "not_a_quality_score": true
+    }
+  },
+  "inactive_file_cache_timing": "Zero file pages verified before first all-GPU attempt; subsequent fallback may reuse pages warmed by failed allocation. Not a cold fallback load benchmark.",
+  "engine_hardware": {
+    "epoch": 1795738661.1003616,
+    "CPU_models_visible_to_current_backend": [
+      "Intel(R) Core(TM) i7-8700 CPU @ 3.20GHz"
+    ],
+    "logical_CPUs_in_proc": 12,
+    "Docker_engine_NCPU": 12,
+    "Docker_engine_MemTotal_bytes": 67083771904,
+    "selected_backend_CPU_quota": 8,
+    "host_is_shared_and_workload_not_isolated": true,
+    "GPU_name_total_MiB_driver_csv": "Tesla P100-PCIE-16GB, 16384, 535.261.03"
+  },
+  "tool-history-template": {
+    "actual_reasoning_nonempty": false,
+    "actual_reasoning_retained_in_rendered_template": null,
+    "not_replaced_with_operator_reasoning": true
+  },
+  "tool-result-completion-check": {
+    "further_tool_calls": false,
+    "actual_assistant_answer_retained": true,
+    "no_fabricated_assistant_answer": true,
+    "not_agent_quality": true
+  },
+  "tool-followup-check": {
+    "expected": "tool-history-capacity-ok",
+    "content": "tool-history-capacity-ok",
+    "not_actual_MCP_or_coding_quality": true
+  }
+}

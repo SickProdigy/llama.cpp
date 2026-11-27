@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "archive_sha256": "4df38335ec9a51285bcfd4305c6795f86a260ca8ecf284c24bc6d2cc3edde7eb",
+  "manifest_files": 70,
+  "layouts_observed": 3,
+  "selected_layout": {
+    "context": 98304,
+    "gpu_layers": 63,
+    "ubatch": 64
+  },
+  "completed_probes": 6,
+  "not_coding_or_forge_qualification": true
+}
