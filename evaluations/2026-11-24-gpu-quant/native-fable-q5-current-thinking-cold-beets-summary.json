@@ -1,0 +1,298 @@
+{
+  "candidate": "fable-q5-current-thinking",
+  "whole_workflow_pass": false,
+  "model": {
+    "file": "Qwen3.6-14B-A3B-FableVibes-Q5_K_M.gguf",
+    "bytes": 9852131840,
+    "sha256": "d8fe99004cefb2cf26a1750851acf3cabd53247958e144f88e08beeb36ffbcab",
+    "after_full_SHA_advised_DONTNEED_for_only_selected_model_file": true,
+    "not_global_cache_flush_or_proof_of_cold_cache": true
+  },
+  "model_repository": "tvall43/Qwen3.6-14B-A3B-FableVibes-GGUF",
+  "model_revision": "9cf910a7ad68dfedcbdfc46ef0fe5003dec07c23",
+  "context": 98304,
+  "runtime_images": {
+    "Hermes": "sha256:c9b40eb8dea441cba7ded2e6589e5c011545ffc1ec76a0dc736f8e399d8f947b",
+    "llama.cpp": "sha256:fee4289628e7ba09f6fbf62d6ce4325aebb2531ffde2154d41276fe4acc58da3"
+  },
+  "sampler": {
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0,
+    "repeat_penalty": 1,
+    "presence_penalty": 0,
+    "chat_template_kwargs": {
+      "enable_thinking": true
+    },
+    "seed": 20261124
+  },
+  "settings": {
+    "main_cap": 16384,
+    "aux_cap": 8192,
+    "q4_KV": true,
+    "actual_GPU_layers": "41/41",
+    "ubatch": 128
+  },
+  "phases": [
+    {
+      "phase": 0,
+      "source_authority": "local-grade",
+      "coding_seconds": 820.6348802720022,
+      "exit_code": 1,
+      "external_timeout": false,
+      "source_digest": "47b910ccc5a84c0228e836651a0055df1e224c6c27f4ee5c95bcc5ab4b5ca012",
+      "changed_paths": [
+        "beetsbridge/__init__.py",
+        "tests/test_beetsbridge.py"
+      ],
+      "project_exit": 0,
+      "preservation_exit": 0,
+      "independent_exit": 1,
+      "project_summary": [
+        "86 passed, 2 subtests passed in 3.21s"
+      ],
+      "preservation_summary": [
+        "83 passed, 2 subtests passed in 3.21s"
+      ],
+      "candidate_module_observer_syntax": {
+        "valid": true
+      },
+      "private_grader_output_sha256": "a9410c1ecaef5f6f71a904b5d32c1329675772ead8da6889e498a223ec9d4c02",
+      "private_console_sha256": "a9b1f70ff02c51619d6dec6c0b0589775f78e7b5269e5a4a6ce27aed3c6e4eb7",
+      "private_grade_feedback_to_actor": false,
+      "query_sha256": "beee14a6776b2978bc452d856b39e32ae9c10e2deba5b5ed5ffba2f5fc1460a3",
+      "native_end_reason": "iteration limit"
+    },
+    {
+      "phase": 1,
+      "source_authority": "local-grade",
+      "coding_seconds": 178.2647188659903,
+      "exit_code": 0,
+      "external_timeout": false,
+      "source_digest": "a9503dd7468b811cfc112f27e297e59f096289a0219cc5dd8fe2f3497a8a8af0",
+      "changed_paths": [
+        "beetsbridge/README.md",
+        "beetsbridge/__init__.py",
+        "tests/test_beetsbridge.py"
+      ],
+      "project_exit": 0,
+      "preservation_exit": 0,
+      "independent_exit": 1,
+      "project_summary": [
+        "86 passed, 2 subtests passed in 3.15s"
+      ],
+      "preservation_summary": [
+        "83 passed, 2 subtests passed in 3.20s"
+      ],
+      "candidate_module_observer_syntax": {
+        "valid": true
+      },
+      "private_grader_output_sha256": "7d8dd9be6a0305799559c761f6cdbfd6665f2d62f5d6c831886558c57892e9ba",
+      "private_console_sha256": "1090415cdfdeb095eeb8757b38b86a9e66fc5df08d4d30313ae28723756e3b55",
+      "private_grade_feedback_to_actor": false,
+      "query_sha256": "260b662f2b7392663ab74c6926c6e00cc1e27488f1ad2d056eb7c1b187b08588",
+      "native_end_reason": "generated final answer"
+    },
+    {
+      "phase": 2,
+      "source_authority": "local-grade",
+      "coding_seconds": 912.0806858899887,
+      "exit_code": 0,
+      "external_timeout": false,
+      "source_digest": "76047b1dcb5f84670415936f3446eb80de42e483476db90862ff9dfe6a3bf628",
+      "changed_paths": [
+        "beetsbridge/README.md",
+        "beetsbridge/__init__.py",
+        "tests/test_beetsbridge.py"
+      ],
+      "project_exit": 0,
+      "preservation_exit": 0,
+      "independent_exit": 1,
+      "project_summary": [
+        "97 passed, 2 subtests passed in 3.18s"
+      ],
+      "preservation_summary": [
+        "83 passed, 2 subtests passed in 3.15s"
+      ],
+      "candidate_module_observer_syntax": {
+        "valid": true
+      },
+      "private_grader_output_sha256": "bf1b1f1ea45845a6ca1b1a96b966276d8e4084a237673f85d7d3fd298f6f274a",
+      "private_console_sha256": "05863c490b14bf7356d40f41e682f71720790d7f79642b9dcb14cb586642db74",
+      "private_grade_feedback_to_actor": false,
+      "query_sha256": "40914ef6af6210cffc2728f9e6811a52ed1b88e402397599ae4233c4692853eb",
+      "native_end_reason": "generated final answer"
+    }
+  ],
+  "coding_minutes": 31.84967141713302,
+  "supervisor_wall_minutes": 34.7131664,
+  "runtime_audit": {
+    "usage_completed_requests": 139,
+    "requested_calls": 139,
+    "unmatched_request_files": [],
+    "backend_HTTP_error_statuses": [],
+    "failed_backend_requests": 0,
+    "backend_failure_classes": [],
+    "largest_completed_prompt": 84135,
+    "any_length_finish": false,
+    "auxiliary": [
+      {
+        "request": "00096.request.json",
+        "usage": {
+          "completion_tokens": 443,
+          "prompt_tokens": 32375,
+          "total_tokens": 32818,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "seconds": 104.04152202606201,
+        "finish_reasons": [
+          "stop"
+        ],
+        "content_chars": 1958,
+        "reasoning_chars": 0,
+        "summary_headings": [],
+        "literal_tool_markup": true,
+        "content_sha256": "ee9cd02a0349a4c7235192642e6203b971b9e1c5cd63a90cc45f3f19a7e9cbf2",
+        "requires_manual_semantic_audit": true
+      }
+    ],
+    "all_user_tasks_literal_in_final_main_request": [
+      true,
+      true,
+      true
+    ],
+    "frozen_code_files_verified": 133,
+    "initial_Gitea_git_facts_supplied": true
+  },
+  "resource": {
+    "samples": 192,
+    "sampling_pause_seconds": 10,
+    "measurement_errors": 0,
+    "guards": 0,
+    "peak_GPU_MiB": 10224,
+    "peak_aggregate_cgroup_bytes": 7347576832,
+    "peak_process_PSS_bytes": 2514857984,
+    "peak_study_swap_bytes": 0,
+    "minimum_disk_free_bytes": 111165562880,
+    "minimum_staging_free_bytes": 113281437696,
+    "placement_lines": [
+      "0.00.755.445 I load_tensors: offloaded 41/41 layers to GPU",
+      "0.00.755.453 I load_tensors:        CUDA0 model buffer size =  9051.81 MiB",
+      "0.00.755.454 I load_tensors:    CUDA_Host model buffer size =   333.44 MiB",
+      "0.22.372.428 I llama_kv_cache:      CUDA0 KV buffer size =   540.00 MiB",
+      "0.22.405.488 I sched_reserve:      CUDA0 compute buffer size =   229.01 MiB",
+      "0.22.405.490 I sched_reserve:  CUDA_Host compute buffer size =    28.01 MiB"
+    ]
+  },
+  "forge": {
+    "epoch": 1795762747.6844037,
+    "authenticated_actor": "hermes-agent",
+    "repo": "hermes-gpuquant-fable-q5-current-thinking-20261127",
+    "main_revision": "f9980ddc8aa6809e2f98f3ee95436bdb368e7a3d",
+    "upstream_baseline_blobs_verified": 40,
+    "issues": [],
+    "pull_requests": [],
+    "read_only": true,
+    "model_calls": 0,
+    "forge_mutations": 0,
+    "actor_fork_GET_status": 404,
+    "explicit_observed_issues": [],
+    "read_only_retries": []
+  },
+  "preservation": {
+    "epoch": 1795762740.0713456,
+    "passed": true,
+    "original_ids_images_config_running_preserved": true,
+    "Codex_full_recorded_state_unchanged": true,
+    "four_owner_profile_hashes_unchanged": true,
+    "all_30_original_model_metadata_unchanged": true,
+    "both_staged_model_metadata_unchanged": true,
+    "owner_pending_and_40_source_files_unchanged": true,
+    "original_alias_and_context_restored": true,
+    "both_disk_reserves_at_least_100GiB": true,
+    "free_GiB": {
+      "/models": 103.47826385498047,
+      "/stage": 105.77357864379883
+    },
+    "containers": {
+      "hermes": {
+        "id": "5f8aedd58283a34f7736b73864bbeac4b9be195a88737c4cf3373f0e343ccd4d",
+        "image": "sha256:585c221367f9479d3962bc66c8c6f11d1ca571c9e5d7b3aa565ed02d9651b124",
+        "configuration_signature": "b850d3f3890bda5a31a639f9ac99f7b1f487890a4ff246c3526edcb13c04581b",
+        "running": true,
+        "started": "2026-11-27T06:58:46.36667595Z",
+        "restarts": 0,
+        "health": null
+      },
+      "llama-cpp": {
+        "id": "763fb7daa3ef5535dd6553bad40df0106f3a656c70cd9632535640ee4ba15939",
+        "image": "sha256:fee4289628e7ba09f6fbf62d6ce4325aebb2531ffde2154d41276fe4acc58da3",
+        "configuration_signature": "59702b4f3abf79b53dc9bb981ad7dd2eea1286166cef0c74d70755761a94a4aa",
+        "running": true,
+        "started": "2026-11-27T06:58:29.352471843Z",
+        "restarts": 0,
+        "health": "healthy"
+      },
+      "hermes-codex": {
+        "id": "153f58615740083f19640d8d02ca3623a0979e50342ba991a42d88ec28b622bd",
+        "image": "sha256:585c221367f9479d3962bc66c8c6f11d1ca571c9e5d7b3aa565ed02d9651b124",
+        "configuration_signature": "421525e2020ca874438b919ef0a7989a8771c350100441f1e9a213111d76cbc6",
+        "running": true,
+        "started": "2026-11-27T03:12:18.35261825Z",
+        "restarts": 0,
+        "health": null
+      }
+    },
+    "model_identity": {
+      "file": "Qwen3.6-14B-A3B-FableVibes-Q5_K_M.gguf",
+      "bytes": 9852131840,
+      "sha256": "d8fe99004cefb2cf26a1750851acf3cabd53247958e144f88e08beeb36ffbcab",
+      "after_full_SHA_advised_DONTNEED_for_only_selected_model_file": true,
+      "not_global_cache_flush_or_proof_of_cold_cache": true
+    },
+    "scope": "Fresh native baseline; no waiver of prior IQ4 Codex timestamp failure."
+  },
+  "owner_preservation": {
+    "passed": true,
+    "head_status_all_tracked_and_ignored_instructions_unchanged": true,
+    "tracked_files_checked": 40
+  },
+  "cleanup": {
+    "passed": true,
+    "terminal_supervisor_removed": "47e696335ee8310436350b5530ba42d1ae8ee6ceda6faa6cf398dc0d8ce2e35b",
+    "owned_backend_agent_proxies_network_absent": true,
+    "exclusive_anonymous_optdata_volume_removed_with_supervisor": true,
+    "model_stage_volume_preserved": true,
+    "original_preservation_audits_passed_before_cleanup": true,
+    "preservation_scope": "Strict fresh-baseline configuration/models/profiles/owner invariants and entire Codex snapshot unchanged",
+    "strict_Codex_full_snapshot_unchanged": true,
+    "no_unrelated_containers_volumes_or_networks_changed": true,
+    "epoch": 1795762743.0360503
+  },
+  "findings": {
+    "lifecycle": "Worker body and serial-lock boundary unchanged; removing pending timers cannot invalidate dispatched/waiting workers. _disabled is checked only before thread dispatch. Real Nicotine fresh-instance old worker and no-reload waiting controls both fail.",
+    "cancellation": "Only _pending timer entries are counted/removed. Dispatched/waiting jobs are absent there and continue. Per-folder cancel additionally requires an existing audio-containing folder, preventing cancellation after folder removal. Reported counts omit waiting work.",
+    "tests": "97 project tests and all83 immutable originals pass; authored tests mostly exercise pending timers, flags and validation. The manual-after-disable test checks queueing, never timer dispatch; _timer_elapsed actually rejects it while disabled. No meaningful dispatched/waiting regression.",
+    "docs": "Existing guidance retained, but added promise that all queued activation work is abandoned contradicts worker behavior. Manual command does not bypass scheduler as README claims. Cancellation docs omit waiting work.",
+    "publication": "No issue, personal fork or PR; upstream40 blobs unchanged. Actor queried wrong upstream and received scope denials despite configured identity/fixture supplied. DNS failure in local terminal is not proof configured MCP unavailable.",
+    "claims": "Final answer says branch pushed, callbacks safe and MCP unavailable. Independent remote lookup finds no actor fork/publication; source retains waiting-work failures; configured MCP returned19 observed calls. No claim that a PR was successfully created.",
+    "compression": "Single auxiliary returned literal patch tool markup, not a conversation checkpoint. Post-summary request completed; all3 literal user tasks survived. Source failures predate compression, so no compression-only causality.",
+    "control_qualification": "Real Nicotine3.3.11 baseline TFFF/reference TTTT/candidate TFFF. Existing threading/_schedule/_import_lock bindings preserved; waiting failure valid. Folder controls fail first2 at validation on nonexistent simulated folders; do not treat that alone as proof every cancellation race fails. Same-object reload is supplementary stress, not normal GUI lifecycle. No live GUI/media/beets process."
+  },
+  "first_backend_call_seconds": 55.10582423210144,
+  "intervention": {
+    "corrective_hints_patches_resends": false,
+    "three_original_dependent_tasks": true
+  },
+  "limitations": [
+    "One workflow per quant; no reliability or GPT5 equivalence.",
+    "Local source only: no remote publication.",
+    "Saved source/observation consistency reproducible; private graders, reference implementation, raw conversations, profiles and credentials excluded. Behavioral observations are not independently replayed by the verifier.",
+    "Shared host/cache reuse/sampled peaks and different public quant production/calibration prevent pure precision-only causality.",
+    "Model has host buffers despite41/41GPU layers. Capacity-only marker probe failed60k exact format.",
+    "Experimental main16k/aux8k caps differ from production4096; no deployment."
+  ]
+}
