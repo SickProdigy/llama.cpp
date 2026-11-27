@@ -40,7 +40,7 @@
         29.922001315700133
       ],
       "total_coding_minutes": 84.11867462855031,
-      "supervisor_wall_minutes": null,
+      "supervisor_wall_minutes": 88.46137556666666,
       "turn_checks": [
         {
           "phase": 0,
@@ -101,7 +101,9 @@
         "PR_preserved_unmerged": true
       },
       "quant_or_runtime_qualification": null,
-      "source_report_for_manual_findings": "evaluations/2026-11-24-gpu-quant/native-adapted-q4-current-cold-beets.md"
+      "source_report_for_manual_findings": "evaluations/2026-11-24-gpu-quant/native-adapted-q4-current-cold-beets.md",
+      "wall_observation_source": "evaluations/2026-11-24-gpu-quant/completed-current-quant-terminal-timings.json",
+      "wall_observation_source_SHA256": "866d47970e03cb75f38b976910e82256d5f419ead70fc72b28207ff3074d3e42"
     },
     {
       "candidate": "adapted-iq4-current-r2",
@@ -335,6 +337,155 @@
       },
       "quant_or_runtime_qualification": null,
       "source_report_for_manual_findings": "evaluations/2026-11-24-gpu-quant/native-adapted-iq3-current-cold-beets.md"
+    },
+    {
+      "candidate": "fable-q4-current-thinking",
+      "source": "evaluations/2026-11-24-gpu-quant/native-fable-q4-current-thinking-cold-beets-summary.json",
+      "source_SHA256": "efd8b7bd9c586d3f44c6fd0b7874157b75e29eaf9d55209a9564d9830a334aa3",
+      "whole_workflow_pass": false,
+      "model": {
+        "file": "Qwen3.6-14B-A3B-FableVibes-Q4_K_M.gguf",
+        "bytes": 8465553920,
+        "sha256": "21aa4b0b28090469e8a319c889451df2f1ea6aad27ac3818c8c8a86f86d5bc9e",
+        "after_full_SHA_advised_DONTNEED_for_only_selected_model_file": true,
+        "not_global_cache_flush_or_proof_of_cold_cache": true
+      },
+      "model_repository": "tvall43/Qwen3.6-14B-A3B-FableVibes-GGUF",
+      "model_revision": "9cf910a7ad68dfedcbdfc46ef0fe5003dec07c23",
+      "runtime_images": {
+        "Hermes": "sha256:c9b40eb8dea441cba7ded2e6589e5c011545ffc1ec76a0dc736f8e399d8f947b",
+        "llama.cpp": "sha256:fee4289628e7ba09f6fbf62d6ce4325aebb2531ffde2154d41276fe4acc58da3"
+      },
+      "preservation": {
+        "epoch": 1795766340.144223,
+        "passed": true,
+        "original_ids_images_config_running_preserved": true,
+        "Codex_full_recorded_state_unchanged": true,
+        "four_owner_profile_hashes_unchanged": true,
+        "all_30_original_model_metadata_unchanged": true,
+        "both_staged_model_metadata_unchanged": true,
+        "owner_pending_and_40_source_files_unchanged": true,
+        "original_alias_and_context_restored": true,
+        "both_disk_reserves_at_least_100GiB": true,
+        "free_GiB": {
+          "/models": 103.31705474853516,
+          "/stage": 105.74185180664062
+        },
+        "containers": {
+          "hermes": {
+            "id": "5f8aedd58283a34f7736b73864bbeac4b9be195a88737c4cf3373f0e343ccd4d",
+            "image": "sha256:585c221367f9479d3962bc66c8c6f11d1ca571c9e5d7b3aa565ed02d9651b124",
+            "configuration_signature": "b850d3f3890bda5a31a639f9ac99f7b1f487890a4ff246c3526edcb13c04581b",
+            "running": true,
+            "started": "2026-11-27T07:58:19.143611476Z",
+            "restarts": 0,
+            "health": null
+          },
+          "llama-cpp": {
+            "id": "763fb7daa3ef5535dd6553bad40df0106f3a656c70cd9632535640ee4ba15939",
+            "image": "sha256:fee4289628e7ba09f6fbf62d6ce4325aebb2531ffde2154d41276fe4acc58da3",
+            "configuration_signature": "59702b4f3abf79b53dc9bb981ad7dd2eea1286166cef0c74d70755761a94a4aa",
+            "running": true,
+            "started": "2026-11-27T07:57:43.65140758Z",
+            "restarts": 0,
+            "health": "healthy"
+          },
+          "hermes-codex": {
+            "id": "153f58615740083f19640d8d02ca3623a0979e50342ba991a42d88ec28b622bd",
+            "image": "sha256:585c221367f9479d3962bc66c8c6f11d1ca571c9e5d7b3aa565ed02d9651b124",
+            "configuration_signature": "421525e2020ca874438b919ef0a7989a8771c350100441f1e9a213111d76cbc6",
+            "running": true,
+            "started": "2026-11-27T03:12:18.35261825Z",
+            "restarts": 0,
+            "health": null
+          }
+        },
+        "model_identity": {
+          "file": "Qwen3.6-14B-A3B-FableVibes-Q4_K_M.gguf",
+          "bytes": 8465553920,
+          "sha256": "21aa4b0b28090469e8a319c889451df2f1ea6aad27ac3818c8c8a86f86d5bc9e",
+          "after_full_SHA_advised_DONTNEED_for_only_selected_model_file": true,
+          "not_global_cache_flush_or_proof_of_cold_cache": true
+        },
+        "scope": "Fresh native baseline; no waiver of prior IQ4 Codex timestamp failure."
+      },
+      "intervention": {
+        "corrective_hints_patches_resends": false,
+        "three_original_dependent_tasks": true,
+        "native_final_iteration_cap_prompt": {
+          "request": "00115.request.json",
+          "request_SHA256": "f35e3e6e9f786c332a1b247dd86c99aa02cb95ae452e4014869e8bc656adc558",
+          "native_framework_message": "You've reached the maximum number of tool-calling iterations allowed. Please provide a final response summarizing what you've found and accomplished so far, without calling any more tools.",
+          "not_assessor_hint_or_extra_user_task": true
+        }
+      },
+      "turn_minutes": [
+        14.103721961266759,
+        1.1066749846167416,
+        19.163716555500045
+      ],
+      "total_coding_minutes": 34.37411350138355,
+      "supervisor_wall_minutes": 37.7740623,
+      "turn_checks": [
+        {
+          "phase": 0,
+          "project_exit": 0,
+          "original_exit": 0,
+          "registered_independent_exit": 1,
+          "source_authority": "local-grade",
+          "not_a_manual_behavior_verdict": true
+        },
+        {
+          "phase": 1,
+          "project_exit": 0,
+          "original_exit": 0,
+          "registered_independent_exit": 1,
+          "source_authority": "local-grade",
+          "not_a_manual_behavior_verdict": true
+        },
+        {
+          "phase": 2,
+          "project_exit": 0,
+          "original_exit": 0,
+          "registered_independent_exit": 1,
+          "source_authority": "local-grade",
+          "not_a_manual_behavior_verdict": true
+        }
+      ],
+      "resource": {
+        "samples": 200,
+        "peak_GPU_MiB": 8964,
+        "peak_aggregate_cgroup_bytes": 6651801600,
+        "peak_process_PSS_bytes": 2303496192,
+        "peak_study_swap_bytes": 0,
+        "guards": 0,
+        "measurement_errors": 0,
+        "minimum_disk_free_bytes": 110983892992,
+        "minimum_staging_free_bytes": 113356206080
+      },
+      "actual_buffer_placement_lines": [
+        "0.01.168.593 I load_tensors: offloaded 41/41 layers to GPU",
+        "0.01.168.602 I load_tensors:        CUDA0 model buffer size =  7790.09 MiB",
+        "0.01.168.603 I load_tensors:    CUDA_Host model buffer size =   272.81 MiB",
+        "0.18.820.368 I llama_kv_cache:      CUDA0 KV buffer size =   540.00 MiB",
+        "0.18.886.587 I sched_reserve:      CUDA0 compute buffer size =   229.01 MiB",
+        "0.18.886.695 I sched_reserve:  CUDA_Host compute buffer size =    28.01 MiB"
+      ],
+      "backend": {
+        "completed_requests": 115,
+        "requested_calls": 115,
+        "failed_requests": 0,
+        "largest_completed_prompt": 83321,
+        "any_length_finish": false
+      },
+      "publication": {
+        "actor_fork_GET_status": 404,
+        "observed_issues_count": 0,
+        "observed_PR_count": 0,
+        "empty_issue_list_is_not_closure_proof": true
+      },
+      "quant_or_runtime_qualification": null,
+      "source_report_for_manual_findings": "evaluations/2026-11-24-gpu-quant/native-fable-q4-current-thinking-cold-beets.md"
     },
     {
       "candidate": "fable-q5-current-thinking",
@@ -721,7 +872,7 @@
         25.554119026800134
       ],
       "total_coding_minutes": 52.20450167521655,
-      "supervisor_wall_minutes": null,
+      "supervisor_wall_minutes": 55.017651533333336,
       "turn_checks": [
         {
           "phase": 0,
@@ -781,7 +932,9 @@
         "empty_issue_list_is_not_closure_proof": true
       },
       "quant_or_runtime_qualification": null,
-      "source_report_for_manual_findings": "evaluations/2026-11-24-gpu-quant/native-vibe-q4-thinking-cold-beets.md"
+      "source_report_for_manual_findings": "evaluations/2026-11-24-gpu-quant/native-vibe-q4-thinking-cold-beets.md",
+      "wall_observation_source": "evaluations/2026-11-24-gpu-quant/completed-current-quant-terminal-timings.json",
+      "wall_observation_source_SHA256": "866d47970e03cb75f38b976910e82256d5f419ead70fc72b28207ff3074d3e42"
     },
     {
       "candidate": "vibe-q6-thinking",
@@ -816,7 +969,7 @@
         4.921781862366576
       ],
       "total_coding_minutes": 64.03410610263333,
-      "supervisor_wall_minutes": null,
+      "supervisor_wall_minutes": 67.35376241666667,
       "turn_checks": [
         {
           "phase": 0,
@@ -882,15 +1035,17 @@
         "synthetic_current_native_SDK_classifier_control": "transparent-recorder/preflight.json",
         "actual_native_recovery_or_model_quality_improvement_not_yet_tested": true
       },
-      "source_report_for_manual_findings": "evaluations/2026-11-24-gpu-quant/native-vibe-q6-thinking-cold-beets.md"
+      "source_report_for_manual_findings": "evaluations/2026-11-24-gpu-quant/native-vibe-q6-thinking-cold-beets.md",
+      "wall_observation_source": "evaluations/2026-11-24-gpu-quant/completed-current-quant-terminal-timings.json",
+      "wall_observation_source_SHA256": "866d47970e03cb75f38b976910e82256d5f419ead70fc72b28207ff3074d3e42"
     }
   ],
   "paired_comparison_qualifications": {
-    "Fable Q5/Q6/Q8": "Same current evaluator/backend/transparent recorder, reasoning sampler and context; none of these three full workflows passes. Single observations, not precision-only causality or reliability.",
+    "Fable Q4/Q5/Q6/Q8": "Same current evaluator/backend/transparent recorder, reasoning sampler and context; none of these four full workflows passes. Single observations, not precision-only causality or reliability.",
     "Vibe Q4/Q6": "Both use the earlier recorder; Q6 final context400 was masked as502. Earlier independent code failures remain; final feature score is confounded.",
     "Adapted IQ3/Q4/IQ4": "Same current evaluator/backend/transparent recorder and nonthinking sampler/caps. Quant production/calibration, measured layer placement/host spillover and ubatch differ. IQ4 full Codex-state check failed on a start timestamp change of unknown cause; its qualified restoration is retained."
   },
   "missing_values": "null means not present in the supplied public summary, never an assumed zero or successful check.",
   "interpretation": "No runtime, test, publication or capacity check alone is a correctness verdict. Manual source/behavior/docs/claims findings remain in each linked delivered report. No GPT5 equivalence or autonomous reliability claim.",
-  "source_code_SHA256": "9c6b266fce01b2239526b444f844eed11e908441499c586faf2b455a8ccb68ac"
+  "source_code_SHA256": "120a61f21bb85f4186037fe4c6a527aa6c1fcd1d04bb720212047c0cac261da0"
 }

@@ -1,0 +1,32 @@
+{
+  "positive": {
+    "passed": true,
+    "archive_SHA256": "62db41e97473c932ac3af1e4861fd68cf57843049d8f664c6f1dca07972fd3c7",
+    "manifest_files": 187,
+    "whole_workflow_pass": false,
+    "scope": "Saved-source and measurement consistency; no inference or behavioral replay."
+  },
+  "negative_controls": [
+    {
+      "control": "fabricated_success",
+      "manifest_recomputed": true,
+      "rejected": true
+    },
+    {
+      "control": "consistent_host_over_8GiB",
+      "manifest_recomputed": true,
+      "rejected": true
+    },
+    {
+      "control": "altered_worker",
+      "manifest_recomputed": true,
+      "rejected": true
+    },
+    {
+      "control": "stale_other_candidate_control",
+      "manifest_recomputed": true,
+      "rejected": true
+    }
+  ],
+  "scope": "Saved evidence consistency/static source checks; not inference or behavioral replay."
+}

@@ -1,0 +1,98 @@
+{
+  "observations": [
+    {
+      "candidate": "adapted-q4-current",
+      "container_id": "039cc90d476a4f72ced104384046c2c89d1a614a0bfa5facd9bdedcd915644af",
+      "terminal_source_file": "cold-current-adapted-q4-terminal-supervisor.json",
+      "terminal_source_SHA256": "fd1e01a6125d208d395591ab20fc629c28f246d720a6e0ddc8a119ced10c74b1",
+      "matching_recorded_launch_receipts": [
+        {
+          "file": "cold-current-adapted-q4-terminal-supervisor.json",
+          "SHA256": "fd1e01a6125d208d395591ab20fc629c28f246d720a6e0ddc8a119ced10c74b1",
+          "id": "039cc90d476a4f72ced104384046c2c89d1a614a0bfa5facd9bdedcd915644af",
+          "name": null
+        },
+        {
+          "file": "native-adapted-q4-current-cold-20261126-supervisor.json",
+          "SHA256": "6b85f9ce2d8b135e8e9e971081296c1b3c41026ed5c860d4cf8bbef9a281a30f",
+          "id": "039cc90d476a4f72ced104384046c2c89d1a614a0bfa5facd9bdedcd915644af",
+          "name": "hermes-gpuquant-adapted-q4-current-cold-20261126-beets-supervisor"
+        }
+      ],
+      "terminal_state": {
+        "Status": "exited",
+        "Running": false,
+        "ExitCode": 0,
+        "OOMKilled": false,
+        "StartedAt": "2026-11-26T22:36:20.777673108Z",
+        "FinishedAt": "2026-11-27T00:04:48.460207733Z"
+      },
+      "supervisor_wall_minutes": 88.46137556666666,
+      "coding_minutes": 84.11867462855031,
+      "scope": "Captured terminal Docker StartedAt-to-FinishedAt; not live reinspection of removed container or an isolated inference benchmark."
+    },
+    {
+      "candidate": "vibe-q4-thinking",
+      "container_id": "3d2daaa22ef62cb0f51369165e4854ee48c94210e7f9686952193558ac9ee520",
+      "terminal_source_file": "cold-vibe-q4-terminal-supervisor.json",
+      "terminal_source_SHA256": "398647465af236a8f1ec0870e366b1b69063bdf7235068b2dc32533611134c8f",
+      "matching_recorded_launch_receipts": [
+        {
+          "file": "cold-vibe-q4-terminal-supervisor.json",
+          "SHA256": "398647465af236a8f1ec0870e366b1b69063bdf7235068b2dc32533611134c8f",
+          "id": "3d2daaa22ef62cb0f51369165e4854ee48c94210e7f9686952193558ac9ee520",
+          "name": null
+        },
+        {
+          "file": "native-vibe-q4-thinking-cold-20261126-supervisor.json",
+          "SHA256": "d4467277be714fd55ff005309a9a1c7992c2e9612a483cf4386224702a80ceb2",
+          "id": "3d2daaa22ef62cb0f51369165e4854ee48c94210e7f9686952193558ac9ee520",
+          "name": "hermes-gpuquant-vibe-q4-thinking-cold-20261126-beets-supervisor"
+        }
+      ],
+      "terminal_state": {
+        "Status": "exited",
+        "Running": false,
+        "ExitCode": 0,
+        "OOMKilled": false,
+        "StartedAt": "2026-11-26T16:01:26.662861946Z",
+        "FinishedAt": "2026-11-26T16:56:27.721953667Z"
+      },
+      "supervisor_wall_minutes": 55.017651533333336,
+      "coding_minutes": 52.20450167521655,
+      "scope": "Captured terminal Docker StartedAt-to-FinishedAt; not live reinspection of removed container or an isolated inference benchmark."
+    },
+    {
+      "candidate": "vibe-q6-thinking",
+      "container_id": "dfbfdb87eae3d2f0a1b24414f0178aca4f28a2b33eec8624d0d5a1b1c7130af4",
+      "terminal_source_file": "cold-vibe-q6-terminal-supervisor.json",
+      "terminal_source_SHA256": "78ef66c773672674f357808f5211a164456d164ee1f86512dc5acfda2aabf061",
+      "matching_recorded_launch_receipts": [
+        {
+          "file": "cold-vibe-q6-terminal-supervisor.json",
+          "SHA256": "78ef66c773672674f357808f5211a164456d164ee1f86512dc5acfda2aabf061",
+          "id": "dfbfdb87eae3d2f0a1b24414f0178aca4f28a2b33eec8624d0d5a1b1c7130af4",
+          "name": null
+        },
+        {
+          "file": "native-vibe-q6-thinking-cold-20261126-supervisor.json",
+          "SHA256": "a2d129e8b6c0804bf1cc67cfc83177fe96139b6363b7b7e092fb0f0372b5955c",
+          "id": "dfbfdb87eae3d2f0a1b24414f0178aca4f28a2b33eec8624d0d5a1b1c7130af4",
+          "name": "hermes-gpuquant-vibe-q6-thinking-cold-20261126-beets-supervisor"
+        }
+      ],
+      "terminal_state": {
+        "Status": "exited",
+        "Running": false,
+        "ExitCode": 0,
+        "OOMKilled": false,
+        "StartedAt": "2026-11-26T16:58:37.917713574Z",
+        "FinishedAt": "2026-11-26T18:05:59.14345813Z"
+      },
+      "supervisor_wall_minutes": 67.35376241666667,
+      "coding_minutes": 64.03410610263333,
+      "scope": "Captured terminal Docker StartedAt-to-FinishedAt; not live reinspection of removed container or an isolated inference benchmark."
+    }
+  ],
+  "scope": "Curated numeric/identity terminal observations; credentials/config/mounts/actor content excluded. IDs match recorded launch receipts. Historical behavior/transport/restoration qualifications remain."
+}

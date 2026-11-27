@@ -1,5 +1,7 @@
 # Current Fable Q4 reasoning-mode capacity
 
+Subsequent update: the [matched current native workflow](native-fable-q4-current-thinking-cold-beets.md) is complete and fails. Statements below describe the capacity checkpoint.
+
 All six requests complete at **98,304 context /41 of41 GPU layers /8,964 MiB peak GPU**. Actual short tool arguments and dependent tool-history answer are correct. The16k exact-marker check fails (`16000`, missing its prefix);60k/80k markers are exact. **This is capacity evidence, not coding or configured Gitea quality.** Fresh current-evaluator native coding remains pending.
 
 ## Artifact and matched setup

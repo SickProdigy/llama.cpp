@@ -1,8 +1,10 @@
 {
   "passed": true,
-  "source_summaries_bound": 8,
+  "source_summaries_bound": 9,
   "deterministic_rebuild_identical": true,
   "model_identity_verdict_GPU_values_cross_checked": true,
   "all_turn_sums_verified": true,
-  "scope": "Cross-summary consistency only; individual reports retain source/behavior/publication/transport/preservation qualifications. No additional model inference or reliability trial."
+  "scope": "Cross-summary consistency only; individual reports retain source/behavior/publication/transport/preservation qualifications. No additional model inference or reliability trial.",
+  "previously_missing_terminal_totals_derived_and_launch_ID_bound": 3,
+  "all_nine_supervisor_wall_totals_present": true
 }

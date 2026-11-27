@@ -4,10 +4,10 @@ This reads completed public reports only; it neither reads nor modifies a live
 actor. All included IQ3 and Q5 stages are independently audited and delivered.
 """
 from pathlib import Path
-import hashlib,json,math,time
+import hashlib,json,math,time,datetime
 E=Path(__file__).resolve().parent
 R=E.parent.parent
-candidates=['adapted-q4-current','adapted-iq4-current-r2','adapted-iq3-current','fable-q5-current-thinking','fable-q6-current-thinking','fable-q8-thinking','vibe-q4-thinking','vibe-q6-thinking']
+candidates=['adapted-q4-current','adapted-iq4-current-r2','adapted-iq3-current','fable-q4-current-thinking','fable-q5-current-thinking','fable-q6-current-thinking','fable-q8-thinking','vibe-q4-thinking','vibe-q6-thinking']
 rows=[]
 for candidate in candidates:
  p=E/('native-'+candidate+'-cold-beets-summary.json')
@@ -43,8 +43,22 @@ for candidate in candidates:
   'quant_or_runtime_qualification':x.get('qualification',x.get('comparability',x.get('restoration_qualification'))),
   'source_report_for_manual_findings':str(p.with_suffix('').with_name(p.name.replace('-summary.json','.md')).relative_to(R)),
  })
+timing_source=E/'completed-current-quant-terminal-timings.json'
+timing_data=json.loads(timing_source.read_text())
+for observed in timing_data['observations']:
+ state=observed['terminal_state'];dt=lambda x:datetime.datetime.fromisoformat(x.replace('Z','+00:00'))
+ minutes=(dt(state['FinishedAt'])-dt(state['StartedAt'])).total_seconds()/60
+ assert state['Status']=='exited'and not state['Running']and not state['OOMKilled']and state['ExitCode']==0
+ assert math.isclose(minutes,observed['supervisor_wall_minutes'],abs_tol=1e-9)
+ assert observed['matching_recorded_launch_receipts']and all(r['id']==observed['container_id']for r in observed['matching_recorded_launch_receipts'])
+ row=next(r for r in rows if r['candidate']==observed['candidate']);assert minutes>row['total_coding_minutes']
+ assert math.isclose(observed['coding_minutes'],row['total_coding_minutes'],abs_tol=1e-9)
+ if row['supervisor_wall_minutes']is not None:assert math.isclose(minutes,row['supervisor_wall_minutes'],abs_tol=1e-9)
+ row['supervisor_wall_minutes']=minutes
+ row['wall_observation_source']=str(timing_source.relative_to(R))
+ row['wall_observation_source_SHA256']=hashlib.sha256(timing_source.read_bytes()).hexdigest()
 out={'scope':'Only already delivered completed current-runtime Beets workflows; IQ3 and Q5 included after independent audit/delivery. Three dependent turns constitute one workflow per cell, not three independent trials.','rows':rows,'paired_comparison_qualifications':{
- 'Fable Q5/Q6/Q8':'Same current evaluator/backend/transparent recorder, reasoning sampler and context; none of these three full workflows passes. Single observations, not precision-only causality or reliability.',
+ 'Fable Q4/Q5/Q6/Q8':'Same current evaluator/backend/transparent recorder, reasoning sampler and context; none of these four full workflows passes. Single observations, not precision-only causality or reliability.',
  'Vibe Q4/Q6':'Both use the earlier recorder; Q6 final context400 was masked as502. Earlier independent code failures remain; final feature score is confounded.',
  'Adapted IQ3/Q4/IQ4':'Same current evaluator/backend/transparent recorder and nonthinking sampler/caps. Quant production/calibration, measured layer placement/host spillover and ubatch differ. IQ4 full Codex-state check failed on a start timestamp change of unknown cause; its qualified restoration is retained.',
  },'missing_values':'null means not present in the supplied public summary, never an assumed zero or successful check.','interpretation':'No runtime, test, publication or capacity check alone is a correctness verdict. Manual source/behavior/docs/claims findings remain in each linked delivered report. No GPT5 equivalence or autonomous reliability claim.','source_code_SHA256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest()}

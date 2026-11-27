@@ -1,11 +1,11 @@
 {
   "passed": true,
   "known_credential_values_checked": 5,
-  "private_receipt_keys_checked": 87,
-  "patterns_checked": 97,
-  "payloads_checked": 2386,
+  "private_receipt_keys_checked": 92,
+  "patterns_checked": 103,
+  "payloads_checked": 2661,
   "matching_paths": [],
-  "archive_sha256": "a86731f741c2d75fda6697509b13bf0be4a0d0d88112cf53ef15a9ab8c39b6e6",
+  "archive_sha256": "62db41e97473c932ac3af1e4861fd68cf57843049d8f664c6f1dca07972fd3c7",
   "archives_checked": {
     "auxiliary-precision-controls-evidence.tar.gz": "3310d556265fd4693f7360393a813f9ce2bff18d227344f7f606f17a950800de",
     "compression-runtime-control-evidence.tar.gz": "5555b63a326286408ba5538650be9d6e7fefc2acfa0255980d05398b82adfe98",
@@ -14,6 +14,7 @@
     "native-adapted-iq4-current-interrupted-evidence.tar.gz": "85daf254069701735ffaf7ebcb9efcb196ee5f9f7b241465f2d7dd244608c1d4",
     "native-adapted-iq4-current-r2-cold-beets-evidence.tar.gz": "616c8702ac213aad109601c532a3834779e9e7de993df5781c4c8f281385abcb",
     "native-fable-q4-beets-evidence.tar.gz": "f3ffdaae276d504660bfc98647876dbef7ff7484a92de27711e8f8580500f680",
+    "native-fable-q4-current-thinking-cold-beets-evidence.tar.gz": "62db41e97473c932ac3af1e4861fd68cf57843049d8f664c6f1dca07972fd3c7",
     "native-fable-q4-thinking-beets-evidence.tar.gz": "eed31a8ab441312ee6d26b3eed69aa9bfe9385de003aec4e68578d5a25c443af",
     "native-fable-q5-current-thinking-cold-beets-evidence.tar.gz": "a86731f741c2d75fda6697509b13bf0be4a0d0d88112cf53ef15a9ab8c39b6e6",
     "native-fable-q6-beets-evidence.tar.gz": "56dff62e711907c8ece6f202045c35ebdf568f8cf4a11f69cee0eba2cd32e51a",
@@ -24,6 +25,7 @@
     "resource-adapted-iq4-current-evidence.tar.gz": "4df38335ec9a51285bcfd4305c6795f86a260ca8ecf284c24bc6d2cc3edde7eb",
     "resource-adapted-iq4-evidence.tar.gz": "23f2d008c4383531a4d7ec0b45124a9c120b7c12f509ce832dd2a911f6b4b754",
     "resource-adapted-q4-current-evidence.tar.gz": "6a1ce4c14a36ce950421b2adff6aa31509d6c7c0d0420b0b4a286085ff50c017",
+    "resource-fable-q4-current-thinking-evidence.tar.gz": "3ffa44b3ece4d0feddfea5bfc41cc5478aca84817c6c588db5d71f968459774f",
     "resource-fable-q4-evidence.tar.gz": "621a9bf642fc89f24fdf3420c1f773d3f95f9c28b36f1ebbcee14a107aa12dda",
     "resource-fable-q4-thinking-evidence.tar.gz": "8cfad091b4ca1e51f2e88708818030e7e04cafeb8421b53a757bd9f8b9da95c9",
     "resource-fable-q5-current-thinking-evidence.tar.gz": "a6e1ae15826a04283173d0d52d74661abb48619278b3fcaa271b657277e43006",
@@ -33,6 +35,6 @@
     "resource-vibe-q4-evidence.tar.gz": "e9bdaa7f4abfaae99e8c5b46d3f194f7e7430e41833f904e23a7df978a516b54",
     "resource-vibe-q6-evidence.tar.gz": "d536292ed81b956779bd4feb6f34ec0f9d398c4f337a6619bc62393411f1991c"
   },
-  "scanner_worker_sha256": "fb3f45f168a7ad0e8b5de6b947083f7dc96fb131d7e9a784a4b1824340b9efd8",
+  "scanner_worker_sha256": "ff755c96389396bddcd681b17a9ea64e43477d01ee848cd03b7c4a3cad8c1511",
   "scope": "Known credential values plus actual private signing keys and common encodings; not general secret detection. No values persisted or printed."
 }
