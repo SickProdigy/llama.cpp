@@ -1,5 +1,7 @@
 # GPU-resident quantization comparison
 
+[Current retained Fable Q4 capacity](resource-fable-q4-current-thinking.md) completes six requests at98k/41 of41 GPU layers/**8,964MiB peak**, with272.81MiB host model buffers and no study swap. First tool call27.34s; actual short tool history is correct.16k exact marker fails,60k/80k pass. Strict original runtime/settings/models/full Codex preservation and exact cleanup pass. Matched current native coding is still pending; older Q4 coding used an older evaluator.
+
 [Consolidated current quant comparison](completed-current-quant-comparison.md): eight completed workflows, no full pass. Current Fable Q5/Q6/Q8 establish no successful precision upgrade. Retained Q4 still needs a matched current-evaluator run; older Q4 evidence is kept separate. Original default remains VibeForged Q4.
 
 [Current Fable Q5 coding/Gitea](native-fable-q5-current-thinking-cold-beets.md) **fails in31.85 coding /34.71 wall minutes**, despite98k/41 of41 GPU layers/10,224MiB peak and139 successful backend requests. Waiting-work lifecycle/cancellation defects remain, README/final claims overstate behavior, and no issue/fork/PR is published. Project/original tests pass while independent real Nicotine controls expose failures. Strict restoration and full Hermes-Codex preservation pass. Q5/Q6/Q8 establish no successful precision upgrade.
@@ -44,6 +46,7 @@ that newer owner-source evaluator. Capacity alone is not coding/publication qual
 
 | Checkpoint / public quant | Measured capacity (98,304 unless stated) | Fresh Beets coding/Gitea workflow |
 |---|---|---|
+| FableVibes Q4_K_M, current C9/fee thinking |98k/41 of41GPU,8,964MiB peak,272.81MiB host model; six probes complete;16k exact marker fails,60k/80k pass ([capacity](resource-fable-q4-current-thinking.md)) | Fresh matched native coding not launched; older evaluator cell is separate |
 | FableVibes Q5_K_M, current C9/fee thinking | 98k /41 of41 GPU /ub128,10,224MiB peak;333.44MiB host model;84,135-token completed input | WorkflowFAIL31.85coding/34.71wallmin;139/139 backend calls; waiting lifecycle/cancel defects, inaccurate claims, no issue/fork/PR; original tests pass; strict restoration ([audit](native-fable-q5-current-thinking-cold-beets.md)) |
 | Adapted27B IQ4_XS, current C9/fee, fresh R2 | 98k / 63 of66 GPU / ub64,15,926MiB peak; host model1,250.63MiB; actual81,911-token input | Published workflowFAIL: dispatch TypeError, no cancel/no added tests;110.58coding/114.69wallmin,67/67 backend requests; qualified Codex timestamp exception ([audit](native-adapted-iq4-current-r2-cold-beets.md)). Earlier [disk interruption](native-adapted-iq4-current-interrupted.md) remains unscored |
 | Adapted27B IQ3_XXS, retained / current reference | Full hash verified;98k/66 of66 reported GPU/ub64;12,904MiB GPU,521MiB host model;all6probes and exact16k/60k/80k markers pass ([capacity](resource-adapted-iq3-current.md)) | Fresh native workflowFAIL32.50coding/36.50wallmin; ordinary timer regression, no cancel/tests/docs/PR; [audit](native-adapted-iq3-current-cold-beets.md). Capacity60k870.56s is separate |

@@ -1,0 +1,614 @@
+{
+  "candidate": "fable-q4-current-thinking",
+  "classification": "prospective reasoning-enabled synthetic capacity control; not coding or forge quality",
+  "passed_capacity_stage": true,
+  "not_coding_quality": true,
+  "model_identity": {
+    "file": "Qwen3.6-14B-A3B-FableVibes-Q4_K_M.gguf",
+    "bytes": 8465553920,
+    "sha256": "21aa4b0b28090469e8a319c889451df2f1ea6aad27ac3818c8c8a86f86d5bc9e",
+    "specific_study_file_advised_DONTNEED_after_hash": true,
+    "not_global_cache_flush_or_cold_cache_proof": true
+  },
+  "public_pin": {
+    "repo": "tvall43/Qwen3.6-14B-A3B-FableVibes-GGUF",
+    "revision": "9cf910a7ad68dfedcbdfc46ef0fe5003dec07c23",
+    "file": "Qwen3.6-14B-A3B-FableVibes-Q4_K_M.gguf",
+    "expected_bytes": 8465553920,
+    "sha256": "21aa4b0b28090469e8a319c889451df2f1ea6aad27ac3818c8c8a86f86d5bc9e",
+    "layouts": [
+      {
+        "context": 98304,
+        "gpu_layers": 99
+      }
+    ],
+    "sampler": {
+      "temperature": 1.0,
+      "top_p": 0.95,
+      "top_k": 20,
+      "min_p": 0,
+      "repeat_penalty": 1,
+      "presence_penalty": 0,
+      "chat_template_kwargs": {
+        "enable_thinking": true
+      }
+    },
+    "probe_output_cap": 16384,
+    "retained_file_requires_full_hash_verification": true
+  },
+  "context": 98304,
+  "requested_gpu_layers": 99,
+  "fit_auto_off": true,
+  "placement_limitation": "All41 GPU layers explicitly verified before probes; host embedding buffer is reported separately, not CPU transformer layer offload.",
+  "selected_file_cache_after_original_stop": {
+    "epoch": 1795763389.782601,
+    "file": "Qwen3.6-14B-A3B-FableVibes-Q4_K_M.gguf",
+    "bytes": 8465553920,
+    "mincore_cached_page_bytes_before": 0,
+    "mincore_cached_page_bytes_after": 0,
+    "only_specific_inactive_file_advised": true,
+    "no_global_cache_flush": true,
+    "not_cold_storage_cache_proof": true,
+    "content_not_modified": true,
+    "scope": "After original backend exits, before measured replacement starts. Page residency rounded to page boundaries; no claim about storage-device caches."
+  },
+  "samples": 79,
+  "measurement_errors": 0,
+  "peak_gpu_MiB": 8964,
+  "peak_aggregate_cgroup_bytes": 6973968384,
+  "peak_process_PSS_bytes": 1658934272,
+  "peak_study_swap_bytes": 0,
+  "guard_count": 0,
+  "minimum_model_disk_free_bytes": 111103717376,
+  "minimum_staging_disk_free_bytes": 112703455232,
+  "global_swap_in_pages_delta": 2839,
+  "global_swap_out_pages_delta": 11629,
+  "global_swap_not_attributed_to_study": true,
+  "probes": {
+    "tool-followup": {
+      "body_complete": true,
+      "seconds": 2.1572763079893775,
+      "usage": {
+        "completion_tokens": 95,
+        "prompt_tokens": 573,
+        "total_tokens": 668,
+        "prompt_tokens_details": {
+          "cached_tokens": 548
+        }
+      },
+      "finish_reason": "stop",
+      "response_sha256": "11304969880cd1e6f93fafd0b0d85404f2a9307b24b8e6821481b2f21ce8994c",
+      "timings": {
+        "cache_n": 548,
+        "prompt_n": 25,
+        "prompt_ms": 263.908,
+        "prompt_per_token_ms": 10.556320000000001,
+        "prompt_per_second": 94.72998166027554,
+        "predicted_n": 95,
+        "predicted_ms": 1887.682,
+        "predicted_per_token_ms": 20.08172340425532,
+        "predicted_per_second": 49.79652293129881
+      }
+    },
+    "tool-result": {
+      "body_complete": true,
+      "seconds": 2.6862709400011227,
+      "usage": {
+        "completion_tokens": 123,
+        "prompt_tokens": 426,
+        "total_tokens": 549,
+        "prompt_tokens_details": {
+          "cached_tokens": 392
+        }
+      },
+      "finish_reason": "stop",
+      "response_sha256": "697c1fd502776bb67709564ed65dbc31119105cbecc8a20a1bb7067e2e43c015",
+      "timings": {
+        "cache_n": 392,
+        "prompt_n": 34,
+        "prompt_ms": 216.809,
+        "prompt_per_token_ms": 6.376735294117647,
+        "prompt_per_second": 156.82005820791574,
+        "predicted_n": 123,
+        "predicted_ms": 2464.081,
+        "predicted_per_token_ms": 20.19738524590164,
+        "predicted_per_second": 49.51135940742208
+      }
+    },
+    "prompt60000": {
+      "body_complete": true,
+      "seconds": 155.34027853798761,
+      "usage": {
+        "completion_tokens": 79,
+        "prompt_tokens": 59935,
+        "total_tokens": 60014,
+        "prompt_tokens_details": {
+          "cached_tokens": 16033
+        }
+      },
+      "finish_reason": "stop",
+      "response_sha256": "a5424a8103045e43771fd63aef473964363193234b3148c8f925449f949142fd",
+      "timings": {
+        "cache_n": 16033,
+        "prompt_n": 43902,
+        "prompt_ms": 152837.321,
+        "prompt_per_token_ms": 3.4813293471823608,
+        "prompt_per_second": 287.24659469790106,
+        "predicted_n": 79,
+        "predicted_ms": 2427.104,
+        "predicted_per_token_ms": 31.116717948717945,
+        "predicted_per_second": 32.13706540799241
+      }
+    },
+    "prompt16000": {
+      "body_complete": true,
+      "seconds": 48.04444462599349,
+      "usage": {
+        "completion_tokens": 454,
+        "prompt_tokens": 16165,
+        "total_tokens": 16619,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "finish_reason": "stop",
+      "response_sha256": "b500f4f180bd31ed025cc69f588ccf672bb93bff4e02242744b6d5f353aee9eb",
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 16165,
+        "prompt_ms": 37669.911,
+        "prompt_per_token_ms": 2.330337828642128,
+        "prompt_per_second": 429.1223305518296,
+        "predicted_n": 454,
+        "predicted_ms": 10317.795,
+        "predicted_per_token_ms": 22.77658940397351,
+        "predicted_per_second": 43.90472964426992
+      }
+    },
+    "prompt80000": {
+      "body_complete": true,
+      "seconds": 110.0231352999981,
+      "usage": {
+        "completion_tokens": 296,
+        "prompt_tokens": 79930,
+        "total_tokens": 80226,
+        "prompt_tokens_details": {
+          "cached_tokens": 59803
+        }
+      },
+      "finish_reason": "stop",
+      "response_sha256": "ab40296940bc1245904a98a3adc185263173c146884c4ceefa5e1e459081ff38",
+      "timings": {
+        "cache_n": 59803,
+        "prompt_n": 20127,
+        "prompt_ms": 99380.602,
+        "prompt_per_token_ms": 4.937675858299796,
+        "prompt_per_second": 202.5244322830727,
+        "predicted_n": 296,
+        "predicted_ms": 10551.277,
+        "predicted_per_token_ms": 35.7670406779661,
+        "predicted_per_second": 27.958701112671005
+      }
+    },
+    "tool": {
+      "body_complete": true,
+      "seconds": 27.340906598008587,
+      "usage": {
+        "completion_tokens": 102,
+        "prompt_tokens": 291,
+        "total_tokens": 393,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "finish_reason": "tool_calls",
+      "response_sha256": "d878f9e830dec38730b373fdc83be05eec469da190aa0e77c652c1eebe2839ae",
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 291,
+        "prompt_ms": 22314.039,
+        "prompt_per_token_ms": 76.68054639175259,
+        "prompt_per_second": 13.041117298396763,
+        "predicted_n": 102,
+        "predicted_ms": 5021.088,
+        "predicted_per_token_ms": 49.713742574257424,
+        "predicted_per_second": 20.11516229151929
+      }
+    }
+  },
+  "original_runtime_restored": true,
+  "original_preservation": {
+    "epoch": 1795763885.6855886,
+    "passed": true,
+    "original_ids_images_config_running_preserved": true,
+    "Codex_full_recorded_state_unchanged": true,
+    "four_owner_profile_hashes_unchanged": true,
+    "all_30_original_model_metadata_unchanged": true,
+    "both_staged_model_metadata_unchanged": true,
+    "owner_pending_and_40_source_files_unchanged": true,
+    "original_alias_and_context_restored": true,
+    "both_disk_reserves_at_least_100GiB": true,
+    "free_GiB": {
+      "/models": 103.47123336791992,
+      "/stage": 105.68415832519531
+    },
+    "containers": {
+      "hermes": {
+        "id": "5f8aedd58283a34f7736b73864bbeac4b9be195a88737c4cf3373f0e343ccd4d",
+        "image": "sha256:585c221367f9479d3962bc66c8c6f11d1ca571c9e5d7b3aa565ed02d9651b124",
+        "configuration_signature": "b850d3f3890bda5a31a639f9ac99f7b1f487890a4ff246c3526edcb13c04581b",
+        "running": true,
+        "started": "2026-11-27T07:17:21.794288235Z",
+        "restarts": 0,
+        "health": null
+      },
+      "llama-cpp": {
+        "id": "763fb7daa3ef5535dd6553bad40df0106f3a656c70cd9632535640ee4ba15939",
+        "image": "sha256:fee4289628e7ba09f6fbf62d6ce4325aebb2531ffde2154d41276fe4acc58da3",
+        "configuration_signature": "59702b4f3abf79b53dc9bb981ad7dd2eea1286166cef0c74d70755761a94a4aa",
+        "running": true,
+        "started": "2026-11-27T07:16:52.461082138Z",
+        "restarts": 0,
+        "health": "healthy"
+      },
+      "hermes-codex": {
+        "id": "153f58615740083f19640d8d02ca3623a0979e50342ba991a42d88ec28b622bd",
+        "image": "sha256:585c221367f9479d3962bc66c8c6f11d1ca571c9e5d7b3aa565ed02d9651b124",
+        "configuration_signature": "421525e2020ca874438b919ef0a7989a8771c350100441f1e9a213111d76cbc6",
+        "running": true,
+        "started": "2026-11-27T03:12:18.35261825Z",
+        "restarts": 0,
+        "health": null
+      }
+    },
+    "model_identity": {
+      "file": "Qwen3.6-14B-A3B-FableVibes-Q4_K_M.gguf",
+      "bytes": 8465553920,
+      "sha256": "21aa4b0b28090469e8a319c889451df2f1ea6aad27ac3818c8c8a86f86d5bc9e",
+      "specific_study_file_advised_DONTNEED_after_hash": true,
+      "not_global_cache_flush_or_cold_cache_proof": true
+    },
+    "scope": "Fresh retained-Q4 baseline; no waiver of prior IQ4 Codex timestamp failure."
+  },
+  "owner_pending_edits_preserved": true,
+  "sampling_limit": "Five-second snapshots can miss transient peaks; host cgroups include charged file cache; not a continuous whole-host memory guarantee.",
+  "latency_limit": "Operational synthetic timings, not an isolated decode benchmark or useful whole-window reasoning proof.",
+  "placement_lines": [
+    "0.00.831.661 I load_tensors: offloaded 41/41 layers to GPU",
+    "0.00.831.670 I load_tensors:        CUDA0 model buffer size =  7790.09 MiB",
+    "0.00.831.671 I load_tensors:    CUDA_Host model buffer size =   272.81 MiB",
+    "0.24.786.540 I llama_kv_cache:      CUDA0 KV buffer size =   540.00 MiB",
+    "0.24.817.075 I sched_reserve:      CUDA0 compute buffer size =   229.01 MiB",
+    "0.24.817.079 I sched_reserve:  CUDA_Host compute buffer size =    28.01 MiB"
+  ],
+  "direct_tool_call_correct": true,
+  "dependent_tool_history_check": {
+    "expected": "tool-history-capacity-ok",
+    "content": "tool-history-capacity-ok",
+    "not_actual_MCP_or_coding_quality": true
+  },
+  "synthetic_marker_checks": {
+    "16000": {
+      "expected": "capacity-check-16000",
+      "content": "16000",
+      "not_agent_quality": true,
+      "exact_match": false
+    },
+    "60000": {
+      "expected": "capacity-check-60000",
+      "content": "capacity-check-60000",
+      "not_agent_quality": true,
+      "exact_match": true
+    },
+    "80000": {
+      "expected": "capacity-check-80000",
+      "content": "capacity-check-80000",
+      "not_agent_quality": true,
+      "exact_match": true
+    }
+  },
+  "capacity_completion_not_equivalent_to_exact_marker_or_coding_success": true,
+  "minimum_GPU_free_MiB": 7311,
+  "retained_selection_source": {
+    "candidate": "fable-q4-thinking",
+    "classification": "prospective reasoning-enabled synthetic capacity control; not coding or forge quality",
+    "passed_capacity_stage": true,
+    "not_coding_quality": true,
+    "model_identity": {
+      "file": "Qwen3.6-14B-A3B-FableVibes-Q4_K_M.gguf",
+      "bytes": 8465553920,
+      "sha256": "21aa4b0b28090469e8a319c889451df2f1ea6aad27ac3818c8c8a86f86d5bc9e",
+      "specific_study_file_advised_DONTNEED_after_hash": true,
+      "not_global_cache_flush_or_cold_cache_proof": true
+    },
+    "public_pin": {
+      "repo": "tvall43/Qwen3.6-14B-A3B-FableVibes-GGUF",
+      "revision": "9cf910a7ad68dfedcbdfc46ef0fe5003dec07c23",
+      "file": "Qwen3.6-14B-A3B-FableVibes-Q4_K_M.gguf",
+      "expected_bytes": 8465553920,
+      "sha256": "21aa4b0b28090469e8a319c889451df2f1ea6aad27ac3818c8c8a86f86d5bc9e",
+      "layouts": [
+        {
+          "context": 98304,
+          "gpu_layers": 99
+        }
+      ],
+      "sampler": {
+        "temperature": 1.0,
+        "top_p": 0.95,
+        "top_k": 20,
+        "min_p": 0,
+        "repeat_penalty": 1,
+        "presence_penalty": 0,
+        "chat_template_kwargs": {
+          "enable_thinking": true
+        }
+      },
+      "probe_output_cap": 16384,
+      "retained_file_requires_full_hash_verification": true
+    },
+    "context": 98304,
+    "requested_gpu_layers": 99,
+    "fit_auto_off": true,
+    "placement_limitation": "Requested all-GPU layout; explicit native tensor-placement verification remains required before actor quality claims.",
+    "selected_file_cache_after_original_stop": {
+      "epoch": 1795567526.3808188,
+      "file": "Qwen3.6-14B-A3B-FableVibes-Q4_K_M.gguf",
+      "bytes": 8465553920,
+      "mincore_cached_page_bytes_before": 0,
+      "mincore_cached_page_bytes_after": 0,
+      "only_specific_inactive_file_advised": true,
+      "no_global_cache_flush": true,
+      "not_cold_storage_cache_proof": true,
+      "content_not_modified": true,
+      "scope": "After original backend exits, before measured replacement starts. Page residency rounded to page boundaries; no claim about storage-device caches."
+    },
+    "samples": 54,
+    "measurement_errors": 0,
+    "peak_gpu_MiB": 8964,
+    "peak_aggregate_cgroup_bytes": 7027884032,
+    "peak_process_PSS_bytes": 1570054144,
+    "peak_study_swap_bytes": 0,
+    "guard_count": 0,
+    "minimum_model_disk_free_bytes": 118456541184,
+    "global_swap_in_pages_delta": 512,
+    "global_swap_out_pages_delta": 588,
+    "global_swap_not_attributed_to_study": true,
+    "probes": {
+      "tool-followup": {
+        "body_complete": true,
+        "seconds": 1.482849697000347,
+        "usage": {
+          "completion_tokens": 64,
+          "prompt_tokens": 519,
+          "total_tokens": 583,
+          "prompt_tokens_details": {
+            "cached_tokens": 494
+          }
+        },
+        "finish_reason": "stop",
+        "response_sha256": "a8a6b4a9248f7f8fc705b7fe0c3a8fe0df8f8d2760c1e464441e894aca4465f7",
+        "timings": {
+          "cache_n": 494,
+          "prompt_n": 25,
+          "prompt_ms": 237.383,
+          "prompt_per_token_ms": 9.49532,
+          "prompt_per_second": 105.31503940888773,
+          "predicted_n": 64,
+          "predicted_ms": 1242.129,
+          "predicted_per_token_ms": 19.71633333333333,
+          "predicted_per_second": 50.719369727298854
+        }
+      },
+      "tool-result": {
+        "body_complete": true,
+        "seconds": 2.097873219056055,
+        "usage": {
+          "completion_tokens": 97,
+          "prompt_tokens": 398,
+          "total_tokens": 495,
+          "prompt_tokens_details": {
+            "cached_tokens": 364
+          }
+        },
+        "finish_reason": "stop",
+        "response_sha256": "cbb6d3c6de66467e9f5ba266917f39eb2e50497ffc205d872ed6bf2d8f8c9db9",
+        "timings": {
+          "cache_n": 364,
+          "prompt_n": 34,
+          "prompt_ms": 204.341,
+          "prompt_per_token_ms": 6.010029411764706,
+          "prompt_per_second": 166.38853680857,
+          "predicted_n": 97,
+          "predicted_ms": 1890.263,
+          "predicted_per_token_ms": 19.690239583333334,
+          "predicted_per_second": 50.786583665870836
+        }
+      },
+      "prompt60000": {
+        "body_complete": true,
+        "seconds": 153.3770290070679,
+        "usage": {
+          "completion_tokens": 85,
+          "prompt_tokens": 59935,
+          "total_tokens": 60020,
+          "prompt_tokens_details": {
+            "cached_tokens": 16033
+          }
+        },
+        "finish_reason": "stop",
+        "response_sha256": "e867a1210c72d6f0f202f3c4e2c273bff803c16442d246c115b2730810a4b231",
+        "timings": {
+          "cache_n": 16033,
+          "prompt_n": 43902,
+          "prompt_ms": 150684.241,
+          "prompt_per_token_ms": 3.432286478975901,
+          "prompt_per_second": 291.35097146621985,
+          "predicted_n": 85,
+          "predicted_ms": 2565.554,
+          "predicted_per_token_ms": 30.542309523809525,
+          "predicted_per_second": 32.741466365549115
+        }
+      },
+      "prompt16000": {
+        "body_complete": true,
+        "seconds": 41.77419758005999,
+        "usage": {
+          "completion_tokens": 178,
+          "prompt_tokens": 16165,
+          "total_tokens": 16343,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "finish_reason": "stop",
+        "response_sha256": "7566b2292a3ea7ab83a866c39eb9bc190bf874766ecb6e5b037d9b797564ecab",
+        "timings": {
+          "cache_n": 0,
+          "prompt_n": 16165,
+          "prompt_ms": 37620.499,
+          "prompt_per_token_ms": 2.327281101144448,
+          "prompt_per_second": 429.6859539263421,
+          "predicted_n": 178,
+          "predicted_ms": 4099.856,
+          "predicted_per_token_ms": 23.16302824858757,
+          "predicted_per_second": 43.1722480009054
+        }
+      },
+      "tool": {
+        "body_complete": true,
+        "seconds": 24.585092835943215,
+        "usage": {
+          "completion_tokens": 74,
+          "prompt_tokens": 291,
+          "total_tokens": 365,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "finish_reason": "tool_calls",
+        "response_sha256": "6924c2873a3e406bc69edb1c64a770195591aea8ca6069a82a8194b758f405b1",
+        "timings": {
+          "cache_n": 0,
+          "prompt_n": 291,
+          "prompt_ms": 21444.051,
+          "prompt_per_token_ms": 73.6908969072165,
+          "prompt_per_second": 13.570197160974855,
+          "predicted_n": 74,
+          "predicted_ms": 3135.847,
+          "predicted_per_token_ms": 42.956808219178086,
+          "predicted_per_second": 23.27919697612798
+        }
+      }
+    },
+    "original_runtime_restored": true,
+    "original_preservation": {
+      "original_ids_images_configuration_running_preserved": true,
+      "codex_entire_snapshot_unchanged": true,
+      "four_profile_hashes_unchanged": true,
+      "all_30_retained_model_metadata_unchanged": true,
+      "active_study_candidate": "fable-q4-thinking",
+      "retained_model_full_hash_verified_before_resource_probes": true,
+      "original_alias_context_restored": true,
+      "at_least_100_GiB_free": true,
+      "free_GiB": 110.32019805908203
+    },
+    "owner_pending_edits_preserved": true,
+    "sampling_limit": "Five-second snapshots can miss transient peaks; host cgroups include charged file cache; not a continuous whole-host memory guarantee.",
+    "latency_limit": "Operational synthetic timings, not an isolated decode benchmark or useful whole-window reasoning proof."
+  },
+  "header_comparison": {
+    "epoch": 1795759117.2735157,
+    "models": [
+      {
+        "candidate": "fable-q4",
+        "file": "Qwen3.6-14B-A3B-FableVibes-Q4_K_M.gguf",
+        "tensor_count": 733,
+        "tensor_names_dimensions_SHA256": "eaec34077c4e45aee1e78c4fb92ae60aeed8a66a1b22488a72d0f1fc0747a89c",
+        "chat_template": {
+          "SHA256": "55d4931433fe502b794226ee7f4d206a6bdd436ac9f80eb7d8ebb4c639f9ea0c",
+          "bytes": 8057
+        },
+        "tensor_type_counts": {
+          "14": 61,
+          "0": 301,
+          "12": 371
+        },
+        "calibration_metadata": {
+          "general.quantization_version": 2
+        },
+        "general_file_type": 15
+      },
+      {
+        "candidate": "fable-q6",
+        "file": "Qwen3.6-14B-A3B-FableVibes-Q6_K.gguf",
+        "tensor_count": 733,
+        "tensor_names_dimensions_SHA256": "eaec34077c4e45aee1e78c4fb92ae60aeed8a66a1b22488a72d0f1fc0747a89c",
+        "chat_template": {
+          "SHA256": "55d4931433fe502b794226ee7f4d206a6bdd436ac9f80eb7d8ebb4c639f9ea0c",
+          "bytes": 8057
+        },
+        "tensor_type_counts": {
+          "14": 432,
+          "0": 301
+        },
+        "calibration_metadata": {
+          "general.quantization_version": 2
+        },
+        "general_file_type": 18
+      },
+      {
+        "candidate": "fable-q8-thinking",
+        "file": "Qwen3.6-14B-A3B-FableVibes-Q8_0.gguf",
+        "tensor_count": 733,
+        "tensor_names_dimensions_SHA256": "eaec34077c4e45aee1e78c4fb92ae60aeed8a66a1b22488a72d0f1fc0747a89c",
+        "chat_template": {
+          "SHA256": "55d4931433fe502b794226ee7f4d206a6bdd436ac9f80eb7d8ebb4c639f9ea0c",
+          "bytes": 8057
+        },
+        "tensor_type_counts": {
+          "8": 432,
+          "0": 301
+        },
+        "calibration_metadata": {
+          "general.quantization_version": 2
+        },
+        "general_file_type": 7
+      },
+      {
+        "candidate": "fable-q5-current-thinking",
+        "file": "Qwen3.6-14B-A3B-FableVibes-Q5_K_M.gguf",
+        "tensor_count": 733,
+        "tensor_names_dimensions_SHA256": "eaec34077c4e45aee1e78c4fb92ae60aeed8a66a1b22488a72d0f1fc0747a89c",
+        "chat_template": {
+          "SHA256": "55d4931433fe502b794226ee7f4d206a6bdd436ac9f80eb7d8ebb4c639f9ea0c",
+          "bytes": 8057
+        },
+        "tensor_type_counts": {
+          "14": 61,
+          "0": 301,
+          "13": 371
+        },
+        "calibration_metadata": {
+          "general.quantization_version": 2
+        },
+        "general_file_type": 17
+      }
+    ],
+    "same_shapes_template_count": true,
+    "no_weight_identity_or_calibration_equality_proof": true,
+    "no_importance_matrix_metadata_does_not_prove_equal_calibration": true,
+    "scope": "Bounded headers only. Full stream hash verified separately; resource controller must rehash full selected file before inference. No GPU fit or quality result.",
+    "input_SHA256": {
+      "quant-header-audit.json": "e0c1fd4666aea1d7bd7f9cfb4c98b43d422cd330760bf7dce3d48e58a85a527d",
+      "fable-q8-header-audit.json": "9c30461177145a7443bbc298b6c81f8e580ce90392d77424d2aac3555e6bbfa1",
+      "fable-q5-header-audit.json": "73c3f90996838fb6d8ddb651566f024b01dcbdfe2d3a6be52860b2ba287d1872"
+    }
+  },
+  "stage_admission_and_abort": {
+    "admit_bytes": 112742891520,
+    "abort_bytes": 109521666048,
+    "original_reserve_bytes": 107374182400,
+    "reason": "Additional shared-staging margin; no inference/quality policy change."
+  }
+}

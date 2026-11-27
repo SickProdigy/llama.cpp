@@ -1,5 +1,7 @@
 # Llama.cpp and Hermes-Agent Model Notes
 
+[Current retained Fable Q4 capacity](evaluations/2026-11-24-gpu-quant/resource-fable-q4-current-thinking.md) completes six requests at98k/41 of41 GPU layers/**8,964MiB peak**, with272.81MiB host model buffers and no study swap. First tool call27.34s; actual short tool history is correct.16k exact marker fails,60k/80k pass. Strict original runtime/settings/models/full Codex preservation and exact cleanup pass. Matched current native coding is still pending; older Q4 coding used an older evaluator.
+
 [Consolidated current quant comparison](evaluations/2026-11-24-gpu-quant/completed-current-quant-comparison.md): eight completed workflows, no full pass. Current Fable Q5/Q6/Q8 establish no successful precision upgrade. Retained Q4 still needs a matched current-evaluator run; older Q4 evidence is kept separate. Original default remains VibeForged Q4.
 
 [Current Fable Q5 coding/Gitea](evaluations/2026-11-24-gpu-quant/native-fable-q5-current-thinking-cold-beets.md) **fails in31.85 coding /34.71 wall minutes**, despite98k/41 of41 GPU layers/10,224MiB peak and139 successful backend requests. Waiting-work lifecycle/cancellation defects remain, README/final claims overstate behavior, and no issue/fork/PR is published. Project/original tests pass while independent real Nicotine controls expose failures. Strict restoration and full Hermes-Codex preservation pass. Q5/Q6/Q8 establish no successful precision upgrade.
