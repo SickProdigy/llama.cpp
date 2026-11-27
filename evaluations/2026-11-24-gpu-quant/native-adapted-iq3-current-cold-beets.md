@@ -1,5 +1,7 @@
 # Current IQ3_XXS: GPU fit passes, coding/Gitea workflow fails
 
+Subsequent update: public Fable Q5 has since been downloaded, capacity-tested and [fully audited](native-fable-q5-current-thinking-cold-beets.md). Its workflow fails. The prospects described below reflect the IQ3 stage checkpoint.
+
 The retained Hermes-adapted 27B IQ3_XXS fails this fresh three-turn Beets workflow in **32.50 coding / 36.50 supervisor wall minutes**. It creates the correct upstream issue and personal fork/branch, with three accepted commit writes, but no PR. The actual fork contains only two assignment renames: `_stopping` becomes `_abandoned` in initialization and load notification, while the timer callback still reads `_stopping`. Ordinary fresh-plugin import dispatch raises `AttributeError`. Cancellation, regression tests and README updates are absent. The final fork tree is unchanged after the initial turn.
 
 | Turn | Minutes | Captured local workspace | Actual fork | Native ending |

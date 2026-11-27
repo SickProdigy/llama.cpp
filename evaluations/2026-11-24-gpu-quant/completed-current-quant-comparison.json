@@ -1,0 +1,896 @@
+{
+  "scope": "Only already delivered completed current-runtime Beets workflows; IQ3 and Q5 included after independent audit/delivery. Three dependent turns constitute one workflow per cell, not three independent trials.",
+  "rows": [
+    {
+      "candidate": "adapted-q4-current",
+      "source": "evaluations/2026-11-24-gpu-quant/native-adapted-q4-current-cold-beets-summary.json",
+      "source_SHA256": "f21b33eeb45c52ee4d532d562b25e90477ca4db697ad91b6b2348a56de8612bc",
+      "whole_workflow_pass": false,
+      "model": {
+        "file": "Qwen3.8-27B-hermes-Q4_K_M.gguf",
+        "bytes": 16810714560,
+        "sha256": "6512bb1c2595575fc0aed39b7d72a6aaf71084b1164b5d3749f87a6c2a3d3bf3",
+        "after_full_SHA_advised_DONTNEED_for_only_selected_model_file": true,
+        "not_global_cache_flush_or_proof_of_cold_cache": true
+      },
+      "model_repository": "netprojects/Qwen3.8-27B-hermes-adapted-GGUF",
+      "model_revision": "10fdf357f14825c61ad7eb42a932e1f1e4390e8f",
+      "runtime_images": {
+        "Hermes": "sha256:c9b40eb8dea441cba7ded2e6589e5c011545ffc1ec76a0dc736f8e399d8f947b",
+        "llama.cpp": "sha256:fee4289628e7ba09f6fbf62d6ce4325aebb2531ffde2154d41276fe4acc58da3"
+      },
+      "preservation": {
+        "passed": true,
+        "both_original_and_staging_reserves_verified": true,
+        "stage_free_GiB": 103.36019897460938,
+        "original_ids_images_configuration_running_preserved": true,
+        "codex_entire_snapshot_unchanged": true,
+        "four_profile_hashes_unchanged": true,
+        "all_30_retained_model_metadata_unchanged": true,
+        "active_study_candidate": "adapted-q4-current-cold-20261126",
+        "selected_retained_Q4_full_SHA_verified_before_model_calls": true,
+        "original_alias_context_restored": true,
+        "at_least_100_GiB_free": true,
+        "free_GiB": 104.01414489746094
+      },
+      "intervention": null,
+      "turn_minutes": [
+        46.2242952301002,
+        7.9723780827499775,
+        29.922001315700133
+      ],
+      "total_coding_minutes": 84.11867462855031,
+      "supervisor_wall_minutes": null,
+      "turn_checks": [
+        {
+          "phase": 0,
+          "project_exit": 0,
+          "original_exit": 0,
+          "registered_independent_exit": 1,
+          "source_authority": "actual published fork commit; local checkout remained baseline",
+          "not_a_manual_behavior_verdict": true
+        },
+        {
+          "phase": 1,
+          "project_exit": 0,
+          "original_exit": 0,
+          "registered_independent_exit": 1,
+          "source_authority": "actual published fork commit; local checkout remained baseline",
+          "not_a_manual_behavior_verdict": true
+        },
+        {
+          "phase": 2,
+          "project_exit": 0,
+          "original_exit": 0,
+          "registered_independent_exit": 1,
+          "source_authority": "actual published fork commit; local checkout remained baseline",
+          "not_a_manual_behavior_verdict": true
+        }
+      ],
+      "resource": {
+        "samples": 474,
+        "peak_GPU_MiB": 15456,
+        "peak_aggregate_cgroup_bytes": 7626006528,
+        "peak_process_PSS_bytes": 5376007168,
+        "peak_study_swap_bytes": 0,
+        "guards": 0,
+        "measurement_errors": 0,
+        "minimum_disk_free_bytes": 111718924288,
+        "minimum_staging_free_bytes": 110908231680
+      },
+      "actual_buffer_placement_lines": [
+        "0.01.913.326 I load_tensors:        CUDA0 model buffer size = 12787.45 MiB",
+        "0.01.913.327 I load_tensors:    CUDA_Host model buffer size =  2982.90 MiB",
+        "0.34.668.624 I llama_kv_cache:        CPU KV buffer size =   216.00 MiB",
+        "0.34.671.703 I llama_kv_cache:      CUDA0 KV buffer size =  1512.00 MiB",
+        "0.34.719.417 I sched_reserve:      CUDA0 compute buffer size =   544.75 MiB",
+        "0.34.719.420 I sched_reserve:  CUDA_Host compute buffer size =    34.12 MiB"
+      ],
+      "backend": {
+        "completed_requests": 37,
+        "requested_calls": 37,
+        "failed_requests": 0,
+        "largest_completed_prompt": 48859,
+        "any_length_finish": false
+      },
+      "publication": {
+        "actual_issue_created": true,
+        "actual_personal_fork_parent_verified": true,
+        "actual_PR_created_updated": true,
+        "issue_closed_after_test": true,
+        "PR_preserved_unmerged": true
+      },
+      "quant_or_runtime_qualification": null,
+      "source_report_for_manual_findings": "evaluations/2026-11-24-gpu-quant/native-adapted-q4-current-cold-beets.md"
+    },
+    {
+      "candidate": "adapted-iq4-current-r2",
+      "source": "evaluations/2026-11-24-gpu-quant/native-adapted-iq4-current-r2-cold-beets-summary.json",
+      "source_SHA256": "5a54bedddfbe3e14cfc07ef18944c9ed9d3f829447508ca3f9f4a4801b0d430e",
+      "whole_workflow_pass": false,
+      "model": {
+        "file": "Qwen3.8-27B-hermes-IQ4_XS.gguf",
+        "bytes": 15321491104,
+        "sha256": "d25b50a2bfdfba157c2baf959f298d706d70083255bab95232ffcd40fbafcaba",
+        "after_full_SHA_advised_DONTNEED_for_only_selected_model_file": true,
+        "not_global_cache_flush_or_proof_of_cold_cache": true
+      },
+      "model_repository": "netprojects/Qwen3.8-27B-hermes-adapted-GGUF",
+      "model_revision": "10fdf357f14825c61ad7eb42a932e1f1e4390e8f",
+      "runtime_images": {
+        "Hermes": "sha256:c9b40eb8dea441cba7ded2e6589e5c011545ffc1ec76a0dc736f8e399d8f947b",
+        "llama.cpp": "sha256:fee4289628e7ba09f6fbf62d6ce4325aebb2531ffde2154d41276fe4acc58da3"
+      },
+      "preservation": {
+        "passed": true,
+        "both_original_and_staging_reserves_verified": true,
+        "stage_free_GiB": 115.29587173461914,
+        "original_ids_images_configuration_running_preserved": true,
+        "codex_entire_snapshot_unchanged": false,
+        "codex_changed_fields": [
+          "started"
+        ],
+        "strict_preservation_passed": false,
+        "required_configuration_models_profiles_owner_invariants_passed": true,
+        "scope": "Qualified preservation; Codex start timestamp changed for unknown reason, original strict assertion failure retained",
+        "four_profile_hashes_unchanged": true,
+        "all_30_retained_model_metadata_unchanged": true,
+        "active_study_candidate": "adapted-iq4-current-r2-cold-20261127",
+        "selected_staged_IQ4_full_SHA_verified_before_model_calls": true,
+        "original_alias_context_restored": true,
+        "at_least_100_GiB_free": true,
+        "free_GiB": 103.7570686340332
+      },
+      "intervention": {
+        "private_grade_feedback": false,
+        "operator_corrective_hints": false,
+        "operator_resumed_after_loop_guard": false,
+        "actual_native_test_gate_feedback_occurred": true,
+        "configured_scope_denials_occurred": true
+      },
+      "turn_minutes": [
+        51.91894517156664,
+        5.034879702566589,
+        53.62958398896662
+      ],
+      "total_coding_minutes": 110.58340886309985,
+      "supervisor_wall_minutes": 114.69009773333333,
+      "turn_checks": [
+        {
+          "phase": 0,
+          "project_exit": 0,
+          "original_exit": 0,
+          "registered_independent_exit": 1,
+          "source_authority": "actual published fork commit",
+          "not_a_manual_behavior_verdict": true
+        },
+        {
+          "phase": 1,
+          "project_exit": 0,
+          "original_exit": 0,
+          "registered_independent_exit": 1,
+          "source_authority": "actual published fork commit",
+          "not_a_manual_behavior_verdict": true
+        },
+        {
+          "phase": 2,
+          "project_exit": 0,
+          "original_exit": 0,
+          "registered_independent_exit": 1,
+          "source_authority": "actual published fork commit",
+          "not_a_manual_behavior_verdict": true
+        }
+      ],
+      "resource": {
+        "samples": 634,
+        "peak_GPU_MiB": 15926,
+        "peak_aggregate_cgroup_bytes": 7219105792,
+        "peak_process_PSS_bytes": 3342588928,
+        "peak_study_swap_bytes": 0,
+        "guards": 0,
+        "measurement_errors": 0,
+        "minimum_disk_free_bytes": 111470116864,
+        "minimum_staging_free_bytes": 123676393472
+      },
+      "actual_buffer_placement_lines": [
+        "0.00.925.475 I load_tensors: offloaded 63/66 layers to GPU",
+        "0.00.925.487 I load_tensors:        CUDA0 model buffer size = 13122.69 MiB",
+        "0.00.925.489 I load_tensors:    CUDA_Host model buffer size =  1250.63 MiB",
+        "0.37.552.615 I llama_kv_cache:      CUDA0 KV buffer size =  1728.00 MiB",
+        "0.37.589.888 I sched_reserve:      CUDA0 compute buffer size =   451.91 MiB",
+        "0.37.589.892 I sched_reserve:  CUDA_Host compute buffer size =    17.50 MiB"
+      ],
+      "backend": {
+        "completed_requests": 67,
+        "requested_calls": 67,
+        "failed_requests": 0,
+        "largest_completed_prompt": 81911,
+        "any_length_finish": false
+      },
+      "publication": {
+        "upstream_issue_observed": true,
+        "personal_fork_parent_verified": true,
+        "PR_observed": true,
+        "PR_open_unmerged": true,
+        "issue_closed_single_GET_verified": true
+      },
+      "quant_or_runtime_qualification": {
+        "epoch": 1795750841.3735514,
+        "core_runtime_restored": true,
+        "required_runtime_ids_images_configs_running_alias_context_verified": true,
+        "strict_full_Codex_snapshot_unchanged": false,
+        "Codex_changed_fields": [
+          "started"
+        ],
+        "Codex_restart_cause": "unknown",
+        "original_strict_restoration_error_retained": true,
+        "network_cleanup_exact_empty_owned_id": "7912407d648ce6c327b8e7e0ed876f20dcc47544393475b065f41308284a0bf8",
+        "no_new_stop_start_or_owner_setting_changes": true,
+        "remaining": "Independent 30model/profile/owner pending-edit preservation checks; full final source/controls/remote/cleanup/publication audit."
+      },
+      "source_report_for_manual_findings": "evaluations/2026-11-24-gpu-quant/native-adapted-iq4-current-r2-cold-beets.md"
+    },
+    {
+      "candidate": "adapted-iq3-current",
+      "source": "evaluations/2026-11-24-gpu-quant/native-adapted-iq3-current-cold-beets-summary.json",
+      "source_SHA256": "407a7107d22ec5cd1dda6d1f3550645418c7d9e59cd58229125145fabd122d3f",
+      "whole_workflow_pass": false,
+      "model": {
+        "file": "Qwen3.8-27B-hermes-IQ3_XXS.gguf",
+        "bytes": 11637692064,
+        "sha256": "390a54c26ed8fc42a558f073e5745b7c0c1922086bbcc07e2e6357a7b527c345",
+        "after_full_SHA_advised_DONTNEED_for_only_selected_model_file": true,
+        "not_global_cache_flush_or_proof_of_cold_cache": true
+      },
+      "model_repository": "netprojects/Qwen3.8-27B-hermes-adapted-GGUF",
+      "model_revision": "10fdf357f14825c61ad7eb42a932e1f1e4390e8f",
+      "runtime_images": {
+        "Hermes": "sha256:c9b40eb8dea441cba7ded2e6589e5c011545ffc1ec76a0dc736f8e399d8f947b",
+        "llama.cpp": "sha256:fee4289628e7ba09f6fbf62d6ce4325aebb2531ffde2154d41276fe4acc58da3"
+      },
+      "preservation": {
+        "passed": true,
+        "both_original_and_staging_reserves_verified": true,
+        "stage_free_GiB": 115.06938171386719,
+        "original_ids_images_configuration_running_preserved": true,
+        "codex_entire_snapshot_unchanged": true,
+        "four_profile_hashes_unchanged": true,
+        "all_30_retained_model_metadata_unchanged": true,
+        "active_study_candidate": "adapted-iq3-current-cold-20261127",
+        "selected_retained_IQ3_full_SHA_verified_before_model_calls": true,
+        "original_alias_context_restored": true,
+        "at_least_100_GiB_free": true,
+        "free_GiB": 103.64714431762695
+      },
+      "intervention": {
+        "assessor_corrective_hints_patches_resends_or_policy_changes": false,
+        "ordinary_project_gate_feedback_visible": true,
+        "original_workflow_requests_only": 3
+      },
+      "turn_minutes": [
+        19.76153385889993,
+        7.562473921966497,
+        5.177874805316727
+      ],
+      "total_coding_minutes": 32.50188258618315,
+      "supervisor_wall_minutes": 36.50407031666667,
+      "turn_checks": [
+        {
+          "phase": 0,
+          "project_exit": 0,
+          "original_exit": 0,
+          "registered_independent_exit": 1,
+          "source_authority": "actual personal-fork commit; no PR created",
+          "not_a_manual_behavior_verdict": true
+        },
+        {
+          "phase": 1,
+          "project_exit": 0,
+          "original_exit": 0,
+          "registered_independent_exit": 1,
+          "source_authority": "actual personal-fork commit; no PR created",
+          "not_a_manual_behavior_verdict": true
+        },
+        {
+          "phase": 2,
+          "project_exit": 0,
+          "original_exit": 0,
+          "registered_independent_exit": 1,
+          "source_authority": "actual personal-fork commit; no PR created",
+          "not_a_manual_behavior_verdict": true
+        }
+      ],
+      "resource": {
+        "samples": 198,
+        "peak_GPU_MiB": 12904,
+        "peak_aggregate_cgroup_bytes": 7324512256,
+        "peak_process_PSS_bytes": 2498571264,
+        "peak_study_swap_bytes": 0,
+        "guards": 0,
+        "measurement_errors": 0,
+        "minimum_disk_free_bytes": 111304413184,
+        "minimum_staging_free_bytes": 118333435904
+      },
+      "actual_buffer_placement_lines": [
+        "0.01.217.053 I load_tensors: offloaded 66/66 layers to GPU",
+        "0.01.217.066 I load_tensors:        CUDA0 model buffer size = 10136.68 MiB",
+        "0.01.217.069 I load_tensors:    CUDA_Host model buffer size =   521.00 MiB",
+        "0.27.248.392 I llama_kv_cache:      CUDA0 KV buffer size =  1728.00 MiB",
+        "0.27.297.657 I sched_reserve:      CUDA0 compute buffer size =   408.50 MiB",
+        "0.27.297.662 I sched_reserve:  CUDA_Host compute buffer size =    17.00 MiB"
+      ],
+      "backend": {
+        "completed_requests": 36,
+        "requested_calls": 36,
+        "failed_requests": 0,
+        "largest_completed_prompt": 47855,
+        "any_length_finish": false
+      },
+      "publication": {
+        "upstream_issue_observed": true,
+        "personal_fork_parent_verified": true,
+        "PR_observed": false,
+        "PR_open_unmerged": false,
+        "issue_closed_single_GET_verified": true
+      },
+      "quant_or_runtime_qualification": null,
+      "source_report_for_manual_findings": "evaluations/2026-11-24-gpu-quant/native-adapted-iq3-current-cold-beets.md"
+    },
+    {
+      "candidate": "fable-q5-current-thinking",
+      "source": "evaluations/2026-11-24-gpu-quant/native-fable-q5-current-thinking-cold-beets-summary.json",
+      "source_SHA256": "13b518de0f4d704561e79edc652ea15cf037b917465512275357ddbe2d672280",
+      "whole_workflow_pass": false,
+      "model": {
+        "file": "Qwen3.6-14B-A3B-FableVibes-Q5_K_M.gguf",
+        "bytes": 9852131840,
+        "sha256": "d8fe99004cefb2cf26a1750851acf3cabd53247958e144f88e08beeb36ffbcab",
+        "after_full_SHA_advised_DONTNEED_for_only_selected_model_file": true,
+        "not_global_cache_flush_or_proof_of_cold_cache": true
+      },
+      "model_repository": "tvall43/Qwen3.6-14B-A3B-FableVibes-GGUF",
+      "model_revision": "9cf910a7ad68dfedcbdfc46ef0fe5003dec07c23",
+      "runtime_images": {
+        "Hermes": "sha256:c9b40eb8dea441cba7ded2e6589e5c011545ffc1ec76a0dc736f8e399d8f947b",
+        "llama.cpp": "sha256:fee4289628e7ba09f6fbf62d6ce4325aebb2531ffde2154d41276fe4acc58da3"
+      },
+      "preservation": {
+        "epoch": 1795762740.0713456,
+        "passed": true,
+        "original_ids_images_config_running_preserved": true,
+        "Codex_full_recorded_state_unchanged": true,
+        "four_owner_profile_hashes_unchanged": true,
+        "all_30_original_model_metadata_unchanged": true,
+        "both_staged_model_metadata_unchanged": true,
+        "owner_pending_and_40_source_files_unchanged": true,
+        "original_alias_and_context_restored": true,
+        "both_disk_reserves_at_least_100GiB": true,
+        "free_GiB": {
+          "/models": 103.47826385498047,
+          "/stage": 105.77357864379883
+        },
+        "containers": {
+          "hermes": {
+            "id": "5f8aedd58283a34f7736b73864bbeac4b9be195a88737c4cf3373f0e343ccd4d",
+            "image": "sha256:585c221367f9479d3962bc66c8c6f11d1ca571c9e5d7b3aa565ed02d9651b124",
+            "configuration_signature": "b850d3f3890bda5a31a639f9ac99f7b1f487890a4ff246c3526edcb13c04581b",
+            "running": true,
+            "started": "2026-11-27T06:58:46.36667595Z",
+            "restarts": 0,
+            "health": null
+          },
+          "llama-cpp": {
+            "id": "763fb7daa3ef5535dd6553bad40df0106f3a656c70cd9632535640ee4ba15939",
+            "image": "sha256:fee4289628e7ba09f6fbf62d6ce4325aebb2531ffde2154d41276fe4acc58da3",
+            "configuration_signature": "59702b4f3abf79b53dc9bb981ad7dd2eea1286166cef0c74d70755761a94a4aa",
+            "running": true,
+            "started": "2026-11-27T06:58:29.352471843Z",
+            "restarts": 0,
+            "health": "healthy"
+          },
+          "hermes-codex": {
+            "id": "153f58615740083f19640d8d02ca3623a0979e50342ba991a42d88ec28b622bd",
+            "image": "sha256:585c221367f9479d3962bc66c8c6f11d1ca571c9e5d7b3aa565ed02d9651b124",
+            "configuration_signature": "421525e2020ca874438b919ef0a7989a8771c350100441f1e9a213111d76cbc6",
+            "running": true,
+            "started": "2026-11-27T03:12:18.35261825Z",
+            "restarts": 0,
+            "health": null
+          }
+        },
+        "model_identity": {
+          "file": "Qwen3.6-14B-A3B-FableVibes-Q5_K_M.gguf",
+          "bytes": 9852131840,
+          "sha256": "d8fe99004cefb2cf26a1750851acf3cabd53247958e144f88e08beeb36ffbcab",
+          "after_full_SHA_advised_DONTNEED_for_only_selected_model_file": true,
+          "not_global_cache_flush_or_proof_of_cold_cache": true
+        },
+        "scope": "Fresh native baseline; no waiver of prior IQ4 Codex timestamp failure."
+      },
+      "intervention": {
+        "corrective_hints_patches_resends": false,
+        "three_original_dependent_tasks": true
+      },
+      "turn_minutes": [
+        13.67724800453337,
+        2.9710786477665048,
+        15.201344764833145
+      ],
+      "total_coding_minutes": 31.84967141713302,
+      "supervisor_wall_minutes": 34.7131664,
+      "turn_checks": [
+        {
+          "phase": 0,
+          "project_exit": 0,
+          "original_exit": 0,
+          "registered_independent_exit": 1,
+          "source_authority": "local-grade",
+          "not_a_manual_behavior_verdict": true
+        },
+        {
+          "phase": 1,
+          "project_exit": 0,
+          "original_exit": 0,
+          "registered_independent_exit": 1,
+          "source_authority": "local-grade",
+          "not_a_manual_behavior_verdict": true
+        },
+        {
+          "phase": 2,
+          "project_exit": 0,
+          "original_exit": 0,
+          "registered_independent_exit": 1,
+          "source_authority": "local-grade",
+          "not_a_manual_behavior_verdict": true
+        }
+      ],
+      "resource": {
+        "samples": 192,
+        "peak_GPU_MiB": 10224,
+        "peak_aggregate_cgroup_bytes": 7347576832,
+        "peak_process_PSS_bytes": 2514857984,
+        "peak_study_swap_bytes": 0,
+        "guards": 0,
+        "measurement_errors": 0,
+        "minimum_disk_free_bytes": 111165562880,
+        "minimum_staging_free_bytes": 113281437696
+      },
+      "actual_buffer_placement_lines": [
+        "0.00.755.445 I load_tensors: offloaded 41/41 layers to GPU",
+        "0.00.755.453 I load_tensors:        CUDA0 model buffer size =  9051.81 MiB",
+        "0.00.755.454 I load_tensors:    CUDA_Host model buffer size =   333.44 MiB",
+        "0.22.372.428 I llama_kv_cache:      CUDA0 KV buffer size =   540.00 MiB",
+        "0.22.405.488 I sched_reserve:      CUDA0 compute buffer size =   229.01 MiB",
+        "0.22.405.490 I sched_reserve:  CUDA_Host compute buffer size =    28.01 MiB"
+      ],
+      "backend": {
+        "completed_requests": 139,
+        "requested_calls": 139,
+        "failed_requests": 0,
+        "largest_completed_prompt": 84135,
+        "any_length_finish": false
+      },
+      "publication": {
+        "actor_fork_GET_status": 404,
+        "observed_issues_count": 0,
+        "observed_PR_count": 0,
+        "empty_issue_list_is_not_closure_proof": true
+      },
+      "quant_or_runtime_qualification": null,
+      "source_report_for_manual_findings": "evaluations/2026-11-24-gpu-quant/native-fable-q5-current-thinking-cold-beets.md"
+    },
+    {
+      "candidate": "fable-q6-current-thinking",
+      "source": "evaluations/2026-11-24-gpu-quant/native-fable-q6-current-thinking-cold-beets-summary.json",
+      "source_SHA256": "97c9d51b40a9c0307eca5e411c6aaec7c5a97fee42bbb49710855044af2209cc",
+      "whole_workflow_pass": false,
+      "model": {
+        "file": "Qwen3.6-14B-A3B-FableVibes-Q6_K.gguf",
+        "bytes": 11325370880,
+        "sha256": "7ae56e5003365c568635c14158381df134577877c90ae15f34dbc6de2ca7ffb1",
+        "after_full_SHA_advised_DONTNEED_for_only_selected_model_file": true,
+        "not_global_cache_flush_or_proof_of_cold_cache": true
+      },
+      "model_repository": null,
+      "model_revision": null,
+      "runtime_images": null,
+      "preservation": {
+        "passed": true,
+        "both_original_and_staging_reserves_verified": true,
+        "stage_free_GiB": 104.32752990722656,
+        "original_ids_images_configuration_running_preserved": true,
+        "codex_entire_snapshot_unchanged": true,
+        "four_profile_hashes_unchanged": true,
+        "all_30_retained_model_metadata_unchanged": true,
+        "active_study_candidate": "fable-q6-current-thinking-cold-20261126",
+        "selected_retained_Q6_full_SHA_verified_before_model_calls": true,
+        "original_alias_context_restored": true,
+        "at_least_100_GiB_free": true,
+        "free_GiB": 104.14543914794922
+      },
+      "intervention": null,
+      "turn_minutes": [
+        8.06947698286652,
+        4.244821183433427,
+        24.35846188196665
+      ],
+      "total_coding_minutes": 36.672760048266596,
+      "supervisor_wall_minutes": 40.38589507341385,
+      "turn_checks": [
+        {
+          "phase": 0,
+          "project_exit": 0,
+          "original_exit": 0,
+          "registered_independent_exit": 1,
+          "source_authority": "not stated in this summary",
+          "not_a_manual_behavior_verdict": true
+        },
+        {
+          "phase": 1,
+          "project_exit": 0,
+          "original_exit": 0,
+          "registered_independent_exit": 1,
+          "source_authority": "not stated in this summary",
+          "not_a_manual_behavior_verdict": true
+        },
+        {
+          "phase": 2,
+          "project_exit": 2,
+          "original_exit": 0,
+          "registered_independent_exit": 1,
+          "source_authority": "not stated in this summary",
+          "not_a_manual_behavior_verdict": true
+        }
+      ],
+      "resource": {
+        "samples": 220,
+        "peak_GPU_MiB": 11566,
+        "peak_aggregate_cgroup_bytes": 7460638720,
+        "peak_process_PSS_bytes": 2618326016,
+        "peak_study_swap_bytes": 0,
+        "guards": 0,
+        "measurement_errors": 0,
+        "minimum_disk_free_bytes": 111873650688,
+        "minimum_staging_free_bytes": 111887237120
+      },
+      "actual_buffer_placement_lines": [
+        "0.00.720.133 I load_tensors: offloaded 41/41 layers to GPU",
+        "0.00.720.156 I load_tensors:        CUDA0 model buffer size = 10392.38 MiB",
+        "0.00.720.159 I load_tensors:    CUDA_Host model buffer size =   397.85 MiB",
+        "0.29.024.239 I llama_kv_cache:      CUDA0 KV buffer size =   540.00 MiB",
+        "0.29.059.205 I sched_reserve:      CUDA0 compute buffer size =   229.01 MiB",
+        "0.29.059.209 I sched_reserve:  CUDA_Host compute buffer size =    28.01 MiB"
+      ],
+      "backend": {
+        "completed_requests": 148,
+        "requested_calls": 148,
+        "failed_requests": 0,
+        "largest_completed_prompt": 83555,
+        "any_length_finish": false
+      },
+      "publication": {
+        "actor_fork_GET_status": 404,
+        "observed_issues_count": 0,
+        "observed_PR_count": 0,
+        "empty_issue_list_is_not_closure_proof": true
+      },
+      "quant_or_runtime_qualification": {
+        "same_current_Hermes_C9_cpp_fee_transparent_recorder_tasks_sampler_context_and_budgets_as_Q8": true,
+        "single_sample_not_general_precision_causality_or_reliability": true,
+        "Q6_coding_minutes": 36.672760048266596,
+        "Q8_coding_minutes": 38.68240428308321,
+        "Q6_GPU_MiB": 11566,
+        "Q8_GPU_MiB": 14624,
+        "both_full_workflows_fail": true,
+        "precision_winner_established": false
+      },
+      "source_report_for_manual_findings": "evaluations/2026-11-24-gpu-quant/native-fable-q6-current-thinking-cold-beets.md"
+    },
+    {
+      "candidate": "fable-q8-thinking",
+      "source": "evaluations/2026-11-24-gpu-quant/native-fable-q8-thinking-cold-beets-summary.json",
+      "source_SHA256": "02559f871de5750b849c899bc361dd8562a15714f5f766d8e351c1913c62baa8",
+      "whole_workflow_pass": false,
+      "model": {
+        "file": "Qwen3.6-14B-A3B-FableVibes-Q8_0.gguf",
+        "bytes": 14655633920,
+        "sha256": "ddea86093b863215fa75969d81df494fafdb0e6c4a65af557ed3a710e2238e58",
+        "after_full_SHA_advised_DONTNEED_for_only_selected_model_file": true,
+        "not_global_cache_flush_or_proof_of_cold_cache": true
+      },
+      "model_repository": null,
+      "model_revision": null,
+      "runtime_images": null,
+      "preservation": {
+        "original_ids_images_configuration_running_preserved": true,
+        "codex_entire_snapshot_unchanged": true,
+        "four_profile_hashes_unchanged": true,
+        "all_30_retained_model_metadata_unchanged": true,
+        "active_study_candidate": "fable-q8-thinking-cold-20261126",
+        "selected_staged_Q8_full_SHA_verified_before_model_calls": true,
+        "original_alias_context_restored": true,
+        "at_least_100_GiB_free": true,
+        "free_GiB": 104.3138313293457,
+        "both_original_and_staging_reserves_verified": true,
+        "staging_free_GiB": 104.35384368896484
+      },
+      "intervention": null,
+      "turn_minutes": [
+        21.33294872623325,
+        2.1241149561166823,
+        15.225340600733277
+      ],
+      "total_coding_minutes": 38.68240428308321,
+      "supervisor_wall_minutes": 42.44855773333334,
+      "turn_checks": [
+        {
+          "phase": 0,
+          "project_exit": 1,
+          "original_exit": 0,
+          "registered_independent_exit": 1,
+          "source_authority": "not stated in this summary",
+          "not_a_manual_behavior_verdict": true
+        },
+        {
+          "phase": 1,
+          "project_exit": 1,
+          "original_exit": 0,
+          "registered_independent_exit": 1,
+          "source_authority": "not stated in this summary",
+          "not_a_manual_behavior_verdict": true
+        },
+        {
+          "phase": 2,
+          "project_exit": 2,
+          "original_exit": 0,
+          "registered_independent_exit": 1,
+          "source_authority": "not stated in this summary",
+          "not_a_manual_behavior_verdict": true
+        }
+      ],
+      "resource": {
+        "samples": 231,
+        "peak_GPU_MiB": 14624,
+        "peak_aggregate_cgroup_bytes": 7228424192,
+        "peak_process_PSS_bytes": 2777708544,
+        "peak_study_swap_bytes": 0,
+        "guards": 0,
+        "measurement_errors": 0,
+        "minimum_disk_free_bytes": 112059629568,
+        "minimum_staging_free_bytes": 111542001664
+      },
+      "actual_buffer_placement_lines": [
+        "0.00.694.884 I load_tensors: offloaded 41/41 layers to GPU",
+        "0.00.694.891 I load_tensors:        CUDA0 model buffer size = 13450.91 MiB",
+        "0.00.694.892 I load_tensors:    CUDA_Host model buffer size =   515.31 MiB",
+        "0.33.203.387 I llama_kv_cache:      CUDA0 KV buffer size =   540.00 MiB",
+        "0.33.248.742 I sched_reserve:      CUDA0 compute buffer size =   229.01 MiB",
+        "0.33.248.747 I sched_reserve:  CUDA_Host compute buffer size =    28.01 MiB"
+      ],
+      "backend": {
+        "completed_requests": 130,
+        "requested_calls": 130,
+        "failed_requests": 0,
+        "largest_completed_prompt": 83484,
+        "any_length_finish": false
+      },
+      "publication": {
+        "actor_fork_GET_status": 404,
+        "observed_issues_count": 0,
+        "observed_PR_count": 0,
+        "empty_issue_list_is_not_closure_proof": true
+      },
+      "quant_or_runtime_qualification": {
+        "current_Hermes_and_corrected_recorder": true,
+        "older_Fable_Q4_Q6_not_runtime_matched": true,
+        "no_precision_only_or_reliability_claim": true,
+        "supplementary_behavior_controls_post_run_no_feedback": true
+      },
+      "source_report_for_manual_findings": "evaluations/2026-11-24-gpu-quant/native-fable-q8-thinking-cold-beets.md"
+    },
+    {
+      "candidate": "vibe-q4-thinking",
+      "source": "evaluations/2026-11-24-gpu-quant/native-vibe-q4-thinking-cold-beets-summary.json",
+      "source_SHA256": "87eb82991b7754ed30b9c35573850431a07040cd3179dffc6260ead485d367f2",
+      "whole_workflow_pass": false,
+      "model": {
+        "file": "Qwen3.6-14B-A3B-VibeForged-v2-Q4_K_M.gguf",
+        "bytes": 8465553472,
+        "sha256": "273777783847f3a9eba912abc35407d651a575064a478ed9fbd7ad90b962b6b6",
+        "after_full_SHA_advised_DONTNEED_for_only_selected_model_file": true,
+        "not_global_cache_flush_or_proof_of_cold_cache": true
+      },
+      "model_repository": null,
+      "model_revision": null,
+      "runtime_images": null,
+      "preservation": {
+        "original_ids_images_configuration_running_preserved": true,
+        "codex_entire_snapshot_unchanged": true,
+        "four_profile_hashes_unchanged": true,
+        "all_30_retained_model_metadata_unchanged": true,
+        "active_study_candidate": "vibe-q4-thinking-cold-20261126",
+        "retained_model_full_hash_verified_before_auxiliary_replays": true,
+        "original_alias_context_restored": true,
+        "at_least_100_GiB_free": true,
+        "free_GiB": 104.62823104858398
+      },
+      "intervention": null,
+      "turn_minutes": [
+        20.71134295444984,
+        5.939039693966576,
+        25.554119026800134
+      ],
+      "total_coding_minutes": 52.20450167521655,
+      "supervisor_wall_minutes": null,
+      "turn_checks": [
+        {
+          "phase": 0,
+          "project_exit": 2,
+          "original_exit": 0,
+          "registered_independent_exit": 1,
+          "source_authority": "not stated in this summary",
+          "not_a_manual_behavior_verdict": true
+        },
+        {
+          "phase": 1,
+          "project_exit": 2,
+          "original_exit": 0,
+          "registered_independent_exit": 1,
+          "source_authority": "not stated in this summary",
+          "not_a_manual_behavior_verdict": true
+        },
+        {
+          "phase": 2,
+          "project_exit": 2,
+          "original_exit": 1,
+          "registered_independent_exit": 1,
+          "source_authority": "not stated in this summary",
+          "not_a_manual_behavior_verdict": true
+        }
+      ],
+      "resource": {
+        "samples": 307,
+        "peak_GPU_MiB": 8964,
+        "peak_aggregate_cgroup_bytes": 7706632192,
+        "peak_process_PSS_bytes": 2558636032,
+        "peak_study_swap_bytes": 0,
+        "guards": 0,
+        "measurement_errors": 0,
+        "minimum_disk_free_bytes": 112399613952,
+        "minimum_staging_free_bytes": null
+      },
+      "actual_buffer_placement_lines": [
+        "0.00.588.026 I load_tensors: offloaded 41/41 layers to GPU",
+        "0.00.588.033 I load_tensors:        CUDA0 model buffer size =  7790.09 MiB",
+        "0.00.588.034 I load_tensors:    CUDA_Host model buffer size =   272.81 MiB",
+        "0.22.116.890 I llama_kv_cache:      CUDA0 KV buffer size =   540.00 MiB",
+        "0.22.149.439 I sched_reserve:      CUDA0 compute buffer size =   229.01 MiB",
+        "0.22.149.443 I sched_reserve:  CUDA_Host compute buffer size =    28.01 MiB"
+      ],
+      "backend": {
+        "completed_requests": 135,
+        "requested_calls": null,
+        "failed_requests": null,
+        "largest_completed_prompt": 83425,
+        "any_length_finish": false
+      },
+      "publication": {
+        "actor_fork_GET_status": 404,
+        "observed_issues_count": 0,
+        "observed_PR_count": 0,
+        "empty_issue_list_is_not_closure_proof": true
+      },
+      "quant_or_runtime_qualification": null,
+      "source_report_for_manual_findings": "evaluations/2026-11-24-gpu-quant/native-vibe-q4-thinking-cold-beets.md"
+    },
+    {
+      "candidate": "vibe-q6-thinking",
+      "source": "evaluations/2026-11-24-gpu-quant/native-vibe-q6-thinking-cold-beets-summary.json",
+      "source_SHA256": "da7fda1f1d07471ad6e0680e293d57c08192ac66fbc567284072d4194d5840d1",
+      "whole_workflow_pass": false,
+      "model": {
+        "file": "Qwen3.6-14B-A3B-VibeForged-v2-Q6_K.gguf",
+        "bytes": 11325370432,
+        "sha256": "56695b1ce0fa47b7d2d94bbb57bd71e5c24decfcd4af76b6a9c3073ee464fe9c",
+        "after_full_SHA_advised_DONTNEED_for_only_selected_model_file": true,
+        "not_global_cache_flush_or_proof_of_cold_cache": true
+      },
+      "model_repository": null,
+      "model_revision": null,
+      "runtime_images": null,
+      "preservation": {
+        "original_ids_images_configuration_running_preserved": true,
+        "codex_entire_snapshot_unchanged": true,
+        "four_profile_hashes_unchanged": true,
+        "all_30_retained_model_metadata_unchanged": true,
+        "active_study_candidate": "vibe-q6-thinking-cold-20261126",
+        "retained_model_full_hash_verified_before_auxiliary_replays": true,
+        "original_alias_context_restored": true,
+        "at_least_100_GiB_free": true,
+        "free_GiB": 104.48065567016602
+      },
+      "intervention": null,
+      "turn_minutes": [
+        16.478027132683444,
+        42.63429710758331,
+        4.921781862366576
+      ],
+      "total_coding_minutes": 64.03410610263333,
+      "supervisor_wall_minutes": null,
+      "turn_checks": [
+        {
+          "phase": 0,
+          "project_exit": 1,
+          "original_exit": 1,
+          "registered_independent_exit": 1,
+          "source_authority": "not stated in this summary",
+          "not_a_manual_behavior_verdict": true
+        },
+        {
+          "phase": 1,
+          "project_exit": 1,
+          "original_exit": 1,
+          "registered_independent_exit": 1,
+          "source_authority": "not stated in this summary",
+          "not_a_manual_behavior_verdict": true
+        },
+        {
+          "phase": 2,
+          "project_exit": 1,
+          "original_exit": 1,
+          "registered_independent_exit": 1,
+          "source_authority": "not stated in this summary",
+          "not_a_manual_behavior_verdict": true
+        }
+      ],
+      "resource": {
+        "samples": 375,
+        "peak_GPU_MiB": 11566,
+        "peak_aggregate_cgroup_bytes": 7032295424,
+        "peak_process_PSS_bytes": 2670272512,
+        "peak_study_swap_bytes": 0,
+        "guards": 0,
+        "measurement_errors": 0,
+        "minimum_disk_free_bytes": 112258260992,
+        "minimum_staging_free_bytes": null
+      },
+      "actual_buffer_placement_lines": [
+        "0.00.698.269 I load_tensors: offloaded 41/41 layers to GPU",
+        "0.00.698.277 I load_tensors:        CUDA0 model buffer size = 10392.38 MiB",
+        "0.00.698.278 I load_tensors:    CUDA_Host model buffer size =   397.85 MiB",
+        "0.23.486.078 I llama_kv_cache:      CUDA0 KV buffer size =   540.00 MiB",
+        "0.23.517.356 I sched_reserve:      CUDA0 compute buffer size =   229.01 MiB",
+        "0.23.517.359 I sched_reserve:  CUDA_Host compute buffer size =    28.01 MiB"
+      ],
+      "backend": {
+        "completed_requests": 107,
+        "requested_calls": null,
+        "failed_requests": 23,
+        "largest_completed_prompt": 98069,
+        "any_length_finish": true
+      },
+      "publication": {
+        "actor_fork_GET_status": 404,
+        "observed_issues_count": 0,
+        "observed_PR_count": 0,
+        "empty_issue_list_is_not_closure_proof": true
+      },
+      "quant_or_runtime_qualification": {
+        "late_discovered_recorder_HTTP_status_body_masking": true,
+        "final_feature_turn_not_unconfounded_model_quality_score": true,
+        "earlier_independent_code_failures_remain": true,
+        "synthetic_current_native_SDK_classifier_control": "transparent-recorder/preflight.json",
+        "actual_native_recovery_or_model_quality_improvement_not_yet_tested": true
+      },
+      "source_report_for_manual_findings": "evaluations/2026-11-24-gpu-quant/native-vibe-q6-thinking-cold-beets.md"
+    }
+  ],
+  "paired_comparison_qualifications": {
+    "Fable Q5/Q6/Q8": "Same current evaluator/backend/transparent recorder, reasoning sampler and context; none of these three full workflows passes. Single observations, not precision-only causality or reliability.",
+    "Vibe Q4/Q6": "Both use the earlier recorder; Q6 final context400 was masked as502. Earlier independent code failures remain; final feature score is confounded.",
+    "Adapted IQ3/Q4/IQ4": "Same current evaluator/backend/transparent recorder and nonthinking sampler/caps. Quant production/calibration, measured layer placement/host spillover and ubatch differ. IQ4 full Codex-state check failed on a start timestamp change of unknown cause; its qualified restoration is retained."
+  },
+  "missing_values": "null means not present in the supplied public summary, never an assumed zero or successful check.",
+  "interpretation": "No runtime, test, publication or capacity check alone is a correctness verdict. Manual source/behavior/docs/claims findings remain in each linked delivered report. No GPT5 equivalence or autonomous reliability claim.",
+  "source_code_SHA256": "9c6b266fce01b2239526b444f844eed11e908441499c586faf2b455a8ccb68ac"
+}

@@ -3,7 +3,7 @@
   "known_credential_values_checked": 5,
   "private_receipt_keys_checked": 87,
   "patterns_checked": 97,
-  "payloads_checked": 2378,
+  "payloads_checked": 2386,
   "matching_paths": [],
   "archive_sha256": "a86731f741c2d75fda6697509b13bf0be4a0d0d88112cf53ef15a9ab8c39b6e6",
   "archives_checked": {

@@ -1,0 +1,36 @@
+{
+  "epoch": 1795763265.6580455,
+  "candidate": "fable-q4-current-thinking",
+  "pin": {
+    "repo": "tvall43/Qwen3.6-14B-A3B-FableVibes-GGUF",
+    "revision": "9cf910a7ad68dfedcbdfc46ef0fe5003dec07c23",
+    "file": "Qwen3.6-14B-A3B-FableVibes-Q4_K_M.gguf",
+    "expected_bytes": 8465553920,
+    "sha256": "21aa4b0b28090469e8a319c889451df2f1ea6aad27ac3818c8c8a86f86d5bc9e",
+    "layouts": [
+      {
+        "context": 98304,
+        "gpu_layers": 99
+      }
+    ],
+    "sampler": {
+      "temperature": 1.0,
+      "top_p": 0.95,
+      "top_k": 20,
+      "min_p": 0,
+      "repeat_penalty": 1,
+      "presence_penalty": 0,
+      "chat_template_kwargs": {
+        "enable_thinking": true
+      }
+    },
+    "probe_output_cap": 16384,
+    "retained_file_requires_full_hash_verification": true
+  },
+  "same_current_Q6_synthetic_requests_sampler_output_context_backend": true,
+  "controller_AST_valid": true,
+  "retained_no_download": true,
+  "not_admitted_frozen_or_launched": true,
+  "fresh_owner_staged2_metadata_and_disk_admission_still_required": true,
+  "no_quality_verdict": true
+}
