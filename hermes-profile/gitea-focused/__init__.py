@@ -195,7 +195,10 @@ def block_direct_native(tool_name='', args=None, **kwargs):
 
 def register(ctx):
  from tools.registry import registry
+ workspace_only=ctx.get_config('workspace_publication_only',False)
+ if type(workspace_only) is not bool:raise ValueError('workspace_publication_only must be a boolean')
  ctx.register_hook('pre_tool_call',block_direct_native)
  bridge=Bridge(registry.dispatch,ctx.get_config('allowed_upstream_repositories',[]),ctx.get_config('public_url','https://gitea.rcs1.top'),explicit_reference_numbers=ctx.get_config('explicit_reference_numbers',False))
  for name,schema in schemas().items():
+  if workspace_only and name=='gitea_edit_file':continue
   ctx.register_tool(name=name,toolset=TOOLSET,schema=schema,handler=partial(bridge.handle,name[len('gitea_'):]))

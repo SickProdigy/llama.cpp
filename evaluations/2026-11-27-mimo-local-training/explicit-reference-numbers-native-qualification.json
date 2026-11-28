@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "classification": "Actual read-only native MCP/plugin admission, not model quality",
+  "focused_plugin_version": "0.1.8",
+  "unit_checks_passed": 36,
+  "explicit_reference_numbers": true,
+  "workspace_publication_only": true,
+  "actual_native_tool_count": 32,
+  "actual_full_schemas_equal_frozen_trial": true,
+  "actual_registered_role_context_passed": true,
+  "actual_existing_issue_number": 1,
+  "actual_existing_PR_number": 2,
+  "actual_issue_and_PR_lists_normalized": true,
+  "unrequested_mutation_blocked": true,
+  "model_calls": 0,
+  "forge_mutations": 0,
+  "old_case_metadata_only_no_new_actor_exposure": true,
+  "operator_readonly_proxy": "New operator-only copy binds existing issue1/PR2 in the exact declared MiMo development fixture and requires read_only=True. Original actor proxy/scopes untouched.",
+  "earlier_operator_failures_preserved": [
+    "Generic plugin copy restored remote edit registration; fixed explicit workspace_publication_only option",
+    "Fresh actor proxy correctly hid pre-existing references; use narrowly bound read-only operator metadata proxy"
+  ],
+  "source_sha256": {
+    "focused_plugin": "d8e10a29e5fd3da136ad471855597264cdb963bf9c0e02cdc515f20d2f510560",
+    "actual_native_receipt": "a380810b47a415562dbe11a8691fb7a5ac513cf02d776de64e9c16299611fa20",
+    "operator_readonly_proxy": "768653afaf176ee572788e3d5d435ae45d28ba5a03911845bd5ce19aea8a935f"
+  },
+  "production_profile_default_unchanged": true,
+  "fresh_model_trial_still_required": true
+}

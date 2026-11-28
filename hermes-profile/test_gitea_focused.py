@@ -1,4 +1,5 @@
-import importlib.util,json,pathlib,unittest
+import importlib.util,json,pathlib,unittest,sys,types
+from unittest.mock import patch
 p=pathlib.Path(__file__).parent/'gitea-focused/__init__.py';spec=importlib.util.spec_from_file_location('focused',p);m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m)
 UP='sickprodigy/nicotineplus-plugins';FORK='fixture'
 class Native:
@@ -147,4 +148,19 @@ class Focused(unittest.TestCase):
  def test_explicit_reference_config_requires_real_boolean(self):
   for value in ['false',1,None]:
    with self.subTest(value=value),self.assertRaises(ValueError):m.Bridge(self.native,[UP],explicit_reference_numbers=value)
+ def test_workspace_only_registration_preserves_other_schemas(self):
+  registry=types.ModuleType('tools.registry');registry.registry=types.SimpleNamespace(dispatch=self.native)
+  class Context:
+   def __init__(self,settings):self.settings=settings;self.tools={}
+   def get_config(self,key,default=None):return self.settings.get(key,default)
+   def register_hook(self,*args):pass
+   def register_tool(self,**kwargs):self.tools[kwargs['name']]=kwargs['schema']
+  with patch.dict(sys.modules,{'tools':types.ModuleType('tools'),'tools.registry':registry}):
+   ordinary=Context({});m.register(ordinary);self.assertEqual(ordinary.tools,m.schemas())
+   selected=Context({'workspace_publication_only':True,'explicit_reference_numbers':True});m.register(selected)
+   expected={k:v for k,v in m.schemas().items()if k!='gitea_edit_file'}
+   self.assertEqual(selected.tools,expected);self.assertNotIn('gitea_edit_file',selected.tools)
+   for value in ['false',1,None]:
+    with self.subTest(value=value),self.assertRaises(ValueError):m.register(Context({'workspace_publication_only':value}))
+  self.assertEqual(self.native.calls,[])
 if __name__=='__main__':unittest.main()

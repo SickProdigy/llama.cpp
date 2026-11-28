@@ -1,0 +1,430 @@
+{
+  "candidate": "Mellum2.1 Thinking Q6 with automatic verified workspace roles",
+  "classification": "FAIL full workflow: correct initial behavior, missing native preferences, incorrect public issue references, no upstream PR and unpublished final settings",
+  "whole_workflow_pass": false,
+  "model_file": "Mellum2.1-12B-A2.5B-Thinking-Q6_K.gguf",
+  "model_sha256": "12aec619f6a2c82b1ea8998f03665b3b5fc5bb758af97efdf4b1ec7a822b8668",
+  "protocol_sha256": "46977f820989345920581685d9ad6554eccd831de7b36c4e6603e5c196e45cd9",
+  "same_weights_sampler_template_context_and_main_aux_caps_as_previous_Thinking": true,
+  "intervention": "Automatically verified upstream/actor/personal-fork role context; same32tools/raw issue responses and permissions. Fresh fixture/conversation, same development tasks; not an independent benchmark or weights improvement.",
+  "context": 98304,
+  "GPU_layers": "29/29",
+  "main_cap": 16384,
+  "aux_cap": 8192,
+  "thinking": true,
+  "seed": 20261127,
+  "actual_first_wire": {
+    "passed": true,
+    "actual_role_context_present": true,
+    "actual_selected_repository_context_present": true,
+    "actual_authenticated_actor": "hermes-agent",
+    "upstream_owner": "chatgpt-codex",
+    "personal_fork_owner": "hermes-agent",
+    "personal_fork_name": "hermes-deps-autobuddy-roles-20261128",
+    "model": "gpuquant-mellum21-th-q6-roles",
+    "main_max_tokens": 16384,
+    "thinking": true,
+    "seed": 20261127,
+    "tool_count": 32,
+    "no_private_grader_markers": true,
+    "request_pretty_file_sha256": "b2b7442ba2aedf9fea6d1d07853a81762d5fae419b054b85c0c8eeff3e6051b9",
+    "source": "actual first native HTTP request, no synthetic LLM response"
+  },
+  "phases": [
+    {
+      "phase": 0,
+      "seconds": 774.8639491350041,
+      "native_exit": 1,
+      "external_timeout": false,
+      "project_exit": 0,
+      "original_suite_exit": 0,
+      "real_core": {
+        "passed": true,
+        "phase": 0,
+        "cases": [
+          {
+            "case": "ordinary_new_buddy",
+            "passed": true
+          },
+          {
+            "case": "repeat_request_is_silent",
+            "passed": true
+          },
+          {
+            "case": "existing_buddy_casefold_is_silent",
+            "passed": true
+          },
+          {
+            "case": "room_self_nontrigger_exclusions",
+            "passed": true
+          },
+          {
+            "case": "default_connect_room",
+            "passed": true
+          }
+        ],
+        "actual_core_version": "3.3.11",
+        "real_handler_and_buddy_add_used": true,
+        "network_watch_and_GUI_delivery_stubbed": true,
+        "source_sha256": "301eac3d9d7553c36fc1aaa311fb6fe0713a8e0d4c0eeae9c763319a5960d4d5"
+      },
+      "authored_on_baseline_exit": 1,
+      "changed_paths": [
+        "autobuddy/__init__.py",
+        "tests/test_autobuddy.py"
+      ],
+      "forge_state": {
+        "issue": 1,
+        "pr": null,
+        "branch": "wide-autobuddy-mellum21-th-q6-roles-fix-duplicate-add",
+        "commits": 2
+      },
+      "authored_test_methods": [
+        "test_add_when_not_already_buddy",
+        "test_does_not_add_existing_buddy",
+        "test_case_insensitive_buddy_check",
+        "test_sends_public_message_only_when_added"
+      ]
+    },
+    {
+      "phase": 1,
+      "seconds": 117.0767029709823,
+      "native_exit": 0,
+      "external_timeout": false,
+      "project_exit": 0,
+      "original_suite_exit": 0,
+      "real_core": {
+        "passed": true,
+        "phase": 1,
+        "cases": [
+          {
+            "case": "ordinary_new_buddy",
+            "passed": true
+          },
+          {
+            "case": "repeat_request_is_silent",
+            "passed": true
+          },
+          {
+            "case": "existing_buddy_casefold_is_silent",
+            "passed": true
+          },
+          {
+            "case": "room_self_nontrigger_exclusions",
+            "passed": true
+          },
+          {
+            "case": "default_connect_room",
+            "passed": true
+          }
+        ],
+        "actual_core_version": "3.3.11",
+        "real_handler_and_buddy_add_used": true,
+        "network_watch_and_GUI_delivery_stubbed": true,
+        "source_sha256": "301eac3d9d7553c36fc1aaa311fb6fe0713a8e0d4c0eeae9c763319a5960d4d5"
+      },
+      "authored_on_baseline_exit": 1,
+      "changed_paths": [
+        "autobuddy/PLUGININFO",
+        "autobuddy/__init__.py",
+        "tests/test_autobuddy.py"
+      ],
+      "forge_state": {
+        "issue": 1,
+        "pr": null,
+        "branch": "wide-autobuddy-mellum21-th-q6-roles-fix-duplicate-add",
+        "commits": 3
+      },
+      "authored_test_methods": [
+        "test_add_when_not_already_buddy",
+        "test_does_not_add_existing_buddy",
+        "test_case_insensitive_buddy_check",
+        "test_sends_public_message_only_when_added"
+      ]
+    },
+    {
+      "phase": 2,
+      "seconds": 530.6988362089905,
+      "native_exit": 0,
+      "external_timeout": false,
+      "project_exit": 0,
+      "original_suite_exit": 0,
+      "real_core": {
+        "passed": false,
+        "phase": 2,
+        "cases": [
+          {
+            "case": "ordinary_new_buddy",
+            "passed": true
+          },
+          {
+            "case": "repeat_request_is_silent",
+            "passed": true
+          },
+          {
+            "case": "existing_buddy_casefold_is_silent",
+            "passed": true
+          },
+          {
+            "case": "room_self_nontrigger_exclusions",
+            "passed": true
+          },
+          {
+            "case": "default_connect_room",
+            "passed": true
+          },
+          {
+            "case": "preferences_trimmed_values",
+            "passed": false,
+            "error": "AssertionError: "
+          },
+          {
+            "case": "settings_take_effect_without_restart",
+            "passed": true
+          },
+          {
+            "case": "blank_settings_fall_back",
+            "passed": true
+          }
+        ],
+        "actual_core_version": "3.3.11",
+        "real_handler_and_buddy_add_used": true,
+        "network_watch_and_GUI_delivery_stubbed": true,
+        "source_sha256": "288af919ccc0696bed412dbaaa8254cf97c1d65bee72486fe075832c888ea8f5"
+      },
+      "authored_on_baseline_exit": 1,
+      "changed_paths": [
+        "autobuddy/PLUGININFO",
+        "autobuddy/__init__.py",
+        "tests/test_autobuddy.py"
+      ],
+      "forge_state": {
+        "issue": 1,
+        "pr": null,
+        "branch": "wide-autobuddy-mellum21-th-q6-roles-fix-duplicate-add",
+        "commits": 3
+      },
+      "authored_test_methods": [
+        "test_add_when_not_already_buddy",
+        "test_does_not_add_existing_buddy",
+        "test_case_insensitive_buddy_check",
+        "test_sends_public_message_only_when_added"
+      ]
+    }
+  ],
+  "coding_seconds": 1422.639488314977,
+  "end_to_end_launch_until_original_runtime_restored_seconds": 1662.7003016471863,
+  "completed_backend_requests": 104,
+  "tool_calls": {
+    "execute_code": 5,
+    "read_file": 12,
+    "gitea_create_pull_request": 11,
+    "gitea_list_branches": 4,
+    "search_files": 11,
+    "terminal": 33,
+    "gitea_commit_workspace": 3,
+    "write_file": 4,
+    "gitea_create_branch": 2,
+    "patch": 8,
+    "gitea_repository_info": 2,
+    "gitea_list_pull_requests": 2,
+    "gitea_fork_repository": 1,
+    "gitea_list_issues": 1,
+    "gitea_identity": 1,
+    "gitea_create_issue": 1
+  },
+  "maximum_actual_prompt_tokens": 59306,
+  "resources": {
+    "GPU_peak_MiB": 11124,
+    "aggregate_observed_cgroup_peak_GiB": 6.6479339599609375,
+    "study_swap_peak_bytes": 0,
+    "minimum_free_GiB": {
+      "docker_root_free_bytes": 108.47307205200195,
+      "model_disk_free_bytes": 168.73852157592773
+    }
+  },
+  "source_review": {
+    "regressions": "Two meaningful original-code assertion failures for existing and mixed-case buddies. Authored repeat-named method is unfinished after first-call assertions and clearing users; independent real repeated-trigger check passes. Do not claim complete authored repeated-trigger coverage.",
+    "preferences": "No class settings or metasettings declaration; configured preference case fails its initial declaration assertion. Live-change and blank-fallback cases pass.",
+    "additional_static_trigger_finding": "Final source compares trigger_phrase directly to line.lower() after strip only; uppercase configured phrase is not normalized. Registered preference case fails before its uppercase-message assertions, so this defect is a separate source finding, not independently isolated by that registered grade.",
+    "docs": "Only PLUGININFO description updated; README remains byte-identical to baseline including stale join/auto-add language. Final description advertises preferences that are not declared.",
+    "local_commits": [
+      "090157b",
+      "b53260c",
+      "b610170"
+    ],
+    "publication": "Actor creates genuine personal fork, feature branch,3remote commits and upstreamissue1. Repeated PR bodies use globaldatabaseID1623 instead of public#1; guard rejects. No PR. Final local settings commit is not published: independently fetched41fork blobs match phase1, not phase2.",
+    "termination_correction": "Previously called phase0 a60-turn-limit exit. Confirmed nativeexit1,60configured maxturns and no external timeout; availableconsole does not independently establish exact terminationcause. No more-turns remedy claimed."
+  },
+  "configured_MCP_readback": {
+    "branches": {
+      "error": "Non-JSON tool response; inspect private diagnostic separately"
+    },
+    "issues": [
+      {
+        "number": 1,
+        "state": "closed"
+      }
+    ],
+    "PRs": []
+  },
+  "actor_identity_full_blob_readback": {
+    "passed": true,
+    "epoch": 1795882353.4422784,
+    "authenticated_actor": "hermes-agent",
+    "configured_codex_connector_branch_lookup": "not found; actor-identity readback required for private fork",
+    "fork_parent_verified": true,
+    "branch": "wide-autobuddy-mellum21-th-q6-roles-fix-duplicate-add",
+    "branch_commit": "d4c5e5c253bb51aebe43da8a0a6eca9506154687",
+    "branch_blob_count": 41,
+    "all_branch_bytes_match_phase1": true,
+    "branch_bytes_do_not_match_final_local_settings": true,
+    "upstream_baseline_blob_count": 40,
+    "all_upstream_original_bytes_unchanged": true,
+    "issue_number": 1,
+    "issue_state": "closed",
+    "upstream_PR_count": 0,
+    "forge_mutations": 0
+  },
+  "remove_readd_supplement": {
+    "classification": "Posthoc supplemental source review, separate from unchanged primary registered grades",
+    "epoch": 1795882069.4323738,
+    "controls_passed": true,
+    "valid_case_sensitive_primary_result": {
+      "passed": false,
+      "phase": 0,
+      "cases": [
+        {
+          "case": "ordinary_new_buddy",
+          "passed": true
+        },
+        {
+          "case": "repeat_request_is_silent",
+          "passed": true
+        },
+        {
+          "case": "existing_buddy_casefold_is_silent",
+          "passed": false,
+          "error": "AssertionError: "
+        },
+        {
+          "case": "room_self_nontrigger_exclusions",
+          "passed": true
+        },
+        {
+          "case": "default_connect_room",
+          "passed": true
+        }
+      ],
+      "actual_core_version": "3.3.11",
+      "real_handler_and_buddy_add_used": true,
+      "network_watch_and_GUI_delivery_stubbed": true,
+      "source_sha256": "6c0025ab24ec63b18a68905fe0752485dd7bc1dca24aa90d62464d51b298bf05"
+    },
+    "baseline_remove_readd": {
+      "classification": "Posthoc supplemental source-review probe; primary checker unchanged",
+      "passed": true,
+      "phase": 0,
+      "cases": [
+        {
+          "case": "removed_buddy_can_request_again",
+          "passed": true
+        }
+      ],
+      "actual_core_version": "3.3.11",
+      "real_handler_and_buddy_add_used": true,
+      "network_watch_and_GUI_delivery_stubbed": true,
+      "source_sha256": "026a3e1998ccf4e7e25613fcc4a81d977a933b3ec0dd97ede49b1de95e841ab3"
+    },
+    "reference_remove_readd": {
+      "classification": "Posthoc supplemental source-review probe; primary checker unchanged",
+      "passed": true,
+      "phase": 0,
+      "cases": [
+        {
+          "case": "removed_buddy_can_request_again",
+          "passed": true
+        }
+      ],
+      "actual_core_version": "3.3.11",
+      "real_handler_and_buddy_add_used": true,
+      "network_watch_and_GUI_delivery_stubbed": true,
+      "source_sha256": "07e05ec16c2ee1045218f80ced50f90a01aee20fa8ffa5fbf4a437b8578ae151"
+    },
+    "model_source_observations": [
+      {
+        "phase": 0,
+        "snapshot_kind": "local-grade",
+        "source_sha256": "301eac3d9d7553c36fc1aaa311fb6fe0713a8e0d4c0eeae9c763319a5960d4d5",
+        "actual": {
+          "classification": "Posthoc supplemental source-review probe; primary checker unchanged",
+          "passed": true,
+          "phase": 0,
+          "cases": [
+            {
+              "case": "removed_buddy_can_request_again",
+              "passed": true
+            }
+          ],
+          "actual_core_version": "3.3.11",
+          "real_handler_and_buddy_add_used": true,
+          "network_watch_and_GUI_delivery_stubbed": true,
+          "source_sha256": "301eac3d9d7553c36fc1aaa311fb6fe0713a8e0d4c0eeae9c763319a5960d4d5"
+        }
+      },
+      {
+        "phase": 2,
+        "snapshot_kind": "local-grade",
+        "source_sha256": "288af919ccc0696bed412dbaaa8254cf97c1d65bee72486fe075832c888ea8f5",
+        "actual": {
+          "classification": "Posthoc supplemental source-review probe; primary checker unchanged",
+          "passed": true,
+          "phase": 0,
+          "cases": [
+            {
+              "case": "removed_buddy_can_request_again",
+              "passed": true
+            }
+          ],
+          "actual_core_version": "3.3.11",
+          "real_handler_and_buddy_add_used": true,
+          "network_watch_and_GUI_delivery_stubbed": true,
+          "source_sha256": "288af919ccc0696bed412dbaaa8254cf97c1d65bee72486fe075832c888ea8f5"
+        }
+      }
+    ],
+    "primary_checker_unchanged": true,
+    "private_feedback_to_models": false,
+    "old_malformed_case_sensitive_control_preserved": true,
+    "supplement_sha256": "1062310eee4e585118a625a5405b1dbd6c869654726946a48829c7c7b10c3298"
+  },
+  "preservation": {
+    "passed": true,
+    "epoch": 1795881952.382439,
+    "original22_models_unchanged": true,
+    "owner_profile_hashes_unchanged": true,
+    "owner_source_and_pending_work_unchanged": true,
+    "runtime_ids_images_config_running_unchanged": true,
+    "full_Codex_state_unchanged": true,
+    "original_alias_context_restored": true,
+    "three_turns_complete_not_quality_verdict": true,
+    "source_baselines": [
+      "baseline-before-mellum21-th-q6-roles-native",
+      "baseline-after-mellum21-th-q6-roles-native"
+    ]
+  },
+  "cleanup": {
+    "passed": true,
+    "epoch": 1795881952.5227883,
+    "removed_exact_supervisor_id": "cc61fd16611aad00f3859ba8548612648bed2a1f364c3b629873ca134a740594",
+    "removed_only_task_anonymous_volumes": [
+      "5329990f5e913b7a0b4be2396d79c6be4d4405699e37eff025a539ca6a1a0128"
+    ],
+    "named_stage_volume_preserved": true,
+    "no_live_study_containers": true
+  },
+  "full_failed_trajectory_positive_training": false,
+  "operator_or_private_grader_feedback_to_actor": false,
+  "new_number_format_applied_to_this_trial": false,
+  "next_interface_qualification": "Separate0LLM actual native public-number/role/context/32schema/read-only admission passed with optional0.1.8; no new scored model has used it yet."
+}

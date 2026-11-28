@@ -266,3 +266,6 @@ the older read-control cooldown coupling. Same-method cold Q4 remains pending.
 
 The separate [Mellum Thinking Q6 native comparison](../2026-11-27-mimo-local-training/README.md#mellum-thinking-native-workflow-better-initial-code-still-fails)
 finishes in27.86 minutes at98k/29 GPU layers/11,124MiB. Initial and documentation snapshots pass5/5 real Nicotine checks, with meaningful regression tests; final settings pass7/8 but omit native preference declarations. Removal/re-add passes. One upstream issue exists, but repeated incorrect fork-owner/name arguments prevent branch/commit/PR publication. All22models and owner/runtime/Codex state are preserved; default unchanged. No unattended winner or pure thinking-toggle conclusion.
+
+
+The [automatic workspace-role Thinking Q6 comparison](../2026-11-27-mimo-local-training/native-mellum21-thinking-workspace-roles-summary.json) also fails:5/5,5/5,7/8 real checks,23.71coding/27.71end-to-endminutes. Real fork/branch/3remote commits/issue exist, but noPR; final local settings are unpublished. Public issue-number confusion and missing native preferences remain. All22models and owner/runtime/Codex are preserved. Optional explicit public numbers and workspace-only registration pass separate0LLM native qualification; no new model pass yet.

@@ -112,3 +112,10 @@ It changes neither tool schemas, request arguments, permissions nor native MCP
 payloads. Frozen model trials keep their original plugin copies. Native replay
 qualification and a separately registered model comparison are required before
 claiming improved behavior; this is not deployed to the owner profile.
+
+Version 0.1.8 exposes `workspace_publication_only: true` in the same settings.
+It omits `gitea_edit_file` during registration so selected-checkout coding uses
+local edits/tests plus `gitea_commit_workspace`. This reproduces the evaluated
+workspace-only surface without a private source patch. The default remains
+false for profiles that use remote file edits. Remaining schemas and policies
+are unchanged; qualify the actual registered tool surface after configuration.
