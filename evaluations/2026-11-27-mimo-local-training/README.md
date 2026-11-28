@@ -30,13 +30,35 @@ A later read-only import probe in the Vibe actor confirms the shared development
 
 This is one workflow with three dependent tasks, not three independent repetitions. The retained Vibe Q4 comparison uses the same predeclared tasks, native local-development tools, scoped publication and independent checker; its own declared sampler and builtin template differ. No new winner or production replacement is established.
 
+## Retained Vibe control result — November 28
+
+**Failed, with no published contribution.** The predeclared Vibe Q4 configuration receives the same task sequence and 32 actual CLI tool names. It takes **50.21 coding minutes / 156 completed backend requests**, versus MiMo's 39.49 minutes / 82 requests. Its first request takes 61.20 seconds with 12,391 input tokens; actual input later reaches 83,431 tokens. The final step has three retained lineage sessions, including two compression transitions. These are end-to-end observations, not cold throughput or precision-only comparisons.
+
+| Dependent task | Coding time | Native exit | Authored / immutable original suites | Real runtime / publication |
+| --- | --- | --- | --- | --- |
+| New-buddy idempotency | 8.99 min | 1 | Pass / pass | Incorrect buddy API; unpublished |
+| Documentation | 4.66 min | 0 | Pass / pass | Same runtime defect; unpublished |
+| Live settings | 36.55 min | 1 | Fail / pass | Runtime and preference-contract defects; unpublished |
+
+The plugin invents `core.buddies.buddies`. The final settings implementation uses a descriptor list and `core.settings` instead of the real plugin preference contract. The real-core ordinary case raises `AttributeError`; subsequent cases cannot re-enable the plugin. Those later outcomes are qualified as shared-handler failure/cascade observations, not eight independent defects. The authored suite ends with **2 failed, 100 passed and 2 subtests passed**. Its final response acknowledges two test-isolation problems but also claims core behavior works and leaves publication to the user.
+
+Vibe claims the upstream is only on GitHub despite the correct selected Gitea origin being present in its initial user context. Public-mirror guidance also exists, but explicitly says pushes use configured Gitea. Readback through configured Gitea confirms the fixture's main remains `f9980ddc8aa6809e2f98f3ee95436bdb368e7a3d`, with zero issues and zero PRs. This is evidence of no published contribution; it is not a separate proof about whether any private fork exists.
+
+The peak remains 8,944 MiB GPU / 41 of 41 layers, with a 7.25 GiB observed aggregate study cgroup peak, zero study swap and no reserve breach. Fresh strict preservation and exact cleanup pass, including full unchanged Hermes-Codex state. No grader feedback or operator correction is given. [Machine-readable Vibe summary](native-vibe-q4-summary.json). Both workflows remain excluded from positive training data; neither establishes a new everyday-model recommendation.
+
+## Dependency-qualified evaluator — November 28
+
+A separate prospective comparison retains the task/checker/model settings while adding the actual pinned Nicotine+ 3.3.11 dependency to development. Its 507-file corpus is extracted from the same immutable target-runtime image and fully hash-checked. The isolated evaluator derives from the existing C9 image; production Hermes, llama.cpp, CUDA and driver configuration remain unchanged.
+
+The first image's `PYTHONPATH` approach fails the actual native terminal import check: Hermes clears that variable. The corrected image uses a normal virtualenv site-packages path entry. A native terminal command now imports the pinned dependency and loads the original Auto Buddy through its actual offline plugin handler. All 83 original tests also pass. These zero-inference controls qualify dependency availability only; fresh candidate-specific wire/MCP controls and coding trials remain required. No private grader tests or reference fixes are exposed to actors. [Dependency environment receipt](dependency-environment.json).
+
 ## Workflow and training parts
 
 The new development case is Auto Buddy idempotency, accurate documentation and live configurable room/trigger settings on a clean copy of the same committed Nicotine+ plugin tree. Native local terminal/file tools perform edits and tests; the scoped workspace publisher uses actual configured Gitea MCP for publication, with issue/fork/PR operations. The redundant remote edit tool is omitted in this new profile. The task does not name a forge host; selected Git origin and persistent project context supply that preference.
 
 The checker is qualified against a working reference and deliberate regressions using the real offline Nicotine+3.3.11 plugin handler and buddy implementation. GUI delivery and network user watching are stubbed; no Soulseek connection occurs. There is no private-helper-signature publication gate. Original tests, public behavior, authored regressions, final claims and actual remote bytes are still independently checked after each turn. This is a new workflow configuration and a development case, not an untouched generalization holdout.
 
-A retained VibeForged Q4 comparison is prospectively planned under the same new workflow and tasks, with its declared baseline sampler. Improvements over older remote-edit Beets cases cannot be attributed solely to MiMo. The MiMo result above is complete; the retained Vibe comparison is in progress. Its fresh capacity check loads 98,304 context with 41/41 GPU layers, peaks at 8,944 MiB GPU memory, and passes the tool call/result/dependent-history sequence. Aggregate observed study cgroup peak is 6.55 GiB with no study swap. Fresh strict preservation and exact cleanup pass before its separate native trial. [Vibe control capacity receipt](vibe-control-capacity.json).
+A retained VibeForged Q4 comparison is prospectively planned under the same new workflow and tasks, with its declared baseline sampler. Improvements over older remote-edit Beets cases cannot be attributed solely to MiMo. Both original development-environment comparisons above are complete; the separate dependency-qualified comparisons remain pending. Its fresh capacity check loads 98,304 context with 41/41 GPU layers, peaks at 8,944 MiB GPU memory, and passes the tool call/result/dependent-history sequence. Aggregate observed study cgroup peak is 6.55 GiB with no study swap. Fresh strict preservation and exact cleanup pass before its separate native trial. [Vibe control capacity receipt](vibe-control-capacity.json).
 
 The separate private [hermes-tool-training repository](/chatgpt-codex/hermes-tool-training) contains reviewed tool-trajectory validation, whole-family holdouts, resumable LoRA jobs, independent result comparison, exact-base merging and export preparation. Tiny synthetic CPU smokes establish machinery only. Real reviewed training data and actual training-PC GPU qualification remain required before a useful fine-tune.
 

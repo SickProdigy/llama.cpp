@@ -1,6 +1,6 @@
 # Llama.cpp and Hermes-Agent Model Notes
 
-[MiMo 9B Q6 capacity and training project](evaluations/2026-11-27-mimo-local-training/README.md):98k/33 of33GPU/8,350MiB peak; genuine short tool history and reference-template16k/60k/80k markers pass. Strict owner/Codex restoration and exact cleanup pass. The first native local-code/Gitea workflow completes publication but fails real Nicotine behavior in all three dependent steps (39.49 coding minutes). Original services and owner state are restored; the retained Vibe comparison follows.
+[MiMo 9B Q6 capacity and training project](evaluations/2026-11-27-mimo-local-training/README.md):98k/33 of33GPU/8,350MiB peak; genuine short tool history and reference-template16k/60k/80k markers pass. Strict owner/Codex restoration and exact cleanup pass. The first native local-code/Gitea workflow completes publication but fails real Nicotine behavior in all three dependent steps (39.49 coding minutes). Original services and owner state are restored; retained Vibe also fails (50.21 coding minutes, no publication). A dependency-qualified isolated evaluator is now ready for separate comparisons.
 
 User-authorized storage cleanup (November 27): retired 11 slow, failed or redundant files across two batches, freeing 94.41 GiB total. All four VibeForged/FableVibes variants and useful alternatives remain (19 main-folder GGUFs); 197.56 GiB free observed. Production services/configurations are unchanged. [Decisions and checksums](evaluations/2026-11-27-model-cleanup/README.md).
 

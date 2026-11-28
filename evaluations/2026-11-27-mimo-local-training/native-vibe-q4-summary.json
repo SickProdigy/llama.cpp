@@ -1,0 +1,244 @@
+{
+  "candidate": "Qwen3.6-14B-A3B-VibeForged-v2 Q4_K_M",
+  "classification": "FAIL: unpublished local work with incorrect runtime behavior and remaining authored test failures; one development workflow with three dependent tasks",
+  "whole_workflow_pass": false,
+  "tasks_independent": false,
+  "context": 98304,
+  "GPU_layers": "41/41",
+  "GPU_peak_MiB": 8944,
+  "backend": "b12723-abca69200",
+  "main_aux_output_cap": 8192,
+  "sampler": {
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.05,
+    "repeat_penalty": 1,
+    "presence_penalty": 0,
+    "chat_template_kwargs": {
+      "enable_thinking": true
+    },
+    "seed": 20261127
+  },
+  "model_sha256": "273777783847f3a9eba912abc35407d651a575064a478ed9fbd7ad90b962b6b6",
+  "requests_completed": 156,
+  "first_request_seconds": 61.19770097732544,
+  "first_prompt_tokens": 12391,
+  "max_actual_prompt_tokens": 83431,
+  "coding_seconds": 3012.61786363204,
+  "study_cgroup_peak_bytes": 7780192256,
+  "study_swap_peak_bytes": 0,
+  "minimum_Docker_root_free_bytes": 120735178752,
+  "phases": [
+    {
+      "phase": 0,
+      "seconds": 539.6330141310173,
+      "native_exit_code": 1,
+      "authored_project_suite_pass": true,
+      "immutable_original_suite_pass": true,
+      "source_digest": "4131726432af1c68f291e27a7b4c4b10dd4468c643b1b58e92e67310e2c8b107",
+      "changed_paths": [
+        "autobuddy/__init__.py",
+        "tests/test_autobuddy.py"
+      ],
+      "authored_tests_fail_on_baseline": true,
+      "real_core": {
+        "passed": false,
+        "phase": 0,
+        "cases": [
+          {
+            "case": "ordinary_new_buddy",
+            "passed": false,
+            "error": "AttributeError: 'Buddies' object has no attribute 'buddies'"
+          },
+          {
+            "case": "repeat_request_is_silent",
+            "passed": false,
+            "error": "AttributeError: 'Buddies' object has no attribute 'buddies'"
+          },
+          {
+            "case": "existing_buddy_casefold_is_silent",
+            "passed": false,
+            "error": "AttributeError: 'Buddies' object has no attribute 'buddies'"
+          },
+          {
+            "case": "room_self_nontrigger_exclusions",
+            "passed": true
+          },
+          {
+            "case": "default_connect_room",
+            "passed": true
+          }
+        ],
+        "actual_core_version": "3.3.11",
+        "real_handler_and_buddy_add_used": true,
+        "network_watch_and_GUI_delivery_stubbed": true,
+        "source_sha256": "96d963766320dd5ea574644fb810cb026ed73b887d409c38531a5fda5265b34d"
+      },
+      "compression_lineage_sessions": 1,
+      "remote_commit_available": false
+    },
+    {
+      "phase": 1,
+      "seconds": 279.69979566000984,
+      "native_exit_code": 0,
+      "authored_project_suite_pass": true,
+      "immutable_original_suite_pass": true,
+      "source_digest": "dca4d3bf67e77ab3907ae7eb7aa887c0e7c770416c9e209319d2b52334916822",
+      "changed_paths": [
+        "autobuddy/README.md",
+        "autobuddy/__init__.py",
+        "tests/test_autobuddy.py"
+      ],
+      "authored_tests_fail_on_baseline": true,
+      "real_core": {
+        "passed": false,
+        "phase": 1,
+        "cases": [
+          {
+            "case": "ordinary_new_buddy",
+            "passed": false,
+            "error": "AttributeError: 'Buddies' object has no attribute 'buddies'"
+          },
+          {
+            "case": "repeat_request_is_silent",
+            "passed": false,
+            "error": "AttributeError: 'Buddies' object has no attribute 'buddies'"
+          },
+          {
+            "case": "existing_buddy_casefold_is_silent",
+            "passed": false,
+            "error": "AttributeError: 'Buddies' object has no attribute 'buddies'"
+          },
+          {
+            "case": "room_self_nontrigger_exclusions",
+            "passed": true
+          },
+          {
+            "case": "default_connect_room",
+            "passed": true
+          }
+        ],
+        "actual_core_version": "3.3.11",
+        "real_handler_and_buddy_add_used": true,
+        "network_watch_and_GUI_delivery_stubbed": true,
+        "source_sha256": "96d963766320dd5ea574644fb810cb026ed73b887d409c38531a5fda5265b34d"
+      },
+      "compression_lineage_sessions": 1,
+      "remote_commit_available": false
+    },
+    {
+      "phase": 2,
+      "seconds": 2193.285053841013,
+      "native_exit_code": 1,
+      "authored_project_suite_pass": false,
+      "immutable_original_suite_pass": true,
+      "source_digest": "e960b9bbafb39081adca663fa1654457e2da28c87339f88d4097cdc807ad6b81",
+      "changed_paths": [
+        "autobuddy/README.md",
+        "autobuddy/__init__.py",
+        "tests/test_autobuddy.py"
+      ],
+      "authored_tests_fail_on_baseline": true,
+      "real_core": {
+        "passed": false,
+        "phase": 2,
+        "cases": [
+          {
+            "case": "ordinary_new_buddy",
+            "passed": false,
+            "error": "AttributeError: 'Buddies' object has no attribute 'buddies'"
+          },
+          {
+            "case": "repeat_request_is_silent",
+            "passed": false,
+            "error": "AssertionError: Real handler could not enable plugin"
+          },
+          {
+            "case": "existing_buddy_casefold_is_silent",
+            "passed": false,
+            "error": "AssertionError: Real handler could not enable plugin"
+          },
+          {
+            "case": "room_self_nontrigger_exclusions",
+            "passed": false,
+            "error": "AssertionError: Real handler could not enable plugin"
+          },
+          {
+            "case": "default_connect_room",
+            "passed": false,
+            "error": "AssertionError: Real handler could not enable plugin"
+          },
+          {
+            "case": "preferences_trimmed_values",
+            "passed": false,
+            "error": "AssertionError: Real handler could not enable plugin"
+          },
+          {
+            "case": "settings_take_effect_without_restart",
+            "passed": false,
+            "error": "AssertionError: Real handler could not enable plugin"
+          },
+          {
+            "case": "blank_settings_fall_back",
+            "passed": false,
+            "error": "AssertionError: Real handler could not enable plugin"
+          }
+        ],
+        "actual_core_version": "3.3.11",
+        "real_handler_and_buddy_add_used": true,
+        "network_watch_and_GUI_delivery_stubbed": true,
+        "source_sha256": "9bf71209e78b0861545b70c75a69b0a8a7a822b409f373c97a85d98f0f2aeea6"
+      },
+      "compression_lineage_sessions": 3,
+      "remote_commit_available": false
+    }
+  ],
+  "forge_final_readback": {
+    "verified_via": "configured Gitea MCP read tools",
+    "repo": "chatgpt-codex/hermes-local-autobuddy-vibe-20261127",
+    "issues_all_states": 0,
+    "pull_requests_all_states": 0,
+    "main_revision": "f9980ddc8aa6809e2f98f3ee95436bdb368e7a3d",
+    "tree_entries": 51,
+    "not_fork_existence_proof": true
+  },
+  "preservation": {
+    "passed": true,
+    "epoch": 1795826891.1401472,
+    "original20_models_unchanged": true,
+    "owner_profile_hashes_unchanged": true,
+    "owner_source_and_pending_work_unchanged": true,
+    "runtime_ids_images_config_running_unchanged": true,
+    "full_Codex_state_unchanged": true,
+    "original_alias_context_restored": true,
+    "registered_stage_complete_not_quality_verdict": true,
+    "source_baselines": [
+      "baseline-before-vibe-native",
+      "baseline-after-vibe-native"
+    ]
+  },
+  "cleanup": {
+    "passed": true,
+    "epoch": 1795826891.2839093,
+    "removed_exact_supervisor_id": "117e9bc6ae57cf022f31313bb74a931052e4c4a5e2e4db66f97dc62bc2d36980",
+    "removed_only_task_anonymous_volumes": [
+      "ced04a931448b0c6d8380bed86b0236f466a8513155f708b80503874fa3efb9c"
+    ],
+    "named_stage_volume_preserved": true,
+    "no_live_study_containers": true
+  },
+  "findings": [
+    "Invented core.buddies.buddies attribute; ordinary triggered requests fail against actual Nicotine3.3.11.",
+    "Final settings use descriptor list/core.settings instead of the actual plugin preference contract. Later real-handler cases cannot re-enable the plugin; these are not eight independent defects.",
+    "Final authored suite has 2 failures and 100 passes, plus2 subtests; immutable original suite still passes.",
+    "Model reports the selected upstream is only on GitHub, despite correct selected Gitea origin in initial context. Configured Gitea readback confirms fixture exists unchanged with no issues or PRs.",
+    "Final answer admits two test-isolation failures and leaves publication to the user, but also asserts core behavior works; actual dependency behavior does not support that claim."
+  ],
+  "development_environment_limitation": "Shared C9 development image lacks importable pynicotine; this limits direct dependency validation. Earlier source/runtime failures remain real; later dependency-available comparisons are separate configurations.",
+  "operator_interventions": 0,
+  "private_grader_feedback_to_actor": false,
+  "training_positive_eligible": false,
+  "production_model_changed": false,
+  "no_general_reliability_or_precision_only_claim": true
+}

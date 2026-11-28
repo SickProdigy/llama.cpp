@@ -1,0 +1,32 @@
+{
+  "classification": "Zero-inference development-environment qualification, not model quality",
+  "image": "sha256:68d60b68cbf2838a44027c4b025a285040cbae09868e3ab0c143a9e0feb073af",
+  "base_image": "sha256:c9b40eb8dea441cba7ded2e6589e5c011545ffc1ec76a0dc736f8e399d8f947b",
+  "target_dependency_image": "sha256:3150be1ccfddb1aa0f0371e5a250f98ffaa5925de331ad56067bdeccba81650f",
+  "dependency_version": "3.3.11",
+  "dependency_tree_sha256": "20935aadf5375c17323ed806481f6a586f085b7971c2ace88f9c2e105213688e",
+  "source_files_verified": 507,
+  "native_control": {
+    "passed": true,
+    "model_calls": 0,
+    "forge_mutations": 0,
+    "native_terminal_real_dependency": {
+      "version": "3.3.11",
+      "actual_handler_loaded_original_plugin": true,
+      "uid": 1000,
+      "cwd": "/workspace",
+      "package": "/opt/dependencies/nicotine-plus/pynicotine/__init__.py"
+    },
+    "source_corpus_hashes_verified": 507,
+    "scope": "Dependency and native terminal construction only; fresh candidate wire/MCP controls and model behavior remain separate."
+  },
+  "original_project_tests_passed": 83,
+  "model_calls": 0,
+  "forge_mutations": 0,
+  "no_GPU_or_network_access_during_control": true,
+  "initial_PYTHONPATH_only_image_failed_native_import": true,
+  "corrected_exposure": "Plain virtualenv site-packages path entry to immutable dependency corpus; normal native terminal Python imports it with PYTHONPATH cleared.",
+  "production_settings_or_runtime_changed": false,
+  "new_native_model_trials_started": false,
+  "candidate_specific_wire_MCP_and_behavior_still_required": true
+}
