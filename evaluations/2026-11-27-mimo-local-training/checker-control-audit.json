@@ -15,6 +15,17 @@
   },
   "old_files_modified": false,
   "primary_checker_modified": false,
-  "behavioral_replacement_validation": "Pending until active GPU trial and exact preservation/cleanup complete",
+  "behavioral_replacement_validation": {
+    "passed": true,
+    "case_vector": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "primary_checker_changed": false,
+    "model_feedback_supplied": false
+  },
   "consequence": "Old negative control proves rejection of an unimportable plugin, not isolated case-sensitivity detection. Working-reference and direct candidate runtime observations remain separate evidence."
 }

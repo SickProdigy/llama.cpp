@@ -1,0 +1,257 @@
+{
+  "candidate": "MiMo-V2.6-Distill-Qwen-9B Q6_K",
+  "context": 98304,
+  "GPU_layers": "33/33",
+  "backend": "b12723-abca69200",
+  "main_aux_output_cap": 8192,
+  "sampler": {
+    "temperature": 0.6,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0,
+    "thinking": true,
+    "seed": 20261127
+  },
+  "template_sha256": "d2365d1a768f61a6e46156c7dc5a7e08fe95f6bd0a9ce5cf606e908b3489a840",
+  "model_sha256": "ef96d05a2ddf2cbb450d1af1ac3860ec769d3575bafa70692ee5609bda3fad7d",
+  "classification": "FAIL: dependency-available development comparison; real API and publication improve, configured-trigger defect remains",
+  "whole_workflow_pass": false,
+  "tasks_independent": false,
+  "evaluator_image": "sha256:68d60b68cbf2838a44027c4b025a285040cbae09868e3ab0c143a9e0feb073af",
+  "protocol_sha256": "b802dd6e3588f3744a7937fce2f9003c32bd4784186d1a69003ee79ba8235cfe",
+  "phases": [
+    {
+      "phase": 0,
+      "seconds": 1323.5755818800244,
+      "native_exit_code": 1,
+      "external_timeout": false,
+      "project_suite_passed": true,
+      "immutable_original_suite_passed": true,
+      "local_remote_source_digest": "a43a813f011a0592174343a0fc90673c38bdd8ae808e4203a0e99da7a40a7d44",
+      "real_core": {
+        "passed": true,
+        "phase": 0,
+        "cases": [
+          {
+            "case": "ordinary_new_buddy",
+            "passed": true
+          },
+          {
+            "case": "repeat_request_is_silent",
+            "passed": true
+          },
+          {
+            "case": "existing_buddy_casefold_is_silent",
+            "passed": true
+          },
+          {
+            "case": "room_self_nontrigger_exclusions",
+            "passed": true
+          },
+          {
+            "case": "default_connect_room",
+            "passed": true
+          }
+        ],
+        "actual_core_version": "3.3.11",
+        "real_handler_and_buddy_add_used": true,
+        "network_watch_and_GUI_delivery_stubbed": true,
+        "source_sha256": "f9781d81e87f74012926786d56e29fa34df35ef9c78464d582813d6a1c8659a3"
+      },
+      "authored_tests_fail_on_baseline": true,
+      "compression_lineage_sessions": 1,
+      "upstream_PR_present": false
+    },
+    {
+      "phase": 1,
+      "seconds": 274.909987446008,
+      "native_exit_code": 0,
+      "external_timeout": false,
+      "project_suite_passed": true,
+      "immutable_original_suite_passed": true,
+      "local_remote_source_digest": "b94be3e47eb928ed7050a18a9e440693c7c4926fc79517d6df892e63fa012c7d",
+      "real_core": {
+        "passed": true,
+        "phase": 1,
+        "cases": [
+          {
+            "case": "ordinary_new_buddy",
+            "passed": true
+          },
+          {
+            "case": "repeat_request_is_silent",
+            "passed": true
+          },
+          {
+            "case": "existing_buddy_casefold_is_silent",
+            "passed": true
+          },
+          {
+            "case": "room_self_nontrigger_exclusions",
+            "passed": true
+          },
+          {
+            "case": "default_connect_room",
+            "passed": true
+          }
+        ],
+        "actual_core_version": "3.3.11",
+        "real_handler_and_buddy_add_used": true,
+        "network_watch_and_GUI_delivery_stubbed": true,
+        "source_sha256": "f9781d81e87f74012926786d56e29fa34df35ef9c78464d582813d6a1c8659a3"
+      },
+      "authored_tests_fail_on_baseline": true,
+      "compression_lineage_sessions": 1,
+      "upstream_PR_present": true
+    },
+    {
+      "phase": 2,
+      "seconds": 1712.7957471779955,
+      "native_exit_code": 0,
+      "external_timeout": false,
+      "project_suite_passed": true,
+      "immutable_original_suite_passed": true,
+      "local_remote_source_digest": "7b40dd32686a1f838c3639b0ff91c8e68dd1da1d15bf7057d79dbac20c28dee1",
+      "real_core": {
+        "passed": false,
+        "phase": 2,
+        "cases": [
+          {
+            "case": "ordinary_new_buddy",
+            "passed": true
+          },
+          {
+            "case": "repeat_request_is_silent",
+            "passed": true
+          },
+          {
+            "case": "existing_buddy_casefold_is_silent",
+            "passed": true
+          },
+          {
+            "case": "room_self_nontrigger_exclusions",
+            "passed": true
+          },
+          {
+            "case": "default_connect_room",
+            "passed": true
+          },
+          {
+            "case": "preferences_trimmed_values",
+            "passed": false,
+            "error": "AssertionError: "
+          },
+          {
+            "case": "settings_take_effect_without_restart",
+            "passed": true
+          },
+          {
+            "case": "blank_settings_fall_back",
+            "passed": true
+          }
+        ],
+        "actual_core_version": "3.3.11",
+        "real_handler_and_buddy_add_used": true,
+        "network_watch_and_GUI_delivery_stubbed": true,
+        "source_sha256": "ca898702e7c3466f2b9040ef58241e2924a024501d802605a7b866de3d9ce0f2"
+      },
+      "authored_tests_fail_on_baseline": true,
+      "compression_lineage_sessions": 2,
+      "upstream_PR_present": true
+    }
+  ],
+  "coding_seconds": 3311.281316504028,
+  "requests_completed": 119,
+  "first_request_seconds": 68.32062554359436,
+  "max_actual_prompt_tokens": 83042,
+  "cache": {
+    "cumulative_input_tokens": 6301686,
+    "cumulative_cached_input_tokens": 6131355,
+    "token_weighted_cached_fraction": 0.9729705669244707,
+    "median_request_seconds": 16.446558713912964,
+    "cumulative_replayed_history_not_context_size": true
+  },
+  "GPU_peak_MiB": 8350,
+  "study_cgroup_peak_bytes": 7454531584,
+  "study_swap_peak_bytes": 0,
+  "minimum_Docker_root_free_bytes": 116734984192,
+  "minimum_model_disk_free_bytes": 203880542208,
+  "final_forge_readback": {
+    "issue": {
+      "number": 1,
+      "state": "closed"
+    },
+    "pr": {
+      "number": 2,
+      "state": "open",
+      "merged": false,
+      "head_sha": "993fb2d1a2ddc8dcf3bde58c91eb26e31bb6382e",
+      "head_branch": "wide-autobuddy-mimo-q6-deps-buddy-dedupe",
+      "head_repo": "hermes-agent/hermes-deps-autobuddy-mimo-20261128",
+      "base_repo": "chatgpt-codex/hermes-deps-autobuddy-mimo-20261128",
+      "base_branch": "main"
+    },
+    "source": "Configured Gitea MCP independent readback"
+  },
+  "supplemental_source_review": {
+    "classification": "Posthoc supplemental source review, separate from unchanged primary registered grades",
+    "controls_passed": true,
+    "primary_grades_unchanged": true,
+    "valid_case_sensitive_negative_case_vector": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "original_baseline_remove_readd_passed": true,
+    "reference_remove_readd_passed": true,
+    "candidate_snapshots": [
+      {
+        "phase": 0,
+        "source_sha256": "f9781d81e87f74012926786d56e29fa34df35ef9c78464d582813d6a1c8659a3",
+        "remove_readd_passed": false
+      },
+      {
+        "phase": 2,
+        "source_sha256": "ca898702e7c3466f2b9040ef58241e2924a024501d802605a7b866de3d9ce0f2",
+        "remove_readd_passed": false
+      }
+    ]
+  },
+  "preservation": {
+    "passed": true,
+    "epoch": 1795831385.624662,
+    "original20_models_unchanged": true,
+    "owner_profile_hashes_unchanged": true,
+    "owner_source_and_pending_work_unchanged": true,
+    "runtime_ids_images_config_running_unchanged": true,
+    "full_Codex_state_unchanged": true,
+    "original_alias_context_restored": true,
+    "three_turns_complete_not_quality_verdict": true,
+    "source_baselines": [
+      "baseline-before-mimo-q6-deps-native",
+      "baseline-after-mimo-q6-deps-native"
+    ]
+  },
+  "cleanup": {
+    "passed": true,
+    "epoch": 1795831385.770391,
+    "removed_exact_supervisor_id": "4c0736260688ede2b44fea53cb6249ebdf331999a3d082fc86639040bcc732b5",
+    "removed_only_task_anonymous_volumes": [
+      "da6b9171da3b767f6aa38faa81c4339e22f0e43f43efe3dfd25e0bedf9d03051"
+    ],
+    "named_stage_volume_preserved": true,
+    "no_live_study_containers": true
+  },
+  "training_positive_eligible": false,
+  "grader_feedback_to_actor": false,
+  "operator_patch_or_correction": false,
+  "limitations": [
+    "One development workflow with three dependent tasks, not independent repetitions.",
+    "Remove/re-add is a posthoc supplemental check, not a prospective blind primary grade.",
+    "Initial task reaches tool limit without requested PR; PR appears during documentation followup.",
+    "Authored suite passes but final configured mixed-case trigger fails real runtime.",
+    "Full history remains ineligible for positive training data."
+  ]
+}
