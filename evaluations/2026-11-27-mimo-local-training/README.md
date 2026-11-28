@@ -165,3 +165,10 @@ Before Mellum inference, an [explicit-seed amendment](mellum21-explicit-seed-ame
 
 
 The [Mellum Q6 download](mellum21-download.json) is complete:10,879,833,184 bytes and full SHA match the pinned public artifact. It took16.14minutes. All original20 models remain unchanged; the main-folder count is now21. Independent before/after checks verify full unchanged service/Codex state, owner profiles/source/pending work and storage reserves. No GPU qualification, workflow or training has started at this point. The artifact is directly under `llama.cpp/models`, with no duplicate HF cache copy.
+
+
+## Mellum short GPU/tool qualification: pass
+
+The public Q6 loads98,304 context with29/29 layers onGPU and observed peak11,124MiB. Three actual responses pass: exactly one valid `lookup_record` call, completion using the supplied result with no extra tool call, and exact dependent-history value. No separate reasoning is returned. Aggregate observed study cgroup peak is6.57GiB with zero study swap. Normal services are restored; all21-model inventory, owner profiles/source/pending work and full unchanged Hermes-Codex state pass preservation, followed by exact task cleanup. [Capacity result and retained responses](mellum21-capacity.json).
+
+This establishes loaded allocation and short tool-history compatibility only. No long synthetic retrieval probe, actual MCP mutation or coding workflow is included. The registered full native development comparison remains the next gate, after fresh two-identity fixture readmission.
