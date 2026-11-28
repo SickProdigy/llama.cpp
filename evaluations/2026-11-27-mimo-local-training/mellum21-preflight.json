@@ -88,5 +88,6 @@
     }
   ],
   "GPU_qualified": false,
-  "native_workflow_started": false
+  "native_workflow_started": false,
+  "pre_inference_seed_amendment": "mellum21-explicit-seed-amendment.json"
 }

@@ -1,0 +1,10 @@
+{
+  "registered_epoch": 1795874028.726753,
+  "classification": "Pre-inference seed admission amendment; zero Mellum model calls",
+  "main_and_aux_request_seed": 20261127,
+  "short_resource_probe_seed": 20261123,
+  "other_sampler_values_unchanged": true,
+  "previous_seed_unspecified_profile_and_receipts_archived": "preflight-amendments/mellum21-explicit-seed-20261128",
+  "no_model_outcome_or_GPU_run_preceded_amendment": true,
+  "download_selection_weights_and_live_download_process_unchanged": true
+}

@@ -42,5 +42,6 @@
     },
     "probe_output_cap": 8192
   },
-  "scope": "One declared fullyGPU layout. Exact builtin template, no MTP. Three real short tool-call/result/dependent-history responses; exact marker, no extra call or separate reasoning required. Full98k allocation and active resource measurement do not prove long-context coding or retrieval quality. No automatic CPUspill or template retry on failure. Aggregate observed study host memory8GiB, zero study swap, all storage reserves100GiB. No actor/forge/training data."
+  "scope": "One declared fullyGPU layout. Exact builtin template, no MTP. Three real short tool-call/result/dependent-history responses; exact marker, no extra call or separate reasoning required. Full98k allocation and active resource measurement do not prove long-context coding or retrieval quality. No automatic CPUspill or template retry on failure. Aggregate observed study host memory8GiB, zero study swap, all storage reserves100GiB. No actor/forge/training data.",
+  "probe_seed": 20261123
 }

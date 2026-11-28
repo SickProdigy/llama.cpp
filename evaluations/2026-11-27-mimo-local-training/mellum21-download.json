@@ -1,0 +1,30 @@
+{
+  "download": {
+    "passed": true,
+    "candidate": {
+      "repo": "JetBrains/Mellum2.1-12B-A2.5B-Instruct-GGUF",
+      "revision": "a7b59537ac5f9405d641b1dbef6ba3a6ba8c0ab1",
+      "file": "Mellum2.1-12B-A2.5B-Instruct-Q6_K.gguf",
+      "public_bytes": 10879833184,
+      "public_full_SHA256": "6bbaf390b6891acaa36a94accfb0dc5881e4560cdd3a0cdc4ab1de07ffd636ee"
+    },
+    "downloaded_bytes": 10879833184,
+    "full_sha256": "6bbaf390b6891acaa36a94accfb0dc5881e4560cdd3a0cdc4ab1de07ffd636ee",
+    "seconds": 968.5059838294983,
+    "destination": "/media/prodigy/Coding-Programming/docker-containers2/llama.cpp/models/Mellum2.1-12B-A2.5B-Instruct-Q6_K.gguf",
+    "free_GiB": 179.41099166870117,
+    "production_not_changed": true,
+    "no_fit_or_quality_claim": true
+  },
+  "preservation": {
+    "passed": true,
+    "epoch": 1795874151.165115,
+    "original20_models_unchanged": true,
+    "exactly_one_verified_public_Q6_added": true,
+    "main_model_count": 21,
+    "full_runtime_and_Codex_state_unchanged": true,
+    "owner_profiles_source_and_pending_unchanged": true,
+    "all_storage_reserves_preserved": true,
+    "no_GPU_trial_or_training_started": true
+  }
+}

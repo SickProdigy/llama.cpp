@@ -20,7 +20,8 @@
     "presence_penalty": 0,
     "chat_template_kwargs": {
       "enable_thinking": false
-    }
+    },
+    "seed": 20261127
   },
   "tool_interface": "Actual native CLI32tools, local file/terminal coding and tests, configured scoped Gitea MCP for upstream issue/personal fork/branch/workspace commit/upstreamPR; no remote edit tool.",
   "fixture_reuse": "Untouched previous fixture only after both identities verify40baseline blobs, zero issues/PRs and actor fork404. No new duplicate repository.",
