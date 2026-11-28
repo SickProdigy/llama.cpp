@@ -105,3 +105,24 @@ The separate private [hermes-tool-training repository](/chatgpt-codex/hermes-too
 Primary artifact references: [publisher](https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B), [public Q6](https://huggingface.co/bartowski/MiMo-V2.6-Distill-Qwen-9B-GGUF), [official template reference](https://huggingface.co/ggml-org/MiMo-V2.6-Distill-Qwen-9B-GGUF).
 
 Native launch admission subsequently stopped before inference because Docker's separate staging filesystem reached its reserve. The obsolete task-added IQ4 copy there was retired under the owner's cleanup authorization, restoring about112.76GiB free; main-folder20 and useful stagedQ3 are unchanged. See the cleanup report's staged-retirement receipt. This was a storage admission event, not a model-quality failure.
+
+
+## November 28 resumed nonthinking Vibe comparison
+
+The registered nonthinking comparison is complete. It fails the workflow in14.94 coding minutes across80 requests: no repository changes, no authored tests, no issue and no PR. This uses the same C11 dependency image, Vibe Q4 weights,98,304 context,41/41 GPU layers, sampler and8,192 output caps; thinking is explicitly false for main and auxiliary. The actual first native wire has32 tools, the selected fixture context and no remote-edit tool. This is one development configuration comparison with three dependent tasks, not an exact everyday-profile replica or reliability estimate.
+
+| Dependent task | Coding time | Native exit | Source changes | Registered real runtime |
+| --- | --- | --- | --- | --- |
+| New-buddy idempotency | 9.42 min | 0 | None | 3/5 pass; requested behavior remains absent |
+| Documentation | 3.31 min | 0 | None | Same3/5 baseline result |
+| Live settings | 2.21 min | 0 | None | 4/8 pass; requested settings remain absent |
+
+All80 native tool calls are46 `skill_manage` and34 `skill_view`. The46 proposed skill operations are staged for approval, not applied; the actor repeatedly tries to read a nonexistent `autobuddy-integration` skill and rereads unchanged existing skills. The native no-progress guard ends each phase. Exit0 therefore means a stopped conversation, not successful work. Normal skill approval is retained; no operator approves these edits or feeds the actor corrections. This failure does not establish that thinking should universally remain enabled, but disabling it alone did not help this workflow.
+
+The unchanged original83 tests pass at all three steps; that is not proof of new functionality. Real Nicotine+3.3.11 checks remain at3/5,3/5 and4/8. All source digests match the baseline. The separate remove/re-add supplement also passes on the untouched original source, with valid semantic controls; it does not satisfy the requested changes. Configured Gitea MCP independently confirms fixture main `f9980ddc8aa6809e2f98f3ee95436bdb368e7a3d`,40 baseline blobs, zero issues and zero PRs. No claim is made about absence of every possible private fork.
+
+Peak GPU memory is8,944MiB, aggregate observed study cgroup peak6.93GiB, with zero study swap. Maximum actual prompt input is50,060 tokens. Strict preservation and exact cleanup pass for all20 models, owner profile/source/pending work, original service identity/image/config/running state and full Hermes-Codex state. The normal services are restored. The failed trajectory is excluded from positive training data. [Machine-readable result](native-vibe-q4-nonthinking-summary.json).
+
+The first resumed startup attempt encountered a missing pinned test-backend image before any model request. It was independently restored and archived, and is not counted as a model failure or hidden model retry. The exact old backend image was recovered from an immutable official AMD64 manifest after a storage admission check, leaving more than100GiB free on Docker storage. The scored attempt uses that recovered original backend; production images were not downgraded.
+
+Next diagnostic: prospectively compare a leaner native tool configuration while preserving local coding/testing and configured Gitea publication. The observed skill-management loop gives a specific reason to test tool selection before downloading another quantization. Keep this separate from model-only comparisons and retain normal owner approval settings.
