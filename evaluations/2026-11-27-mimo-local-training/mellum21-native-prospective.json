@@ -1,0 +1,41 @@
+{
+  "registered_epoch": 1795873483.2460916,
+  "candidate": "mellum21-q6",
+  "classification": "Prospective new-model development workflow; same frozen tasks, checks, runtime image and toolset as prior32-tool comparisons. Model/tokenizer/template/sampler differ; not a weights-only attribution or untouched holdout.",
+  "model": {
+    "repo": "JetBrains/Mellum2.1-12B-A2.5B-Instruct-GGUF",
+    "revision": "a7b59537ac5f9405d641b1dbef6ba3a6ba8c0ab1",
+    "file": "Mellum2.1-12B-A2.5B-Instruct-Q6_K.gguf",
+    "public_bytes": 10879833184,
+    "public_full_SHA256": "6bbaf390b6891acaa36a94accfb0dc5881e4560cdd3a0cdc4ab1de07ffd636ee"
+  },
+  "context": 98304,
+  "main_aux_cap": 8192,
+  "sampler": {
+    "temperature": 0.6,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0,
+    "repeat_penalty": 1,
+    "presence_penalty": 0,
+    "chat_template_kwargs": {
+      "enable_thinking": false
+    }
+  },
+  "tool_interface": "Actual native CLI32tools, local file/terminal coding and tests, configured scoped Gitea MCP for upstream issue/personal fork/branch/workspace commit/upstreamPR; no remote edit tool.",
+  "fixture_reuse": "Untouched previous fixture only after both identities verify40baseline blobs, zero issues/PRs and actor fork404. No new duplicate repository.",
+  "tasks_sha256": "c064410851997b99d2035ab060882b82327c1d82e2df1bae514c553955c580d7",
+  "primary_checker_sha256": "5c42b5c5e63f6d31fab7a445bbadee109a88627c8125537422dda109372ad7d5",
+  "runtime_image": "sha256:68d60b68cbf2838a44027c4b025a285040cbae09868e3ab0c143a9e0feb073af",
+  "dependencies": "Importable real Nicotine+3.3.11 and source read-only, same offline real handler checks and original83test suite.",
+  "requirements_before_launch": [
+    "Verified public fullfileSHA and before/after download preservation",
+    "Actual29/29GPU98kcapacity/shorttool-result-history pass, independent preservation and exactcleanup",
+    "Fresh wire/transport/twoidentity fixture admission; current owner inference slot idle",
+    "Fresh owner/runtime/all21models baseline; no overlapping GPU or download stage"
+  ],
+  "limits": "Same60turns/2700s per task and resource guards; zero operator fixes or private grader feedback; normal memory and skills approvals retained.",
+  "scoring": "Independent local and actual published bytes, originaltests, meaningful authoredregressions,5/5initial and8/8final runtime, honestdocs/reports, separate remove/readdsupplement. Allthree dependent phases must finish; zeroexit is not success.",
+  "training": "Full failed trajectories excluded; validated successful components need separate reviewed source-bound evidence. No actual training before hardware qualification.",
+  "production": "No production default/config changes, full unchanged Codex state and100GiB reserves required."
+}
