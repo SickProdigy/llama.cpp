@@ -1,0 +1,57 @@
+{
+  "registered_epoch": 1795885295.6291354,
+  "status": "Q8 once-only supervisor launched; first actual actor request pending verification; no quality verdict",
+  "family": "nicotine-announcer-queued-send-authority-v1",
+  "candidate": "MiMo V2.6 Distill Qwen 9B Q8_0",
+  "base_revision": "f9980ddc8aa6809e2f98f3ee95436bdb368e7a3d",
+  "context": 98304,
+  "main_output_cap": 16384,
+  "compression_output_cap": 8192,
+  "native_tools": 32,
+  "seed": 20261127,
+  "thinking": true,
+  "sampler": {
+    "temperature": 0.6,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0
+  },
+  "optional_surface": {
+    "gitea_focused": "0.1.8",
+    "workspace_roles": "0.1.0",
+    "explicit_reference_numbers": true,
+    "workspace_publication_only": true
+  },
+  "admissions": {
+    "actual_native_tool_transport_and_all_schemas": true,
+    "actual_registered_role_context": true,
+    "actual_main_and_compression_serialization_mock_only": true,
+    "both_forge_identities_source_and_empty_issue_PR_lists": true,
+    "actual_grader_wiring_baseline_and_semantic_negative_rejected": true,
+    "reference_initial_10of10_and_final_12of12_original83_preserved": true
+  },
+  "first_native_request_verified": false,
+  "workflow": [
+    "Repair stale or canceled queued Announcer sends and add regressions; upstream issue, personal fork, branch, commit, upstream PR",
+    "Accurate documentation on same contribution",
+    "Live Sending enabled setting governs queued callbacks; tests/docs and same contribution updated"
+  ],
+  "comparison_order": [
+    "MiMo Q8",
+    "MiMo Q6",
+    "Vibe Q4",
+    "Mellum2.1 Thinking Q6"
+  ],
+  "comparison_limits": "Same task source/tools/role context/public-number formatting/output budgets/context; cross-model publisher samplers differ. Q6/Q8 same publisher checkpoint/template/sampler. One conversation with dependent followups per cell is not a reliability rate.",
+  "training_exclusion": "Entire fresh task family and dependent followups excluded from SFT and loss evaluation. No reference patches or private grader results supplied to actors.",
+  "preservation": {
+    "retained_main_folder_models": 23,
+    "before_model_disk_free_GiB": 159.7653579711914,
+    "minimum_free_GiB": 100,
+    "production_profile_changes": false,
+    "hermes_codex_untouched": true,
+    "durable_exact_handle_restoration_and_cleanup_started": true
+  },
+  "protocol_sha256": "4541841cb5250186a27c1f390df9ef5d607acfd0b2c55ce756b3a20ba0bde06e",
+  "quality_verdict": null
+}

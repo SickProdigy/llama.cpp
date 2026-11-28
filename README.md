@@ -4,7 +4,7 @@
 
 The automatic workspace-role comparison is complete: Thinking Q6 creates a real fork, branch and3remote commits, but still fails settings and PR publication (23.71coding/27.71end-to-endminutes). Optional explicit public issue/PR numbers now pass actual native admission with the same32tools; fresh model trials are next. [Latest evidence](evaluations/2026-11-27-mimo-local-training/README.md#workspace-role-comparison-complete-publication-improves-workflow-fails).
 
-MiMo9B Q8 now passes98k/all33GPU compatibility at9,788MiB, correct tool/result/history and exact16k/60k/80k markers. All23models and owner/runtime/Codex state are preserved. Native coding/Gitea quality remains untested forQ8. [Measured qualification](evaluations/2026-11-27-mimo-local-training/mimo-q8-capacity.json).
+MiMo9B Q8 now passes98k/all33GPU compatibility at9,788MiB, correct tool/result/history and exact16k/60k/80k markers. All23models and owner/runtime/Codex state are preserved. The fresh Announcer native supervisor has now started; coding/Gitea quality is pending. [Measured qualification](evaluations/2026-11-27-mimo-local-training/mimo-q8-capacity.json).
 
 User-authorized storage cleanup (November 27): retired 11 slow, failed or redundant files across two batches, freeing 94.41 GiB total. All four VibeForged/FableVibes variants and useful alternatives remain (19 main-folder GGUFs); 197.56 GiB free observed. Production services/configurations are unchanged. [Decisions and checksums](evaluations/2026-11-27-model-cleanup/README.md).
 
