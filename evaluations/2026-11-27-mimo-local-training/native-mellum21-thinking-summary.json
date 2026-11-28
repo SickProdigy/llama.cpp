@@ -1,0 +1,445 @@
+{
+  "candidate": "Mellum2.1-12B-A2.5B-Thinking Q6_K",
+  "classification": "FAIL whole workflow: correct initial fix and meaningful regressions, missing preferences declaration and no personal-fork/upstream PR publication",
+  "whole_workflow_pass": false,
+  "tasks_independent": false,
+  "protocol_sha256": "1ba7d47c2e40a82d6267143832986ec2b3e5a4381b37e46019b79b0187c0ad81",
+  "model": {
+    "registered_epoch": 1795875389.4996846,
+    "candidate": {
+      "repo": "JetBrains/Mellum2.1-12B-A2.5B-Thinking-GGUF",
+      "revision": "42f68c5f53975b7b88bd6dca61161ae88dc3c149",
+      "file": "Mellum2.1-12B-A2.5B-Thinking-Q6_K.gguf",
+      "public_bytes": 10879834400,
+      "public_full_SHA256": "12aec619f6a2c82b1ea8998f03665b3b5fc5bb758af97efdf4b1ec7a822b8668"
+    },
+    "destination": "models/Mellum2.1-12B-A2.5B-Thinking-Q6_K.gguf",
+    "download_stop_free_bytes": 109521666048,
+    "source_repo": "JetBrains/Mellum2.1-12B-A2.5B-Thinking",
+    "source_revision": "92ddae9fc7665e9f801d141d2e5a6b2caf2460c4",
+    "public_card": "https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking",
+    "comparison": "Separate thinking checkpoint versus completed Instruct checkpoint at sameQ6precision and architecture. Different weights/template/thinking/outputbudget; no isolated flag-toggle or weights-only claim.",
+    "rationale": "Instruct loads and handles short tools, but actual code invents API, adds empty tests and omits Gitea. Test separately trained reasoning checkpoint before another Instruct quantization.",
+    "header_comparison": {
+      "same_tensor_names_dimensions": true,
+      "same_tensor_type_counts": true,
+      "same_template": false,
+      "layers": 28,
+      "expected_GPU_layers": 29,
+      "model_context": 131072,
+      "builtin_thinking_template_sha256": "4593a34d52f3364ac13ce57f4bea5688924e8942da6df8201e411db17e729f48",
+      "enable_thinking_kwarg_supported": true
+    },
+    "target_capacity": {
+      "context": 98304,
+      "GPU_layers": 99,
+      "cache_k": "q4_0",
+      "cache_v": "q4_0",
+      "ubatch": 64,
+      "parallel": 1,
+      "MTP": false
+    },
+    "native_sampler": {
+      "temperature": 0.6,
+      "top_p": 0.95,
+      "top_k": 20,
+      "min_p": 0,
+      "repeat_penalty": 1,
+      "presence_penalty": 0,
+      "chat_template_kwargs": {
+        "enable_thinking": true
+      },
+      "seed": 20261127
+    },
+    "planned_main_output_cap": 16384,
+    "planned_aux_output_cap": 8192,
+    "output_budget_rationale": "Accuracy-first reasoning checkpoint gets16kmain rather than inheriting direct-answer8kcap;98kcontext remains fixed and admission must measureactualrequests. This is declared before inference and is a configuration comparison.",
+    "gates": [
+      "PreviousMellum native preservation and exactcleanup passed",
+      "Fresh21model/runtime/owner baseline; no overlapping GPUwork",
+      "Directpartfile download, exactsize/fullSHA, all100GiBreserves and onlyone newartifact before/after proof",
+      "Independent98kallGPU/tool-result-history thinking qualification before native coding",
+      "Same3frozen developmenttasks,32native local/Giteatools, no operatorhints or graderfeedback, normalapprovalsettings"
+    ],
+    "no_quality_or_GPU_fit_claim_for_thinking_weights": true,
+    "actual_training_started": false
+  },
+  "context": 98304,
+  "GPU_layers": "29/29",
+  "main_output_cap": 16384,
+  "auxiliary_output_cap": 8192,
+  "actual_initial_wire": {
+    "epoch": 1795877198.373854,
+    "model": "gpuquant-mellum21-thinking-q6",
+    "max_tokens": 16384,
+    "temperature": 0.6,
+    "thinking": true,
+    "seed": 20261127,
+    "reasoning_effort": "medium",
+    "actual_native_tool_count": 32,
+    "selected_fixture_context_present": true,
+    "remote_edit_tool_absent": true
+  },
+  "phases": [
+    {
+      "phase": 0,
+      "seconds": 667.3685252190044,
+      "native_exit_code": 0,
+      "external_timeout": false,
+      "project_exit": 0,
+      "immutable_original_suite_passed": true,
+      "real_core": {
+        "passed": true,
+        "phase": 0,
+        "cases": [
+          {
+            "case": "ordinary_new_buddy",
+            "passed": true
+          },
+          {
+            "case": "repeat_request_is_silent",
+            "passed": true
+          },
+          {
+            "case": "existing_buddy_casefold_is_silent",
+            "passed": true
+          },
+          {
+            "case": "room_self_nontrigger_exclusions",
+            "passed": true
+          },
+          {
+            "case": "default_connect_room",
+            "passed": true
+          }
+        ],
+        "actual_core_version": "3.3.11",
+        "real_handler_and_buddy_add_used": true,
+        "network_watch_and_GUI_delivery_stubbed": true,
+        "source_sha256": "916e9a2a1486e5c070222905d6090e4da7c846302640536974ad9e46d0357baf"
+      },
+      "authored_test_paths": [
+        "tests/test_autobuddy.py"
+      ],
+      "authored_on_baseline_exit": 1,
+      "changed_paths": [
+        "autobuddy/__init__.py",
+        "tests/test_autobuddy.py"
+      ],
+      "forge_scope_state": {
+        "issue": 1,
+        "pr": null,
+        "branch": null,
+        "commits": 0
+      },
+      "source_digest": "5be5fc3c361bd80285324aa7be66d655eb4f93e365a0ba11edfc087c57a3a574"
+    },
+    {
+      "phase": 1,
+      "seconds": 346.84883763699327,
+      "native_exit_code": 0,
+      "external_timeout": false,
+      "project_exit": 0,
+      "immutable_original_suite_passed": true,
+      "real_core": {
+        "passed": true,
+        "phase": 1,
+        "cases": [
+          {
+            "case": "ordinary_new_buddy",
+            "passed": true
+          },
+          {
+            "case": "repeat_request_is_silent",
+            "passed": true
+          },
+          {
+            "case": "existing_buddy_casefold_is_silent",
+            "passed": true
+          },
+          {
+            "case": "room_self_nontrigger_exclusions",
+            "passed": true
+          },
+          {
+            "case": "default_connect_room",
+            "passed": true
+          }
+        ],
+        "actual_core_version": "3.3.11",
+        "real_handler_and_buddy_add_used": true,
+        "network_watch_and_GUI_delivery_stubbed": true,
+        "source_sha256": "916e9a2a1486e5c070222905d6090e4da7c846302640536974ad9e46d0357baf"
+      },
+      "authored_test_paths": [
+        "tests/test_autobuddy.py"
+      ],
+      "authored_on_baseline_exit": 1,
+      "changed_paths": [
+        "README.md",
+        "autobuddy/PLUGININFO",
+        "autobuddy/__init__.py",
+        "tests/test_autobuddy.py"
+      ],
+      "forge_scope_state": {
+        "issue": 1,
+        "pr": null,
+        "branch": null,
+        "commits": 0
+      },
+      "source_digest": "afe8ad6a77767edbebbc141c01e23af0f072736099a6c67379f92756424711cc"
+    },
+    {
+      "phase": 2,
+      "seconds": 657.0975381479948,
+      "native_exit_code": 0,
+      "external_timeout": false,
+      "project_exit": 0,
+      "immutable_original_suite_passed": true,
+      "real_core": {
+        "passed": false,
+        "phase": 2,
+        "cases": [
+          {
+            "case": "ordinary_new_buddy",
+            "passed": true
+          },
+          {
+            "case": "repeat_request_is_silent",
+            "passed": true
+          },
+          {
+            "case": "existing_buddy_casefold_is_silent",
+            "passed": true
+          },
+          {
+            "case": "room_self_nontrigger_exclusions",
+            "passed": true
+          },
+          {
+            "case": "default_connect_room",
+            "passed": true
+          },
+          {
+            "case": "preferences_trimmed_values",
+            "passed": false,
+            "error": "AssertionError: "
+          },
+          {
+            "case": "settings_take_effect_without_restart",
+            "passed": true
+          },
+          {
+            "case": "blank_settings_fall_back",
+            "passed": true
+          }
+        ],
+        "actual_core_version": "3.3.11",
+        "real_handler_and_buddy_add_used": true,
+        "network_watch_and_GUI_delivery_stubbed": true,
+        "source_sha256": "a86b9c9a4d2894ca850214a3083866b639f5396702f53d8c595c2631c1e35a93"
+      },
+      "authored_test_paths": [
+        "tests/test_autobuddy.py"
+      ],
+      "authored_on_baseline_exit": 1,
+      "changed_paths": [
+        "README.md",
+        "autobuddy/PLUGININFO",
+        "autobuddy/__init__.py",
+        "tests/test_autobuddy.py"
+      ],
+      "forge_scope_state": {
+        "issue": 1,
+        "pr": null,
+        "branch": null,
+        "commits": 0
+      },
+      "source_digest": "d447c09a5bca8d6a1c4b0bcffe580cd970180a8361c1104652328ba35e073864"
+    }
+  ],
+  "coding_seconds": 1671.3149010039924,
+  "requests_completed": 96,
+  "observed_tool_calls": {
+    "terminal": 24,
+    "search_files": 10,
+    "read_file": 18,
+    "patch": 11,
+    "gitea_repository_info": 1,
+    "gitea_search_repositories": 9,
+    "execute_code": 9,
+    "gitea_create_issue": 1,
+    "write_file": 2,
+    "gitea_fork_repository": 2,
+    "gitea_create_branch": 1,
+    "gitea_commit_workspace": 1,
+    "gitea_list_branches": 1,
+    "gitea_list_issues": 1,
+    "gitea_identity": 1
+  },
+  "maximum_actual_prompt_tokens": 65750,
+  "resource_observations": {
+    "GPU_peak_MiB": 11124,
+    "aggregate_cgroup_peak_GiB": 6.552947998046875,
+    "study_swap_peak_bytes": 0,
+    "minimum_free_GiB": {
+      "docker_root_free_bytes": 108.23102188110352,
+      "model_disk_free_bytes": 168.89590072631836,
+      "staging_disk_free_bytes": 168.89590072631836
+    }
+  },
+  "source_review": {
+    "initial_api": "Uses actual core.buddies.users with casefold comparisons",
+    "regressions": "Two meaningful tests for repeated trigger and existing mixed-case buddy; actual baseline replay fails those assertions, not collection/import. All83 original tests pass. Final suite85 passes with2subtests.",
+    "settings": "Final reads live values and trims/falls back, but declares neither class settings nor metasettings. Registered preferences check fails before its configured-value assertions. Live-change and blank-fallback cases pass.",
+    "docs": "Updates README and PLUGININFO but retains auto-add-on-join wording and claims configurable settings without native preference declarations. Runtime passes do not establish documentation correctness.",
+    "publication": "One upstream issue #1 (global database id1622), no successful scoped branch/commit/PR. Actor knows authenticated login hermes-agent but sends upstream owner chatgpt-codex as fork owner and hermes-agent as fork_name. Guard rejects these arguments; final authentication/network explanation is unsupported by those errors. Local commits are not remote publication.",
+    "local_commits": [
+      "98a4dd6",
+      "ece760b"
+    ],
+    "final_local_commit_prefix": "ece760b",
+    "iteration_limit_claim": "All three native exits0 and actual assistant finals; missing publication is not an iteration-cap termination."
+  },
+  "supplemental_remove_readd": {
+    "classification": "Posthoc supplemental source review, separate from unchanged primary registered grades",
+    "epoch": 1795878913.0261877,
+    "controls_passed": true,
+    "valid_case_sensitive_primary_result": {
+      "passed": false,
+      "phase": 0,
+      "cases": [
+        {
+          "case": "ordinary_new_buddy",
+          "passed": true
+        },
+        {
+          "case": "repeat_request_is_silent",
+          "passed": true
+        },
+        {
+          "case": "existing_buddy_casefold_is_silent",
+          "passed": false,
+          "error": "AssertionError: "
+        },
+        {
+          "case": "room_self_nontrigger_exclusions",
+          "passed": true
+        },
+        {
+          "case": "default_connect_room",
+          "passed": true
+        }
+      ],
+      "actual_core_version": "3.3.11",
+      "real_handler_and_buddy_add_used": true,
+      "network_watch_and_GUI_delivery_stubbed": true,
+      "source_sha256": "6c0025ab24ec63b18a68905fe0752485dd7bc1dca24aa90d62464d51b298bf05"
+    },
+    "baseline_remove_readd": {
+      "classification": "Posthoc supplemental source-review probe; primary checker unchanged",
+      "passed": true,
+      "phase": 0,
+      "cases": [
+        {
+          "case": "removed_buddy_can_request_again",
+          "passed": true
+        }
+      ],
+      "actual_core_version": "3.3.11",
+      "real_handler_and_buddy_add_used": true,
+      "network_watch_and_GUI_delivery_stubbed": true,
+      "source_sha256": "026a3e1998ccf4e7e25613fcc4a81d977a933b3ec0dd97ede49b1de95e841ab3"
+    },
+    "reference_remove_readd": {
+      "classification": "Posthoc supplemental source-review probe; primary checker unchanged",
+      "passed": true,
+      "phase": 0,
+      "cases": [
+        {
+          "case": "removed_buddy_can_request_again",
+          "passed": true
+        }
+      ],
+      "actual_core_version": "3.3.11",
+      "real_handler_and_buddy_add_used": true,
+      "network_watch_and_GUI_delivery_stubbed": true,
+      "source_sha256": "07e05ec16c2ee1045218f80ced50f90a01aee20fa8ffa5fbf4a437b8578ae151"
+    },
+    "model_source_observations": [
+      {
+        "phase": 0,
+        "snapshot_kind": "local-grade",
+        "source_sha256": "916e9a2a1486e5c070222905d6090e4da7c846302640536974ad9e46d0357baf",
+        "actual": {
+          "classification": "Posthoc supplemental source-review probe; primary checker unchanged",
+          "passed": true,
+          "phase": 0,
+          "cases": [
+            {
+              "case": "removed_buddy_can_request_again",
+              "passed": true
+            }
+          ],
+          "actual_core_version": "3.3.11",
+          "real_handler_and_buddy_add_used": true,
+          "network_watch_and_GUI_delivery_stubbed": true,
+          "source_sha256": "916e9a2a1486e5c070222905d6090e4da7c846302640536974ad9e46d0357baf"
+        }
+      },
+      {
+        "phase": 2,
+        "snapshot_kind": "local-grade",
+        "source_sha256": "a86b9c9a4d2894ca850214a3083866b639f5396702f53d8c595c2631c1e35a93",
+        "actual": {
+          "classification": "Posthoc supplemental source-review probe; primary checker unchanged",
+          "passed": true,
+          "phase": 0,
+          "cases": [
+            {
+              "case": "removed_buddy_can_request_again",
+              "passed": true
+            }
+          ],
+          "actual_core_version": "3.3.11",
+          "real_handler_and_buddy_add_used": true,
+          "network_watch_and_GUI_delivery_stubbed": true,
+          "source_sha256": "a86b9c9a4d2894ca850214a3083866b639f5396702f53d8c595c2631c1e35a93"
+        }
+      }
+    ],
+    "primary_checker_unchanged": true,
+    "private_feedback_to_models": false,
+    "old_malformed_case_sensitive_control_preserved": true,
+    "supplement_sha256": "1062310eee4e585118a625a5405b1dbd6c869654726946a48829c7c7b10c3298"
+  },
+  "preservation": {
+    "passed": true,
+    "epoch": 1795878895.4447532,
+    "original22_models_unchanged": true,
+    "owner_profile_hashes_unchanged": true,
+    "owner_source_and_pending_work_unchanged": true,
+    "runtime_ids_images_config_running_unchanged": true,
+    "full_Codex_state_unchanged": true,
+    "original_alias_context_restored": true,
+    "three_turns_complete_not_quality_verdict": true,
+    "source_baselines": [
+      "baseline-before-mellum21-thinking-q6-native",
+      "baseline-after-mellum21-thinking-q6-native"
+    ]
+  },
+  "cleanup": {
+    "passed": true,
+    "epoch": 1795878895.606539,
+    "removed_exact_supervisor_id": "f21198bdf432dc3778162044d948cd08c30b94d0d45d7a24b85a58d81aec1404",
+    "removed_only_task_anonymous_volumes": [
+      "4105fb899bf582eb1e3d45325e5974345e9e90c7d9019facddf83ab834ab9771"
+    ],
+    "named_stage_volume_preserved": true,
+    "no_live_study_containers": true
+  },
+  "full_trajectory_positive_training_eligible": false,
+  "raw_reasoning_published_or_trained": false,
+  "operator_correction_or_private_grader_feedback": false,
+  "comparison_limit": "Different weights/template and main16k cap versus Instruct8k; not a pure thinking toggle or weights-only comparison."
+}

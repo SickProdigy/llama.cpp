@@ -206,3 +206,24 @@ The [Thinking Q6 download](mellum21-thinking-download.json) is complete:10,879,8
 The Thinking Q6 independently loads98,304 context with29/29 GPU layers and observed peak11,124MiB. It returns exactly one correct lookup, completes using the supplied result without another call, and returns the exact dependent-history marker. Separate reasoning is present in all three responses and retained in the rendered tool-result continuation; raw reasoning is kept private and is not training data. The16k probe cap and actual main16k/compression8k serialization are verified. Aggregate observed study cgroup peak is6.57GiB with zero study swap. All22models, owner profiles/source/pending work and runtime/fullCodex state pass preservation and exact cleanup. [Measured result](mellum21-thinking-capacity.json).
 
 This remains short compatibility, not coding correctness, actual MCP routing or long-context retrieval quality. The declared three-task native workflow is next after fresh fixture readmission, with no operator correction or private grader feedback.
+
+
+## Mellum Thinking native workflow: better initial code, still fails
+
+The three dependent tasks finish in **27.86 coding minutes**,96 requests and92 model-visible tool calls. Native exits are all0, with no external timeout. This is an accuracy-first16k-main/8k-auxiliary configuration with reasoning enabled, not a pure flag toggle against Instruct's8k main cap.
+
+| Dependent task | Coding time | Real Nicotine checks | Forge result |
+| --- | --- | --- | --- |
+| New-buddy idempotency | 11.12 min | 5/5 | Upstream issue #1; no personal-fork branch or PR |
+| Documentation | 5.78 min | 5/5 unchanged runtime | No publication |
+| Live settings | 10.95 min | 7/8; preferences declaration fails | No publication |
+
+The initial patch uses actual `core.buddies.users` with casefold comparisons. Two authored regression tests fail semantically on original code (duplicate acknowledgement and mixed-case duplicate insertion), then pass with the fix. All83 original tests remain green; final project suite is85 tests plus2subtests. Separate posthoc removal-and-re-add checks pass for both initial and final snapshots, unlike MiMo's cached acknowledgement implementation. No private checks or corrections are fed to the actor.
+
+The final code reads current settings and trims/falls back, but declares neither native `settings` defaults nor `metasettings`. The preferences check fails before its configured-value assertions; live-change and blank-fallback cases pass. The authored tests remain the two initial cases and do not cover preferences. README/PLUGININFO edits retain inaccurate auto-add-on-join wording and advertise configurability without native preference declarations. Runtime checks alone do not establish documentation correctness.
+
+The model uses Gitea and learns its login is `hermes-agent`, yet sends upstream owner `chatgpt-codex` as the working fork owner and sends `hermes-agent` as a repository fork name. Normal scope guards reject these arguments. Its final authentication/network explanation is unsupported by those errors. Upstream issue **#1** is created (database ID1622, mistakenly cited as the issue number in finals); no successful remote branch, commit or PR is recorded. Two local commits ending `ece760b` do not complete publication. All turns finish naturally; more iteration allowance is not an established remedy.
+
+Observed peak GPU memory is11,124MiB with29/29 layers at98,304 context; maximum actual prompt is65,750tokens. Aggregate observed study cgroup peak is6.55GiB with zero study swap. Minimum free space stays108.23GiB on Docker root and168.90GiB on the model/staging filesystem. All22 model files, owner profiles/source/pending work, original runtime and full unchanged Hermes-Codex state pass preservation and exact cleanup. The owner default is unchanged. The complete failed trajectory is excluded from positive training. [Measured native result](native-mellum21-thinking-summary.json).
+
+Thinking is substantially better than Instruct for this initial code task, but neither qualifies for unattended contributions. A useful next controlled comparison is automatically supplied, verified workspace roles (authenticated actor, Git-origin upstream and personal-fork destination), with no per-task implementation hint. It must use its own registered protocol; these results must not be relabeled after changing tools/context. A fresh Announcer family is separately reserved from training and still awaits checker-control qualification. Same-publisher MiMo Q8 remains undownloaded.
