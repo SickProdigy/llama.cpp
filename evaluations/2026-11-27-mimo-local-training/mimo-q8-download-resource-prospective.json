@@ -1,0 +1,67 @@
+{
+  "classification": "Pinned public higher-precision candidate download in progress; header-only admission, no full-model or GPU/coding result",
+  "registered_epoch": 1795883359.4558089,
+  "selection": {
+    "registered_epoch": 1795882740.7458413,
+    "candidate": {
+      "repo": "bartowski/MiMo-V2.6-Distill-Qwen-9B-GGUF",
+      "revision": "4371da10c84fb26da3592d4cf312d24aa82b7b65",
+      "file": "MiMo-V2.6-Distill-Qwen-9B-Q8_0.gguf",
+      "public_bytes": 9545979424,
+      "public_full_SHA256": "2fad0aa11bb9e7aa491ff12f768954f9dd0a6e7d4ce4a897ca73ec420f3b90ae"
+    },
+    "destination": "models/MiMo-V2.6-Distill-Qwen-9B-Q8_0.gguf",
+    "download_stop_free_bytes": 109521666048,
+    "comparison": "Same pinned bartowski publisher revision and underlying MiMo9B as retainedQ6. Use same reference template/sampler/main16kaux8k in fresh comparisons; own GGUF and98k allGPU tool-history admission required.",
+    "source_model_revision": "4ebd5043501b335f24e4968767f3995ab43e60a4",
+    "no_local_quantization": true,
+    "preserve_existing_models": 22
+  },
+  "download_progress_snapshot": {
+    "pid": 684857,
+    "epoch": 1795883356.1139262,
+    "downloaded_bytes": 6174015488,
+    "expected_bytes": 9545979424,
+    "HTTP_requests": 1,
+    "network_retries": 0,
+    "model_disk_free_GiB": 162.8798713684082,
+    "docker_root_free_GiB": 108.53175735473633
+  },
+  "download_location": "llama.cpp/models/MiMo-V2.6-Distill-Qwen-9B-Q8_0.gguf.part then atomic completion as .gguf",
+  "no_duplicate_HF_cache": true,
+  "header_comparison": {
+    "same_architecture_layout_tokenizer_builtin_template": true,
+    "architecture": "qwen35",
+    "tensor_count": 427,
+    "tensor_types_Q6": {
+      "14": 125,
+      "0": 225,
+      "8": 77
+    },
+    "tensor_types_Q8": {
+      "8": 202,
+      "0": 225
+    },
+    "Q8_prefix_sha256": "c276bb2cd78219be55f5c6778d79666b56e986f07b1baa6bd5e16d00b8caacf1",
+    "source_prefix_incomplete_full_model": true
+  },
+  "resource_prospective": {
+    "registered_epoch": 1795883063.217863,
+    "not_started": true,
+    "full_download_SHA_and22to23preservation_required": true,
+    "protocol_sha256": "44160ab2110067d31a9de77424f5f7e7c803d329cb45f1b1144676f1295fb0b3",
+    "controller_sha256": "5e1239d6bb3fec72e030482dc02dc814fe22d618d46eeabdb2825314fde0373e",
+    "template": "Existing pinned official reference file; builtin header is identical to retainedQ6 but builtin inference is not tested here",
+    "native_context": 98304,
+    "expected_GPU_layers": 33,
+    "probe_output_cap": 16384,
+    "strict_tool_history_and_exact_markers": true,
+    "same_actual_input_sizing_with1percent_tolerance": true,
+    "model_or_GPU_calls_started": false
+  },
+  "selected_reference_template_sha256": "d2365d1a768f61a6e46156c7dc5a7e08fe95f6bd0a9ce5cf606e908b3489a840",
+  "GPU_resource_launcher_is_not_running": true,
+  "coding_success_not_claimed": true,
+  "storage_and_runtime": "Download chain must preserve all22original models, owner profiles/source/pending work, full unchanged runtime/Codex and100GiBreserves. No service stop or GPU/training work during download. Capacity is separately gated on fullSHA and final preservation.",
+  "comparison_limits": "Resource16k output cap/strict checks are prospectively declared; freshQ6/Q8 workflow comparisons will share16kmain/8kaux/reference template and sampler. Previous8k Q6 development runs are not pure precision-only timing controls."
+}
