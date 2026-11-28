@@ -269,3 +269,6 @@ finishes in27.86 minutes at98k/29 GPU layers/11,124MiB. Initial and documentatio
 
 
 The [automatic workspace-role Thinking Q6 comparison](../2026-11-27-mimo-local-training/native-mellum21-thinking-workspace-roles-summary.json) also fails:5/5,5/5,7/8 real checks,23.71coding/27.71end-to-endminutes. Real fork/branch/3remote commits/issue exist, but noPR; final local settings are unpublished. Public issue-number confusion and missing native preferences remain. All22models and owner/runtime/Codex are preserved. Optional explicit public numbers and workspace-only registration pass separate0LLM native qualification; no new model pass yet.
+
+
+The [same-publisher MiMo9B Q8 reference-template qualification](../2026-11-27-mimo-local-training/mimo-q8-capacity.json) passes98,304context/33of33GPU layers at9,788MiB, real short tool/result/history and exact16k/60k/80k markers. All23models/owner/runtime/Codex are preserved and exactcleanup passes. This16k-cap resource test is not a native coding pass or isolated timing comparison with older8k-capQ6. Fresh matched-budget coding remains required; default unchanged.

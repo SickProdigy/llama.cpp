@@ -1,0 +1,200 @@
+{
+  "candidate": "Same-publisher MiMo V2.6 Distill Qwen9B Q8_0",
+  "classification": "Measured reference-template GPU98k and actual tool/history/large-input marker compatibility pass; no coding/Gitea winner claim",
+  "download_and_full_SHA": {
+    "repo": "bartowski/MiMo-V2.6-Distill-Qwen-9B-GGUF",
+    "revision": "4371da10c84fb26da3592d4cf312d24aa82b7b65",
+    "file": "MiMo-V2.6-Distill-Qwen-9B-Q8_0.gguf",
+    "public_bytes": 9545979424,
+    "public_full_SHA256": "2fad0aa11bb9e7aa491ff12f768954f9dd0a6e7d4ce4a897ca73ec420f3b90ae"
+  },
+  "protocol_sha256": "e496104d1d2f6ffd1a04807597bda5123ce9d190b7793239148ec2dea7d8acf8",
+  "context": 98304,
+  "all_GPU_layers": "33/33",
+  "automatic_fit_disabled": true,
+  "probe_output_cap": 16384,
+  "probe_seed": 20261123,
+  "template": {
+    "label": "Pinned official ggml reference, same selected template as leadingQ6",
+    "builtin_inference_not_tested_here": true
+  },
+  "load_seconds": 63.24047744600102,
+  "tool_lookup_exactly_one_correct": true,
+  "tool_completion_no_extra_call": true,
+  "dependent_history_exact_answer": true,
+  "actual_reasoning_retained_in_template": {
+    "actual_reasoning_nonempty": true,
+    "actual_reasoning_retained_in_rendered_template": true,
+    "not_replaced_with_operator_reasoning": true
+  },
+  "short_actual_response_captures": [
+    {
+      "name": "tool",
+      "body_complete": true,
+      "seconds": 12.210023430990987,
+      "usage": {
+        "completion_tokens": 60,
+        "prompt_tokens": 109,
+        "total_tokens": 169,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "finish_reason": "tool_calls",
+      "response_sha256": "6ff2c15eb291373cead8e2a69e15259aabfd43f31f2ce019f8d37dd5297f7cda",
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 109,
+        "prompt_ms": 9958.046,
+        "prompt_per_token_ms": 91.35822018348624,
+        "prompt_per_second": 10.945922523354481,
+        "predicted_n": 60,
+        "predicted_ms": 2248.408,
+        "predicted_per_token_ms": 38.10861016949153,
+        "predicted_per_second": 26.240789038288426
+      },
+      "separate_reasoning_nonempty": true,
+      "response_content_not_reproduced": true
+    },
+    {
+      "name": "tool-result",
+      "body_complete": true,
+      "seconds": 5.8838614800188225,
+      "usage": {
+        "completion_tokens": 99,
+        "prompt_tokens": 196,
+        "total_tokens": 295,
+        "prompt_tokens_details": {
+          "cached_tokens": 168
+        }
+      },
+      "finish_reason": "stop",
+      "response_sha256": "55de3829eabbf7dc29a605fb647b7022652a4db40b6a22af6feb4ce003d95250",
+      "timings": {
+        "cache_n": 168,
+        "prompt_n": 28,
+        "prompt_ms": 329.805,
+        "prompt_per_token_ms": 11.77875,
+        "prompt_per_second": 84.89865223389577,
+        "predicted_n": 99,
+        "predicted_ms": 5550.648,
+        "predicted_per_token_ms": 56.639265306122454,
+        "predicted_per_second": 17.655596247501194
+      },
+      "separate_reasoning_nonempty": true,
+      "response_content_not_reproduced": true
+    },
+    {
+      "name": "tool-followup",
+      "body_complete": true,
+      "seconds": 2.226649879012257,
+      "usage": {
+        "completion_tokens": 62,
+        "prompt_tokens": 317,
+        "total_tokens": 379,
+        "prompt_tokens_details": {
+          "cached_tokens": 294
+        }
+      },
+      "finish_reason": "stop",
+      "response_sha256": "fbceceeb91c7f264dc4556a1949f8b166e45dd046822b424ae5c7225972df625",
+      "timings": {
+        "cache_n": 294,
+        "prompt_n": 23,
+        "prompt_ms": 372.258,
+        "prompt_per_token_ms": 16.185130434782607,
+        "prompt_per_second": 61.785106028614564,
+        "predicted_n": 62,
+        "predicted_ms": 1851.855,
+        "predicted_per_token_ms": 30.35827868852459,
+        "predicted_per_second": 32.939944002095196
+      },
+      "separate_reasoning_nonempty": true,
+      "response_content_not_reproduced": true
+    }
+  ],
+  "markers": [
+    {
+      "target": 16000,
+      "actual_input_tokens": 15984,
+      "seconds": 72.29053672900773,
+      "correct": true,
+      "actual_usage": {
+        "completion_tokens": 10,
+        "prompt_tokens": 15984,
+        "total_tokens": 15994,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    },
+    {
+      "target": 60000,
+      "actual_input_tokens": 59934,
+      "seconds": 256.4027903480164,
+      "correct": true,
+      "actual_usage": {
+        "completion_tokens": 97,
+        "prompt_tokens": 59934,
+        "total_tokens": 60031,
+        "prompt_tokens_details": {
+          "cached_tokens": 15916
+        }
+      }
+    },
+    {
+      "target": 80000,
+      "actual_input_tokens": 79929,
+      "seconds": 144.60204974899534,
+      "correct": true,
+      "actual_usage": {
+        "completion_tokens": 34,
+        "prompt_tokens": 79929,
+        "total_tokens": 79963,
+        "prompt_tokens_details": {
+          "cached_tokens": 59866
+        }
+      }
+    }
+  ],
+  "observed_GPU_peak_MiB": 9788,
+  "observed_aggregate_cgroup_peak_GiB": 6.564208984375,
+  "observed_study_swap_peak_bytes": 0,
+  "minimum_free_GiB": {
+    "docker_root_free_bytes": 108.37797546386719,
+    "model_disk_free_bytes": 159.60802459716797
+  },
+  "preservation": {
+    "passed": true,
+    "epoch": 1795884361.7454941,
+    "original23_models_unchanged": true,
+    "owner_profile_hashes_unchanged": true,
+    "owner_source_and_pending_work_unchanged": true,
+    "runtime_ids_images_config_running_unchanged": true,
+    "full_Codex_state_unchanged": true,
+    "original_alias_context_restored": true,
+    "registered_stage_complete_not_quality_verdict": true,
+    "resource_probes_completed": true,
+    "source_baselines": [
+      "baseline-before-mimo-q8-resource",
+      "baseline-after-mimo-q8-resource"
+    ]
+  },
+  "cleanup": {
+    "passed": true,
+    "epoch": 1795884361.8872976,
+    "removed_exact_supervisor_id": "b86e0872945901efb838fd193a4ae3f02245f07504be17064be9f6c16eca72ff",
+    "removed_only_task_anonymous_volumes": [
+      "e5ca94d53ee85166f2b3c538725520495d0504c332387c0b827d3259d9aa440f"
+    ],
+    "named_stage_volume_preserved": true,
+    "no_live_study_containers": true
+  },
+  "scope_limits": [
+    "Marker probes may reuse substantial prefix; not cold throughput or full-window coding quality",
+    "Short lookup is real model-emitted tool data with actual assistant records retained; not actual MCP mutation/routing",
+    "Q6 earlier resource cap8k versus this16k: no isolated precision-only timing claim; fresh nativeQ6/Q8 comparison must use matching budgets",
+    "No raw reasoning published/trained, no custom quantization, no production model switch or real training"
+  ],
+  "native_coding_workflow_still_required": true
+}

@@ -278,3 +278,14 @@ The separately gated resource plan selects the same pinned official reference te
 
 
 The [Q8 download is complete](mimo-q8-download.json):9,545,979,424bytes and fullSHA match the pinned public artifact, using one HTTP request with no retries. All22previous model records, owner profile/source/pending work and full runtime/Codex state are unchanged; main-folder inventory is now23. The file is in the normalmodels folder with no duplicateHFcache. Model storage has about159.70GiB free and Docker storage108.52GiB, above all100GiB floors. GPU fit/tool/history/large-input admission and fresh coding still remain unproven.
+
+
+## MiMo Q8 reference-template compatibility: pass
+
+The same-publisher publicQ8 independently loads **98,304context /33of33GPU layers /9,788MiB observed peak GPU memory** with automatic fitting disabled. Load/readiness takes63.24seconds. It emits exactly one correct lookup, completes using the real supplied result without further tools and answers the dependent-history question exactly. Separate reasoning is present and retained in the rendered continuation; raw reasoning remains private and is not training data.
+
+Exact synthetic markers at15,984/59,934/79,929actual input tokens all pass, taking72.29/256.40/144.60seconds. These later prompts may reuse a substantial prefix, so this is not a cold throughput comparison. The16k probe cap differs from the olderQ6 resource test's8k cap; freshQ6/Q8 coding comparisons must use matching16kmain/8kaux budgets. A loaded98k window and these marker/tool-history passes do not establish full-window coding or real MCP publication correctness.
+
+Aggregate observed study cgroup peak is6.56GiB, with zero study swap. Minimum free space remains108.38GiB Docker root/159.61GiB model storage. All23model records, owner profile/source/pending work, original runtime and full unchanged Hermes-Codex state pass preservation; exact owned supervisor/model/network/anonymous-volume cleanup passes and the named useful staging volume remains. OriginalVibe alias/context are restored. [Complete measured result](mimo-q8-capacity.json).
+
+Q8 now meets the selectedGPU/context/resource/tool-history admission. No scored fresh native coding/Gitea trial has used it yet. The next step is the reserved Announcer comparison with the qualified automatic roles/public-number presentation, fresh fixtures/profiles and meaningful independent behavior/publication checks. No production default switch or training has occurred.
