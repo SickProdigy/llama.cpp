@@ -1,0 +1,370 @@
+{
+  "candidate": "Mellum2.1-12B-A2.5B-Instruct Q6_K",
+  "classification": "FAIL: fast local draft, invented runtime API, empty tests and no Gitea contribution",
+  "whole_workflow_pass": false,
+  "tasks_independent": false,
+  "model": {
+    "repo": "JetBrains/Mellum2.1-12B-A2.5B-Instruct-GGUF",
+    "revision": "a7b59537ac5f9405d641b1dbef6ba3a6ba8c0ab1",
+    "file": "Mellum2.1-12B-A2.5B-Instruct-Q6_K.gguf",
+    "public_bytes": 10879833184,
+    "public_full_SHA256": "6bbaf390b6891acaa36a94accfb0dc5881e4560cdd3a0cdc4ab1de07ffd636ee"
+  },
+  "backend": "b12723-abca69200",
+  "evaluator_image": "sha256:68d60b68cbf2838a44027c4b025a285040cbae09868e3ab0c143a9e0feb073af",
+  "context": 98304,
+  "GPU_layers": "29/29",
+  "main_aux_output_cap": 8192,
+  "sampler": {
+    "temperature": 0.6,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0,
+    "repeat_penalty": 1,
+    "presence_penalty": 0,
+    "chat_template_kwargs": {
+      "enable_thinking": false
+    },
+    "seed": 20261127
+  },
+  "protocol_sha256": "76ac8326e622053289f2bed4c73c33e9953af77999b7e88c2b1e52164a2b718a",
+  "actual_initial_wire": {
+    "epoch": 1795874648.830457,
+    "model": "gpuquant-mellum21-q6",
+    "max_tokens": 8192,
+    "temperature": 0.6,
+    "thinking": false,
+    "seed": 20261127,
+    "reasoning_effort": "medium",
+    "actual_native_tool_count": 32,
+    "selected_fixture_context_present": true,
+    "remote_edit_tool_absent": true
+  },
+  "phases": [
+    {
+      "phase": 0,
+      "seconds": 142.48646386398468,
+      "native_exit_code": 0,
+      "external_timeout": false,
+      "project_exit": 0,
+      "immutable_original_suite_passed": true,
+      "real_core": {
+        "passed": false,
+        "phase": 0,
+        "cases": [
+          {
+            "case": "ordinary_new_buddy",
+            "passed": false,
+            "error": "AttributeError: 'Buddies' object has no attribute 'list_buddies'"
+          },
+          {
+            "case": "repeat_request_is_silent",
+            "passed": false,
+            "error": "AttributeError: 'Buddies' object has no attribute 'list_buddies'"
+          },
+          {
+            "case": "existing_buddy_casefold_is_silent",
+            "passed": false,
+            "error": "AttributeError: 'Buddies' object has no attribute 'list_buddies'"
+          },
+          {
+            "case": "room_self_nontrigger_exclusions",
+            "passed": true
+          },
+          {
+            "case": "default_connect_room",
+            "passed": true
+          }
+        ],
+        "actual_core_version": "3.3.11",
+        "real_handler_and_buddy_add_used": true,
+        "network_watch_and_GUI_delivery_stubbed": true,
+        "source_sha256": "79bfdc0453e7ee4a1cce1a812e8af480fbe71559d24dc659a7c826eddff7febc"
+      },
+      "local_source_digest": "dc9a613c24328735eb731161fd2f2207a4292c8ed5d5f9ce7241e41699f04f0c",
+      "changed_paths": [
+        "autobuddy/__init__.py",
+        "test_autobuddy_fix.py",
+        "test_autobuddy_regression.py"
+      ],
+      "primary_authored_test_paths": [],
+      "primary_authored_on_baseline_exit": null,
+      "upstream_PR_present": false,
+      "remote_source_grade_available": false
+    },
+    {
+      "phase": 1,
+      "seconds": 30.583146676013712,
+      "native_exit_code": 0,
+      "external_timeout": false,
+      "project_exit": 0,
+      "immutable_original_suite_passed": true,
+      "real_core": {
+        "passed": false,
+        "phase": 1,
+        "cases": [
+          {
+            "case": "ordinary_new_buddy",
+            "passed": false,
+            "error": "AttributeError: 'Buddies' object has no attribute 'list_buddies'"
+          },
+          {
+            "case": "repeat_request_is_silent",
+            "passed": false,
+            "error": "AttributeError: 'Buddies' object has no attribute 'list_buddies'"
+          },
+          {
+            "case": "existing_buddy_casefold_is_silent",
+            "passed": false,
+            "error": "AttributeError: 'Buddies' object has no attribute 'list_buddies'"
+          },
+          {
+            "case": "room_self_nontrigger_exclusions",
+            "passed": true
+          },
+          {
+            "case": "default_connect_room",
+            "passed": true
+          }
+        ],
+        "actual_core_version": "3.3.11",
+        "real_handler_and_buddy_add_used": true,
+        "network_watch_and_GUI_delivery_stubbed": true,
+        "source_sha256": "ed33b4b912d0ed6fa15deb7c555f452156dcb44900436001f053f9681084dec3"
+      },
+      "local_source_digest": "403e19ec01d062c950bba1b5627f604028ba84322c65b62b70863cb92ab38021",
+      "changed_paths": [
+        "autobuddy/__init__.py",
+        "test_autobuddy_fix.py",
+        "test_autobuddy_regression.py"
+      ],
+      "primary_authored_test_paths": [],
+      "primary_authored_on_baseline_exit": null,
+      "upstream_PR_present": false,
+      "remote_source_grade_available": false
+    },
+    {
+      "phase": 2,
+      "seconds": 61.07630425799289,
+      "native_exit_code": 0,
+      "external_timeout": false,
+      "project_exit": 0,
+      "immutable_original_suite_passed": true,
+      "real_core": {
+        "passed": false,
+        "phase": 2,
+        "cases": [
+          {
+            "case": "ordinary_new_buddy",
+            "passed": false,
+            "error": "AttributeError: 'Buddies' object has no attribute 'list_buddies'"
+          },
+          {
+            "case": "repeat_request_is_silent",
+            "passed": false,
+            "error": "AttributeError: 'Buddies' object has no attribute 'list_buddies'"
+          },
+          {
+            "case": "existing_buddy_casefold_is_silent",
+            "passed": false,
+            "error": "AttributeError: 'Buddies' object has no attribute 'list_buddies'"
+          },
+          {
+            "case": "room_self_nontrigger_exclusions",
+            "passed": true
+          },
+          {
+            "case": "default_connect_room",
+            "passed": true
+          },
+          {
+            "case": "preferences_trimmed_values",
+            "passed": false,
+            "error": "AssertionError: "
+          },
+          {
+            "case": "settings_take_effect_without_restart",
+            "passed": false,
+            "error": "AttributeError: 'Buddies' object has no attribute 'list_buddies'"
+          },
+          {
+            "case": "blank_settings_fall_back",
+            "passed": false,
+            "error": "AttributeError: 'Buddies' object has no attribute 'list_buddies'"
+          }
+        ],
+        "actual_core_version": "3.3.11",
+        "real_handler_and_buddy_add_used": true,
+        "network_watch_and_GUI_delivery_stubbed": true,
+        "source_sha256": "3869455a7a07f8be4e2bf890567a78b1e6c29debdc9a3e1b0a3ff8efc1a8197f"
+      },
+      "local_source_digest": "7f205f207f9a8f0f8b74f7bfde11cca266c0c5f12727e8c7d5afa5f0c1b7d5e3",
+      "changed_paths": [
+        "autobuddy/__init__.py",
+        "test_autobuddy_fix.py",
+        "test_autobuddy_regression.py",
+        "test_autobuddy_settings.py"
+      ],
+      "primary_authored_test_paths": [],
+      "primary_authored_on_baseline_exit": null,
+      "upstream_PR_present": false,
+      "remote_source_grade_available": false
+    }
+  ],
+  "coding_seconds": 234.14591479799128,
+  "requests_completed": 33,
+  "observed_tool_calls": {
+    "search_files": 1,
+    "execute_code": 11,
+    "terminal": 3,
+    "read_file": 8,
+    "patch": 3,
+    "write_file": 3,
+    "memory": 1
+  },
+  "first_request_seconds": 45.49014592170715,
+  "max_actual_prompt_tokens": 28688,
+  "cache": {
+    "cumulative_input_tokens": 648725,
+    "cumulative_cached_input_tokens": 622223,
+    "token_weighted_cached_fraction": 0.9591475586727812,
+    "median_request_seconds": 2.472879409790039,
+    "cumulative_replayed_history_not_context_size": true
+  },
+  "GPU_peak_MiB": 11124,
+  "study_cgroup_peak_bytes": 7659257856,
+  "study_swap_peak_bytes": 0,
+  "minimum_Docker_root_free_bytes": 116911550464,
+  "minimum_model_disk_free_bytes": 192598941696,
+  "local_commits": {
+    "branch": "main",
+    "head": "78e62b2a016de01acc273af6addd90249e3fc45c",
+    "newest_first": [
+      "78e62b2a016de01acc273af6addd90249e3fc45c",
+      "d6c4e5fbea9d0b06ea0b06d9c0b8b14a76e71f42",
+      "d2c3bf13c5816205f97f19e6f595bf29fef54312"
+    ],
+    "three_local_commits_are_real": true,
+    "not_published_to_upstream_or_fork": true
+  },
+  "final_forge_readback": {
+    "source": "Configured Gitea MCP current readback",
+    "repo": "chatgpt-codex/hermes-deps-autobuddy-vibe-nothink-20261128",
+    "main_revision": "f9980ddc8aa6809e2f98f3ee95436bdb368e7a3d",
+    "baseline_blobs": 40,
+    "issues_all_states": 0,
+    "pull_requests_all_states": 0,
+    "actor_fork_GET_status": 404,
+    "all40_blobs_verified_both_identities": true
+  },
+  "supplemental_remove_readd": {
+    "classification": "Posthoc supplemental source review, separate from unchanged primary registered grades",
+    "controls_passed": true,
+    "candidate_snapshots": [
+      {
+        "phase": 0,
+        "kind": "local-grade",
+        "source_sha256": "79bfdc0453e7ee4a1cce1a812e8af480fbe71559d24dc659a7c826eddff7febc",
+        "passed": false
+      },
+      {
+        "phase": 2,
+        "kind": "local-grade",
+        "source_sha256": "3869455a7a07f8be4e2bf890567a78b1e6c29debdc9a3e1b0a3ff8efc1a8197f",
+        "passed": false
+      }
+    ]
+  },
+  "supplemental_root_authored_regression_review": {
+    "epoch": 1795875158.3776197,
+    "classification": "Posthoc root-level authored regression review; separate from unchanged primary grade",
+    "primary_collector_only_considered_tests_directory": true,
+    "source_review_and_full_baseline_replay_passed": true,
+    "results": [
+      {
+        "phase": 0,
+        "root_authored_test_paths": [
+          "test_autobuddy_fix.py",
+          "test_autobuddy_regression.py"
+        ],
+        "test_functions": 3,
+        "empty_test_functions": [
+          "test_autobuddy_fix.py:test_case_insensitive_duplicate_prevention",
+          "test_autobuddy_regression.py:test_duplicate_buddy_prevention_case_insensitive",
+          "test_autobuddy_regression.py:test_normal_add_works"
+        ],
+        "baseline_with_authored_tests_exit": 0,
+        "all_detected_test_functions_empty": true,
+        "primary_registered_grade_unchanged": true
+      },
+      {
+        "phase": 2,
+        "root_authored_test_paths": [
+          "test_autobuddy_fix.py",
+          "test_autobuddy_regression.py",
+          "test_autobuddy_settings.py"
+        ],
+        "test_functions": 6,
+        "empty_test_functions": [
+          "test_autobuddy_fix.py:test_case_insensitive_duplicate_prevention",
+          "test_autobuddy_regression.py:test_duplicate_buddy_prevention_case_insensitive",
+          "test_autobuddy_regression.py:test_normal_add_works",
+          "test_autobuddy_settings.py:test_default_settings",
+          "test_autobuddy_settings.py:test_custom_settings_applied",
+          "test_autobuddy_settings.py:test_empty_settings_fallback"
+        ],
+        "baseline_with_authored_tests_exit": 0,
+        "all_detected_test_functions_empty": true,
+        "primary_registered_grade_unchanged": true
+      }
+    ],
+    "no_actor_feedback": true,
+    "positive_training_eligible": false
+  },
+  "preservation": {
+    "passed": true,
+    "epoch": 1795874909.560343,
+    "original21_models_unchanged": true,
+    "owner_profile_hashes_unchanged": true,
+    "owner_source_and_pending_work_unchanged": true,
+    "runtime_ids_images_config_running_unchanged": true,
+    "full_Codex_state_unchanged": true,
+    "original_alias_context_restored": true,
+    "three_turns_complete_not_quality_verdict": true,
+    "source_baselines": [
+      "baseline-before-mellum21-q6-native",
+      "baseline-after-mellum21-q6-native"
+    ]
+  },
+  "cleanup": {
+    "passed": true,
+    "epoch": 1795874909.801623,
+    "removed_exact_supervisor_id": "f42fa3fc644c588b04337afc5360bb3caec474cf9f6a5f71d8143124b1ad7df5",
+    "removed_only_task_anonymous_volumes": [
+      "334b44a290b3b642c6ec8af40f78accc9679caf3c58fa7064aa20d0df21c1ceb"
+    ],
+    "named_stage_volume_preserved": true,
+    "no_live_study_containers": true
+  },
+  "operator_patch_or_correction": false,
+  "grader_feedback_to_actor": false,
+  "training_positive_eligible": false,
+  "findings": [
+    "Invented core.buddies.list_buddies method persists in all phases; real Nicotine3.3.11 rejects every triggering normal/repeat/existing-buddy request.",
+    "Project and original83tests pass; model adds3 then6 empty pass-only test methods. Supplemental baseline replay also passes, proving no regression detection.",
+    "Primary automatic authored-test collector only considers tests/; root-level model test files are reviewed separately without changing primary grades.",
+    "Only plugin description/docstrings change for documentation; no README entry or update.",
+    "Final defines setup() and no preference metadata/class defaults; actual preference checks fail. Several remaining final failures are blocked by the same invented API, so they do not independently isolate every setting behavior.",
+    "Three local commits on local main are real, but there are zero Gitea tool calls, no actor fork, no upstream issue or PR and unchanged40-blob upstream main. Do not call local editing a wrong-host forge action.",
+    "Final success/ready-for-use claims contradict real handler behavior and incomplete publication."
+  ],
+  "limitations": [
+    "One development workflow with3dependent tasks, not independent repetitions or reliability rate.",
+    "New model/tokenizer/template/sampler differ from retained baselines; no weights-only or exact owner-profile claim.",
+    "Short98kallocation/tool-history qualification does not establish long-context code quality.",
+    "Standalone primary grade counts omit root-level authored tests; supplemental complete source review/baseline replay covers them.",
+    "Runtime actual core with GUI/network delivery stubbed, no Soulseek connection."
+  ],
+  "forge_transport_records_empty": true,
+  "execute_code_calls_contain_no_forge_or_MCP_dispatch": true
+}

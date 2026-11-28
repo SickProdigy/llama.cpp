@@ -172,3 +172,24 @@ The [Mellum Q6 download](mellum21-download.json) is complete:10,879,833,184 byte
 The public Q6 loads98,304 context with29/29 layers onGPU and observed peak11,124MiB. Three actual responses pass: exactly one valid `lookup_record` call, completion using the supplied result with no extra tool call, and exact dependent-history value. No separate reasoning is returned. Aggregate observed study cgroup peak is6.57GiB with zero study swap. Normal services are restored; all21-model inventory, owner profiles/source/pending work and full unchanged Hermes-Codex state pass preservation, followed by exact task cleanup. [Capacity result and retained responses](mellum21-capacity.json).
 
 This establishes loaded allocation and short tool-history compatibility only. No long synthetic retrieval probe, actual MCP mutation or coding workflow is included. The registered full native development comparison remains the next gate, after fresh two-identity fixture readmission.
+
+
+## Mellum Instruct native workflow: complete, fails
+
+Mellum2.1 Instruct Q6 finishes the three dependent tasks in3.90 coding minutes,33 requests and30 model-visible tool calls. Every native exit and project-suite run is zero, yet the actual handler fails the requested behavior. This is a fast failed draft, not a successful-task speedup.
+
+| Dependent task | Coding time | Project suite | Registered real Nicotine runtime |
+| --- | --- | --- | --- |
+| New-buddy idempotency | 2.37 min | Pass | 2/5; invented `Buddies.list_buddies()` breaks all triggering cases |
+| Documentation | 0.51 min | Pass | Same2/5; no API repair |
+| Live settings | 1.02 min | Pass | 2/8; invented API persists, preference declaration also fails |
+
+The first patch invents `core.buddies.list_buddies()` despite the installed3.3.11 dependency being available. Its new test files contain only empty `pass` test bodies: three initially and six finally. All original83 tests pass, but the new tests detect no behavior. The primary authored-regression collector only searches `tests/`, so it lists none for these root-level files. A separate posthoc source/AST review and actual baseline replay includes every root test and confirms they also pass without any fix. This omission in automatic discovery does not change the directly observed runtime failures; primary grades remain untouched.
+
+The documentation step changes the plugin description, not a README. The final code defines `setup()` without preference metadata/class defaults. The actual preference check fails; other final cases are blocked by the invented buddy API, so those failures do not independently isolate every settings defect. Final success/ready-for-use claims are contradicted by the real handler.
+
+Three local commits on local `main` are real, ending at `78e62b2a016de01acc273af6addd90249e3fc45c`. They are not a personal-fork/upstream contribution. There are no Gitea calls or transport records, and no forge dispatch inside `execute_code`. Actual configured MCP readback and both-identity full-blob checks confirm original40-blob upstream main, zero issues/PRs and actor fork404. Ordinary local code editing is not a wrong-host forge action; the failure is missing publication. No new test repository was needed.
+
+Observed peak GPU memory remains11,124MiB/all29layers. Aggregate observed cgroup peak is7.13GiB with zero study swap; maximum actual prompt is28,688 tokens. All21 model files, owner profiles/source/pending work, original runtime and full unchanged Hermes-Codex state pass preservation; exact cleanup passes. No operator correction or grader feedback is provided. The full trajectory is excluded from positive training. [Machine-readable result, supplemental controls and root-test review](native-mellum21-instruct-summary.json).
+
+The next candidate is the separate official [Mellum2.1 Thinking Q6](mellum21-thinking-candidate.json). Pinned metadata confirms matching tensor names/dimensions/types and a different thinking template; this does not prove fit or quality for its weights. Plan16k main/8k auxiliary output caps at98k context, reasoning enabled, before inference. This is a declared accuracy-first configuration comparison, not a pure thinking-flag toggle. A fresh verified download/preservation and measured thinking-compatible short tool/history qualification remain required. Same-publisher MiMo Q8 remains an undownloaded fallback candidate.

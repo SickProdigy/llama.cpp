@@ -1,0 +1,60 @@
+{
+  "registered_epoch": 1795875389.4996846,
+  "candidate": {
+    "repo": "JetBrains/Mellum2.1-12B-A2.5B-Thinking-GGUF",
+    "revision": "42f68c5f53975b7b88bd6dca61161ae88dc3c149",
+    "file": "Mellum2.1-12B-A2.5B-Thinking-Q6_K.gguf",
+    "public_bytes": 10879834400,
+    "public_full_SHA256": "12aec619f6a2c82b1ea8998f03665b3b5fc5bb758af97efdf4b1ec7a822b8668"
+  },
+  "destination": "models/Mellum2.1-12B-A2.5B-Thinking-Q6_K.gguf",
+  "download_stop_free_bytes": 109521666048,
+  "source_repo": "JetBrains/Mellum2.1-12B-A2.5B-Thinking",
+  "source_revision": "92ddae9fc7665e9f801d141d2e5a6b2caf2460c4",
+  "public_card": "https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking",
+  "comparison": "Separate thinking checkpoint versus completed Instruct checkpoint at sameQ6precision and architecture. Different weights/template/thinking/outputbudget; no isolated flag-toggle or weights-only claim.",
+  "rationale": "Instruct loads and handles short tools, but actual code invents API, adds empty tests and omits Gitea. Test separately trained reasoning checkpoint before another Instruct quantization.",
+  "header_comparison": {
+    "same_tensor_names_dimensions": true,
+    "same_tensor_type_counts": true,
+    "same_template": false,
+    "layers": 28,
+    "expected_GPU_layers": 29,
+    "model_context": 131072,
+    "builtin_thinking_template_sha256": "4593a34d52f3364ac13ce57f4bea5688924e8942da6df8201e411db17e729f48",
+    "enable_thinking_kwarg_supported": true
+  },
+  "target_capacity": {
+    "context": 98304,
+    "GPU_layers": 99,
+    "cache_k": "q4_0",
+    "cache_v": "q4_0",
+    "ubatch": 64,
+    "parallel": 1,
+    "MTP": false
+  },
+  "native_sampler": {
+    "temperature": 0.6,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0,
+    "repeat_penalty": 1,
+    "presence_penalty": 0,
+    "chat_template_kwargs": {
+      "enable_thinking": true
+    },
+    "seed": 20261127
+  },
+  "planned_main_output_cap": 16384,
+  "planned_aux_output_cap": 8192,
+  "output_budget_rationale": "Accuracy-first reasoning checkpoint gets16kmain rather than inheriting direct-answer8kcap;98kcontext remains fixed and admission must measureactualrequests. This is declared before inference and is a configuration comparison.",
+  "gates": [
+    "PreviousMellum native preservation and exactcleanup passed",
+    "Fresh21model/runtime/owner baseline; no overlapping GPUwork",
+    "Directpartfile download, exactsize/fullSHA, all100GiBreserves and onlyone newartifact before/after proof",
+    "Independent98kallGPU/tool-result-history thinking qualification before native coding",
+    "Same3frozen developmenttasks,32native local/Giteatools, no operatorhints or graderfeedback, normalapprovalsettings"
+  ],
+  "no_quality_or_GPU_fit_claim_for_thinking_weights": true,
+  "actual_training_started": false
+}
