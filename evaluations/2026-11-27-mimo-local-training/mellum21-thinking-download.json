@@ -1,0 +1,30 @@
+{
+  "download": {
+    "passed": true,
+    "candidate": {
+      "repo": "JetBrains/Mellum2.1-12B-A2.5B-Thinking-GGUF",
+      "revision": "42f68c5f53975b7b88bd6dca61161ae88dc3c149",
+      "file": "Mellum2.1-12B-A2.5B-Thinking-Q6_K.gguf",
+      "public_bytes": 10879834400,
+      "public_full_SHA256": "12aec619f6a2c82b1ea8998f03665b3b5fc5bb758af97efdf4b1ec7a822b8668"
+    },
+    "downloaded_bytes": 10879834400,
+    "full_sha256": "12aec619f6a2c82b1ea8998f03665b3b5fc5bb758af97efdf4b1ec7a822b8668",
+    "seconds": 1050.018605709076,
+    "destination": "/media/prodigy/Coding-Programming/docker-containers2/llama.cpp/models/Mellum2.1-12B-A2.5B-Thinking-Q6_K.gguf",
+    "free_GiB": 168.96923446655273,
+    "production_not_changed": true,
+    "no_fit_or_quality_claim": true
+  },
+  "preservation": {
+    "passed": true,
+    "epoch": 1795876490.510044,
+    "original21_models_unchanged": true,
+    "exactly_one_verified_public_Q6_added": true,
+    "main_model_count": 22,
+    "full_runtime_and_Codex_state_unchanged": true,
+    "owner_profiles_source_and_pending_unchanged": true,
+    "all_storage_reserves_preserved": true,
+    "no_GPU_trial_or_training_started": true
+  }
+}
