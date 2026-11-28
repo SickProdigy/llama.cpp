@@ -1,0 +1,84 @@
+{
+  "classification": "Optional metadata-derived workspace role context, native admission only; no model quality claim",
+  "unit_checks_passed": 13,
+  "native_registered_hook_passed": true,
+  "actual_native_tool_count": 32,
+  "actual_full_tool_schemas_unchanged": true,
+  "verified_roles": {
+    "authenticated_actor": "hermes-agent",
+    "selected_origin_repository": "chatgpt-codex/hermes-deps-autobuddy-roles-20261128",
+    "upstream_owner": "chatgpt-codex",
+    "upstream_repo": "hermes-deps-autobuddy-roles-20261128",
+    "upstream_default_branch": "main",
+    "issue_and_PR_destination": "chatgpt-codex/hermes-deps-autobuddy-roles-20261128",
+    "fork_owner": "hermes-agent",
+    "fork_repo": "hermes-deps-autobuddy-roles-20261128",
+    "fork_name": "hermes-deps-autobuddy-roles-20261128",
+    "personal_fork_status": "derived_destination_existence_not_checked",
+    "provenance": "Selected Git origin and read-only configured Gitea get_me/repo_read metadata; refreshed for this context",
+    "scope": "Identity facts only. Existing tool permissions still apply. Verify/create the personal fork as needed, use a feature branch, and leave upstream PRs unmerged."
+  },
+  "unrequested_mutation_blocked": true,
+  "actual_main_aux_serialization": {
+    "passed": true,
+    "model_inference_calls": 0,
+    "mock_serialized_HTTP_calls": 2,
+    "actual_main_cap": 16384,
+    "actual_compression_cap": 8192,
+    "actual_compression_path": "native auxiliary.call_llm(task=compression), max_tokens omitted as compressor does",
+    "main_aux_thinking": true,
+    "main_aux_seed": 20261127,
+    "actual_sampler_fields_serialized": true,
+    "no_network_or_forge_mutations": true
+  },
+  "grader_controller_equivalence": {
+    "passed": true,
+    "all_functions_AST_identical_to_frozen_Thinking_controller": true,
+    "new_controller_sha256": "caf9980c18c1be804004f8e2a5885243d8c8b1ed5be2ada65b6b7d7e512adaca",
+    "old_controller_sha256": "98712dcab76616b87e43cfe21411016db667ec77e763e5f8fa8a196cbec6180a",
+    "changes": "New candidate key plus additional preflight receipt assertions before actor start; same grader, all controller functions and phase tasks",
+    "same_registered_checker_sha256": "5c42b5c5e63f6d31fab7a445bbadee109a88627c8125537422dda109372ad7d5"
+  },
+  "fresh_fixture_admissions": [
+    {
+      "epoch": 1795879699.2399209,
+      "passed": true,
+      "authenticated_identity": "chatgpt-codex",
+      "repo": "hermes-deps-autobuddy-roles-20261128",
+      "main_revision": "f9980ddc8aa6809e2f98f3ee95436bdb368e7a3d",
+      "all_baseline_blobs_verified": 40,
+      "issues": 0,
+      "pull_requests": 0,
+      "has_issues": true,
+      "read_only": true,
+      "model_calls": 0,
+      "forge_mutations": 0
+    },
+    {
+      "epoch": 1795879700.921923,
+      "passed": true,
+      "authenticated_identity": "hermes-agent",
+      "repo": "hermes-deps-autobuddy-roles-20261128",
+      "main_revision": "f9980ddc8aa6809e2f98f3ee95436bdb368e7a3d",
+      "all_baseline_blobs_verified": 40,
+      "issues": 0,
+      "pull_requests": 0,
+      "has_issues": true,
+      "read_only": true,
+      "model_calls": 0,
+      "forge_mutations": 0,
+      "actor_effective_push_permission": true,
+      "actor_fork_GET_status": 404
+    }
+  ],
+  "model_calls": 0,
+  "model_controlled_forge_writes": 0,
+  "operator_fixture_setup_separate": true,
+  "owner_default_unchanged": true,
+  "source_sha256": {
+    "hermes-profile/workspace-roles/__init__.py": "d958317dd9e5eb49cda7add555c79b1884920f2bad9b825ea52192d99d55f41d",
+    "hermes-profile/workspace-roles/README.md": "253a1c18c476d8e6749bf63d420d8bb5b3b2bf71d0f04a6cd36c275548cc66dd",
+    "hermes-profile/workspace-roles/plugin.yaml": "df189730e457d90a17851182ed24253291d859875f17ca0959600b6b6607f707"
+  },
+  "experiment": "Same AutoBuddy development tasks and Thinking settings; add read-only role context, use fresh fixture and conversation. No code solution/private grading hint. Not independent held-out task or weights improvement."
+}

@@ -1,0 +1,5 @@
+name: workspace-roles
+version: "0.1.0"
+description: "Derive upstream and personal-fork identities from selected Git and configured Gitea metadata."
+provides_hooks:
+  - pre_llm_call

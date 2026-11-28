@@ -230,3 +230,10 @@ Thinking is substantially better than Instruct for this initial code task, but n
 
 
 The reserved fresh Announcer family now passes operator checker qualification: initial/final references10/10 and12/12, a semantic negative is detected, and both reference changes preserve83 original tests/2subtests. Two harness setup errors are preserved and corrected before any model exposure. Exact checker/reference answers remain private, and the training repository rejects this family from both SFT and loss evaluation. This is test-bank qualification, not a new model success. [Qualification receipt](fresh-announcer-checker-qualification.json).
+
+
+## Automatic workspace roles: native preflight passed
+
+The optional [workspace-roles hook](../../hermes-profile/workspace-roles/README.md) now derives explicit upstream and personal-fork identities from selected Git and authenticated read-only Gitea metadata. It retains renamed selected personal forks and reports unavailable/conflicting metadata without raw transport exceptions. It neither rewrites model write arguments nor grants permissions.13 unit checks and the actual registered native hook pass; all32 full native tool schemas match the previous Thinking run, unrequested writes stay blocked, and main16k/aux8k serialization is unchanged. Both identities independently verify a fresh private40-blob fixture with no issues/PRs or actor fork. [Preflight evidence](workspace-roles-preflight.json).
+
+The next separately registered development comparison repeats the same three AutoBuddy tasks with Thinking Q6 and this automatic context. It is a context/interface intervention, not a new independent benchmark or weight improvement. The separate reserved Announcer task remains unexposed. The owner profile/model is unchanged.
