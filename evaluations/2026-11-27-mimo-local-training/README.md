@@ -46,6 +46,8 @@ Vibe claims the upstream is only on GitHub despite the correct selected Gitea or
 
 The peak remains 8,944 MiB GPU / 41 of 41 layers, with a 7.25 GiB observed aggregate study cgroup peak, zero study swap and no reserve breach. Fresh strict preservation and exact cleanup pass, including full unchanged Hermes-Codex state. No grader feedback or operator correction is given. [Machine-readable Vibe summary](native-vibe-q4-summary.json). Both workflows remain excluded from positive training data; neither establishes a new everyday-model recommendation.
 
+The completed runs report **95.93% MiMo / 95.68% Vibe token-weighted cached input**. Vibe's median backend request is 6.83 seconds versus MiMo's 14.74, yet Vibe uses 156 requests versus 82 and takes longer overall. These observations point toward iteration count and long requests, rather than a general prompt-cache failure, as important timing factors. Cumulative input counts repeatedly include shared history; they do not imply a multi-million-token context window. [Cache/timing audit](cache-observations.json).
+
 ## Dependency-qualified evaluator — November 28
 
 A separate prospective comparison retains the task/checker/model settings while adding the actual pinned Nicotine+ 3.3.11 dependency to development. Its 507-file corpus is extracted from the same immutable target-runtime image and fully hash-checked. The isolated evaluator derives from the existing C9 image; production Hermes, llama.cpp, CUDA and driver configuration remain unchanged.

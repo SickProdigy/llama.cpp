@@ -1,0 +1,33 @@
+{
+  "classification": "Descriptive cache/timing audit of completed C9 development workflows; not a new inference trial",
+  "rows": [
+    {
+      "candidate": "mimo-q6-local",
+      "completed_requests": 82,
+      "cumulative_prompt_tokens_including_replayed_history": 3829820,
+      "reported_cached_tokens": 3673850,
+      "token_weighted_reported_cached_fraction": 0.9592748484262968,
+      "cumulative_completion_tokens_including_reasoning": 35288,
+      "median_backend_request_seconds": 14.738342523574829,
+      "requests_over_60_seconds": 7,
+      "coding_seconds": 2369.303723169025,
+      "whole_workflow_pass": false,
+      "source_summary_sha256": "c61772d2a4d34b98e4e382051192245d0c99d49243857b79753893b0ceca8e59"
+    },
+    {
+      "candidate": "vibe-q4-local",
+      "completed_requests": 156,
+      "cumulative_prompt_tokens_including_replayed_history": 7909568,
+      "reported_cached_tokens": 7567784,
+      "token_weighted_reported_cached_fraction": 0.9567885376293623,
+      "cumulative_completion_tokens_including_reasoning": 47224,
+      "median_backend_request_seconds": 6.834746241569519,
+      "requests_over_60_seconds": 10,
+      "coding_seconds": 3012.61786363204,
+      "whole_workflow_pass": false,
+      "source_summary_sha256": "4fc979411c262d1da9975b9431752f860f7385669c2d12b01e1fbf38198e46b7"
+    }
+  ],
+  "interpretation": "Both runs report about96% token-weighted cached input. Vibe has lower median per-request latency but more completed requests and greater total coding time. The measurements do not support treating a general cache failure as the primary explanation for these runs.",
+  "limits": "Cumulative prompt counts repeatedly include shared history; they are not unique tokens or a multi-million-token context window. Request durations exclude tool execution. Different model/template/sampler and evolving trajectories prevent precision-only or architecture-only causal attribution."
+}
