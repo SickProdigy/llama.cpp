@@ -1,0 +1,32 @@
+{
+  "classification": "Fresh held-out checker operator qualification, no model score",
+  "family": "nicotine-announcer-queued-send-authority-v1",
+  "checker_sha256": "021fa52cc501f0b8200f2efa0c37226b143111a226d4887b681c476517e02dcc",
+  "source_revision": "f9980ddc8aa6809e2f98f3ee95436bdb368e7a3d",
+  "baseline_initial": {
+    "passed": 5,
+    "total": 10
+  },
+  "initial_reference": {
+    "passed": 10,
+    "total": 10
+  },
+  "final_reference": {
+    "passed": 12,
+    "total": 12
+  },
+  "deliberately_incomplete_reference_rejected_semantically": true,
+  "reference_original_project_suites": {
+    "both_passed": true,
+    "tests": 83,
+    "subtests": 2
+  },
+  "no_model_calls_or_training": true,
+  "training_and_loss_evaluation_family_exclusion_enforced": true,
+  "reference_answers_and_exact_checker_private": true,
+  "operator_harness_errors_preserved": [
+    "Initial instance-method patch rejected by actual slotted Events; corrected isolated class seam",
+    "Runtime image has no pytest; project suites use already qualified evaluator image"
+  ],
+  "private_qualification_sha256": "14acdf7a8f639e1945cdc6e5cd153cb3d84e89f1a0c208c47cf79bfdb0efbec8"
+}
