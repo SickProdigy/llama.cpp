@@ -1,0 +1,38 @@
+{
+  "registered_epoch": 1795875711.5238285,
+  "candidate": "mellum21-thinking-q6",
+  "model": {
+    "repo": "JetBrains/Mellum2.1-12B-A2.5B-Thinking-GGUF",
+    "revision": "42f68c5f53975b7b88bd6dca61161ae88dc3c149",
+    "file": "Mellum2.1-12B-A2.5B-Thinking-Q6_K.gguf",
+    "public_bytes": 10879834400,
+    "public_full_SHA256": "12aec619f6a2c82b1ea8998f03665b3b5fc5bb758af97efdf4b1ec7a822b8668"
+  },
+  "main_output_cap": 16384,
+  "aux_output_cap": 8192,
+  "context": 98304,
+  "sampler": {
+    "temperature": 0.6,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0,
+    "repeat_penalty": 1,
+    "presence_penalty": 0,
+    "chat_template_kwargs": {
+      "enable_thinking": true
+    },
+    "seed": 20261127
+  },
+  "resource_seed": 20261123,
+  "tasks_sha256": "c064410851997b99d2035ab060882b82327c1d82e2df1bae514c553955c580d7",
+  "primary_checker_sha256": "5c42b5c5e63f6d31fab7a445bbadee109a88627c8125537422dda109372ad7d5",
+  "tool_count": 32,
+  "normal_memory_and_skill_approvals_retained": true,
+  "fixture": "Reuse untouched40blob fixture only after both identities verifyzeroissues/PRs and actorfork404",
+  "qualification": "Verified22modeldownload/preservation then own actual98k29GPU thinking/tool/result/history pass and exactcleanup before native3tasks",
+  "same_primary_real_core_checker": true,
+  "regression_discovery_amendment": "New controller replays changed root/module pytest-discovered test modules and conftest plus tests/fixtures on baseline. Old tests/-only controllers and scores stay frozen; same actual core5/8cases. Discovery does not establish meaningful regression without source review.",
+  "strict_short_qualification_amendment": "Exactly one lookup, no further tool calls after result or final dependent answer; prior actual passing probes also had exactlyone. Separate reasoning permitted but not published/trained.",
+  "scope": "New reasoningcheckpoint/configuration; different weights/template/reasoning/mainbudget than Instruct, not isolated flagtoggle or weightsonly or untouchedholdout. Same60turn/2700s phaseguards; no operatorpatches or privategraderfeedback.",
+  "production": "No defaultmodel change; fullCodexstate, all22models, ownerprofiles/source/pending and100GiBreserves required."
+}

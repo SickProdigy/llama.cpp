@@ -1,0 +1,47 @@
+{
+  "registered_epoch": 1795875711.503179,
+  "classification": "Prospective Mellum2.1 Thinking Q6 builtin-template GPU98k and genuine short reasoning/tool/result/history qualification. Not actual MCP/coding quality.",
+  "backend_image": "sha256:fee4289628e7ba09f6fbf62d6ce4325aebb2531ffde2154d41276fe4acc58da3",
+  "load_mode": "none",
+  "per_probe_deadline_seconds": 1800,
+  "load_deadline_seconds": 1200,
+  "per_model_stage_guard_seconds": 14400,
+  "backend_log_verbosity": 5,
+  "preservation_baseline_file": "baseline-before-mellum21-thinking-resource/runtime.json",
+  "download_completion_required": "mellum21-thinking-q6-download-receipt.json",
+  "admission_sha256": {},
+  "scope": "One fullyGPU builtin-template layout at98k, noMTP. Reasoning allowed and retained privately, never published as reasoning text or used as training targets. Exactly one correct lookup, no extra calls after tool result/followup, exact dependent marker. Main-style16k output cap and resource seed20261123. No long-context quality claim.8GiB aggregate host/no swap/all100GiBreserves.",
+  "probe_seed": 20261123,
+  "mellum21-thinking-q6": {
+    "repo": "JetBrains/Mellum2.1-12B-A2.5B-Thinking-GGUF",
+    "revision": "42f68c5f53975b7b88bd6dca61161ae88dc3c149",
+    "file": "Mellum2.1-12B-A2.5B-Thinking-Q6_K.gguf",
+    "expected_bytes": 10879834400,
+    "sha256": "12aec619f6a2c82b1ea8998f03665b3b5fc5bb758af97efdf4b1ec7a822b8668",
+    "expected_gpu_layers": 29,
+    "layers_basis": "GGUF28 transformer blocks plus output; measured backend must confirm29/29.",
+    "layouts": [
+      {
+        "context": 98304,
+        "gpu_layers": 99,
+        "ubatch": 64,
+        "cache_k": "q4_0",
+        "cache_v": "q4_0",
+        "template": "official_public_builtin",
+        "synthetic_targets": []
+      }
+    ],
+    "sampler": {
+      "temperature": 0.6,
+      "top_p": 0.95,
+      "top_k": 20,
+      "min_p": 0,
+      "repeat_penalty": 1,
+      "presence_penalty": 0,
+      "chat_template_kwargs": {
+        "enable_thinking": true
+      }
+    },
+    "probe_output_cap": 16384
+  }
+}
