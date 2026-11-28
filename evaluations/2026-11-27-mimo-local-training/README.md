@@ -199,3 +199,10 @@ Thinking preflight now verifies actual HTTP serialization of both the main16k an
 
 
 The [Thinking Q6 download](mellum21-thinking-download.json) is complete:10,879,834,400 bytes and fullSHA match the pinned artifact. Before/after checks preserve the previous21 models, full runtime/Codex state and owner profiles/source/pending work. Main-folder inventory is now22, all100GiB reserves preserved. The file is directly under `llama.cpp/models` with no duplicateHFcache. Actual Thinking GPU/tool and coding qualification remain pending.
+
+
+## Mellum Thinking short compatibility: pass
+
+The Thinking Q6 independently loads98,304 context with29/29 GPU layers and observed peak11,124MiB. It returns exactly one correct lookup, completes using the supplied result without another call, and returns the exact dependent-history marker. Separate reasoning is present in all three responses and retained in the rendered tool-result continuation; raw reasoning is kept private and is not training data. The16k probe cap and actual main16k/compression8k serialization are verified. Aggregate observed study cgroup peak is6.57GiB with zero study swap. All22models, owner profiles/source/pending work and runtime/fullCodex state pass preservation and exact cleanup. [Measured result](mellum21-thinking-capacity.json).
+
+This remains short compatibility, not coding correctness, actual MCP routing or long-context retrieval quality. The declared three-task native workflow is next after fresh fixture readmission, with no operator correction or private grader feedback.

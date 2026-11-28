@@ -1,0 +1,113 @@
+{
+  "candidate": "Mellum2.1-12B-A2.5B-Thinking Q6_K",
+  "classification": "PASS: isolated98kGPU allocation and short genuine thinking/tool/result/history compatibility only. No coding/MCP/long-context-quality claim.",
+  "model_sha256": "12aec619f6a2c82b1ea8998f03665b3b5fc5bb758af97efdf4b1ec7a822b8668",
+  "context": 98304,
+  "GPU_layers": "29/29",
+  "GPU_peak_MiB": 11124,
+  "study_cgroup_peak_bytes": 7049928704,
+  "study_swap_peak_bytes": 0,
+  "minimum_Docker_root_free_bytes": 114893905920,
+  "minimum_model_disk_free_bytes": 181427109888,
+  "load_seconds": 89.42778343701502,
+  "resource_protocol_sha256": "b23ea59195a64956b90db811bfec1e89fb0e79049faecad7f87388b5019d7d17",
+  "probe_seed": 20261123,
+  "sampler": {
+    "temperature": 0.6,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0,
+    "repeat_penalty": 1,
+    "presence_penalty": 0,
+    "chat_template_kwargs": {
+      "enable_thinking": true
+    }
+  },
+  "probe_output_cap": 16384,
+  "planned_native_main_cap": 16384,
+  "planned_native_aux_cap": 8192,
+  "planned_native_seed": 20261127,
+  "probes": [
+    {
+      "probe": "tool",
+      "seconds": 13.08302652600105,
+      "usage": {
+        "completion_tokens": 138,
+        "prompt_tokens": 183,
+        "total_tokens": 321,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "tool_call_count": 1,
+      "separate_reasoning_present": true,
+      "final_content_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "exact_single_lookup_call": true
+    },
+    {
+      "probe": "tool-result",
+      "seconds": 3.609460431005573,
+      "usage": {
+        "completion_tokens": 235,
+        "prompt_tokens": 354,
+        "total_tokens": 589,
+        "prompt_tokens_details": {
+          "cached_tokens": 178
+        }
+      },
+      "tool_call_count": 0,
+      "separate_reasoning_present": true,
+      "final_content_sha256": "91e37110c448d9c1805ca3312d53842d91c497337293a82e129f5d6052111e3f"
+    },
+    {
+      "probe": "tool-followup",
+      "seconds": 2.8611112410144415,
+      "usage": {
+        "completion_tokens": 151,
+        "prompt_tokens": 300,
+        "total_tokens": 451,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "tool_call_count": 0,
+      "separate_reasoning_present": true,
+      "final_content_sha256": "f7fe58c5a7d9d54db20e6149bd9dd12626e7c27ce10b1895070c919d419a9bb3",
+      "exact_history_marker": true
+    }
+  ],
+  "tool_history_template": {
+    "actual_reasoning_nonempty": true,
+    "actual_reasoning_retained_in_rendered_template": true,
+    "not_replaced_with_operator_reasoning": true
+  },
+  "raw_reasoning_not_published_or_training_data": true,
+  "preservation": {
+    "passed": true,
+    "epoch": 1795876874.9988256,
+    "original22_models_unchanged": true,
+    "owner_profile_hashes_unchanged": true,
+    "owner_source_and_pending_work_unchanged": true,
+    "runtime_ids_images_config_running_unchanged": true,
+    "full_Codex_state_unchanged": true,
+    "original_alias_context_restored": true,
+    "registered_stage_complete_not_quality_verdict": true,
+    "resource_probes_completed": true,
+    "source_baselines": [
+      "baseline-before-mellum21-thinking-resource",
+      "baseline-after-mellum21-thinking-resource"
+    ]
+  },
+  "cleanup": {
+    "passed": true,
+    "epoch": 1795876875.1633165,
+    "removed_exact_supervisor_id": "27918c815c54cf03f523c4190d5f7457f4390dfbfcaaeba22fbe4061f7de1de0",
+    "removed_only_task_anonymous_volumes": [
+      "670455bb08859c61292fd9dc60323d37a27e8bd3f66d88c0f4721fbd30b57e94"
+    ],
+    "named_stage_volume_preserved": true,
+    "no_live_study_containers": true
+  },
+  "long_synthetic_retrieval_probes_issued": false,
+  "native_workflow_started": false
+}
