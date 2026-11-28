@@ -1,0 +1,33 @@
+{
+  "download": {
+    "passed": true,
+    "candidate": {
+      "repo": "bartowski/MiMo-V2.6-Distill-Qwen-9B-GGUF",
+      "revision": "4371da10c84fb26da3592d4cf312d24aa82b7b65",
+      "file": "MiMo-V2.6-Distill-Qwen-9B-Q8_0.gguf",
+      "public_bytes": 9545979424,
+      "public_full_SHA256": "2fad0aa11bb9e7aa491ff12f768954f9dd0a6e7d4ce4a897ca73ec420f3b90ae"
+    },
+    "downloaded_bytes": 9545979424,
+    "full_sha256": "2fad0aa11bb9e7aa491ff12f768954f9dd0a6e7d4ce4a897ca73ec420f3b90ae",
+    "seconds": 850.1588582992554,
+    "free_GiB": 159.6998176574707,
+    "HTTP_requests": 1,
+    "network_retries": 0,
+    "production_not_changed": true,
+    "no_fit_or_quality_claim": true
+  },
+  "destination": "llama.cpp/models/MiMo-V2.6-Distill-Qwen-9B-Q8_0.gguf",
+  "preservation": {
+    "passed": true,
+    "epoch": 1795883656.5715148,
+    "original22_models_unchanged": true,
+    "exactly_one_verified_public_Q8_added": true,
+    "main_model_count": 23,
+    "full_runtime_and_Codex_state_unchanged": true,
+    "owner_profiles_source_and_pending_unchanged": true,
+    "all_storage_reserves_preserved": true,
+    "no_GPU_trial_or_training_started": true
+  },
+  "no_GPU_fit_or_coding_success_claim": true
+}
