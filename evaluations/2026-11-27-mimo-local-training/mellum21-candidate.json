@@ -1,0 +1,55 @@
+{
+  "registered_epoch": 1795873152.3619153,
+  "candidate": {
+    "repo": "JetBrains/Mellum2.1-12B-A2.5B-Instruct-GGUF",
+    "revision": "a7b59537ac5f9405d641b1dbef6ba3a6ba8c0ab1",
+    "file": "Mellum2.1-12B-A2.5B-Instruct-Q6_K.gguf",
+    "public_bytes": 10879833184,
+    "public_full_SHA256": "6bbaf390b6891acaa36a94accfb0dc5881e4560cdd3a0cdc4ab1de07ffd636ee"
+  },
+  "destination": "models/Mellum2.1-12B-A2.5B-Instruct-Q6_K.gguf",
+  "download_stop_free_bytes": 109521666048,
+  "source_repo": "JetBrains/Mellum2.1-12B-A2.5B-Instruct",
+  "source_revision": "f9626ec67e04619c0a7af7db7ee6c4aa576440a2",
+  "official_card": "https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Instruct",
+  "basis": "Different officially published MoE trained with repository shell/file workflows; public Q6 selected for precision within plausible GPU budget. Publisher descriptions are candidate rationale, not independently verified performance.",
+  "GGUF_header": {
+    "architecture": "mellum",
+    "layers": 28,
+    "expected_GPU_layers_pending_runtime": 29,
+    "max_context": 131072,
+    "head_length": 128,
+    "tensor_count": 339,
+    "template": {
+      "bytes": 3456,
+      "SHA256": "e674cbec4c384ab50c18c91d8cada3b6931d7a7ee25d9db004366aa440c1ca86"
+    },
+    "imatrix_metadata_present": false
+  },
+  "target_capacity": {
+    "context": 98304,
+    "GPU_layers": 99,
+    "cache_k": "q4_0",
+    "cache_v": "q4_0",
+    "ubatch": 64,
+    "parallel": 1,
+    "MTP": false
+  },
+  "declared_sampler": {
+    "temperature": 0.6,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0,
+    "repeat_penalty": 1,
+    "presence_penalty": 0,
+    "chat_template_kwargs": {
+      "enable_thinking": false
+    }
+  },
+  "caps": {
+    "main": 8192,
+    "auxiliary": 8192
+  },
+  "admission": "Wait for completed native preservation/cleanup, capture fresh runtime/model/owner baseline; download directly without duplicate cache copy, check size/SHA and storage each chunk. No GPU fit or tool quality claim before separate measured capacity.",
+  "no_production_config_changes": true
+}

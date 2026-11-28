@@ -1,0 +1,311 @@
+{
+  "candidate": "Qwen3.6-14B-A3B-VibeForged-v2 Q4_K_M",
+  "context": 98304,
+  "GPU_layers": "41/41",
+  "backend": "b12723-abca69200",
+  "main_aux_output_cap": 8192,
+  "sampler": {
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.05,
+    "repeat_penalty": 1,
+    "presence_penalty": 0,
+    "chat_template_kwargs": {
+      "enable_thinking": false
+    },
+    "seed": 20261127
+  },
+  "model_sha256": "273777783847f3a9eba912abc35407d651a575064a478ed9fbd7ad90b962b6b6",
+  "classification": "FAIL: skills-disabled nonthinking Vibe development comparison; no code work or forge publication",
+  "whole_workflow_pass": false,
+  "tasks_independent": false,
+  "evaluator_image": "sha256:68d60b68cbf2838a44027c4b025a285040cbae09868e3ab0c143a9e0feb073af",
+  "protocol_sha256": "fb7f68e8bd0e2f49c5312541a20f588e7b85b90244168706f7b59ca2f0e80bfb",
+  "phases": [
+    {
+      "phase": 0,
+      "seconds": 199.01558164900052,
+      "native_exit_code": 1,
+      "external_timeout": false,
+      "project_suite_passed": true,
+      "immutable_original_suite_passed": true,
+      "local_source_digest": "06d454e90056f73359a168f0d15ecedd3ee8e3d555797450257ed0bb2dcfa68e",
+      "changed_paths": [],
+      "authored_test_paths": [],
+      "real_core": {
+        "passed": false,
+        "phase": 0,
+        "cases": [
+          {
+            "case": "ordinary_new_buddy",
+            "passed": true
+          },
+          {
+            "case": "repeat_request_is_silent",
+            "passed": false,
+            "error": "AssertionError: "
+          },
+          {
+            "case": "existing_buddy_casefold_is_silent",
+            "passed": false,
+            "error": "AssertionError: "
+          },
+          {
+            "case": "room_self_nontrigger_exclusions",
+            "passed": true
+          },
+          {
+            "case": "default_connect_room",
+            "passed": true
+          }
+        ],
+        "actual_core_version": "3.3.11",
+        "real_handler_and_buddy_add_used": true,
+        "network_watch_and_GUI_delivery_stubbed": true,
+        "source_sha256": "026a3e1998ccf4e7e25613fcc4a81d977a933b3ec0dd97ede49b1de95e841ab3"
+      },
+      "upstream_PR_present": false,
+      "remote_source_grade_available": false
+    },
+    {
+      "phase": 1,
+      "seconds": 127.29348539098282,
+      "native_exit_code": 0,
+      "external_timeout": false,
+      "project_suite_passed": true,
+      "immutable_original_suite_passed": true,
+      "local_source_digest": "06d454e90056f73359a168f0d15ecedd3ee8e3d555797450257ed0bb2dcfa68e",
+      "changed_paths": [],
+      "authored_test_paths": [],
+      "real_core": {
+        "passed": false,
+        "phase": 1,
+        "cases": [
+          {
+            "case": "ordinary_new_buddy",
+            "passed": true
+          },
+          {
+            "case": "repeat_request_is_silent",
+            "passed": false,
+            "error": "AssertionError: "
+          },
+          {
+            "case": "existing_buddy_casefold_is_silent",
+            "passed": false,
+            "error": "AssertionError: "
+          },
+          {
+            "case": "room_self_nontrigger_exclusions",
+            "passed": true
+          },
+          {
+            "case": "default_connect_room",
+            "passed": true
+          }
+        ],
+        "actual_core_version": "3.3.11",
+        "real_handler_and_buddy_add_used": true,
+        "network_watch_and_GUI_delivery_stubbed": true,
+        "source_sha256": "026a3e1998ccf4e7e25613fcc4a81d977a933b3ec0dd97ede49b1de95e841ab3"
+      },
+      "upstream_PR_present": false,
+      "remote_source_grade_available": false
+    },
+    {
+      "phase": 2,
+      "seconds": 157.8414730539953,
+      "native_exit_code": 1,
+      "external_timeout": false,
+      "project_suite_passed": true,
+      "immutable_original_suite_passed": true,
+      "local_source_digest": "06d454e90056f73359a168f0d15ecedd3ee8e3d555797450257ed0bb2dcfa68e",
+      "changed_paths": [],
+      "authored_test_paths": [],
+      "real_core": {
+        "passed": false,
+        "phase": 2,
+        "cases": [
+          {
+            "case": "ordinary_new_buddy",
+            "passed": true
+          },
+          {
+            "case": "repeat_request_is_silent",
+            "passed": false,
+            "error": "AssertionError: "
+          },
+          {
+            "case": "existing_buddy_casefold_is_silent",
+            "passed": false,
+            "error": "AssertionError: "
+          },
+          {
+            "case": "room_self_nontrigger_exclusions",
+            "passed": true
+          },
+          {
+            "case": "default_connect_room",
+            "passed": true
+          },
+          {
+            "case": "preferences_trimmed_values",
+            "passed": false,
+            "error": "AssertionError: "
+          },
+          {
+            "case": "settings_take_effect_without_restart",
+            "passed": false,
+            "error": "AssertionError: "
+          },
+          {
+            "case": "blank_settings_fall_back",
+            "passed": true
+          }
+        ],
+        "actual_core_version": "3.3.11",
+        "real_handler_and_buddy_add_used": true,
+        "network_watch_and_GUI_delivery_stubbed": true,
+        "source_sha256": "026a3e1998ccf4e7e25613fcc4a81d977a933b3ec0dd97ede49b1de95e841ab3"
+      },
+      "upstream_PR_present": false,
+      "remote_source_grade_available": false
+    }
+  ],
+  "coding_seconds": 484.15054009397863,
+  "requests_completed": 178,
+  "first_request_seconds": 55.854382038116455,
+  "max_actual_prompt_tokens": 43401,
+  "cache": {
+    "cumulative_input_tokens": 4798425,
+    "cumulative_cached_input_tokens": 4765412,
+    "token_weighted_cached_fraction": 0.9931200341778813,
+    "median_request_seconds": 2.1122214794158936,
+    "cumulative_replayed_history_not_context_size": true
+  },
+  "GPU_peak_MiB": 8944,
+  "study_cgroup_peak_bytes": 7611518976,
+  "study_swap_peak_bytes": 0,
+  "minimum_Docker_root_free_bytes": 116983951360,
+  "minimum_model_disk_free_bytes": 203350069248,
+  "final_forge_readback": {
+    "source": "Configured Gitea MCP current readback",
+    "repo": "chatgpt-codex/hermes-deps-autobuddy-vibe-nothink-20261128",
+    "main_revision": "f9980ddc8aa6809e2f98f3ee95436bdb368e7a3d",
+    "baseline_blobs": 40,
+    "issues_all_states": 0,
+    "pull_requests_all_states": 0,
+    "actor_fork_not_independently_checked": true
+  },
+  "supplemental_source_review": {
+    "classification": "Posthoc supplemental source review, separate from unchanged primary registered grades",
+    "controls_passed": true,
+    "primary_grades_unchanged": true,
+    "candidate_snapshots": [
+      {
+        "phase": 0,
+        "source_sha256": "026a3e1998ccf4e7e25613fcc4a81d977a933b3ec0dd97ede49b1de95e841ab3",
+        "remove_readd_passed": true
+      }
+    ],
+    "same_source_all_three_phases": true,
+    "baseline_remove_readd_passed": true,
+    "reference_remove_readd_passed": true,
+    "unchanged_original_source_passes_supplement_not_requested_fix": true
+  },
+  "preservation": {
+    "passed": true,
+    "epoch": 1795873051.7647495,
+    "original20_models_unchanged": true,
+    "owner_profile_hashes_unchanged": true,
+    "owner_source_and_pending_work_unchanged": true,
+    "runtime_ids_images_config_running_unchanged": true,
+    "full_Codex_state_unchanged": true,
+    "original_alias_context_restored": true,
+    "three_turns_complete_not_quality_verdict": true,
+    "source_baselines": [
+      "baseline-before-vibe-q4-noskills-native",
+      "baseline-after-vibe-q4-noskills-native"
+    ]
+  },
+  "cleanup": {
+    "passed": true,
+    "epoch": 1795873051.9119365,
+    "removed_exact_supervisor_id": "5b31a7271386090ed50ef7c9da9a0aeace5dab2fbc3fc817958f15f69ecd2f9a",
+    "removed_only_task_anonymous_volumes": [
+      "43f21616972112e996a96eb8b0beddc042b16287348bf10a384d8cf6544296bd"
+    ],
+    "named_stage_volume_preserved": true,
+    "no_live_study_containers": true
+  },
+  "training_positive_eligible": false,
+  "grader_feedback_to_actor": false,
+  "operator_patch_or_correction": false,
+  "findings": [
+    "All three phases leave the source unchanged and produce no authored tests or forge publication.",
+    "All175 native tool calls use execute_code with invented git search_repositories commands. All print stdout only, omitting subprocess stderr and return code.",
+    "Phase0 reaches iteration limit, phase1 native no-progress guard, phase2 tool limit. Native exits1,0,1 are not behavior grades.",
+    "Registered real-core behavior remains baseline3/5,3/5,4/8; unchanged original83 tests pass.",
+    "Disabling only the3 skill tools does not rescue this configuration; model switches to invalid-command loop. No general toolset or thinking conclusion from one dependent workflow.",
+    "No operator corrections or grader feedback; full failed trajectory excluded from positive training data."
+  ],
+  "limitations": [
+    "One development workflow with three dependent tasks, not repetitions or reliability estimate.",
+    "Only native skills toolset removed from prior nonthinking configuration; memory and approval settings retained. Not weights-only or exact everyday-profile replica.",
+    "Existing unchanged fixture reused after both identities verify40 baseline blobs, zero issues/PRs and actor fork404.",
+    "Read-only observer process terminated before test ended; actual native records, supervisor events and final SQLite snapshots supply complete scoring evidence. No test restart.",
+    "Remove/re-add supplement passes on untouched baseline, not on an implemented requested fix."
+  ],
+  "invented_git_search_calls": 175,
+  "stdout_only_subprocess_calls": 175,
+  "observed_tool_calls": {
+    "execute_code": 175
+  },
+  "approval_staged_skill_results": 0,
+  "missing_autobuddy_skill_results": 0,
+  "actual_initial_wire": {
+    "epoch": 1795872532.2299361,
+    "model": "gpuquant-vibe-q4-noskills",
+    "max_tokens": 8192,
+    "temperature": 1.0,
+    "thinking": false,
+    "reasoning_effort": "medium",
+    "actual_native_tool_count": 29,
+    "skill_tools_absent": true,
+    "native_tool_names": [
+      "browser_exec",
+      "browser_vault",
+      "execute_code",
+      "gitea_commit_workspace",
+      "gitea_create_branch",
+      "gitea_create_issue",
+      "gitea_create_pull_request",
+      "gitea_fork_repository",
+      "gitea_identity",
+      "gitea_list_branches",
+      "gitea_list_directory",
+      "gitea_list_issues",
+      "gitea_list_pull_requests",
+      "gitea_read_file",
+      "gitea_read_issue",
+      "gitea_read_pull_request",
+      "gitea_repository_info",
+      "gitea_search_repositories",
+      "gitea_update_issue",
+      "gitea_update_pull_request",
+      "memory",
+      "patch",
+      "process_manage",
+      "read_file",
+      "search_files",
+      "terminal",
+      "web_extract",
+      "web_search",
+      "write_file"
+    ],
+    "selected_fixture_context_present": true,
+    "remote_edit_tool_absent": true
+  },
+  "skills_disabled_prospective": "skills-disabled-prospective.json"
+}

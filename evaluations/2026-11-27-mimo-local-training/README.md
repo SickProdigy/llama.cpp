@@ -129,3 +129,28 @@ Next diagnostic: prospectively compare a leaner native tool configuration while 
 
 
 A [skills-disabled configuration comparison](skills-disabled-prospective.json) is now registered before inference. It removes only `skills_list`, `skill_view` and `skill_manage` from the completed nonthinking setup, preserving memory and approval settings. Native oneshot schema selection verifies the expected29 tools; terminal and actual scoped Gitea identity/repository reads pass, with writes denied under the read-only preflight lease. Both authenticated identities verify the original40 fixture blobs, zero issues/PRs and absent actor fork. This untouched fixture can be reused without another duplicate repository. The first SDK schema check included GUI-style `clarify`; using the native oneshot selection removes it as the CLI does. That operator-only check performed no inference or forge writes and is not a model result.
+
+
+## Skills-disabled comparison: complete, still fails
+
+The registered29-tool nonthinking Vibe comparison finishes in8.07 coding minutes across178 requests. It leaves the source unchanged and publishes no contribution. All175 native tool calls use `execute_code` to attempt an invented `git search_repositories` command. The code prints only subprocess stdout, omitting stderr and return status; an empty output is repeatedly treated as another search to try. Removing skill tools changes the loop, not task success. No operator correction or private grader feedback is supplied.
+
+| Dependent task | Coding time | Native exit | Source changes | Registered real runtime |
+| --- | --- | --- | --- | --- |
+| New-buddy idempotency | 3.32 min | 1, iteration limit | None | 3/5 baseline cases pass |
+| Documentation | 2.12 min | 0, no-progress stop | None | Same3/5 baseline result |
+| Live settings | 2.63 min | 1, tool limit | None | 4/8 baseline cases pass |
+
+The actual initial wire confirms29 tools, thinking false,8,192 output cap and selected fixture context. Original83 tests pass and all source digests remain equal; there are no authored regressions. The separate remove/re-add supplemental check passes on the untouched baseline, not on a new fix. Actual configured Gitea MCP readback confirms original main/40 blobs, zero issues and zero PRs. Absence of every possible private fork is not claimed. The viewer process terminates before the run ends; complete native SQLite snapshots, recorder metrics, exact supervisor events and independent final grades remain available. The test is not restarted.
+
+Observed peak GPU memory is8,944MiB with all41 layers offloaded; aggregate study cgroup peak7.09GiB, zero study swap, and actual maximum input43,401 tokens. All20 retained models, owner profiles/source/pending work, original runtime and full Hermes-Codex state pass preservation. Exact task cleanup passes and normal services are restored. Full failed trajectories remain ineligible for positive training. [Machine-readable result](native-vibe-q4-skills-disabled-summary.json).
+
+This single dependent development workflow supports keeping the default unchanged and rejecting this configuration as an improvement. It does not establish a general benefit from removing skills or enabling/disabling thinking.
+
+## Newly researched candidates, not model-quality results
+
+The official [Mellum2.1 Instruct card](https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Instruct) describes a12B/2.5B-active MoE trained with repository shell/file workflows and131,072-token context. Its official GGUF repository was updated November26. The pinned public Q6 is10,879,833,184 bytes. A bounded16MiB header inspection identifies `mellum`,28 layers,128-dimensional attention heads and a built-in template; the pinned llama.cpp source includes the architecture. These facts justify a compatibility test, not a GPU-fit or agent-performance claim. Publisher claims have not been independently reproduced. [Pinned selection, exact checksum and gates](mellum21-candidate.json).
+
+Download admission occurs only after the completed skills-disabled preservation and cleanup. The file goes directly into `llama.cpp/models`, with a separate partial filename, size/full-SHA checks, per-chunk storage checks and no duplicate Hugging Face cache copy. Preserve the existing20 models and100GiB reserves. A fresh before/after runtime/profile/source/model check must finish before GPU qualification. No production configuration change, MTP head or real training is part of this download. Next gate is measured98k GPU fit and genuine short tool/result/history calls before any coding workflow.
+
+A same-publisher, same-revision [MiMo Q8 candidate](mimo-q8-candidate.json) is also pinned at9,545,979,424 bytes. It remains undownloaded as a possible later precision comparison with Q6. Higher precision is not assumed to repair the observed code and reasoning defects. Mellum tests a different candidate before another MiMo quantization.
