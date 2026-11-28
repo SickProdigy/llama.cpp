@@ -97,3 +97,20 @@ Twenty publisher checks pass, including changed heads and pagination. A real
 scoped SDK/MCP smoke verifies two commits and exact remote blobs on such a
 branch, plus a correctly directed upstream PR. Operator preflight issues are
 closed and this smoke is not a model coding success.
+
+Version 0.1.4 adds optional `explicit_object_ids: true` under this plugin's
+settings. Successful responses provide `verified_commit_sha` and `commit_url`
+before the file results, whose hashes are named `blob_sha`. A file blob hash
+identifies file content and cannot be used as a commit link. The default remains
+the earlier response format with file `sha` fields and no extra branch read.
+
+The option reads the remote feature-branch head after writing, then verifies
+the changed blobs against that exact commit. `verified_commit_sha` identifies
+the verified snapshot; it does not establish exclusive authorship or guarantee
+that a concurrent writer has not moved the branch afterward. If head metadata
+cannot be verified, the tool reports that the write returned but verification
+failed; it never constructs a commit link from a blob hash. Twenty-six unit
+checks pass, including pinned snapshot verification, missing metadata, deletions
+and the existing 40-character branch behavior. This option has not yet received
+a real native transport or model-quality qualification. The running Announcer
+comparison uses its previously pinned 0.1.3 copy, without this option.

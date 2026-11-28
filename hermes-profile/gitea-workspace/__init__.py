@@ -15,15 +15,19 @@ def decode(value):
  raise RuntimeError('Unexpected nested MCP result')
 
 class Publisher:
- def __init__(self,root,baseline_ref,transport,allowed_upstreams,allowed_paths,public_url='https://gitea.rcs1.top',allowed_path_prefixes=()):
+ def __init__(self,root,baseline_ref,transport,allowed_upstreams,allowed_paths,public_url='https://gitea.rcs1.top',allowed_path_prefixes=(),explicit_object_ids=False):
   self.root=Path(root).resolve();self.baseline=baseline_ref;self.transport=transport;self.allowed=frozenset(allowed_upstreams);self.paths=frozenset(allowed_paths);self.public=public_url.rstrip('/');self.last=None
   self.prefixes=tuple(allowed_path_prefixes or ())
+  if type(explicit_object_ids) is not bool:raise ValueError('explicit_object_ids must be a boolean')
+  self.explicit_object_ids=explicit_object_ids
   for prefix in self.prefixes:
    if not isinstance(prefix,str) or not prefix.endswith('/') or PurePosixPath(prefix).is_absolute() or not PurePosixPath(prefix).parts or '..' in PurePosixPath(prefix).parts or '.git' in PurePosixPath(prefix).parts or chr(92) in prefix or prefix!=str(PurePosixPath(prefix))+'/':raise ValueError('Allowed path prefixes must be normalized relative directory paths ending in /')
  def git(self,*args):return subprocess.check_output(['git','-C',str(self.root),*args])
  def native(self,name,args):return decode(self.transport(PREFIX+name,args))
  def tree_ref(self,owner,repo,branch):
   if len(branch)!=40:return branch
+  return self.branch_commit(owner,repo,branch)
+ def branch_commit(self,owner,repo,branch):
   previous=None
   for page in range(1,51):
    rows=self.native('branch_read',{'method':'list','owner':owner,'repo':repo,'per_page':100,'page':page})
@@ -38,8 +42,9 @@ class Publisher:
     return sha
    if len(rows)<100:break
   raise ValueError('Branch not found for tree lookup: '+branch)
- def tree(self,owner,repo,branch):
-  tree_ref=self.tree_ref(owner,repo,branch)
+ def tree(self,owner,repo,branch,*,resolved_ref=None):
+  tree_ref=self.tree_ref(owner,repo,branch) if resolved_ref is None else resolved_ref
+  if resolved_ref is not None and not re.fullmatch(r'[0-9a-fA-F]{40}',resolved_ref):raise ValueError('Invalid resolved commit SHA')
   files={};seen=0;previous=None
   for page in range(1,51):
    value=self.native('get_repository_tree',{'owner':owner,'repo':repo,'tree_sha':tree_ref,'recursive':True,'per_page':100,'page':page})
@@ -93,14 +98,19 @@ class Publisher:
   fingerprint=hashlib.sha256(json.dumps([fork_owner,fork_repo,branch_name,expected],sort_keys=True).encode()).hexdigest()
   if fingerprint==self.last:raise ValueError('These exact workspace changes were already published')
   result=self.native('create_or_update_file',{'owner':fork_owner,'repo':fork_repo,'branch_name':branch_name,'message':commit_message,'files':files});verified=[]
-  after=self.tree(fork_owner,fork_repo,branch_name)
+  verified_commit=None
+  if self.explicit_object_ids:
+   try:verified_commit=self.branch_commit(fork_owner,fork_repo,branch_name)
+   except (ValueError,RuntimeError) as error:raise RuntimeError('Write returned but remote commit metadata could not be verified: '+str(error)) from error
+  after=self.tree(fork_owner,fork_repo,branch_name,resolved_ref=verified_commit) if self.explicit_object_ids else self.tree(fork_owner,fork_repo,branch_name)
   for name,sha in expected.items():
    remote=after.get(name)
    if sha is None:
     if remote is not None:raise RuntimeError('Commit returned but deletion verification failed: '+name)
    elif not isinstance(remote,dict) or remote.get('sha')!=sha:raise RuntimeError('Commit returned but blob verification failed: '+name)
-   verified.append({'path':name,'verified':True,'sha':sha,'url':self.public+'/'+fork_owner+'/'+fork_repo+'/src/branch/'+branch_name+'/'+name})
+   verified.append({'path':name,'verified':True,('blob_sha' if self.explicit_object_ids else 'sha'):sha,'url':self.public+'/'+fork_owner+'/'+fork_repo+'/src/branch/'+branch_name+'/'+name})
   self.last=fingerprint
+  if self.explicit_object_ids:return {'ok':True,'verified_commit_sha':verified_commit,'commit_url':self.public+'/'+fork_owner+'/'+fork_repo+'/commit/'+verified_commit,'result':result,'files':verified,'checks_executed_by_this_tool':False}
   return {'ok':True,'result':result,'files':verified,'checks_executed_by_this_tool':False}
  def handle(self,args):
   try:return json.dumps(self.publish(**args),ensure_ascii=False)
@@ -110,6 +120,6 @@ def register(ctx):
  from tools.registry import registry
  root=ctx.get_config('workspace_root','');baseline=ctx.get_config('baseline_ref','')
  if not root or not baseline:raise ValueError('gitea-workspace requires an explicit selected workspace root and baseline ref')
- p=Publisher(root,baseline,registry.dispatch,ctx.get_config('allowed_upstream_repositories',[]),ctx.get_config('allowed_paths',[]),ctx.get_config('public_url','https://gitea.rcs1.top'),allowed_path_prefixes=ctx.get_config('allowed_path_prefixes',[]))
+ p=Publisher(root,baseline,registry.dispatch,ctx.get_config('allowed_upstream_repositories',[]),ctx.get_config('allowed_paths',[]),ctx.get_config('public_url','https://gitea.rcs1.top'),allowed_path_prefixes=ctx.get_config('allowed_path_prefixes',[]),explicit_object_ids=ctx.get_config('explicit_object_ids',False))
  schema={'name':'gitea_commit_workspace','description':'Commit the selected local Git workspace changes to an existing personal-fork feature branch through Gitea MCP. Includes committed and uncommitted changes since the frozen baseline. Verifies remote blob hashes. Does not run tests: execute appropriate checks before publishing.','parameters':{'type':'object','properties':{k:{'type':'string','minLength':1} for k in ['fork_owner','fork_repo','branch_name','commit_message']},'required':['fork_owner','fork_repo','branch_name','commit_message'],'additionalProperties':False}}
  ctx.register_tool(name=schema['name'],toolset=TOOLSET,schema=schema,handler=p.handle)

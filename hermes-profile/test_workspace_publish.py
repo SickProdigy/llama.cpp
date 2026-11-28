@@ -23,6 +23,47 @@ class Publication(unittest.TestCase):
  def publish(self,**overrides):return self.p.publish(**({'fork_owner':'agent','fork_repo':'fork','branch_name':'fix','commit_message':'fix'}|overrides))
  def test_existing_and_new_files_are_published_and_verified(self):
   (self.root/'code.py').write_text('new\n');(self.root/'tests').mkdir();(self.root/'tests/test_code.py').write_text('test\n');r=self.publish();self.assertTrue(r['ok']);self.assertEqual(len(r['files']),2);self.assertTrue(all(f['verified'] for f in r['files']));self.assertFalse(r['checks_executed_by_this_tool']);writes=[a for n,a in self.calls if n.endswith('create_or_update_file')];self.assertEqual(writes[0]['files'][0]['sha'],blob(b'old\n'))
+  self.assertNotIn('verified_commit_sha',r);self.assertTrue(all('sha' in f and 'blob_sha' not in f for f in r['files']));self.assertFalse(any(n.endswith('branch_read') for n,a in self.calls))
+ def enable_explicit_ids(self,branch='fix',missing=False):
+  original=self.transport
+  def transport(name,args):
+   if name.endswith('branch_read'):
+    self.calls.append((name,args))
+    if missing:return []
+    return [{'name':branch,'commit':{'id':('b' if any(n.endswith('create_or_update_file') for n,a in self.calls) else 'a')*40}}]
+   return original(name,args)
+  self.p=m.Publisher(self.root,self.base,transport,['owner/up'],['code.py','README.md'],explicit_object_ids=True)
+ def test_explicit_ids_separate_verified_commit_from_file_blob(self):
+  self.enable_explicit_ids();(self.root/'code.py').write_text('new\n');r=self.publish()
+  self.assertEqual(r['verified_commit_sha'],'b'*40);self.assertEqual(r['commit_url'],'https://gitea.rcs1.top/agent/fork/commit/'+'b'*40)
+  self.assertNotEqual(r['verified_commit_sha'],blob(b'new\n'));self.assertEqual(r['files'][0]['blob_sha'],blob(b'new\n'));self.assertNotIn('sha',r['files'][0])
+  self.assertEqual([a['tree_sha'] for n,a in self.calls if n.endswith('get_repository_tree')],['fix','b'*40])
+  self.assertEqual(len([n for n,a in self.calls if n.endswith('branch_read')]),1)
+ def test_explicit_ids_keep_forty_character_branch_resolution(self):
+  branch='feature-'.ljust(40,'x');self.enable_explicit_ids(branch);(self.root/'code.py').write_text('new\n');r=self.publish(branch_name=branch)
+  self.assertEqual(r['verified_commit_sha'],'b'*40);self.assertEqual([a['tree_sha'] for n,a in self.calls if n.endswith('get_repository_tree')],['a'*40,'b'*40])
+ def test_missing_postwrite_head_never_becomes_a_blob_commit_link(self):
+  self.enable_explicit_ids(missing=True);(self.root/'code.py').write_text('new\n')
+  r=json.loads(self.p.handle({'fork_owner':'agent','fork_repo':'fork','branch_name':'fix','commit_message':'fix'}))
+  self.assertIn('Write returned but remote commit metadata could not be verified',r['error']);self.assertNotIn('ok',r);self.assertNotIn('commit_url',r)
+  self.assertEqual(self.remote['code.py'],b'new\n')
+ def test_explicit_ids_pin_verification_when_branch_moves(self):
+  self.enable_explicit_ids();original=self.p.transport;snapshot=None
+  def transport(name,args):
+   nonlocal snapshot
+   result=original(name,args)
+   if name.endswith('branch_read'):
+    snapshot=dict(self.remote);self.remote['code.py']=b'concurrent change\n'
+   elif name.endswith('get_repository_tree') and snapshot is not None:
+    if args['tree_sha']=='b'*40:return {'tree':[{'type':'blob','path':p,'sha':blob(data)}for p,data in snapshot.items()],'total_count':len(snapshot)}
+   return result
+  self.p.transport=transport;(self.root/'code.py').write_text('new\n');r=self.publish()
+  self.assertEqual(r['verified_commit_sha'],'b'*40);self.assertEqual(r['files'][0]['blob_sha'],blob(b'new\n'));self.assertEqual(self.remote['code.py'],b'concurrent change\n')
+ def test_explicit_ids_report_deletion_without_inventing_blob(self):
+  self.enable_explicit_ids();(self.root/'code.py').unlink();r=self.publish();self.assertIsNone(r['files'][0]['blob_sha']);self.assertEqual(r['verified_commit_sha'],'b'*40)
+ def test_explicit_ids_require_a_boolean_setting(self):
+  for value in ['false',1,None]:
+   with self.assertRaises(ValueError):m.Publisher(self.root,self.base,self.transport,['owner/up'],[],explicit_object_ids=value)
  def test_forty_character_branch_resolves_fresh_sha_before_and_after_commit(self):
   branch='feature-'.ljust(40,'x');original=self.transport
   def transport(name,args):
