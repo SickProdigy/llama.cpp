@@ -1,0 +1,28 @@
+{
+  "registered_epoch": 1795833199.936325,
+  "classification": "Prospective development configuration followup informed by completed MiMo and early Vibe dependency-cohort failures; not an untouched holdout",
+  "candidate": "Retained VibeForged v2 Q4, thinking disabled for main and auxiliary calls",
+  "rationale": "Current experimental Vibe config has a long reasoning request and failed earlier tasks. Test direct nonthinking tool behavior before attributing results solely to weights or downloading another quant. Owner compression explicitly disables thinking, while owner main flag is unspecified; this does not duplicate the full everyday profile.",
+  "model_sha256": "273777783847f3a9eba912abc35407d651a575064a478ed9fbd7ad90b962b6b6",
+  "context": 98304,
+  "main_and_aux_output_cap": 8192,
+  "sampler_source": "Same explicitly declared sampler as vibe-q4-deps; set enable_thinking=false for main and auxiliary requests. This compares complete configurations, not only a main-model parameter.",
+  "same_evaluator_image": "sha256:68d60b68cbf2838a44027c4b025a285040cbae09868e3ab0c143a9e0feb073af",
+  "same_task_family": "autobuddy_idempotency",
+  "same_baseline_revision": "f9980ddc8aa6809e2f98f3ee95436bdb368e7a3d",
+  "same_native_tools_and_scoped_Gitea_contract": true,
+  "same_primary_checker_sha256": "5c42b5c5e63f6d31fab7a445bbadee109a88627c8125537422dda109372ad7d5",
+  "separate_supplemental_remove_readd_check": true,
+  "actor_private_grader_feedback": false,
+  "not_exact_everyday_profile": "Owner main output cap4096; retain8192 here. Owner thinking-off is explicit only for compression. Unspecified sampler defaults are not inferred.",
+  "before_launch_requirements": [
+    "Current Vibe terminal, strict preservation and exact cleanup pass.",
+    "Complete separate supplemental source review.",
+    "Finish pending tiny CPU software requalification before another native GPU trial.",
+    "Fresh private fixture, two identities/fork absence, cold profile, actual wire/MCP controls.",
+    "Qualify short tool/result/history serialization with thinking disabled.",
+    "Fresh idle/space/resource admission and owner/full Codex preservation."
+  ],
+  "launch_automatically_armed": false,
+  "production_changed": false
+}

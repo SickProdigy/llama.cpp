@@ -1,0 +1,271 @@
+{
+  "candidate": "Qwen3.6-14B-A3B-VibeForged-v2 Q4_K_M",
+  "context": 98304,
+  "GPU_layers": "41/41",
+  "backend": "b12723-abca69200",
+  "main_aux_output_cap": 8192,
+  "sampler": {
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.05,
+    "repeat_penalty": 1,
+    "presence_penalty": 0,
+    "chat_template_kwargs": {
+      "enable_thinking": true
+    },
+    "seed": 20261127
+  },
+  "model_sha256": "273777783847f3a9eba912abc35407d651a575064a478ed9fbd7ad90b962b6b6",
+  "classification": "FAIL: dependency-available thinking-enabled development comparison; unpublished draft remains incorrect",
+  "whole_workflow_pass": false,
+  "tasks_independent": false,
+  "evaluator_image": "sha256:68d60b68cbf2838a44027c4b025a285040cbae09868e3ab0c143a9e0feb073af",
+  "protocol_sha256": "bc949326001146592de8dd10c3b50e0d5cc8272f9abf0efa3f0a54155c50b236",
+  "phases": [
+    {
+      "phase": 0,
+      "seconds": 625.6159072420269,
+      "native_exit_code": 1,
+      "external_timeout": false,
+      "project_suite_passed": false,
+      "project_exit": 1,
+      "immutable_original_suite_passed": true,
+      "local_source_digest": "24800f2fd6d52bcd8209d44ff1e63dbd84bcc95107df1247b4ae67e2e88f84f3",
+      "real_core": {
+        "passed": false,
+        "phase": 0,
+        "cases": [
+          {
+            "case": "ordinary_new_buddy",
+            "passed": true
+          },
+          {
+            "case": "repeat_request_is_silent",
+            "passed": true
+          },
+          {
+            "case": "existing_buddy_casefold_is_silent",
+            "passed": false,
+            "error": "AssertionError: "
+          },
+          {
+            "case": "room_self_nontrigger_exclusions",
+            "passed": true
+          },
+          {
+            "case": "default_connect_room",
+            "passed": true
+          }
+        ],
+        "actual_core_version": "3.3.11",
+        "real_handler_and_buddy_add_used": true,
+        "network_watch_and_GUI_delivery_stubbed": true,
+        "source_sha256": "90490aadc3ce800b77d810d3927ee6828e6f1226c96912b55da053a22a6290c8"
+      },
+      "authored_tests_fail_on_baseline": true,
+      "regression_meaning_still_requires_source_review": true,
+      "compression_lineage_sessions": 1,
+      "upstream_PR_present": false,
+      "remote_source_grade_available": false
+    },
+    {
+      "phase": 1,
+      "seconds": 203.6686827170197,
+      "native_exit_code": 0,
+      "external_timeout": false,
+      "project_suite_passed": false,
+      "project_exit": 1,
+      "immutable_original_suite_passed": true,
+      "local_source_digest": "9830c4106e2dc9b635156b79d9b72c279bd81cb1ce90b18db2091b8a2a6636da",
+      "real_core": {
+        "passed": false,
+        "phase": 1,
+        "cases": [
+          {
+            "case": "ordinary_new_buddy",
+            "passed": true
+          },
+          {
+            "case": "repeat_request_is_silent",
+            "passed": true
+          },
+          {
+            "case": "existing_buddy_casefold_is_silent",
+            "passed": false,
+            "error": "AssertionError: "
+          },
+          {
+            "case": "room_self_nontrigger_exclusions",
+            "passed": true
+          },
+          {
+            "case": "default_connect_room",
+            "passed": true
+          }
+        ],
+        "actual_core_version": "3.3.11",
+        "real_handler_and_buddy_add_used": true,
+        "network_watch_and_GUI_delivery_stubbed": true,
+        "source_sha256": "90490aadc3ce800b77d810d3927ee6828e6f1226c96912b55da053a22a6290c8"
+      },
+      "authored_tests_fail_on_baseline": true,
+      "regression_meaning_still_requires_source_review": true,
+      "compression_lineage_sessions": 1,
+      "upstream_PR_present": false,
+      "remote_source_grade_available": false
+    },
+    {
+      "phase": 2,
+      "seconds": 763.7536361830134,
+      "native_exit_code": 1,
+      "external_timeout": false,
+      "project_suite_passed": false,
+      "project_exit": 2,
+      "immutable_original_suite_passed": true,
+      "local_source_digest": "0b852876cde891f060ab99dff7d70791d8255b5d3bdd041a0dde8ec0bd82bc8f",
+      "real_core": {
+        "passed": false,
+        "phase": 2,
+        "cases": [
+          {
+            "case": "ordinary_new_buddy",
+            "passed": true
+          },
+          {
+            "case": "repeat_request_is_silent",
+            "passed": true
+          },
+          {
+            "case": "existing_buddy_casefold_is_silent",
+            "passed": false,
+            "error": "AssertionError: "
+          },
+          {
+            "case": "room_self_nontrigger_exclusions",
+            "passed": true
+          },
+          {
+            "case": "default_connect_room",
+            "passed": true
+          },
+          {
+            "case": "preferences_trimmed_values",
+            "passed": false,
+            "error": "KeyError: 'target_room'"
+          },
+          {
+            "case": "settings_take_effect_without_restart",
+            "passed": false,
+            "error": "AssertionError: "
+          },
+          {
+            "case": "blank_settings_fall_back",
+            "passed": true
+          }
+        ],
+        "actual_core_version": "3.3.11",
+        "real_handler_and_buddy_add_used": true,
+        "network_watch_and_GUI_delivery_stubbed": true,
+        "source_sha256": "eed6007571f440bc0ebd0d43f47801d49bf5811fcb40484ec97095fe37db2133"
+      },
+      "authored_tests_fail_on_baseline": true,
+      "regression_meaning_still_requires_source_review": true,
+      "compression_lineage_sessions": 2,
+      "upstream_PR_present": false,
+      "remote_source_grade_available": false
+    }
+  ],
+  "coding_seconds": 1593.03822614206,
+  "requests_completed": 140,
+  "first_request_seconds": 61.03861594200134,
+  "max_actual_prompt_tokens": 83390,
+  "cache": {
+    "cumulative_input_tokens": 6470486,
+    "cumulative_cached_input_tokens": 6322051,
+    "token_weighted_cached_fraction": 0.9770596829975368,
+    "median_request_seconds": 5.233653426170349,
+    "cumulative_replayed_history_not_context_size": true
+  },
+  "GPU_peak_MiB": 8944,
+  "study_cgroup_peak_bytes": 7755952128,
+  "study_swap_peak_bytes": 0,
+  "minimum_Docker_root_free_bytes": 120562614272,
+  "minimum_model_disk_free_bytes": 203793059840,
+  "final_forge_readback": {
+    "source": "Configured Gitea MCP current readback",
+    "repo": "chatgpt-codex/hermes-deps-autobuddy-vibe-20261128",
+    "main_revision": "f9980ddc8aa6809e2f98f3ee95436bdb368e7a3d",
+    "baseline_blobs": 40,
+    "issues_all_states": 0,
+    "pull_requests_all_states": 0,
+    "actor_fork_not_independently_checked": true
+  },
+  "supplemental_source_review": {
+    "classification": "Posthoc supplemental source review, separate from unchanged primary registered grades",
+    "controls_passed": true,
+    "primary_grades_unchanged": true,
+    "valid_case_sensitive_negative_case_vector": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "original_baseline_remove_readd_passed": true,
+    "reference_remove_readd_passed": true,
+    "candidate_snapshots": [
+      {
+        "phase": 0,
+        "source_sha256": "90490aadc3ce800b77d810d3927ee6828e6f1226c96912b55da053a22a6290c8",
+        "remove_readd_passed": true
+      },
+      {
+        "phase": 2,
+        "source_sha256": "eed6007571f440bc0ebd0d43f47801d49bf5811fcb40484ec97095fe37db2133",
+        "remove_readd_passed": true
+      }
+    ]
+  },
+  "preservation": {
+    "passed": true,
+    "epoch": 1795833205.1736875,
+    "original20_models_unchanged": true,
+    "owner_profile_hashes_unchanged": true,
+    "owner_source_and_pending_work_unchanged": true,
+    "runtime_ids_images_config_running_unchanged": true,
+    "full_Codex_state_unchanged": true,
+    "original_alias_context_restored": true,
+    "three_turns_complete_not_quality_verdict": true,
+    "source_baselines": [
+      "baseline-before-vibe-q4-deps-native",
+      "baseline-after-vibe-q4-deps-native"
+    ]
+  },
+  "cleanup": {
+    "passed": true,
+    "epoch": 1795833205.312137,
+    "removed_exact_supervisor_id": "d56cd61fc7f841208d514614dbdb1446c4411ca382837754279cd6dac608c1be",
+    "removed_only_task_anonymous_volumes": [
+      "f3f3999ac936a82263171c18ccc04ad5840263ce7f4fada5ad5537adf65bea22"
+    ],
+    "named_stage_volume_preserved": true,
+    "no_live_study_containers": true
+  },
+  "training_positive_eligible": false,
+  "grader_feedback_to_actor": false,
+  "operator_patch_or_correction": false,
+  "findings": [
+    "Case-sensitive direct users membership misses case variants at every phase.",
+    "Final plugin has no required preference descriptors, caches startup settings and does not respond correctly to actual settings changes.",
+    "Final project collection fails on leftover test_check.py calling test setup without its class setup.",
+    "Final text proposes GitHub CLI; no executed gh command found in the final persisted native snapshot. No actual forge publication.",
+    "Remove/re-add behavior passes the separate supplemental check; this does not erase primary failures."
+  ],
+  "limitations": [
+    "One development workflow with three dependent tasks, not independent repetitions.",
+    "Thinking enabled for main/aux and8192 output caps differ from portions of owner profile; no exact everyday-profile or weights-only claim.",
+    "Authored-on-baseline failure alone is not meaningful-regression proof, particularly while fixed-source tests fail.",
+    "Earlier case-control syntax typo corrected separately; frozen primary checker unchanged."
+  ]
+}
