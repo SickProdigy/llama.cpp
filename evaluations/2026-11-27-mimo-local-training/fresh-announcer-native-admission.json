@@ -1,6 +1,6 @@
 {
   "registered_epoch": 1795885295.6291354,
-  "status": "Q8 once-only supervisor launched; first actual actor request pending verification; no quality verdict",
+  "status": "Q8 native coding live; first actual HTTP request verified; no quality verdict",
   "family": "nicotine-announcer-queued-send-authority-v1",
   "candidate": "MiMo V2.6 Distill Qwen 9B Q8_0",
   "base_revision": "f9980ddc8aa6809e2f98f3ee95436bdb368e7a3d",
@@ -30,7 +30,7 @@
     "actual_grader_wiring_baseline_and_semantic_negative_rejected": true,
     "reference_initial_10of10_and_final_12of12_original83_preserved": true
   },
-  "first_native_request_verified": false,
+  "first_native_request_verified": true,
   "workflow": [
     "Repair stale or canceled queued Announcer sends and add regressions; upstream issue, personal fork, branch, commit, upstream PR",
     "Accurate documentation on same contribution",
@@ -53,5 +53,16 @@
     "durable_exact_handle_restoration_and_cleanup_started": true
   },
   "protocol_sha256": "4541841cb5250186a27c1f390df9ef5d607acfd0b2c55ce756b3a20ba0bde06e",
-  "quality_verdict": null
+  "quality_verdict": null,
+  "actual_first_request": {
+    "model": "gpuquant-mimo-q8-ann",
+    "tools": 32,
+    "main_max_tokens": 16384,
+    "thinking": true,
+    "seed": 20261127,
+    "verified_roles": true,
+    "verified_selected_repository": true,
+    "no_private_grader_markers": true,
+    "request_sha256": "39693baaa19fd11c25bb0ae64ea50e78b6e72ef9f4474137001d677ef10a149f"
+  }
 }
