@@ -1,0 +1,82 @@
+{
+  "classification": "Roles-context development trial admitted and first actual actor request verified; coding/publication quality pending",
+  "candidate": "mellum21-th-q6-roles",
+  "namespace_amendment": {
+    "classification": "Known setup error corrected before any actor/model request; not an observation-timeout restart or failed model score",
+    "old_attempt": "mellum21-thinking-q6-roles",
+    "new_attempt": "mellum21-th-q6-roles",
+    "same_private_fixture": "hermes-deps-autobuddy-roles-20261128",
+    "same_model_sampler_tasks_context_tools_permissions": true,
+    "runtime_names_and_model_alias_changed_only_for_namespace": "New short internal candidate key; all DNS labels admitted<=63bytes. Same role context, weights/template,98304ctx,29layers,16kmain8kaux and seed20261127.",
+    "owner_and_all22models_preserved_after_failed_admission": true,
+    "all_failed_source_protocol_logs_retained": true
+  },
+  "pre_actor_infrastructure_failure": {
+    "epoch": 1795880098.9307039,
+    "supervisor_id": "92cb819b1e062a3f6a0327b666d671e972bd2a0d752da5611ff07747faa8ad58",
+    "classification": "Infrastructure failure before first actor/LLM call, not model quality",
+    "verified_fault": "socket.getaddrinfo in exact supervisor raises UnicodeEncodeError: idna label too long for64-character MAIN hostname",
+    "MAIN": "gpuquant-mellum21-thinking-q6-roles-cold-20261128-autobuddy-main",
+    "actor_started": false,
+    "LLM_requests": 0,
+    "remedy": "Shorter isolated container namespace, with all dialed DNS labels checked before any owner stop",
+    "signal": "SIGTERM exact supervisor; existing finally block must restore original runtime; no forced kill or observation-timeout restart"
+  },
+  "failed_attempt_reconciled_preservation": {
+    "passed": true,
+    "epoch": 1795880173.0934343,
+    "classification": "Preservation after reconciled operator DNS admission failure; zero actor/model requests, no workflow score",
+    "original22_models_unchanged": true,
+    "owner_profile_hashes_unchanged": true,
+    "owner_source_and_pending_work_unchanged": true,
+    "runtime_ids_images_config_running_unchanged": true,
+    "full_Codex_state_unchanged": true,
+    "original_alias_context_restored": true,
+    "no_model_score": true,
+    "completed_workflow_turns": 0,
+    "source_baselines": [
+      "baseline-before-mellum21-thinking-q6-roles-native",
+      "baseline-after-mellum21-thinking-q6-roles-native"
+    ],
+    "known_controller_error_preserved": true
+  },
+  "failed_attempt_exact_cleanup": {
+    "passed": true,
+    "epoch": 1795880173.2236407,
+    "removed_exact_supervisor_id": "92cb819b1e062a3f6a0327b666d671e972bd2a0d752da5611ff07747faa8ad58",
+    "removed_only_task_anonymous_volumes": [
+      "5f7987c6521cc2a8c4f688cc3798d484ebfd906378a0832afef14a57cdaeadaf"
+    ],
+    "named_stage_volume_preserved": true,
+    "no_live_study_containers": true
+  },
+  "actual_DNS_correction": {
+    "actual_supervisor_DNS_lookup_passed": true,
+    "DNS_label_bytes": 58
+  },
+  "first_actual_native_request": {
+    "passed": true,
+    "actual_role_context_present": true,
+    "actual_selected_repository_context_present": true,
+    "actual_authenticated_actor": "hermes-agent",
+    "upstream_owner": "chatgpt-codex",
+    "personal_fork_owner": "hermes-agent",
+    "personal_fork_name": "hermes-deps-autobuddy-roles-20261128",
+    "model": "gpuquant-mellum21-th-q6-roles",
+    "main_max_tokens": 16384,
+    "thinking": true,
+    "seed": 20261127,
+    "tool_count": 32,
+    "no_private_grader_markers": true,
+    "request_pretty_file_sha256": "b2b7442ba2aedf9fea6d1d07853a81762d5fae419b054b85c0c8eeff3e6051b9",
+    "source": "actual first native HTTP request, no synthetic LLM response"
+  },
+  "new_protocol_sha256": "46977f820989345920581685d9ad6554eccd831de7b36c4e6603e5c196e45cd9",
+  "actual_full_tool_schemas_unchanged": true,
+  "fresh_both_identity_fixture_readmission_passed": true,
+  "no_model_quality_result_yet": true,
+  "no_operator_or_private_grader_feedback": true,
+  "same_AutoBuddy_development_family_not_new_heldout_task": true,
+  "fresh_Announcer_unexposed": true,
+  "no_actual_training": true
+}
