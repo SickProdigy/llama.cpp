@@ -101,4 +101,50 @@ class Focused(unittest.TestCase):
   self.assertIn('error',self.call('identity',org='hermes-agent'));self.assertEqual(self.native.calls,[])
  def test_boolean_not_accepted_as_issue_number(self):
   self.assertIn('error',self.call('read_issue',owner='sickprodigy',repo='nicotineplus-plugins',issue_number=True));self.assertEqual(self.native.calls,[])
+ def test_public_reference_format_is_opt_in(self):
+  raw={'id':1623,'number':1,'title':'Fix','body':'Details','state':'open'}
+  self.assertIs(self.b.reference_numbers('create_issue',raw),raw)
+  explicit=m.Bridge(self.native,[UP],explicit_reference_numbers=True)
+  result=explicit.reference_numbers('create_issue',raw)
+  self.assertEqual(list(result)[0],'issue_number');self.assertEqual(result['issue_number'],1)
+  self.assertNotIn('id',result);self.assertEqual(raw['id'],1623)
+  self.assertEqual({k:result[k]for k in raw if k!='id'},{k:v for k,v in raw.items()if k!='id'})
+ def test_explicit_issue_result_does_not_rewrite_native_write_or_retry(self):
+  calls=[]
+  def transport(name,args):
+   calls.append((name,args));return json.dumps({'result':json.dumps({'id':1623,'number':1,'html_url':'http://gitea:3000/'+UP+'/issues/1'})})
+  bridge=m.Bridge(transport,[UP],explicit_reference_numbers=True)
+  args={'upstream_owner':'sickprodigy','upstream_repo':'nicotineplus-plugins','title':'Fix','body':'Details'}
+  result=json.loads(bridge.handle('create_issue',args))
+  self.assertEqual(result['issue_number'],1);self.assertNotIn('id',result)
+  self.assertEqual(result['html_url'],'https://gitea.rcs1.top/'+UP+'/issues/1')
+  self.assertEqual(calls,[(m.PREFIX+'issue_write',{'method':'create','owner':'sickprodigy','repo':'nicotineplus-plugins','title':'Fix','body':'Details'})])
+ def test_explicit_reference_lists_preserve_prose_and_public_numbers(self):
+  bridge=m.Bridge(self.native,[UP],explicit_reference_numbers=True)
+  for operation,key in [('list_issues','issue_number'),('list_pull_requests','pull_number')]:
+   raw=[{'id':1623,'number':1,'body':'Keep #7 context','comments':[{'body':'Comment'}]},{'id':1710,'number':2}]
+   result=bridge.reference_numbers(operation,raw)
+   self.assertEqual([r[key]for r in result],[1,2]);self.assertEqual(result[0]['comments'],raw[0]['comments'])
+   self.assertEqual(result[0]['body'],raw[0]['body']);self.assertTrue(all('id'not in r for r in result))
+   self.assertEqual(bridge.reference_numbers(operation,[]),[])
+ def test_explicit_references_never_fall_back_to_database_id(self):
+  bridge=m.Bridge(self.native,[UP],explicit_reference_numbers=True)
+  for value in [None,True,0,-1,'1']:
+   with self.subTest(value=value),self.assertRaises(ValueError):bridge.reference_numbers('read_issue',{'id':1623,'number':value})
+  for operation in ['create_issue','update_issue','read_issue','create_pull_request','read_pull_request','update_pull_request']:
+   with self.subTest(operation=operation),self.assertRaises(ValueError):bridge.reference_numbers(operation,{'id':1623})
+  with self.assertRaises(ValueError):bridge.reference_numbers('read_issue',[])
+  with self.assertRaises(ValueError):bridge.reference_numbers('list_issues',{'id':1623,'number':1})
+ def test_explicit_pr_number_and_normal_permissions_remain(self):
+  self.b=m.Bridge(self.native,[UP],explicit_reference_numbers=True)
+  self.assertEqual(self.pr()['pull_number'],11)
+  self.assertEqual(self.native.calls[-1][1]['head'],'hermes-agent:feature')
+  self.assertIn('error',self.pr(fork_owner='other'))
+ def test_explicit_mode_does_not_change_other_metadata(self):
+  bridge=m.Bridge(self.native,[UP],explicit_reference_numbers=True);raw={'id':3,'number':10}
+  self.assertIs(bridge.reference_numbers('repository_info',raw),raw)
+  self.assertEqual(bridge.reference_numbers('create_issue',{'id':1623,'number':1,'issue_number':1623})['issue_number'],1)
+ def test_explicit_reference_config_requires_real_boolean(self):
+  for value in ['false',1,None]:
+   with self.subTest(value=value),self.assertRaises(ValueError):m.Bridge(self.native,[UP],explicit_reference_numbers=value)
 if __name__=='__main__':unittest.main()

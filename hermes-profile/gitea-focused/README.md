@@ -97,3 +97,18 @@ commit SHAs work. Resolution uses bounded paginated native branch metadata,
 without renaming the branch or changing write authority. Twenty-eight unit
 checks cover this profile. The dated native SDK smoke verifies a scoped
 40-character branch, two publisher commits and correct upstream PR.
+
+Version 0.1.7 adds an opt-in result format:
+`plugins.entries.gitea-focused.settings.explicit_reference_numbers: true`.
+Issue results start with `issue_number`, and PR results with `pull_number`,
+matching the existing read/update argument names. The public `number`, body,
+title, state and other response fields remain; the top-level database `id` is
+omitted. Lists normalize every row. A missing/invalid public number produces an
+error, never a fallback to a database ID; inspect upstream before repeating a
+mutation because its server-side effect may already exist.
+
+The option defaults to false, so existing profiles retain their response format.
+It changes neither tool schemas, request arguments, permissions nor native MCP
+payloads. Frozen model trials keep their original plugin copies. Native replay
+qualification and a separately registered model comparison are required before
+claiming improved behavior; this is not deployed to the owner profile.

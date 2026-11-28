@@ -56,11 +56,13 @@ def decode(value):
  raise MCPFailure('Unexpected nested MCP response')
 
 class Bridge:
- def __init__(self,transport,allowed_upstream_repositories,public_url='https://gitea.rcs1.top'):
+ def __init__(self,transport,allowed_upstream_repositories,public_url='https://gitea.rcs1.top',explicit_reference_numbers=False):
   self.transport=transport
   self.allowed=frozenset(allowed_upstream_repositories)
   self.public_url=public_url.rstrip('/')
   if not self.public_url.startswith(('https://','http://')):raise ValueError('public_url must be an HTTP(S) origin')
+  if type(explicit_reference_numbers) is not bool:raise ValueError('explicit_reference_numbers must be a boolean')
+  self.explicit_reference_numbers=explicit_reference_numbers
  def handle(self,operation,args):
   # Hermes tool handlers require a serialized result, not a bare dict.
   return json.dumps(self.invoke(operation,args),ensure_ascii=False)
@@ -98,6 +100,22 @@ class Bridge:
   if isinstance(value,list):return [self.urls(v) for v in value]
   if isinstance(value,str) and value.startswith('http://gitea:3000/'):return self.public_url+value[len('http://gitea:3000'):]
   return value
+ def reference_numbers(self,operation,value):
+  if not self.explicit_reference_numbers:return value
+  kinds={'create_issue':'issue_number','update_issue':'issue_number','read_issue':'issue_number','list_issues':'issue_number',
+         'create_pull_request':'pull_number','update_pull_request':'pull_number','read_pull_request':'pull_number','list_pull_requests':'pull_number'}
+  key=kinds.get(operation)
+  if key is None:return value
+  def row(item):
+   if not isinstance(item,dict) or type(item.get('number')) is not int or item['number']<1:
+    raise ValueError('Gitea response lacks a public repository reference number; read the upstream before retrying a mutation')
+   # Keep the original public number and all prose/state. A database primary
+   # key is not accepted by these tools' issue_number/pull_number arguments.
+   return {key:item['number'],**{k:v for k,v in item.items()if k not in ('id',key)}}
+  if operation.startswith('list_'):
+   if not isinstance(value,list):raise ValueError('Gitea reference list response must be a list')
+   return [row(item)for item in value]
+  return row(value)
  def invoke(self,operation,args):
   try:
    required=SPECS[operation][1];optional=SPECS[operation][2]
@@ -165,7 +183,7 @@ class Bridge:
     self.native('get_repository_tree',{'owner':a['fork_owner'],'repo':a['fork_repo'],'tree_sha':self.tree_ref(a['fork_owner'],a['fork_repo'],a['head_branch'],True),'recursive':False,'per_page':1})
     value=self.native('pull_request_write',{'method':'create','owner':a['upstream_owner'],'repo':a['upstream_repo'],'head':a['fork_owner']+':'+a['head_branch'],'base':a['base_branch'],'title':a['title'],'body':a['body']})
    else:raise ValueError('Unknown operation')
-   return self.urls(value)
+   return self.urls(self.reference_numbers(operation,value))
   except (ValueError,MCPFailure) as e:return {'error':str(e)}
 
 def block_direct_native(tool_name='', args=None, **kwargs):
@@ -178,6 +196,6 @@ def block_direct_native(tool_name='', args=None, **kwargs):
 def register(ctx):
  from tools.registry import registry
  ctx.register_hook('pre_tool_call',block_direct_native)
- bridge=Bridge(registry.dispatch,ctx.get_config('allowed_upstream_repositories',[]),ctx.get_config('public_url','https://gitea.rcs1.top'))
+ bridge=Bridge(registry.dispatch,ctx.get_config('allowed_upstream_repositories',[]),ctx.get_config('public_url','https://gitea.rcs1.top'),explicit_reference_numbers=ctx.get_config('explicit_reference_numbers',False))
  for name,schema in schemas().items():
   ctx.register_tool(name=name,toolset=TOOLSET,schema=schema,handler=partial(bridge.handle,name[len('gitea_'):]))

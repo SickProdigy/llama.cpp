@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "classification": "Opt-in response-only presentation replay of actual captures; not new native mutation or model-quality result",
+  "unit_checks": 35,
+  "focused_tool_schemas_identical_to_live_frozen_plugin": true,
+  "observations": [
+    {
+      "source": "Actual current development-run issue response",
+      "source_pretty_request_file_sha256": "7bed2601fad8283739ce9f893caae550a396f63c3d6a4f435f56e97dd429c962",
+      "native_database_id": 1623,
+      "native_public_number": 1,
+      "formatted_issue_number": 1,
+      "formatted_top_level_id_absent": true,
+      "all_non_id_native_fields_unchanged": true
+    },
+    {
+      "source": "Source-approved actual initial API PR creation, later faulty README excluded",
+      "source_capture_sha256": "622d3c91f07d36e137f7011f7c5b6cda0c34f2bf14dda92d7054c45896b2c325",
+      "native_public_number": 27,
+      "formatted_pull_number": 27,
+      "formatted_top_level_id_absent": true,
+      "all_non_id_native_fields_unchanged": true
+    }
+  ],
+  "model_calls": 0,
+  "transport_calls": 0,
+  "live_trial_profile_controller_or_plugin_modified": false,
+  "owner_profile_modified": false,
+  "native_dynamic_profile_qualification_still_required": true,
+  "new_plugin_sha256": "682ac3d82b5a23131d6809eaa81b051745f5a1838abae21391f6045a5a732846"
+}
