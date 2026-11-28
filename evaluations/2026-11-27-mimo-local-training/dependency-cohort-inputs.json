@@ -1,0 +1,80 @@
+{
+  "registered_before_candidate_inference": true,
+  "classification": "Separate dependency-available development cohort; correctness unproven",
+  "exact_three_dependent_user_tasks": [
+    "Auto Buddy keeps saying that it added someone even when that person is already a buddy. Make it add and acknowledge a user only when they are not already a buddy, treating buddy usernames case-insensitively. Repeated requests from a newly added buddy should do nothing. Preserve the target room, self-message exclusion, case-insensitive trigger phrase and joining the room on connect. Add meaningful regression tests. Open an issue upstream, make the change in your personal fork, and open an upstream PR linking the issue.",
+    "Update the Auto Buddy documentation to explain its trigger and existing-buddy behavior accurately. Keep the rest of the plugin documentation intact and publish this on the same contribution.",
+    "Add target_room and trigger_phrase settings to Auto Buddy so I can change them in plugin preferences. Keep the original room and phrase as defaults. Trim settings; an empty or whitespace-only value should fall back to its original default. Setting changes should apply without restarting, including which room is joined on connect. Preserve the existing-buddy and self-message safeguards. Add regression tests, document the settings and publish the followup on the same contribution."
+  ],
+  "evaluator_image": "sha256:68d60b68cbf2838a44027c4b025a285040cbae09868e3ab0c143a9e0feb073af",
+  "backend_unchanged": "b12723-abca69200",
+  "source_baseline": "f9980ddc8aa6809e2f98f3ee95436bdb368e7a3d",
+  "source_files": 40,
+  "independent_checker_unchanged": true,
+  "private_feedback_to_models": false,
+  "new_generic_context": "Nicotine+ 3.3.11 is installed for normal Python commands. Its dependency source is available read-only under /opt/dependencies/nicotine-plus for checking project interfaces. No Soulseek connection is needed for offline development tests.",
+  "candidates": [
+    {
+      "candidate": "mimo-q6-deps",
+      "fixture": "hermes-deps-autobuddy-mimo-20261128",
+      "context": 98304,
+      "main_aux_cap": 8192,
+      "sampler": {
+        "temperature": 0.6,
+        "top_p": 0.95,
+        "top_k": 20,
+        "min_p": 0,
+        "repeat_penalty": 1,
+        "presence_penalty": 0,
+        "chat_template_kwargs": {
+          "enable_thinking": true
+        },
+        "seed": 20261127
+      },
+      "wire_control_passed": true,
+      "MCP_identity_repo_read_and_forbidden_write_control_passed": true,
+      "fixture_blobs_verified_per_identity": 40,
+      "identities_verified": [
+        "chatgpt-codex",
+        "hermes-agent"
+      ],
+      "model_calls_during_controls": 0,
+      "forge_mutations_during_controls": 0
+    },
+    {
+      "candidate": "vibe-q4-deps",
+      "fixture": "hermes-deps-autobuddy-vibe-20261128",
+      "context": 98304,
+      "main_aux_cap": 8192,
+      "sampler": {
+        "temperature": 1.0,
+        "top_p": 0.95,
+        "top_k": 20,
+        "min_p": 0.05,
+        "repeat_penalty": 1,
+        "presence_penalty": 0,
+        "chat_template_kwargs": {
+          "enable_thinking": true
+        },
+        "seed": 20261127
+      },
+      "wire_control_passed": true,
+      "MCP_identity_repo_read_and_forbidden_write_control_passed": true,
+      "fixture_blobs_verified_per_identity": 40,
+      "identities_verified": [
+        "chatgpt-codex",
+        "hermes-agent"
+      ],
+      "model_calls_during_controls": 0,
+      "forge_mutations_during_controls": 0
+    }
+  ],
+  "live_trial_at_publication": {
+    "candidate": "mimo-q6-deps",
+    "supervisor_id": "4c0736260688ede2b44fea53cb6249ebdf331999a3d082fc86639040bcc732b5",
+    "protocol_sha256": "b802dd6e3588f3744a7937fce2f9003c32bd4784186d1a69003ee79ba8235cfe",
+    "quality_result": null
+  },
+  "Vibe_dependency_trial_started": false,
+  "scope": "Task family already used for development; no untouched held-out/general reliability/weight-only improvement claim."
+}
