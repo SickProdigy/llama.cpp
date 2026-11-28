@@ -1,0 +1,20 @@
+{
+  "epoch": 1795830708.1117532,
+  "classification": "Static syntax audit only, no candidate grade or behavioral runtime claim",
+  "controls": {
+    "old_frozen_negative": {
+      "sha256": "a50837bffa8eed869bc5d32164787e8cc4c3d7ee512881b4a49acc7d3e27a629",
+      "syntax_valid": false,
+      "error": "invalid syntax. Perhaps you forgot a comma?",
+      "line": 13
+    },
+    "replacement_negative": {
+      "sha256": "6c0025ab24ec63b18a68905fe0752485dd7bc1dca24aa90d62464d51b298bf05",
+      "syntax_valid": true
+    }
+  },
+  "old_files_modified": false,
+  "primary_checker_modified": false,
+  "behavioral_replacement_validation": "Pending until active GPU trial and exact preservation/cleanup complete",
+  "consequence": "Old negative control proves rejection of an unimportable plugin, not isolated case-sensitivity detection. Working-reference and direct candidate runtime observations remain separate evidence."
+}
